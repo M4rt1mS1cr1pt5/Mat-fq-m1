@@ -1,0 +1,636 @@
+@tema q4
+disc: F
+grupo: q
+titulo: Ligação química
+calcs: c_fqlg.lew c_fqlg.dh c_fqel.conf c_fqat.mm
+
+@licao q4a
+titulo: Ligação química: estabilidade, energia e comprimento
+chave: ligação química estabilidade energia de ligação comprimento de ligação energia potencial ligação simples dupla tripla
+calc: c_fqlg.dh
+ano: 10
+nivel: núcleo
+pre: q3c
+fonte: AE FQ A 10.º, Ligação química
+#A
+- Explicar porque os átomos se ligam.
+- Interpretar a curva da energia em função da distância entre átomos.
+- Definir energia de ligação e comprimento de ligação.
+- Comparar ligações simples, duplas e triplas.
+#B
+Dois átomos ligam-se quando juntos ficam com menos energia do que separados.
+É como duas bolas num vale: ficam onde a energia é mínima.
+Se se afastam, a energia sobe; se se aproximam demais, os núcleos repelem-se.
+#C
+- Ligação química: resultado das atrações e repulsões entre núcleos e eletrões.
+- Comprimento de ligação: distância entre os núcleos na energia mínima.
+- Energia de ligação: energia para quebrar a ligação (por mole, em kJ mol⁻¹).
+- Quebrar ligações absorve energia; formar ligações liberta energia.
+- Mais eletrões partilhados: ligação mais curta e mais forte.
+#D
+Na molécula de H₂, a energia é mínima a 74 pm.
+É preciso 436 kJ para quebrar as ligações de 1 mol de H₂.
+O valor 436 kJ mol⁻¹ é a energia de ligação H-H.
+A curva de energia tem três zonas:
+- longe: os átomos quase não interagem (energia perto de 0);
+- no mínimo: ligação estável;
+- muito perto: a repulsão entre núcleos faz a energia subir muito.
+Ligações entre carbonos:
+- C-C (simples): 154 pm e 348 kJ mol⁻¹;
+- C=C (dupla): 134 pm e 614 kJ mol⁻¹;
+- C≡C (tripla): 120 pm e 839 kJ mol⁻¹.
+Uma ligação dupla é mais forte, mas não é o dobro da simples.
+#E
+@F Energia para quebrar ligações|E = n × E(ligação)|n: quantidade de ligações (mol);E(ligação): energia de ligação (kJ mol⁻¹)|valores médios das tabelas|2,0 mol de H-H: 2,0 × 436 = 872 kJ|c_fqlg.dh
+@F Ordem de força|C-C < C=C < C≡C|mais pares partilhados: mais forte e mais curta|ligações entre os mesmos átomos|C≡C: 839 kJ mol⁻¹ e 120 pm|
+#F
+Dados: energia de ligação H-H = 436 kJ mol⁻¹.
+Objetivo: energia para quebrar as ligações em 4,0 g de H₂.
+1. M(H₂) = 2,02 g mol⁻¹
+2. n = 4,0 / 2,02 = [[1,98]] mol
+3. E = 1,98 × 436 = [[8,6 × 10²]] kJ
+> São precisos cerca de 8,6 × 10² kJ.
+O resultado tem 2 alg. sig., como a massa.
+Verificação: 2 mol daria 872 kJ; 1,98 mol dá um pouco menos.
+#G
+As ligações guardam energia: é por isso que as reações químicas trocam energia.
+A energia de ligação mede a estabilidade: ligações mais fortes são mais difíceis de quebrar.
+#H
+- Dizer que formar uma ligação gasta energia: liberta.
+- Achar que a ligação dupla tem o dobro da energia da simples.
+- Confundir comprimento de ligação com o tamanho da molécula.
+- Esquecer que a energia de ligação é por mole.
+#I
+- Ligação: estado de energia mínima.
+- Comprimento: distância entre núcleos no mínimo.
+- Energia de ligação: para quebrar 1 mol de ligações.
+- Quebrar absorve; formar liberta.
+- Simples < dupla < tripla (força); comprimento ao contrário.
+#J
+Ordena as ligações C-C, C=C e C≡C por comprimento crescente.
+#R
+C≡C (120 pm) < C=C (134 pm) < C-C (154 pm).
+#V
+n = 4.0 / 2.02
+V = [n, n * 436]
+
+@licao q4b
+titulo: Ligações covalente, iónica e metálica
+chave: ligação covalente iónica metálica partilha de eletrões iões rede cristalina mar de eletrões eletronegatividade
+ano: 10
+nivel: núcleo
+pre: q4a
+fonte: AE FQ A 10.º, Ligação química
+#A
+- Distinguir ligação covalente, iónica e metálica.
+- Relacionar o tipo de ligação com os elementos envolvidos.
+- Explicar propriedades de metais e de compostos iónicos.
+- Usar a eletronegatividade para prever a polaridade da ligação.
+#B
+Os átomos podem partilhar eletrões, trocá-los ou pô-los em comum.
+Dois não metais partilham: covalente.
+Um metal dá eletrões a um não metal: iónica.
+Muitos átomos de metal põem eletrões num "mar" comum: metálica.
+#C
+- Covalente: partilha de pares de eletrões (entre não metais).
+- Iónica: atração entre catiões e aniões (metal e não metal).
+- Metálica: catiões numa nuvem de eletrões deslocalizados.
+- Eletronegatividade: tendência de um átomo para atrair os eletrões da ligação.
+- Ligação covalente polar: entre átomos de eletronegatividade diferente.
+#D
+H₂O, CO₂ e CH₄ são substâncias com ligações covalentes.
+O NaCl é iónico: forma uma rede de iões Na⁺ e Cl⁻ alternados.
+Os compostos iónicos são sólidos à temperatura ambiente.
+Fundidos ou em solução, conduzem a corrente elétrica.
+Nos metais, os eletrões deslocalizados explicam a boa condução elétrica e térmica.
+Também explicam o brilho e a facilidade de deformar sem partir.
+Eletronegatividade (escala de Pauling): F 4,0; O 3,4; N 3,0; C 2,6; H 2,2.
+H-H é covalente apolar; H-Cl é covalente polar (o Cl atrai mais).
+Quanto maior a diferença de eletronegatividade, mais polar a ligação.
+A eletronegatividade aumenta no período e diminui no grupo.
+#E
+@F Tipo de ligação|não metal + não metal: covalente; metal + não metal: iónica; metal + metal: metálica|metal: tende a perder eletrões;não metal: tende a ganhar ou partilhar|regra geral (há casos intermédios)|NaCl: iónica; Cl₂: covalente; Cu: metálica|
+#F
+Dados: substâncias HCl, KBr e Fe.
+Objetivo: tipo de ligação de cada uma.
+1. HCl: H e Cl são não metais: covalente polar.
+2. KBr: K é metal (grupo 1) e Br é não metal: iónica.
+3. Fe: só átomos de metal: metálica.
+> HCl covalente; KBr iónica; Fe metálica.
+Verificação: no KBr, K⁺ tem [[18]] eletrões e Br⁻ tem [[36]].
+#G
+O tipo de ligação explica as propriedades das substâncias.
+Os metais são bons condutores; os sólidos iónicos não, mas as suas soluções sim.
+#H
+- Dizer que no NaCl há moléculas: há uma rede de iões.
+- Achar que a ligação covalente é só entre átomos iguais.
+- Confundir ligação metálica com iónica.
+- Inverter a tendência da eletronegatividade.
+#I
+- Covalente: partilha (não metais).
+- Iónica: catiões e aniões (metal e não metal).
+- Metálica: eletrões deslocalizados.
+- Eletronegatividade diferente: ligação polar.
+- F é o elemento mais eletronegativo.
+#J
+Que tipo de ligação existe no óxido de magnésio, MgO?
+#R
+Mg é metal e O é não metal: ligação iónica (iões Mg²⁺ e O²⁻, ambos com [[10]] eletrões).
+#V
+V = [19 - 1, 35 + 1, 12 - 2]
+
+@licao q4c
+titulo: Notação de Lewis e regra do octeto
+chave: notação de lewis regra do octeto pares ligantes pares não ligantes eletrões de valência fórmula de estrutura
+calc: c_fqlg.lew
+ano: 10
+nivel: núcleo
+pre: q4b
+fonte: AE FQ A 10.º, Ligação química
+#A
+- Representar átomos e moléculas na notação de Lewis.
+- Aplicar a regra do octeto.
+- Contar pares ligantes e pares não ligantes.
+- Identificar ligações simples, duplas e triplas.
+#B
+Na notação de Lewis só se desenham os eletrões de valência.
+Os átomos partilham eletrões até cada um ficar com 8 à volta, como um gás nobre.
+O hidrogénio é exceção: fica com 2, como o hélio.
+#C
+- Símbolo de Lewis: símbolo químico com os eletrões de valência (pontos).
+- Regra do octeto: cada átomo tende a ficar com 8 eletrões de valência (H com 2).
+- Par ligante: par partilhado (traço entre átomos).
+- Par não ligante: par só de um átomo.
+- Ligação simples: 1 par; dupla: 2 pares; tripla: 3 pares.
+#D
+Método para uma molécula:
+1. Soma os eletrões de valência de todos os átomos.
+2. Divide por 2: é o número de pares.
+3. Liga os átomos com pares simples.
+4. Completa os octetos com pares não ligantes.
+5. Se faltarem eletrões, faz ligações duplas ou triplas.
+Exemplo H₂O: 2 × 1 + 6 = 8 eletrões, 4 pares.
+2 pares ligantes (O-H) e 2 não ligantes no O.
+Exemplo N₂: 2 × 5 = 10 eletrões, 5 pares: N≡N e 1 par não ligante em cada N.
+Exemplo CO₂: 4 + 2 × 6 = 16, 8 pares: O=C=O e 2 pares em cada O.
+Exemplo NH₃: 5 + 3 = 8, 4 pares: 3 ligantes e 1 não ligante no N.
+#E
+@F Pares de eletrões de valência|pares = (Σ eletrões de valência) / 2|eletrões de valência: grupo (1-2) ou grupo - 10 (13-18)|moléculas neutras|CO₂: (4 + 2 × 6) / 2 = 8 pares|c_fqlg.lew
+#F
+Dados: molécula de metano, CH₄.
+Objetivo: notação de Lewis.
+1. Eletrões de valência: 4 + 4 × 1 = [[8]]
+2. Pares: 8 / 2 = [[4]]
+3. O C liga-se a cada H com um par: 4 ligações simples C-H.
+4. Pares não ligantes: 4 - 4 = [[0]]
+> CH₄: 4 pares ligantes, 0 não ligantes; o C fica com octeto.
+Verificação: cada H fica com 2 eletrões e o C com 8.
+#G
+A notação de Lewis prevê como os átomos se ligam e é o primeiro passo para a geometria.
+Os pares não ligantes também ocupam espaço e afetam a forma da molécula.
+#H
+- Contar todos os eletrões e não só os de valência.
+- Esquecer os pares não ligantes.
+- Dar 8 eletrões ao hidrogénio: só tem 2.
+- Pôr ligações simples no N₂ (é tripla).
+- Somar mal: o O tem 6 eletrões de valência.
+#I
+- Lewis: só eletrões de valência.
+- Octeto: 8 eletrões (H: 2).
+- Pares = eletrões de valência / 2.
+- Simples, dupla e tripla: 1, 2 e 3 pares.
+- Não esquecer os pares não ligantes.
+#J
+Quantos pares de eletrões de valência tem a molécula de O₂ e que ligação há entre os O?
+#R
+2 × 6 = 12 eletrões: [[6]] pares. Ligação dupla O=O e 2 pares não ligantes em cada O.
+#V
+V = [4 + 4, 8 / 2, 4 - 4, 12 / 2]
+
+@licao q4d
+titulo: Geometria e polaridade das moléculas
+chave: geometria molecular linear angular piramidal trigonal tetraédrica triangular plana ângulo de ligação polaridade molécula polar apolar
+calc: c_fqlg.lew
+ano: 10
+nivel: núcleo
+pre: q4c
+fonte: AE FQ A 10.º, Ligação química
+#A
+- Prever a geometria de moléculas simples.
+- Indicar ângulos de ligação de moléculas do programa.
+- Distinguir ligação polar de molécula polar.
+- Prever se uma molécula é polar ou apolar.
+#B
+Os pares de eletrões repelem-se: afastam-se o mais possível.
+Isso define a forma da molécula.
+Uma molécula é polar se as cargas parciais não se anulam, como um íman.
+#C
+- Linear: 180° (CO₂, HCN) ou só dois átomos (H₂, HCl).
+- Angular: H₂O (104,5°).
+- Piramidal trigonal: NH₃ (107°).
+- Tetraédrica: CH₄ (109,5°).
+- Triangular plana: CH₂O e cada C do eteno (120°).
+- Molécula polar: há uma separação de cargas que não se anula.
+#D
+Os pares não ligantes repelem mais do que os ligantes.
+Por isso o ângulo na H₂O (104,5°) é menor do que no CH₄ (109,5°).
+O NH₃ tem 1 par não ligante: 107°.
+Polaridade de uma molécula:
+- duas ligações polares iguais em linha anulam-se (CO₂ é apolar);
+- numa molécula angular não se anulam (H₂O é polar).
+O CH₄ e o CCl₄ são apolares: a forma tetraédrica é simétrica.
+O HCl é polar: só há uma ligação, e é polar.
+As moléculas de dois átomos iguais (H₂, O₂, N₂) são apolares.
+A polaridade explica propriedades como a solubilidade.
+#E
+@F Geometria e pares|2 grupos: linear; 3: triangular plana; 4: tetraédrica, piramidal ou angular|grupos: ligações e pares não ligantes à volta do átomo central|moléculas do programa|NH₃: 4 grupos, 1 não ligante: piramidal|c_fqlg.lew
+#F
+Dados: moléculas CO₂ e H₂O.
+Objetivo: geometria e polaridade de cada uma.
+1. CO₂: O=C=O, sem pares não ligantes no C: linear, 180°.
+2. As duas ligações C=O são polares, mas opostas: anulam-se.
+3. H₂O: 2 ligações e 2 pares não ligantes no O: angular, 104,5°.
+4. As duas ligações O-H não se anulam.
+> CO₂ apolar (linear); H₂O polar (angular).
+Verificação: na H₂O há 2 + 2 = [[4]] grupos à volta do O.
+#G
+A forma explica a diferença: a água é polar e o dióxido de carbono não.
+Por isso a água dissolve sal e o CO₂ é pouco solúvel em água.
+#H
+- Dizer que a H₂O é linear.
+- Achar que ligações polares dão sempre moléculas polares.
+- Esquecer os pares não ligantes ao prever a forma.
+- Trocar os ângulos do NH₃ (107°) e da H₂O (104,5°).
+#I
+- Pares repelem-se e afastam-se.
+- CO₂ linear; H₂O angular; NH₃ piramidal; CH₄ tetraédrica.
+- Ângulos: 180°, 104,5°, 107°, 109,5°.
+- Polar: as cargas parciais não se anulam.
+- Moléculas simétricas são apolares.
+#J
+A molécula de NH₃ é polar ou apolar? Porquê?
+#R
+Polar: a forma piramidal trigonal (107°) não anula as [[3]] ligações N-H polares.
+#V
+V = [4, 3]
+
+@licao q4e
+titulo: Hidrocarbonetos e grupos funcionais
+chave: hidrocarbonetos alcanos alcenos alcinos nomenclatura grupos funcionais álcool aldeído cetona ácido carboxílico amina fórmula química
+ano: 10
+nivel: núcleo
+pre: q4c
+fonte: AE FQ A 10.º, Ligação química
+#A
+- Distinguir alcanos, alcenos e alcinos.
+- Dar nome a hidrocarbonetos simples (até 4 carbonos).
+- Reconhecer os grupos funcionais do programa.
+- Associar o nome de um composto ao seu grupo funcional.
+#B
+Os hidrocarbonetos são cadeias de carbono com hidrogénio à volta.
+Trocar um H por outro grupo de átomos muda as propriedades: é o grupo funcional.
+É como pôr uma peça diferente num brinquedo de encaixe.
+#C
+- Hidrocarboneto: só C e H.
+- Alcano: só ligações simples, CₙH₂ₙ₊₂ (metano, etano, propano, butano).
+- Alceno: uma ligação dupla C=C, CₙH₂ₙ (eteno, propeno).
+- Alcino: uma ligação tripla C≡C, CₙH₂ₙ₋₂ (etino).
+- Prefixos: met (1 C), et (2), prop (3), but (4).
+#D
+Grupos funcionais do programa:
+- álcool: -OH (etanol, CH₃CH₂OH; terminação -ol);
+- aldeído: -CHO, no fim da cadeia (etanal, CH₃CHO; -al);
+- cetona: C=O no meio da cadeia (propanona, CH₃COCH₃; -ona);
+- ácido carboxílico: -COOH (ácido etanoico, CH₃COOH; -oico);
+- amina: -NH₂ (metilamina, CH₃NH₂).
+Exemplos de fórmulas:
+- metano CH₄, etano C₂H₆, propano C₃H₈, butano C₄H₁₀;
+- eteno C₂H₄, propeno C₃H₆;
+- etino C₂H₂.
+O etanol e o ácido etanoico têm 2 carbonos; o nome indica-o (et-).
+#E
+@F Fórmulas gerais|alcano CₙH₂ₙ₊₂; alceno CₙH₂ₙ; alcino CₙH₂ₙ₋₂|n: número de átomos de carbono|cadeias abertas com uma só ligação múltipla|n = 3: propano C₃H₈|c_fqat.mm
+#F
+Dados: hidrocarboneto de cadeia aberta com 4 C e uma ligação dupla.
+Objetivo: família, fórmula e massa molar.
+1. Ligação dupla C=C: é um alceno (but-: 4 C), buteno.
+2. Fórmula CₙH₂ₙ: C₄H₈.
+3. M = 4 × 12,01 + 8 × 1,01 = [[56,12]] g mol⁻¹
+> Buteno, C₄H₈, M = 56,12 g mol⁻¹.
+Verificação: o alcano com 4 C (C₄H₁₀) tem mais 2 H.
+#G
+O grupo funcional decide o comportamento químico: os álcoois e os ácidos carboxílicos são muito diferentes, mesmo com o mesmo número de carbonos.
+#H
+- Confundir aldeído (no fim da cadeia) com cetona (no meio).
+- Esquecer o H na fórmula geral do alcano: CₙH₂ₙ₊₂.
+- Chamar "propanol" a um composto de 2 carbonos.
+- Pensar que os grupos funcionais são hidrocarbonetos.
+#I
+- Alcanos: simples; alcenos: dupla; alcinos: tripla.
+- met, et, prop, but: 1, 2, 3, 4 carbonos.
+- -OH álcool; -CHO aldeído; C=O cetona.
+- -COOH ácido carboxílico; -NH₂ amina.
+#J
+Qual é a fórmula molecular do propano e quantos hidrogénios tem?
+#R
+Alcano com n = 3: C₃H₈, com 2 × 3 + 2 = [[8]] hidrogénios.
+#V
+V = [4 * 12.01 + 8 * 1.01, 2 * 3 + 2]
+
+@licao q4f
+titulo: Interações intermoleculares, solubilidade e miscibilidade
+chave: interações intermoleculares forças de london dispersão dipolo dipolo ligações de hidrogénio solubilidade miscibilidade ponto de ebulição
+ano: 10
+nivel: núcleo
+pre: q4d
+fonte: AE FQ A 10.º, Ligação química
+#A
+- Distinguir ligações químicas de interações intermoleculares.
+- Identificar interações de London, dipolo-dipolo e ligações de hidrogénio.
+- Relacionar as interações com o ponto de ebulição.
+- Prever solubilidade e miscibilidade.
+#B
+As moléculas atraem-se umas às outras, mas muito menos do que os átomos dentro delas.
+Essas atrações decidem se uma substância é gás, líquido ou sólido.
+"Semelhante dissolve semelhante": água com água, óleo com óleo.
+#C
+- Interações intermoleculares: atrações entre moléculas (mais fracas do que as ligações).
+- London (dispersão): existem entre todas as moléculas.
+- Dipolo-dipolo: entre moléculas polares.
+- Ligação de hidrogénio: H ligado a N, O ou F atraído pelo N, O ou F de outra molécula.
+- Miscíveis: líquidos que se misturam em qualquer proporção.
+#D
+Interações mais fortes dão pontos de ebulição mais altos.
+A água ferve a 100 °C; o H₂S, de massa maior, ferve a cerca de -60 °C.
+A diferença vem das ligações de hidrogénio na água.
+As interações de London crescem com o tamanho da molécula.
+Nos halogéneos: F₂ e Cl₂ são gases, Br₂ é líquido, I₂ é sólido.
+Solubilidade e miscibilidade:
+- água e etanol são miscíveis (ligações de hidrogénio entre ambos);
+- água e hexano não são miscíveis (o hexano é apolar);
+- o iodo, apolar, dissolve-se melhor em hexano do que em água.
+O sal dissolve-se na água porque os iões são atraídos pelas moléculas polares.
+#E
+@F Regra da solubilidade|semelhante dissolve semelhante|polar com polar (ou iónico); apolar com apolar|regra qualitativa|etanol e água: miscíveis|
+#F
+Dados: H₂O (M = 18,02 g mol⁻¹) e H₂S (M = 34,09 g mol⁻¹).
+Objetivo: explicar porque a água tem ponto de ebulição mais alto.
+1. A H₂S tem cerca de [[1,89]] vezes a massa molar da água.
+2. Só por London, a H₂S deveria ferver mais alto.
+3. A água tem ligações de hidrogénio (H ligado a O).
+4. Essas interações são muito mais fortes.
+> A água ferve a 100 °C e a H₂S a cerca de -60 °C.
+Verificação: a diferença é de cerca de [[160]] °C.
+#G
+As ligações de hidrogénio explicam muitas propriedades da água, como o gelo flutuar.
+A miscibilidade é usada para separar e extrair substâncias.
+#H
+- Dizer que ferver a água quebra ligações O-H: separa moléculas.
+- Achar que há ligações de hidrogénio em qualquer molécula com H.
+- Esquecer as interações de London nas moléculas polares.
+- Confundir solúvel com miscível.
+#I
+- Intermoleculares: mais fracas do que as ligações.
+- London: todas; dipolo-dipolo: polares.
+- Ligação de hidrogénio: H-N, H-O, H-F.
+- Mais interações: maior ponto de ebulição.
+- Semelhante dissolve semelhante.
+#J
+O etanol e a água são miscíveis. Que interações explicam isso?
+#R
+Ligações de hidrogénio entre o -OH do etanol e a água (também London e dipolo-dipolo).
+#V
+V = [34.09 / 18.02, 100 - (-60)]
+
+@exemplo q4e1
+nivel: 1
+titulo: Pares de eletrões no amoníaco
+licao: q4c
+calc: c_fqlg.lew
+#T
+Enunciado: representa o NH₃ na notação de Lewis.
+Dados: N tem 5 eletrões de valência e H tem 1.
+Método: contar eletrões, formar pares e completar octetos.
+Resolução:
+1. Eletrões de valência: 5 + 3 × 1 = [[8]]
+2. Pares: 8 / 2 = [[4]]
+3. Três pares ligantes N-H.
+4. Sobra 4 - 3 = [[1]] par não ligante no N.
+Resultado: 3 ligações simples e 1 par não ligante no azoto.
+Interpretação: o par não ligante faz a molécula piramidal.
+Erros a evitar: esquecer o par não ligante.
+#V
+V = [8, 4, 1]
+
+@exemplo q4e2
+nivel: 2
+titulo: Energia das ligações de uma amostra de etino
+licao: q4a
+calc: c_fqlg.dh
+#T
+Enunciado: que energia é preciso para quebrar as ligações C≡C em 13,0 g de etino, C₂H₂?
+Dados: E(C≡C) = 839 kJ mol⁻¹; M(C₂H₂) = 26,04 g mol⁻¹.
+Método: quantidade de matéria e energia por mole.
+Resolução:
+1. n = 13,0 / 26,04 = [[0,499]] mol
+2. Cada molécula tem 1 ligação C≡C: 0,499 mol de ligações.
+3. E = 0,499 × 839 = [[419]] kJ
+Resultado: cerca de 419 kJ.
+Interpretação: as ligações triplas são muito fortes.
+Erros a evitar: usar a energia da ligação simples C-C.
+#V
+n = 13.0 / 26.04
+V = [n, n * 839]
+
+@exemplo q4e3
+nivel: 3
+titulo: Lewis, geometria e polaridade do CO₂
+licao: q4d
+calc: c_fqlg.lew
+#T
+Enunciado: explica porque o CO₂ é apolar, apesar de ter ligações polares.
+Dados: C tem 4 eletrões de valência e O tem 6.
+Resolução:
+1. Eletrões de valência: 4 + 2 × 6 = [[16]], ou seja, [[8]] pares.
+2. O=C=O usa 4 pares; sobram [[4]] pares não ligantes (2 em cada O).
+3. O C não tem pares não ligantes: a molécula é linear (180°).
+4. Cada C=O é polar, mas as duas apontam em sentidos opostos.
+Resultado: as polaridades anulam-se: o CO₂ é apolar.
+Interpretação: a geometria decide a polaridade da molécula.
+Erros a evitar: concluir "polar" só por haver ligações polares.
+#V
+V = [16, 8, 4]
+
+@exercicio q4x1
+tipo: m
+licao: q4a
+#T
+Qual das ligações é a mais curta?
+#O
+C≡C
+C=C
+C-C
+Todas têm o mesmo comprimento
+#S
+1
+#P
+Mais pares partilhados aproximam mais os núcleos.
+#D
+A tripla C≡C (120 pm) é a mais curta e a mais forte.
+#V
+S = 1
+
+@exercicio q4x2
+tipo: v
+licao: q4a
+#T
+A formação de uma ligação química liberta energia.
+#S
+V
+#P
+A energia dos átomos ligados é menor do que separados.
+#D
+Verdadeiro: ao formar a ligação, o sistema fica com menos energia e liberta a diferença.
+#V
+S = 'V'
+
+@exercicio q4x3
+tipo: m
+licao: q4b
+#T
+Que tipo de ligação há no cloreto de potássio, KCl?
+#O
+Iónica
+Covalente apolar
+Covalente polar
+Metálica
+#S
+1
+#P
+K é metal; Cl é não metal.
+#D
+Metal e não metal: o K perde 1 eletrão e o Cl ganha-o: ligação iónica.
+#V
+S = 1
+
+@exercicio q4x4
+tipo: n
+licao: q4c
+#T
+Quantos pares de eletrões não ligantes tem a molécula de H₂O?
+#S
+2
+#P
+Conta os eletrões de valência e os pares ligantes.
+#D
+2 × 1 + 6 = 8 eletrões, 4 pares. 2 são ligantes (O-H): sobram [[2]] não ligantes no O.
+#V
+S = 4 - 2
+V = [S]
+
+@exercicio q4x5
+tipo: m
+licao: q4c
+#T
+Que ligação existe entre os átomos de azoto no N₂?
+#O
+Tripla
+Dupla
+Simples
+Iónica
+#S
+1
+#P
+10 eletrões de valência; cada N precisa de octeto.
+#D
+2 × 5 = [[10]] eletrões, 5 pares. N≡N usa 3 pares; 1 par não ligante em cada N.
+#V
+S = 1
+V = [10]
+
+@exercicio q4x6
+tipo: m
+licao: q4d
+#T
+Qual é a geometria da molécula de metano, CH₄?
+#O
+Tetraédrica
+Quadrangular plana
+Piramidal trigonal
+Angular
+#S
+1
+#P
+4 pares ligantes e nenhum não ligante à volta do C.
+#D
+4 grupos à volta do C afastam-se ao máximo: tetraédrica, com 109,5°.
+#V
+S = 1
+
+@exercicio q4x7
+tipo: v
+licao: q4d
+#T
+Uma molécula com ligações polares é sempre polar.
+#S
+F
+#P
+Pensa no CO₂.
+#D
+Falso. No CO₂ as ligações são polares, mas a forma linear anula as polaridades.
+#V
+S = 'F'
+
+@exercicio q4x8
+tipo: m
+licao: q4e
+#T
+O grupo funcional -COOH caracteriza:
+#O
+os ácidos carboxílicos
+os álcoois
+as cetonas
+as aminas
+#S
+1
+#P
+Ácido etanoico: CH₃COOH.
+#D
+-COOH é o grupo carboxilo dos ácidos carboxílicos (ex.: ácido etanoico).
+#V
+S = 1
+
+@exercicio q4x9
+tipo: n
+licao: q4e
+#T
+Quantos átomos de hidrogénio tem o alcano com 6 átomos de carbono?
+#S
+14
+#P
+Alcanos: CₙH₂ₙ₊₂.
+#D
+2 × 6 + 2 = [[14]]: hexano, C₆H₁₄.
+#V
+S = 2 * 6 + 2
+V = [S]
+
+@exercicio q4x10
+tipo: m
+licao: q4f
+#T
+Porque é que a água e o hexano não se misturam?
+#O
+A água é polar e o hexano é apolar
+Ambos são polares
+Ambos têm ligações de hidrogénio
+O hexano é iónico
+#S
+1
+#P
+Semelhante dissolve semelhante.
+#D
+A água é polar (com ligações de hidrogénio); o hexano é apolar.
+As moléculas de água atraem-se mais entre si: os líquidos não se misturam.
+#V
+S = 1

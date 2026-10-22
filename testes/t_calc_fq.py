@@ -93,3 +93,84 @@ def t_fr_normal():
 def t_fr_invalido():
     assert 'pelo menos 2' in erro(calc, c_fqat, 'fr', [0, '1,0', ''])
     assert 'zero' in erro(calc, c_fqat, 'fr', [1, '0; 0', ''])
+
+
+# ---- c_fqel
+import c_fqel
+
+
+def t_fot_lambda():
+    r = calc(c_fqel, 'fot', ['500'], {0: 0})
+    tem(r[0], 'f = 6,00 × 10¹⁴ Hz', 'E ≈ 3,98 × 10⁻¹⁹ J', 'verde')
+
+
+def t_fot_ev():
+    r = calc(c_fqel, 'fot', ['3,00'], {0: 8})
+    tem(r[0], 'λ = 414 nm', 'violeta')
+
+
+def t_fot_freq():
+    r = calc(c_fqel, 'fot', ['5,0e14'], {0: 4})
+    tem(r[0], 'λ = 6,0 × 10⁻⁷ m')
+
+
+def t_fot_limite():
+    r = calc(c_fqel, 'fot', ['0,001'], {0: 0})
+    tem(r[0], 'raios gama')
+    r = calc(c_fqel, 'fot', ['1,0'], {0: 1})
+    tem(r[0], 'ondas de rádio')
+
+
+def t_fot_invalido():
+    assert 'positivo' in erro(calc, c_fqel, 'fot', ['-500'], {0: 0})
+    assert 'positivo' in erro(calc, c_fqel, 'fot', ['0'], {0: 0})
+
+
+def t_hid_emissao():
+    r = calc(c_fqel, 'hid', ['3', '2'])
+    tem(r[0], 'Emissão', 'λ = 657 nm', 'Balmer')
+
+
+def t_hid_absorcao():
+    r = calc(c_fqel, 'hid', ['2', '4'])
+    tem(r[0], 'Absorção', 'ΔE ≈ 4,09 × 10⁻¹⁹ J')
+
+
+def t_hid_ionizacao():
+    r = calc(c_fqel, 'hid', ['1', '0'])
+    tem(r[0], 'ΔE = 2,18 × 10⁻¹⁸ J', 'ionização', 'λ = 91,2 nm')
+
+
+def t_hid_invalido():
+    assert 'iguais' in erro(calc, c_fqel, 'hid', ['2', '2'])
+    assert 'inteiros' in erro(calc, c_fqel, 'hid', ['2,5', '1'])
+    assert '1 ou mais' in erro(calc, c_fqel, 'hid', ['0', '2'])
+
+
+def t_conf_oxigenio():
+    r = calc(c_fqel, 'conf', ['8', '0'])
+    tem(r[0], '1s² 2s² 2p⁴', '2p [↑↓][↑ ][↑ ]', 'desemparelhados: 2',
+        'valência: 6', 'grupo 16')
+
+
+def t_conf_calcio():
+    r = calc(c_fqel, 'conf', ['20', '0'])
+    tem(r[0], '3p⁶ 4s²', 'período 4, grupo 2')
+
+
+def t_conf_excecao():
+    r = calc(c_fqel, 'conf', ['29', '0'])
+    tem(r[0], '4s¹ 3d¹⁰', 'Exceção')
+
+
+def t_conf_ioes():
+    r = calc(c_fqel, 'conf', ['11', '1'])
+    tem(r[0], 'Na⁺', '1s² 2s² 2p⁶')
+    r = calc(c_fqel, 'conf', ['26', '3'])
+    tem(r[0], 'Fe³⁺', '3p⁶ 3d⁵', 'desemparelhados: 5')
+
+
+def t_conf_invalido():
+    assert '1 a 36' in erro(calc, c_fqel, 'conf', ['40', '0'])
+    assert '1 a 36' in erro(calc, c_fqel, 'conf', ['1,5', '0'])
+    assert 'teria' in erro(calc, c_fqel, 'conf', ['8', '-40'])

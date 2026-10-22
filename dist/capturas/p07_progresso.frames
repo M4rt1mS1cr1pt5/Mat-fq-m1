@@ -1308,6 +1308,14 @@ T	4	13	255,255,255	Química
 R	0	17	313	17	204,224,255
 T	4	30	0,51,153	 1
 T	25	30	0,0,0	Massa e tamanho dos átomos
+T	4	47	0,51,153	 2
+T	25	47	0,0,0	Energia dos eletrões nos átomos
+T	4	64	0,51,153	 3
+T	25	64	0,0,0	Tabela Periódica
+T	4	81	0,51,153	 4
+T	25	81	0,0,0	Ligação química
+T	4	98	0,51,153	 5
+T	25	98	0,0,0	Gases e dispersões
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	17
@@ -1446,6 +1454,14 @@ T	4	13	255,255,255	Química
 R	0	17	313	17	204,224,255
 T	4	30	0,51,153	 1
 T	25	30	0,0,0	Massa e tamanho dos átomos
+T	4	47	0,51,153	 2
+T	25	47	0,0,0	Energia dos eletrões nos átomos
+T	4	64	0,51,153	 3
+T	25	64	0,0,0	Tabela Periódica
+T	4	81	0,51,153	 4
+T	25	81	0,0,0	Ligação química
+T	4	98	0,51,153	 5
+T	25	98	0,0,0	Gases e dispersões
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	25
@@ -1571,11 +1587,17 @@ T	4	13	255,255,255	Progresso por tema
 T	4	30	0,51,153	Massa e tamanho dos átomos
 T	4	47	0,0,0	Lições vistas: 1/5
 T	4	64	0,0,0	Exercícios: 0/10 feitos, 0 certos
-T	4	81	0,51,153	Função quadrática
-T	4	98	0,0,0	Lições vistas: 0/4
+T	4	81	0,51,153	Energia dos eletrões nos átomos
+T	4	98	0,0,0	Lições vistas: 0/5
 T	4	115	0,0,0	Exercícios: 0/10 feitos, 0 certos
+T	4	132	0,51,153	Tabela Periódica
+T	4	149	0,0,0	Lições vistas: 0/3
+T	4	166	0,0,0	Exercícios: 0/9 feitos, 0 certos
+T	4	183	0,51,153	Ligação química
+R	314	17	3	170	232,232,232
+R	314	17	3	94	100,100,100
 R	0	187	318	25	232,232,232
-T	4	200	100,100,100	1-6 de 6 · esc: voltar
+T	4	200	100,100,100	1-10 de 18 · enter: mais · esc: voltar
 F	32
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
@@ -1690,6 +1712,14 @@ T	4	13	255,255,255	Física e Química A
 R	0	17	313	17	204,224,255
 T	4	30	0,51,153	 1
 T	25	30	0,0,0	Massa e tamanho dos átomos
+T	4	47	0,51,153	 2
+T	25	47	0,0,0	Energia dos eletrões nos átomos
+T	4	64	0,51,153	 3
+T	25	64	0,0,0	Tabela Periódica
+T	4	81	0,51,153	 4
+T	25	81	0,0,0	Ligação química
+T	4	98	0,51,153	 5
+T	25	98	0,0,0	Gases e dispersões
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	39

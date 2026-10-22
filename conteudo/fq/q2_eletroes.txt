@@ -1,0 +1,596 @@
+@tema q2
+disc: F
+grupo: q
+titulo: Energia dos eletrões nos átomos
+calcs: c_fqel.fot c_fqel.hid c_fqel.conf c_comu.sci c_comu.uni
+
+@licao q2a
+titulo: Espetros e radiação eletromagnética
+chave: espetro contínuo descontínuo emissão absorção radiação eletromagnética fotão frequência comprimento de onda e = h f c = λ f teste de chama
+calc: c_fqel.fot
+ano: 10
+nivel: núcleo
+fonte: AE FQ A 10.º, Energia dos eletrões nos átomos
+#A
+- Distinguir espetros contínuos de descontínuos (de riscas).
+- Distinguir espetros de emissão de espetros de absorção.
+- Ordenar as regiões do espetro eletromagnético.
+- Relacionar energia, frequência e comprimento de onda.
+- Usar E = h f e c = λ f.
+#B
+A luz branca, num prisma, abre-se num arco-íris contínuo: é um espetro contínuo.
+A luz de um gás aquecido só tem algumas cores: é um espetro de riscas.
+Cada elemento tem as suas riscas, como uma impressão digital. Assim se identificam elementos nas estrelas.
+#C
+- Radiação eletromagnética: energia transportada por fotões.
+- Espetro contínuo: todas as cores (sólido incandescente).
+- Espetro descontínuo (de riscas): só algumas cores (gases).
+- Emissão: riscas coloridas; absorção: riscas escuras.
+- E = h f, com h = 6,63 × 10⁻³⁴ J s (constante de Planck).
+- c = λ f, com c = 3,00 × 10⁸ m s⁻¹ no vácuo.
+#D
+Por ordem crescente de energia (e de frequência):
+- ondas de rádio, micro-ondas, infravermelho (IV);
+- visível (de cerca de 700 nm a 400 nm);
+- ultravioleta (UV), raios X e raios gama.
+O comprimento de onda segue a ordem contrária.
+A luz visível vai do vermelho (menos energia) ao violeta (mais energia).
+Para o mesmo elemento, as riscas de emissão e de absorção estão nas mesmas posições.
+O átomo absorve e emite fotões com as mesmas energias.
+No teste de chama, os eletrões excitados emitem luz ao regressar a níveis mais baixos.
+A cor da chama identifica o elemento: o sódio dá amarelo-alaranjado.
+Os limites das regiões são aproximados e variam um pouco entre livros.
+#E
+@F Energia de um fotão|E = h f|E: energia do fotão (J);h: constante de Planck, 6,63 × 10⁻³⁴ J s;f: frequência (Hz)|qualquer radiação eletromagnética|f = 5,00 × 10¹⁴ Hz: E = 3,32 × 10⁻¹⁹ J|c_fqel.fot
+@F Velocidade da luz|c = λ f|c: 3,00 × 10⁸ m s⁻¹ (vácuo);λ: comprimento de onda (m);f: frequência (Hz)|radiação no vácuo (no ar, quase igual)|λ = 600 nm: f = 5,00 × 10¹⁴ Hz|c_fqel.fot
+#F
+Dados: a luz amarela do sódio tem λ = 589 nm.
+Objetivo: frequência e energia de um fotão.
+1. λ = 589 nm = 5,89 × 10⁻⁷ m
+2. f = c / λ = 3,00 × 10⁸ / 5,89 × 10⁻⁷ = [[5,09 × 10¹⁴]] Hz
+3. E = h f = h c / λ = 6,63 × 10⁻³⁴ × 3,00 × 10⁸ / 5,89 × 10⁻⁷ = [[3,38 × 10⁻¹⁹]] J
+> f = 5,09 × 10¹⁴ Hz e E = 3,38 × 10⁻¹⁹ J
+Verificação: está entre o vermelho e o violeta (visível).
+#G
+Um fotão de UV tem mais energia do que um de luz visível. Por isso o UV pode danificar a pele.
+A energia de um fotão depende só da frequência, não da intensidade da luz.
+Uma luz mais intensa tem mais fotões, não fotões mais energéticos.
+#H
+- Esquecer de passar nm para m (1 nm = 10⁻⁹ m).
+- Achar que maior comprimento de onda dá mais energia: dá menos.
+- Trocar emissão (riscas claras) com absorção (riscas escuras).
+- Confundir intensidade da luz com energia de cada fotão.
+- Usar c = λ f com λ em nm e c em m s⁻¹.
+#I
+- Contínuo: todas as cores; de riscas: só algumas.
+- Emissão: riscas claras; absorção: riscas escuras.
+- Energia crescente: rádio, micro-ondas, IV, visível, UV, X, gama.
+- E = h f e c = λ f.
+- Maior frequência: mais energia, menor λ.
+#J
+Um fotão tem λ = 400 nm. Calcula a sua energia.
+#R
+f = 3,00 × 10⁸ / 4,00 × 10⁻⁷ = [[7,50 × 10¹⁴]] Hz.
+E = 6,63 × 10⁻³⁴ × 7,50 × 10¹⁴ = [[4,97 × 10⁻¹⁹]] J.
+#V
+f = c / 589e-9
+f2 = c / 400e-9
+V = [f, h * c / 589e-9, f2, h * f2]
+
+@licao q2b
+titulo: Quantização da energia e átomo de hidrogénio
+chave: quantização níveis de energia modelo de bohr átomo de hidrogénio transição excitação desexcitação ionização lyman balmer paschen estado fundamental
+calc: c_fqel.hid
+ano: 10
+nivel: núcleo
+pre: q2a
+fonte: AE FQ A 10.º, Energia dos eletrões nos átomos
+#A
+- Explicar que a energia do eletrão está quantizada.
+- Calcular a energia de um nível do átomo de hidrogénio.
+- Relacionar transições com emissão ou absorção de fotões.
+- Associar as séries de Lyman, Balmer e Paschen a regiões do espetro.
+- Calcular a energia de ionização a partir de um nível.
+#B
+Imagina uma escada: só podes estar num degrau, nunca entre dois.
+No átomo, o eletrão só pode ter certas energias: os níveis.
+Para subir um degrau, absorve energia; ao descer, emite um fotão.
+Como os degraus são fixos, os fotões só têm certas energias: daí as riscas.
+#C
+- Energia quantizada: só pode ter certos valores.
+- Nível n (n = 1, 2, 3...): Eₙ = -2,18 × 10⁻¹⁸ / n² J.
+- Estado fundamental: n = 1 (energia mínima).
+- Estados excitados: n ≥ 2.
+- Energia do fotão: E = |E final - E inicial|.
+- Ionização: o eletrão vai para n = ∞, onde E = 0.
+#D
+As energias dos níveis são negativas: o eletrão está ligado ao núcleo.
+E₁ = -2,18 × 10⁻¹⁸ J; E₂ = -5,45 × 10⁻¹⁹ J; E₃ = -2,42 × 10⁻¹⁹ J.
+Os níveis ficam mais próximos à medida que n aumenta.
+Desexcitação (descer de nível): emite um fotão.
+Excitação (subir de nível): absorve um fotão com a energia exata.
+Séries de riscas de emissão, conforme o nível final:
+- Lyman: final n = 1, no ultravioleta;
+- Balmer: final n = 2, no visível (e algum UV);
+- Paschen: final n = 3, no infravermelho.
+A risca vermelha de Balmer vem da transição 3 → 2.
+A energia de ionização a partir de n = 1 é 2,18 × 10⁻¹⁸ J.
+Um fotão com energia entre dois níveis não é absorvido.
+#E
+@F Energia de um nível (H)|Eₙ = -2,18 × 10⁻¹⁸ / n² J|n: número do nível (1, 2, 3...);Eₙ: energia do eletrão no nível n|só para o átomo de hidrogénio|E₂ = -2,18 × 10⁻¹⁸ / 4 = -5,45 × 10⁻¹⁹ J|c_fqel.hid
+@F Energia do fotão numa transição|E fotão = ∣E final - E inicial∣|E final, E inicial: energias dos níveis|emissão (desce) ou absorção (sobe)|3 → 2: 3,03 × 10⁻¹⁹ J|c_fqel.hid
+#F
+Dados: transição do eletrão de n = 4 para n = 2 no hidrogénio.
+Objetivo: energia e comprimento de onda do fotão emitido.
+1. E₄ = -2,18 × 10⁻¹⁸ / 16 = [[-1,363 × 10⁻¹⁹]] J
+2. E₂ = -2,18 × 10⁻¹⁸ / 4 = [[-5,45 × 10⁻¹⁹]] J
+3. E fotão = |E₂ - E₄| = [[4,09 × 10⁻¹⁹]] J
+4. λ = h c / E = [[4,87 × 10⁻⁷]] m = 487 nm
+> Fotão de 4,09 × 10⁻¹⁹ J (487 nm): risca azul-esverdeada de Balmer.
+Verificação: o nível final é n = 2 (série de Balmer, visível).
+O valor medido é 486 nm: o modelo de Bohr acerta muito bem.
+#G
+As riscas provam que a energia no átomo está quantizada.
+O modelo de Bohr explica bem o hidrogénio, mas falha em átomos com mais eletrões.
+Hoje usa-se o modelo da nuvem eletrónica.
+#H
+- Esquecer o sinal menos das energias dos níveis.
+- Dizer que o átomo absorve qualquer fotão: só os de energia exata.
+- Trocar emissão (desce) com absorção (sobe).
+- Usar a fórmula de Eₙ para átomos que não são o hidrogénio.
+- Esquecer que E = 0 corresponde a n = ∞ (eletrão livre).
+#I
+- Energia quantizada: só certos níveis.
+- Eₙ = -2,18 × 10⁻¹⁸ / n² J (hidrogénio).
+- Descer emite; subir absorve: E fotão = |ΔE|.
+- Lyman (UV), Balmer (visível), Paschen (IV).
+- Ionização a partir de n = 1: 2,18 × 10⁻¹⁸ J.
+#J
+Calcula a energia do fotão emitido na transição n = 3 → n = 1.
+#R
+E = |E₁ - E₃| = 2,18 × 10⁻¹⁸ × (1 - 1/9) = [[1,94 × 10⁻¹⁸]] J (série de Lyman, UV).
+#V
+e4 = -2.18e-18 / 16
+e2 = -2.18e-18 / 4
+ef = abs(e2 - e4)
+V = [e4, e2, ef, h * c / ef, 2.18e-18 * (1 - 1 / 9)]
+
+@licao q2c
+titulo: Espetroscopia fotoeletrónica e energia de remoção
+chave: espetroscopia fotoeletrónica pes energia de remoção eletrões níveis subníveis energia de ionização
+ano: 10
+nivel: núcleo
+pre: q2b
+fonte: AE FQ A 10.º, Energia dos eletrões nos átomos
+#A
+- Definir energia de remoção de um eletrão.
+- Interpretar um espetro fotoeletrónico simples.
+- Relacionar picos com níveis e subníveis de energia.
+- Relacionar a altura de um pico com o número de eletrões.
+#B
+Num átomo com muitos eletrões, nem todos estão igualmente presos.
+Os mais perto do núcleo precisam de muita energia para sair.
+A espetroscopia fotoeletrónica "pesa" essa energia, eletrão a eletrão.
+#C
+- Energia de remoção: energia mínima para retirar um eletrão de um átomo.
+- Espetroscopia fotoeletrónica: mede as energias de remoção.
+- Cada pico corresponde a um subnível (1s, 2s, 2p...).
+- A altura do pico é proporcional ao número de eletrões do subnível.
+- Energia de ionização: energia de remoção do eletrão mais fácil de retirar.
+#D
+O néon (1s² 2s² 2p⁶) tem três picos, com energias aproximadas de:
+- 1s: 84,0 MJ mol⁻¹ (2 eletrões);
+- 2s: 4,68 MJ mol⁻¹ (2 eletrões);
+- 2p: 2,08 MJ mol⁻¹ (6 eletrões, o pico mais alto).
+O sódio tem um pico a mais, 3s, a cerca de 0,50 MJ mol⁻¹.
+O eletrão 3s do sódio é o mais fácil de remover.
+Os picos agrupam-se por níveis (n = 1, 2, 3) e, dentro destes, por subníveis.
+Os eletrões de um mesmo subnível têm a mesma energia de remoção.
+No mesmo nível, os eletrões p são removidos com menos energia do que os s.
+Este método confirma a existência de níveis e subníveis.
+#E
+@F Energia de remoção por eletrão|E (J) = E (J mol⁻¹) / NA|NA: 6,02 × 10²³ mol⁻¹|passar de valor por mole a valor por eletrão|0,50 MJ mol⁻¹ = 8,3 × 10⁻¹⁹ J por eletrão|c_comu.sci
+#F
+Dados: picos de um espetro a 104, 6,84, 3,67 e 0,50 MJ mol⁻¹.
+Alturas relativas 2 : 2 : 6 : 1.
+Objetivo: identificar o elemento.
+1. Há 4 picos: subníveis 1s, 2s, 2p e 3s.
+2. Número de eletrões: 2 + 2 + 6 + 1 = [[11]]
+3. Z = 11: é o sódio, Na.
+4. Configuração: 1s² 2s² 2p⁶ 3s¹.
+> O elemento é o sódio (11 eletrões).
+Verificação: o pico de menor energia, 0,50 MJ mol⁻¹ = [[500]] kJ mol⁻¹, está perto da energia de ionização do Na (496 kJ mol⁻¹).
+#G
+Quanto mais perto do núcleo, mais energia é preciso para remover o eletrão.
+Os eletrões de valência são os mais fáceis de remover: são os que participam nas reações.
+#H
+- Achar que todos os eletrões de um átomo têm a mesma energia.
+- Ler a altura do pico como energia: a energia está no eixo horizontal.
+- Esquecer que o pico mais alto é o subnível com mais eletrões.
+- Confundir energia de remoção com energia do nível (sinal oposto).
+#I
+- Energia de remoção: energia para retirar um eletrão.
+- Um pico por subnível; altura proporcional ao n.º de eletrões.
+- Mais perto do núcleo: maior energia de remoção.
+- O pico de menor energia é a energia de ionização.
+#J
+Um espetro tem picos de alturas 2 : 2 : 4. Que elemento é?
+#R
+2 + 2 + 4 = [[8]] eletrões (1s² 2s² 2p⁴): é o oxigénio, O.
+#V
+V = [2 + 2 + 6 + 1, 0.50 * 1000, 2 + 2 + 4]
+
+@licao q2d
+titulo: Modelo da nuvem eletrónica: níveis, subníveis, orbitais e spin
+chave: nuvem eletrónica orbital nível subnível spin modelo quântico s p d
+ano: 10
+nivel: núcleo
+pre: q2c
+fonte: AE FQ A 10.º, Energia dos eletrões nos átomos
+#A
+- Descrever o modelo da nuvem eletrónica.
+- Definir orbital, nível e subnível.
+- Indicar quantas orbitais tem cada subnível.
+- Explicar o que é o spin do eletrão.
+#B
+Não sabemos onde está o eletrão a cada instante.
+Sabemos onde é mais provável encontrá-lo.
+A nuvem eletrónica é mais densa onde essa probabilidade é maior.
+É como uma fotografia com tempo de exposição longo de uma abelha à volta de uma flor.
+#C
+- Orbital: zona onde é muito provável encontrar o eletrão.
+- Cada orbital tem, no máximo, 2 eletrões.
+- Nível n: conjunto de orbitais com o mesmo n (1, 2, 3...).
+- Subníveis: s (1 orbital), p (3 orbitais), d (5 orbitais).
+- O nível n tem n subníveis: n = 2 tem 2s e 2p.
+- Spin: propriedade do eletrão com dois valores (↑ e ↓).
+#D
+As orbitais s são esféricas.
+As orbitais p têm dois lóbulos e são três: px, py e pz.
+O nível 1 só tem a orbital 1s (máximo de 2 eletrões).
+O nível 2 tem 2s e 2p: 4 orbitais e até 8 eletrões.
+O nível 3 tem 3s, 3p e 3d: 9 orbitais e até 18 eletrões.
+Num átomo com vários eletrões, a energia depende do nível e do subnível.
+A ordem de energia é 1s < 2s < 2p < 3s < 3p < 4s < 3d.
+Orbitais do mesmo subnível têm a mesma energia (orbitais degeneradas).
+Dois eletrões na mesma orbital têm spins opostos.
+#E
+@F Eletrões por nível|máximo = 2n²|n: número do nível|cada nível completo|n = 3: 2 × 9 = 18 eletrões|
+@F Orbitais por subnível|s: 1; p: 3; d: 5|cada orbital: no máximo 2 eletrões|todos os átomos|subnível p: até 6 eletrões|c_fqel.conf
+#F
+Dados: nível n = 2.
+Objetivo: subníveis, orbitais e número máximo de eletrões.
+1. Subníveis: 2s e 2p (n = 2 tem 2 subníveis).
+2. Orbitais: 1 (2s) + 3 (2p) = [[4]]
+3. Eletrões: 2 × 4 = [[8]]
+> O nível 2 tem 4 orbitais e até 8 eletrões.
+Verificação: 2n² = 2 × 2² = [[8]].
+#G
+O modelo da nuvem eletrónica substituiu as órbitas de Bohr.
+O eletrão não percorre uma trajetória: tem uma probabilidade de estar em cada zona.
+#H
+- Desenhar orbitais como órbitas circulares.
+- Pôr 3 eletrões na mesma orbital.
+- Dizer que o subnível p tem 2 orbitais: tem 3.
+- Esquecer que 4s tem menos energia do que 3d.
+#I
+- Orbital: zona de probabilidade, até 2 eletrões.
+- s: 1 orbital; p: 3; d: 5.
+- Nível n: n subníveis, até 2n² eletrões.
+- Spin: dois valores; na mesma orbital, opostos.
+#J
+Quantos eletrões cabem, no máximo, no subnível 3p?
+#R
+3 orbitais × 2 = [[6]] eletrões.
+#V
+V = [1 + 3, 2 * 4, 2 * 2 ** 2, 3 * 2]
+
+@licao q2e
+titulo: Configuração eletrónica
+chave: configuração eletrónica princípio da construção aufbau exclusão de pauli regra de hund diagrama de caixas eletrões de valência
+calc: c_fqel.conf
+ano: 10
+nivel: núcleo
+pre: q2d
+fonte: AE FQ A 10.º, Energia dos eletrões nos átomos
+#A
+- Escrever configurações eletrónicas até Z = 20 (até 4s).
+- Aplicar o Princípio da Construção.
+- Aplicar o Princípio de Exclusão de Pauli.
+- Aplicar a Regra de Hund nos diagramas de caixas.
+- Identificar os eletrões de valência.
+#B
+Encher as orbitais é como encher um prédio: primeiro os andares de baixo.
+Em cada quarto (orbital) só cabem duas pessoas, viradas ao contrário.
+Em quartos iguais, cada pessoa fica sozinha antes de partilhar.
+#C
+- Princípio da Construção: as orbitais enchem-se por ordem crescente de energia.
+- Ordem: 1s 2s 2p 3s 3p 4s.
+- Exclusão de Pauli: cada orbital tem, no máximo, 2 eletrões, com spins opostos.
+- Regra de Hund: em orbitais com a mesma energia, primeiro um eletrão em cada uma, com o mesmo spin.
+- Eletrões de valência: os do último nível.
+#D
+Escreve-se cada subnível com o número de eletrões em expoente.
+Exemplo: oxigénio, Z = 8: 1s² 2s² 2p⁴.
+No diagrama de caixas, os 4 eletrões 2p ficam: [↑↓][↑ ][↑ ].
+Pela Regra de Hund, há 2 eletrões desemparelhados.
+Exemplo: potássio, Z = 19: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹.
+O 4s enche-se antes do 3d, porque tem menos energia.
+Os eletrões de valência do potássio: 1 (o 4s¹).
+O último nível indica o período: potássio no 4.º período.
+Nos grupos 1 e 2, o número de eletrões de valência é o do grupo.
+Nos grupos 13 a 18, é o número do grupo menos 10.
+Iões: Na⁺ (10 eletrões) fica 1s² 2s² 2p⁶, como o néon.
+#E
+@F Ordem de preenchimento|1s 2s 2p 3s 3p 4s (3d 4p)|s: até 2 eletrões;p: até 6;d: até 10|Princípio da Construção (estado fundamental)|Z = 12: 1s² 2s² 2p⁶ 3s²|c_fqel.conf
+@F Eletrões de valência e grupo|grupos 1-2: n.º do grupo; grupos 13-18: grupo - 10|eletrões de valência: os do último nível|elementos dos blocos s e p|cloro, grupo 17: 7 eletrões de valência|c_fqel.conf
+#F
+Dados: fósforo, P, Z = 15.
+Objetivo: configuração, diagrama de caixas e valência.
+1. 15 eletrões: 1s² 2s² 2p⁶ 3s² 3p³ (soma: 2 + 2 + 6 + 2 + 3 = [[15]])
+2. 3p³ pela Regra de Hund: [↑ ][↑ ][↑ ] (3 desemparelhados)
+3. Último nível n = 3: 3s² 3p³, logo [[5]] eletrões de valência.
+4. Período 3, grupo 5 + 10 = [[15]].
+> P: 1s² 2s² 2p⁶ 3s² 3p³; 5 eletrões de valência.
+Verificação: o grupo 15 tem 5 eletrões de valência.
+#G
+A configuração eletrónica explica a posição na tabela periódica.
+Os eletrões de valência explicam as propriedades químicas.
+Elementos do mesmo grupo têm configurações de valência semelhantes.
+#H
+- Encher 3d antes de 4s.
+- Pôr dois eletrões numa orbital p antes de ocupar as outras (viola Hund).
+- Pôr os dois eletrões da mesma orbital com o mesmo spin (viola Pauli).
+- Contar como valência eletrões de níveis interiores.
+- Esquecer de somar os eletrões para confirmar Z.
+#I
+- Ordem: 1s 2s 2p 3s 3p 4s.
+- Pauli: máximo de 2 por orbital, spins opostos.
+- Hund: um por orbital antes de emparelhar.
+- Valência: eletrões do último nível.
+- Último nível = período.
+#J
+Escreve a configuração eletrónica do enxofre, S (Z = 16).
+#R
+1s² 2s² 2p⁶ 3s² 3p⁴ (2 + 2 + 6 + 2 + 4 = [[16]] eletrões; [[6]] de valência).
+#V
+V = [2 + 2 + 6 + 2 + 3, 2 + 3, 5 + 10, 2 + 2 + 6 + 2 + 4, 2 + 4]
+
+@exemplo q2e1
+nivel: 1
+titulo: Energia de um fotão de luz vermelha
+licao: q2a
+calc: c_fqel.fot
+#T
+Enunciado: um laser vermelho emite luz com λ = 650 nm.
+Calcula a energia de um fotão.
+Dados: λ = 650 nm = 6,50 × 10⁻⁷ m; h = 6,63 × 10⁻³⁴ J s; c = 3,00 × 10⁸ m s⁻¹.
+Método: f = c / λ e depois E = h f.
+Resolução:
+1. f = 3,00 × 10⁸ / 6,50 × 10⁻⁷ = [[4,62 × 10¹⁴]] Hz
+2. E = 6,63 × 10⁻³⁴ × 4,62 × 10¹⁴ = [[3,06 × 10⁻¹⁹]] J
+Resultado: cada fotão tem 3,06 × 10⁻¹⁹ J.
+Interpretação: é pouca energia; um laser emite muitos fotões por segundo.
+Erros a evitar: usar λ em nanómetros na fórmula.
+#V
+f = c / 650e-9
+V = [f, h * 4.62e14]
+
+@exemplo q2e2
+nivel: 2
+titulo: Risca de Balmer do hidrogénio
+licao: q2b
+calc: c_fqel.hid
+#T
+Enunciado: calcula o comprimento de onda da risca emitida na transição 3 → 2.
+Dados: Eₙ = -2,18 × 10⁻¹⁸ / n² J.
+Método: diferença de energias e λ = h c / E.
+Resolução:
+1. E₃ = -2,18 × 10⁻¹⁸ / 9 = [[-2,42 × 10⁻¹⁹]] J
+2. E₂ = -2,18 × 10⁻¹⁸ / 4 = [[-5,45 × 10⁻¹⁹]] J
+3. E fotão = E₃ - E₂ = [[3,03 × 10⁻¹⁹]] J
+4. λ = 6,63 × 10⁻³⁴ × 3,00 × 10⁸ / 3,03 × 10⁻¹⁹ = [[6,56 × 10⁻⁷]] m
+Resultado: λ ≈ 656 nm, a risca vermelha de Balmer.
+Interpretação: o valor medido é 656 nm; o modelo de Bohr acerta bem no hidrogénio.
+Erros a evitar: fazer E₂ - E₃ e obter energia negativa para o fotão.
+#V
+e3 = -2.18e-18 / 9
+e2 = -2.18e-18 / 4
+V = [e3, e2, e3 - e2, h * c / 3.03e-19]
+
+@exemplo q2e3
+nivel: 3
+titulo: Energia para ionizar uma mole de átomos de hidrogénio
+licao: q2b
+calc: c_fqel.hid
+#T
+Enunciado: que energia é preciso para ionizar 1,00 mol de átomos de H no estado fundamental?
+E qual o maior comprimento de onda de um fotão capaz de ionizar um átomo?
+Dados: E₁ = -2,18 × 10⁻¹⁸ J; NA = 6,02 × 10²³ mol⁻¹.
+Resolução:
+1. Por átomo: E = 0 - E₁ = 2,18 × 10⁻¹⁸ J
+2. Por mole: 2,18 × 10⁻¹⁸ × 6,02 × 10²³ = [[1,31 × 10⁶]] J mol⁻¹
+3. λ máximo = h c / E = 6,63 × 10⁻³⁴ × 3,00 × 10⁸ / 2,18 × 10⁻¹⁸ = [[9,12 × 10⁻⁸]] m
+Resultado: 1,31 × 10⁶ J (1312 kJ) por mole; λ máximo de 91,2 nm (UV).
+Interpretação: fotões com λ maior não têm energia para ionizar o átomo.
+Erros a evitar: esquecer que a energia final do eletrão livre é 0.
+#V
+V = [2.18e-18 * NA, h * c / 2.18e-18]
+
+@exercicio q2x1
+tipo: m
+licao: q2a
+#T
+Qual das radiações tem fotões com mais energia?
+#O
+Infravermelho
+Luz vermelha
+Luz violeta
+Micro-ondas
+#S
+3
+#P
+Mais energia corresponde a maior frequência e menor λ.
+#D
+Das opções, a luz violeta tem a maior frequência (menor λ).
+Por isso os seus fotões têm mais energia.
+#V
+S = 3
+
+@exercicio q2x2
+tipo: n
+licao: q2a
+modo: s3
+#T
+Calcula a frequência de uma radiação com λ = 500 nm.
+Responde em Hz, com 3 algarismos significativos.
+#S
+6,00e14
+#P
+f = c / λ, com λ em metros.
+#D
+f = 3,00 × 10⁸ / 5,00 × 10⁻⁷ = [[6,00 × 10¹⁴]] Hz.
+#V
+S = c / 500e-9
+V = [S]
+
+@exercicio q2x3
+tipo: v
+licao: q2a
+#T
+Num espetro de absorção, um gás produz riscas escuras sobre um espetro contínuo.
+#S
+V
+#P
+O gás retira algumas cores à luz branca.
+#D
+Verdadeiro: o gás absorve fotões com certas energias.
+Essas cores faltam no espetro e aparecem como riscas escuras.
+#V
+S = 'V'
+
+@exercicio q2x4
+tipo: n
+licao: q2b
+modo: s3
+#T
+Qual é a energia do nível n = 3 do átomo de hidrogénio, em joules?
+#S
+-2,42e-19
+#P
+Eₙ = -2,18 × 10⁻¹⁸ / n².
+#D
+E₃ = -2,18 × 10⁻¹⁸ / 3² = [[-2,42 × 10⁻¹⁹]] J.
+#V
+S = -2.18e-18 / 9
+V = [S]
+
+@exercicio q2x5
+tipo: m
+licao: q2b
+#T
+A transição n = 5 → n = 3 no átomo de hidrogénio:
+#O
+emite um fotão de infravermelho
+absorve um fotão de infravermelho
+emite um fotão de ultravioleta
+emite um fotão visível
+#S
+1
+#P
+Desce ou sobe? Nível final n = 3 é a série de Paschen.
+#D
+O eletrão desce (5 → 3): há emissão.
+Com nível final n = 3 (série de Paschen), o fotão é de infravermelho.
+λ = h c / ΔE = [[1,28 × 10⁻⁶]] m.
+#V
+d = 2.18e-18 * (1 / 9 - 1 / 25)
+S = 1
+V = [h * c / d]
+
+@exercicio q2x6
+tipo: m
+licao: q2c
+#T
+O espetro fotoeletrónico de um elemento tem picos com alturas 2 : 2 : 6 : 2.
+Qual é o elemento?
+#O
+Magnésio
+Néon
+Sódio
+Oxigénio
+#S
+1
+#P
+Soma os eletrões de todos os picos.
+#D
+2 + 2 + 6 + 2 = [[12]] eletrões: Z = 12, magnésio (1s² 2s² 2p⁶ 3s²).
+#V
+S = 1
+V = [12]
+
+@exercicio q2x7
+tipo: v
+licao: q2d
+#T
+Uma orbital pode ter, no máximo, dois eletrões, com spins opostos.
+#S
+V
+#P
+Princípio de Exclusão de Pauli.
+#D
+Verdadeiro: é o Princípio de Exclusão de Pauli.
+#V
+S = 'V'
+
+@exercicio q2x8
+tipo: m
+licao: q2e
+#T
+Qual é a configuração eletrónica do cálcio, Ca (Z = 20), no estado fundamental?
+#O
+1s² 2s² 2p⁶ 3s² 3p⁶ 4s²
+1s² 2s² 2p⁶ 3s² 3p⁶ 3d²
+1s² 2s² 2p⁶ 3s² 3p⁸
+1s² 2s² 2p⁸ 3s² 3p⁶
+#S
+1
+#P
+Depois de 3p⁶, o subnível seguinte é o 4s.
+#D
+Ordem de preenchimento: 1s 2s 2p 3s 3p 4s.
+Com 20 eletrões: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s².
+O 4s enche-se antes do 3d; p só leva 6 eletrões.
+#V
+S = 1
+
+@exercicio q2x9
+tipo: n
+licao: q2e
+#T
+Quantos eletrões desemparelhados tem o azoto, N (Z = 7), no estado fundamental?
+#S
+3
+#P
+2p³: aplica a Regra de Hund.
+#D
+N: 1s² 2s² 2p³. Pela Regra de Hund, os 3 eletrões 2p ficam em orbitais diferentes.
+Há [[3]] eletrões desemparelhados.
+#V
+S = 3
+V = [3]
+
+@exercicio q2x10
+tipo: n
+licao: q2e
+#T
+Quantos eletrões de valência tem o cloro, Cl (Z = 17)?
+#S
+7
+#P
+Escreve a configuração e conta os eletrões do último nível.
+#D
+Cl: 1s² 2s² 2p⁶ 3s² 3p⁵. Último nível n = 3: 2 + 5 = [[7]] eletrões de valência.
+#V
+S = 2 + 5
+V = [S]

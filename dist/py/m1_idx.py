@@ -1,7 +1,7 @@
 # m1_idx.py - M1TR4M: indice da pesquisa gerado pelo build.
 # Cada linha: etiqueta|disciplina|titulo|palavras|alvo
 D = "@V 1\n\
-@N 210\n\
+@N 321\n\
 L|F|Constitui\u00e7\u00e3o do \u00e1tomo e is\u00f3topos|aniao atomico catiao de eletrao iao isotopo massa\
  neutrao nucleo numero protao m|q1a\n\
 L|F|Tamanho dos \u00e1tomos: ordens de grandeza e escalas|atomico cientifica escala nanometro nanotecnologia\
@@ -37,6 +37,122 @@ X|F|Quantas mol\u00e9culas h\u00e1 em 0,10 mol de O\u2082?||q1:6\n\
 X|F|Qual \u00e9 a quantidade de mat\u00e9ria em 8,0 g ||q1:7\n\
 X|F|Uma mistura tem 1,0 mol de N\u2082 e 3,0 mol ||q1:8\n\
 X|F|Um nan\u00f3metro \u00e9 igual a 10\u207b\u2079 m.||q1:9\n\
+L|F|Espetros e radia\u00e7\u00e3o eletromagn\u00e9tica|= absorcao c chama comprimento continuo de descontinuo\
+ emissao espetro f fotao frequencia h lambda onda teste|q2a\n\
+L|F|Quantiza\u00e7\u00e3o da energia e \u00e1tomo de hidrog\u00e9nio|balmer bohr desexcitacao estado\
+ excitacao fundamental ionizacao lyman modelo niveis paschen transicao|q2b\n\
+L|F|Espetroscopia fotoeletr\u00f3nica e energia de remo\u00e7\u00e3o|eletroes ionizacao niveis pes subniveis|q2c\n\
+L|F|Modelo da nuvem eletr\u00f3nica: n\u00edveis, subn\u00edveis, orbitais e spin|d eletronica nivel orbital\
+ p quantico s subnivel|q2d\n\
+L|F|Configura\u00e7\u00e3o eletr\u00f3nica|aufbau caixas construcao da de diagrama eletroes exclusao hund\
+ pauli principio regra valencia|q2e\n\
+F|F|Energia de um fot\u00e3o||q2:0\n\
+F|F|Velocidade da luz||q2:1\n\
+F|F|Energia de um n\u00edvel (H)||q2:2\n\
+F|F|Energia do fot\u00e3o numa transi\u00e7\u00e3o||q2:3\n\
+F|F|Energia de remo\u00e7\u00e3o por eletr\u00e3o||q2:4\n\
+F|F|Eletr\u00f5es por n\u00edvel||q2:5\n\
+F|F|Orbitais por subn\u00edvel||q2:6\n\
+F|F|Ordem de preenchimento||q2:7\n\
+F|F|Eletr\u00f5es de val\u00eancia e grupo||q2:8\n\
+E|F|Energia de um fot\u00e3o de luz vermelha||q2:0\n\
+E|F|Risca de Balmer do hidrog\u00e9nio||q2:1\n\
+E|F|Energia para ionizar uma mole de \u00e1tomos de hidrog\u00e9nio||q2:2\n\
+X|F|Qual das radia\u00e7\u00f5es tem fot\u00f5es com mais e||q2:0\n\
+X|F|Calcula a frequ\u00eancia de uma radia\u00e7\u00e3o com||q2:1\n\
+X|F|Num espetro de absor\u00e7\u00e3o, um g\u00e1s produz r||q2:2\n\
+X|F|Qual \u00e9 a energia do n\u00edvel n = 3 do \u00e1tomo||q2:3\n\
+X|F|A transi\u00e7\u00e3o n = 5 \u2192 n = 3 no \u00e1tomo de hi||q2:4\n\
+X|F|O espetro fotoeletr\u00f3nico de um elemento ||q2:5\n\
+X|F|Uma orbital pode ter, no m\u00e1ximo, dois el||q2:6\n\
+X|F|Qual \u00e9 a configura\u00e7\u00e3o eletr\u00f3nica do c\u00e1lc||q2:7\n\
+X|F|Quantos eletr\u00f5es desemparelhados tem o a||q2:8\n\
+X|F|Quantos eletr\u00f5es de val\u00eancia tem o cloro||q2:9\n\
+L|F|Hist\u00f3ria e organiza\u00e7\u00e3o da Tabela Peri\u00f3dica|bloco d?bereiner grupo mendeleiev moseley\
+ newlands periodo|q3a\n\
+L|F|Raio at\u00f3mico e energia de ioniza\u00e7\u00e3o|blindagem carga grupo nuclear periodicidade periodo\
+ tendencias|q3b\n\
+L|F|Forma\u00e7\u00e3o de i\u00f5es e propriedades dos elementos|alcalinos alcalinoterrosos aniao catiao\
+ elementar gases halogeneos metais nao nobres reatividade substancia|q3c\n\
+F|F|Per\u00edodo||q3:0\n\
+F|F|Grupo (blocos s e p)||q3:1\n\
+F|F|Energia de ioniza\u00e7\u00e3o por \u00e1tomo||q3:2\n\
+F|F|Tend\u00eancias||q3:3\n\
+F|F|Carga dos i\u00f5es (grupos 1, 2, 16, 17)||q3:4\n\
+E|F|Posi\u00e7\u00e3o de um elemento a partir de Z||q3:0\n\
+E|F|Comparar raios at\u00f3micos||q3:1\n\
+E|F|Fot\u00e3o capaz de ionizar o s\u00f3dio||q3:2\n\
+X|F|Quem ordenou os elementos pelo n\u00famero at||q3:0\n\
+X|F|Em que per\u00edodo est\u00e1 o elemento de config||q3:1\n\
+X|F|O elemento com configura\u00e7\u00e3o de val\u00eancia ||q3:2\n\
+X|F|Ao longo de um per\u00edodo, o raio at\u00f3mico a||q3:3\n\
+X|F|Qual dos elementos tem maior energia de ||q3:4\n\
+X|F|A EI do l\u00edtio \u00e9 520 kJ mol\u207b\u00b9. Qual \u00e9 a e||q3:5\n\
+X|F|Que i\u00e3o tende a formar o c\u00e1lcio (grupo 2||q3:6\n\
+X|F|A reatividade dos halog\u00e9neos aumenta ao ||q3:7\n\
+X|F|Qual \u00e9 a f\u00f3rmula do composto formado por||q3:8\n\
+L|F|Liga\u00e7\u00e3o qu\u00edmica: estabilidade, energia e comprimento|de dupla estabilidade potencial\
+ quimica simples tripla|q4a\n\
+L|F|Liga\u00e7\u00f5es covalente, i\u00f3nica e met\u00e1lica|covalente cristalina de eletroes\
+ eletronegatividade ioes ligacao mar partilha rede|q4b\n\
+L|F|Nota\u00e7\u00e3o de Lewis e regra do octeto|eletroes estrutura formula ligantes nao pares valencia|q4c\n\
+L|F|Geometria e polaridade das mol\u00e9culas|angular angulo apolar de ligacao linear molecula molecular\
+ piramidal plana polar tetraedrica triangular trigonal|q4d\n\
+L|F|Hidrocarbonetos e grupos funcionais|acido alcanos alcenos alcinos alcool aldeido amina carboxilico cetona\
+ formula nomenclatura quimica|q4e\n\
+L|F|Intera\u00e7\u00f5es intermoleculares, solubilidade e miscibilidade|de dipolo dispersao ebulicao forcas\
+ hidrogenio intermoleculares ligacoes london ponto|q4f\n\
+F|F|Energia para quebrar liga\u00e7\u00f5es||q4:0\n\
+F|F|Ordem de for\u00e7a||q4:1\n\
+F|F|Tipo de liga\u00e7\u00e3o||q4:2\n\
+F|F|Pares de eletr\u00f5es de val\u00eancia||q4:3\n\
+F|F|Geometria e pares||q4:4\n\
+F|F|F\u00f3rmulas gerais||q4:5\n\
+F|F|Regra da solubilidade||q4:6\n\
+E|F|Pares de eletr\u00f5es no amon\u00edaco||q4:0\n\
+E|F|Energia das liga\u00e7\u00f5es de uma amostra de etino||q4:1\n\
+E|F|Lewis, geometria e polaridade do CO\u2082||q4:2\n\
+X|F|Qual das liga\u00e7\u00f5es \u00e9 a mais curta?||q4:0\n\
+X|F|A forma\u00e7\u00e3o de uma liga\u00e7\u00e3o qu\u00edmica libert||q4:1\n\
+X|F|Que tipo de liga\u00e7\u00e3o h\u00e1 no cloreto de pot||q4:2\n\
+X|F|Quantos pares de eletr\u00f5es n\u00e3o ligantes t||q4:3\n\
+X|F|Que liga\u00e7\u00e3o existe entre os \u00e1tomos de az||q4:4\n\
+X|F|Qual \u00e9 a geometria da mol\u00e9cula de metano||q4:5\n\
+X|F|Uma mol\u00e9cula com liga\u00e7\u00f5es polares \u00e9 semp||q4:6\n\
+X|F|O grupo funcional -COOH caracteriza:||q4:7\n\
+X|F|Quantos \u00e1tomos de hidrog\u00e9nio tem o alcan||q4:8\n\
+X|F|Porque \u00e9 que a \u00e1gua e o hexano n\u00e3o se mi||q4:9\n\
+L|F|Lei de Avogadro, volume molar e massa vol\u00famica de gases|avogadro condicoes densidade normais pressao\
+ ptn temperatura na|q5a\n\
+L|F|Composi\u00e7\u00e3o da troposfera e poluentes|ar argon atmosfera azoto carbono de dioxido do enxofre\
+ monoxido oxidos oxigenio ozono particulas|q5b\n\
+L|F|Solu\u00e7\u00f5es, coloides e suspens\u00f5es|das de dispersoes efeito heterogenea homogenea mistura\
+ particulas solucoes soluto solvente tamanho tyndall|q5c\n\
+L|F|Composi\u00e7\u00e3o quantitativa de solu\u00e7\u00f5es|concentracao dm3 em fracao massa massica mol\
+ molar percentagem ppm solucao soluto solvente volume energia mecanica quantidade de materia m|q5d\n\
+L|F|Dilui\u00e7\u00e3o de solu\u00e7\u00f5es|balao cf ci diluida fator mae pipeta solucao vf vi volumetrico|q5e\n\
+F|F|Volume de um g\u00e1s||q5:0\n\
+F|F|Massa vol\u00famica de um g\u00e1s||q5:1\n\
+F|F|ppm e percentagem||q5:2\n\
+F|F|Tamanho das part\u00edculas||q5:3\n\
+F|F|Concentra\u00e7\u00e3o||q5:4\n\
+F|F|Concentra\u00e7\u00e3o m\u00e1ssica||q5:5\n\
+F|F|Percentagem em massa||q5:6\n\
+F|F|Dilui\u00e7\u00e3o||q5:7\n\
+F|F|Fator de dilui\u00e7\u00e3o||q5:8\n\
+E|F|Volume de um g\u00e1s em PTN||q5:0\n\
+E|F|Preparar uma solu\u00e7\u00e3o por dilui\u00e7\u00e3o||q5:1\n\
+E|F|Concentra\u00e7\u00e3o e percentagem de uma solu\u00e7\u00e3o de a\u00e7\u00facar||q5:2\n\
+X|F|Que volume ocupam 2,50 mol de um g\u00e1s em ||q5:0\n\
+X|F|Qual dos gases \u00e9 mais denso do que o ar ||q5:1\n\
+X|F|O g\u00e1s mais abundante no ar seco \u00e9 o oxig||q5:2\n\
+X|F|Qual dos poluentes contribui para as chu||q5:3\n\
+X|F|Uma mistura dispersa um feixe de laser e||q5:4\n\
+X|F|Dissolvem-se 0,200 mol de soluto at\u00e9 0,4||q5:5\n\
+X|F|Que massa de NaOH (M = 40,00 g mol\u207b\u00b9) \u00e9 ||q5:6\n\
+X|F|Que volume, em mL, de solu\u00e7\u00e3o 1,00 mol d||q5:7\n\
+X|F|Diluiu-se uma solu\u00e7\u00e3o com fator de dilui||q5:8\n\
+X|F|Uma \u00e1gua tem 0,050 g de nitratos em 1,0 ||q5:9\n\
 L|M|A fun\u00e7\u00e3o quadr\u00e1tica e o seu gr\u00e1fico|a(x-h)^2+k canonica concavidade de eixo forma\
  parabola simetria vertice|m5a\n\
 L|M|Zeros e f\u00f3rmula resolvente|2.o binomio delta discriminante do equacao fatorizacao grau|m5b\n\
@@ -79,6 +195,23 @@ C|F|Massa molar|composicao em formula hidratos percentagem quimica energia mecan
 C|F|Quantidade de mat\u00e9ria|avogadro massa mol molar numero particulas volume quantidade de materia m na|c_fqat.qm\n\
 C|F|Massa at\u00f3mica relativa m\u00e9dia|abundancia isotopos|c_fqat.ar\n\
 C|F|Fra\u00e7\u00e3o molar e fra\u00e7\u00e3o m\u00e1ssica|composicao mistura|c_fqat.fr\n\
+C|F|Espetros e fot\u00f5es|= c comprimento cor de eletromagnetico energia espetro f fotao frequencia h lambda\
+ onda regiao|c_fqel.fot\n\
+C|F|\u00c1tomo de hidrog\u00e9nio|absorcao balmer emissao energia ionizacao lyman niveis paschen risca\
+ transicao|c_fqel.hid\n\
+C|F|Configura\u00e7\u00e3o eletr\u00f3nica|caixas construcao grupo hund orbitais pauli periodo valencia|c_fqel.conf\n\
+C|F|Lewis, geometria e polaridade|angular lewis ligantes linear molecula nao pares piramidal tetraedrica\
+ triangular|c_fqlg.lew\n\
+C|F|Entalpia de rea\u00e7\u00e3o (energias de liga\u00e7\u00e3o)|endotermica energia exotermica formacao\
+ ligacao ligacoes quebra|c_fqlg.dh\n\
+C|F|Acerto de equa\u00e7\u00f5es qu\u00edmicas|coeficientes conservacao equacao estequiometricos lavoisier\
+ lei quimica|c_fqlg.ace\n\
+C|F|Concentra\u00e7\u00e3o de uma solu\u00e7\u00e3o|dm3 g massica mol molar soluto volume quantidade de\
+ materia|c_fqso.con\n\
+C|F|Massa de soluto a pesar|balao concentracao preparar pretendida solucao volumetrico|c_fqso.pes\n\
+C|F|Percentagem e partes por milh\u00e3o|composicao em massa ppm volume energia mecanica m|c_fqso.per\n\
+C|F|Dilui\u00e7\u00e3o de solu\u00e7\u00f5es|cf ci fator mae solucao vf vi|c_fqso.dil\n\
+C|F|Gases (PTN)|avogadro de densidade lei massa molar ptn volume volumica m na|c_fqso.gas\n\
 C|M|Equa\u00e7\u00e3o do 2.\u00ba grau e fun\u00e7\u00e3o quadr\u00e1tica|binomio concavidade discriminante\
  eixo formula parabola resolvente vertice zeros|c_matq.q2\n\
 C|M|Inequa\u00e7\u00f5es do 2.\u00ba grau|conjunto-solucao inequacao intervalos parabola sinal|c_matq.iq\n\

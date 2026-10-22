@@ -1,0 +1,425 @@
+@tema q3
+disc: F
+grupo: q
+titulo: Tabela Periódica
+calcs: c_fqel.conf c_fqel.fot c_fqat.mm
+
+@licao q3a
+titulo: História e organização da Tabela Periódica
+chave: tabela periódica história mendeleiev moseley döbereiner newlands grupo período bloco organização
+calc: c_fqel.conf
+ano: 10
+nivel: núcleo
+pre: q2e
+fonte: AE FQ A 10.º, Tabela Periódica
+#A
+- Referir contributos históricos para a Tabela Periódica.
+- Explicar a organização em grupos, períodos e blocos.
+- Relacionar a posição de um elemento com a sua configuração eletrónica.
+- Localizar um elemento a partir de Z.
+#B
+No século XIX conheciam-se cerca de 60 elementos e procurava-se uma ordem.
+Mendeleiev arrumou-os como cartas de um jogo, por propriedades parecidas.
+Deixou lugares vazios para elementos ainda por descobrir. Acertou!
+#C
+- Grupo: coluna (1 a 18); elementos com a mesma configuração de valência.
+- Período: linha (1 a 7); igual ao número do último nível com eletrões.
+- Bloco: subnível que está a encher (s, p, d ou f).
+- Hoje os elementos estão ordenados por número atómico, Z.
+#D
+Contributos históricos:
+- Döbereiner (1829): tríadas de elementos semelhantes.
+- Newlands (1864): lei das oitavas.
+- Mendeleiev (1869): ordem da massa atómica, com lacunas e previsões.
+- Previu o eka-silício, descoberto depois: o germânio.
+- Moseley (1913): a ordem certa é a do número atómico.
+Organização a partir das configurações:
+- bloco s: grupos 1 e 2;
+- bloco p: grupos 13 a 18;
+- bloco d: grupos 3 a 12;
+- bloco f: lantanídeos e actinídeos.
+O hélio (1s²) fica no grupo 18, com os gases nobres.
+Exemplo: Al, 1s² 2s² 2p⁶ 3s² 3p¹: período 3 e bloco p, grupo 13.
+#E
+@F Período|período = n do último nível|n: número quântico principal do último nível ocupado|estado fundamental|Al (3s² 3p¹): período 3|c_fqel.conf
+@F Grupo (blocos s e p)|bloco s: grupo = eletrões de valência; bloco p: grupo = eletrões de valência + 10|eletrões de valência: os do último nível|elementos representativos (exceto He)|S (3s² 3p⁴): 6 + 10 = 16|c_fqel.conf
+#F
+Dados: elemento com Z = 19.
+Objetivo: período, grupo e bloco.
+1. Configuração: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ (soma [[19]])
+2. Último nível: n = 4, logo período [[4]].
+3. Valência: 4s¹, 1 eletrão, bloco s, grupo [[1]].
+> Período 4, grupo 1, bloco s: é o potássio, K.
+Verificação: os metais alcalinos (grupo 1) têm um eletrão s de valência.
+#G
+A Tabela Periódica resume muita informação: a posição prevê propriedades.
+Mendeleiev mostrou o valor de um bom modelo: fez previsões que se confirmaram.
+#H
+- Achar que a tabela atual está ordenada pela massa atómica: é por Z.
+- Contar o grupo de um elemento do bloco p sem somar 10.
+- Confundir período (linha) com grupo (coluna).
+- Pôr o hélio no grupo 2 por ter 2 eletrões de valência.
+#I
+- Grupos: colunas (1-18); períodos: linhas (1-7).
+- Ordem atual: número atómico (Moseley).
+- Blocos s, p, d e f: subnível em preenchimento.
+- Período = último nível ocupado.
+- Mendeleiev previu elementos por descobrir.
+#J
+Em que período, grupo e bloco está o elemento com configuração 1s² 2s² 2p⁵?
+#R
+Último nível n = 2: período 2. Valência 2s² 2p⁵ = [[7]] eletrões, bloco p, grupo 7 + 10 = [[17]] (é o flúor).
+#V
+V = [2 + 2 + 6 + 2 + 6 + 1, 4, 1, 2 + 5, 7 + 10]
+
+@licao q3b
+titulo: Raio atómico e energia de ionização
+chave: raio atómico energia de ionização tendências periodicidade carga nuclear blindagem grupo período
+ano: 10
+nivel: núcleo
+pre: q3a
+fonte: AE FQ A 10.º, Tabela Periódica
+#A
+- Definir raio atómico e energia de ionização.
+- Prever a variação do raio atómico num grupo e num período.
+- Prever a variação da energia de ionização num grupo e num período.
+- Relacionar as duas tendências.
+#B
+Os eletrões de valência são puxados pelo núcleo e afastados pelos outros eletrões.
+Mais níveis afastam a valência: o átomo cresce.
+Mais protões no mesmo nível puxam mais: o átomo encolhe.
+Quanto mais pequeno, mais difícil é arrancar um eletrão.
+#C
+- Raio atómico: medida do tamanho do átomo (em pm).
+- Energia de ionização: energia mínima para remover um eletrão do átomo isolado no estado fundamental.
+- Exprime-se em kJ mol⁻¹ (ou em J por átomo).
+- No período: o raio diminui e a energia de ionização aumenta.
+- No grupo: o raio aumenta e a energia de ionização diminui.
+#D
+Ao longo de um período, os eletrões de valência ficam no mesmo nível.
+A carga nuclear aumenta, logo os eletrões são mais atraídos.
+Por isso o raio diminui e a energia de ionização aumenta.
+Ao descer um grupo, há mais um nível ocupado.
+Os eletrões de valência ficam mais longe e mais blindados.
+Por isso o raio aumenta e a energia de ionização diminui.
+Exemplos (raio calculado, em pm): Li 167, Na 190, K 243.
+No período 3: Na 190, Mg 145, Al 118, Cl 79.
+Energias de ionização (kJ mol⁻¹): Li 520, Na 496, K 419.
+No período 2: Li 520, C 1086, F 1681, Ne 2081.
+Há pequenas exceções (por exemplo, B < Be e O < N).
+Os gases nobres têm as maiores energias de ionização de cada período.
+Os valores de raio mudam conforme o método; as tendências são as mesmas.
+#E
+@F Energia de ionização por átomo|E (J) = E (kJ mol⁻¹) × 1000 / NA|NA: 6,02 × 10²³ mol⁻¹|passar de mole para átomo|Na: 496 kJ mol⁻¹ = 8,24 × 10⁻¹⁹ J|c_comu.sci
+@F Tendências|período →: raio ↓, EI ↑; grupo ↓: raio ↑, EI ↓|raio: raio atómico;EI: energia de ionização|elementos representativos (há exceções pontuais)|Na > Mg (raio); Mg < Cl (EI)|
+#F
+Dados: energias de ionização do Na e do K: 496 e 419 kJ mol⁻¹.
+Objetivo: comparar e explicar.
+1. Diferença: 496 - 419 = [[77]] kJ mol⁻¹
+2. Por átomo de K: 419 × 1000 / 6,02 × 10²³ = [[6,96 × 10⁻¹⁹]] J
+3. O K tem mais um nível (4s) do que o Na (3s).
+4. O eletrão 4s está mais longe do núcleo e mais blindado.
+> O K perde o eletrão de valência com mais facilidade.
+Verificação: K está abaixo do Na no grupo 1: EI menor, como previsto.
+#G
+A energia de ionização baixa explica a reatividade dos metais alcalinos.
+O potássio reage com a água de forma mais violenta do que o sódio.
+#H
+- Dizer que o raio aumenta no período por haver mais eletrões.
+- Achar que mais eletrões tornam sempre o átomo maior.
+- Inverter as tendências da energia de ionização.
+- Esquecer o "isolado" e o "estado fundamental" na definição.
+- Comparar elementos de grupos e períodos diferentes sem cuidado.
+#I
+- Período (→): raio diminui, EI aumenta.
+- Grupo (↓): raio aumenta, EI diminui.
+- Causa no período: carga nuclear maior, mesmo nível.
+- Causa no grupo: mais níveis, mais blindagem.
+- EI em kJ mol⁻¹; por átomo divide-se por NA.
+#J
+Ordena por ordem crescente de raio atómico: Mg, Na, Cl.
+#R
+Estão no período 3: o raio diminui ao longo do período.
+Ordem crescente: Cl < Mg < Na (79, 145 e 190 pm, valores calculados).
+#V
+V = [496 - 419, 419 * 1000 / NA]
+
+@licao q3c
+titulo: Formação de iões e propriedades dos elementos
+chave: iões catião anião metais não metais metais alcalinos alcalinoterrosos halogéneos gases nobres substância elementar reatividade propriedades
+ano: 10
+nivel: núcleo
+pre: q3b
+fonte: AE FQ A 10.º, Tabela Periódica
+#A
+- Prever a carga dos iões dos elementos dos grupos 1, 2, 16 e 17.
+- Relacionar a facilidade de formar iões com a energia de ionização.
+- Descrever propriedades dos metais alcalinos, alcalinoterrosos, halogéneos e gases nobres.
+- Distinguir elemento de substância elementar.
+#B
+Os átomos ficam mais estáveis com a configuração de um gás nobre.
+Os metais chegam lá perdendo eletrões; os não metais, ganhando.
+Os gases nobres já lá estão: quase não reagem.
+#C
+- Metais tendem a formar catiões (iões positivos).
+- Não metais tendem a formar aniões (iões negativos).
+- Grupo 1: X⁺; grupo 2: X²⁺; grupo 16: X²⁻; grupo 17: X⁻.
+- Elemento: tipo de átomo (mesmo Z).
+- Substância elementar: substância formada só por um elemento (Na, O₂, O₃).
+#D
+Os metais alcalinos (grupo 1) são moles e muito reativos.
+Reagem com a água: formam um hidróxido e hidrogénio.
+Exemplo: 2 Na + 2 H₂O → 2 NaOH + H₂.
+A reatividade aumenta ao descer o grupo (EI diminui).
+Os alcalinoterrosos (grupo 2) são menos reativos do que os alcalinos.
+Os halogéneos (grupo 17) formam moléculas diatómicas: F₂, Cl₂, Br₂, I₂.
+À temperatura ambiente: F₂ e Cl₂ gasosos, Br₂ líquido, I₂ sólido.
+A reatividade dos halogéneos diminui ao descer o grupo.
+Os gases nobres (grupo 18) existem como átomos isolados e são pouco reativos.
+O mesmo elemento pode formar substâncias diferentes: O₂ e O₃ (ozono).
+Os metais conduzem bem a corrente elétrica e o calor; os não metais, em geral, não.
+#E
+@F Carga dos iões (grupos 1, 2, 16, 17)|grupo 1: +1; grupo 2: +2; grupo 16: -2; grupo 17: -1|carga: eletrões perdidos (+) ou ganhos (-)|elementos representativos destes grupos|Mg²⁺ e S²⁻|c_fqel.conf
+#F
+Dados: magnésio (Z = 12) e cloro (Z = 17).
+Objetivo: prever os iões e a fórmula do composto.
+1. Mg: 1s² 2s² 2p⁶ 3s²; perde 2 eletrões: Mg²⁺ (como o néon).
+2. Cl: 1s² 2s² 2p⁶ 3s² 3p⁵; ganha 1 eletrão: Cl⁻ (como o árgon).
+3. Neutralidade: 1 × (+2) + 2 × (-1) = [[0]]
+> O composto é MgCl₂.
+Verificação: Mg²⁺ tem 12 - 2 = [[10]] eletrões, como o néon.
+#G
+A tendência para formar iões vem da energia de ionização e da configuração.
+Prever a carga dos iões permite escrever fórmulas de compostos iónicos.
+#H
+- Achar que os metais ganham eletrões.
+- Escrever Cl em vez de Cl₂ para o cloro gasoso.
+- Confundir o elemento oxigénio com a substância O₂.
+- Dizer que a reatividade dos halogéneos aumenta no grupo.
+#I
+- Metais: catiões; não metais: aniões.
+- Grupo 1: X⁺; 2: X²⁺; 16: X²⁻; 17: X⁻.
+- Alcalinos: reatividade aumenta no grupo.
+- Halogéneos: diatómicos; reatividade diminui no grupo.
+- Gases nobres: muito pouco reativos.
+#J
+Que ião forma o enxofre (grupo 16) e com quantos eletrões fica?
+#R
+Ganha 2 eletrões: S²⁻, com 16 + 2 = [[18]] eletrões (como o árgon).
+#V
+V = [2 - 2, 12 - 2, 16 + 2]
+
+@exemplo q3e1
+nivel: 1
+titulo: Posição de um elemento a partir de Z
+licao: q3a
+calc: c_fqel.conf
+#T
+Enunciado: indica o período, o grupo e o bloco do elemento com Z = 13.
+Dados: Z = 13.
+Método: escrever a configuração e ler o último nível.
+Resolução:
+1. 1s² 2s² 2p⁶ 3s² 3p¹ (2 + 2 + 6 + 2 + 1 = [[13]])
+2. Último nível n = 3: período 3.
+3. Valência: 3s² 3p¹, [[3]] eletrões, bloco p.
+4. Grupo: 3 + 10 = [[13]].
+Resultado: período 3, grupo 13, bloco p (alumínio).
+Erros a evitar: dizer grupo 3 (falta somar 10 no bloco p).
+#V
+V = [13, 3, 13]
+
+@exemplo q3e2
+nivel: 2
+titulo: Comparar raios atómicos
+licao: q3b
+#T
+Enunciado: ordena Na, Mg e K por raio atómico e compara K com Na.
+Dados (raio calculado): Na 190 pm, Mg 145 pm, K 243 pm.
+Método: usar as tendências e confirmar com os dados.
+Resolução:
+1. Na e Mg: mesmo período; Mg tem mais carga nuclear, logo é menor.
+2. Na e K: mesmo grupo; K tem mais um nível, logo é maior.
+3. Ordem: Mg < Na < K.
+4. K / Na = 243 / 190 = [[1,28]]
+Resultado: o raio do K é cerca de 1,28 vezes o do Na.
+Interpretação: os dados confirmam as tendências previstas.
+Erros a evitar: comparar só pelo número de eletrões.
+#V
+V = [243 / 190]
+
+@exemplo q3e3
+nivel: 3
+titulo: Fotão capaz de ionizar o sódio
+licao: q3b
+calc: c_fqel.fot
+#T
+Enunciado: qual o maior λ de um fotão que ioniza um átomo de sódio?
+Dados: EI(Na) = 496 kJ mol⁻¹; NA = 6,02 × 10²³ mol⁻¹; h = 6,63 × 10⁻³⁴ J s; c = 3,00 × 10⁸ m s⁻¹.
+Resolução:
+1. Por átomo: E = 496 × 10³ / 6,02 × 10²³ = [[8,24 × 10⁻¹⁹]] J
+2. λ = h c / E = 6,63 × 10⁻³⁴ × 3,00 × 10⁸ / 8,24 × 10⁻¹⁹ = [[2,41 × 10⁻⁷]] m
+Resultado: λ máximo de 241 nm (ultravioleta).
+Interpretação: a luz visível (400 a 700 nm) não ioniza o sódio.
+Erros a evitar: usar a energia por mole como energia de um fotão.
+#V
+e = 496e3 / NA
+V = [e, h * c / e]
+
+@exercicio q3x1
+tipo: m
+licao: q3a
+#T
+Quem ordenou os elementos pelo número atómico, como na tabela atual?
+#O
+Moseley
+Mendeleiev
+Döbereiner
+Newlands
+#S
+1
+#P
+Mendeleiev usou a massa atómica.
+#D
+Moseley (1913) mostrou que a ordem certa é a do número atómico.
+Mendeleiev (1869) tinha usado a massa atómica.
+#V
+S = 1
+
+@exercicio q3x2
+tipo: n
+licao: q3a
+#T
+Em que período está o elemento de configuração 1s² 2s² 2p⁶ 3s² 3p⁶ 4s²?
+#S
+4
+#P
+O período é o último nível ocupado.
+#D
+O último nível ocupado é n = [[4]] (4s²): período 4 (é o cálcio).
+#V
+S = 4
+V = [4]
+
+@exercicio q3x3
+tipo: m
+licao: q3a
+#T
+O elemento com configuração de valência 3s² 3p⁴ pertence ao:
+#O
+grupo 16, período 3
+grupo 6, período 3
+grupo 4, período 3
+grupo 16, período 4
+#S
+1
+#P
+Bloco p: grupo = eletrões de valência + 10.
+#D
+Valência: 2 + 4 = [[6]] eletrões no nível 3.
+Bloco p: grupo 6 + 10 = [[16]]; período 3 (é o enxofre).
+#V
+S = 1
+V = [6, 16]
+
+@exercicio q3x4
+tipo: v
+licao: q3b
+#T
+Ao longo de um período, o raio atómico aumenta.
+#S
+F
+#P
+Pensa na carga nuclear e no nível dos eletrões de valência.
+#D
+Falso. No período, a carga nuclear aumenta e o nível é o mesmo.
+Os eletrões são mais atraídos: o raio diminui.
+#V
+S = 'F'
+
+@exercicio q3x5
+tipo: m
+licao: q3b
+#T
+Qual dos elementos tem maior energia de ionização?
+#O
+Flúor
+Lítio
+Sódio
+Potássio
+#S
+1
+#P
+EI aumenta no período (→) e diminui no grupo (↓).
+#D
+O flúor está mais à direita e mais acima: tem a maior EI (1681 kJ mol⁻¹).
+#V
+S = 1
+
+@exercicio q3x6
+tipo: n
+licao: q3b
+modo: s3
+#T
+A EI do lítio é 520 kJ mol⁻¹. Qual é a energia para ionizar um átomo, em J?
+#S
+8,64e-19
+#P
+Multiplica por 1000 e divide por NA.
+#D
+E = 520 × 1000 / 6,02 × 10²³ = [[8,64 × 10⁻¹⁹]] J.
+#V
+S = 520e3 / NA
+V = [S]
+
+@exercicio q3x7
+tipo: m
+licao: q3c
+#T
+Que ião tende a formar o cálcio (grupo 2)?
+#O
+Ca²⁺
+Ca²⁻
+Ca⁺
+Ca⁻
+#S
+1
+#P
+Os metais do grupo 2 perdem os 2 eletrões de valência.
+#D
+O cálcio perde os 2 eletrões 4s e forma Ca²⁺ (configuração do árgon).
+#V
+S = 1
+
+@exercicio q3x8
+tipo: v
+licao: q3c
+#T
+A reatividade dos halogéneos aumenta ao descer o grupo 17.
+#S
+F
+#P
+Os halogéneos captam eletrões; isso é mais fácil em átomos pequenos.
+#D
+Falso. A reatividade dos halogéneos diminui no grupo: o flúor é o mais reativo.
+#V
+S = 'F'
+
+@exercicio q3x9
+tipo: m
+licao: q3c
+#T
+Qual é a fórmula do composto formado por alumínio (Al³⁺) e oxigénio (O²⁻)?
+#O
+Al₂O₃
+AlO
+Al₃O₂
+AlO₂
+#S
+1
+#P
+A soma das cargas tem de ser zero.
+#D
+2 × (+3) + 3 × (-2) = [[0]]: a fórmula é Al₂O₃.
+#V
+S = 1
+V = [2 * 3 + 3 * (-2)]

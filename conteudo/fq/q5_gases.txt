@@ -1,0 +1,558 @@
+@tema q5
+disc: F
+grupo: q
+titulo: Gases e dispersões
+calcs: c_fqso.gas c_fqso.con c_fqso.pes c_fqso.per c_fqso.dil c_fqat.mm c_fqat.fr
+
+@licao q5a
+titulo: Lei de Avogadro, volume molar e massa volúmica de gases
+chave: lei de avogadro volume molar ptn massa volúmica densidade gases condições normais de pressão e temperatura
+calc: c_fqso.gas
+ano: 10
+nivel: núcleo
+pre: q1d
+fonte: AE FQ A 10.º, Gases e dispersões
+#A
+- Enunciar a Lei de Avogadro.
+- Usar o volume molar de um gás em PTN.
+- Relacionar volume, quantidade de matéria e massa de um gás.
+- Calcular a massa volúmica de um gás em PTN.
+#B
+Num gás as moléculas estão muito afastadas umas das outras.
+O volume depende de quantas moléculas há, não do tipo de molécula.
+Dois balões iguais, um com hélio e outro com ar, nas mesmas condições, têm o mesmo número de moléculas.
+#C
+- Lei de Avogadro: volumes iguais de gases diferentes, à mesma pressão e temperatura, têm o mesmo número de partículas.
+- Volume molar, Vm: volume de 1 mol de gás.
+- PTN: 0 °C e 1 atm; Vm = 22,4 dm³ mol⁻¹.
+- V = n × Vm.
+- Massa volúmica: ρ = m / V; para um gás em PTN, ρ = M / Vm.
+#D
+O volume molar depende da pressão e da temperatura, não do gás.
+A 25 °C e 1 atm, Vm é cerca de 24,5 dm³ mol⁻¹.
+Em PTN, 1 mol de O₂, de N₂ ou de CO₂ ocupa 22,4 dm³.
+A massa volúmica de um gás é proporcional à sua massa molar.
+Exemplo: ρ(CO₂) = 44,01 / 22,4 = 1,96 g dm⁻³ em PTN.
+O ar seco tem ρ ≈ 1,29 g dm⁻³ em PTN (M ≈ 28,97 g mol⁻¹).
+Gases com M maior do que a do ar acumulam-se em baixo (CO₂).
+Gases com M menor sobem (He, H₂).
+Os volumes de gases na mesma pressão e temperatura somam-se como as quantidades.
+#E
+@F Volume de um gás|V = n × Vm|V: volume (dm³);n: quantidade (mol);Vm: 22,4 dm³ mol⁻¹ em PTN|gases em PTN|0,50 mol: V = 11,2 dm³|c_fqso.gas
+@F Massa volúmica de um gás|ρ = M / Vm|ρ: massa volúmica (g dm⁻³);M: massa molar (g mol⁻¹);Vm: volume molar (dm³ mol⁻¹)|gás nas condições de Vm|O₂ em PTN: 32,00 / 22,4 = 1,43 g dm⁻³|c_fqso.gas
+#F
+Dados: 8,80 g de CO₂ em PTN; M(CO₂) = 44,01 g mol⁻¹.
+Objetivo: volume e massa volúmica.
+1. n = 8,80 / 44,01 = [[0,200]] mol
+2. V = 0,200 × 22,4 = [[4,48]] dm³
+3. ρ = 44,01 / 22,4 = [[1,96]] g dm⁻³
+> V = 4,48 dm³; ρ = 1,96 g dm⁻³.
+Verificação: ρ = m / V = 8,80 / 4,48 = [[1,96]] g dm⁻³.
+#G
+A Lei de Avogadro permite contar moléculas de gás medindo volumes.
+É por isso que o CO₂, mais denso do que o ar, se acumula em caves e poços.
+#H
+- Usar 22,4 dm³ mol⁻¹ fora das condições PTN.
+- Usar Vm para líquidos ou sólidos.
+- Esquecer de passar a massa a mol antes de usar Vm.
+- Confundir massa volúmica (g dm⁻³) com massa molar (g mol⁻¹).
+#I
+- Avogadro: mesmos P e T, mesmo V, mesmo n.º de partículas.
+- PTN: Vm = 22,4 dm³ mol⁻¹.
+- V = n × Vm; ρ = M / Vm.
+- Gases mais pesados que o ar: M > 29 g mol⁻¹.
+#J
+Que volume ocupam 3,2 g de O₂ em PTN? (M = 32,00 g mol⁻¹)
+#R
+n = 3,2 / 32,00 = [[0,10]] mol; V = 0,10 × 22,4 = [[2,2]] dm³.
+#V
+n = 8.80 / 44.01
+n2 = 3.2 / 32.00
+V = [n, n * 22.4, 44.01 / 22.4, 8.80 / (n * 22.4), n2, n2 * 22.4]
+
+@licao q5b
+titulo: Composição da troposfera e poluentes
+chave: troposfera atmosfera composição do ar azoto oxigénio árgon dióxido de carbono poluentes monóxido de carbono óxidos de azoto dióxido de enxofre ozono partículas
+ano: 10
+nivel: núcleo
+pre: q5a
+fonte: AE FQ A 10.º, Gases e dispersões
+#A
+- Indicar a composição aproximada do ar seco.
+- Exprimir a composição em percentagem e em ppm.
+- Identificar os principais poluentes e as suas origens.
+- Relacionar poluentes com efeitos no ambiente e na saúde.
+#B
+O ar é uma mistura de gases que respiramos sem pensar.
+Quase 4 em cada 5 moléculas são de azoto.
+Alguns gases, mesmo em quantidades mínimas, fazem mal: são os poluentes.
+#C
+- Troposfera: camada da atmosfera junto à superfície (até cerca de 12 km).
+- Ar seco (em volume): N₂ 78 %, O₂ 21 %, Ar 0,9 %, CO₂ cerca de 0,04 %.
+- Para gases, % em volume = fração molar × 100.
+- Poluente: substância que, numa certa concentração, faz mal aos seres vivos ou ao ambiente.
+- ppm: partes por milhão (1 ppm = 10⁻⁴ %).
+#D
+O vapor de água varia muito de lugar para lugar; por isso fala-se de ar seco.
+O CO₂ anda pelos 420 ppm (dados de 2023 e 2024) e está a aumentar.
+Principais poluentes e origens:
+- CO: combustões incompletas (motores, lareiras);
+- NO e NO₂ (NOₓ): motores a altas temperaturas;
+- SO₂: queima de combustíveis com enxofre, vulcões;
+- O₃ troposférico: forma-se a partir de NOₓ com luz solar;
+- partículas finas (PM10, PM2,5): fumos e poeiras.
+Efeitos: problemas respiratórios, chuvas ácidas (SO₂, NOₓ) e smog.
+O CO é perigoso porque se liga à hemoglobina do sangue.
+O ozono é bom na estratosfera (filtra UV) e mau na troposfera.
+#E
+@F ppm e percentagem|ppm = fração × 10⁶; % = fração × 100|fração: em volume (gases) ou em massa|1 % = 10 000 ppm|CO₂ a 420 ppm = 0,042 %|c_fqso.per
+#F
+Dados: o ar seco tem 0,93 % de árgon em volume.
+Objetivo: fração molar, ppm e volume de árgon em 50,0 dm³ de ar.
+1. x(Ar) = 0,93 / 100 = [[0,0093]]
+2. Em ppm: 0,0093 × 10⁶ = [[9300]] ppm
+3. V(Ar) = 0,0093 × 50,0 = [[0,465]] dm³ ≈ 0,47 dm³
+> x = 0,0093 (9300 ppm); 0,47 dm³ de árgon.
+Verificação: 0,465 / 50,0 × 100 = [[0,93]] %.
+#G
+Pequenas percentagens podem ser importantes: o CO₂ é só 0,04 % do ar, mas tem grande efeito no clima.
+Medir em ppm torna os números pequenos mais fáceis de ler.
+#H
+- Achar que o oxigénio é o gás mais abundante: é o azoto.
+- Confundir ppm com percentagem (1 % = 10 000 ppm).
+- Pensar que o ozono é sempre bom.
+- Esquecer que a composição é do ar seco.
+#I
+- Ar seco: N₂ 78 %, O₂ 21 %, Ar 0,9 %, CO₂ 0,04 %.
+- Gases: % em volume = fração molar × 100.
+- 1 ppm = 10⁻⁴ %.
+- Poluentes: CO, NOₓ, SO₂, O₃, partículas.
+- Chuva ácida: SO₂ e NOₓ.
+#J
+Exprime 0,042 % de CO₂ em ppm.
+#R
+0,042 % = 0,00042 = [[420]] ppm.
+#V
+x = 0.93 / 100
+V = [x, x * 1e6, x * 50.0, 0.465 / 50.0 * 100, 0.042 / 100 * 1e6]
+
+@licao q5c
+titulo: Soluções, coloides e suspensões
+chave: dispersões soluções coloides suspensões efeito de tyndall soluto solvente tamanho das partículas mistura homogénea heterogénea
+ano: 10
+nivel: núcleo
+fonte: AE FQ A 10.º, Gases e dispersões
+#A
+- Distinguir soluções, coloides e suspensões.
+- Relacionar cada tipo com o tamanho das partículas dispersas.
+- Descrever o efeito de Tyndall.
+- Dar exemplos do dia a dia.
+#B
+Mistura sal em água: desaparece. Mistura areia: vai ao fundo.
+O leite fica entre os dois: não assenta, mas também não é transparente.
+O tamanho das partículas faz a diferença.
+#C
+- Dispersão: mistura de uma substância (disperso) noutra (dispersante).
+- Solução: partículas menores do que 1 nm; homogénea; não sedimenta.
+- Coloide: partículas entre 1 nm e 1000 nm; parece homogéneo; dispersa a luz.
+- Suspensão: partículas maiores do que 1000 nm; heterogénea; sedimenta.
+- Efeito de Tyndall: dispersão de um feixe de luz por um coloide.
+#D
+Numa solução, o soluto está disperso no solvente (em geral, o que existe em maior quantidade).
+Exemplos de soluções: água salgada, ar, latão (solução sólida).
+Exemplos de coloides: leite, maionese, nevoeiro, gelatina, sangue.
+Exemplos de suspensões: água com areia, sumo com polpa.
+Um feixe de laser atravessa uma solução sem se ver.
+Num coloide, o feixe vê-se: é o efeito de Tyndall.
+As suspensões separam-se por decantação ou filtração.
+As soluções não se separam por filtração.
+#E
+@F Tamanho das partículas|solução < 1 nm < coloide < 1000 nm < suspensão|nm: nanómetro (10⁻⁹ m)|limites aproximados|o leite é um coloide|
+#F
+Dados: três misturas: A (passa o filtro, feixe invisível); B (passa o filtro, feixe visível); C (fica no filtro).
+Objetivo: classificar.
+1. A: solução (partículas < 1 nm).
+2. B: coloide (efeito de Tyndall).
+3. C: suspensão (partículas > 1000 nm).
+> A solução, B coloide, C suspensão.
+Verificação: 1000 nm = [[1,0 × 10⁻⁶]] m (1 µm).
+#G
+O efeito de Tyndall explica os raios de sol visíveis num nevoeiro ou numa sala com pó.
+Muitos alimentos e medicamentos são coloides.
+#H
+- Achar que todas as misturas homogéneas à vista são soluções.
+- Dizer que um coloide sedimenta com o tempo.
+- Confundir soluto (disperso) com solvente.
+- Esquecer as soluções sólidas e gasosas.
+#I
+- Solução < 1 nm; coloide 1 a 1000 nm; suspensão > 1000 nm.
+- Coloide: efeito de Tyndall.
+- Suspensão: sedimenta e filtra-se.
+- Soluções podem ser sólidas, líquidas ou gasosas.
+#J
+O nevoeiro dispersa a luz dos faróis. Que tipo de dispersão é?
+#R
+É um coloide (gotículas de 1 a 1000 nm no ar): o efeito de Tyndall mostra-o.
+#V
+V = [1000e-9]
+
+@licao q5d
+titulo: Composição quantitativa de soluções
+chave: concentração concentração mássica percentagem em massa percentagem em volume ppm fração molar soluto solvente solução mol dm3
+calc: c_fqso.con
+ano: 10
+nivel: núcleo
+pre: q5c
+fonte: AE FQ A 10.º, Gases e dispersões
+#A
+- Calcular a concentração (mol dm⁻³) de uma solução.
+- Calcular a concentração mássica (g dm⁻³).
+- Calcular percentagens em massa e em volume e ppm.
+- Relacionar concentração e concentração mássica.
+- Calcular a massa de soluto a pesar para preparar uma solução.
+#B
+Uma colher de açúcar num copo ou num jarro: o sabor muda.
+A concentração diz quanto soluto há em cada litro de solução.
+Pode contar-se em moles, em gramas ou em percentagem.
+#C
+- Concentração: c = n / V (mol dm⁻³), V é o volume da solução.
+- Concentração mássica: cₘ = m / V (g dm⁻³).
+- % (m/m) = m soluto / m solução × 100.
+- % (V/V) = V soluto / V solução × 100.
+- ppm = m soluto / m solução × 10⁶ (1 ppm = 1 mg kg⁻¹).
+- cₘ = c × M.
+#D
+O V é sempre o volume da solução, não o do solvente.
+Passa os volumes a dm³: 250 mL = 0,250 dm³.
+Para preparar uma solução de concentração conhecida:
+1. calcula n = c × V;
+2. calcula m = n × M;
+3. pesa o soluto, dissolve-o e completa o balão volumétrico.
+Exemplo: 250 mL de NaCl 0,100 mol dm⁻³: n = 0,0250 mol e m = 1,46 g.
+As percentagens comparam a mesma grandeza: massa com massa, volume com volume.
+O ppm usa-se para concentrações muito pequenas, como poluentes na água.
+#E
+@F Concentração|c = n / V|c: concentração (mol dm⁻³);n: quantidade de soluto (mol);V: volume da solução (dm³)|soluções|0,10 mol em 0,500 dm³: c = 0,20 mol dm⁻³|c_fqso.con
+@F Concentração mássica|cₘ = m / V|cₘ: concentração mássica (g dm⁻³);m: massa de soluto (g);V: volume da solução (dm³)|soluções|5,0 g em 0,250 dm³: cₘ = 20 g dm⁻³|c_fqso.con
+@F Percentagem em massa|% (m/m) = m soluto / m solução × 100|m: massas na mesma unidade|massa da solução = soluto + solvente|20 g em 200 g: 10 %|c_fqso.per
+#F
+Dados: 2,92 g de NaCl em 500 mL de solução; M(NaCl) = 58,44 g mol⁻¹.
+Objetivo: concentração e concentração mássica.
+1. n = 2,92 / 58,44 = [[0,0500]] mol
+2. V = 500 mL = 0,500 dm³
+3. c = 0,0500 / 0,500 = [[0,100]] mol dm⁻³
+4. cₘ = 2,92 / 0,500 = [[5,84]] g dm⁻³
+> c = 0,100 mol dm⁻³; cₘ = 5,84 g dm⁻³.
+Verificação: cₘ = c × M = 0,100 × 58,44 = [[5,84]] g dm⁻³.
+#G
+A concentração permite medir quantidades de soluto com uma pipeta em vez de uma balança.
+Rótulos de bebidas usam % (V/V) para o álcool.
+#H
+- Usar o volume do solvente em vez do volume da solução.
+- Esquecer de passar mL para dm³.
+- Somar só a massa do soluto na massa da solução.
+- Confundir c (mol dm⁻³) com cₘ (g dm⁻³).
+#I
+- c = n / V; cₘ = m / V; cₘ = c × M.
+- % (m/m), % (V/V) e ppm: mesma grandeza em cima e em baixo.
+- V da solução em dm³.
+- Preparar: n = c V, m = n M.
+#J
+Que massa de glicose (M = 180,2 g mol⁻¹) é preciso para 100 mL de solução 0,200 mol dm⁻³?
+#R
+n = 0,200 × 0,100 = [[0,0200]] mol; m = 0,0200 × 180,2 = [[3,60]] g.
+#V
+n = 2.92 / 58.44
+V = [n, n / 0.500, 2.92 / 0.500, 0.100 * 58.44, 0.200 * 0.100, 0.0200 * 180.2]
+
+@licao q5e
+titulo: Diluição de soluções
+chave: diluição fator de diluição solução mãe solução diluída pipeta balão volumétrico ci vi cf vf
+calc: c_fqso.dil
+ano: 10
+nivel: núcleo
+pre: q5d
+fonte: AE FQ A 10.º, Gases e dispersões
+#A
+- Explicar o que é diluir uma solução.
+- Usar ci × Vi = cf × Vf.
+- Calcular o fator de diluição.
+- Descrever como preparar uma solução diluída.
+#B
+Juntar água a um sumo concentrado não muda a quantidade de sumo, só o volume.
+Na diluição a quantidade de soluto fica igual; a concentração diminui.
+#C
+- Diluir: juntar solvente; a quantidade de soluto não muda.
+- ni = nf, logo ci × Vi = cf × Vf.
+- Fator de diluição: f = Vf / Vi = ci / cf.
+- f é maior do que 1 e não tem unidades.
+#D
+Exemplo: de uma solução 0,500 mol dm⁻³ preparar 100 mL de 0,100 mol dm⁻³.
+Vi = cf × Vf / ci = 0,100 × 100 / 0,500 = 20,0 mL.
+f = 100 / 20,0 = 5,00: a solução fica 5 vezes mais diluída.
+Procedimento:
+1. medir Vi com uma pipeta volumétrica;
+2. passar para um balão volumétrico de volume Vf;
+3. completar com água até ao traço e homogeneizar.
+Os dois volumes podem estar em mL, desde que na mesma unidade.
+Quanto maior o fator de diluição, menor a concentração final.
+#E
+@F Diluição|ci × Vi = cf × Vf|ci, cf: concentração inicial e final;Vi, Vf: volumes inicial e final (mesma unidade)|a quantidade de soluto não muda|0,500 × 20,0 = 0,100 × 100|c_fqso.dil
+@F Fator de diluição|f = Vf / Vi = ci / cf|f: fator de diluição (sem unidades)|f > 1|Vi = 10 mL, Vf = 50 mL: f = 5|c_fqso.dil
+#F
+Dados: solução de HCl 1,00 mol dm⁻³; pretendem-se 250 mL de 0,0400 mol dm⁻³.
+Objetivo: volume a medir e fator de diluição.
+1. Vi = cf × Vf / ci = 0,0400 × 250 / 1,00 = [[10,0]] mL
+2. f = Vf / Vi = 250 / 10,0 = [[25,0]]
+> Medem-se 10,0 mL e dilui-se até 250 mL (f = 25,0).
+Verificação: ci / cf = 1,00 / 0,0400 = [[25,0]].
+#G
+As diluições permitem preparar várias soluções a partir de uma só (solução mãe).
+São rigorosas porque usam pipetas e balões volumétricos.
+#H
+- Achar que a quantidade de soluto muda ao diluir.
+- Usar Vf como volume de água a juntar (é o volume final).
+- Misturar mL com dm³ na mesma fórmula.
+- Obter f < 1 (trocar os volumes).
+#I
+- Diluir: n de soluto constante.
+- ci Vi = cf Vf.
+- f = Vf / Vi = ci / cf > 1.
+- Pipeta para Vi; balão volumétrico para Vf.
+#J
+Diluíram-se 5,0 mL de uma solução até 100,0 mL. Qual é o fator de diluição?
+#R
+f = 100,0 / 5,0 = [[20]].
+#V
+vi = 0.0400 * 250 / 1.00
+V = [vi, 250 / vi, 1.00 / 0.0400, 100.0 / 5.0]
+
+@exemplo q5e1
+nivel: 1
+titulo: Volume de um gás em PTN
+licao: q5a
+calc: c_fqso.gas
+#T
+Enunciado: que volume ocupam 0,35 mol de N₂ em PTN?
+Dados: n = 0,35 mol; Vm = 22,4 dm³ mol⁻¹.
+Método: V = n × Vm.
+Resolução:
+1. V = 0,35 × 22,4 = [[7,8]] dm³
+Resultado: 7,8 dm³ (2 alg. sig., como n).
+Interpretação: o mesmo volume valia para qualquer gás em PTN.
+Erros a evitar: dar 7,84 dm³ (algarismos a mais).
+#V
+V = [0.35 * 22.4]
+
+@exemplo q5e2
+nivel: 2
+titulo: Preparar uma solução por diluição
+licao: q5e
+calc: c_fqso.dil
+#T
+Enunciado: tens uma solução 2,00 mol dm⁻³. Prepara 500 mL de 0,250 mol dm⁻³.
+Dados: ci = 2,00; cf = 0,250 mol dm⁻³; Vf = 500 mL.
+Método: ci Vi = cf Vf.
+Resolução:
+1. Vi = 0,250 × 500 / 2,00 = [[62,5]] mL
+2. f = 500 / 62,5 = [[8,00]]
+Resultado: medir 62,5 mL e completar até 500 mL.
+Interpretação: a solução final é 8 vezes mais diluída.
+Erros a evitar: juntar 500 mL de água (o volume final ficaria maior).
+#V
+vi = 0.250 * 500 / 2.00
+V = [vi, 500 / vi]
+
+@exemplo q5e3
+nivel: 3
+titulo: Concentração e percentagem de uma solução de açúcar
+licao: q5d
+calc: c_fqso.con
+#T
+Enunciado: dissolvem-se 34,2 g de sacarose (M = 342,3 g mol⁻¹) em água até 200 mL.
+A solução tem massa volúmica 1,05 g cm⁻³.
+Objetivo: concentração e % em massa.
+Resolução:
+1. n = 34,2 / 342,3 = [[0,0999]] mol
+2. c = 0,0999 / 0,200 = [[0,500]] mol dm⁻³
+3. Massa da solução: 1,05 × 200 = [[210]] g
+4. % (m/m) = 34,2 / 210 × 100 = [[16,3]] %
+Resultado: c = 0,500 mol dm⁻³ e 16,3 % em massa.
+Interpretação: a massa da solução inclui o soluto e o solvente.
+Erros a evitar: usar 200 g como massa da solução.
+#V
+n = 34.2 / 342.3
+V = [n, n / 0.200, 1.05 * 200, 34.2 / 210 * 100]
+
+@exercicio q5x1
+tipo: n
+licao: q5a
+modo: s3
+#T
+Que volume ocupam 2,50 mol de um gás em PTN, em dm³?
+#S
+56,0
+#P
+V = n × Vm.
+#D
+V = 2,50 × 22,4 = [[56,0]] dm³.
+#V
+S = 2.50 * 22.4
+V = [S]
+
+@exercicio q5x2
+tipo: m
+licao: q5a
+#T
+Qual dos gases é mais denso do que o ar em PTN?
+#O
+CO₂ (M = 44,01 g mol⁻¹)
+He (M = 4,00 g mol⁻¹)
+H₂ (M = 2,02 g mol⁻¹)
+CH₄ (M = 16,05 g mol⁻¹)
+#S
+1
+#P
+ρ = M / Vm: compara M com a do ar (cerca de 29 g mol⁻¹).
+#D
+Só o CO₂ tem M maior do que a do ar: ρ = 44,01 / 22,4 = [[1,96]] g dm⁻³ (ar: 1,29).
+#V
+S = 1
+V = [44.01 / 22.4]
+
+@exercicio q5x3
+tipo: v
+licao: q5b
+#T
+O gás mais abundante no ar seco é o oxigénio.
+#S
+F
+#P
+78 % do ar seco é...
+#D
+Falso: o azoto (N₂) é cerca de 78 % do ar seco; o oxigénio cerca de 21 %.
+#V
+S = 'F'
+
+@exercicio q5x4
+tipo: m
+licao: q5b
+#T
+Qual dos poluentes contribui para as chuvas ácidas?
+#O
+SO₂
+CO
+O₃ estratosférico
+Ar (árgon)
+#S
+1
+#P
+Óxidos de enxofre e de azoto formam ácidos com a água.
+#D
+O SO₂ (e os NOₓ) reagem com a água da atmosfera e formam ácidos.
+#V
+S = 1
+
+@exercicio q5x5
+tipo: m
+licao: q5c
+#T
+Uma mistura dispersa um feixe de laser e não sedimenta. É:
+#O
+um coloide
+uma solução
+uma suspensão
+uma substância pura
+#S
+1
+#P
+Efeito de Tyndall.
+#D
+Dispersar a luz sem sedimentar é próprio de um coloide (efeito de Tyndall).
+#V
+S = 1
+
+@exercicio q5x6
+tipo: n
+licao: q5d
+modo: s3
+#T
+Dissolvem-se 0,200 mol de soluto até 0,400 dm³ de solução.
+Qual é a concentração, em mol dm⁻³?
+#S
+0,500
+#P
+c = n / V.
+#D
+c = 0,200 / 0,400 = [[0,500]] mol dm⁻³.
+#V
+S = 0.200 / 0.400
+V = [S]
+
+@exercicio q5x7
+tipo: u
+licao: q5d
+modo: s3
+unidades: g mg kg
+#T
+Que massa de NaOH (M = 40,00 g mol⁻¹) é preciso para 250 mL de solução 0,100 mol dm⁻³?
+#S
+1,00
+#P
+n = c × V; m = n × M.
+#D
+n = 0,100 × 0,250 = [[0,0250]] mol; m = 0,0250 × 40,00 = [[1,00]] g.
+#V
+S = 0.100 * 0.250 * 40.00
+V = [0.100 * 0.250, S]
+
+@exercicio q5x8
+tipo: n
+licao: q5e
+modo: s3
+#T
+Que volume, em mL, de solução 1,00 mol dm⁻³ se usa para preparar 200 mL de 0,0500 mol dm⁻³?
+#S
+10,0
+#P
+ci Vi = cf Vf.
+#D
+Vi = 0,0500 × 200 / 1,00 = [[10,0]] mL.
+#V
+S = 0.0500 * 200 / 1.00
+V = [S]
+
+@exercicio q5x9
+tipo: m
+licao: q5e
+#T
+Diluiu-se uma solução com fator de diluição 4. A concentração final é:
+#O
+1/4 da inicial
+4 vezes a inicial
+igual à inicial
+1/2 da inicial
+#S
+1
+#P
+f = ci / cf.
+#D
+f = ci / cf = 4, logo cf = ci / 4.
+#V
+S = 1
+
+@exercicio q5x10
+tipo: n
+licao: q5d
+modo: s2
+#T
+Uma água tem 0,050 g de nitratos em 1,0 kg. Qual é a concentração em ppm?
+#S
+50
+#P
+ppm = m soluto / m solução × 10⁶ (mesma unidade).
+#D
+0,050 g / 1000 g × 10⁶ = [[50]] ppm (50 mg por kg).
+#V
+S = 0.050 / 1000 * 1e6
+V = [S]

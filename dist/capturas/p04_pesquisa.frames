@@ -1294,12 +1294,12 @@ T	4	115	0,51,153	F
 T	18	115	0,0,0	Massa atómica relativa média
 T	4	132	0,51,153	C
 T	18	132	0,0,0	Massa atómica relativa média
-T	4	149	0,51,153	F
-T	18	149	0,0,0	Massa molar
-T	4	166	0,51,153	C
+T	4	149	0,51,153	C
+T	18	149	0,0,0	Massa de soluto a pesar
+T	4	166	0,51,153	F
 T	18	166	0,0,0	Massa molar
-T	4	183	0,51,153	F
-T	18	183	0,0,0	Massa molecular relativa
+T	4	183	0,51,153	C
+T	18	183	0,0,0	Massa molar
 R	314	34	3	153	232,232,232
 R	314	34	3	22	100,100,100
 R	0	187	318	25	232,232,232
@@ -1308,7 +1308,7 @@ F	16
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	298	13	255,255,255	41
+T	249	13	255,255,255	60 (máx.)
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	ma
 R	32	19	1	13	0,0,0
@@ -1325,21 +1325,21 @@ T	4	115	0,51,153	F
 T	18	115	0,0,0	Massa atómica relativa média
 T	4	132	0,51,153	C
 T	18	132	0,0,0	Massa atómica relativa média
-T	4	149	0,51,153	F
-T	18	149	0,0,0	Massa molar
-T	4	166	0,51,153	C
+T	4	149	0,51,153	C
+T	18	149	0,0,0	Massa de soluto a pesar
+T	4	166	0,51,153	F
 T	18	166	0,0,0	Massa molar
-T	4	183	0,51,153	F
-T	18	183	0,0,0	Massa molecular relativa
+T	4	183	0,51,153	C
+T	18	183	0,0,0	Massa molar
 R	314	34	3	153	232,232,232
-R	314	34	3	33	100,100,100
+R	314	34	3	22	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	17
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	298	13	255,255,255	22
+T	298	13	255,255,255	32
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	mas
 R	39	19	1	13	0,0,0
@@ -1352,25 +1352,25 @@ T	4	81	0,51,153	F
 T	18	81	0,0,0	Massa atómica relativa média
 T	4	98	0,51,153	C
 T	18	98	0,0,0	Massa atómica relativa média
-T	4	115	0,51,153	F
-T	18	115	0,0,0	Massa molar
-T	4	132	0,51,153	C
+T	4	115	0,51,153	C
+T	18	115	0,0,0	Massa de soluto a pesar
+T	4	132	0,51,153	F
 T	18	132	0,0,0	Massa molar
-T	4	149	0,51,153	F
-T	18	149	0,0,0	Massa molecular relativa
-T	4	166	0,51,153	K
-T	18	166	0,0,0	Massa volúmica da água (4 °C)
-T	4	183	0,51,153	X
-T	18	183	0,0,0	Calcula a massa de 0,250 mol de cloreto 
+T	4	149	0,51,153	C
+T	18	149	0,0,0	Massa molar
+T	4	166	0,51,153	F
+T	18	166	0,0,0	Massa molecular relativa
+T	4	183	0,51,153	K
+T	18	183	0,0,0	Massa volúmica da água (4 °C)
 R	314	34	3	153	232,232,232
-R	314	34	3	62	100,100,100
+R	314	34	3	43	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	18
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	298	13	255,255,255	22
+T	298	13	255,255,255	32
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	mass
 R	46	19	1	13	0,0,0
@@ -1383,25 +1383,25 @@ T	4	81	0,51,153	F
 T	18	81	0,0,0	Massa atómica relativa média
 T	4	98	0,51,153	C
 T	18	98	0,0,0	Massa atómica relativa média
-T	4	115	0,51,153	F
-T	18	115	0,0,0	Massa molar
-T	4	132	0,51,153	C
+T	4	115	0,51,153	C
+T	18	115	0,0,0	Massa de soluto a pesar
+T	4	132	0,51,153	F
 T	18	132	0,0,0	Massa molar
-T	4	149	0,51,153	F
-T	18	149	0,0,0	Massa molecular relativa
-T	4	166	0,51,153	K
-T	18	166	0,0,0	Massa volúmica da água (4 °C)
-T	4	183	0,51,153	X
-T	18	183	0,0,0	Calcula a massa de 0,250 mol de cloreto 
+T	4	149	0,51,153	C
+T	18	149	0,0,0	Massa molar
+T	4	166	0,51,153	F
+T	18	166	0,0,0	Massa molecular relativa
+T	4	183	0,51,153	K
+T	18	183	0,0,0	Massa volúmica da água (4 °C)
 R	314	34	3	153	232,232,232
-R	314	34	3	62	100,100,100
+R	314	34	3	43	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	19
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	298	13	255,255,255	17
+T	298	13	255,255,255	25
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa
 R	53	19	1	13	0,0,0
@@ -1414,25 +1414,25 @@ T	4	81	0,51,153	F
 T	18	81	0,0,0	Massa atómica relativa média
 T	4	98	0,51,153	C
 T	18	98	0,0,0	Massa atómica relativa média
-T	4	115	0,51,153	F
-T	18	115	0,0,0	Massa molar
-T	4	132	0,51,153	C
+T	4	115	0,51,153	C
+T	18	115	0,0,0	Massa de soluto a pesar
+T	4	132	0,51,153	F
 T	18	132	0,0,0	Massa molar
-T	4	149	0,51,153	F
-T	18	149	0,0,0	Massa molecular relativa
-T	4	166	0,51,153	K
-T	18	166	0,0,0	Massa volúmica da água (4 °C)
-T	4	183	0,51,153	X
-T	18	183	0,0,0	Calcula a massa de 0,250 mol de cloreto 
+T	4	149	0,51,153	C
+T	18	149	0,0,0	Massa molar
+T	4	166	0,51,153	F
+T	18	166	0,0,0	Massa molecular relativa
+T	4	183	0,51,153	K
+T	18	183	0,0,0	Massa volúmica da água (4 °C)
 R	314	34	3	153	232,232,232
-R	314	34	3	81	100,100,100
+R	314	34	3	55	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	20
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	298	13	255,255,255	17
+T	298	13	255,255,255	25
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa 
 R	60	19	1	13	0,0,0
@@ -1445,25 +1445,25 @@ T	4	81	0,51,153	F
 T	18	81	0,0,0	Massa atómica relativa média
 T	4	98	0,51,153	C
 T	18	98	0,0,0	Massa atómica relativa média
-T	4	115	0,51,153	F
-T	18	115	0,0,0	Massa molar
-T	4	132	0,51,153	C
+T	4	115	0,51,153	C
+T	18	115	0,0,0	Massa de soluto a pesar
+T	4	132	0,51,153	F
 T	18	132	0,0,0	Massa molar
-T	4	149	0,51,153	F
-T	18	149	0,0,0	Massa molecular relativa
-T	4	166	0,51,153	K
-T	18	166	0,0,0	Massa volúmica da água (4 °C)
-T	4	183	0,51,153	X
-T	18	183	0,0,0	Calcula a massa de 0,250 mol de cloreto 
+T	4	149	0,51,153	C
+T	18	149	0,0,0	Massa molar
+T	4	166	0,51,153	F
+T	18	166	0,0,0	Massa molecular relativa
+T	4	183	0,51,153	K
+T	18	183	0,0,0	Massa volúmica da água (4 °C)
 R	314	34	3	153	232,232,232
-R	314	34	3	81	100,100,100
+R	314	34	3	55	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	21
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	305	13	255,255,255	6
+T	305	13	255,255,255	8
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa m
 R	67	19	1	13	0,0,0
@@ -1477,16 +1477,20 @@ T	18	81	0,0,0	Massa molecular relativa
 T	4	98	0,51,153	L
 T	18	98	0,0,0	Quantidade de matéria e massa molar
 T	4	115	0,51,153	L
-T	18	115	0,0,0	Fração molar e fração mássica
-T	4	132	0,51,153	C
-T	18	132	0,0,0	Quantidade de matéria
+T	18	115	0,0,0	Composição quantitativa de soluções
+T	4	132	0,51,153	L
+T	18	132	0,0,0	Fração molar e fração mássica
+T	4	149	0,51,153	C
+T	18	149	0,0,0	Gases (PTN)
+T	4	166	0,51,153	C
+T	18	166	0,0,0	Quantidade de matéria
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	22
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	305	13	255,255,255	5
+T	305	13	255,255,255	6
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa mo
 R	74	19	1	13	0,0,0
@@ -1500,14 +1504,16 @@ T	18	81	0,0,0	Massa molecular relativa
 T	4	98	0,51,153	L
 T	18	98	0,0,0	Quantidade de matéria e massa molar
 T	4	115	0,51,153	C
-T	18	115	0,0,0	Quantidade de matéria
+T	18	115	0,0,0	Gases (PTN)
+T	4	132	0,51,153	C
+T	18	132	0,0,0	Quantidade de matéria
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	23
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	305	13	255,255,255	5
+T	305	13	255,255,255	6
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa mol
 R	81	19	1	13	0,0,0
@@ -1521,14 +1527,16 @@ T	18	81	0,0,0	Massa molecular relativa
 T	4	98	0,51,153	L
 T	18	98	0,0,0	Quantidade de matéria e massa molar
 T	4	115	0,51,153	C
-T	18	115	0,0,0	Quantidade de matéria
+T	18	115	0,0,0	Gases (PTN)
+T	4	132	0,51,153	C
+T	18	132	0,0,0	Quantidade de matéria
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	24
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	305	13	255,255,255	3
+T	305	13	255,255,255	4
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa mola
 R	88	19	1	13	0,0,0
@@ -1539,13 +1547,15 @@ T	4	64	0,51,153	C
 T	18	64	0,0,0	Massa molar
 T	4	81	0,51,153	L
 T	18	81	0,0,0	Quantidade de matéria e massa molar
+T	4	98	0,51,153	C
+T	18	98	0,0,0	Gases (PTN)
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	25
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	305	13	255,255,255	3
+T	305	13	255,255,255	4
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa molar
 R	95	19	1	13	0,0,0
@@ -1556,6 +1566,8 @@ T	4	64	0,51,153	C
 T	18	64	0,0,0	Massa molar
 T	4	81	0,51,153	L
 T	18	81	0,0,0	Quantidade de matéria e massa molar
+T	4	98	0,51,153	C
+T	18	98	0,0,0	Gases (PTN)
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	26
@@ -1577,7 +1589,7 @@ F	27
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	305	13	255,255,255	3
+T	305	13	255,255,255	4
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa molar
 R	95	19	1	13	0,0,0
@@ -1588,13 +1600,15 @@ T	4	64	0,51,153	C
 T	18	64	0,0,0	Massa molar
 T	4	81	0,51,153	L
 T	18	81	0,0,0	Quantidade de matéria e massa molar
+T	4	98	0,51,153	C
+T	18	98	0,0,0	Gases (PTN)
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	28
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · FQ
-T	305	13	255,255,255	3
+T	305	13	255,255,255	4
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa molar
 R	95	19	1	13	0,0,0
@@ -1605,6 +1619,8 @@ T	4	64	0,51,153	C
 T	18	64	0,0,0	Massa molar
 T	4	81	0,51,153	L
 T	18	81	0,0,0	Quantidade de matéria e massa molar
+T	4	98	0,51,153	C
+T	18	98	0,0,0	Gases (PTN)
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	29

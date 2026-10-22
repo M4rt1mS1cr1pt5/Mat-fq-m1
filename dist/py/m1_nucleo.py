@@ -899,7 +899,8 @@ def lst(t):
 def rdf(fs):
     # Le os campos do formulario. Numeros vem na 1.a unidade da lista
     # (a da formula), como (valor, alg. sig.); 'o' e um numero opcional
-    # (None se vazio). Os erros ficam escritos no proprio campo.
+    # (None se vazio); 'u' da (valor, alg. sig., indice da unidade) sem
+    # converter. Os erros ficam escritos no proprio campo.
     out = []
     bad = 0
     for f in fs:
@@ -913,6 +914,10 @@ def rdf(fs):
                 if f[1] and f[3]:
                     v = conv(v, f[1][f[3]], f[1][0])
                 out.append((v, sf))
+            elif k == 'u':
+                # numero com unidade livre (a calculadora interpreta-a)
+                v, sf = num(f[2])
+                out.append((v, sf, f[3]))
             elif k == 'l':
                 vs = [num(x) for x in lst(f[2])]
                 if not vs:

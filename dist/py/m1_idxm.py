@@ -1,7 +1,55 @@
 # m1_idxm.py - M1TR4M: indice da pesquisa (Mat, parte 1 de 1) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 200\n\
+@N 252\n\
+L|Elei\xe7\xf5es: maioria simples e maioria absoluta|eleicao votacao tabela preferencias relativa votantes empate|m1a\n\
+L|M\xe9todo de Borda|pontos ordenacao preferencias pontuacao ranking eleicao concurso|m1b\n\
+L|Segunda volta e elimina\xe7\xe3o sucessiva|dois mais votados transferencia votos analise sistemas|m1c\n\
+L|M\xe9todo de Condorcet (aprofundamento)|duelos dois vencedor paradoxo ciclo preferencias teorema|m1d\n\
+L|M\xe9todo de Hondt|mandatos deputados divisores quocientes circulo eleitoral assembleia|m1e\n\
+L|M\xe9todo de Sainte-Lagu\xeb e compara\xe7\xe3o com Hondt|divisores impares proporcionalidade partidos\
+ pequenos percentagem mandatos|m1f\n\
+L|Sal\xe1rio: bruto, l\xedquido e valor por hora|salario bruto seguranca social 11% entidade empregadora|m1g\n\
+L|IRS: escal\xf5es e progressividade|irs imposto taxa marginal media rendimento coletavel eficiencia|m1h\n\
+L|Juro simples e juro composto|capital taxa capitalizacao mensal trimestral deposito prazo juros|m1i\n\
+L|Presta\xe7\xf5es constantes e valor atual (aprofundamento)|prestacao constante emprestimo credito\
+ amortizacao plano pagamentos|m1j\n\
+F|Maioria absoluta||m1:0\n\
+F|Percentagem de votos||m1:1\n\
+F|Pontos de Borda||m1:2\n\
+F|Total de pontos||m1:3\n\
+F|Segunda volta||m1:4\n\
+F|Elimina\xe7\xe3o sucessiva||m1:5\n\
+F|Duelo de Condorcet||m1:6\n\
+F|N\xfamero de duelos||m1:7\n\
+F|Quociente de Hondt|mandatos|m1:8\n\
+F|Empate (Lei n.\xba 14/79, art. 16.\xba)||m1:9\n\
+F|Quociente de Sainte-Lagu\xeb||m1:10\n\
+F|Percentagem de mandatos|hondt|m1:11\n\
+F|Sal\xe1rio l\xedquido||m1:12\n\
+F|Valor da hora||m1:13\n\
+F|Coleta por escal\xf5es||m1:14\n\
+F|Taxa m\xe9dia||m1:15\n\
+F|Juro simples|juros|m1:16\n\
+F|Juro composto|juros|m1:17\n\
+F|Presta\xe7\xe3o constante||m1:18\n\
+F|Valor atual||m1:19\n\
+E|Hondt com empate no \xfaltimo mandato|mandatos|m1:0\n\
+E|IRS de 25 000 \u20ac por escal\xf5es||m1:1\n\
+E|Quatro m\xe9todos, tr\xeas vencedores||m1:2\n\
+X|Numa vota\xe7\xe3o com 37 votos||m1:0\n\
+X|Um candidato tem mais votos||m1:1\n\
+X|Com 4 candidatos, quantos||m1:2\n\
+X|Com os mesmos votos, a||m1:3\n\
+X|Quantos duelos de Condorcet||m1:4\n\
+X|Pelo m\xe9todo de Hondt, com 3||m1:5\n\
+X|Num empate no \xfaltimo mandato||m1:6\n\
+X|Quais s\xe3o os divisores do||m1:7\n\
+X|Qual \xe9 o desconto para a||m1:8\n\
+X|Com a tabela de IRS de 2026||m1:9\n\
+X|O que \xe9 a taxa marginal de||m1:10\n\
+X|Qual \xe9 o juro, em euros, de 2|energia mecanica|m1:11\n\
+X|Quanto vale, em euros, um|energia mecanica|m1:12\n\
 L|Revis\xf5es de tri\xe2ngulos; mediatriz e bissetriz|classificacao triangulos congruencia semelhanca\
  criterio aa pitagoras|m3a\n\
 L|Incentro e circunfer\xeancia inscrita|bissetrizes tangente raio r = 2a/p triangulo tg|m3b\n\
@@ -189,6 +237,12 @@ C|Calculadora cient\xedfica|expressao potencia raiz seno cosseno tangente sen co
 C|Algarismos significativos|arredondar soma produto regra|c_comu.sf\n\
 C|Conversor de unidades|conversao comprimento massa volume temperatura energia|c_comu.uni\n\
 C|Prefixos do SI|quilo mili micro nano mega giga|c_comu.pre\n\
+C|Sistemas de vota\xe7\xe3o|maioria simples relativa absoluta borda segunda|c_matc.vot\n\
+C|Mandatos: Hondt e Sainte-Lagu\xeb|metodo mandatos deputados divisores quocientes partilha|c_matc.mand\n\
+C|Sal\xe1rio: bruto e l\xedquido|salario mensal anual valor hora horas|c_matd.sal\n\
+C|IRS por escal\xf5es|imposto taxa marginal media progressividade rendimento eficiencia|c_matd.irs\n\
+C|Juros simples e compostos|juro composto capital taxa anual capitalizacao|c_matd.jur\n\
+C|Presta\xe7\xf5es e valor atual|prestacao constante emprestimo credito amortizacao juros juro|c_matd.prest\n\
 C|Fun\xe7\xe3o escrita por ti (tabela, zeros, gr\xe1fico)|expressao imagem tabela valores zeros sinal|c_matf.fx\n\
 C|Fun\xe7\xe3o afim|declive ordenada origem zero reta dois|c_matf.afim\n\
 C|Fun\xe7\xe3o definida por ramos|ramo fronteira continuidade salto zeros imagem|c_matf.ramos\n\

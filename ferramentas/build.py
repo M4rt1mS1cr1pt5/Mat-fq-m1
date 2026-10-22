@@ -41,7 +41,7 @@ ORC = {'m1': 4 * KB, 'm1_plat': 12 * KB, 'm1_nucleo': 35 * KB,
        'm1_ui': 30 * KB, 'p_': 40 * KB, 'c_': 25 * KB, 'x_': 30 * KB,
        'm1_idx': 30 * KB, 'm1_tp': 25 * KB, 'm1_ex': 25 * KB,
        'm1_cfg': 25 * KB, 'm1_pesq': 25 * KB, 'm1_ini': 25 * KB,
-       'm1_nav': 25 * KB}
+       'm1_nav': 25 * KB, 'm1_q': 25 * KB}
 ORC_APP = 30 * KB          # m1_app + m1_cont + m1_cat
 ORC_RES = 115 * KB         # todos os residentes
 HEAP = 512 * KB

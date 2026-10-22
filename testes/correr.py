@@ -7,7 +7,7 @@ import sys
 
 AQUI = sys.argv[0].rsplit('/', 1)[0] if '/' in sys.argv[0] else '.'
 MODS = ('t_nucleo', 't_ui', 't_calc_com', 't_calc_fq', 't_calc_fis',
-        't_calc_al', 't_calc_mat',
+        't_calc_al', 't_calc_mat', 't_calc_num', 't_calc_alg',
         't_cont', 't_aleatorios', 't_catalogo')
 
 

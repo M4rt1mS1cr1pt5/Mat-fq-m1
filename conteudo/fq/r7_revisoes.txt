@@ -1,0 +1,243 @@
+@tema r7
+disc: F
+grupo: r
+titulo: Revisões do 7.º ano
+calcs: c_comu.uni c_comu.sci
+
+@licao r7a
+titulo: Espaço: distâncias, Sistema Solar, peso e massa
+chave: unidade astronómica ano-luz sistema solar planetas estrelas peso massa dinamómetro aceleração gravítica lua
+calc: c_comu.uni
+ano: 7
+nivel: revisão
+fonte: AE CN/FQ 7.º ano, Espaço
+#A
+- Usar a unidade astronómica e o ano-luz.
+- Descrever o Sistema Solar.
+- Distinguir peso de massa.
+#C
+- 1 UA ≈ 1,50 × 10¹¹ m: distância média Terra-Sol.
+- 1 ano-luz ≈ 9,46 × 10¹⁵ m: o que a luz percorre num ano.
+- Sistema Solar: Sol, 8 planetas, satélites, asteroides e cometas.
+- Massa (kg): quantidade de matéria; mede-se com balança.
+- Peso (N): força de atração do astro; P = m g (dinamómetro).
+- g ≈ 9,8 m s⁻² na Terra e 1,6 m s⁻² na Lua.
+#E
+@F Peso|P = m g|m: massa (kg);g: aceleração gravítica (m s⁻²)|perto da superfície de um astro|70 kg na Terra: P = 6,9 × 10² N|
+@F Ano-luz|1 a.l. = c × 1 ano ≈ 9,46 × 10¹⁵ m|c = 3,00 × 10⁸ m s⁻¹|distâncias entre estrelas|4,2 a.l. = 4,0 × 10¹⁶ m|c_comu.uni
+#F
+Dados: astronauta de 70 kg; g(Terra) = 9,8 m s⁻²; g(Lua) = 1,6 m s⁻². A estrela Próxima do Centauro está a 4,2 a.l.
+Objetivo: pesos na Terra e na Lua e distância da estrela em metros.
+1. P(Terra) = 70 × 9,8 = [[6,9 × 10²]] N
+2. P(Lua) = 70 × 1,6 = [[1,1 × 10²]] N
+3. d = 4,2 × 9,46 × 10¹⁵ = [[4,0 × 10¹⁶]] m
+> Na Lua o peso é cerca de 6 vezes menor; a massa é a mesma (70 kg).
+Verificação: 690 / 110 ≈ [[6]].
+#J
+A luz de uma estrela demora 10 anos a chegar à Terra. A que distância está a estrela, em anos-luz?
+#R
+A 10 a.l.: o ano-luz é a distância percorrida pela luz num ano.
+#V
+V = [70 * 9.8, 70 * 1.6, 4.2 * 9.46e15, 690 / 110]
+
+@licao r7b
+titulo: Materiais: substâncias, misturas e massa volúmica
+chave: substância mistura homogénea heterogénea coloidal concentração mássica massa volúmica propriedades físicas ponto de fusão ebulição separação filtração decantação destilação
+calc: c_fqso.con
+ano: 7
+nivel: revisão
+fonte: AE CN/FQ 7.º ano, Materiais
+#A
+- Distinguir substâncias de misturas.
+- Calcular a concentração mássica de uma solução.
+- Calcular a massa volúmica e usá-la para identificar materiais.
+- Escolher técnicas para separar misturas.
+#C
+- Substância: um só tipo de corpúsculos; mistura: várias substâncias.
+- Misturas homogéneas (soluções), heterogéneas e coloidais.
+- Concentração mássica: cm = m(soluto) / V(solução), em g dm⁻³.
+- Massa volúmica: ρ = m / V, em g cm⁻³ ou kg m⁻³.
+- Pontos de fusão e de ebulição e massa volúmica identificam substâncias.
+- Separar: filtração, decantação, íman, evaporação, destilação.
+#E
+@F Concentração mássica|cm = m / V|m: massa de soluto (g);V: volume de solução (dm³)|soluções|5,0 g em 0,250 dm³: cm = 20 g dm⁻³|c_fqso.con
+@F Massa volúmica|ρ = m / V|m: massa;V: volume|substância ou objeto homogéneo|21,6 g em 8,0 cm³: ρ = 2,7 g cm⁻³|
+#F
+Dados: um cubo com 2,0 cm de aresta tem 21,6 g; dissolvem-se 5,0 g de sal em água até 250 mL.
+Objetivo: massa volúmica do cubo e concentração mássica da solução.
+1. V(cubo) = 2,0³ = [[8,0]] cm³
+2. ρ = 21,6 / 8,0 = [[2,7]] g cm⁻³ (pode ser alumínio)
+3. cm = 5,0 / 0,250 = [[20]] g dm⁻³
+> ρ = 2,7 g cm⁻³ e cm = 20 g dm⁻³.
+Verificação: o alumínio tem ρ = 2,70 g cm⁻³.
+#J
+Como separas a areia e o sal de uma mistura de areia com água salgada?
+#R
+Primeiro filtração (fica a areia no filtro); depois evaporação ou cristalização (fica o sal).
+#V
+V = [2.0 ** 3, 21.6 / 8.0, 5.0 / 0.250]
+
+@licao r7c
+titulo: Energia: fontes, transferências, temperatura e calor
+chave: fontes de energia renováveis não renováveis condução convecção radiação temperatura calor equilíbrio térmico escala kelvin celsius
+calc: c_comu.uni
+ano: 7
+nivel: revisão
+fonte: AE CN/FQ 7.º ano, Energia
+#A
+- Distinguir fontes de energia renováveis de não renováveis.
+- Identificar condução, convecção e radiação.
+- Distinguir temperatura de calor.
+#C
+- Renováveis: Sol, vento, água, biomassa; não renováveis: fósseis e urânio.
+- Condução: em sólidos, de partícula para partícula.
+- Convecção: em líquidos e gases, por correntes de fluido.
+- Radiação: por ondas eletromagnéticas, mesmo no vácuo.
+- Calor: energia transferida de um corpo mais quente para um mais frio.
+- Equilíbrio térmico: os corpos ficam à mesma temperatura.
+#E
+@F Kelvin e Celsius|T = θ + 273,15|T em K;θ em °C|variações iguais nas duas escalas|37 °C = 310,15 K|c_comu.uni
+#F
+Dados: temperatura do corpo humano, 37 °C; dia de inverno, -3 °C.
+Objetivo: temperaturas em kelvin.
+1. T = 37 + 273,15 = [[310,15]] K
+2. T = -3 + 273,15 = [[270,15]] K
+> 310,15 K e 270,15 K.
+Verificação: a diferença é 40 °C e também [[40]] K.
+#J
+Como chega a energia do Sol à Terra: por condução, convecção ou radiação?
+#R
+Por radiação: é a única que se propaga no vácuo do espaço.
+#V
+V = [37 + 273.15, -3 + 273.15, 310.15 - 270.15]
+
+@exemplo r7e1
+nivel: 1
+titulo: Massa e peso na Lua
+licao: r7a
+#T
+Enunciado: um objeto tem 12 kg. Qual é a massa e o peso na Lua (g = 1,6 m s⁻²)?
+Resolução:
+1. A massa não muda: 12 kg.
+2. P = 12 × 1,6 = [[19]] N
+Resultado: m = 12 kg e P ≈ 19 N.
+Interpretação: na Terra o peso seria cerca de [[1,2 × 10²]] N (g = 9,8 m s⁻²).
+Erros a evitar: dizer que a massa diminui na Lua.
+#V
+V = [12 * 1.6, 12 * 9.8]
+
+@exemplo r7e2
+nivel: 2
+titulo: Que líquido é?
+licao: r7b
+#T
+Enunciado: 50,0 mL de um líquido incolor têm 39,5 g. É água (1,00 g cm⁻³) ou álcool (0,79 g cm⁻³)?
+Resolução:
+1. ρ = 39,5 / 50,0 = [[0,790]] g cm⁻³
+2. Coincide com o valor do álcool.
+Resultado: é provavelmente álcool (etanol).
+Interpretação: a massa volúmica é uma propriedade característica.
+Erros a evitar: confundir mL com L (1 mL = 1 cm³).
+#V
+V = [39.5 / 50.0]
+
+@exercicio r7x1
+tipo: n
+licao: r7a
+#T
+Qual é o peso (em N) de uma mochila de 5,0 kg na Terra (g = 9,8 m s⁻²)?
+#S
+49
+#P
+P = m g.
+#D
+P = 5,0 × 9,8 = [[49]] N.
+#V
+S = 5.0 * 9.8
+V = [S]
+
+@exercicio r7x2
+tipo: m
+licao: r7a
+#T
+Um astronauta vai da Terra para a Lua. O que muda?
+#O
+O peso
+A massa
+A massa e o peso
+Nada
+#S
+1
+#P
+A massa é a quantidade de matéria.
+#D
+A massa mantém-se; o peso diminui porque g na Lua é menor.
+#V
+S = 1
+
+@exercicio r7x3
+tipo: n
+licao: r7b
+#T
+Um objeto tem 40 g e 50 cm³. Qual é a sua massa volúmica (em g cm⁻³)?
+#S
+0,8
+#P
+ρ = m / V.
+#D
+ρ = 40 / 50 = [[0,80]] g cm⁻³.
+#V
+S = 40 / 50
+V = [S]
+
+@exercicio r7x4
+tipo: m
+licao: r7b
+#T
+Que técnica separa um sólido insolúvel de um líquido?
+#O
+Filtração
+Destilação
+Cristalização
+Separação magnética
+#S
+1
+#P
+O sólido fica retido num papel.
+#D
+Na filtração, o sólido insolúvel fica no papel de filtro e o líquido passa.
+#V
+S = 1
+
+@exercicio r7x5
+tipo: v
+licao: r7c
+#T
+O calor é uma forma de energia que os corpos têm armazenada.
+#S
+F
+#P
+O calor é uma transferência.
+#D
+Falso: o calor é energia transferida entre corpos a temperaturas diferentes; não se armazena.
+#V
+S = 'F'
+
+@exercicio r7x6
+tipo: m
+licao: r7c
+#T
+Numa panela com água a aquecer, a água quente sobe e a fria desce. Que processo é este?
+#O
+Convecção
+Condução
+Radiação
+Evaporação
+#S
+1
+#P
+Há movimento do próprio líquido.
+#D
+É convecção: correntes no fluido transportam a energia.
+#V
+S = 1

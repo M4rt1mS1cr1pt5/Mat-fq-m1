@@ -1303,6 +1303,8 @@ T	4	47	0,51,153	 2
 T	25	47	0,0,0	Física
 T	4	64	0,51,153	 3
 T	25	64	0,0,0	Atividades laboratoriais
+T	4	81	0,51,153	 4
+T	25	81	0,0,0	Revisões do 7.º ao 9.º ano
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	16
@@ -1483,6 +1485,8 @@ T	4	47	0,51,153	 2
 T	25	47	0,0,0	Física
 T	4	64	0,51,153	 3
 T	25	64	0,0,0	Atividades laboratoriais
+T	4	81	0,51,153	 4
+T	25	81	0,0,0	Revisões do 7.º ao 9.º ano
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	26
@@ -1607,9 +1611,9 @@ T	4	149	0,0,0	Lições vistas: 0/3
 T	4	166	0,0,0	Exercícios: 0/9 feitos, 0 certos
 T	4	183	0,51,153	Ligação química
 R	314	17	3	170	232,232,232
-R	314	17	3	47	100,100,100
+R	314	17	3	37	100,100,100
 R	0	187	318	25	232,232,232
-T	4	200	100,100,100	1-10 de 36 · enter: mais · esc: voltar
+T	4	200	100,100,100	1-10 de 45 · enter: mais · esc: voltar
 F	32
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
@@ -1743,7 +1747,7 @@ T	25	166	0,0,0	Energia, fenómenos térmicos e radiação
 T	4	183	0,51,153	10
 T	25	183	0,0,0	Atividades laboratoriais de Química
 R	314	17	3	170	232,232,232
-R	314	17	3	154	100,100,100
+R	314	17	3	121	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	39
@@ -1772,42 +1776,13 @@ T	25	166	0,0,0	Energia, fenómenos térmicos e radiação
 T	4	183	0,51,153	10
 T	25	183	0,0,0	Atividades laboratoriais de Química
 R	314	17	3	170	232,232,232
-R	314	17	3	154	100,100,100
+R	314	17	3	121	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1_ · enter: opção 1
 F	40
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Física e Química A
-R	0	17	313	17	204,224,255
-T	4	30	0,51,153	 1
-T	25	30	0,0,0	Massa e tamanho dos átomos
-T	4	47	0,51,153	 2
-T	25	47	0,0,0	Energia dos eletrões nos átomos
-T	4	64	0,51,153	 3
-T	25	64	0,0,0	Tabela Periódica
-T	4	81	0,51,153	 4
-T	25	81	0,0,0	Ligação química
-T	4	98	0,51,153	 5
-T	25	98	0,0,0	Gases e dispersões
-T	4	115	0,51,153	 6
-T	25	115	0,0,0	Transformações químicas
-T	4	132	0,51,153	 7
-T	25	132	0,0,0	Energia e movimentos
-T	4	149	0,51,153	 8
-T	25	149	0,0,0	Energia e fenómenos elétricos
-T	4	166	0,51,153	 9
-T	25	166	0,0,0	Energia, fenómenos térmicos e radiação
-T	4	183	0,51,153	10
-T	25	183	0,0,0	Atividades laboratoriais de Química
-R	314	17	3	170	232,232,232
-R	314	17	3	154	100,100,100
-R	0	187	318	25	232,232,232
-T	4	200	100,100,100	número ou enter: abrir · esc: voltar
-F	41
-R	0	0	318	212	255,255,255
-R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Revisão rápida · Massa e tamanho dos átomos
+T	4	13	255,255,255	Revisão rápida · Revisões do 7.º ano
 R	0	17	313	17	204,224,255
 T	4	30	0,51,153	 1
 T	25	30	0,0,0	Resumos (páginas I)
@@ -1815,59 +1790,19 @@ T	4	47	0,51,153	 2
 T	25	47	0,0,0	Cartões pergunta-resposta
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
+F	41
+R	0	0	318	212	255,255,255
+R	0	0	318	17	0,51,153
+T	4	13	255,255,255	Resumo · Revisões do 7.º ano
+R	0	187	318	25	232,232,232
+T	4	200	100,100,100	1-1 de 1 · esc: voltar
 F	42
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Resumo · Massa e tamanho dos átomos
-T	4	30	0,51,153	Constituição do átomo e isótopos
-T	4	47	0,0,0	- Átomo: núcleo (protões e neutrões) e
-T	4	64	0,0,0	  eletrões.
-T	4	81	0,0,0	- Z = n.º de protões; A = protões +
-T	4	98	0,0,0	  neutrões.
-T	4	115	0,0,0	- N = A - Z.
-T	4	132	0,0,0	- Isótopos: mesmo Z, diferente A.
-T	4	149	0,0,0	- Catião perdeu eletrões; anião ganhou.
-T	4	166	0,0,0	- O núcleo é cerca de 10⁵ vezes menor que o
-T	4	183	0,0,0	  átomo.
-R	314	17	3	170	232,232,232
-R	314	17	3	36	100,100,100
-R	0	187	318	25	232,232,232
-T	4	200	100,100,100	1-10 de 47 · enter: mais · esc: voltar
-F	43
-R	0	0	318	212	255,255,255
-R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Resumo · Massa e tamanho dos átomos
-T	4	47	0,51,153	Tamanho dos átomos: ordens de grandeza e
-T	4	64	0,51,153	escalas
-T	4	81	0,0,0	- Notação científica: a × 10ⁿ, com 1 ≤ a <
-T	4	98	0,0,0	  10.
-T	4	115	0,0,0	- Ordem de grandeza: 10ⁿ se a < 5; 10ⁿ⁺¹ se
-T	4	132	0,0,0	  a ≥ 5.
-T	4	149	0,0,0	- 1 nm = 10⁻⁹ m; 1 pm = 10⁻¹² m.
-T	4	166	0,0,0	- Átomo: cerca de 10⁻¹⁰ m; núcleo: 10⁻¹⁵ m a
-T	4	183	0,0,0	  10⁻¹⁴ m.
-R	314	17	3	170	232,232,232
-R	314	53	3	36	100,100,100
-R	0	187	318	25	232,232,232
-T	4	200	100,100,100	11-20 de 47 · enter: mais · esc: voltar
-F	44
-R	0	0	318	212	255,255,255
-R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Resumo · Massa e tamanho dos átomos
-T	4	47	0,51,153	Tamanho dos átomos: ordens de grandeza e
-T	4	64	0,51,153	escalas
-T	4	81	0,0,0	- Notação científica: a × 10ⁿ, com 1 ≤ a <
-T	4	98	0,0,0	  10.
-T	4	115	0,0,0	- Ordem de grandeza: 10ⁿ se a < 5; 10ⁿ⁺¹ se
-T	4	132	0,0,0	  a ≥ 5.
-T	4	149	0,0,0	- 1 nm = 10⁻⁹ m; 1 pm = 10⁻¹² m.
-T	4	166	0,0,0	- Átomo: cerca de 10⁻¹⁰ m; núcleo: 10⁻¹⁵ m a
-T	4	183	0,0,0	  10⁻¹⁴ m.
-R	314	17	3	170	232,232,232
-R	314	53	3	36	100,100,100
+T	4	13	255,255,255	Resumo · Revisões do 7.º ano
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	Tecla sem função: setas para ler, esc para …
-F	45
+F	43
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	M1TR4M · FQ e Mat 10.º
@@ -1894,6 +1829,44 @@ T	4	183	0,51,153	11
 T	25	183	0,0,0	Revisão rápida
 R	314	17	3	170	232,232,232
 R	314	30	3	130	100,100,100
+R	0	187	318	25	232,232,232
+T	4	200	100,100,100	número ou enter: abrir · esc: voltar
+F	44
+R	0	0	318	212	255,255,255
+R	0	0	318	17	0,51,153
+T	4	13	255,255,255	Matemática A
+R	0	17	313	17	204,224,255
+T	4	30	0,51,153	 1
+T	25	30	0,0,0	Temas do 10.º ano
+R	0	187	318	25	232,232,232
+T	4	200	100,100,100	número ou enter: abrir · esc: voltar
+F	45
+R	0	0	318	212	255,255,255
+R	0	0	318	17	0,51,153
+T	4	13	255,255,255	M1TR4M · FQ e Mat 10.º
+T	4	30	0,51,153	 1
+T	25	30	0,0,0	Física e Química A
+R	0	34	313	17	204,224,255
+T	4	47	0,51,153	 2
+T	25	47	0,0,0	Matemática A
+T	4	64	0,51,153	 3
+T	25	64	0,0,0	Pesquisa global
+T	4	81	0,51,153	 4
+T	25	81	0,0,0	Calculadoras
+T	4	98	0,51,153	 5
+T	25	98	0,0,0	Tabela periódica
+T	4	115	0,51,153	 6
+T	25	115	0,0,0	Formulário
+T	4	132	0,51,153	 7
+T	25	132	0,0,0	Constantes e unidades
+T	4	149	0,51,153	 8
+T	25	149	0,0,0	Exemplos resolvidos
+T	4	166	0,51,153	 9
+T	25	166	0,0,0	Exercícios e testes
+T	4	183	0,51,153	10
+T	25	183	0,0,0	O meu progresso
+R	314	17	3	170	232,232,232
+R	314	17	3	130	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	46

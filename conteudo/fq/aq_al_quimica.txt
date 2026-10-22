@@ -138,7 +138,7 @@ chave: al 1.3 densidade relativa picnómetro metal massa volúmica água desloca
 calc: c_alq1.dens
 ano: 10
 nivel: núcleo
-pre: q3c
+pre: q3c r7b
 fonte: Programa e AE FQ A 10.º, AL 1.3
 #A
 - Determinar a densidade relativa de um metal pelo método do picnómetro.

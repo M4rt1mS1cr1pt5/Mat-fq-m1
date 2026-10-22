@@ -1,0 +1,347 @@
+@tema r8
+disc: F
+grupo: r
+titulo: Revisões do 8.º ano
+calcs: c_fqlg.ace c_fqat.mm c_fqel.fot
+
+@licao r8a
+titulo: Átomos, moléculas, iões e fórmulas químicas
+chave: modelo corpuscular átomo molécula ião catião anião iões poliatómicos fórmula química índice composto iónico carga
+calc: c_fqat.mm
+ano: 8
+nivel: revisão
+fonte: AE FQ 8.º ano, Reações químicas
+#A
+- Descrever a matéria com o modelo corpuscular.
+- Distinguir átomos, moléculas e iões.
+- Interpretar e escrever fórmulas químicas.
+#C
+- Modelo corpuscular: corpúsculos em movimento, com espaço vazio entre eles.
+- Átomo: neutro; molécula: átomos ligados (H₂O, O₂).
+- Ião: catião (carga +, Na⁺) ou anião (carga -, Cl⁻).
+- Iões poliatómicos: SO₄²⁻, NO₃⁻, CO₃²⁻, OH⁻ e NH₄⁺.
+- Índices: H₂O tem 2 átomos de H e 1 de O.
+- Composto iónico: carga total nula (Al³⁺ e SO₄²⁻: Al₂(SO₄)₃).
+#E
+@F Carga total de um composto iónico|a × (carga do catião) + b × (carga do anião) = 0|a e b: índices na fórmula|compostos iónicos|Al³⁺ e SO₄²⁻: 2 × 3 + 3 × (-2) = 0|c_fqat.mm
+#F
+Dados: catião Al³⁺ e anião SO₄²⁻.
+Objetivo: fórmula química e número de átomos por unidade.
+1. Cargas: 2 × (+3) + 3 × (-2) = [[0]], logo Al₂(SO₄)₃.
+2. Átomos: 2 + 3 × (1 + 4) = [[17]].
+> Al₂(SO₄)₃, com 17 átomos por unidade.
+Verificação: 2 átomos de Al, 3 de S e 12 de O.
+#J
+Quantos átomos de oxigénio há em três moléculas de água, 3 H₂O?
+#R
+[[3]]: cada molécula de H₂O tem um átomo de oxigénio.
+#V
+V = [2 * 3 + 3 * (-2), 2 + 3 * (1 + 4), 3 * 1]
+
+@licao r8b
+titulo: Equações químicas e Lei de Lavoisier
+chave: equação química reagentes produtos coeficientes estequiométricos acerto lei de lavoisier conservação da massa sistema fechado
+calc: c_fqlg.ace
+ano: 8
+nivel: revisão
+fonte: AE FQ 8.º ano, Reações químicas
+#A
+- Ler e escrever equações químicas.
+- Aplicar a Lei de Lavoisier.
+- Acertar equações químicas simples.
+#C
+- Reagentes → produtos; estados físicos: (s), (l), (g) e (aq).
+- Lei de Lavoisier: em sistema fechado, a massa total conserva-se.
+- Os átomos não se criam nem se destroem: reorganizam-se.
+- Acertar: escolher coeficientes que igualam os átomos de cada elemento.
+- Ao acertar, nunca se mudam os índices das fórmulas.
+#E
+@F Lei de Lavoisier|m(reagentes) = m(produtos)|m: massa total (g)|sistema fechado|16 g de CH₄ e 64 g de O₂ dão 80 g de produtos|c_fqlg.ace
+#F
+Dados: CH₄ + O₂ → CO₂ + H₂O; reagem 16 g de metano com 64 g de oxigénio.
+Objetivo: acertar a equação e calcular a massa dos produtos.
+1. C: 1 átomo de cada lado. H: 4 átomos, logo 2 H₂O.
+2. O à direita: 2 + 2 = [[4]] átomos, logo 2 O₂.
+3. CH₄ + 2 O₂ → CO₂ + 2 H₂O
+4. m(produtos) = 16 + 64 = [[80]] g
+> CH₄ + 2 O₂ → CO₂ + 2 H₂O; formam-se 80 g de produtos.
+Verificação: à esquerda há 2 × 2 = [[4]] átomos de O.
+#J
+Numa reação, 10 g de A reagem com 5 g de B e forma-se só C. Qual é a massa de C?
+#R
+10 + 5 = [[15]] g (Lei de Lavoisier).
+#V
+V = [2 + 2, 16 + 64, 2 * 2, 10 + 5]
+
+@licao r8c
+titulo: Ácidos, bases, pH, precipitação e velocidade das reações
+chave: ácido base ph neutra indicador fenolftaleína tornesol neutralização sal precipitação precipitado velocidade das reações temperatura catalisador
+ano: 8
+nivel: revisão
+fonte: AE FQ 8.º ano, Reações químicas
+#A
+- Classificar soluções como ácidas, básicas ou neutras pelo pH.
+- Reconhecer reações de neutralização e de precipitação.
+- Identificar fatores que alteram a velocidade das reações.
+#C
+- A 25 °C: ácida, pH < 7; neutra, pH = 7; básica, pH > 7.
+- Fenolftaleína: incolor em ácidas e neutras; carmim em básicas.
+- Neutralização: ácido + base → sal + água.
+- Precipitação: forma-se um sólido pouco solúvel (precipitado).
+- Mais temperatura, concentração ou área de contacto: reação mais rápida.
+- Catalisador: torna a reação mais rápida e não se gasta.
+#E
+@F Escala de pH (25 °C)|ácida: pH < 7; neutra: pH = 7; básica: pH > 7|pH: escala habitual de 0 a 14|soluções aquosas a 25 °C|pH = 3: solução ácida|
+#F
+Dados: HCl + NaOH → NaCl + H₂O; AgNO₃ + NaCl → AgCl + NaNO₃.
+Objetivo: classificar as reações e verificar a conservação dos átomos.
+1. A primeira é uma neutralização (ácido + base → sal + água).
+2. Átomos de H à esquerda: 1 + 1 = [[2]]; à direita, 2 em H₂O.
+3. A segunda é uma precipitação: forma-se AgCl, sólido branco.
+4. Átomos de O: [[3]] em AgNO₃ e 3 em NaNO₃.
+> Uma neutralização e uma precipitação; os átomos conservam-se.
+Verificação: as duas equações já estão acertadas.
+#J
+Que cor fica a fenolftaleína numa solução de pH 12?
+#R
+Carmim: a solução é básica (pH > 7).
+#V
+V = [1 + 1, 3]
+
+@licao r8d
+titulo: Som
+chave: som onda mecânica vibração meio material velocidade do som frequência amplitude altura intensidade timbre eco ultrassons infrassons
+ano: 8
+nivel: revisão
+fonte: AE FQ 8.º ano, Som
+#A
+- Explicar a produção e a propagação do som.
+- Relacionar frequência e amplitude com as características do som.
+- Calcular distâncias com a velocidade do som.
+#C
+- Som: vibração que se propaga num meio material (não no vácuo).
+- No ar, v ≈ 340 m s⁻¹; nos líquidos e nos sólidos é maior.
+- Frequência (Hz): agudo ou grave; amplitude: forte ou fraco.
+- Timbre: distingue fontes que tocam a mesma nota.
+- Audível pelo ser humano: de 20 Hz a 20 000 Hz.
+- Eco: som refletido que se ouve separado do original.
+#E
+@F Velocidade de propagação|v = λ f|λ: comprimento de onda (m);f: frequência (Hz)|onda periódica|340 m s⁻¹ e 440 Hz: λ = 0,77 m|
+@F Distância percorrida pelo som|d = v t|v: velocidade (m s⁻¹);t: tempo (s)|meio homogéneo|3,0 s no ar: d = 1,0 × 10³ m|
+#F
+Dados: um trovão ouve-se 3,0 s depois do relâmpago; v(som) = 340 m s⁻¹; uma nota tem 440 Hz.
+Objetivo: distância da trovoada e comprimento de onda da nota.
+1. d = 340 × 3,0 = [[1,0 × 10³]] m
+2. λ = 340 / 440 = [[0,77]] m
+> A trovoada está a cerca de 1 km; λ ≈ 0,77 m.
+Verificação: a luz chega quase de imediato; o atraso é só do som.
+#J
+Porque é que não se ouve som no vácuo?
+#R
+O som precisa de um meio material para se propagar.
+#V
+V = [340 * 3.0, 340 / 440]
+
+@licao r8e
+titulo: Luz: espetro, reflexão, refração e lentes
+chave: luz onda eletromagnética espetro eletromagnético reflexão refração lentes convergentes divergentes miopia hipermetropia velocidade da luz
+calc: c_fqel.fot
+ano: 8
+nivel: revisão
+fonte: AE FQ 8.º ano, Luz
+#A
+- Caracterizar a luz como onda eletromagnética.
+- Ordenar as radiações do espetro eletromagnético.
+- Aplicar a lei da reflexão e descrever a refração.
+- Distinguir lentes convergentes de divergentes.
+#C
+- A luz propaga-se no vácuo a c = 3,00 × 10⁸ m s⁻¹.
+- Espetro, por energia crescente: rádio, micro-ondas, IV, visível, UV, X, gama.
+- Reflexão: ângulo de reflexão igual ao de incidência.
+- Refração: a luz muda de direção ao mudar de meio.
+- Lentes convergentes (bordos finos) corrigem a hipermetropia.
+- Lentes divergentes (bordos grossos) corrigem a miopia.
+#E
+@F Lei da reflexão|r = i|i: ângulo de incidência;r: ângulo de reflexão (medidos à normal)|superfície refletora|i = 35°: r = 35°|
+@F Tempo de propagação da luz|t = d / c|c = 3,00 × 10⁸ m s⁻¹|no vácuo (quase igual no ar)|Sol-Terra: t = 5,00 × 10² s|
+#F
+Dados: distância Sol-Terra = 1,50 × 10¹¹ m; c = 3,00 × 10⁸ m s⁻¹.
+Objetivo: tempo que a luz do Sol demora a chegar à Terra.
+1. t = 1,50 × 10¹¹ / (3,00 × 10⁸) = [[5,00 × 10²]] s
+2. Em minutos: 500 / 60 = [[8,3]] min
+> A luz do Sol demora cerca de 8,3 min a chegar.
+Verificação: vemos o Sol como era há cerca de 8 minutos.
+#J
+Um raio de luz incide num espelho plano com i = 35°. Qual é o ângulo de reflexão?
+#R
+35°: o ângulo de reflexão é igual ao de incidência.
+#V
+V = [1.50e11 / 3.00e8, 500 / 60]
+
+@exemplo r8e1
+nivel: 1
+titulo: Acertar a síntese da água
+licao: r8b
+calc: c_fqlg.ace
+#T
+Enunciado: acerta a equação H₂ + O₂ → H₂O.
+Resolução:
+1. O: 2 átomos à esquerda, logo 2 H₂O à direita.
+2. H: 2 × 2 = [[4]] átomos à direita, logo 2 H₂.
+3. 2 H₂ + O₂ → 2 H₂O
+Resultado: 2 H₂ + O₂ → 2 H₂O.
+Interpretação: cada lado tem 4 átomos de H e [[2]] de O.
+Erros a evitar: escrever H₂O₂ para acertar o oxigénio (muda a substância).
+#V
+V = [2 * 2, 2 * 1]
+
+@exemplo r8e2
+nivel: 2
+titulo: Profundidade medida com um sonar
+licao: r8d
+#T
+Enunciado: um sonar recebe o eco 0,40 s depois de emitir o som; na água, v = 1500 m s⁻¹.
+Qual é a profundidade?
+Resolução:
+1. O som vai e volta: d(total) = 1500 × 0,40 = [[6,0 × 10²]] m
+2. Profundidade: 600 / 2 = [[3,0 × 10²]] m
+Resultado: cerca de 3,0 × 10² m.
+Interpretação: os sonares usam ultrassons, que não ouvimos.
+Erros a evitar: esquecer que o som percorre a distância duas vezes.
+#V
+V = [1500 * 0.40, 600 / 2]
+
+@exercicio r8x1
+tipo: n
+licao: r8a
+#T
+Quantos átomos tem uma molécula de dióxido de carbono, CO₂?
+#S
+3
+#P
+Soma os índices.
+#D
+1 átomo de C e 2 de O: 1 + 2 = [[3]].
+#V
+S = 1 + 2
+V = [S]
+
+@exercicio r8x2
+tipo: m
+licao: r8a
+#T
+Qual é a fórmula do composto formado pelos iões Na⁺ e CO₃²⁻?
+#O
+Na₂CO₃
+NaCO₃
+Na(CO₃)₂
+Na₃CO₂
+#S
+1
+#P
+A carga total tem de ser zero.
+#D
+2 × (+1) + 1 × (-2) = 0, logo Na₂CO₃.
+#V
+S = 1
+
+@exercicio r8x3
+tipo: n
+licao: r8b
+#T
+12 g de carbono reagem completamente com 32 g de oxigénio e forma-se só CO₂. Que massa de CO₂ se forma (em g)?
+#S
+44
+#P
+Lei de Lavoisier.
+#D
+m(CO₂) = 12 + 32 = [[44]] g.
+#V
+S = 12 + 32
+V = [S]
+
+@exercicio r8x4
+tipo: m
+licao: r8c
+#T
+Uma solução aquosa tem pH = 2 (a 25 °C). A solução é:
+#O
+ácida
+básica
+neutra
+impossível de classificar
+#S
+1
+#P
+Compara com 7.
+#D
+pH < 7: a solução é ácida.
+#V
+S = 1
+
+@exercicio r8x5
+tipo: n
+licao: r8d
+#T
+Um grito volta como eco 1,0 s depois (v = 340 m s⁻¹). A que distância está a parede (em m)?
+#S
+170
+#P
+O som vai e volta.
+#D
+d = 340 × 1,0 / 2 = [[1,7 × 10²]] m.
+#V
+S = 340 * 1.0 / 2
+V = [S]
+
+@exercicio r8x6
+tipo: m
+licao: r8e
+#T
+Que tipo de lente corrige a miopia?
+#O
+Divergente
+Convergente
+Espelho côncavo
+Prisma
+#S
+1
+#P
+O míope vê mal ao longe; a imagem forma-se antes da retina.
+#D
+A miopia corrige-se com lentes divergentes (bordos grossos).
+#V
+S = 1
+
+@exercicio r8x7
+tipo: v
+licao: r8d
+#T
+O som propaga-se no vácuo.
+#S
+F
+#P
+O som é uma onda mecânica.
+#D
+Falso: o som precisa de um meio material; no vácuo não se propaga.
+#V
+S = 'F'
+
+@exercicio r8x8
+tipo: m
+licao: r8c
+#T
+Que alteração torna uma reação química mais rápida?
+#O
+Aumentar a temperatura
+Diminuir a concentração dos reagentes
+Usar o sólido em pedaços maiores
+Arrefecer os reagentes
+#S
+1
+#P
+Pensa na agitação dos corpúsculos.
+#D
+Com mais temperatura, os corpúsculos movem-se mais depressa e colidem mais: a reação é mais rápida.
+#V
+S = 1

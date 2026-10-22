@@ -10,6 +10,7 @@ chave: espetro contínuo descontínuo emissão absorção radiação eletromagn�
 calc: c_fqel.fot
 ano: 10
 nivel: núcleo
+pre: r8e
 fonte: AE FQ A 10.º, Energia dos eletrões nos átomos
 #A
 - Distinguir espetros contínuos de descontínuos (de riscas).

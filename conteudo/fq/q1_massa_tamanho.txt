@@ -10,6 +10,7 @@ chave: átomo núcleo protão neutrão eletrão número atómico número de mass
 calc: c_fqat.ar
 ano: 10
 nivel: núcleo
+pre: r9d
 fonte: AE FQ A 10.º, Massa e tamanho dos átomos
 #A
 - Descrever o átomo: núcleo com protões e neutrões, e eletrões.

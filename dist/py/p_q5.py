@@ -122,8 +122,8 @@ Exprime 0,042 % de CO\u2082 em ppm.\n\
 @R\n\
 0,042 % = 0,00042 = 420 ppm.\n\
 @L q5c|Solu\xe7\xf5es, coloides e suspens\xf5es|dispersoes solucoes coloides suspensoes efeito de tyndall\
- soluto solvente tamanho das particulas mistura homogenea heterogenea||10|n\xfacleo|||AE FQ A 10.\xba, Gases\
- e dispers\xf5es\n\
+ soluto solvente tamanho das particulas mistura homogenea heterogenea||10|n\xfacleo|r7b:Materiais:\
+ subst\xe2ncias, misturas e massa vol\xfamica||AE FQ A 10.\xba, Gases e dispers\xf5es\n\
 @A\n\
 - Distinguir solu\xe7\xf5es, coloides e suspens\xf5es.\n\
 - Relacionar cada tipo com o tamanho das part\xedculas dispersas.\n\

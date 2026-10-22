@@ -10,7 +10,7 @@ chave: reação química quebra formação de ligações variação de entalpia 
 calc: c_fqlg.dh
 ano: 10
 nivel: núcleo
-pre: q4a
+pre: q4a r8b
 fonte: AE FQ A 10.º, Transformações químicas
 #A
 - Explicar uma reação como quebra e formação de ligações.

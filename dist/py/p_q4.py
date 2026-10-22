@@ -4,8 +4,8 @@ D = "@V 1\n\
 @T Liga\xe7\xe3o qu\xedmica\n\
 @L q4a|Liga\xe7\xe3o qu\xedmica: estabilidade, energia e comprimento|ligacao quimica estabilidade energia de\
  ligacao comprimento de ligacao energia potencial ligacao simples dupla\
- tripla|c_fqlg.dh|10|n\xfacleo|q3c:Forma\xe7\xe3o de i\xf5es e propriedades dos elementos||AE FQ A 10.\xba,\
- Liga\xe7\xe3o qu\xedmica\n\
+ tripla|c_fqlg.dh|10|n\xfacleo|q3c:Forma\xe7\xe3o de i\xf5es e propriedades dos elementos;r9d:\xc1tomos,\
+ distribui\xe7\xe3o eletr\xf3nica e liga\xe7\xe3o qu\xedmica||AE FQ A 10.\xba, Liga\xe7\xe3o qu\xedmica\n\
 @A\n\
 - Explicar porque os \xe1tomos se ligam.\n\
 - Interpretar a curva da energia em fun\xe7\xe3o da dist\xe2ncia entre \xe1tomos.\n\

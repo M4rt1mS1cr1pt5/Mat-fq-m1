@@ -3,7 +3,8 @@ D = "@V 1\n\
 @N 5\n\
 @T Massa e tamanho dos \xe1tomos\n\
 @L q1a|Constitui\xe7\xe3o do \xe1tomo e is\xf3topos|atomo nucleo protao neutrao eletrao numero atomico numero\
- de massa isotopo iao catiao aniao|c_fqat.ar|10|n\xfacleo|||AE FQ A 10.\xba, Massa e tamanho dos \xe1tomos\n\
+ de massa isotopo iao catiao aniao|c_fqat.ar|10|n\xfacleo|r9d:\xc1tomos, distribui\xe7\xe3o eletr\xf3nica e\
+ liga\xe7\xe3o qu\xedmica||AE FQ A 10.\xba, Massa e tamanho dos \xe1tomos\n\
 @A\n\
 - Descrever o \xe1tomo: n\xfacleo com prot\xf5es e neutr\xf5es, e eletr\xf5es.\n\
 - Definir n\xfamero at\xf3mico (Z) e n\xfamero de massa (A).\n\

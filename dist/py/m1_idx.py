@@ -1,7 +1,7 @@
-# m1_idx.py - M1TR4M: indice da pesquisa (FQ, parte 1 de 1) gerado pelo build.
+# m1_idx.py - M1TR4M: indice da pesquisa (FQ, parte 1 de 2) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 489\n\
+@N 523\n\
 L|Constitui\xe7\xe3o do \xe1tomo e is\xf3topos|nucleo protao neutrao eletrao numero atomico massa|q1a\n\
 L|Tamanho dos \xe1tomos: ordens de grandeza e escalas|ordem notacao cientifica escala nanometro picometro raio|q1b\n\
 L|Massa at\xf3mica relativa|unidade media isotopos abundancia molecular mr ar|q1c\n\
@@ -328,6 +328,73 @@ X|Um bloco de 0,500 kg \xe9||af:8\n\
 X|Na AL 3.2, porque se isola|avogadro|af:9\n\
 X|Que energia (em J) cede 0,200||af:10\n\
 X|Na AL 3.3, o gelo deve ser|avogadro|af:11\n\
+L|Espa\xe7o: dist\xe2ncias, Sistema Solar, peso e massa|unidade astronomica ano-luz solar planetas estrelas\
+ dinamometro|r7a\n\
+L|Materiais: subst\xe2ncias, misturas e massa vol\xfamica|substancia mistura homogenea heterogenea coloidal\
+ concentracao massica|r7b\n\
+L|Energia: fontes, transfer\xeancias, temperatura e calor|fontes energia renovaveis conducao conveccao\
+ radiacao equilibrio|r7c\n\
+F|Peso||r7:0\n\
+F|Ano-luz||r7:1\n\
+F|Concentra\xe7\xe3o m\xe1ssica||r7:2\n\
+F|Massa vol\xfamica||r7:3\n\
+F|Kelvin e Celsius||r7:4\n\
+E|Massa e peso na Lua|avogadro|r7:0\n\
+E|Que l\xedquido \xe9?||r7:1\n\
+X|Qual \xe9 o peso (em N) de uma||r7:0\n\
+X|Um astronauta vai da Terra||r7:1\n\
+X|Um objeto tem 40 g e 50 cm\xb3.||r7:2\n\
+X|Que t\xe9cnica separa um s\xf3lido||r7:3\n\
+X|O calor \xe9 uma forma de||r7:4\n\
+X|Numa panela com \xe1gua a||r7:5\n\
+L|\xc1tomos, mol\xe9culas, i\xf5es e f\xf3rmulas qu\xedmicas|modelo corpuscular atomo molecula iao catiao aniao|r8a\n\
+L|Equa\xe7\xf5es qu\xedmicas e Lei de Lavoisier|equacao quimica reagentes produtos coeficientes\
+ estequiometricos acerto|r8b\n\
+L|\xc1cidos, bases, pH, precipita\xe7\xe3o e velocidade das rea\xe7\xf5es|acido base ph neutra indicador\
+ fenolftaleina tornesol|r8c\n\
+L|Som|onda mecanica vibracao meio material velocidade frequencia|r8d\n\
+L|Luz: espetro, reflex\xe3o, refra\xe7\xe3o e lentes|luz onda eletromagnetica espetro eletromagnetico\
+ reflexao convergentes|r8e\n\
+F|Carga total de um composto i\xf3nico||r8:0\n\
+F|Lei de Lavoisier||r8:1\n\
+F|Escala de pH (25 \xb0C)||r8:2\n\
+F|Velocidade de propaga\xe7\xe3o||r8:3\n\
+F|Dist\xe2ncia percorrida pelo som||r8:4\n\
+F|Lei da reflex\xe3o||r8:5\n\
+F|Tempo de propaga\xe7\xe3o da luz||r8:6\n\
+E|Acertar a s\xedntese da \xe1gua||r8:0\n\
+E|Profundidade medida com um sonar||r8:1\n\
+X|Quantos \xe1tomos tem uma||r8:0\n\
+X|Qual \xe9 a f\xf3rmula do composto||r8:1\n\
+X|12 g de carbono reagem||r8:2\n\
+X|Uma solu\xe7\xe3o aquosa tem pH = 2||r8:3\n\
+X|Um grito volta como eco 1,0 s||r8:4\n\
+X|Que tipo de lente corrige a||r8:5\n\
+X|O som propaga-se no v\xe1cuo.||r8:6\n\
+X|Que altera\xe7\xe3o torna uma||r8:7\n\
+L|Movimentos: rapidez, acelera\xe7\xe3o e gr\xe1ficos|posicao deslocamento distancia percorrida rapidez media\
+ velocidade|r9a\n\
+L|For\xe7as: Leis de Newton, atrito e impuls\xe3o|forca resultante newton inercia acao reacao lei|r9b\n\
+L|Eletricidade: circuitos, grandezas el\xe9tricas e pot\xeancia|circuito eletrico serie paralelo corrente\
+ tensao resistencia|r9c\n\
+L|\xc1tomos, distribui\xe7\xe3o eletr\xf3nica e liga\xe7\xe3o qu\xedmica|modelos atomicos protoes neutroes\
+ eletroes numero atomico|r9d\n\
+F|Rapidez m\xe9dia||r9:0\n\
+F|Acelera\xe7\xe3o m\xe9dia||r9:1\n\
+F|Segunda Lei de Newton||r9:2\n\
+F|Impuls\xe3o||r9:3\n\
+F|Resist\xeancia||r9:4\n\
+F|Pot\xeancia e energia||r9:5\n\
+F|N\xfamero de neutr\xf5es||r9:6\n\
+F|Eletr\xf5es de um i\xe3o||r9:7\n\
+E|Rapidez m\xe9dia de uma viagem||r9:0\n\
+E|Dist\xe2ncia de seguran\xe7a||r9:1\n\
+X|Um ciclista passa de 2,0 m||r9:0\n\
+X|Que resultante (em N) d\xe1 a um||r9:1\n\
+X|A a\xe7\xe3o e a rea\xe7\xe3o anulam-se||r9:2\n\
+X|Uma l\xe2mpada de 60 W est\xe1||r9:3\n\
+X|Quantos eletr\xf5es de val\xeancia||r9:4\n\
+X|Que tipo de liga\xe7\xe3o existe no||r9:5\n\
 C|AL 1.1 Plano inclinado: Ec e dist\xe2ncia|inclinado carrinho velocidade tempo passagem celula energia\
  cinetica|c_alf1.plano\n\
 C|AL 1.2 Queda e ressalto de uma bola|altura energia dissipada coeficiente restituicao regressao|c_alf1.ress\n\
@@ -495,28 +562,4 @@ T|Meitn\xe9rio|mt 109|109\n\
 T|Darmst\xe1cio|ds 110|110\n\
 T|Roentg\xe9nio|rg 111|111\n\
 T|Copern\xedcio|cn 112|112\n\
-T|Nip\xf3nio|nh 113|113\n\
-T|Fler\xf3vio|fl 114|114\n\
-T|Mosc\xf3vio|mc 115|115\n\
-T|Liverm\xf3rio|lv 116|116\n\
-T|Tenesso|ts 117|117\n\
-T|Ogan\xe9sson|og 118|118\n\
-K|Velocidade de propaga\xe7\xe3o da luz no v\xe1cuo|c|0\n\
-K|M\xf3dulo da acelera\xe7\xe3o grav\xedtica junto \xe0 superf\xedcie da Terra|g|1\n\
-K|Constante de gravita\xe7\xe3o universal|g|2\n\
-K|Constante de Avogadro|na|3\n\
-K|Constante de Stefan-Boltzmann|sigma|4\n\
-K|Produto i\xf3nico da \xe1gua (25 \xb0C)|kw|5\n\
-K|Volume molar de um g\xe1s (PTN)|vm|6\n\
-K|Constante de Planck|h|7\n\
-K|Carga elementar||8\n\
-K|Eletr\xe3o-volt|ev|9\n\
-K|Unidade de massa at\xf3mica|u|10\n\
-K|Acelera\xe7\xe3o grav\xedtica padr\xe3o|gn|11\n\
-K|Energia do eletr\xe3o no n\xedvel n do \xe1tomo de hidrog\xe9nio|en|12\n\
-K|Capacidade t\xe9rmica m\xe1ssica da \xe1gua l\xedquida|c|13\n\
-K|Varia\xe7\xe3o de entalpia (m\xe1ssica) de fus\xe3o do gelo|dhf|14\n\
-K|Varia\xe7\xe3o de entalpia (m\xe1ssica) de vaporiza\xe7\xe3o da \xe1gua|dhv|15\n\
-K|Massa vol\xfamica da \xe1gua (4 \xb0C)|ro|16\n\
-K|Press\xe3o normal (1 atm)|p|17\n\
-K|Zero da escala Celsius em kelvin|t0 energia mecanica|18"
+T|Nip\xf3nio|nh 113|113"

@@ -1,0 +1,274 @@
+@tema r9
+disc: F
+grupo: r
+titulo: Revisões do 9.º ano
+calcs: c_fqci.ohm c_fqci.pot c_fqel.conf c_comu.uni
+
+@licao r9a
+titulo: Movimentos: rapidez, aceleração e gráficos
+chave: posição deslocamento distância percorrida rapidez média velocidade aceleração média gráfico posição-tempo velocidade-tempo distância de segurança reação travagem
+calc: c_comu.uni
+ano: 9
+nivel: revisão
+fonte: AE FQ 9.º ano, Movimentos e forças
+#A
+- Distinguir distância percorrida de deslocamento.
+- Calcular a rapidez média e a aceleração média.
+- Interpretar gráficos posição-tempo e velocidade-tempo.
+- Calcular distâncias de segurança.
+#C
+- Rapidez média: rm = d / Δt (d: distância percorrida).
+- Aceleração média: am = Δv / Δt (m s⁻²).
+- Gráfico x(t): o declive é a velocidade.
+- Gráfico v(t): o declive é a aceleração; a área é o deslocamento.
+- Uniforme: v constante; uniformemente variado: a constante.
+- Segurança: distância de reação + distância de travagem.
+#E
+@F Rapidez média|rm = d / Δt|d: distância percorrida (m);Δt: intervalo de tempo (s)|qualquer movimento|100 m em 12,5 s: rm = 8,0 m s⁻¹|c_comu.uni
+@F Aceleração média|am = Δv / Δt|Δv: variação da velocidade (m s⁻¹);Δt: intervalo de tempo (s)|movimento retilíneo|de 0 a 20 m s⁻¹ em 8,0 s: am = 2,5 m s⁻²|
+#F
+Dados: um atleta corre 100 m em 12,5 s; um carro passa do repouso a 20 m s⁻¹ em 8,0 s.
+Objetivo: rapidez média do atleta, aceleração do carro e distância percorrida pelo carro.
+1. rm = 100 / 12,5 = [[8,0]] m s⁻¹
+2. am = (20 - 0) / 8,0 = [[2,5]] m s⁻²
+3. Área do gráfico v(t), um triângulo: ½ × 8,0 × 20 = [[80]] m
+> rm = 8,0 m s⁻¹; am = 2,5 m s⁻²; o carro percorre 80 m.
+Verificação: a velocidade média do carro é 10 m s⁻¹ e 10 × 8,0 = [[80]] m.
+#J
+Num gráfico velocidade-tempo, o que representa a área entre a linha e o eixo dos tempos?
+#R
+O deslocamento (é igual à distância percorrida se o sentido não mudar).
+#V
+V = [100 / 12.5, (20 - 0) / 8.0, 0.5 * 8.0 * 20, 10 * 8.0]
+
+@licao r9b
+titulo: Forças: Leis de Newton, atrito e impulsão
+chave: força resultante leis de newton inércia ação reação atrito impulsão lei de arquimedes peso massa aceleração
+ano: 9
+nivel: revisão
+fonte: AE FQ 9.º ano, Movimentos e forças
+#A
+- Calcular a resultante de forças com a mesma direção.
+- Aplicar as três Leis de Newton.
+- Explicar o atrito e a impulsão.
+#C
+- Força: interação entre corpos (N); a resultante soma as forças.
+- 1.ª Lei: resultante nula, repouso ou velocidade constante.
+- 2.ª Lei: F = m a (resultante e aceleração com o mesmo sentido).
+- 3.ª Lei: ação e reação, iguais e opostas, em corpos diferentes.
+- Atrito: opõe-se ao deslizamento entre superfícies.
+- Impulsão: I = ρ(fluido) V(imerso) g (Lei de Arquimedes).
+#E
+@F Segunda Lei de Newton|F = m a|F: resultante (N);m: massa (kg);a: aceleração (m s⁻²)|referencial inercial|1000 kg com 2,5 m s⁻²: F = 2,5 × 10³ N|
+@F Impulsão|I = ρ V g|ρ: massa volúmica do fluido (kg m⁻³);V: volume imerso (m³);g: aceleração gravítica|corpo num fluido|0,50 L imerso em água: I = 5,0 N|
+#F
+Dados: carro de 1000 kg com a = 2,5 m s⁻². Objeto de 0,50 L todo imerso em água (ρ = 1000 kg m⁻³); g = 10 m s⁻².
+Objetivo: resultante no carro e impulsão no objeto.
+1. F = 1000 × 2,5 = [[2,5 × 10³]] N
+2. V = 0,50 L = [[5,0 × 10⁻⁴]] m³
+3. I = 1000 × 5,0 × 10⁻⁴ × 10 = [[5,0]] N
+> F = 2,5 × 10³ N e I = 5,0 N.
+Verificação: a impulsão é igual ao peso da água deslocada (0,50 kg).
+#J
+Se a resultante das forças que atuam num corpo é nula, o corpo tem de estar parado?
+#R
+Não: pode mover-se com velocidade constante (1.ª Lei de Newton).
+#V
+V = [1000 * 2.5, 0.50e-3, 1000 * 5.0e-4 * 10]
+
+@licao r9c
+titulo: Eletricidade: circuitos, grandezas elétricas e potência
+chave: circuito elétrico série paralelo corrente tensão resistência amperímetro voltímetro potência energia elétrica quilowatt-hora efeito joule segurança
+calc: c_fqci.pot
+ano: 9
+nivel: revisão
+fonte: AE FQ 9.º ano, Eletricidade
+#A
+- Distinguir circuitos em série e em paralelo.
+- Medir corrente e tensão e calcular a resistência.
+- Calcular a potência e a energia elétricas.
+#C
+- Corrente (A): amperímetro em série; tensão (V): voltímetro em paralelo.
+- Resistência: R = U / I (Ω).
+- Potência: P = U I (W); energia: E = P Δt (J ou kWh).
+- Efeito Joule: os condutores aquecem quando passa corrente.
+- Segurança: fusíveis, disjuntores e ligação à terra.
+#E
+@F Resistência|R = U / I|U: tensão (V);I: corrente (A)|condutor|12 V e 0,50 A: R = 24 Ω|c_fqci.ohm
+@F Potência e energia|P = U I e E = P Δt|P em W ou kW;Δt em s ou h|aparelho a funcionar|1,2 kW durante 0,25 h: E = 0,30 kWh|c_fqci.pot
+#F
+Dados: um secador de 1200 W, ligado a 230 V, funciona 15 min.
+Objetivo: corrente e energia gasta em kWh.
+1. I = 1200 / 230 = [[5,2]] A
+2. Δt = 15 / 60 = [[0,25]] h
+3. E = 1,2 × 0,25 = [[0,30]] kWh
+> I ≈ 5,2 A e E = 0,30 kWh.
+Verificação: em joules, 0,30 × 3,6 × 10⁶ = [[1,1 × 10⁶]] J.
+#J
+Como se liga um amperímetro num circuito?
+#R
+Em série com o componente onde se quer medir a corrente.
+#V
+V = [1200 / 230, 15 / 60, 1.2 * 0.25, 0.30 * 3.6e6]
+
+@licao r9d
+titulo: Átomos, distribuição eletrónica e ligação química
+chave: modelos atómicos protões neutrões eletrões número atómico distribuição eletrónica níveis eletrões de valência metais alcalinos halogéneos gases nobres ligação covalente iónica metálica
+calc: c_fqel.conf
+ano: 9
+nivel: revisão
+fonte: AE FQ 9.º ano, Classificação dos materiais
+#A
+- Descrever a evolução dos modelos atómicos.
+- Escrever a distribuição eletrónica por níveis até Z = 20.
+- Relacionar os eletrões de valência com o grupo.
+- Prever o tipo de ligação química.
+#C
+- Modelos: Dalton, Thomson, Rutherford, Bohr e nuvem eletrónica.
+- Núcleo: protões e neutrões; Z = número de protões.
+- Distribuição por níveis até Z = 20: 2, 8, 8, 2.
+- Valência: eletrões do último nível.
+- Grupos 1, 2, 17 e 18: alcalinos, alcalino-terrosos, halogéneos, gases nobres.
+- Ligação covalente (não metais), iónica (metal e não metal) ou metálica.
+#E
+@F Número de neutrões|N = A - Z|A: número de massa;Z: número atómico|qualquer núcleo|²³Na: N = 23 - 11 = 12|
+@F Eletrões de um ião|n.º de eletrões = Z - carga|carga com sinal (Cl⁻: -1)|iões monoatómicos|Cl⁻: 17 + 1 = 18 eletrões|c_fqel.conf
+#F
+Dados: cloro (Z = 17) e sódio (Z = 11).
+Objetivo: distribuições eletrónicas, grupos e ligação no NaCl.
+1. Cl: 2, 8, 7: [[7]] eletrões de valência, grupo 17.
+2. Na: 2, 8, 1: [[1]] eletrão de valência, grupo 1.
+3. Na⁺ tem 11 - 1 = [[10]] eletrões; Cl⁻ tem 17 + 1 = [[18]].
+> No NaCl há ligação iónica entre Na⁺ e Cl⁻.
+Verificação: os dois iões ficam com 8 eletrões no último nível.
+#J
+Que tipo de ligação existe entre os átomos de uma molécula de água?
+#R
+Covalente: o hidrogénio e o oxigénio são não metais.
+#V
+V = [17 - 2 - 8, 11 - 2 - 8, 11 - 1, 17 + 1]
+
+@exemplo r9e1
+nivel: 1
+titulo: Rapidez média de uma viagem
+licao: r9a
+#T
+Enunciado: uma viagem de 120 km demora 1,5 h. Qual é a rapidez média, em km/h e em m/s?
+Resolução:
+1. rm = 120 / 1,5 = [[80]] km/h
+2. Em m/s: 80 / 3,6 = [[22]] m s⁻¹
+Resultado: rm = 80 km/h ≈ 22 m s⁻¹.
+Interpretação: é uma média; nalguns troços o carro foi mais depressa.
+Erros a evitar: multiplicar por 3,6 em vez de dividir.
+#V
+V = [120 / 1.5, 80 / 3.6]
+
+@exemplo r9e2
+nivel: 2
+titulo: Distância de segurança
+licao: r9a
+#T
+Enunciado: um carro segue a 20 m s⁻¹. O condutor reage em 0,80 s e o carro trava em 4,0 s, de forma uniforme.
+Calcula a distância de segurança.
+Resolução:
+1. Reação (velocidade constante): 20 × 0,80 = [[16]] m
+2. Travagem (área do triângulo de v(t)): ½ × 4,0 × 20 = [[40]] m
+3. Segurança: 16 + 40 = [[56]] m
+Resultado: são precisos cerca de 56 m para parar.
+Interpretação: com sono ou álcool o tempo de reação aumenta, e a distância também.
+Erros a evitar: esquecer a distância percorrida durante o tempo de reação.
+#V
+V = [20 * 0.80, 0.5 * 4.0 * 20, 16 + 40]
+
+@exercicio r9x1
+tipo: n
+licao: r9a
+#T
+Um ciclista passa de 2,0 m s⁻¹ para 8,0 m s⁻¹ em 3,0 s. Qual é a aceleração média (em m s⁻²)?
+#S
+2
+#P
+am = Δv / Δt.
+#D
+am = (8,0 - 2,0) / 3,0 = [[2,0]] m s⁻².
+#V
+S = (8.0 - 2.0) / 3.0
+V = [S]
+
+@exercicio r9x2
+tipo: n
+licao: r9b
+#T
+Que resultante (em N) dá a um corpo de 50 kg uma aceleração de 3,0 m s⁻²?
+#S
+150
+#P
+F = m a.
+#D
+F = 50 × 3,0 = [[1,5 × 10²]] N.
+#V
+S = 50 * 3.0
+V = [S]
+
+@exercicio r9x3
+tipo: v
+licao: r9b
+#T
+A ação e a reação anulam-se porque atuam no mesmo corpo.
+#S
+F
+#P
+Em que corpos atua cada força do par?
+#D
+Falso: atuam em corpos diferentes, por isso não se anulam.
+#V
+S = 'F'
+
+@exercicio r9x4
+tipo: n
+licao: r9c
+#T
+Uma lâmpada de 60 W está acesa 5,0 h. Que energia gasta (em kWh)?
+#S
+0,3
+#P
+E = P Δt, com P em kW e Δt em h.
+#D
+E = 0,060 × 5,0 = [[0,30]] kWh.
+#V
+S = 0.060 * 5.0
+V = [S]
+
+@exercicio r9x5
+tipo: n
+licao: r9d
+#T
+Quantos eletrões de valência tem o magnésio (Z = 12)?
+#S
+2
+#P
+Distribui os 12 eletrões por níveis: 2, 8, ...
+#D
+Distribuição 2, 8, 2: o magnésio tem 12 - 2 - 8 = [[2]] eletrões de valência.
+#V
+S = 12 - 2 - 8
+V = [S]
+
+@exercicio r9x6
+tipo: m
+licao: r9d
+#T
+Que tipo de ligação existe no cloreto de sódio, NaCl?
+#O
+Iónica
+Covalente
+Metálica
+Ligação de hidrogénio
+#S
+1
+#P
+O sódio é um metal; o cloro é um não metal.
+#D
+Metal e não metal: ligação iónica entre Na⁺ e Cl⁻.
+#V
+S = 1

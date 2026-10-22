@@ -10,7 +10,7 @@ chave: ligação química estabilidade energia de ligação comprimento de liga�
 calc: c_fqlg.dh
 ano: 10
 nivel: núcleo
-pre: q3c
+pre: q3c r9d
 fonte: AE FQ A 10.º, Ligação química
 #A
 - Explicar porque os átomos se ligam.

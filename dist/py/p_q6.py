@@ -4,8 +4,8 @@ D = "@V 1\n\
 @T Transforma\xe7\xf5es qu\xedmicas\n\
 @L q6a|Energia nas rea\xe7\xf5es: varia\xe7\xe3o de entalpia|reacao quimica quebra formacao de ligacoes\
  variacao de entalpia exotermica endotermica sistema vizinhanca energias de\
- ligacao|c_fqlg.dh|10|n\xfacleo|q4a:Liga\xe7\xe3o qu\xedmica: estabilidade, energia e comprimento||AE FQ A\
- 10.\xba, Transforma\xe7\xf5es qu\xedmicas\n\
+ ligacao|c_fqlg.dh|10|n\xfacleo|q4a:Liga\xe7\xe3o qu\xedmica: estabilidade, energia e\
+ comprimento;r8b:Equa\xe7\xf5es qu\xedmicas e Lei de Lavoisier||AE FQ A 10.\xba, Transforma\xe7\xf5es qu\xedmicas\n\
 @A\n\
 - Explicar uma rea\xe7\xe3o como quebra e forma\xe7\xe3o de liga\xe7\xf5es.\n\
 - Distinguir rea\xe7\xf5es exot\xe9rmicas de endot\xe9rmicas.\n\

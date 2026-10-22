@@ -1,9 +1,9 @@
 # m1_cat.py - M1TR4M: catalogo gerado pelo build (nao editar).
 # TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes
 # CALC: id|nome|disciplina|tema (as palavras-chave estao no indice da pesquisa)
-NLIC = 60
-NEX = 124
-NCART = 169
+NLIC = 72
+NEX = 144
+NCART = 201
 TEMAS = (
     "q1|F|q|Massa e tamanho dos \xe1tomos|p_q1|x_q1|5|0|10|0|18|0|c_fqat.qm c_fqat.mm c_fqat.ar c_fqat.fr c_comu.sci c_comu.sf c_comu.uni|q1a q1b q1c q1d q1e",
     "q2|F|q|Energia dos eletr\xf5es nos \xe1tomos|p_q2|x_q2|5|5|10|10|14|18|c_fqel.fot c_fqel.hid c_fqel.conf c_comu.sci c_comu.uni|q2a q2b q2c q2d q2e",
@@ -16,7 +16,10 @@ TEMAS = (
     "f3|F|f|Energia, fen\xf3menos t\xe9rmicos e radia\xe7\xe3o|p_f3|x_f3|6|37|10|78|17|107|c_fqte.cal c_fqte.est c_fqte.eq c_fqte.cond c_fqte.pl c_fqte.pv c_fqen.ren c_comu.uni|f3a f3b f3c f3d f3e f3f",
     "aq|F|a|Atividades laboratoriais de Qu\xedmica|p_aq|x_aq|7|43|14|88|16|124|c_alq1.gota c_alq1.chama c_alq1.dens c_alq2.misc c_alq2.sol c_fqso.dil c_comd.exp|aq11 aq12 aq13 aq21 aq22 aq23 aq24",
     "af|F|a|Atividades laboratoriais de F\xedsica|p_af|x_af|6|50|12|102|14|140|c_alf1.plano c_alf1.ress c_alf1.pilha c_alf2.painel c_alf2.cap c_alf2.fusao c_comd.reg c_comd.exp|af11 af12 af21 af31 af32 af33",
-    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|56|10|114|15|154|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
+    "r7|F|r|Revis\xf5es do 7.\xba ano|p_r7|x_r7|3|56|6|114|8|154|c_comu.uni c_comu.sci|r7a r7b r7c",
+    "r8|F|r|Revis\xf5es do 8.\xba ano|p_r8|x_r8|5|59|8|120|12|162|c_fqlg.ace c_fqat.mm c_fqel.fot|r8a r8b r8c r8d r8e",
+    "r9|F|r|Revis\xf5es do 9.\xba ano|p_r9|x_r9|4|64|6|128|12|174|c_fqci.ohm c_fqci.pot c_fqel.conf c_comu.uni|r9a r9b r9c r9d",
+    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|68|10|134|15|186|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
 )
 CALC = "c_alf1.plano|AL 1.1 Plano inclinado: Ec e dist\xe2ncia|F|af\n\
 c_alf1.ress|AL 1.2 Queda e ressalto de uma bola|F|af\n\
@@ -74,5 +77,5 @@ c_matq.iq|Inequa\xe7\xf5es do 2.\xba grau|M|m5\n\
 c_matq.tf|Transforma\xe7\xf5es de fun\xe7\xf5es|M|m5"
 BUILD = "2026-10-22"
 # Partes do indice da pesquisa: modulo:disciplina
-IDX = "m1_idx:F m1_idxm:M"
+IDX = "m1_idx:F m1_idx2:F m1_idxm:M"
 LIMITES = "ver RELATORIO.md"

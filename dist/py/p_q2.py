@@ -4,7 +4,8 @@ D = "@V 1\n\
 @T Energia dos eletr\xf5es nos \xe1tomos\n\
 @L q2a|Espetros e radia\xe7\xe3o eletromagn\xe9tica|espetro continuo descontinuo emissao absorcao radiacao\
  eletromagnetica fotao frequencia comprimento de onda e = h f c = lambda f teste de\
- chama|c_fqel.fot|10|n\xfacleo|||AE FQ A 10.\xba, Energia dos eletr\xf5es nos \xe1tomos\n\
+ chama|c_fqel.fot|10|n\xfacleo|r8e:Luz: espetro, reflex\xe3o, refra\xe7\xe3o e lentes||AE FQ A 10.\xba,\
+ Energia dos eletr\xf5es nos \xe1tomos\n\
 @A\n\
 - Distinguir espetros cont\xednuos de descont\xednuos (de riscas).\n\
 - Distinguir espetros de emiss\xe3o de espetros de absor\xe7\xe3o.\n\

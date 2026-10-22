@@ -10,6 +10,7 @@ chave: corrente elétrica carga elétrica diferença de potencial tensão resist
 calc: c_fqci.ohm
 ano: 10
 nivel: núcleo
+pre: r9c
 fonte: AE FQ A 10.º, Energia e fenómenos elétricos
 #A
 - Definir corrente elétrica e calculá-la a partir da carga.

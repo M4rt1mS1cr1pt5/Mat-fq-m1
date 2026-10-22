@@ -10,6 +10,7 @@ chave: sistema fronteira vizinhança sistema isolado fechado aberto energia inte
 calc: c_comu.uni
 ano: 10
 nivel: núcleo
+pre: r7c
 fonte: AE FQ A 10.º, Energia, fenómenos térmicos e radiação
 #A
 - Distinguir sistema, fronteira e vizinhança.

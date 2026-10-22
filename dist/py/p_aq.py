@@ -117,7 +117,8 @@ Uma amostra d\xe1 uma chama vermelho carmim. Que elemento cont\xe9m provavelment
 L\xedtio: \xe9 o elemento com chama vermelho carmim.\n\
 @L aq13|AL 1.3 Densidade relativa de metais|al 1.3 densidade relativa picnometro metal massa volumica agua\
  deslocada erro percentual exatidao identificar metal|c_alq1.dens|10|n\xfacleo|q3c:Forma\xe7\xe3o de i\xf5es\
- e propriedades dos elementos||Programa e AE FQ A 10.\xba, AL 1.3\n\
+ e propriedades dos elementos;r7b:Materiais: subst\xe2ncias, misturas e massa vol\xfamica||Programa e AE FQ A\
+ 10.\xba, AL 1.3\n\
 @A\n\
 - Determinar a densidade relativa de um metal pelo m\xe9todo do picn\xf3metro.\n\
 - Calcular o erro percentual em rela\xe7\xe3o ao valor tabelado.\n\

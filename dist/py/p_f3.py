@@ -4,7 +4,8 @@ D = "@V 1\n\
 @T Energia, fen\xf3menos t\xe9rmicos e radia\xe7\xe3o\n\
 @L f3a|Sistema, energia interna e temperatura|sistema fronteira vizinhanca sistema isolado fechado aberto\
  energia interna temperatura kelvin celsius equilibrio termico zero absoluto\
- termometro|c_comu.uni|10|n\xfacleo|||AE FQ A 10.\xba, Energia, fen\xf3menos t\xe9rmicos e radia\xe7\xe3o\n\
+ termometro|c_comu.uni|10|n\xfacleo|r7c:Energia: fontes, transfer\xeancias, temperatura e calor||AE FQ A\
+ 10.\xba, Energia, fen\xf3menos t\xe9rmicos e radia\xe7\xe3o\n\
 @A\n\
 - Distinguir sistema, fronteira e vizinhan\xe7a.\n\
 - Classificar sistemas como isolados, fechados ou abertos.\n\

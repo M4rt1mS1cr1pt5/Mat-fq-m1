@@ -4,7 +4,8 @@ D = "@V 1\n\
 @T Energia e movimentos\n\
 @L f1a|Energia cin\xe9tica, potencial grav\xedtica e mec\xe2nica|energia cinetica energia potencial gravitica\
  energia mecanica sistema mecanico modelo da particula material centro de massa nivel de\
- referencia|c_fqen.em|10|n\xfacleo|||AE FQ A 10.\xba, Energia e movimentos\n\
+ referencia|c_fqen.em|10|n\xfacleo|r9a:Movimentos: rapidez, acelera\xe7\xe3o e gr\xe1ficos;r9b:For\xe7as:\
+ Leis de Newton, atrito e impuls\xe3o||AE FQ A 10.\xba, Energia e movimentos\n\
 @A\n\
 - Distinguir energia cin\xe9tica de energia potencial grav\xedtica.\n\
 - Calcular Ec, Epg e Em.\n\

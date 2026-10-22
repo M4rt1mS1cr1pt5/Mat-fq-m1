@@ -4,7 +4,8 @@ D = "@V 1\n\
 @T Energia e fen\xf3menos el\xe9tricos\n\
 @L f2a|Corrente el\xe9trica, diferen\xe7a de potencial e resist\xeancia|corrente eletrica carga eletrica\
  diferenca de potencial tensao resistencia eletrica lei de ohm condutor ohmico ampere volt ohm amperimetro\
- voltimetro|c_fqci.ohm|10|n\xfacleo|||AE FQ A 10.\xba, Energia e fen\xf3menos el\xe9tricos\n\
+ voltimetro|c_fqci.ohm|10|n\xfacleo|r9c:Eletricidade: circuitos, grandezas el\xe9tricas e pot\xeancia||AE FQ\
+ A 10.\xba, Energia e fen\xf3menos el\xe9tricos\n\
 @A\n\
 - Definir corrente el\xe9trica e calcul\xe1-la a partir da carga.\n\
 - Definir diferen\xe7a de potencial el\xe9trico.\n\

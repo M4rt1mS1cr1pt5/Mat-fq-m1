@@ -141,6 +141,7 @@ titulo: Soluções, coloides e suspensões
 chave: dispersões soluções coloides suspensões efeito de tyndall soluto solvente tamanho das partículas mistura homogénea heterogénea
 ano: 10
 nivel: núcleo
+pre: r7b
 fonte: AE FQ A 10.º, Gases e dispersões
 #A
 - Distinguir soluções, coloides e suspensões.

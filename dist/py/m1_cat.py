@@ -1,9 +1,9 @@
 # m1_cat.py - M1TR4M: catalogo gerado pelo build (nao editar).
 # TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes
 # CALC: id|nome|disciplina|tema (as palavras-chave estao no indice da pesquisa)
-NLIC = 47
-NEX = 98
-NCART = 139
+NLIC = 60
+NEX = 124
+NCART = 169
 TEMAS = (
     "q1|F|q|Massa e tamanho dos \xe1tomos|p_q1|x_q1|5|0|10|0|18|0|c_fqat.qm c_fqat.mm c_fqat.ar c_fqat.fr c_comu.sci c_comu.sf c_comu.uni|q1a q1b q1c q1d q1e",
     "q2|F|q|Energia dos eletr\xf5es nos \xe1tomos|p_q2|x_q2|5|5|10|10|14|18|c_fqel.fot c_fqel.hid c_fqel.conf c_comu.sci c_comu.uni|q2a q2b q2c q2d q2e",
@@ -14,9 +14,22 @@ TEMAS = (
     "f1|F|f|Energia e movimentos|p_f1|x_f1|5|27|10|58|15|76|c_fqen.em c_fqen.cons c_fqen.tr c_fqen.wp c_fqen.tec c_fqen.pot c_fqen.ren|f1a f1b f1c f1d f1e",
     "f2|F|f|Energia e fen\xf3menos el\xe9tricos|p_f2|x_f2|5|32|10|68|16|91|c_fqci.ohm c_fqci.rho c_fqci.assoc c_fqci.ger c_fqci.pot c_fqen.ren|f2a f2b f2c f2d f2e",
     "f3|F|f|Energia, fen\xf3menos t\xe9rmicos e radia\xe7\xe3o|p_f3|x_f3|6|37|10|78|17|107|c_fqte.cal c_fqte.est c_fqte.eq c_fqte.cond c_fqte.pl c_fqte.pv c_fqen.ren c_comu.uni|f3a f3b f3c f3d f3e f3f",
-    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|43|10|88|15|124|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
+    "aq|F|a|Atividades laboratoriais de Qu\xedmica|p_aq|x_aq|7|43|14|88|16|124|c_alq1.gota c_alq1.chama c_alq1.dens c_alq2.misc c_alq2.sol c_fqso.dil c_comd.exp|aq11 aq12 aq13 aq21 aq22 aq23 aq24",
+    "af|F|a|Atividades laboratoriais de F\xedsica|p_af|x_af|6|50|12|102|14|140|c_alf1.plano c_alf1.ress c_alf1.pilha c_alf2.painel c_alf2.cap c_alf2.fusao c_comd.reg c_comd.exp|af11 af12 af21 af31 af32 af33",
+    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|56|10|114|15|154|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
 )
-CALC = "c_comd.cte|Constantes e dados|C|\n\
+CALC = "c_alf1.plano|AL 1.1 Plano inclinado: Ec e dist\xe2ncia|F|af\n\
+c_alf1.ress|AL 1.2 Queda e ressalto de uma bola|F|af\n\
+c_alf1.pilha|AL 2.1 Caracter\xedsticas de uma pilha|F|af\n\
+c_alf2.painel|AL 3.1 Painel fotovoltaico|F|af\n\
+c_alf2.cap|AL 3.2 Capacidade t\xe9rmica m\xe1ssica|F|af\n\
+c_alf2.fusao|AL 3.3 Balan\xe7o energ\xe9tico (fus\xe3o do gelo)|F|af\n\
+c_alq1.gota|AL 1.1 Volume e mol\xe9culas de uma gota de \xe1gua|F|aq\n\
+c_alq1.chama|AL 1.2 Teste de chama|F|aq\n\
+c_alq1.dens|AL 1.3 Densidade relativa (picn\xf3metro)|F|aq\n\
+c_alq2.misc|AL 2.1 Miscibilidade de l\xedquidos|F|aq\n\
+c_alq2.sol|AL 2.2 Solu\xe7\xe3o a partir de soluto s\xf3lido|F|aq\n\
+c_comd.cte|Constantes e dados|C|\n\
 c_comd.exp|Dados experimentais|C|\n\
 c_comd.reg|Regress\xe3o linear e gr\xe1fico|C|\n\
 c_comu.sci|Calculadora cient\xedfica|C|\n\

@@ -1301,6 +1301,8 @@ T	4	30	0,51,153	 1
 T	25	30	0,0,0	Química
 T	4	47	0,51,153	 2
 T	25	47	0,0,0	Física
+T	4	64	0,51,153	 3
+T	25	64	0,0,0	Atividades laboratoriais
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	16
@@ -1479,6 +1481,8 @@ T	4	30	0,51,153	 1
 T	25	30	0,0,0	Química
 T	4	47	0,51,153	 2
 T	25	47	0,0,0	Física
+T	4	64	0,51,153	 3
+T	25	64	0,0,0	Atividades laboratoriais
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	26
@@ -1603,9 +1607,9 @@ T	4	149	0,0,0	Lições vistas: 0/3
 T	4	166	0,0,0	Exercícios: 0/9 feitos, 0 certos
 T	4	183	0,51,153	Ligação química
 R	314	17	3	170	232,232,232
-R	314	17	3	56	100,100,100
+R	314	17	3	47	100,100,100
 R	0	187	318	25	232,232,232
-T	4	200	100,100,100	1-10 de 30 · enter: mais · esc: voltar
+T	4	200	100,100,100	1-10 de 36 · enter: mais · esc: voltar
 F	32
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
@@ -1736,9 +1740,71 @@ T	4	149	0,51,153	 8
 T	25	149	0,0,0	Energia e fenómenos elétricos
 T	4	166	0,51,153	 9
 T	25	166	0,0,0	Energia, fenómenos térmicos e radiação
+T	4	183	0,51,153	10
+T	25	183	0,0,0	Atividades laboratoriais de Química
+R	314	17	3	170	232,232,232
+R	314	17	3	154	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	39
+R	0	0	318	212	255,255,255
+R	0	0	318	17	0,51,153
+T	4	13	255,255,255	Física e Química A
+R	0	17	313	17	204,224,255
+T	4	30	0,51,153	 1
+T	25	30	0,0,0	Massa e tamanho dos átomos
+T	4	47	0,51,153	 2
+T	25	47	0,0,0	Energia dos eletrões nos átomos
+T	4	64	0,51,153	 3
+T	25	64	0,0,0	Tabela Periódica
+T	4	81	0,51,153	 4
+T	25	81	0,0,0	Ligação química
+T	4	98	0,51,153	 5
+T	25	98	0,0,0	Gases e dispersões
+T	4	115	0,51,153	 6
+T	25	115	0,0,0	Transformações químicas
+T	4	132	0,51,153	 7
+T	25	132	0,0,0	Energia e movimentos
+T	4	149	0,51,153	 8
+T	25	149	0,0,0	Energia e fenómenos elétricos
+T	4	166	0,51,153	 9
+T	25	166	0,0,0	Energia, fenómenos térmicos e radiação
+T	4	183	0,51,153	10
+T	25	183	0,0,0	Atividades laboratoriais de Química
+R	314	17	3	170	232,232,232
+R	314	17	3	154	100,100,100
+R	0	187	318	25	232,232,232
+T	4	200	100,100,100	1_ · enter: opção 1
+F	40
+R	0	0	318	212	255,255,255
+R	0	0	318	17	0,51,153
+T	4	13	255,255,255	Física e Química A
+R	0	17	313	17	204,224,255
+T	4	30	0,51,153	 1
+T	25	30	0,0,0	Massa e tamanho dos átomos
+T	4	47	0,51,153	 2
+T	25	47	0,0,0	Energia dos eletrões nos átomos
+T	4	64	0,51,153	 3
+T	25	64	0,0,0	Tabela Periódica
+T	4	81	0,51,153	 4
+T	25	81	0,0,0	Ligação química
+T	4	98	0,51,153	 5
+T	25	98	0,0,0	Gases e dispersões
+T	4	115	0,51,153	 6
+T	25	115	0,0,0	Transformações químicas
+T	4	132	0,51,153	 7
+T	25	132	0,0,0	Energia e movimentos
+T	4	149	0,51,153	 8
+T	25	149	0,0,0	Energia e fenómenos elétricos
+T	4	166	0,51,153	 9
+T	25	166	0,0,0	Energia, fenómenos térmicos e radiação
+T	4	183	0,51,153	10
+T	25	183	0,0,0	Atividades laboratoriais de Química
+R	314	17	3	170	232,232,232
+R	314	17	3	154	100,100,100
+R	0	187	318	25	232,232,232
+T	4	200	100,100,100	número ou enter: abrir · esc: voltar
+F	41
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Revisão rápida · Massa e tamanho dos átomos
@@ -1749,52 +1815,58 @@ T	4	47	0,51,153	 2
 T	25	47	0,0,0	Cartões pergunta-resposta
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
-F	40
-R	0	0	318	212	255,255,255
-R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Cartão 1/10
-T	4	30	0,0,0	Fórmula: Massa atómica relativa média
-T	4	64	0,0,0	(enter: ver)
-R	0	187	318	25	232,232,232
-T	4	200	100,100,100	1-3 de 3 · esc: voltar
-F	41
-R	0	0	318	212	255,255,255
-R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Cartão · verso
-T	4	30	128,0,128	Ar = Σ (Ar,i × %i) / 100
-T	4	47	0,0,0	- Ar,i: massa isotópica relativa do isótopo
-T	4	64	0,0,0	  i
-T	4	81	0,0,0	- %i: abundância do isótopo i, em %
-T	4	115	0,0,0	1: sabia · 2: não sabia
-R	0	187	318	25	232,232,232
-T	4	200	100,100,100	1-6 de 6 · esc: voltar
 F	42
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Cartão 2/10
-T	4	30	0,0,0	Fração molar e fração mássica
-T	4	64	0,0,0	Um latão tem 70 g de cobre e 30 g de zinco.
-T	4	81	0,0,0	Qual é a fração mássica do zinco?
-T	4	115	0,0,0	(enter: ver)
+T	4	13	255,255,255	Resumo · Massa e tamanho dos átomos
+T	4	30	0,51,153	Constituição do átomo e isótopos
+T	4	47	0,0,0	- Átomo: núcleo (protões e neutrões) e
+T	4	64	0,0,0	  eletrões.
+T	4	81	0,0,0	- Z = n.º de protões; A = protões +
+T	4	98	0,0,0	  neutrões.
+T	4	115	0,0,0	- N = A - Z.
+T	4	132	0,0,0	- Isótopos: mesmo Z, diferente A.
+T	4	149	0,0,0	- Catião perdeu eletrões; anião ganhou.
+T	4	166	0,0,0	- O núcleo é cerca de 10⁵ vezes menor que o
+T	4	183	0,0,0	  átomo.
+R	314	17	3	170	232,232,232
+R	314	17	3	36	100,100,100
 R	0	187	318	25	232,232,232
-T	4	200	100,100,100	1-6 de 6 · esc: voltar
+T	4	200	100,100,100	1-10 de 47 · enter: mais · esc: voltar
 F	43
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Cartão · verso
-T	4	30	0,0,0	w(Zn) = 30 g / (70 g + 30 g) = 0,30, ou
-T	4	47	0,0,0	seja, 30 %.
-T	4	81	0,0,0	1: sabia · 2: não sabia
+T	4	13	255,255,255	Resumo · Massa e tamanho dos átomos
+T	4	47	0,51,153	Tamanho dos átomos: ordens de grandeza e
+T	4	64	0,51,153	escalas
+T	4	81	0,0,0	- Notação científica: a × 10ⁿ, com 1 ≤ a <
+T	4	98	0,0,0	  10.
+T	4	115	0,0,0	- Ordem de grandeza: 10ⁿ se a < 5; 10ⁿ⁺¹ se
+T	4	132	0,0,0	  a ≥ 5.
+T	4	149	0,0,0	- 1 nm = 10⁻⁹ m; 1 pm = 10⁻¹² m.
+T	4	166	0,0,0	- Átomo: cerca de 10⁻¹⁰ m; núcleo: 10⁻¹⁵ m a
+T	4	183	0,0,0	  10⁻¹⁴ m.
+R	314	17	3	170	232,232,232
+R	314	53	3	36	100,100,100
 R	0	187	318	25	232,232,232
-T	4	200	100,100,100	1-4 de 4 · esc: voltar
+T	4	200	100,100,100	11-20 de 47 · enter: mais · esc: voltar
 F	44
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Cartão 3/10
-T	4	30	0,0,0	Fórmula: Unidade de massa atómica
-T	4	64	0,0,0	(enter: ver)
+T	4	13	255,255,255	Resumo · Massa e tamanho dos átomos
+T	4	47	0,51,153	Tamanho dos átomos: ordens de grandeza e
+T	4	64	0,51,153	escalas
+T	4	81	0,0,0	- Notação científica: a × 10ⁿ, com 1 ≤ a <
+T	4	98	0,0,0	  10.
+T	4	115	0,0,0	- Ordem de grandeza: 10ⁿ se a < 5; 10ⁿ⁺¹ se
+T	4	132	0,0,0	  a ≥ 5.
+T	4	149	0,0,0	- 1 nm = 10⁻⁹ m; 1 pm = 10⁻¹² m.
+T	4	166	0,0,0	- Átomo: cerca de 10⁻¹⁰ m; núcleo: 10⁻¹⁵ m a
+T	4	183	0,0,0	  10⁻¹⁴ m.
+R	314	17	3	170	232,232,232
+R	314	53	3	36	100,100,100
 R	0	187	318	25	232,232,232
-T	4	200	100,100,100	1-3 de 3 · esc: voltar
+T	4	200	100,100,100	Tecla sem função: setas para ler, esc para …
 F	45
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153

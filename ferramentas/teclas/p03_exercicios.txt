@@ -2,7 +2,9 @@
 # teste do capitulo (todas as perguntas sem resposta).
 9
 1
+# lista de temas de FQ com 10 ou mais: 1 e enter
 1
+enter
 # treino de FQ: exercicio 1 (certo) e resolucao
 1
 1

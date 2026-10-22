@@ -877,6 +877,26 @@ def sfv(*xs):
     return sfm(*[x[1] for x in xs if x is not None and x[0] != 0])
 
 
+def pm(m, inc):
+    # "(m \u00b1 i)" com a convencao dos manuais: incerteza com 1 alg. sig.,
+    # arredondada por excesso, e o valor com as mesmas casas decimais.
+    # Valores muito grandes ou pequenos: "(a \u00b1 b) \u00d7 10^k".
+    if inc <= 0:
+        return fmt(m)
+    k = _e10(abs(m)) if m != 0 else 0
+    if -3 <= k < CF['sci']:
+        k = 0
+    a = _sc(m, -k)
+    b = _sc(inc, -k)
+    e = _e10(b)
+    i1 = _sc(float(_rnd(_sc(b, -e) + 0.0)), e)
+    if i1 < b:
+        i1 = _sc(float(int(math.ceil(_sc(b, -e) - 1e-9))), e)
+    d = max(0, -e)
+    s = '(' + fmt2(a, 0, d, 0)[0] + ' \u00b1 ' + fmt2(i1, 0, d, 0)[0] + ')'
+    return s + (' ' + X + ' 10' + sup(k) if k else '')
+
+
 def res(sym, x, u='', sf=0, dec=-1):
     # Linha de resultado: "> m = 2,5 g" ou "> m ~ 2,47 g".
     s = eq(x, sf, dec)

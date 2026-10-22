@@ -1,0 +1,618 @@
+@tema af
+disc: F
+grupo: a
+titulo: Atividades laboratoriais de Física
+calcs: c_alf1.plano c_alf1.ress c_alf1.pilha c_alf2.painel c_alf2.cap c_alf2.fusao c_comd.reg c_comd.exp
+
+@licao af11
+titulo: AL 1.1 Movimento num plano inclinado: energia cinética e distância
+chave: al 1.1 plano inclinado carrinho célula fotoelétrica tempo de passagem velocidade energia cinética distância regressão força resultante
+calc: c_alf1.plano
+ano: 10
+nivel: núcleo
+pre: f1c
+fonte: Programa e AE FQ A 10.º, AL 1.1
+#A
+- Medir velocidades com uma célula fotoelétrica.
+- Calcular a energia cinética em vários pontos.
+- Relacionar Ec com a distância percorrida (gráfico e regressão).
+- Interpretar o declive como a intensidade da resultante.
+#B
+Um carrinho que desce uma rampa ganha velocidade.
+Quanto mais desce, mais energia cinética tem.
+#C
+- Material: calha inclinada, carrinho, tira opaca de largura L, célula fotoelétrica com cronómetro digital, fita métrica, balança.
+- Velocidade na célula: v ≈ L / Δt (Δt: tempo de passagem da tira).
+- Ec = ½ m v².
+- Partindo do repouso, Ec = F(R) d: o gráfico Ec(d) é uma reta de declive F(R).
+#D
+1. Mede a massa do carrinho e a largura da tira.
+2. Larga o carrinho sempre da mesma posição, sem o empurrar.
+3. Coloca a célula a várias distâncias d do ponto de partida.
+4. Regista o tempo de passagem (três ensaios por posição; usa a média).
+5. Calcula v e Ec para cada distância.
+6. Faz o gráfico Ec(d) e a reta de regressão: o declive é F(R).
+Cuidados: a tira passa perpendicular ao feixe; mede as distâncias sempre ao mesmo ponto do carrinho.
+L pequena: L / Δt aproxima bem a velocidade no ponto.
+#E
+@F Velocidade com célula fotoelétrica|v = L / Δt|L: largura da tira (m);Δt: tempo de passagem (s)|L pequena|1,00 cm em 10,6 ms: v = 0,943 m s⁻¹|c_alf1.plano
+@F Energia cinética e distância|Ec = F(R) d|F(R): intensidade da resultante (N);d: distância percorrida (m)|partida do repouso, F(R) constante|declive de Ec(d) = 0,554 N|c_alf1.plano
+#F
+Dados: m = 0,500 kg; L = 1,00 cm; d = 0,20, 0,40, 0,60 e 0,80 m; Δt = 15,0, 10,6, 8,7 e 7,5 ms.
+Objetivo: Ec a 0,40 m e resultante das forças.
+1. v = 0,0100 / 0,0106 = [[0,943]] m s⁻¹
+2. Ec = ½ × 0,500 × 0,943² = [[0,222]] J
+3. Regressão Ec(d) com os quatro pontos: declive = [[0,554]] N
+> F(R) ≈ 0,55 N.
+Verificação: r ≈ 1: a energia cinética é proporcional à distância.
+#G
+O declive mede a resultante, que não depende da massa da tira nem de d.
+Com mais atrito, o declive seria menor.
+#H
+- Usar Δt em ms ou L em cm sem converter.
+- Empurrar o carrinho ao largar.
+- Medir d a pontos diferentes do carrinho.
+- Ler o declive como uma energia.
+#I
+- v = L / Δt.
+- Ec = ½ m v².
+- Ec(d): reta; declive = F(R).
+#J
+Se o declive de Ec(d) for 0,30 N, qual é a intensidade da resultante das forças?
+#R
+F(R) = [[0,30]] N: o declive de Ec(d) é a resultante (teorema da energia cinética).
+#V
+ds = [0.20, 0.40, 0.60, 0.80]
+ts = [15.0e-3, 10.6e-3, 8.7e-3, 7.5e-3]
+ec = [0.5 * 0.500 * (0.0100 / t) ** 2 for t in ts]
+mx = sum(ds) / 4
+my = sum(ec) / 4
+k = sum([(ds[i] - mx) * (ec[i] - my) for i in range(4)]) / sum([(x - mx) ** 2 for x in ds])
+V = [0.0100 / 0.0106, ec[1], k, 0.30]
+
+@licao af12
+titulo: AL 1.2 Movimento vertical de queda e de ressalto de uma bola
+chave: al 1.2 queda ressalto bola altura energia mecânica energia dissipada gráfico regressão coeficiente
+calc: c_alf1.ress
+ano: 10
+nivel: núcleo
+pre: f1e
+fonte: Programa e AE FQ A 10.º, AL 1.2
+#A
+- Medir alturas de queda e de ressalto.
+- Relacionar a altura de ressalto com a de queda (gráfico).
+- Calcular a percentagem de energia dissipada no ressalto.
+#B
+Uma bola nunca volta à altura de onde caiu: em cada ressalto perde energia mecânica.
+#C
+- Material: bola, fita métrica ou régua de 2 m, câmara de vídeo ou telemóvel.
+- No ponto mais alto, Ec = 0 e Em = Epg = m g h.
+- Fração de energia que fica: h(r) / h(q).
+- Energia dissipada = (1 - h(r) / h(q)) × 100 %.
+- Gráfico h(r) em função de h(q): uma reta que passa quase na origem.
+#D
+1. Larga a bola de várias alturas, sem a empurrar.
+2. Mede a altura do primeiro ressalto (filmar ajuda).
+3. Faz três ensaios por altura e usa a média.
+4. Faz o gráfico h(r) = k h(q) e determina o declive k.
+5. Calcula a energia dissipada: (1 - k) × 100 %.
+A percentagem depende da bola e do chão (relva, cimento, madeira).
+A energia dissipada passa a energia interna da bola e do chão e a som.
+#E
+@F Energia dissipada no ressalto|Ed (%) = (1 - h(r) / h(q)) × 100 %|h(q): altura de queda;h(r): altura de ressalto|resistência do ar desprezável|h(q) = 1,00 m e h(r) = 0,72 m: 28 %|c_alf1.ress
+#F
+Dados: uma bola de 57 g cai de 1,00 m e ressalta até 0,72 m; g = 10 m s⁻².
+Objetivo: energia mecânica antes e depois e percentagem dissipada.
+1. Em(antes) = 0,057 × 10 × 1,00 = [[0,57]] J
+2. Em(depois) = 0,057 × 10 × 0,72 = [[0,41]] J
+3. Dissipada: (1 - 0,72 / 1,00) × 100 = [[28]] %
+> Dissipam-se 28 % da energia em cada ressalto.
+Verificação: 0,57 - 0,41 = [[0,16]] J, que é 28 % de 0,57 J.
+#G
+O declive k é o mesmo para todas as alturas: a fração dissipada é constante.
+Uma bola de ténis e uma de pingue-pongue têm k diferentes.
+#H
+- Medir a altura do ressalto pelo topo da bola numa vez e pela base noutra.
+- Empurrar a bola ao largar.
+- Achar que a energia dissipada desaparece.
+- Usar só um ensaio por altura.
+#I
+- Em no ponto mais alto = m g h.
+- h(r) = k h(q).
+- Dissipada = (1 - k) × 100 %.
+#J
+Uma bola cai de 2,00 m e ressalta até 1,50 m. Que percentagem de energia se dissipa?
+#R
+(1 - 1,50 / 2,00) × 100 = [[25]] %.
+#V
+V = [0.057 * 10 * 1.00, 0.057 * 10 * 0.72, (1 - 0.72 / 1.00) * 100,
+     0.057 * 10 * (1.00 - 0.72), (1 - 1.50 / 2.00) * 100]
+
+@licao af21
+titulo: AL 2.1 Características de uma pilha
+chave: al 2.1 pilha força eletromotriz resistência interna curva característica reóstato amperímetro voltímetro regressão linear
+calc: c_alf1.pilha
+ano: 10
+nivel: núcleo
+pre: f2d
+fonte: Programa e AE FQ A 10.º, AL 2.1
+#A
+- Montar um circuito para medir a tensão e a corrente de uma pilha.
+- Traçar a curva característica U(I).
+- Determinar a força eletromotriz e a resistência interna por regressão.
+#B
+Uma pilha "cansa-se" quando lhe pedimos muita corrente: a tensão nos terminais desce.
+#C
+- Material: pilha, reóstato, amperímetro, voltímetro, interruptor e fios.
+- U = ε - r I: reta de declive -r e ordenada na origem ε.
+- Amperímetro em série; voltímetro em paralelo com a pilha.
+#D
+1. Monta em série a pilha, o interruptor, o amperímetro e o reóstato.
+2. Liga o voltímetro aos terminais da pilha.
+3. Varia o reóstato e regista pares (I, U).
+4. Fecha o circuito só durante as leituras, para a pilha não aquecer.
+5. Faz o gráfico U(I) e a reta de regressão.
+6. ε = ordenada na origem; r = simétrico do declive.
+Nunca ligues a pilha em curto-circuito.
+#E
+@F Curva característica de um gerador|U = ε - r I|ε: força eletromotriz (V);r: resistência interna (Ω)|gerador de tensão contínua|U = -1,44 I + 4,47: ε = 4,47 V e r = 1,44 Ω|c_alf1.pilha
+#F
+Dados (I em mA; U em V): (50; 4,40), (100; 4,32), (150; 4,26), (200; 4,18), (250; 4,11).
+Objetivo: força eletromotriz e resistência interna.
+1. Regressão com I em A: U = [[-1,44]] I + [[4,47]]
+2. ε = [[4,47]] V e r = [[1,4]] Ω
+> ε ≈ 4,47 V e r ≈ 1,4 Ω.
+Verificação: os pontos estão todos perto da reta (r de correlação próximo de -1).
+#G
+A resistência interna explica a descida da tensão quando a corrente aumenta.
+Uma pilha gasta tem r maior.
+#H
+- Ligar o voltímetro em série.
+- Deixar o circuito fechado muito tempo (a pilha aquece e r muda).
+- Usar I em mA no declive sem converter.
+- Ler r como o declive (é o simétrico).
+#I
+- U = ε - r I.
+- ε: ordenada na origem.
+- r: simétrico do declive.
+#J
+A reta de regressão de uma pilha é U = -0,50 I + 1,52 (SI). Quais são ε e r?
+#R
+ε = 1,52 V e r = 0,50 Ω.
+#V
+x = [0.050, 0.100, 0.150, 0.200, 0.250]
+y = [4.40, 4.32, 4.26, 4.18, 4.11]
+mx = sum(x) / 5
+my = sum(y) / 5
+k = sum([(x[i] - mx) * (y[i] - my) for i in range(5)]) / sum([(a - mx) ** 2 for a in x])
+b = my - k * mx
+V = [k, b, b, -k]
+
+@licao af31
+titulo: AL 3.1 Radiação e potência elétrica de um painel fotovoltaico
+chave: al 3.1 painel fotovoltaico potência elétrica resistência de carga potência máxima irradiância rendimento ângulo de incidência
+calc: c_alf2.painel
+ano: 10
+nivel: núcleo
+pre: f3b
+fonte: Programa e AE FQ A 10.º, AL 3.1
+#A
+- Medir a potência elétrica de um painel para várias resistências.
+- Encontrar a resistência para a qual a potência é máxima.
+- Calcular o rendimento do painel.
+- Investigar o efeito do ângulo de incidência da radiação.
+#B
+Um painel solar não dá sempre a mesma potência: depende da luz e do que se lhe liga.
+#C
+- Material: pequeno painel fotovoltaico, lâmpada (ou Sol), reóstato, amperímetro, voltímetro, régua e transferidor.
+- P = U I.
+- Potência da radiação: P(rad) = Er A.
+- η = P(el) / P(rad) × 100 %.
+#D
+1. Ilumina o painel sempre da mesma maneira (distância e ângulo fixos).
+2. Liga o reóstato ao painel, com o amperímetro em série e o voltímetro em paralelo.
+3. Varia a resistência e regista U e I.
+4. Calcula P = U I e encontra o valor máximo.
+5. Com Er e a área do painel, calcula o rendimento.
+6. Muda o ângulo de incidência e compara as potências.
+A potência é maior com a radiação perpendicular ao painel.
+#E
+@F Potência elétrica|P = U I|U: tensão (V);I: corrente (A)|qualquer resistência de carga|2,50 V e 54,0 mA: P = 0,135 W|c_alf2.painel
+@F Rendimento do painel|η = P(el) / (Er A) × 100 %|Er: irradiância (W m⁻²);A: área (m²)|η < 100 %|0,135 W de 4,0 W: η = 3,4 %|c_alf2.painel
+#F
+Dados: no ponto de potência máxima, U = 2,50 V e I = 54,0 mA; Er = 800 W m⁻²; A = 50 cm².
+Objetivo: potência elétrica e rendimento.
+1. P = 2,50 × 0,0540 = [[0,135]] W
+2. P(rad) = 800 × 50 × 10⁻⁴ = [[4,0]] W
+3. η = 0,135 / 4,0 × 100 = [[3,4]] %
+> η ≈ 3,4 %.
+Verificação: os painéis de laboratório, iluminados com lâmpadas, têm rendimentos baixos.
+#G
+Há uma resistência de carga que torna a potência máxima.
+Nas casas, os inversores procuram esse ponto automaticamente.
+#H
+- Mudar a distância da lâmpada a meio das medições.
+- Esquecer de passar a área de cm² para m².
+- Calcular o rendimento com a potência de um ponto que não é o máximo.
+- Trocar os aparelhos de medida.
+#I
+- P = U I.
+- P(rad) = Er A.
+- η = P(el) / P(rad) × 100 %.
+- Potência máxima com radiação perpendicular.
+#J
+Porque é que a potência de um painel diminui quando a radiação incide obliquamente?
+#R
+A mesma área do painel recebe menos radiação por segundo: a irradiância efetiva é menor.
+#V
+p = 2.50 * 0.0540
+V = [p, 800 * 50e-4, p / (800 * 50e-4) * 100]
+
+@licao af32
+titulo: AL 3.2 Capacidade térmica mássica
+chave: al 3.2 capacidade térmica mássica bloco calorimétrico resistência de aquecimento fonte termómetro gráfico temperatura tempo regressão erro percentual
+calc: c_alf2.cap
+ano: 10
+nivel: núcleo
+pre: f3d
+fonte: Programa e AE FQ A 10.º, AL 3.2
+#A
+- Aquecer um bloco metálico com uma resistência elétrica.
+- Registar θ(t) e fazer a regressão linear.
+- Determinar a capacidade térmica mássica do metal e o erro percentual.
+#B
+Para aquecer 1 kg de alumínio 1 °C é preciso muito menos energia do que para 1 kg de água.
+#C
+- Material: bloco calorimétrico (por exemplo, alumínio, 1,00 kg), resistência de aquecimento, fonte, amperímetro, voltímetro, termómetro, cronómetro, isolante.
+- E = P Δt = U I Δt.
+- Sem perdas: U I Δt = m c Δθ.
+- Se θ(t) for uma reta de declive a: c = P / (m a).
+#D
+1. Mede a massa do bloco e isola-o termicamente.
+2. Coloca a resistência e o termómetro nos orifícios (com um pouco de óleo, para melhor contacto).
+3. Liga a fonte e regista U, I e θ de 30 s em 30 s.
+4. Faz o gráfico θ(t) e a reta de regressão (só a zona linear).
+5. Calcula c = P / (m a) e o erro percentual.
+As perdas para a vizinhança fazem o c obtido maior do que o tabelado.
+#E
+@F Capacidade térmica mássica (AL)|c = P / (m a)|P = U I (W);m: massa (kg);a: declive de θ(t) (°C s⁻¹)|θ(t) linear, sem perdas|60,0 W, 1,00 kg e a = 0,0670 °C s⁻¹: c = 896 J kg⁻¹ K⁻¹|c_alf2.cap
+#F
+Dados: m = 1,00 kg; U = 12,0 V; I = 5,00 A; declive de θ(t): a = 0,0670 °C s⁻¹.
+Objetivo: c do metal e erro (valor tabelado do alumínio: 9,0 × 10² J kg⁻¹ K⁻¹).
+1. P = 12,0 × 5,00 = [[60,0]] W
+2. c = 60,0 / (1,00 × 0,0670) = [[896]] J kg⁻¹ K⁻¹
+3. Erro: |896 - 900| / 900 × 100 = [[0,5]] %
+> c ≈ 896 J kg⁻¹ K⁻¹.
+Verificação: valor próximo do alumínio, como esperado.
+#G
+O método supõe que toda a energia elétrica aquece o bloco.
+Um bom isolamento torna o resultado mais exato.
+#H
+- Usar a parte inicial, não linear, do gráfico.
+- Esquecer o isolamento térmico.
+- Usar a massa em gramas.
+- Confundir o declive com a variação total de temperatura.
+#I
+- E = U I Δt.
+- U I Δt = m c Δθ.
+- c = P / (m a).
+#J
+O bloco perde energia para a vizinhança. O valor de c obtido fica maior ou menor do que o real?
+#R
+Maior: a temperatura sobe menos do que devia. O declive a fica menor, logo c = P / (m a) aumenta.
+#V
+p = 12.0 * 5.00
+c0 = p / (1.00 * 0.0670)
+V = [p, c0, abs(c0 - 900) / 900 * 100]
+
+@licao af33
+titulo: AL 3.3 Balanço energético num sistema termodinâmico
+chave: al 3.3 balanço energético sistema isolado calorímetro gelo fusão entalpia de fusão temperatura de equilíbrio erro percentual
+calc: c_alf2.fusao
+ano: 10
+nivel: núcleo
+pre: f3d
+fonte: Programa e AE FQ A 10.º, AL 3.3
+#A
+- Medir a temperatura de equilíbrio de água com gelo num calorímetro.
+- Fazer o balanço energético do sistema.
+- Determinar a variação de entalpia de fusão do gelo e o erro percentual.
+#B
+Pôr gelo num sumo arrefece-o muito: fundir gelo gasta muita energia.
+#C
+- Material: calorímetro (ou copo de esferovite com tampa), termómetro, balança, água morna e gelo a 0 °C.
+- Sistema isolado: energia cedida = energia recebida.
+- m(a) c (θi - θf) = m(g) ΔHf + m(g) c θf.
+- ΔHf tabelado: 3,34 × 10⁵ J kg⁻¹.
+#D
+1. Mede a massa de água morna e a sua temperatura inicial.
+2. Junta gelo a 0 °C, bem escorrido, e tapa.
+3. Agita e regista a temperatura mínima (equilíbrio).
+4. Mede a massa final: a massa de gelo é a diferença.
+5. Faz o balanço e calcula ΔHf e o erro percentual.
+A água do gelo fundido também aquece até θf: não esqueças essa parcela.
+#E
+@F Entalpia de fusão (balanço)|ΔHf = [m(a) c (θi - θf) - m(g) c θf] / m(g)|m(a): água;m(g): gelo (kg);c = 4,18 × 10³ J kg⁻¹ K⁻¹|sistema isolado, gelo a 0 °C|250,0 g a 40,0 °C, 60,0 g de gelo, θf = 16,0 °C: ΔHf = 3,51 × 10⁵ J kg⁻¹|c_alf2.fusao
+#F
+Dados: 250,0 g de água a 40,0 °C; 60,0 g de gelo a 0 °C; θf = 16,0 °C.
+Objetivo: ΔHf e erro percentual.
+1. Cedida: 0,2500 × 4180 × 24,0 = [[2,51 × 10⁴]] J
+2. Aquecer o gelo fundido: 0,0600 × 4180 × 16,0 = [[4,01 × 10³]] J
+3. ΔHf = (25 080 - 4013) / 0,0600 = [[3,51 × 10⁵]] J kg⁻¹
+4. Erro: (3,51 - 3,34) / 3,34 × 100 = [[5,1]] %
+> ΔHf ≈ 3,51 × 10⁵ J kg⁻¹ (erro de cerca de 5 %).
+Verificação: o valor obtido é maior do que o tabelado, como acontece quando há trocas com a vizinhança.
+#G
+O calorímetro nunca é perfeito: troca alguma energia com a vizinhança.
+Gelo mal escorrido traz água líquida e falseia a massa de gelo.
+#H
+- Esquecer a energia para aquecer a água do gelo fundido.
+- Usar gelo que não está a 0 °C.
+- Não tapar o calorímetro.
+- Ler a temperatura antes do equilíbrio.
+#I
+- Energia cedida = energia recebida.
+- Fundir o gelo e depois aquecer a água que dele resulta.
+- Erro percentual em relação a 3,34 × 10⁵ J kg⁻¹.
+#J
+Porque se deve escorrer bem o gelo antes de o juntar à água?
+#R
+A água líquida agarrada ao gelo não precisa de fundir: contaria como gelo e falsearia ΔHf.
+#V
+q1 = 0.2500 * 4180 * 24.0
+q2 = 0.0600 * 4180 * 16.0
+hf = (q1 - q2) / 0.0600
+V = [q1, q2, hf, (hf - 3.34e5) / 3.34e5 * 100]
+
+@exemplo afe1
+nivel: 1
+titulo: Energia dissipada num ressalto
+licao: af12
+calc: c_alf1.ress
+#T
+Enunciado: uma bola cai de 2,00 m e ressalta até 1,30 m. Que percentagem de energia se dissipa?
+Dados: h(q) = 2,00 m; h(r) = 1,30 m.
+Resolução:
+1. Fração que fica: 1,30 / 2,00 = [[0,650]]
+2. Dissipada: (1 - 0,650) × 100 = [[35,0]] %
+Resultado: dissipam-se 35,0 % da energia mecânica.
+Interpretação: no ressalto seguinte, a bola subiria só cerca de 0,650 × 1,30 = [[0,845]] m.
+Erros a evitar: dividir h(q) por h(r).
+#V
+k = 1.30 / 2.00
+V = [k, (1 - k) * 100, k * 1.30]
+
+@exemplo afe2
+nivel: 2
+titulo: Potência máxima de um painel
+licao: af31
+calc: c_alf2.painel
+#T
+Enunciado: um painel deu (U; I) = (1,0 V; 60 mA), (2,0 V; 55 mA), (2,8 V; 45 mA) e (3,2 V; 25 mA).
+Determina a potência máxima e a resistência de carga correspondente.
+Resolução:
+1. Potências: 60 mW, [[110]] mW, [[126]] mW e [[80]] mW
+2. Máxima: 126 mW, com U = 2,8 V e I = 45 mA
+3. R = 2,8 / 0,045 = [[62]] Ω
+Resultado: P(máx.) ≈ 126 mW, com R ≈ 62 Ω.
+Interpretação: com resistências maiores ou menores, a potência baixa.
+Erros a evitar: escolher o ponto com mais corrente ou com mais tensão.
+#V
+V = [2.0 * 55, 2.8 * 45, 3.2 * 25, 2.8 / 0.045]
+
+@exemplo afe3
+nivel: 3
+titulo: Capacidade térmica mássica do cobre por regressão
+licao: af32
+calc: c_alf2.cap
+#T
+Enunciado: um bloco de cobre de 0,500 kg é aquecido com 20,0 W.
+t (s): 0, 30, 60, 90, 120; θ (°C): 20,0; 23,2; 26,1; 29,4; 32,5.
+Calcula c e o erro percentual (valor tabelado: 385 J kg⁻¹ K⁻¹).
+Resolução:
+1. Regressão θ(t): declive a = [[0,104]] °C s⁻¹
+2. c = 20,0 / (0,500 × 0,104) = [[385]] J kg⁻¹ K⁻¹
+3. Erro: |385 - 385| / 385 × 100 ≈ [[0,1]] %
+Resultado: c ≈ 385 J kg⁻¹ K⁻¹.
+Interpretação: o isolamento foi muito bom (erro pequeno).
+Erros a evitar: usar só o primeiro e o último ponto em vez da reta.
+#V
+t = [0, 30, 60, 90, 120]
+y = [20.0, 23.2, 26.1, 29.4, 32.5]
+mt = sum(t) / 5
+my = sum(y) / 5
+a = sum([(t[i] - mt) * (y[i] - my) for i in range(5)]) / sum([(x - mt) ** 2 for x in t])
+c0 = 20.0 / (0.500 * a)
+V = [a, c0, abs(c0 - 385) / 385 * 100]
+
+@exercicio afx1
+tipo: n
+licao: af11
+modo: s3
+#T
+Uma tira de 1,00 cm passa numa célula fotoelétrica em 12,5 ms. Qual é a velocidade (em m s⁻¹)?
+#S
+0,8
+#P
+v = L / Δt, em unidades SI.
+#D
+v = 0,0100 / 0,0125 = [[0,800]] m s⁻¹.
+#V
+S = 0.0100 / 0.0125
+V = [S]
+
+@exercicio afx2
+tipo: m
+licao: af11
+#T
+Na AL 1.1, o declive do gráfico Ec(d) representa:
+#O
+a intensidade da resultante das forças
+a massa do carrinho
+a velocidade final
+a energia potencial inicial
+#S
+1
+#P
+Teorema da energia cinética: ΔEc = F(R) d.
+#D
+Como Ec = F(R) d (partindo do repouso), o declive é a intensidade da resultante.
+#V
+S = 1
+
+@exercicio afx3
+tipo: n
+licao: af12
+#T
+Uma bola cai de 1,50 m e ressalta até 1,05 m. Que percentagem de energia se dissipa (em %)?
+#S
+30
+#P
+Dissipada = (1 - h(r) / h(q)) × 100 %.
+#D
+(1 - 1,05 / 1,50) × 100 = [[30]] %.
+#V
+S = (1 - 1.05 / 1.50) * 100
+V = [S]
+
+@exercicio afx4
+tipo: v
+licao: af12
+#T
+Quando uma bola ressalta no chão, a sua energia mecânica conserva-se.
+#S
+F
+#P
+A bola volta à mesma altura?
+#D
+Falso: a bola sobe menos do que desceu; parte da energia mecânica é dissipada.
+#V
+S = 'F'
+
+@exercicio afx5
+tipo: n
+licao: af21
+#T
+A reta de regressão de uma pilha é U = -0,80 I + 1,50 (SI). Qual é a resistência interna (em Ω)?
+#S
+0,8
+#P
+U = ε - r I.
+#D
+O declive é -r = -0,80, logo r = [[0,80]] Ω.
+#V
+S = 0.80
+V = [S]
+
+@exercicio afx6
+tipo: m
+licao: af21
+#T
+Na AL 2.1, como se liga o voltímetro?
+#O
+Em paralelo com a pilha
+Em série com a pilha
+Em série com o reóstato
+Em qualquer ponto, em série
+#S
+1
+#P
+O voltímetro mede a diferença de potencial entre dois pontos.
+#D
+O voltímetro liga-se em paralelo, aos terminais da pilha.
+#V
+S = 1
+
+@exercicio afx7
+tipo: n
+licao: af31
+#T
+Um painel fornece 40 mA a 3,0 V. Qual é a potência elétrica (em W)?
+#S
+0,12
+#P
+P = U I, com I em A.
+#D
+P = 3,0 × 0,040 = [[0,12]] W.
+#V
+S = 3.0 * 0.040
+V = [S]
+
+@exercicio afx8
+tipo: v
+licao: af31
+#T
+A potência elétrica de um painel fotovoltaico não depende da resistência que lhe está ligada.
+#S
+F
+#P
+Lembra-te da procura da potência máxima.
+#D
+Falso: a potência varia com a resistência de carga e tem um máximo para um certo valor.
+#V
+S = 'F'
+
+@exercicio afx9
+tipo: n
+licao: af32
+modo: s2
+#T
+Um bloco de 0,500 kg é aquecido com 50 W e θ(t) tem declive 0,110 °C s⁻¹. Qual é c (em J kg⁻¹ K⁻¹)?
+#S
+909,09
+#P
+c = P / (m a).
+#D
+c = 50 / (0,500 × 0,110) = [[9,1 × 10²]] J kg⁻¹ K⁻¹.
+#V
+S = 50 / (0.500 * 0.110)
+V = [S]
+
+@exercicio afx10
+tipo: m
+licao: af32
+#T
+Na AL 3.2, porque se isola termicamente o bloco?
+#O
+Para reduzir a energia transferida para a vizinhança
+Para o bloco aquecer mais devagar
+Para a resistência não se estragar
+Para o termómetro ler melhor
+#S
+1
+#P
+O método supõe que toda a energia elétrica aquece o bloco.
+#D
+O isolamento reduz as perdas para a vizinhança, que tornariam c maior do que o real.
+#V
+S = 1
+
+@exercicio afx11
+tipo: n
+licao: af33
+modo: s3
+#T
+Que energia (em J) cede 0,200 kg de água ao arrefecer de 30,0 °C para 10,0 °C? (c = 4,18 × 10³ J kg⁻¹ K⁻¹)
+#S
+16720
+#P
+Q = m c Δθ.
+#D
+Q = 0,200 × 4,18 × 10³ × 20,0 = [[1,67 × 10⁴]] J.
+#V
+S = 0.200 * 4.18e3 * 20.0
+V = [S]
+
+@exercicio afx12
+tipo: v
+licao: af33
+#T
+Na AL 3.3, o gelo deve ser bem escorrido antes de ser junto à água.
+#S
+V
+#P
+Que efeito teria a água líquida agarrada ao gelo?
+#D
+Verdadeiro: a água líquida não precisa de fundir; contaria como gelo e falsearia o ΔHf.
+#V
+S = 'V'

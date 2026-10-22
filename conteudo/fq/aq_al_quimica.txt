@@ -1,0 +1,707 @@
+@tema aq
+disc: F
+grupo: a
+titulo: Atividades laboratoriais de Química
+calcs: c_alq1.gota c_alq1.chama c_alq1.dens c_alq2.misc c_alq2.sol c_fqso.dil c_comd.exp
+
+@licao aq11
+titulo: AL 1.1 Volume e número de moléculas de uma gota de água
+chave: al 1.1 gota de água volume número de moléculas massa média ensaios incerteza absoluta relativa bureta balança precisão
+calc: c_alq1.gota
+ano: 10
+nivel: núcleo
+pre: q1d
+fonte: Programa e AE FQ A 10.º, AL 1.1
+#A
+- Medir a massa de um número conhecido de gotas.
+- Calcular a massa e o volume médios de uma gota, com incerteza.
+- Calcular a quantidade de matéria e o número de moléculas de uma gota.
+- Avaliar a precisão das medições.
+#B
+Uma gota parece pouca coisa, mas tem um número enorme de moléculas.
+Uma gota tem pouca massa: mede-se a massa de muitas gotas e divide-se.
+#C
+- Material: bureta (ou conta-gotas), gobelé, balança (0,01 g), água destilada.
+- Massa de uma gota: m(gota) = m(n gotas) / n.
+- Volume: V = m / ρ, com ρ(água) = 1,00 g cm⁻³.
+- n = m / M, com M(H₂O) = 18,02 g mol⁻¹; N = n NA.
+- Incerteza absoluta: maior desvio em relação à média.
+#D
+1. Coloca o gobelé na balança e tara.
+2. Deixa cair 20 gotas da bureta e regista a massa.
+3. Repete pelo menos três vezes (ensaios).
+4. Calcula a massa de uma gota em cada ensaio e a média.
+5. Calcula a incerteza absoluta (maior desvio) e a relativa.
+6. Calcula o volume, a quantidade de matéria e o número de moléculas.
+Cuidados: não mexas na torneira entre ensaios, para as gotas terem o mesmo tamanho.
+Pesa logo, para a água não evaporar.
+Medir 20 gotas divide por 20 a incerteza da balança em cada gota.
+Incerteza com 1 algarismo significativo, arredondada por excesso.
+#E
+@F Massa de uma gota|m(gota) = m(n gotas) / n|n: número de gotas|gotas do mesmo tamanho|1,01 g em 20 gotas: 0,0505 g|c_alq1.gota
+@F Número de moléculas|N = (m / M) NA|M(H₂O) = 18,02 g mol⁻¹;NA = 6,02 × 10²³ mol⁻¹|amostra pura|0,0503 g de água: N = 1,68 × 10²¹|c_alq1.gota
+#F
+Dados: três ensaios de 20 gotas: 0,99 g; 1,02 g; 1,01 g.
+Objetivo: massa de uma gota com incerteza e número de moléculas.
+1. Uma gota em cada ensaio: 0,0495 g; 0,0510 g; 0,0505 g
+2. Média: m = [[0,0503]] g; maior desvio: [[0,0008]] g
+3. Incerteza arredondada por excesso: 0,0009 g, ou seja [[1,8]] %
+4. n = 0,0503 / 18,02 = [[2,79 × 10⁻³]] mol
+5. N = 2,79 × 10⁻³ × 6,02 × 10²³ = [[1,68 × 10²¹]] moléculas
+> m(gota) = (0,0503 ± 0,0009) g; N ≈ 1,68 × 10²¹ moléculas.
+Verificação: o volume de uma gota é cerca de 0,05 cm³, um valor plausível.
+#G
+Mesmo uma gota tem cerca de 10²¹ moléculas: as moléculas são minúsculas.
+A incerteza relativa de cerca de 2 % mostra uma boa precisão.
+#H
+- Contar mal as gotas.
+- Esquecer de tarar a balança.
+- Mexer na torneira e mudar o tamanho das gotas.
+- Esquecer de dividir pelo número de gotas.
+#I
+- m(gota) = m / n.
+- V = m / ρ; n = m / M; N = n NA.
+- Incerteza: maior desvio em relação à média.
+- Medir muitas gotas reduz a incerteza de cada uma.
+#J
+Porque se mede a massa de 20 gotas e não a de uma só?
+#R
+Uma gota tem massa muito pequena: com 20 gotas, a incerteza da balança fica 20 vezes menor em cada gota.
+#V
+xs = [0.99 / 20, 1.02 / 20, 1.01 / 20]
+m = sum(xs) / 3
+d = max([abs(x - m) for x in xs])
+V = [m, d, 0.0009 / m * 100, 0.0503 / 18.02, 0.0503 / 18.02 * NA]
+
+@licao aq12
+titulo: AL 1.2 Teste de chama
+chave: al 1.2 teste de chama cor da chama emissão desexcitação sódio potássio lítio cálcio estrôncio bário cobre vidro de cobalto
+calc: c_alq1.chama
+ano: 10
+nivel: núcleo
+pre: q2b
+fonte: Programa e AE FQ A 10.º, AL 1.2
+#A
+- Identificar elementos metálicos pela cor da chama.
+- Relacionar a cor com a emissão de radiação por átomos excitados.
+- Reconhecer as limitações do teste de chama.
+#B
+O fogo de artifício tem cores diferentes porque contém sais de metais diferentes.
+#C
+- Material: bico de Bunsen, fio de níquel-crómio (ou vareta de madeira), sais (cloretos), ácido clorídrico diluído, vidro de cobalto.
+- Na chama, os eletrões dos átomos excitam-se.
+- Ao voltarem a níveis de menor energia, emitem radiação.
+- Cada elemento emite radiações próprias: a cor é uma "impressão digital".
+#D
+1. Limpa o fio no ácido e na chama, até a chama não mudar de cor.
+2. Toca no sal com o fio e leva-o à chama.
+3. Regista a cor observada.
+4. Repete para cada sal, limpando sempre o fio.
+5. Observa o potássio através do vidro de cobalto, que filtra o amarelo do sódio.
+Cores habituais:
+- lítio: vermelho carmim; sódio: amarelo-alaranjado;
+- potássio: violeta (lilás); cálcio: vermelho-alaranjado;
+- estrôncio: vermelho intenso; bário: verde-amarelado;
+- cobre: verde-azulado.
+Segurança: óculos, cabelo apanhado e cuidado com o ácido e com a chama.
+#E
+@F Energia de um fotão emitido|E = h c / λ|h = 6,63 × 10⁻³⁴ J s;c = 3,00 × 10⁸ m s⁻¹;λ: comprimento de onda (m)|um fotão|λ = 589 nm: E = 3,38 × 10⁻¹⁹ J|c_fqel.fot
+#F
+Dados: o sódio emite sobretudo radiação com λ = 589 nm.
+Objetivo: energia de cada fotão emitido.
+1. λ = 589 × 10⁻⁹ m = [[5,89 × 10⁻⁷]] m
+2. E = 6,63 × 10⁻³⁴ × 3,00 × 10⁸ / (5,89 × 10⁻⁷) = [[3,38 × 10⁻¹⁹]] J
+> E ≈ 3,38 × 10⁻¹⁹ J por fotão (luz visível, amarela).
+Verificação: está entre a energia do vermelho e a do violeta.
+#G
+O teste identifica o elemento metálico, não o composto: NaCl e Na₂SO₄ dão a mesma cor.
+É um teste qualitativo; para confirmar usa-se um espetroscópio.
+#H
+- Não limpar o fio entre amostras.
+- Confundir o amarelo do sódio (impureza frequente) com outra cor.
+- Concluir que se identificou o composto.
+- Usar demasiado sal.
+#I
+- Cor da chama: identifica o elemento metálico.
+- A emissão vem da desexcitação dos eletrões.
+- Limpa sempre o fio; vidro de cobalto para o potássio.
+#J
+Uma amostra dá uma chama vermelho carmim. Que elemento contém provavelmente?
+#R
+Lítio: é o elemento com chama vermelho carmim.
+#V
+V = [589e-9, h * c / 5.89e-7]
+
+@licao aq13
+titulo: AL 1.3 Densidade relativa de metais
+chave: al 1.3 densidade relativa picnómetro metal massa volúmica água deslocada erro percentual exatidão identificar metal
+calc: c_alq1.dens
+ano: 10
+nivel: núcleo
+pre: q3c
+fonte: Programa e AE FQ A 10.º, AL 1.3
+#A
+- Determinar a densidade relativa de um metal pelo método do picnómetro.
+- Calcular o erro percentual em relação ao valor tabelado.
+- Identificar um metal pela densidade relativa.
+#B
+Um pedaço de metal desloca um volume de água igual ao seu.
+Comparar a massa do metal com a da água deslocada dá a densidade relativa.
+#C
+- Material: picnómetro, balança (0,01 g), água destilada, pequenos pedaços de metal, papel absorvente.
+- Densidade relativa: d = ρ(metal) / ρ(água) (sem unidades).
+- d = m / (m + m1 - m2).
+- m: metal; m1: picnómetro cheio de água; m2: picnómetro com o metal e cheio de água.
+- Erro percentual = |d - d(tab)| / d(tab) × 100 %.
+#D
+1. Mede a massa do metal, m.
+2. Enche o picnómetro com água, tapa, seca por fora e mede m1.
+3. Põe o metal dentro, completa com água, tapa, seca e mede m2.
+4. A massa de água deslocada é m + m1 - m2.
+5. Calcula d e o erro percentual.
+Cuidados: sem bolhas de ar; secar bem o exterior; água à temperatura ambiente.
+Valores tabelados a 20 °C: alumínio 2,70; zinco 7,14; ferro 7,87; cobre 8,96; chumbo 11,34.
+#E
+@F Densidade relativa (picnómetro)|d = m / (m + m1 - m2)|m: massa do metal;m1: picnómetro com água;m2: picnómetro com metal e água (g)|picnómetro bem cheio, sem bolhas|20,15 g de metal e 2,27 g de água deslocada: d = 8,88|c_alq1.dens
+#F
+Dados: m = 20,15 g; m1 = 82,40 g; m2 = 100,28 g; cobre: d(tab) = 8,96.
+Objetivo: densidade relativa e erro percentual.
+1. Água deslocada: 20,15 + 82,40 - 100,28 = [[2,27]] g
+2. d = 20,15 / 2,27 = [[8,88]]
+3. Erro: |8,88 - 8,96| / 8,96 × 100 = [[0,9]] %
+> d ≈ 8,88; erro de cerca de 0,9 %: o metal deve ser cobre.
+Verificação: o erro é pequeno, por isso a exatidão é boa.
+#G
+A densidade relativa é uma propriedade característica: ajuda a identificar materiais.
+Um erro grande indica bolhas de ar, picnómetro mal cheio ou metal oco ou impuro.
+#H
+- Deixar bolhas de ar no picnómetro.
+- Não secar o exterior antes de pesar.
+- Trocar m1 com m2 na fórmula.
+- Usar pedaços de metal grandes demais para o picnómetro.
+#I
+- d = m / (m + m1 - m2).
+- A massa de água deslocada dá o volume do metal.
+- Erro percentual mede a exatidão.
+#J
+Porque é que a densidade relativa não tem unidades?
+#R
+É o quociente entre duas massas volúmicas (ou duas massas de igual volume): as unidades cortam-se.
+#V
+ma = 20.15 + 82.40 - 100.28
+V = [ma, 20.15 / ma, abs(20.15 / ma - 8.96) / 8.96 * 100]
+
+@licao aq21
+titulo: AL 2.1 Miscibilidade de líquidos
+chave: al 2.1 miscibilidade líquidos miscíveis imiscíveis fases interações intermoleculares polar apolar água etanol hexano propanona
+calc: c_alq2.misc
+ano: 10
+nivel: núcleo
+pre: q4f
+fonte: Programa e AE FQ A 10.º, AL 2.1
+#A
+- Verificar se pares de líquidos são miscíveis.
+- Relacionar a miscibilidade com as interações intermoleculares.
+- Prever qual dos líquidos fica por cima quando não se misturam.
+#B
+O azeite e o vinagre separam-se; o álcool e a água misturam-se.
+A diferença está nas interações entre as moléculas.
+#C
+- Material: tubos de ensaio com rolha, suporte, pipetas, água, etanol, propanona, hexano e óleo.
+- Miscíveis: formam uma só fase; imiscíveis: formam duas fases.
+- "Semelhante dissolve semelhante": interações do mesmo tipo favorecem a mistura.
+- Água: ligações de hidrogénio; hexano: só forças de London.
+#D
+1. Num tubo, junta 2 mL de cada líquido.
+2. Tapa, agita e deixa repousar.
+3. Regista se há uma ou duas fases.
+4. Com duas fases, regista qual fica por cima (o menos denso).
+Resultados esperados:
+- água e etanol: miscíveis;
+- água e propanona: miscíveis;
+- água e hexano: imiscíveis (hexano por cima);
+- hexano e óleo: miscíveis.
+Segurança: o hexano e a propanona são inflamáveis e voláteis; trabalha longe de chamas.
+#E
+@F Massa volúmica|ρ = m / V|m: massa (g);V: volume (cm³)|com duas fases, fica por cima a de menor ρ|2,0 mL de hexano com 1,3 g: ρ = 0,66 g cm⁻³|
+#F
+Dados: água (ρ = 1,00 g cm⁻³) e hexano (ρ = 0,66 g cm⁻³), 2,0 mL de cada.
+Objetivo: prever o resultado e a massa de hexano usada.
+1. Água: ligações de hidrogénio; hexano: só London: imiscíveis.
+2. Fica por cima o hexano, que tem menor massa volúmica.
+3. Massa de hexano: m = 0,66 × 2,0 = [[1,3]] g
+> Duas fases: hexano por cima e água por baixo.
+Verificação: o óleo, também apolar, comporta-se como o hexano.
+#G
+A miscibilidade explica porque a água não lava a gordura sem detergente.
+A regra é uma previsão: para álcoois com líquidos apolares, só a experiência decide.
+#H
+- Achar que dois líquidos incolores se misturam sempre.
+- Não esperar que as fases se separem.
+- Confundir "mais denso" com "mais viscoso".
+- Esquecer a segurança com líquidos inflamáveis.
+#I
+- Miscíveis: uma fase; imiscíveis: duas.
+- Semelhante dissolve semelhante.
+- A fase de cima é a menos densa.
+#J
+Prevê se a propanona e a água são miscíveis e explica.
+#R
+São miscíveis: a propanona é polar e aceita ligações de hidrogénio da água.
+#V
+V = [0.66 * 2.0]
+
+@licao aq22
+titulo: AL 2.2 Soluções a partir de solutos sólidos
+chave: al 2.2 preparar solução soluto sólido massa a pesar balão volumétrico concentração incerteza menisco paralaxe
+calc: c_alq2.sol
+ano: 10
+nivel: núcleo
+pre: q5d
+fonte: Programa e AE FQ A 10.º, AL 2.2
+#A
+- Calcular a massa de soluto para uma concentração pedida.
+- Preparar uma solução num balão volumétrico.
+- Estimar a incerteza relativa da concentração.
+#B
+Para fazer uma solução rigorosa não basta "pôr um pouco de sal".
+É preciso pesar o soluto e medir o volume com instrumentos de precisão.
+#C
+- Material: balança (0,01 g), gobelé, espátula, funil, balão volumétrico, esguicho, conta-gotas.
+- m = c V M (V em dm³).
+- Balão volumétrico: mede um único volume com rigor (traço de referência).
+- Incerteza relativa de c ≈ u(m) / m + u(V) / V.
+#D
+1. Calcula a massa a pesar: m = c V M.
+2. Pesa o soluto num gobelé.
+3. Dissolve com um pouco de água destilada.
+4. Transfere para o balão; lava o gobelé várias vezes para o balão.
+5. Completa com água até ao traço, com o conta-gotas no fim.
+6. Tapa, homogeneíza e rotula.
+Lê o traço ao nível dos olhos (sem erro de paralaxe).
+O menisco fica tangente ao traço.
+#E
+@F Massa de soluto a pesar|m = c V M|c: concentração (mol dm⁻³);V: volume (dm³);M: massa molar (g mol⁻¹)|soluto puro|0,100 mol dm⁻³ em 0,10000 dm³ (M = 249,71): m = 2,50 g|c_alq2.sol
+#F
+Dados: preparar 100,00 mL de CuSO₄·5H₂O 0,100 mol dm⁻³ (M = 249,71 g mol⁻¹).
+Objetivo: massa a pesar e incerteza relativa (balança 0,01 g; balão 0,10 mL).
+1. n = 0,100 × 0,10000 = [[0,0100]] mol
+2. m = 0,0100 × 249,71 = [[2,50]] g
+3. Incerteza relativa: 0,01 / 2,50 + 0,10 / 100,00 = [[0,005]], ou seja 0,5 %
+> Pesa 2,50 g; a concentração fica com cerca de 0,5 % de incerteza.
+Verificação: a maior parte da incerteza vem da balança.
+#G
+Quanto mais rigorosos os instrumentos, menor a incerteza da concentração.
+#H
+- Encher o balão acima do traço.
+- Não lavar o gobelé para dentro do balão.
+- Usar o volume em mL na fórmula com c em mol dm⁻³.
+- Dissolver diretamente no balão um sólido que dissolve mal.
+#I
+- m = c V M.
+- Dissolver, transferir, lavar, completar e homogeneizar.
+- Incerteza relativa ≈ u(m)/m + u(V)/V.
+#J
+Porque se lava várias vezes o gobelé para dentro do balão?
+#R
+Para não perder soluto: o que ficasse no gobelé baixaria a concentração.
+#V
+n = 0.100 * 0.10000
+V = [n, n * 249.71, 0.01 / 2.50 + 0.10 / 100.00]
+
+@licao aq23
+titulo: AL 2.3 Diluição de soluções
+chave: al 2.3 diluição solução-mãe pipeta volumétrica pompete balão volumétrico fator de diluição volume a medir
+calc: c_fqso.dil
+ano: 10
+nivel: núcleo
+pre: q5e
+fonte: Programa e AE FQ A 10.º, AL 2.3
+#A
+- Calcular o volume de solução-mãe a medir.
+- Preparar uma solução diluída com pipeta e balão volumétrico.
+- Calcular o fator de diluição.
+#B
+Diluir é juntar solvente: a quantidade de soluto mantém-se e a concentração diminui.
+#C
+- Material: pipeta volumétrica, pompete, balão volumétrico, gobelé, esguicho, solução-mãe.
+- ci × Vi = cf × Vf (a quantidade de soluto não muda).
+- Fator de diluição: f = Vf / Vi = ci / cf.
+- Pipeta volumétrica: mede um único volume com rigor.
+#D
+1. Calcula Vi = cf × Vf / ci.
+2. Lava a pipeta com um pouco da solução-mãe (ambientar).
+3. Mede Vi com a pipeta e a pompete (nunca com a boca).
+4. Transfere para o balão de volume Vf.
+5. Completa com água até ao traço e homogeneíza.
+Na pipeta volumétrica não se sopra a última gota.
+#E
+@F Diluição|ci × Vi = cf × Vf|i: solução-mãe;f: solução diluída|a mesma quantidade de soluto|0,500 mol dm⁻³ para 0,100 em 100,0 mL: Vi = 20,0 mL|c_fqso.dil
+@F Fator de diluição|f = Vf / Vi = ci / cf|f > 1|diluição|100,0 mL / 20,0 mL: f = 5,00|c_fqso.dil
+#F
+Dados: solução-mãe 0,500 mol dm⁻³; preparar 100,0 mL de 0,100 mol dm⁻³.
+Objetivo: volume a medir e fator de diluição.
+1. Vi = 0,100 × 100,0 / 0,500 = [[20,0]] mL
+2. f = 100,0 / 20,0 = [[5,00]]
+> Mede 20,0 mL com a pipeta; f = 5,00.
+Verificação: ci / cf = 0,500 / 0,100 = [[5,00]], o mesmo valor.
+#G
+Diluir em vários passos permite obter concentrações muito pequenas com rigor.
+#H
+- Medir Vi com uma proveta em vez de uma pipeta.
+- Não ambientar a pipeta.
+- Soprar a última gota da pipeta volumétrica.
+- Juntar Vf de água em vez de completar até Vf.
+#I
+- ci Vi = cf Vf.
+- f = Vf / Vi = ci / cf.
+- Pipeta volumétrica e balão volumétrico.
+#J
+Para diluir uma solução 10 vezes, num balão de 50,0 mL, que volume de solução-mãe deves medir?
+#R
+Vi = 50,0 / 10 = [[5,00]] mL.
+#V
+V = [0.100 * 100.0 / 0.500, 100.0 / 20.0, 0.500 / 0.100, 50.0 / 10]
+
+@licao aq24
+titulo: AL 2.4 Reação fotoquímica
+chave: al 2.4 reação fotoquímica cloreto de prata nitrato de prata luz precipitado escurecimento tubo de controlo filtros fotografia
+calc: c_fqel.fot
+ano: 10
+nivel: núcleo
+pre: q6b
+fonte: Programa e AE FQ A 10.º, AL 2.4
+#A
+- Observar uma reação provocada pela luz.
+- Comparar com um tubo protegido da luz (controlo).
+- Relacionar a rapidez da reação com a energia dos fotões.
+#B
+O cloreto de prata é branco, mas à luz escurece: forma-se prata.
+Era assim que funcionava a fotografia antiga.
+#C
+- Material: tubos de ensaio, soluções de nitrato de prata e de cloreto de sódio, alumínio, luz e filtros.
+- Precipitação: Ag⁺ + Cl⁻ → AgCl (sólido branco).
+- Fotodecomposição: 2 AgCl → 2 Ag + Cl₂ (com luz).
+- A prata formada, em partículas finas, é escura.
+#D
+1. Em dois tubos, junta NaCl e AgNO₃: forma-se AgCl, branco.
+2. Embrulha um dos tubos em papel de alumínio (controlo).
+3. Expõe os dois tubos à luz durante alguns minutos.
+4. Compara: o exposto escurece; o tapado fica branco.
+5. Com filtros: a luz azul escurece mais depressa do que a vermelha.
+O registo é qualitativo: cor, tempo e tipo de luz.
+Segurança: o nitrato de prata mancha a pele; usa luvas e óculos.
+#E
+@F Energia de um fotão|E = h c / λ|λ: comprimento de onda (m)|um fotão|λ = 450 nm: E = 4,42 × 10⁻¹⁹ J|c_fqel.fot
+#F
+Dados: luz azul (450 nm) e vermelha (700 nm).
+Objetivo: comparar a energia dos fotões.
+1. E(azul) = 6,63 × 10⁻³⁴ × 3,00 × 10⁸ / (450 × 10⁻⁹) = [[4,42 × 10⁻¹⁹]] J
+2. E(vermelho) = 6,63 × 10⁻³⁴ × 3,00 × 10⁸ / (700 × 10⁻⁹) = [[2,84 × 10⁻¹⁹]] J
+3. Razão: 4,42 / 2,84 = [[1,56]]
+> Os fotões azuis têm cerca de 1,56 vezes mais energia.
+Verificação: menor λ, maior energia.
+#G
+A luz de maior energia (azul, violeta, UV) decompõe o AgCl mais depressa.
+O tubo de controlo prova que o escurecimento se deve à luz.
+#H
+- Não usar um tubo de controlo.
+- Tirar conclusões sem expor os tubos o mesmo tempo.
+- Achar que a luz vermelha é mais energética por ser "quente".
+- Tocar no nitrato de prata sem luvas.
+#I
+- AgCl escurece com a luz: forma-se prata.
+- Controlo: tubo tapado.
+- Fotões de menor λ têm mais energia.
+#J
+Para que serve o tubo embrulhado em papel de alumínio?
+#R
+É o controlo: mostra que, sem luz, o AgCl não escurece.
+#V
+V = [h * c / 450e-9, h * c / 700e-9, 4.42 / 2.84]
+
+@exemplo aqe1
+nivel: 1
+titulo: Massa e volume de uma gota
+licao: aq11
+calc: c_alq1.gota
+#T
+Enunciado: 25 gotas de água têm 1,30 g. Calcula a massa e o volume de uma gota.
+Dados: m = 1,30 g; n = 25; ρ = 1,00 g cm⁻³.
+Resolução:
+1. m(gota) = 1,30 / 25 = [[0,0520]] g
+2. V = 0,0520 / 1,00 = [[0,0520]] cm³
+Resultado: m(gota) = 0,0520 g e V = 0,0520 cm³.
+Interpretação: 1 cm³ de água tem cerca de 19 gotas.
+Erros a evitar: dividir 25 pela massa.
+#V
+V = [1.30 / 25, 1.30 / 25 / 1.00]
+
+@exemplo aqe2
+nivel: 2
+titulo: Que metal é?
+licao: aq13
+calc: c_alq1.dens
+#T
+Enunciado: m = 10,80 g; m1 = 80,00 g; m2 = 86,74 g. Identifica o metal (Al 2,70; Zn 7,14; Fe 7,87; Cu 8,96).
+Resolução:
+1. Água deslocada: 10,80 + 80,00 - 86,74 = [[4,06]] g
+2. d = 10,80 / 4,06 = [[2,66]]
+3. O mais próximo é o alumínio: erro = |2,66 - 2,70| / 2,70 × 100 = [[1,5]] %
+Resultado: d ≈ 2,66; deve ser alumínio.
+Interpretação: um erro de 1,5 % é aceitável nesta atividade.
+Erros a evitar: usar m1 - m2 em vez de m + m1 - m2.
+#V
+ma = 10.80 + 80.00 - 86.74
+d = 10.80 / ma
+V = [ma, d, abs(d - 2.70) / 2.70 * 100]
+
+@exemplo aqe3
+nivel: 3
+titulo: Preparar e diluir, com incerteza
+licao: aq23
+calc: c_alq2.sol
+#T
+Enunciado: dissolvem-se 0,585 g de NaCl (M = 58,44 g mol⁻¹) num balão de 100,00 mL.
+Depois, 10,00 mL desta solução são diluídos num balão de 50,00 mL.
+Calcula a concentração final e a sua incerteza relativa (balança 0,001 g; balões 0,10 mL e 0,06 mL; pipeta 0,02 mL).
+Resolução:
+1. c(mãe) = 0,585 / (58,44 × 0,10000) = [[0,100]] mol dm⁻³
+2. c(final) = 0,100 × 10,00 / 50,00 = [[0,0200]] mol dm⁻³
+3. Incerteza relativa: 0,001/0,585 + 0,10/100,00 + 0,02/10,00 + 0,06/50,00 = [[0,0059]]
+Resultado: c ≈ 0,0200 mol dm⁻³, com cerca de 0,6 % de incerteza.
+Interpretação: cada instrumento acrescenta incerteza; a balança é a parcela maior.
+Erros a evitar: esquecer as incertezas da pipeta e do segundo balão.
+#V
+c0 = 0.585 / (58.44 * 0.10000)
+V = [c0, c0 * 10.00 / 50.00, 0.001 / 0.585 + 0.10 / 100.00 + 0.02 / 10.00 + 0.06 / 50.00]
+
+@exercicio aqx1
+tipo: n
+licao: aq11
+#T
+20 gotas de água têm 1,00 g. Qual é a massa média de uma gota (em g)?
+#S
+0,05
+#P
+Divide a massa pelo número de gotas.
+#D
+m(gota) = 1,00 / 20 = [[0,0500]] g.
+#V
+S = 1.00 / 20
+V = [S]
+
+@exercicio aqx2
+tipo: m
+licao: aq11
+#T
+Porque se mede a massa de várias gotas em vez de uma só?
+#O
+Para reduzir a incerteza da massa de cada gota
+Para a água evaporar menos
+Para as gotas ficarem maiores
+Porque a balança não mede massas inferiores a 1 g
+#S
+1
+#P
+Pensa na incerteza da balança a dividir pelo número de gotas.
+#D
+A incerteza da balança é dividida pelo número de gotas: a massa de cada gota fica mais precisa.
+#V
+S = 1
+
+@exercicio aqx3
+tipo: m
+licao: aq12
+#T
+Que elemento dá uma chama amarela intensa?
+#O
+Sódio
+Potássio
+Cobre
+Lítio
+#S
+1
+#P
+É a cor das lâmpadas de algumas estradas.
+#D
+O sódio dá chama amarela-alaranjada (589 nm); é também uma impureza frequente.
+#V
+S = 1
+
+@exercicio aqx4
+tipo: v
+licao: aq12
+#T
+O teste de chama permite distinguir NaCl de Na₂SO₄.
+#S
+F
+#P
+O teste identifica o quê?
+#D
+Falso: o teste identifica o elemento metálico (sódio), que é o mesmo nos dois sais.
+#V
+S = 'F'
+
+@exercicio aqx5
+tipo: n
+licao: aq13
+#T
+m = 10,80 g; m1 = 80,00 g; m2 = 86,80 g. Qual é a densidade relativa do metal?
+#S
+2,7
+#P
+d = m / (m + m1 - m2).
+#D
+Água deslocada: 10,80 + 80,00 - 86,80 = [[4,00]] g; d = 10,80 / 4,00 = [[2,70]].
+#V
+ma = 10.80 + 80.00 - 86.80
+S = 10.80 / ma
+V = [ma, S]
+
+@exercicio aqx6
+tipo: n
+licao: aq13
+modo: s2
+#T
+Obtiveste d = 7,60 para o ferro (d tabelado = 7,87). Qual é o erro percentual (em %)?
+#S
+3,43
+#P
+Erro = |d - d(tab)| / d(tab) × 100 %.
+#D
+Erro = |7,60 - 7,87| / 7,87 × 100 = [[3,4]] %.
+#V
+S = abs(7.60 - 7.87) / 7.87 * 100
+V = [S]
+
+@exercicio aqx7
+tipo: m
+licao: aq21
+#T
+Ao agitar água com hexano e deixar repousar:
+#O
+formam-se duas fases e o hexano fica por cima
+formam-se duas fases e o hexano fica por baixo
+forma-se uma só fase
+o hexano dissolve-se completamente na água
+#S
+1
+#P
+O hexano é apolar e menos denso do que a água.
+#D
+São imiscíveis (polar e apolar); o hexano (ρ = 0,66 g cm⁻³) fica por cima.
+#V
+S = 1
+
+@exercicio aqx8
+tipo: v
+licao: aq21
+#T
+A água e o etanol são miscíveis porque ambos estabelecem ligações de hidrogénio.
+#S
+V
+#P
+Que interações tem cada um?
+#D
+Verdadeiro: as interações são semelhantes (ligações de hidrogénio), por isso misturam-se.
+#V
+S = 'V'
+
+@exercicio aqx9
+tipo: n
+licao: aq22
+modo: s3
+#T
+Que massa de NaCl (M = 58,44 g mol⁻¹) deves pesar para 250,0 mL de solução 0,200 mol dm⁻³ (em g)?
+#S
+2,922
+#P
+m = c V M, com V em dm³.
+#D
+m = 0,200 × 0,2500 × 58,44 = [[2,92]] g.
+#V
+S = 0.200 * 0.2500 * 58.44
+V = [S]
+
+@exercicio aqx10
+tipo: m
+licao: aq22
+#T
+Que material garante o volume final rigoroso de uma solução?
+#O
+Balão volumétrico
+Gobelé
+Proveta
+Matraz
+#S
+1
+#P
+Tem um único traço de referência.
+#D
+O balão volumétrico mede um único volume com rigor (traço de referência).
+#V
+S = 1
+
+@exercicio aqx11
+tipo: n
+licao: aq23
+#T
+Que volume (em mL) de solução 0,200 mol dm⁻³ é preciso para preparar 50,0 mL de solução 0,040 mol dm⁻³?
+#S
+10
+#P
+ci × Vi = cf × Vf.
+#D
+Vi = 0,040 × 50,0 / 0,200 = [[10,0]] mL.
+#V
+S = 0.040 * 50.0 / 0.200
+V = [S]
+
+@exercicio aqx12
+tipo: n
+licao: aq23
+#T
+Uma solução 0,500 mol dm⁻³ é diluída até 0,050 mol dm⁻³. Qual é o fator de diluição?
+#S
+10
+#P
+f = ci / cf.
+#D
+f = 0,500 / 0,050 = [[10]].
+#V
+S = 0.500 / 0.050
+V = [S]
+
+@exercicio aqx13
+tipo: m
+licao: aq24
+#T
+Na AL 2.4, um tubo com AgCl é embrulhado em papel de alumínio. Para quê?
+#O
+Serve de controlo: mostra o que acontece sem luz
+Acelera a reação
+Impede a formação do precipitado
+Aquece o tubo
+#S
+1
+#P
+Compara-se com o tubo exposto à luz.
+#D
+É o tubo de controlo: sem luz, o AgCl não escurece; isso prova o efeito da luz.
+#V
+S = 1
+
+@exercicio aqx14
+tipo: v
+licao: aq24
+#T
+A luz vermelha escurece o cloreto de prata mais depressa do que a luz azul.
+#S
+F
+#P
+Compara a energia dos fotões.
+#D
+Falso: os fotões azuis têm mais energia (menor λ) e decompõem o AgCl mais depressa.
+#V
+S = 'F'

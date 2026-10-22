@@ -1297,9 +1297,42 @@ T	4	149	0,51,153	 8
 T	25	149	0,0,0	Energia e fenómenos elétricos
 T	4	166	0,51,153	 9
 T	25	166	0,0,0	Energia, fenómenos térmicos e radiação
+T	4	183	0,51,153	10
+T	25	183	0,0,0	Atividades laboratoriais de Química
+R	314	17	3	170	232,232,232
+R	314	17	3	154	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	16
+R	0	0	318	212	255,255,255
+R	0	0	318	17	0,51,153
+T	4	13	255,255,255	Física e Química A
+R	0	17	313	17	204,224,255
+T	4	30	0,51,153	 1
+T	25	30	0,0,0	Massa e tamanho dos átomos
+T	4	47	0,51,153	 2
+T	25	47	0,0,0	Energia dos eletrões nos átomos
+T	4	64	0,51,153	 3
+T	25	64	0,0,0	Tabela Periódica
+T	4	81	0,51,153	 4
+T	25	81	0,0,0	Ligação química
+T	4	98	0,51,153	 5
+T	25	98	0,0,0	Gases e dispersões
+T	4	115	0,51,153	 6
+T	25	115	0,0,0	Transformações químicas
+T	4	132	0,51,153	 7
+T	25	132	0,0,0	Energia e movimentos
+T	4	149	0,51,153	 8
+T	25	149	0,0,0	Energia e fenómenos elétricos
+T	4	166	0,51,153	 9
+T	25	166	0,0,0	Energia, fenómenos térmicos e radiação
+T	4	183	0,51,153	10
+T	25	183	0,0,0	Atividades laboratoriais de Química
+R	314	17	3	170	232,232,232
+R	314	17	3	154	100,100,100
+R	0	187	318	25	232,232,232
+T	4	200	100,100,100	1_ · enter: opção 1
+F	17
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Massa e tamanho dos átomos
@@ -1310,33 +1343,6 @@ T	4	47	0,51,153	 2
 T	25	47	0,0,0	Teste do capítulo
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
-F	17
-R	0	0	318	212	255,255,255
-R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Treino · Massa e tamanho dos átomos
-R	0	17	313	17	204,224,255
-T	4	30	0,51,153	 1
-T	25	30	0,0,0	· O ião ²⁷₁₃Al³⁺ tem:
-T	4	47	0,51,153	 2
-T	25	47	0,0,0	· Quantos neutrões tem o núcleo de ⁵⁶₂₆…
-T	4	64	0,51,153	 3
-T	25	64	0,0,0	· Os isótopos de um elemento têm o mesm…
-T	4	81	0,51,153	 4
-T	25	81	0,0,0	· Qual é a ordem de grandeza de 6,5 × 1…
-T	4	98	0,51,153	 5
-T	25	98	0,0,0	· O lítio tem os isótopos ⁶Li (6,02; 7,…
-T	4	115	0,51,153	 6
-T	25	115	0,0,0	· Calcula a massa de 0,250 mol de clore…
-T	4	132	0,51,153	 7
-T	25	132	0,0,0	· Quantas moléculas há em 0,10 mol de O…
-T	4	149	0,51,153	 8
-T	25	149	0,0,0	· Qual é a quantidade de matéria em 8,0…
-T	4	166	0,51,153	 9
-T	25	166	0,0,0	· Uma mistura tem 1,0 mol de N₂ e 3,0 m…
-T	4	183	0,51,153	10
-T	25	183	0,0,0	· Um nanómetro é igual a 10⁻⁹ m.
-R	0	187	318	25	232,232,232
-T	4	200	100,100,100	✓ certo · ✗ errado · · por fazer · esc
 F	18
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
@@ -1363,8 +1369,35 @@ T	25	166	0,0,0	· Uma mistura tem 1,0 mol de N₂ e 3,0 m…
 T	4	183	0,51,153	10
 T	25	183	0,0,0	· Um nanómetro é igual a 10⁻⁹ m.
 R	0	187	318	25	232,232,232
-T	4	200	100,100,100	1_ · enter: opção 1
+T	4	200	100,100,100	✓ certo · ✗ errado · · por fazer · esc
 F	19
+R	0	0	318	212	255,255,255
+R	0	0	318	17	0,51,153
+T	4	13	255,255,255	Treino · Massa e tamanho dos átomos
+R	0	17	313	17	204,224,255
+T	4	30	0,51,153	 1
+T	25	30	0,0,0	· O ião ²⁷₁₃Al³⁺ tem:
+T	4	47	0,51,153	 2
+T	25	47	0,0,0	· Quantos neutrões tem o núcleo de ⁵⁶₂₆…
+T	4	64	0,51,153	 3
+T	25	64	0,0,0	· Os isótopos de um elemento têm o mesm…
+T	4	81	0,51,153	 4
+T	25	81	0,0,0	· Qual é a ordem de grandeza de 6,5 × 1…
+T	4	98	0,51,153	 5
+T	25	98	0,0,0	· O lítio tem os isótopos ⁶Li (6,02; 7,…
+T	4	115	0,51,153	 6
+T	25	115	0,0,0	· Calcula a massa de 0,250 mol de clore…
+T	4	132	0,51,153	 7
+T	25	132	0,0,0	· Quantas moléculas há em 0,10 mol de O…
+T	4	149	0,51,153	 8
+T	25	149	0,0,0	· Qual é a quantidade de matéria em 8,0…
+T	4	166	0,51,153	 9
+T	25	166	0,0,0	· Uma mistura tem 1,0 mol de N₂ e 3,0 m…
+T	4	183	0,51,153	10
+T	25	183	0,0,0	· Um nanómetro é igual a 10⁻⁹ m.
+R	0	187	318	25	232,232,232
+T	4	200	100,100,100	1_ · enter: opção 1
+F	20
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Massa e tamanho dos átomos · 1/10
@@ -1375,7 +1408,7 @@ T	4	98	0,0,0	3) 27 protões, 13 neutrões e 10 eletrões
 T	4	115	0,0,0	4) 13 protões, 27 neutrões e 13 eletrões
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número: responder · 1-6 de 6 · esc
-F	20
+F	21
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Massa e tamanho dos átomos
@@ -1383,7 +1416,7 @@ T	4	30	0,128,0	✓ Certo!
 T	4	64	0,0,0	1: ver a resolução · enter: seguinte
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1-3 de 3 · esc: voltar
-F	21
+F	22
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Resolução · Massa e tamanho dos átomos
@@ -1393,7 +1426,7 @@ T	4	81	0,0,0	Protões: Z = 13. Neutrões: 27 - 13 = 14.
 T	4	98	0,0,0	Eletrões: 13 - 3 = 10 (perdeu 3 eletrões).
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1-5 de 5 · esc: voltar
-F	22
+F	23
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Treino · Massa e tamanho dos átomos
@@ -1420,7 +1453,7 @@ T	4	183	0,51,153	10
 T	25	183	0,0,0	· Um nanómetro é igual a 10⁻⁹ m.
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	✓ certo · ✗ errado · · por fazer · esc
-F	23
+F	24
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Massa e tamanho dos átomos · 2/10
@@ -1431,7 +1464,7 @@ T	4	64	100,100,100	Escreve o número (aceita 2,5, 1/2, 5e-1).
 T	4	81	100,100,100	esc: voltar
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: ok · esc: cancelar · del: apaga
-F	24
+F	25
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Massa e tamanho dos átomos · 2/10
@@ -1443,7 +1476,7 @@ T	4	64	100,100,100	Escreve o número (aceita 2,5, 1/2, 5e-1).
 T	4	81	100,100,100	esc: voltar
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: ok · esc: cancelar · del: apaga
-F	25
+F	26
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Massa e tamanho dos átomos · 2/10
@@ -1455,7 +1488,7 @@ T	4	64	100,100,100	Escreve o número (aceita 2,5, 1/2, 5e-1).
 T	4	81	100,100,100	esc: voltar
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: ok · esc: cancelar · del: apaga
-F	26
+F	27
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Massa e tamanho dos átomos
@@ -1463,7 +1496,7 @@ T	4	30	0,128,0	✓ Certo!
 T	4	64	0,0,0	1: ver a resolução · enter: seguinte
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1-3 de 3 · esc: voltar
-F	27
+F	28
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Treino · Massa e tamanho dos átomos
@@ -1490,7 +1523,7 @@ T	4	183	0,51,153	10
 T	25	183	0,0,0	· Um nanómetro é igual a 10⁻⁹ m.
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	✓ certo · ✗ errado · · por fazer · esc
-F	28
+F	29
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Massa e tamanho dos átomos · 3/10
@@ -1500,7 +1533,7 @@ T	4	81	0,0,0	1) Verdadeiro
 T	4	98	0,0,0	2) Falso
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número: responder · 1-5 de 5 · esc
-F	29
+F	30
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Massa e tamanho dos átomos
@@ -1511,14 +1544,14 @@ T	4	98	0,0,0	3: ver a resolução
 T	4	115	0,0,0	4: ir à lição
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1-6 de 6 · esc: voltar
-F	30
+F	31
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pista
 T	4	30	0,0,0	O que é igual nos isótopos: Z ou A?
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1-1 de 1 · esc: voltar
-F	31
+F	32
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Massa e tamanho dos átomos · 3/10
@@ -1528,7 +1561,7 @@ T	4	81	0,0,0	1) Verdadeiro
 T	4	98	0,0,0	2) Falso
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número: responder · 1-5 de 5 · esc
-F	32
+F	33
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Massa e tamanho dos átomos
@@ -1536,7 +1569,7 @@ T	4	30	0,128,0	✓ Certo!
 T	4	64	0,0,0	1: ver a resolução · enter: seguinte
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1-3 de 3 · esc: voltar
-F	33
+F	34
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Treino · Massa e tamanho dos átomos
@@ -1563,7 +1596,7 @@ T	4	183	0,51,153	10
 T	25	183	0,0,0	· Um nanómetro é igual a 10⁻⁹ m.
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	✓ certo · ✗ errado · · por fazer · esc
-F	34
+F	35
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	M1TR4M · FQ e Mat 10.º
@@ -1592,7 +1625,7 @@ R	314	17	3	170	232,232,232
 R	314	17	3	130	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
-F	35
+F	36
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Disciplina
@@ -1603,7 +1636,7 @@ T	4	47	0,51,153	 2
 T	25	47	0,0,0	Matemática A
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
-F	36
+F	37
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Matemática A
@@ -1612,7 +1645,7 @@ T	4	30	0,51,153	 1
 T	25	30	0,0,0	Função quadrática
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
-F	37
+F	38
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Função quadrática
@@ -1623,7 +1656,7 @@ T	4	47	0,51,153	 2
 T	25	47	0,0,0	Teste do capítulo
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
-F	38
+F	39
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Teste do capítulo
@@ -1634,7 +1667,7 @@ T	4	47	0,51,153	 2
 T	25	47	0,0,0	Não
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1: sim · 2: não · esc: não
-F	39
+F	40
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Função quadrática · 1/10
@@ -1646,42 +1679,10 @@ T	4	115	0,0,0	3) (-2, -5)
 T	4	132	0,0,0	4) (5, -2)
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número: responder · 1-7 de 7 · esc
-F	40
-R	0	0	318	212	255,255,255
-R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Função quadrática · 2/10
-T	4	30	0,0,0	Quantos zeros tem f(x) = 3x² + 2x + 1?
-T	4	64	0,0,0	1) Nenhum
-T	4	81	0,0,0	2) Um
-T	4	98	0,0,0	3) Dois
-T	4	115	0,0,0	4) Três
-R	0	187	318	25	232,232,232
-T	4	200	100,100,100	número: responder · 1-6 de 6 · esc
 F	41
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Função quadrática · 3/10
-T	4	30	0,0,0	Qual é o conjunto-solução de x² - 9 < 0?
-T	4	64	0,0,0	1) ]-3, 3[
-T	4	81	0,0,0	2) [-3, 3]
-T	4	98	0,0,0	3) ]-∞, -3[ ∪ ]3, +∞[
-T	4	115	0,0,0	4) ]-9, 9[
-R	0	187	318	25	232,232,232
-T	4	200	100,100,100	número: responder · 1-6 de 6 · esc
-F	42
-R	0	0	318	212	255,255,255
-R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Função quadrática · 4/10
-T	4	30	0,0,0	Se a < 0, a parábola de f(x) = ax² + bx + c
-T	4	47	0,0,0	tem a concavidade voltada para cima.
-T	4	81	0,0,0	1) Verdadeiro
-T	4	98	0,0,0	2) Falso
-R	0	187	318	25	232,232,232
-T	4	200	100,100,100	número: responder · 1-5 de 5 · esc
-F	43
-R	0	0	318	212	255,255,255
-R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Função quadrática · 5/10
+T	4	13	255,255,255	Função quadrática · 2/10
 T	4	30	0,0,0	Qual é o zero positivo de f(x) = x² - x - 6?
 R	16	34	284	17	204,224,255
 R	18	36	1	13	0,0,0
@@ -1689,21 +1690,21 @@ T	4	64	100,100,100	Escreve o número (aceita 2,5, 1/2, 5e-1).
 T	4	81	100,100,100	esc: passar
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: ok · esc: cancelar · del: apaga
-F	44
+F	42
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Função quadrática · 6/10
-T	4	30	0,0,0	Calcula o discriminante de x² - 4x + 1.
-R	16	34	284	17	204,224,255
-R	18	36	1	13	0,0,0
-T	4	64	100,100,100	Escreve o número (aceita 2,5, 1/2, 5e-1).
-T	4	81	100,100,100	esc: passar
+T	4	13	255,255,255	Função quadrática · 3/10
+T	4	30	0,0,0	Quantos zeros tem f(x) = 3x² + 2x + 1?
+T	4	64	0,0,0	1) Nenhum
+T	4	81	0,0,0	2) Um
+T	4	98	0,0,0	3) Dois
+T	4	115	0,0,0	4) Três
 R	0	187	318	25	232,232,232
-T	4	200	100,100,100	enter: ok · esc: cancelar · del: apaga
-F	45
+T	4	200	100,100,100	número: responder · 1-6 de 6 · esc
+F	43
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Função quadrática · 7/10
+T	4	13	255,255,255	Função quadrática · 4/10
 T	4	30	0,0,0	Qual é o valor máximo de f(x) = -2x² + 8x -
 T	4	47	0,0,0	3?
 R	16	51	284	17	204,224,255
@@ -1712,12 +1713,34 @@ T	4	81	100,100,100	Escreve o número (aceita 2,5, 1/2, 5e-1).
 T	4	98	100,100,100	esc: passar
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: ok · esc: cancelar · del: apaga
+F	44
+R	0	0	318	212	255,255,255
+R	0	0	318	17	0,51,153
+T	4	13	255,255,255	Função quadrática · 5/10
+T	4	30	0,0,0	O eixo de simetria do gráfico de f(x) = x² -
+T	4	47	0,0,0	6x + 1 é a reta x = 3.
+T	4	81	0,0,0	1) Verdadeiro
+T	4	98	0,0,0	2) Falso
+R	0	187	318	25	232,232,232
+T	4	200	100,100,100	número: responder · 1-5 de 5 · esc
+F	45
+R	0	0	318	212	255,255,255
+R	0	0	318	17	0,51,153
+T	4	13	255,255,255	Função quadrática · 6/10
+T	4	30	0,0,0	O gráfico de g(x) = f(x - 3) + 1 obtém-se do
+T	4	47	0,0,0	de f por uma translação:
+T	4	81	0,0,0	1) 3 para a direita e 1 para cima
+T	4	98	0,0,0	2) 3 para a esquerda e 1 para cima
+T	4	115	0,0,0	3) 3 para a direita e 1 para baixo
+T	4	132	0,0,0	4) 1 para a direita e 3 para cima
+R	0	187	318	25	232,232,232
+T	4	200	100,100,100	número: responder · 1-7 de 7 · esc
 F	46
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Função quadrática · 8/10
-T	4	30	0,0,0	O eixo de simetria do gráfico de f(x) = x² -
-T	4	47	0,0,0	6x + 1 é a reta x = 3.
+T	4	13	255,255,255	Função quadrática · 7/10
+T	4	30	0,0,0	Se a < 0, a parábola de f(x) = ax² + bx + c
+T	4	47	0,0,0	tem a concavidade voltada para cima.
 T	4	81	0,0,0	1) Verdadeiro
 T	4	98	0,0,0	2) Falso
 R	0	187	318	25	232,232,232
@@ -1725,7 +1748,7 @@ T	4	200	100,100,100	número: responder · 1-5 de 5 · esc
 F	47
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Função quadrática · 9/10
+T	4	13	255,255,255	Função quadrática · 8/10
 T	4	30	0,0,0	Determina o zero positivo de 2x² + 3x - 4,
 T	4	47	0,0,0	arredondado às centésimas.
 R	16	51	284	17	204,224,255
@@ -1737,16 +1760,26 @@ T	4	200	100,100,100	enter: ok · esc: cancelar · del: apaga
 F	48
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
-T	4	13	255,255,255	Função quadrática · 10/10
-T	4	30	0,0,0	O gráfico de g(x) = f(x - 3) + 1 obtém-se do
-T	4	47	0,0,0	de f por uma translação:
-T	4	81	0,0,0	1) 3 para a direita e 1 para cima
-T	4	98	0,0,0	2) 3 para a esquerda e 1 para cima
-T	4	115	0,0,0	3) 3 para a direita e 1 para baixo
-T	4	132	0,0,0	4) 1 para a direita e 3 para cima
+T	4	13	255,255,255	Função quadrática · 9/10
+T	4	30	0,0,0	Calcula o discriminante de x² - 4x + 1.
+R	16	34	284	17	204,224,255
+R	18	36	1	13	0,0,0
+T	4	64	100,100,100	Escreve o número (aceita 2,5, 1/2, 5e-1).
+T	4	81	100,100,100	esc: passar
 R	0	187	318	25	232,232,232
-T	4	200	100,100,100	número: responder · 1-7 de 7 · esc
+T	4	200	100,100,100	enter: ok · esc: cancelar · del: apaga
 F	49
+R	0	0	318	212	255,255,255
+R	0	0	318	17	0,51,153
+T	4	13	255,255,255	Função quadrática · 10/10
+T	4	30	0,0,0	Qual é o conjunto-solução de x² - 9 < 0?
+T	4	64	0,0,0	1) ]-3, 3[
+T	4	81	0,0,0	2) [-3, 3]
+T	4	98	0,0,0	3) ]-∞, -3[ ∪ ]3, +∞[
+T	4	115	0,0,0	4) ]-9, 9[
+R	0	187	318	25	232,232,232
+T	4	200	100,100,100	número: responder · 1-6 de 6 · esc
+F	50
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	0 de 10 certas
@@ -1754,26 +1787,26 @@ R	0	17	313	17	204,224,255
 T	4	30	0,51,153	 1
 T	25	30	0,0,0	—Qual é o vértice da parábola f(x) = -(…
 T	4	47	0,51,153	 2
-T	25	47	0,0,0	—Quantos zeros tem f(x) = 3x² + 2x + 1?
+T	25	47	0,0,0	—Qual é o zero positivo de f(x) = x² - …
 T	4	64	0,51,153	 3
-T	25	64	0,0,0	—Qual é o conjunto-solução de x² - 9 < …
+T	25	64	0,0,0	—Quantos zeros tem f(x) = 3x² + 2x + 1?
 T	4	81	0,51,153	 4
-T	25	81	0,0,0	—Se a < 0, a parábola de f(x) = ax² + b…
+T	25	81	0,0,0	—Qual é o valor máximo de f(x) = -2x² +…
 T	4	98	0,51,153	 5
-T	25	98	0,0,0	—Qual é o zero positivo de f(x) = x² - …
+T	25	98	0,0,0	—O eixo de simetria do gráfico de f(x) …
 T	4	115	0,51,153	 6
-T	25	115	0,0,0	—Calcula o discriminante de x² - 4x + 1.
+T	25	115	0,0,0	—O gráfico de g(x) = f(x - 3) + 1 obtém…
 T	4	132	0,51,153	 7
-T	25	132	0,0,0	—Qual é o valor máximo de f(x) = -2x² +…
+T	25	132	0,0,0	—Se a < 0, a parábola de f(x) = ax² + b…
 T	4	149	0,51,153	 8
-T	25	149	0,0,0	—O eixo de simetria do gráfico de f(x) …
+T	25	149	0,0,0	—Determina o zero positivo de 2x² + 3x …
 T	4	166	0,51,153	 9
-T	25	166	0,0,0	—Determina o zero positivo de 2x² + 3x …
+T	25	166	0,0,0	—Calcula o discriminante de x² - 4x + 1.
 T	4	183	0,51,153	10
-T	25	183	0,0,0	—O gráfico de g(x) = f(x - 3) + 1 obtém…
+T	25	183	0,0,0	—Qual é o conjunto-solução de x² - 9 < …
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: ver a resolução · esc: sair
-F	50
+F	51
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Teste do capítulo
@@ -1782,7 +1815,7 @@ T	4	64	0,0,0	O resultado diz respeito só a estas
 T	4	81	0,0,0	perguntas.
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	qualquer tecla: continuar
-F	51
+F	52
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	M1TR4M · FQ e Mat 10.º
@@ -1811,7 +1844,7 @@ R	314	17	3	170	232,232,232
 R	314	17	3	130	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
-F	52
+F	53
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	M1TR4M · FQ e Mat 10.º
@@ -1840,7 +1873,7 @@ R	314	17	3	170	232,232,232
 R	314	17	3	130	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1_ · enter: opção 1
-F	53
+F	54
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Sair
@@ -1851,7 +1884,7 @@ T	4	47	0,51,153	 2
 T	25	47	0,0,0	Não
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1: sim · 2: não · esc: não
-F	54
+F	55
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	M1TR4M

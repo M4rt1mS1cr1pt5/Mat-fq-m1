@@ -119,13 +119,7 @@ def _exp(v):
         return ('\n'.join(o), '', m, un)
     o.append('Incerteza absoluta = ' + src + ' = ' + N.fmt(inc, 0, 6) + u)
     if inc > 0:
-        e = N._e10(inc)
-        i1 = N._sc(float(N._rnd(N._sc(inc, -e) + 0.0)), e)
-        if i1 < inc:
-            i1 = N._sc(float(int(math.ceil(N._sc(inc, -e) - 1e-9))), e)
-        d = max(0, -e)
-        o.append('> x = (' + N.fmt2(m, 0, d, 0)[0] + ' \u00b1 ' +
-                 N.fmt2(i1, 0, d, 0)[0] + ')' + u)
+        o.append('> x = ' + N.pm(m, inc) + u)
         o.append('(incerteza com 1 algarismo significativo, arredondada '
                  'por excesso; m\u00e9dia com as mesmas casas)')
         if m != 0:
@@ -162,7 +156,8 @@ def fit(xs, ys):
     sxx = sum([(x - mx) ** 2 for x in xs])
     syy = sum([(y - my) ** 2 for y in ys])
     sxy = sum([(xs[i] - mx) * (ys[i] - my) for i in range(n)])
-    N.need(sxx > 0, 'Todos os x s\u00e3o iguais: n\u00e3o h\u00e1 reta de regress\u00e3o')
+    N.need(max(xs) > min(xs), 'Todos os x s\u00e3o iguais: n\u00e3o h\u00e1 reta de '
+           'regress\u00e3o')
     m = sxy / sxx
     b = my - m * mx
     r = sxy / math.sqrt(sxx * syy) if syy > 0 else None

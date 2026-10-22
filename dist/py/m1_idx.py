@@ -1,7 +1,7 @@
 # m1_idx.py - M1TR4M: indice da pesquisa (FQ, parte 1 de 1) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 416\n\
+@N 489\n\
 L|Constitui\xe7\xe3o do \xe1tomo e is\xf3topos|nucleo protao neutrao eletrao numero atomico massa|q1a\n\
 L|Tamanho dos \xe1tomos: ordens de grandeza e escalas|ordem notacao cientifica escala nanometro picometro raio|q1b\n\
 L|Massa at\xf3mica relativa|unidade media isotopos abundancia molecular mr ar|q1c\n\
@@ -261,6 +261,85 @@ X|A convec\xe7\xe3o \xe9 um processo de||f3:6\n\
 X|Um painel de 1,5 m\xb2 recebe Er||f3:7\n\
 X|Misturam-se 0,10 kg de \xe1gua a||f3:8\n\
 X|Uma placa isoladora (k =||f3:9\n\
+L|AL 1.1 Volume e n\xfamero de mol\xe9culas de uma gota de \xe1gua|massa media ensaios incerteza absoluta\
+ relativa bureta|aq11\n\
+L|AL 1.2 Teste de chama|cor emissao desexcitacao sodio potassio litio calcio|aq12\n\
+L|AL 1.3 Densidade relativa de metais|picnometro metal massa volumica agua deslocada erro|aq13\n\
+L|AL 2.1 Miscibilidade de l\xedquidos|misciveis imisciveis fases interacoes intermoleculares polar apolar|aq21\n\
+L|AL 2.2 Solu\xe7\xf5es a partir de solutos s\xf3lidos|preparar solucao soluto solido massa pesar balao|aq22\n\
+L|AL 2.3 Dilui\xe7\xe3o de solu\xe7\xf5es|solucao-mae pipeta volumetrica pompete balao volumetrico fator|aq23\n\
+L|AL 2.4 Rea\xe7\xe3o fotoqu\xedmica|cloreto prata nitrato luz precipitado escurecimento tubo|aq24\n\
+F|Massa de uma gota||aq:0\n\
+F|N\xfamero de mol\xe9culas||aq:1\n\
+F|Energia de um fot\xe3o emitido||aq:2\n\
+F|Densidade relativa (picn\xf3metro)||aq:3\n\
+F|Massa vol\xfamica||aq:4\n\
+F|Massa de soluto a pesar||aq:5\n\
+F|Dilui\xe7\xe3o||aq:6\n\
+F|Fator de dilui\xe7\xe3o||aq:7\n\
+F|Energia de um fot\xe3o||aq:8\n\
+E|Massa e volume de uma gota||aq:0\n\
+E|Que metal \xe9?||aq:1\n\
+E|Preparar e diluir, com incerteza||aq:2\n\
+X|20 gotas de \xe1gua t\xeam 1,00 g.||aq:0\n\
+X|Porque se mede a massa de||aq:1\n\
+X|Que elemento d\xe1 uma chama||aq:2\n\
+X|O teste de chama permite||aq:3\n\
+X|m = 10,80 g; m1 = 80,00 g; m2||aq:4\n\
+X|Obtiveste d = 7,60 para o||aq:5\n\
+X|Ao agitar \xe1gua com hexano e||aq:6\n\
+X|A \xe1gua e o etanol s\xe3o||aq:7\n\
+X|Que massa de NaCl (M = 58,44||aq:8\n\
+X|Que material garante o volume||aq:9\n\
+X|Que volume (em mL) de solu\xe7\xe3o||aq:10\n\
+X|Uma solu\xe7\xe3o 0,500 mol dm\u207b\xb3 \xe9|quantidade de materia|aq:11\n\
+X|Na AL 2.4, um tubo com AgCl \xe9|avogadro|aq:12\n\
+X|A luz vermelha escurece o||aq:13\n\
+L|AL 1.1 Movimento num plano inclinado: energia cin\xe9tica e dist\xe2ncia|inclinado carrinho celula\
+ fotoeletrica tempo passagem velocidade ec|af11\n\
+L|AL 1.2 Movimento vertical de queda e de ressalto de uma bola|altura energia mecanica dissipada grafico\
+ regressao coeficiente em|af12\n\
+L|AL 2.1 Caracter\xedsticas de uma pilha|forca eletromotriz resistencia interna curva caracteristica reostato fem|af21\n\
+L|AL 3.1 Radia\xe7\xe3o e pot\xeancia el\xe9trica de um painel fotovoltaico|resistencia carga maxima\
+ irradiancia rendimento angulo incidencia eficiencia|af31\n\
+L|AL 3.2 Capacidade t\xe9rmica m\xe1ssica|bloco calorimetrico resistencia aquecimento fonte termometro grafico|af32\n\
+L|AL 3.3 Balan\xe7o energ\xe9tico num sistema termodin\xe2mico|isolado calorimetro gelo fusao entalpia\
+ temperatura equilibrio|af33\n\
+F|Velocidade com c\xe9lula fotoel\xe9trica||af:0\n\
+F|Energia cin\xe9tica e dist\xe2ncia|ec|af:1\n\
+F|Energia dissipada no ressalto||af:2\n\
+F|Curva caracter\xedstica de um gerador||af:3\n\
+F|Pot\xeancia el\xe9trica||af:4\n\
+F|Rendimento do painel|eficiencia|af:5\n\
+F|Capacidade t\xe9rmica m\xe1ssica (AL)||af:6\n\
+F|Entalpia de fus\xe3o (balan\xe7o)||af:7\n\
+E|Energia dissipada num ressalto||af:0\n\
+E|Pot\xeancia m\xe1xima de um painel||af:1\n\
+E|Capacidade t\xe9rmica m\xe1ssica do cobre por regress\xe3o||af:2\n\
+X|Uma tira de 1,00 cm passa||af:0\n\
+X|Na AL 1.1, o declive do|avogadro|af:1\n\
+X|Uma bola cai de 1,50 m e||af:2\n\
+X|Quando uma bola ressalta no||af:3\n\
+X|A reta de regress\xe3o de uma|minimos quadrados|af:4\n\
+X|Na AL 2.1, como se liga o|avogadro|af:5\n\
+X|Um painel fornece 40 mA a 3,0||af:6\n\
+X|A pot\xeancia el\xe9trica de um||af:7\n\
+X|Um bloco de 0,500 kg \xe9||af:8\n\
+X|Na AL 3.2, porque se isola|avogadro|af:9\n\
+X|Que energia (em J) cede 0,200||af:10\n\
+X|Na AL 3.3, o gelo deve ser|avogadro|af:11\n\
+C|AL 1.1 Plano inclinado: Ec e dist\xe2ncia|inclinado carrinho velocidade tempo passagem celula energia\
+ cinetica|c_alf1.plano\n\
+C|AL 1.2 Queda e ressalto de uma bola|altura energia dissipada coeficiente restituicao regressao|c_alf1.ress\n\
+C|AL 2.1 Caracter\xedsticas de uma pilha|forca eletromotriz resistencia interna curva caracteristica fem|c_alf1.pilha\n\
+C|AL 3.1 Painel fotovoltaico|potencia eletrica maxima resistencia carga irradiancia|c_alf2.painel\n\
+C|AL 3.2 Capacidade t\xe9rmica m\xe1ssica|bloco calorimetrico resistencia aquecimento temperatura tempo|c_alf2.cap\n\
+C|AL 3.3 Balan\xe7o energ\xe9tico (fus\xe3o do gelo)|sistema isolado gelo entalpia fusao calorimetro|c_alf2.fusao\n\
+C|AL 1.1 Volume e mol\xe9culas de uma gota de \xe1gua|numero massa media incerteza ensaios|c_alq1.gota\n\
+C|AL 1.2 Teste de chama|cor identificar elemento sodio potassio litio|c_alq1.chama\n\
+C|AL 1.3 Densidade relativa (picn\xf3metro)|picnometro metal erro percentual exatidao|c_alq1.dens\n\
+C|AL 2.1 Miscibilidade de l\xedquidos|misciveis imisciveis polar apolar interacoes intermoleculares|c_alq2.misc\n\
+C|AL 2.2 Solu\xe7\xe3o a partir de soluto s\xf3lido|preparar balao volumetrico massa pesar incerteza|c_alq2.sol\n\
 C|Constantes e dados|avogadro planck velocidade luz volume molar na vm|c_comd.cte\n\
 C|Dados experimentais|media incerteza absoluta relativa erro percentual|c_comd.exp\n\
 C|Regress\xe3o linear e gr\xe1fico|reta declive ordenada coeficiente correlacao interpolar|c_comd.reg\n\

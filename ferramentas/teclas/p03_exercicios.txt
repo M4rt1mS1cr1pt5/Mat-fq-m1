@@ -26,10 +26,11 @@ esc
 2
 enter
 esc
-# teste do capitulo de Matematica
+# teste do capitulo de Matematica: Funcao quadratica (10 perguntas), que e
+# o 2.o tema enquanto so existirem m3 e m5
 9
 2
-1
+2
 2
 enter
 esc

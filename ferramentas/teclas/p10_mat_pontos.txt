@@ -1,0 +1,42 @@
+# Percurso 10: Matematica > Geometria sintetica: pontos notaveis do
+# triangulo [PQR] com os valores por defeito, desenho (com zoom), reta
+# de Euler (BC = 1,4) e licao m3e (paginas A a D); sair.
+2
+1
+# temas: 1 = Geometria sintetica (enquanto nao existirem m1 e m2)
+1
+# 6 Calculadoras do tema: 1 = pontos notaveis
+6
+1
+enter
+enter
+enter
+# resultado: 5 = desenho; + aproxima; esc
+5
++
+esc
+esc
+# 3 = reta de Euler: conheco BC = 1,4
+3
+right
+down
+1
+,
+4
+enter
+esc
+esc
+# 1 Licoes: 5.a (pontos notaveis, Euler e nove pontos)
+1
+5
+right
+right
+right
+esc
+esc
+esc
+esc
+esc
+1
+3
+enter

@@ -83,7 +83,7 @@ def log(m):
 _AM = ("\u00e1 a#\u00e0 a#\u00e2 a#\u00e3 a#\u00e9 e#\u00ea e#\u00e8 e#"
        "\u00ed i#\u00f3 o#\u00f4 o#\u00f5 o#\u00fa u#\u00fc u#\u00e7 c#"
        "\u00c1 A#\u00c0 A#\u00c2 A#\u00c3 A#\u00c9 E#\u00ca E#\u00cd I#"
-       "\u00d3 O#\u00d4 O#\u00d5 O#\u00da U#\u00c7 C#\u00eb e#\u00ef i#"
+       "\u00d3 O#\u00d4 O#\u00d5 O#\u00da U#\u00c7 C#\u00eb e#\u00ef i#\u00ce I#\u00db U#"
        "\u00d7 x#\u00f7 /#\u00b7 .#\u221a sqrt#\u03c0 pi#\u2248 ~#\u2264 <=#"
        "\u2265 >=#\u2260 !=#\u2192 ->#\u2190 <-#\u2194 <->#\u21d4 <=>#"
        "\u2208 em#\u2209 nao em#\u0394 D#\u03b4 d#\u00b1 +-#\u00b0 o#"

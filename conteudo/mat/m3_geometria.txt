@@ -1,0 +1,617 @@
+@tema m3
+disc: M
+grupo: t
+titulo: Geometria sintética no plano
+calcs: c_matt.pn c_matt.insc c_matt.euler c_matt.pit c_matt.sem
+
+@licao m3a
+titulo: Revisões de triângulos; mediatriz e bissetriz
+chave: classificação de triângulos congruência semelhança critério aa pitágoras área ângulos internos mediatriz bissetriz lugar geométrico distância de um ponto a uma reta
+calc: c_matt.pit
+ano: 10
+nivel: núcleo
+fonte: AE Mat A 10.º, Geometria sintética; manual (Unidade 3)
+#A
+- Classificar triângulos quanto aos lados e aos ângulos.
+- Usar os critérios de congruência e de semelhança.
+- Definir mediatriz e bissetriz como lugares geométricos.
+- Encontrar o centro de uma circunferência com mediatrizes.
+#B
+Os pontos notáveis do triângulo nascem de duas ideias.
+Estar à mesma distância de dois pontos, ou à mesma distância de duas retas.
+Antes de lá chegar, convém ter à mão as ferramentas dos anos anteriores.
+#C
+- Lados: equilátero (3 iguais), isósceles (2 ou 3 iguais), escaleno.
+- Ângulos: acutângulo, retângulo ou obtusângulo; a soma é 180°.
+- Congruência: LLL, LAL e ALA; semelhança: critério AA.
+- Mediatriz de [AB]: pontos equidistantes de A e de B.
+- Bissetriz de um ângulo: pontos equidistantes dos seus lados.
+- Distância de um ponto a uma reta: o segmento perpendicular.
+#D
+A lados iguais opõem-se ângulos iguais, e vice-versa.
+Um ângulo externo mede 180° menos o interno adjacente.
+Em triângulos semelhantes, os lados correspondentes são proporcionais.
+O quociente entre eles é a razão de semelhança.
+Retas paralelas: ângulos alternos internos iguais.
+Ângulos verticalmente opostos são iguais.
+A mediatriz de [AB] é a perpendicular a [AB] no seu ponto médio.
+A bissetriz divide o ângulo em dois ângulos iguais.
+Para encontrar o centro de uma circunferência:
+1. marcam-se três pontos A, B e C na circunferência;
+2. traçam-se as mediatrizes de [AB] e de [BC];
+3. o centro é o ponto onde se intersetam.
+Pitágoras: num triângulo retângulo de catetos 6 e 8, a hipotenusa é √(36 + 64) = [[10]].
+#E
+@F Teorema de Pitágoras|c² = a² + b²|a e b: catetos;c: hipotenusa|triângulo retângulo|catetos 6 e 8: c = 10|c_matt.pit
+@F Soma dos ângulos internos|Â + B̂ + Ĉ = 180°|Â, B̂ e Ĉ: ângulos internos|qualquer triângulo|35° e 52°: o terceiro mede 93°|
+@F Área do triângulo|A = base × altura / 2|altura relativa a essa base|qualquer triângulo|base 8 e altura 9: A = 36|
+#F
+Dados: num triângulo, dois ângulos medem 35° e 52°.
+Objetivo: terceiro ângulo, ângulo externo adjacente e classificação.
+1. Terceiro ângulo: 180 - 35 - 52 = [[93]]°
+2. Ângulo externo adjacente: 180 - 93 = [[87]]°
+3. Um ângulo obtuso: o triângulo é obtusângulo.
+4. Ângulos todos diferentes, logo lados todos diferentes: escaleno.
+> Terceiro ângulo 93°; o triângulo é obtusângulo e escaleno.
+Verificação: 35 + 52 + 93 = [[180]].
+#G
+A mediatriz e a bissetriz são lugares geométricos: conjuntos de pontos com uma propriedade.
+Os pontos notáveis aparecem quando dois destes lugares se cruzam.
+#H
+- Confundir mediatriz (perpendicular no ponto médio) com mediana.
+- Medir a distância a uma reta com um segmento oblíquo.
+- Usar Pitágoras num triângulo que não é retângulo.
+- Esquecer que o isósceles pode ter três lados iguais.
+#I
+- Soma dos ângulos internos: 180°.
+- Congruência LLL, LAL, ALA; semelhança AA.
+- Mediatriz: equidistante de dois pontos.
+- Bissetriz: equidistante de duas retas.
+#J
+Um ponto P está na mediatriz de [AB] e PA = 7 cm. Quanto mede PB?
+#R
+PB = 7 cm: todos os pontos da mediatriz estão à mesma distância de A e de B.
+#V
+V = [(36 + 64) ** 0.5, 180 - 35 - 52, 180 - 93, 35 + 52 + 93]
+
+@licao m3b
+titulo: Incentro e circunferência inscrita
+chave: incentro bissetrizes circunferência inscrita tangente raio r = 2a/p triângulo retângulo ângulo bic
+calc: c_matt.insc
+ano: 10
+nivel: núcleo
+pre: m3a
+fonte: AE Mat A 10.º, Geometria sintética; manual (Unidade 3), Tarefa 2
+#A
+- Definir o incentro como interseção das bissetrizes.
+- Construir a circunferência inscrita.
+- Calcular o raio da inscrita com r = 2A / P.
+- Calcular ângulos com vértice no incentro.
+#B
+Para pôr dentro de um triângulo o maior círculo possível, o centro tem de ficar à mesma distância dos três lados.
+#C
+- Incentro (I): interseção das bissetrizes dos ângulos internos.
+- I está à mesma distância dos três lados.
+- I é o centro da circunferência inscrita (tangente aos três lados).
+- r = 2A / P (A: área; P: perímetro).
+- Retângulo: r = (a + b - c) / 2, com c a hipotenusa.
+- O incentro está sempre no interior do triângulo.
+#D
+Construção: traçam-se as bissetrizes de dois ângulos e obtém-se I.
+Traça-se a perpendicular de I a um lado: o pé é o ponto de tangência.
+A circunferência de centro I passa nesse ponto.
+Porquê r = 2A / P: unindo I aos vértices, ficam três triângulos com altura r.
+Somando as áreas: A = a r / 2 + b r / 2 + c r / 2 = P r / 2.
+Exemplo: área 96 cm² e perímetro 48 cm dão r = 2 × 96 / 48 = [[4]] cm.
+I está nas bissetrizes: cada ângulo do triângulo fica dividido ao meio.
+Em [ABC] com incentro I: BÎC = 90° + Â / 2.
+Exemplo: com BÂI = 35° e o ângulo ABC de 52°, vem BÂC = [[70]]°.
+O ângulo ACB mede 180 - 70 - 52 = [[58]]°.
+Logo BÎC = 180 - 26 - 29 = [[125]]°, igual a 90 + 70 / 2.
+#E
+@F Raio da circunferência inscrita|r = 2A / P|A: área;P: perímetro|qualquer triângulo|A = 96 cm² e P = 48 cm: r = 4 cm|c_matt.insc
+@F Inscrita no triângulo retângulo|r = (a + b - c) / 2|a e b: catetos;c: hipotenusa|triângulo retângulo|catetos 5 e 12: r = 2|c_matt.insc
+@F Ângulo com vértice no incentro|BÎC = 90° + Â / 2|I: incentro de [ABC]|qualquer triângulo|Â = 70°: BÎC = 125°|
+#F
+Dados: triângulo retângulo com catetos de 5 cm e 12 cm.
+Objetivo: raio e comprimento da circunferência inscrita.
+1. Hipotenusa: √(25 + 144) = [[13]] cm
+2. A = 5 × 12 / 2 = [[30]] cm²; P = 5 + 12 + 13 = [[30]] cm
+3. r = 2 × 30 / 30 = [[2]] cm
+4. Comprimento: 2π × 2 = [[=4π]] cm ≈ [[12,566]] cm
+> r = 2 cm; a inscrita mede 4π cm.
+Verificação: (5 + 12 - 13) / 2 = [[2]], o mesmo valor.
+#G
+O incentro é o único ponto à mesma distância dos três lados.
+Por isso a circunferência inscrita toca cada lado num só ponto.
+#H
+- Usar mediatrizes em vez de bissetrizes.
+- Medir o raio de I a um vértice (isso não é r).
+- Usar o semiperímetro em r = 2A / P.
+- Esquecer que I divide cada ângulo ao meio.
+#I
+- I: interseção das bissetrizes; sempre interior.
+- r = 2A / P.
+- Retângulo: r = (a + b - c) / 2.
+- BÎC = 90° + Â / 2.
+#J
+Um triângulo tem 24 cm² de área e a inscrita tem 6π cm de comprimento. Qual é o perímetro?
+#R
+r = 3 cm, logo P = 2A / r = 2 × 24 / 3 = [[16]] cm.
+#V
+V = [2 * 96 / 48, 2 * 35, 180 - 70 - 52, 180 - 26 - 29,
+     (25 + 144) ** 0.5, 5 * 12 / 2, 5 + 12 + 13, 2 * 30 / 30, 4 * pi, 4 * pi,
+     (5 + 12 - 13) / 2, 2 * 24 / 3]
+
+@licao m3c
+titulo: Circuncentro e ortocentro
+chave: circuncentro mediatrizes circunferência circunscrita raio r ortocentro alturas triângulo retângulo hipotenusa obtusângulo exterior
+calc: c_matt.pn
+ano: 10
+nivel: núcleo
+pre: m3a
+fonte: AE Mat A 10.º, Geometria sintética; manual (Unidade 3), Tarefas 3, 4 e 6
+#A
+- Definir o circuncentro e a circunferência circunscrita.
+- Definir o ortocentro como interseção das alturas.
+- Localizar os dois pontos em cada tipo de triângulo.
+- Usar R = hipotenusa / 2 no triângulo retângulo.
+#B
+O ponto à mesma distância de três localidades (por exemplo, Porto, Monção e Vimioso) é o centro da circunferência que passa pelas três.
+#C
+- Circuncentro (C): interseção das mediatrizes dos lados.
+- C é equidistante dos vértices: centro da circunscrita (raio R).
+- Ortocentro (O): interseção das retas que contêm as alturas.
+- Altura: perpendicular a um lado, tirada pelo vértice oposto.
+- Retângulo: C no meio da hipotenusa; O no ângulo reto.
+- Obtusângulo: C e O ficam fora do triângulo.
+#D
+Construção de C: mediatrizes de dois lados; R é a distância de C a um vértice.
+Construção de O: bastam duas alturas.
+Num obtusângulo, as alturas dos vértices agudos caem nos prolongamentos dos lados.
+Recíproco: se o circuncentro pertence a um lado, o triângulo é retângulo.
+Isósceles: C e O ficam na mediatriz da base.
+Exemplo: catetos de 8 cm e 12 cm dão hipotenusa √208 = [[=4√13]] cm.
+Então R = [[=2√13]] cm ≈ [[7,21]] cm.
+Os simétricos de O em relação às retas dos lados estão na circunscrita.
+#E
+@F Circunscrita no triângulo retângulo|R = hipotenusa / 2|R: raio da circunferência circunscrita|triângulo retângulo|hipotenusa 13: R = 6,5|c_matt.insc
+#F
+Dados: triângulo [PQR] com P(0, 0), Q(4, 0) e R(0, 3).
+Objetivo: circuncentro, raio da circunscrita e ortocentro.
+1. Os catetos estão sobre os eixos: ângulo reto em P.
+2. Hipotenusa: QR = √(16 + 9) = [[5]]
+3. C é o ponto médio de [QR]: C(2; 1,5), com abcissa [[2]] e ordenada [[1,5]].
+4. R = 5 / 2 = [[2,5]]
+5. O é o vértice do ângulo reto: O = P(0, 0).
+> C(2; 1,5), R = 2,5 e O = P.
+Verificação: PC = √(4 + 2,25) = [[2,5]] = R.
+#G
+Quando o triângulo é obtusângulo, C e O saem os dois ao mesmo tempo.
+Não existe triângulo com só um ponto notável no exterior.
+#H
+- Confundir mediatrizes (C) com alturas (O).
+- Desenhar alturas só dentro do triângulo, num obtusângulo.
+- Dizer que R é metade de um cateto.
+- Achar que C está sempre dentro do triângulo.
+#I
+- C: mediatrizes; centro da circunscrita.
+- O: alturas.
+- Retângulo: R = hipotenusa / 2; O no ângulo reto.
+- Obtusângulo: C e O exteriores.
+#J
+O circuncentro de um triângulo está fora dele. Que tipo de triângulo é, quanto aos ângulos?
+#R
+Obtusângulo (e o ortocentro também fica fora).
+#V
+h = (64 + 144) ** 0.5
+V = [h, h / 2, h / 2, (16 + 9) ** 0.5, (0 + 4) / 2, (0 + 3) / 2, 5 / 2,
+     (4 + 2.25) ** 0.5]
+
+@licao m3d
+titulo: Medianas e baricentro
+chave: mediana baricentro centro de massa centroide dois terços seis triângulos equivalentes área ponto médio
+calc: c_matt.pn
+ano: 10
+nivel: núcleo
+pre: m3a
+fonte: AE Mat A 10.º, Geometria sintética; manual (Unidade 3), Tarefas 5 e 7
+#A
+- Definir mediana e baricentro.
+- Usar a propriedade dos 2/3.
+- Usar as áreas dos triângulos definidos pelas medianas.
+#B
+Um triângulo de cartão equilibra-se na ponta de um lápis num só ponto: o baricentro.
+#C
+- Mediana: une um vértice ao ponto médio do lado oposto.
+- Baricentro (B): interseção das medianas; sempre interior.
+- B fica a 2/3 de cada mediana, a contar do vértice.
+- Uma mediana divide o triângulo em dois com a mesma área.
+- As três medianas fazem seis triângulos com a mesma área.
+- Em coordenadas, B é a média dos três vértices.
+#D
+Demonstração dos 2/3 (Tarefa 7), no triângulo [PQR]:
+1. M e N são os pontos médios de [PQ] e [PR].
+2. [QR] é uma ampliação de [MN] de razão 2: são paralelos e QR = 2 MN.
+3. [BMN] e [BRQ] são semelhantes (AA), com razão 2.
+4. Logo BQ = 2 BN, ou seja, BQ = 2/3 de QN.
+Isósceles: a mediana da base também é altura e bissetriz.
+Exemplo: PR = QR = 10 cm e PQ = 16 cm, com M o ponto médio de [PQ].
+MR = √(100 - 64) = [[6]] cm e BR = 2/3 × 6 = [[4]] cm.
+Se um dos seis triângulos tem 4 cm², o triângulo todo tem 6 × 4 = [[24]] cm².
+#E
+@F Propriedade dos 2/3|BQ = 2/3 QN e BN = 1/3 QN|[QN]: mediana do vértice Q|qualquer triângulo|QN = 9: BQ = 6 e BN = 3|c_matt.pn
+@F Áreas definidas pelas medianas|cada um dos seis triângulos tem A / 6|A: área do triângulo|qualquer triângulo|A = 36: cada um tem 6|
+@F Baricentro em coordenadas|B = ((x1 + x2 + x3) / 3, (y1 + y2 + y3) / 3)|(x1, y1), (x2, y2), (x3, y3): vértices|referencial no plano|(0, 0), (6, 0), (2, 4): B = (8/3, 4/3)|c_matt.pn
+#F
+Dados: a mediana [QN] mede 9 cm e o triângulo tem 36 cm² de área.
+Objetivo: BQ, BN e área de cada um dos seis triângulos.
+1. BQ = 2/3 × 9 = [[6]] cm
+2. BN = 1/3 × 9 = [[3]] cm
+3. Cada triângulo: 36 / 6 = [[6]] cm²
+> BQ = 6 cm, BN = 3 cm e cada triângulo pequeno tem 6 cm².
+Verificação: BQ + BN = [[9]] cm, a mediana toda.
+#G
+O baricentro é o centro de massa: num triângulo homogéneo, é o ponto de equilíbrio.
+#H
+- Contar os 2/3 a partir do ponto médio em vez do vértice.
+- Confundir mediana com mediatriz.
+- Achar que os seis triângulos são congruentes (só têm a mesma área).
+- Esquecer que B está sempre dentro do triângulo.
+#I
+- Mediana: vértice ao ponto médio do lado oposto.
+- B a 2/3 da mediana a partir do vértice.
+- Seis triângulos com área A / 6.
+#J
+O baricentro está a 4 cm de um vértice. Quanto mede a mediana desse vértice?
+#R
+4 = 2/3 da mediana, logo a mediana mede [[6]] cm.
+#V
+V = [(100 - 64) ** 0.5, 2 / 3 * 6, 6 * 4, 2 / 3 * 9, 1 / 3 * 9, 36 / 6, 6 + 3,
+     4 * 3 / 2]
+
+@licao m3e
+titulo: Pontos notáveis, reta de Euler e circunferência dos nove pontos
+chave: localização dos pontos notáveis reta de euler ob = 2bc oc = 3bc circunferência dos nove pontos centro raio r/2 pés das alturas pontos médios
+calc: c_matt.euler
+ano: 10
+nivel: núcleo
+pre: m3b m3c m3d
+fonte: AE Mat A 10.º, Geometria sintética; manual (Unidade 3), Tarefa 10
+#A
+- Localizar os quatro pontos notáveis em cada tipo de triângulo.
+- Usar a reta de Euler: OB = 2 BC.
+- Caracterizar a circunferência dos nove pontos.
+#B
+Euler descobriu que três dos pontos notáveis estão sempre alinhados.
+E com as distâncias numa proporção fixa.
+#C
+- I e B ficam sempre no interior; C e O saem juntos no obtusângulo.
+- Equilátero: os quatro pontos coincidem.
+- Reta de Euler: O, B e C são colineares, com OB = 2 BC.
+- Então OC = 3 BC; B fica entre O e C.
+- Nove pontos: centro N no ponto médio de [OC]; raio R / 2.
+- Contém os pés das alturas e os pontos médios dos lados e de [OP], [OQ], [OR].
+#D
+Como ler uma figura com os pontos marcados:
+- dois pontos fora do triângulo: obtusângulo;
+- um num vértice e outro no ponto médio de um lado: retângulo;
+- os quatro alinhados: isósceles;
+- os quatro no mesmo ponto: equilátero.
+O incentro só está na reta de Euler se o triângulo for isósceles.
+Na reta, a ordem é O, N, B, C, com ON : NB : BC = 3 : 1 : 2.
+Exemplo: com BC = 1,4 cm, OC = [[4,2]] cm, ON = [[2,1]] cm, OB = [[2,8]] cm e BN = [[0,7]] cm.
+Se OB = 4 cm, então BC = [[2]] cm e OC = [[6]] cm.
+Construção dos nove pontos: N é o circuncentro do triângulo dos pontos médios dos lados.
+#E
+@F Reta de Euler|OB = 2 BC e OC = 3 BC|O: ortocentro;B: baricentro;C: circuncentro|triângulo não equilátero|BC = 1,4: OB = 2,8 e OC = 4,2|c_matt.euler
+@F Circunferência dos nove pontos|centro: ponto médio de [OC]; raio: R / 2|R: raio da circunscrita|qualquer triângulo|R = 8: raio 4|c_matt.euler
+#F
+Dados: o círculo circunscrito a um triângulo tem 64π cm² de área.
+Objetivo: raio e comprimento da circunferência dos nove pontos.
+1. πR² = 64π, logo R = [[8]] cm
+2. Raio dos nove pontos: 8 / 2 = [[4]] cm
+3. Comprimento: 2π × 4 = [[=8π]] cm ≈ [[25,13]] cm
+> Raio 4 cm e comprimento 8π cm.
+Verificação: o raio dos nove pontos é sempre metade de R.
+#G
+A reta de Euler e a circunferência dos nove pontos mostram ligações escondidas entre os pontos notáveis.
+#H
+- Pôr B fora do segmento [OC].
+- Trocar OB = 2 BC por BC = 2 OB.
+- Usar R / 2 como raio da inscrita.
+- Achar que I está sempre na reta de Euler.
+#I
+- I e B sempre interiores.
+- OB = 2 BC; OC = 3 BC.
+- Nove pontos: centro no meio de [OC], raio R / 2.
+#J
+Num triângulo, OB = 5 cm. Quanto medem BC e OC?
+#R
+BC = [[2,5]] cm e OC = [[7,5]] cm.
+#V
+bc = 1.4
+V = [3 * bc, 1.5 * bc, 2 * bc, 0.5 * bc, 4 / 2, 3 * 4 / 2, 64 ** 0.5, 8 / 2,
+     8 * pi, 8 * pi, 5 / 2, 3 * 5 / 2]
+
+@licao m3f
+titulo: Pontos de Fermat e de Nagel (aprofundamento)
+chave: ponto de fermat torricelli soma mínima das distâncias 120 graus triângulos equiláteros ponto de nagel circunferência ex-inscrita semiperímetro
+ano: 10
+nivel: aprofundamento
+pre: m3e
+fonte: Manual (Unidade 3, Fermat); cartazes de alunos (Nagel), revistos
+#A
+- Construir o ponto de Fermat e conhecer a sua propriedade.
+- Saber quando a construção não serve.
+- Conhecer o ponto de Nagel e a divisão do perímetro.
+#B
+Onde pôr uma central que ligue três cidades com o mínimo de cabo? No ponto de Fermat.
+#C
+- Ponto de Fermat (F): torna mínima a soma FP + FQ + FR.
+- Construção: um triângulo equilátero sobre cada lado, para fora.
+- Une-se cada vértice ao vértice exterior do equilátero oposto.
+- As três retas cruzam-se em F, onde os ângulos medem 120°.
+- Com um ângulo de 120° ou mais, o mínimo fica nesse vértice.
+- Ponto de Nagel: as três cevianas para as tangências das ex-inscritas.
+#D
+Porque é mínimo: uma rotação de 60° transforma a soma num caminho de Q a um ponto fixo.
+Esse caminho é mínimo quando é um segmento de reta.
+A circunferência ex-inscrita é tangente a um lado e aos prolongamentos dos outros dois.
+Com lados a = QR, b = PR e c = PQ, e semiperímetro s, a ex-inscrita oposta a P toca [QR] em D.
+Então QD = s - c e RD = s - b.
+Logo PQ + QD = PR + RD = s: cada segmento divide o perímetro ao meio.
+#E
+@F Ponto de Nagel|QD = s - c e RD = s - b|s: semiperímetro;D: tangência da ex-inscrita em [QR]|qualquer triângulo|lados 6, 7 e 5: QD = 4 e RD = 2|
+#F
+Dados: triângulo com a = QR = 6, b = PR = 7 e c = PQ = 5.
+Objetivo: pontos de tangência e verificação do semiperímetro.
+1. s = (6 + 7 + 5) / 2 = [[9]]
+2. QD = 9 - 5 = [[4]] e RD = 9 - 7 = [[2]]
+3. PQ + QD = 5 + 4 = [[9]] = s
+> QD = 4 e RD = 2; PQ + QD = s.
+Verificação: QD + RD = [[6]] = QR.
+#G
+Fermat e Nagel não fazem parte dos quatro pontos notáveis principais: são aprofundamento.
+#H
+- Usar a construção de Fermat com um ângulo de 120° ou mais.
+- Confundir a ex-inscrita com a inscrita.
+- Achar que a soma das distâncias de Nagel aos lados é o semiperímetro (não é).
+#I
+- Fermat: soma mínima das distâncias; ângulos de 120°.
+- Ângulo de 120° ou mais: o mínimo é o vértice.
+- Nagel: cada ceviana divide o perímetro ao meio.
+#J
+Num triângulo com um ângulo de 130°, onde fica o ponto que minimiza a soma das distâncias aos vértices?
+#R
+No vértice do ângulo de 130°.
+#V
+s = (6 + 7 + 5) / 2
+V = [s, s - 5, s - 7, 5 + (s - 5), (s - 5) + (s - 7)]
+
+@exemplo m3e1
+nivel: 1
+titulo: Raio da circunferência inscrita
+licao: m3b
+calc: c_matt.insc
+#T
+Enunciado: um triângulo tem 96 cm² de área e 48 cm de perímetro. Calcula o raio da inscrita.
+Resolução:
+1. r = 2A / P = 2 × 96 / 48 = [[4]] cm
+2. Comprimento da inscrita: 2π × 4 = [[=8π]] cm
+Resultado: r = 4 cm.
+Interpretação: o incentro está a 4 cm de cada lado.
+Erros a evitar: usar o semiperímetro (daria o dobro).
+#V
+V = [2 * 96 / 48, 8 * pi]
+
+@exemplo m3e2
+nivel: 2
+titulo: Ângulos com vértice no incentro
+licao: m3b
+#T
+Enunciado: em [ABC], I é o incentro, BÂI = 35° e o ângulo ABC mede 52°.
+Calcula BÂC, o ângulo ACB e BÎC.
+Resolução:
+1. I está na bissetriz de Â: BÂC = 2 × 35 = [[70]]°
+2. Ângulo ACB: 180 - 70 - 52 = [[58]]°
+3. No triângulo [BIC]: os ângulos em B e C medem 26° e 29°.
+4. BÎC = 180 - 26 - 29 = [[125]]°
+Resultado: BÂC = 70°, ACB = 58° e BÎC = 125°.
+Interpretação: confirma BÎC = 90° + 70 / 2 = [[125]]°.
+Erros a evitar: esquecer que I divide os ângulos ao meio.
+#V
+V = [2 * 35, 180 - 70 - 52, 180 - 26 - 29, 90 + 70 / 2]
+
+@exemplo m3e3
+nivel: 3
+titulo: Pontos notáveis em coordenadas e reta de Euler
+licao: m3e
+calc: c_matt.pn
+#T
+Enunciado: triângulo [PQR] com P(0, 0), Q(6, 0) e R(2, 4); C(3, 1) e O(2, 2).
+Calcula B e verifica que OB = 2 BC.
+Resolução:
+1. B = ((0 + 6 + 2) / 3, (0 + 0 + 4) / 3) = (8/3, 4/3): abcissa [[=8/3]]
+2. OB = √((8/3 - 2)² + (4/3 - 2)²) = [[=2√2/3]]
+3. BC = √((3 - 8/3)² + (1 - 4/3)²) = [[=√2/3]]
+4. OB / BC = [[2]]
+Resultado: B(8/3, 4/3) e OB = 2 BC.
+Interpretação: O, B e C estão alinhados (reta de Euler).
+Erros a evitar: calcular B como média de só dois vértices.
+#V
+bx, by = 8 / 3, 4 / 3
+ob = ((bx - 2) ** 2 + (by - 2) ** 2) ** 0.5
+bc = ((3 - bx) ** 2 + (1 - by) ** 2) ** 0.5
+V = [bx, ob, bc, ob / bc]
+
+@exercicio m3x1
+tipo: n
+licao: m3b
+#T
+Um triângulo tem 30 cm² de área e 30 cm de perímetro. Qual é o raio da inscrita (em cm)?
+#S
+2
+#P
+r = 2A / P.
+#D
+r = 2 × 30 / 30 = [[2]] cm.
+#V
+S = 2 * 30 / 30
+V = [S]
+
+@exercicio m3x2
+tipo: m
+licao: m3c
+#T
+Qual ponto notável é o centro da circunferência que passa pelos três vértices?
+#O
+Circuncentro
+Incentro
+Baricentro
+Ortocentro
+#S
+1
+#P
+Está à mesma distância dos vértices.
+#D
+O circuncentro (interseção das mediatrizes) está à mesma distância dos três vértices.
+#V
+S = 1
+
+@exercicio m3x3
+tipo: n
+licao: m3d
+#T
+Uma mediana mede 12 cm. A que distância do vértice fica o baricentro (em cm)?
+#S
+8
+#P
+O baricentro está a 2/3 da mediana, a contar do vértice.
+#D
+2/3 × 12 = [[8]] cm.
+#V
+S = 2 / 3 * 12
+V = [S]
+
+@exercicio m3x4
+tipo: v
+licao: m3b
+#T
+O incentro pode ficar fora do triângulo.
+#S
+F
+#P
+Pensa nas bissetrizes dos ângulos internos.
+#D
+Falso: o incentro (como o baricentro) está sempre no interior do triângulo.
+#V
+S = 'F'
+
+@exercicio m3x5
+tipo: n
+licao: m3c
+#T
+Um triângulo retângulo tem catetos de 6 cm e 8 cm. Qual é o raio da circunscrita (em cm)?
+#S
+5
+#P
+O circuncentro é o ponto médio da hipotenusa.
+#D
+Hipotenusa: √(36 + 64) = [[10]] cm; R = 10 / 2 = [[5]] cm.
+#V
+S = (36 + 64) ** 0.5 / 2
+V = [2 * S, S]
+
+@exercicio m3x6
+tipo: m
+licao: m3e
+#T
+Num triângulo obtusângulo, que pontos notáveis ficam no exterior?
+#O
+O circuncentro e o ortocentro
+O incentro e o baricentro
+Só o ortocentro
+Nenhum
+#S
+1
+#P
+I e B estão sempre no interior.
+#D
+No obtusângulo, o circuncentro e o ortocentro saem os dois do triângulo.
+#V
+S = 1
+
+@exercicio m3x7
+tipo: n
+licao: m3e
+#T
+Na reta de Euler de um triângulo, OB = 6 cm. Quanto mede OC (em cm)?
+#S
+9
+#P
+OB = 2 BC e OC = 3 BC.
+#D
+BC = 6 / 2 = [[3]] cm; OC = 3 × 3 = [[9]] cm.
+#V
+S = 3 * (6 / 2)
+V = [6 / 2, S]
+
+@exercicio m3x8
+tipo: n
+licao: m3e
+#T
+A circunferência circunscrita tem raio 10 cm. Qual é o raio da circunferência dos nove pontos (em cm)?
+#S
+5
+#P
+O raio dos nove pontos é metade de R.
+#D
+r = 10 / 2 = [[5]] cm.
+#V
+S = 10 / 2
+V = [S]
+
+@exercicio m3x9
+tipo: n
+licao: m3b
+#T
+No triângulo [ABC], de incentro I, o ângulo Â mede 80°. Quanto mede BÎC (em graus)?
+#S
+130
+#P
+BÎC = 90° + Â / 2.
+#D
+BÎC = 90 + 80 / 2 = [[130]]°.
+#V
+S = 90 + 80 / 2
+V = [S]
+
+@exercicio m3x10
+tipo: n
+licao: m3d
+#T
+Um triângulo tem 42 cm² de área. Qual é a área de cada um dos seis triângulos definidos pelas medianas (em cm²)?
+#S
+7
+#P
+As medianas dividem o triângulo em seis partes com a mesma área.
+#D
+42 / 6 = [[7]] cm².
+#V
+S = 42 / 6
+V = [S]
+
+@exercicio m3x11
+tipo: v
+licao: m3e
+#T
+Num triângulo isósceles não equilátero, os quatro pontos notáveis estão alinhados.
+#S
+V
+#P
+Onde ficam os pontos num isósceles?
+#D
+Verdadeiro: os quatro estão na mediatriz da base.
+#V
+S = 'V'

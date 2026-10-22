@@ -568,10 +568,34 @@ def nice(a, b, n=5):
     return 10 * N._sc(1.0, e)
 
 
+def cseg(x1, y1, x2, y2, L, T, R, B):
+    # Corta o segmento ao retangulo [L, R] x [T, B] (Liang-Barsky);
+    # devolve None se ficar todo fora.
+    t0 = 0.0
+    t1 = 1.0
+    dx = x2 - x1
+    dy = y2 - y1
+    for p, q in ((-dx, x1 - L), (dx, R - x1), (-dy, y1 - T), (dy, B - y1)):
+        if p == 0:
+            if q < 0:
+                return None
+        else:
+            r = q / p
+            if p < 0:
+                if r > t1:
+                    return None
+                t0 = max(t0, r)
+            else:
+                if r < t0:
+                    return None
+                t1 = min(t1, r)
+    return x1 + t0 * dx, y1 + t0 * dy, x1 + t1 * dx, y1 + t1 * dy
+
+
 def graph(t, items, x0, x1, y0, y1, leg=''):
-    # items: lista de ('f', funcao(x), cor) ou ('p', [(x, y)...], cor)
-    # ou ('s', [(x1, y1, x2, y2)...], cor). Setas deslocam, + e - mudam
-    # a escala, esc volta.
+    # items: lista de ('f', funcao(x), cor), ('p', [(x, y)...], cor),
+    # ('s', [(x1, y1, x2, y2)...], cor) ou ('t', [(x, y, rotulo)...], cor).
+    # Setas deslocam, + e - mudam a escala, esc volta.
     if not E['g']:
         out = []
         for it in items:
@@ -586,6 +610,10 @@ def graph(t, items, x0, x1, y0, y1, leg=''):
             elif it[0] == 'p':
                 for p in it[1][:10]:
                     out.append('(' + N.fmt(p[0]) + '; ' + N.fmt(p[1]) + ')')
+            elif it[0] == 't':
+                for p in it[1]:
+                    out.append(p[2] + ' = (' + N.fmt(p[0]) + '; ' +
+                               N.fmt(p[1]) + ')')
         text(t, '(Gr\u00e1fico s\u00f3 no ecr\u00e3 gr\u00e1fico.)\n' + '\n'.join(out) +
              ('\n' + leg if leg else ''))
         return
@@ -656,7 +684,16 @@ def graph(t, items, x0, x1, y0, y1, leg=''):
                         P.rect(X - 2, Y - 2, 5, 5, c)
             elif it[0] == 's':
                 for q in it[1]:
-                    P.line(px(q[0]), py(q[1]), px(q[2]), py(q[3]), c)
+                    s = cseg(px(q[0]), py(q[1]), px(q[2]), py(q[3]), L, T, R, B)
+                    if s:
+                        P.line(s[0], s[1], s[2], s[3], c)
+            elif it[0] == 't':
+                # rotulos: (x, y, texto)
+                for q in it[1]:
+                    X = px(q[0])
+                    Y = py(q[1])
+                    if L <= X <= R and T <= Y <= B:
+                        P.txt(X + 3, Y - E['lh'] + 3, q[2], c)
         if leg:
             P.put(0, E['rows'] - 2, clip(leg, cols()), 0)
         foot('setas: mover \u00b7 + -: escala \u00b7 esc: voltar')

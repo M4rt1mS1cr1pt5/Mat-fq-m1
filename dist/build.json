@@ -1,54 +1,64 @@
 {
- "avisos": [],
+ "avisos": [
+  "conteudo/mat/m3_geometria.txt:77 (licao m3b) pág. B: frase com 21 palavras: Para pôr dentro de um triângulo o maior círculo possível, o ",
+  "conteudo/mat/m3_geometria.txt:146 (licao m3c) pág. B: frase com 23 palavras: O ponto à mesma distância de três localidades (por exemplo, ",
+  "conteudo/mat/m3_geometria.txt:337 (licao m3f) pág. D: frase com 21 palavras: Com lados a = QR, b = PR e c = PQ, e semiperímetro s, a ex-i",
+  "calculadora c_matt.pit: tema mr ainda nao existe",
+  "calculadora c_matt.sem: tema mr ainda nao existe"
+ ],
  "data": "2026-10-22",
  "percursos": {
   "p01_fq_licao": {
    "cpy": "ecras=63 textos=640 fora=0 teclas=50/50 pico=0 ok",
-   "mp": "ecras=63 textos=640 fora=0 teclas=50/50 pico=132048 ok"
+   "mp": "ecras=63 textos=640 fora=0 teclas=50/50 pico=133360 ok"
   },
   "p02_mat_calc": {
-   "cpy": "ecras=71 textos=604 fora=0 teclas=54/54 pico=0 ok",
-   "mp": "ecras=71 textos=604 fora=0 teclas=54/54 pico=116256 ok"
+   "cpy": "ecras=71 textos=608 fora=0 teclas=54/54 pico=0 ok",
+   "mp": "ecras=71 textos=608 fora=0 teclas=54/54 pico=115856 ok"
   },
   "p03_exercicios": {
-   "cpy": "ecras=55 textos=465 fora=0 teclas=42/42 pico=0 ok",
-   "mp": "ecras=55 textos=465 fora=0 teclas=42/42 pico=103104 ok"
+   "cpy": "ecras=55 textos=467 fora=0 teclas=42/42 pico=0 ok",
+   "mp": "ecras=55 textos=467 fora=0 teclas=42/42 pico=102976 ok"
   },
   "p04_pesquisa": {
-   "cpy": "ecras=58 textos=560 fora=0 teclas=37/37 pico=0 ok",
-   "mp": "ecras=58 textos=560 fora=0 teclas=37/37 pico=139360 ok"
+   "cpy": "ecras=58 textos=582 fora=0 teclas=37/37 pico=0 ok",
+   "mp": "ecras=58 textos=582 fora=0 teclas=37/37 pico=144608 ok"
   },
   "p05_tabela": {
    "cpy": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=0 ok",
-   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=137936 ok"
+   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=139072 ok"
   },
   "p06_definicoes": {
    "cpy": "ecras=48 textos=490 fora=0 teclas=35/35 pico=0 ok",
-   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=88528 ok"
+   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=89728 ok"
   },
   "p07_progresso": {
    "cpy": "ecras=48 textos=506 fora=0 teclas=35/35 pico=0 ok",
-   "mp": "ecras=48 textos=506 fora=0 teclas=35/35 pico=114480 ok"
+   "mp": "ecras=48 textos=506 fora=0 teclas=35/35 pico=115696 ok"
   },
   "p08_fis_calc": {
    "cpy": "ecras=59 textos=550 fora=0 teclas=46/46 pico=0 ok",
-   "mp": "ecras=59 textos=550 fora=0 teclas=46/46 pico=124384 ok"
+   "mp": "ecras=59 textos=550 fora=0 teclas=46/46 pico=125504 ok"
   },
   "p09_al_pilha": {
    "cpy": "ecras=87 textos=675 fora=0 teclas=72/72 pico=0 ok",
-   "mp": "ecras=87 textos=675 fora=0 teclas=72/72 pico=119024 ok"
+   "mp": "ecras=87 textos=675 fora=0 teclas=72/72 pico=120144 ok"
+  },
+  "p10_mat_pontos": {
+   "cpy": "ecras=49 textos=406 fora=0 teclas=34/34 pico=0 ok",
+   "mp": "ecras=49 textos=406 fora=0 teclas=34/34 pico=126208 ok"
   }
  },
  "residente": {
-  "m1_app": 11712,
-  "m1_cat": 5344,
-  "m1_cont": 2848,
+  "m1_app": 11664,
+  "m1_cat": 5776,
+  "m1_cont": 2880,
   "m1_nucleo": 17888,
-  "m1_plat": 9360,
-  "m1_ui": 11520,
-  "total": 58672
+  "m1_plat": 9376,
+  "m1_ui": 12032,
+  "total": 59616
  },
- "residentes": 87855,
+ "residentes": 89563,
  "tamanhos": {
   "c_alf1": 6737,
   "c_alf2": 7353,
@@ -64,27 +74,29 @@
   "c_fqso": 8527,
   "c_fqte": 14625,
   "c_matq": 14376,
+  "c_matt": 12792,
   "m1": 1196,
   "m1_app": 15101,
-  "m1_cat": 5558,
+  "m1_cat": 5980,
   "m1_cfg": 10266,
   "m1_cont": 5117,
   "m1_ex": 11916,
   "m1_idx": 28279,
   "m1_idx2": 1256,
-  "m1_idxm": 2509,
+  "m1_idxm": 4787,
   "m1_ini": 3451,
   "m1_nav": 4589,
   "m1_nucleo": 28191,
   "m1_pesq": 5418,
-  "m1_plat": 11726,
+  "m1_plat": 11744,
   "m1_tp": 14779,
-  "m1_ui": 20966,
+  "m1_ui": 22234,
   "p_af": 18965,
   "p_aq": 22229,
   "p_f1": 18785,
   "p_f2": 18017,
   "p_f3": 21575,
+  "p_m3": 21220,
   "p_m5": 17405,
   "p_q1": 22088,
   "p_q2": 22552,
@@ -100,6 +112,7 @@
   "x_f1": 2853,
   "x_f2": 2783,
   "x_f3": 2961,
+  "x_m3": 2812,
   "x_m5": 2825,
   "x_q1": 2999,
   "x_q2": 3554,
@@ -111,9 +124,9 @@
   "x_r8": 2132,
   "x_r9": 1537
  },
- "tempo": 5.1,
+ "tempo": 5.3,
  "testes": {
-  "CPython": 189,
-  "MicroPython": 189
+  "CPython": 202,
+  "MicroPython": 202
  }
 }

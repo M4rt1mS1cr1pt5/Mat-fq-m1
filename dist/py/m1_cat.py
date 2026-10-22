@@ -1,9 +1,9 @@
 # m1_cat.py - M1TR4M: catalogo gerado pelo build (nao editar).
 # TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes
 # CALC: id|nome|disciplina|tema (as palavras-chave estao no indice da pesquisa)
-NLIC = 117
-NEX = 220
-NCART = 338
+NLIC = 122
+NEX = 230
+NCART = 353
 TEMAS = (
     "q1|F|q|Massa e tamanho dos \xe1tomos|p_q1|x_q1|5|0|10|0|18|0|c_fqat.qm c_fqat.mm c_fqat.ar c_fqat.fr c_comu.sci c_comu.sf c_comu.uni|q1a q1b q1c q1d q1e",
     "q2|F|q|Energia dos eletr\xf5es nos \xe1tomos|p_q2|x_q2|5|5|10|10|14|18|c_fqel.fot c_fqel.hid c_fqel.conf c_comu.sci c_comu.uni|q2a q2b q2c q2d q2e",
@@ -27,6 +27,7 @@ TEMAS = (
     "m6|M|t|Fun\xe7\xf5es definidas por ramos e fun\xe7\xe3o m\xf3dulo|p_m6|x_m6|3|101|8|191|9|290|c_matf.ramos c_matf.mod c_matf.fx|m6a m6b m6c",
     "m7|M|t|Geometria anal\xedtica no plano e no espa\xe7o|p_m7|x_m7|6|104|10|199|18|299|c_matg.dist c_matg.reta c_matg.medz c_matg.circ c_matg.cond|m7a m7b m7c m7d m7e m7f",
     "m8|M|t|Vetores no plano e no espa\xe7o|p_m8|x_m8|7|110|11|209|21|317|c_matv.vet c_matv.retav c_matv.bar|m8a m8b m8c m8d m8e m8f m8g",
+    "m9|M|t|Trigonometria (revis\xe3o do 9.\xba ano e extens\xe3o)|p_m9|x_m9|5|117|10|220|15|338|c_matr.tri c_matr.rad c_matr.res c_comu.sci|m9a m9b m9c m9d m9e",
 )
 CALC = "c_alf1.plano|AL 1.1 Plano inclinado: Ec e dist\xe2ncia|F|af\n\
 c_alf1.ress|AL 1.2 Queda e ressalto de uma bola|F|af\n\
@@ -100,6 +101,9 @@ c_matg.cond|Condi\xe7\xf5es no plano (regi\xe3o)|M|m7\n\
 c_matq.q2|Equa\xe7\xe3o do 2.\xba grau e fun\xe7\xe3o quadr\xe1tica|M|m5\n\
 c_matq.iq|Inequa\xe7\xf5es do 2.\xba grau|M|m5\n\
 c_matq.tf|Transforma\xe7\xf5es de fun\xe7\xf5es|M|m5\n\
+c_matr.tri|Tri\xe2ngulo ret\xe2ngulo: seno, cosseno e tangente|M|m9\n\
+c_matr.rad|Graus, radianos e valores exatos|M|m9\n\
+c_matr.res|Resolver tri\xe2ngulos: leis dos senos e dos cossenos|M|m9\n\
 c_matt.pn|Pontos not\xe1veis do tri\xe2ngulo (com desenho)|M|m3\n\
 c_matt.insc|Circunfer\xeancias inscrita e circunscrita|M|m3\n\
 c_matt.euler|Reta de Euler e nove pontos|M|m3\n\

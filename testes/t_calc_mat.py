@@ -1,4 +1,5 @@
 # Testes das calculadoras de Matematica (normal, limite e invalido).
+import math
 import c_matq
 import c_matt
 import c_matf
@@ -7,6 +8,7 @@ import c_matv
 import c_matc
 import c_matd
 import c_mate
+import c_matr
 from base import calc, erro, tem, perto
 
 
@@ -730,3 +732,69 @@ def t_caule_invalido():
     assert 'inteiros' in erro(calc, c_mate, 'caule', ['2,5 3', '', 0])
     assert 'uma casa decimal' in erro(calc, c_mate, 'caule', ['2,55 3', '', 1])
     assert 'Demasiados caules' in erro(calc, c_mate, 'caule', ['1 999', '', 0])
+
+
+def t_tri_catetos():
+    r = calc(c_matr, 'tri', ['3', '4', '', ''])
+    tem(r[0], 'c² = a² + b² (Pitágoras)', 'a = 3 · b = 4 · c = 5', 'α ≈ 36,9°',
+        'β = 90° - α ≈ 53,1°', 'sen α = a / c = 0,6; cos α = b / c = 0,8',
+        'Área = a b / 2 = 6; perímetro = 12')
+    perto(r[2], math.degrees(math.atan(0.75)))
+    assert r[4][0] == 'Triângulo retângulo'
+
+
+def t_tri_angulo_e_lado():
+    r = calc(c_matr, 'tri', ['', '', '10', '30'])
+    tem(r[0], 'a = c × sen α', 'a = 5 · b = 5√3 ≈ 8,6603 · c = 10', 'β = 90° - α = 60°')
+    r = calc(c_matr, 'tri', ['', '6', '', '60'])
+    tem(r[0], 'a = 6√3 ≈ 10,3923 · b = 6 · c = 12')
+    r = calc(c_matr, 'tri', ['5', '', '13', ''])
+    tem(r[0], 'sen α = a / c = 5/13', 'a = 5 · b = 12 · c = 13', 'α ≈ 22,6°')
+
+
+def t_tri_invalido():
+    assert 'exatamente' in erro(calc, c_matr, 'tri', ['3', '4', '5', ''])
+    assert 'exatamente' in erro(calc, c_matr, 'tri', ['', '', '', '30'])
+    assert 'entre 0° e 90°' in erro(calc, c_matr, 'tri', ['3', '', '', '90'])
+    assert 'maior do que os catetos' in erro(calc, c_matr, 'tri', ['5', '', '4', ''])
+    assert 'positivo' in erro(calc, c_matr, 'tri', ['-3', '4', '', ''])
+
+
+def t_rad():
+    r = calc(c_matr, 'rad', ['60', 0])
+    tem(r[0], '60° = π/3 rad ≈ 1,0472 rad', 'sen = √3/2, cos = 1/2, tg = √3')
+    r = calc(c_matr, 'rad', ['135', 0])
+    tem(r[0], '135° = 3π/4 rad', 'tg = -1', '11.º ano')
+    r = calc(c_matr, 'rad', ['1', 1])
+    tem(r[0], '1 rad ≈ 57,3°')
+    r = calc(c_matr, 'rad', ['90', 0])
+    tem(r[0], 'π/2 rad', 'tg = não existe', 'tg não existe')
+    r = calc(c_matr, 'rad', ['0', 0])
+    tem(r[0], '0° = 0 rad')
+
+
+def t_res_lados():
+    r = calc(c_matr, 'res', ['7', '5', '', '', '', '60'])
+    tem(r[0], 'c² = a² + b² - 2ab cos C', 'c = √39 ≈ 6,245', 'A ≈ 76,1°, B ≈ 43,9°, C = 60°',
+        '35√3/4 ≈ 15,1554')
+    r = calc(c_matr, 'res', ['7', '8', '9', '', '', ''])
+    tem(r[0], 'A ≈ 48,2°, B ≈ 58,4°, C ≈ 73,4°', '12√5 ≈ 26,8328')
+
+
+def t_res_angulos_e_ambiguo():
+    r = calc(c_matr, 'res', ['', '', '10', '40', '60', ''])
+    tem(r[0], 'C = 180° - ... = 80°', 'a ≈ 6,527, b ≈ 8,7939, c = 10')
+    r = calc(c_matr, 'res', ['6', '8', '', '30', '', ''])
+    tem(r[0], 'Caso ambíguo: há dois triângulos', '1.º: A = 30°, B ≈ 41,8°, C ≈ 108,2°',
+        '2.º: A = 30°, B ≈ 138,2°, C ≈ 11,8°')
+    r = calc(c_matr, 'res', ['8', '6', '', '30', '', ''])
+    assert 'ambíguo' not in r[0]
+    tem(r[0], 'B ≈ 22')
+
+
+def t_res_invalido():
+    assert 'Não há triângulo' in erro(calc, c_matr, 'res', ['3', '8', '', '30', '', ''])
+    assert 'não formam' in erro(calc, c_matr, 'res', ['1', '2', '5', '', '', ''])
+    assert '180° ou mais' in erro(calc, c_matr, 'res', ['', '', '5', '100', '90', ''])
+    assert 'exatamente 3' in erro(calc, c_matr, 'res', ['3', '4', '', '', '', ''])
+    assert 'pelo menos um lado' in erro(calc, c_matr, 'res', ['', '', '', '40', '60', '80'])

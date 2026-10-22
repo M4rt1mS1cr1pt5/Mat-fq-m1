@@ -1,7 +1,7 @@
 # m1_idxm.py - M1TR4M: indice da pesquisa (Mat, parte 1 de 1) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 298\n\
+@N 329\n\
 L|Elei\xe7\xf5es: maioria simples e maioria absoluta|eleicao votacao tabela preferencias relativa votantes empate|m1a\n\
 L|M\xe9todo de Borda|pontos ordenacao preferencias pontuacao ranking eleicao concurso|m1b\n\
 L|Segunda volta e elimina\xe7\xe3o sucessiva|dois mais votados transferencia votos analise sistemas|m1c\n\
@@ -277,6 +277,35 @@ X|\u2016u\u2016 = 2,5. Qual \xe9 a norma de||m8:7\n\
 X|Tri\xe2ngulo de v\xe9rtices A(1||m8:8\n\
 X|A(1, 0, 2) e B(3, -2, 3).||m8:9\n\
 X|Qual \xe9 o produto escalar de u||m8:10\n\
+L|Raz\xf5es trigonom\xe9tricas de um \xe2ngulo agudo|trigonometria seno cosseno tangente cateto oposto\
+ adjacente sen cos tg|m9a\n\
+L|Resolver tri\xe2ngulos ret\xe2ngulos|triangulo retangulo angulo elevacao depressao altura sombra|m9b\n\
+L|Rela\xe7\xf5es entre as raz\xf5es e valores exatos|formula fundamental sen^2 + cos^2 = 1|m9c\n\
+L|Radianos (extens\xe3o, 11.\xba)|radiano graus conversao pi comprimento arco angulo|m9d\n\
+L|Leis dos senos e dos cossenos (extens\xe3o, 11.\xba)|lei triangulo qualquer resolver area caso ambiguo|m9e\n\
+F|Seno|sen|m9:0\n\
+F|Cosseno e tangente|cos tg|m9:1\n\
+F|Lados a partir da hipotenusa||m9:2\n\
+F|Oposto a partir do adjacente||m9:3\n\
+F|F\xf3rmula fundamental||m9:4\n\
+F|Tangente a partir do seno e do cosseno|sen cos tg|m9:5\n\
+F|Graus em radianos|energia mecanica|m9:6\n\
+F|Comprimento de arco||m9:7\n\
+F|Lei dos senos||m9:8\n\
+F|Lei dos cossenos||m9:9\n\
+E|Altura de um pr\xe9dio||m9:0\n\
+E|Das outras raz\xf5es a partir do cosseno|cos|m9:1\n\
+E|O caso amb\xedguo||m9:2\n\
+X|O cateto oposto a \u03b1 mede 5 e||m9:0\n\
+X|Num tri\xe2ngulo ret\xe2ngulo, o||m9:1\n\
+X|Uma escada de 6 m faz 60\xb0 com||m9:2\n\
+X|Com a calculadora em graus|energia mecanica|m9:3\n\
+X|Para qualquer \xe2ngulo agudo \u03b1||m9:4\n\
+X|\u03b1 \xe9 agudo e sen \u03b1 = 0,8.|seno|m9:5\n\
+X|Qual \xe9 o valor exato de cos|cosseno|m9:6\n\
+X|Quantos graus tem \u03c0/6 rad?||m9:7\n\
+X|Num tri\xe2ngulo, b = 5, c = 8 e||m9:8\n\
+X|Com A = 90\xb0, a lei dos||m9:9\n\
 C|Constantes e dados|avogadro planck velocidade luz volume molar na vm|c_comd.cte\n\
 C|Dados experimentais|media incerteza absoluta relativa erro percentual|c_comd.exp\n\
 C|Regress\xe3o linear e gr\xe1fico|reta declive ordenada coeficiente correlacao interpolar|c_comd.reg\n\
@@ -306,6 +335,10 @@ C|Equa\xe7\xe3o do 2.\xba grau e fun\xe7\xe3o quadr\xe1tica|formula resolvente b
  vertice|c_matq.q2\n\
 C|Inequa\xe7\xf5es do 2.\xba grau|inequacao conjunto-solucao intervalos sinal parabola|c_matq.iq\n\
 C|Transforma\xe7\xf5es de fun\xe7\xf5es|translacao dilatacao contracao reflexao grafico f(x-a)+b|c_matq.tf\n\
+C|Tri\xe2ngulo ret\xe2ngulo: seno, cosseno e tangente|trigonometria seno cateto oposto adjacente hipotenusa\
+ sen cos tg|c_matr.tri\n\
+C|Graus, radianos e valores exatos|graus conversao pi angulos notaveis 30|c_matr.rad\n\
+C|Resolver tri\xe2ngulos: leis dos senos e dos cossenos|lei triangulo qualquer area caso ambiguo|c_matr.res\n\
 C|Pontos not\xe1veis do tri\xe2ngulo (com desenho)|incentro circuncentro ortocentro baricentro reta euler|c_matt.pn\n\
 C|Circunfer\xeancias inscrita e circunscrita|raio circunferencia r = 2a/p triangulo|c_matt.insc\n\
 C|Reta de Euler e nove pontos|ob = 2bc circunferencia raio r/2|c_matt.euler\n\

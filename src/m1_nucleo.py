@@ -172,7 +172,7 @@ def fmt2(x, sf=0, dec=-1, strip=1):
     if sf > 0:
         sf = min(sf, 13)
         m, e = _sig(a, sf)
-        exact = _sc(float(m), e - sf + 1) == a
+        exact = abs(_sc(float(m), e - sf + 1) - a) <= a * 1e-12
         if e >= hi or e < -3 or e >= sf:
             s = sci(m, e, sf)
         elif e == sf - 1:
@@ -185,7 +185,7 @@ def fmt2(x, sf=0, dec=-1, strip=1):
         if e >= 12 or e < -dec and e < -3:
             n = max(dec, 4)
             m, e = _sig(a, n)
-            exact = _sc(float(m), e - n + 1) == a
+            exact = abs(_sc(float(m), e - n + 1) - a) <= a * 1e-12
             s = _strip(_ds(m, n - 1)) if strip else _ds(m, n - 1)
             s = s + ' ' + X + ' 10' + sup(e)
         else:
@@ -193,7 +193,7 @@ def fmt2(x, sf=0, dec=-1, strip=1):
                 dec = max(0, 12 - e)
             v = _sc(a, dec)
             m = _rnd(v)
-            exact = float(m) == v
+            exact = abs(float(m) - v) <= v * 1e-12 + 1e-9
             s = _ds(m, dec)
             if strip:
                 s = _strip(s)
@@ -217,9 +217,15 @@ def fmt(x, sf=0, dec=-1):
 
 
 def eq(x, sf=0, dec=-1):
-    # "= 2,5" se for exato, "~ 2,47" se foi arredondado.
-    s, e = fmt2(x, sf, dec)
+    # "= 2,5" se for exato, "~ 2,47" se foi arredondado. Com dec dado
+    # mantem os zeros a direita (74,10); com dec das Definicoes tira-os.
+    s, e = fmt2(x, sf, dec, 0 if dec >= 0 else 1)
     return ('= ' if e else AP + ' ') + s
+
+
+def fix(x, d):
+    # Exatamente d casas decimais (mantem os zeros: 2,50).
+    return fmt2(x, 0, d, 0)[0]
 
 
 def fsf(x, n):
@@ -646,7 +652,7 @@ def frac(x, maxd=1000):
         k0, k1 = k1, q * k1 + k0
         if k1 > maxd:
             return None
-        if abs(a - 1.0 * h1 / k1) <= 1e-9 * max(1.0, a):
+        if abs(a - 1.0 * h1 / k1) <= 1e-12 * max(1.0, a):
             return (-h1 if neg else h1, k1)
         r = v - q
         if r < 1e-12:
@@ -874,6 +880,53 @@ def res(sym, x, u='', sf=0, dec=-1):
 def q(x, sf=0, u=''):
     # Valor formatado com unidade (para a substituicao).
     return fmt(x, sf) + (' ' + u if u else '')
+
+def lst(t):
+    # Partes de uma lista escrita pelo aluno: separador ";" (ou espacos,
+    # quando nenhum valor usa notacao cientifica com espacos).
+    ps = []
+    for p in t.replace('\n', ';').split(';'):
+        p = p.strip()
+        if not p:
+            continue
+        if ' ' in p and not (X in p or '*' in p or 'x' in p.lower()):
+            ps = ps + [x for x in p.split(' ') if x]
+        else:
+            ps.append(p)
+    return ps
+
+
+def rdf(fs):
+    # Le os campos do formulario. Numeros vem na 1.a unidade da lista
+    # (a da formula), como (valor, alg. sig.); 'o' e um numero opcional
+    # (None se vazio). Os erros ficam escritos no proprio campo.
+    out = []
+    bad = 0
+    for f in fs:
+        f[5] = ''
+        try:
+            k = f[4]
+            if k == 'o' and f[2].strip() == '':
+                out.append(None)
+            elif k == 'n' or k == 'o':
+                v, sf = num(f[2])
+                if f[1] and f[3]:
+                    v = conv(v, f[1][f[3]], f[1][0])
+                out.append((v, sf))
+            elif k == 'l':
+                vs = [num(x) for x in lst(f[2])]
+                if not vs:
+                    err('Escreve os valores separados por ; (2,5; 3,1)')
+                out.append(vs)
+            elif k == 'c':
+                out.append(f[3])
+            else:
+                out.append(f[2].strip())
+        except Exception as e:
+            f[5] = str(e)
+            bad = 1
+    return None if bad else out
+
 
 # ------------------------------------------------------------ validacao
 

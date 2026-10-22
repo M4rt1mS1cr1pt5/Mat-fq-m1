@@ -95,7 +95,7 @@ def body(D, i):
         k = D.find(t, j)
         if 0 <= k < e:
             e = k
-    return D[j + 1:e]
+    return D[j + 1:e].rstrip('\n')
 
 
 def parts(txt):

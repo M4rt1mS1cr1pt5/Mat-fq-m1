@@ -1,0 +1,20 @@
+nome,simbolo,valor,unidade,fonte,ano
+Velocidade de propagação da luz no vácuo,c,"3,00 × 10⁸",m s⁻¹,"IAVE, Tabela de Constantes do exame de FQ A (715)",2024 (confirmar)
+Módulo da aceleração gravítica junto à superfície da Terra,g,10,m s⁻²,"IAVE, Tabela de Constantes do exame de FQ A (715)",2024 (confirmar)
+Constante de gravitação universal,G,"6,67 × 10⁻¹¹",N m² kg⁻²,"IAVE, Tabela de Constantes do exame de FQ A (715)",2024 (confirmar)
+Constante de Avogadro,NA,"6,02 × 10²³",mol⁻¹,"IAVE, Tabela de Constantes do exame de FQ A (715)",2024 (confirmar)
+Constante de Stefan-Boltzmann,σ,"5,67 × 10⁻⁸",W m⁻² K⁻⁴,"IAVE, Tabela de Constantes do exame de FQ A (715); extensão no 10.º ano",2024 (confirmar)
+Produto iónico da água (25 °C),Kw,"1,00 × 10⁻¹⁴",,"IAVE, Tabela de Constantes do exame de FQ A (715); matéria do 11.º ano",2024 (confirmar)
+Volume molar de um gás (PTN),Vm,"22,4",dm³ mol⁻¹,"IAVE, Tabela de Constantes do exame de FQ A (715)",2024 (confirmar)
+Constante de Planck,h,"6,63 × 10⁻³⁴",J s,"valor arredondado; CODATA: 6,626 070 15 × 10⁻³⁴ J s (exato)",2018
+Carga elementar,e,"1,60 × 10⁻¹⁹",C,"valor arredondado; CODATA: 1,602 176 634 × 10⁻¹⁹ C (exato)",2018
+Eletrão-volt,eV,"1,60 × 10⁻¹⁹",J,"1 eV = e × 1 V; CODATA",2018
+Unidade de massa atómica,u,"1,66 × 10⁻²⁷",kg,"valor arredondado; CODATA: 1,660 539 066 60 × 10⁻²⁷ kg",2018
+Aceleração gravítica padrão,gn,"9,80665",m s⁻²,"valor convencional (3.ª CGPM)",1901
+Energia do eletrão no nível n do átomo de hidrogénio,En,"-2,18 × 10⁻¹⁸/n²",J,"modelo de Bohr (valor usado nos manuais)",—
+Capacidade térmica mássica da água líquida,c,"4,18 × 10³",J kg⁻¹ K⁻¹,"valor usado nos manuais (varia com a temperatura)",—
+Variação de entalpia (mássica) de fusão do gelo,ΔHf,"3,34 × 10⁵",J kg⁻¹,"valor tabelado a 0 °C",—
+Variação de entalpia (mássica) de vaporização da água,ΔHv,"2,26 × 10⁶",J kg⁻¹,"valor tabelado a 100 °C",—
+Massa volúmica da água (4 °C),ρ,"1,00 × 10³",kg m⁻³,"valor arredondado",—
+Pressão normal (1 atm),p,"1,01325 × 10⁵",Pa,"valor convencional",—
+Zero da escala Celsius em kelvin,T0,"273,15",K,"definição da escala Celsius",—

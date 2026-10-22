@@ -1,0 +1,119 @@
+z,simbolo,nome,ar,grupo,periodo,bloco,tipo,estado,raio_pm,ei_kj_mol
+1,H,Hidrogénio,1.008,1,1,s,não metal,gás,53,1312
+2,He,Hélio,4.0026,18,1,s,gás nobre,gás,31,2372
+3,Li,Lítio,6.94,1,2,s,metal alcalino,sólido,167,520
+4,Be,Berílio,9.0122,2,2,s,metal alcalinoterroso,sólido,112,900
+5,B,Boro,10.81,13,2,p,semimetal,sólido,87,801
+6,C,Carbono,12.011,14,2,p,não metal,sólido,67,1086
+7,N,Azoto,14.007,15,2,p,não metal,gás,56,1402
+8,O,Oxigénio,15.999,16,2,p,não metal,gás,48,1314
+9,F,Flúor,18.998,17,2,p,halogéneo,gás,42,1681
+10,Ne,Néon,20.180,18,2,p,gás nobre,gás,38,2081
+11,Na,Sódio,22.990,1,3,s,metal alcalino,sólido,190,496
+12,Mg,Magnésio,24.305,2,3,s,metal alcalinoterroso,sólido,145,738
+13,Al,Alumínio,26.982,13,3,p,metal,sólido,118,578
+14,Si,Silício,28.085,14,3,p,semimetal,sólido,111,787
+15,P,Fósforo,30.974,15,3,p,não metal,sólido,98,1012
+16,S,Enxofre,32.06,16,3,p,não metal,sólido,88,1000
+17,Cl,Cloro,35.45,17,3,p,halogéneo,gás,79,1251
+18,Ar,Árgon,39.95,18,3,p,gás nobre,gás,71,1521
+19,K,Potássio,39.098,1,4,s,metal alcalino,sólido,243,419
+20,Ca,Cálcio,40.078,2,4,s,metal alcalinoterroso,sólido,194,590
+21,Sc,Escândio,44.956,3,4,d,metal de transição,sólido,184,633
+22,Ti,Titânio,47.867,4,4,d,metal de transição,sólido,176,659
+23,V,Vanádio,50.942,5,4,d,metal de transição,sólido,171,651
+24,Cr,Crómio,51.996,6,4,d,metal de transição,sólido,166,653
+25,Mn,Manganês,54.938,7,4,d,metal de transição,sólido,161,717
+26,Fe,Ferro,55.845,8,4,d,metal de transição,sólido,156,762
+27,Co,Cobalto,58.933,9,4,d,metal de transição,sólido,152,760
+28,Ni,Níquel,58.693,10,4,d,metal de transição,sólido,149,737
+29,Cu,Cobre,63.546,11,4,d,metal de transição,sólido,145,745
+30,Zn,Zinco,65.38,12,4,d,metal de transição,sólido,142,906
+31,Ga,Gálio,69.723,13,4,p,metal,sólido,136,579
+32,Ge,Germânio,72.630,14,4,p,semimetal,sólido,125,762
+33,As,Arsénio,74.922,15,4,p,semimetal,sólido,114,947
+34,Se,Selénio,78.971,16,4,p,não metal,sólido,103,941
+35,Br,Bromo,79.904,17,4,p,halogéneo,líquido,94,1140
+36,Kr,Crípton,83.798,18,4,p,gás nobre,gás,88,1351
+37,Rb,Rubídio,85.468,1,5,s,metal alcalino,sólido,265,403
+38,Sr,Estrôncio,87.62,2,5,s,metal alcalinoterroso,sólido,219,550
+39,Y,Ítrio,88.906,3,5,d,metal de transição,sólido,212,600
+40,Zr,Zircónio,91.224,4,5,d,metal de transição,sólido,206,640
+41,Nb,Nióbio,92.906,5,5,d,metal de transição,sólido,198,652
+42,Mo,Molibdénio,95.95,6,5,d,metal de transição,sólido,190,684
+43,Tc,Tecnécio,[98],7,5,d,metal de transição,sólido,183,702
+44,Ru,Ruténio,101.07,8,5,d,metal de transição,sólido,178,710
+45,Rh,Ródio,102.91,9,5,d,metal de transição,sólido,173,720
+46,Pd,Paládio,106.42,10,5,d,metal de transição,sólido,169,804
+47,Ag,Prata,107.87,11,5,d,metal de transição,sólido,165,731
+48,Cd,Cádmio,112.41,12,5,d,metal de transição,sólido,161,868
+49,In,Índio,114.82,13,5,p,metal,sólido,156,558
+50,Sn,Estanho,118.71,14,5,p,metal,sólido,145,709
+51,Sb,Antimónio,121.76,15,5,p,semimetal,sólido,133,834
+52,Te,Telúrio,127.60,16,5,p,semimetal,sólido,123,869
+53,I,Iodo,126.90,17,5,p,halogéneo,sólido,115,1008
+54,Xe,Xénon,131.29,18,5,p,gás nobre,gás,108,1170
+55,Cs,Césio,132.91,1,6,s,metal alcalino,sólido,,
+56,Ba,Bário,137.33,2,6,s,metal alcalinoterroso,sólido,,
+57,La,Lantânio,138.91,3,6,d,lantanídeo,sólido,,
+58,Ce,Cério,140.12,,6,f,lantanídeo,sólido,,
+59,Pr,Praseodímio,140.91,,6,f,lantanídeo,sólido,,
+60,Nd,Neodímio,144.24,,6,f,lantanídeo,sólido,,
+61,Pm,Promécio,[145],,6,f,lantanídeo,sólido,,
+62,Sm,Samário,150.36,,6,f,lantanídeo,sólido,,
+63,Eu,Európio,151.96,,6,f,lantanídeo,sólido,,
+64,Gd,Gadolínio,157.25,,6,f,lantanídeo,sólido,,
+65,Tb,Térbio,158.93,,6,f,lantanídeo,sólido,,
+66,Dy,Disprósio,162.50,,6,f,lantanídeo,sólido,,
+67,Ho,Hólmio,164.93,,6,f,lantanídeo,sólido,,
+68,Er,Érbio,167.26,,6,f,lantanídeo,sólido,,
+69,Tm,Túlio,168.93,,6,f,lantanídeo,sólido,,
+70,Yb,Itérbio,173.05,,6,f,lantanídeo,sólido,,
+71,Lu,Lutécio,174.97,,6,f,lantanídeo,sólido,,
+72,Hf,Háfnio,178.49,4,6,d,metal de transição,sólido,,
+73,Ta,Tântalo,180.95,5,6,d,metal de transição,sólido,,
+74,W,Tungsténio,183.84,6,6,d,metal de transição,sólido,,
+75,Re,Rénio,186.21,7,6,d,metal de transição,sólido,,
+76,Os,Ósmio,190.23,8,6,d,metal de transição,sólido,,
+77,Ir,Irídio,192.22,9,6,d,metal de transição,sólido,,
+78,Pt,Platina,195.08,10,6,d,metal de transição,sólido,,
+79,Au,Ouro,196.97,11,6,d,metal de transição,sólido,,
+80,Hg,Mercúrio,200.59,12,6,d,metal de transição,líquido,,
+81,Tl,Tálio,204.38,13,6,p,metal,sólido,,
+82,Pb,Chumbo,207.2,14,6,p,metal,sólido,,
+83,Bi,Bismuto,208.98,15,6,p,metal,sólido,,
+84,Po,Polónio,[209],16,6,p,metal,sólido,,
+85,At,Ástato,[210],17,6,p,halogéneo,sólido,,
+86,Rn,Rádon,[222],18,6,p,gás nobre,gás,,
+87,Fr,Frâncio,[223],1,7,s,metal alcalino,sólido,,
+88,Ra,Rádio,[226],2,7,s,metal alcalinoterroso,sólido,,
+89,Ac,Actínio,[227],3,7,d,actínideo,sólido,,
+90,Th,Tório,232.04,,7,f,actínideo,sólido,,
+91,Pa,Protactínio,231.04,,7,f,actínideo,sólido,,
+92,U,Urânio,238.03,,7,f,actínideo,sólido,,
+93,Np,Neptúnio,[237],,7,f,actínideo,sólido,,
+94,Pu,Plutónio,[244],,7,f,actínideo,sólido,,
+95,Am,Amerício,[243],,7,f,actínideo,sólido,,
+96,Cm,Cúrio,[247],,7,f,actínideo,sólido,,
+97,Bk,Berquélio,[247],,7,f,actínideo,sólido,,
+98,Cf,Califórnio,[251],,7,f,actínideo,sólido,,
+99,Es,Einsténio,[252],,7,f,actínideo,sólido,,
+100,Fm,Férmio,[257],,7,f,actínideo,desconhecido,,
+101,Md,Mendelévio,[258],,7,f,actínideo,desconhecido,,
+102,No,Nobélio,[259],,7,f,actínideo,desconhecido,,
+103,Lr,Laurêncio,[262],,7,f,actínideo,desconhecido,,
+104,Rf,Rutherfórdio,[267],4,7,d,metal de transição (previsto),desconhecido,,
+105,Db,Dúbnio,[268],5,7,d,metal de transição (previsto),desconhecido,,
+106,Sg,Seabórgio,[269],6,7,d,metal de transição (previsto),desconhecido,,
+107,Bh,Bóhrio,[270],7,7,d,metal de transição (previsto),desconhecido,,
+108,Hs,Hássio,[269],8,7,d,metal de transição (previsto),desconhecido,,
+109,Mt,Meitnério,[278],9,7,d,metal de transição (previsto),desconhecido,,
+110,Ds,Darmstácio,[281],10,7,d,metal de transição (previsto),desconhecido,,
+111,Rg,Roentgénio,[282],11,7,d,metal de transição (previsto),desconhecido,,
+112,Cn,Copernício,[285],12,7,d,metal de transição (previsto),desconhecido,,
+113,Nh,Nipónio,[286],13,7,p,metal (previsto),desconhecido,,
+114,Fl,Fleróvio,[289],14,7,p,metal (previsto),desconhecido,,
+115,Mc,Moscóvio,[290],15,7,p,metal (previsto),desconhecido,,
+116,Lv,Livermório,[293],16,7,p,metal (previsto),desconhecido,,
+117,Ts,Tenesso,[294],17,7,p,halogéneo (previsto),desconhecido,,
+118,Og,Oganésson,[294],18,7,p,gás nobre (previsto),desconhecido,,

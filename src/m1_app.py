@@ -547,56 +547,32 @@ def consts():
         calc(('c_comd.cte', 'c_comu.uni', 'c_comu.pre')[r])
 
 
-def rd(fs):
-    # Le os campos do formulario. Numeros vem na 1.a unidade da lista
-    # (a da formula), como (valor, alg. sig.). Erros ficam no campo.
-    out = []
-    bad = 0
-    for f in fs:
-        f[5] = ''
-        try:
-            k = f[4]
-            if k == 'n':
-                v, sf = N.num(f[2])
-                if f[1] and f[3]:
-                    v = N.conv(v, f[1][f[3]], f[1][0])
-                out.append((v, sf))
-            elif k == 'l':
-                t = f[2].replace(';', ' ').replace('\n', ' ')
-                vs = [N.num(x) for x in t.split(' ') if x]
-                if not vs:
-                    N.err('Escreve os valores separados por ; (2,5; 3,1)')
-                out.append(vs)
-            elif k == 'c':
-                out.append(f[3])
-            else:
-                out.append(f[2].strip())
-        except Exception as e:
-            f[5] = str(e)
-            bad = 1
-    return None if bad else out
-
-
 def calc(cid):
     # Motor comum: formulario -> validacao -> formula, substituicao e
     # resultado -> opcoes (passos, alterar, novo, usar noutra, grafico).
+    # A calculadora devolve (titulo, campos, funcao) ou None (cancelada);
+    # sem campos, mostra logo o resultado. A funcao devolve (texto,
+    # passos, valor, unidade, grafico) ou None (tratou tudo sozinha).
     mn, fn = cid.split('.')
-    m = C.get('c', mn)
-    t, fs, f = getattr(m, fn)()
+    sp = getattr(C.get('c', mn), fn)()
+    if sp is None:
+        return
+    t, fs, f = sp
     dflt = [x[2] for x in fs]
     old = S['vals'].get(cid)
-    if old:
-        for j in range(min(len(old), len(fs))):
+    if old and len(old) == len(fs):
+        for j in range(len(fs)):
             fs[j][2] = old[j][0]
             fs[j][3] = old[j][1]
     foc = 0
     while True:
         S['where'] = 'calculadora ' + t
-        if not U.form(t, fs, foc):
+        if fs and not U.form(t, fs, foc):
             return
         foc = len(fs) - 1
-        v = rd(fs)
-        S['vals'][cid] = [(x[2], x[3]) for x in fs]
+        v = N.rdf(fs)
+        if fs:
+            S['vals'][cid] = [(x[2], x[3]) for x in fs]
         if v is None:
             for j in range(len(fs)):
                 if fs[j][5]:
@@ -606,44 +582,51 @@ def calc(cid):
         try:
             r = f(v)
         except ValueError as e:
-            U.msg(t, ERR_ + str(e), 5)
-            continue
+            r = (ERR_ + str(e), '', None)
         except ZeroDivisionError:
-            U.msg(t, ERR_ + 'Divis\u00e3o por zero: verifica os dados.', 5)
-            continue
+            r = (ERR_ + 'Divis\u00e3o por zero: verifica os dados.', '', None)
         except OverflowError:
-            U.msg(t, ERR_ + 'Valor demasiado grande.', 5)
-            continue
+            r = (ERR_ + 'Valor demasiado grande.', '', None)
         except IndexError:
-            U.msg(t, ERR_ + 'Faltam dados: verifica as listas.', 5)
+            r = (ERR_ + 'Faltam dados: verifica as listas.', '', None)
+        if r is None:
+            return
+        if r[0].startswith(ERR_):
+            U.msg(t, '! ' + r[0])
+            if not fs:
+                return
             continue
         if len(r) > 2 and r[2] is not None:
             S['h'].insert(0, (t, r[2], r[3] if len(r) > 3 else ''))
             del S['h'][5:]
             N.CF['ans'] = r[2]
-        while True:
-            o = '1 passos \u00b7 2 alterar \u00b7 3 novo \u00b7 4 usar'
-            gr = len(r) > 4 and r[4]
-            if gr:
-                o = o + ' \u00b7 5 gr\u00e1fico'
-            k = U.text(t, r[0], o, '', ('1', '2', '3', '4', '5'))
-            if k == '1':
-                U.text(t + ' \u00b7 passos', r[1] if len(r) > 1 and r[1] else
-                       'Esta calculadora n\u00e3o tem mais passos.')
-            elif k == '5' and gr:
-                U.graph(*r[4])
-            elif k == '3':
-                for j in range(len(fs)):
-                    fs[j][2] = dflt[j]
-                foc = 0
-                break
-            elif k == '4':
-                calc_menu('')
-                return
-            elif k == '2' or k == 'enter' or k == 'esc':
-                break
-        if k == 'esc':
+        k = res_menu(t, r)
+        if k == '3':
+            for j in range(len(fs)):
+                fs[j][2] = dflt[j]
+            foc = 0
+        elif k == '4':
+            calc_menu('')
             return
+        elif k == 'esc' or not fs:
+            return
+
+
+def res_menu(t, r):
+    # Ecra de resultado com as opcoes. Devolve a tecla que o fechou.
+    gr = len(r) > 4 and r[4]
+    o = '1 passos \u00b7 2 alterar \u00b7 3 novo \u00b7 4 usar'
+    if gr:
+        o = o + ' \u00b7 5 gr\u00e1fico'
+    while True:
+        k = U.text(t, r[0], o, '', ('1', '2', '3', '4', '5'))
+        if k == '1':
+            U.text(t + ' \u00b7 passos', r[1] if len(r) > 1 and r[1] else
+                   'Esta calculadora n\u00e3o tem mais passos.')
+        elif k == '5' and gr:
+            U.graph(*r[4])
+        elif k in ('2', '3', '4', 'esc', 'enter'):
+            return k
 
 
 ERR_ = '\u2717 '

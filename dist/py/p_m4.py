@@ -117,7 +117,8 @@ f(2) = 0 e f \xe9 crescente em \u211d. Qual \xe9 o sinal de f(5)?\n\
 Positivo: f \xe9 crescente e 5 > 2, logo f(5) > f(2) = 0.\n\
 @L m4c|Fun\xe7\xe3o afim|funcao afim linear declive ordenada na origem zero sinal monotonia reta dois pontos\
  sistema proporcionalidade direta|c_matf.afim|10|n\xfacleo|m4b:Estudo de uma fun\xe7\xe3o: zeros, sinal,\
- monotonia e extremos|af21:AL 2.1 Caracter\xedsticas de uma pilha|AE Mat A 10.\xba, Fun\xe7\xf5es (fun\xe7\xe3o afim)\n\
+ monotonia e extremos|af21:AL 2.1 Caracter\xedsticas de uma pilha;f2d:Geradores: for\xe7a eletromotriz e\
+ resist\xeancia interna|AE Mat A 10.\xba, Fun\xe7\xf5es (fun\xe7\xe3o afim)\n\
 @A\n\
 - Identificar o declive e a ordenada na origem.\n\
 - Determinar a express\xe3o a partir de dois pontos.\n\

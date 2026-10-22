@@ -4,7 +4,8 @@ D = "@V 1\n\
 @T Revis\xf5es do 3.\xba ciclo\n\
 @L mra|N\xfameros: fra\xe7\xf5es, pot\xeancias e nota\xe7\xe3o cient\xedfica|fracoes operacoes potencias\
  regras expoente negativo raiz quadrada notacao cientifica numeros racionais irracionais\
- dizimas|c_comu.sci|9|revis\xe3o|||AE Matem\xe1tica 7.\xba a 9.\xba anos (n\xfameros e opera\xe7\xf5es); revis\xe3o\n\
+ dizimas|c_comu.sci|9|revis\xe3o||q1b:Tamanho dos \xe1tomos: ordens de grandeza e escalas|AE Matem\xe1tica\
+ 7.\xba a 9.\xba anos (n\xfameros e opera\xe7\xf5es); revis\xe3o\n\
 @A\n\
 - Operar com fra\xe7\xf5es.\n\
 - Aplicar as regras das pot\xeancias.\n\
@@ -32,8 +33,8 @@ Escreve 72 000 em nota\xe7\xe3o cient\xedfica.\n\
 @R\n\
 7,2 \xd7 10\u2074.\n\
 @L mrb|Percentagens, aumentos e descontos|percentagem aumento desconto iva variacao percentual fator\
- multiplicativo percentagens sucessivas|c_comu.sci|7|revis\xe3o|||AE Matem\xe1tica 7.\xba ano (percentagens);\
- revis\xe3o\n\
+ multiplicativo percentagens sucessivas|c_comu.sci|7|revis\xe3o||q1e:Fra\xe7\xe3o molar e fra\xe7\xe3o\
+ m\xe1ssica|AE Matem\xe1tica 7.\xba ano (percentagens); revis\xe3o\n\
 @A\n\
 - Calcular percentagens de uma quantidade.\n\
 - Aplicar aumentos e descontos com fatores.\n\
@@ -61,8 +62,8 @@ Um pre\xe7o passa de 40 \u20ac para 50 \u20ac. Qual \xe9 o aumento percentual?\n
 @R\n\
 (50 - 40) / 40 \xd7 100 = 25%.\n\
 @L mrc|Proporcionalidade direta e inversa|proporcionalidade direta inversa constante de proporcionalidade y =\
- kx y = k/x hiperbole regra de tres escala|c_matf.fx|9|revis\xe3o|||AE Matem\xe1tica 9.\xba ano\
- (proporcionalidade inversa); revis\xe3o\n\
+ kx y = k/x hiperbole regra de tres escala|c_matf.fx|9|revis\xe3o||q5e:Dilui\xe7\xe3o de solu\xe7\xf5es|AE\
+ Matem\xe1tica 9.\xba ano (proporcionalidade inversa); revis\xe3o\n\
 @A\n\
 - Reconhecer grandezas direta e inversamente proporcionais.\n\
 - Calcular a constante de proporcionalidade.\n\

@@ -11,6 +11,7 @@ calc: c_fqen.em
 ano: 10
 nivel: núcleo
 pre: r9a r9b
+liga: m5a
 fonte: AE FQ A 10.º, Energia e movimentos
 #A
 - Distinguir energia cinética de energia potencial gravítica.

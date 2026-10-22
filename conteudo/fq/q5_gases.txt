@@ -204,6 +204,7 @@ calc: c_fqso.con
 ano: 10
 nivel: núcleo
 pre: q5c
+liga: mrb
 fonte: AE FQ A 10.º, Gases e dispersões
 #A
 - Calcular a concentração (mol dm⁻³) de uma solução.
@@ -273,6 +274,7 @@ calc: c_fqso.dil
 ano: 10
 nivel: núcleo
 pre: q5d
+liga: mrc
 fonte: AE FQ A 10.º, Gases e dispersões
 #A
 - Explicar o que é diluir uma solução.

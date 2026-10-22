@@ -78,6 +78,7 @@ calc: c_alf1.ress
 ano: 10
 nivel: núcleo
 pre: f1e
+liga: m2h
 fonte: Programa e AE FQ A 10.º, AL 1.2
 #A
 - Medir alturas de queda e de ressalto.
@@ -136,6 +137,7 @@ calc: c_alf1.pilha
 ano: 10
 nivel: núcleo
 pre: f2d
+liga: m4c m5c
 fonte: Programa e AE FQ A 10.º, AL 2.1
 #A
 - Montar um circuito para medir a tensão e a corrente de uma pilha.
@@ -256,6 +258,7 @@ calc: c_alf2.cap
 ano: 10
 nivel: núcleo
 pre: f3d
+liga: m2h
 fonte: Programa e AE FQ A 10.º, AL 3.2
 #A
 - Aquecer um bloco metálico com uma resistência elétrica.

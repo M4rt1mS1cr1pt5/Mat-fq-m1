@@ -74,8 +74,8 @@ Quantos neutr\xf5es e quantos eletr\xf5es tem o i\xe3o \u2075\u2076\u2082\u2086F
 Neutr\xf5es: N = 56 - 26 = 30.\n\
 Eletr\xf5es: 26 - 3 = 23.\n\
 @L q1b|Tamanho dos \xe1tomos: ordens de grandeza e escalas|ordem de grandeza notacao cientifica escala\
- nanometro picometro tamanho raio atomico nanotecnologia|c_comu.uni|10|n\xfacleo|||AE FQ A 10.\xba, Massa e\
- tamanho dos \xe1tomos\n\
+ nanometro picometro tamanho raio atomico nanotecnologia|c_comu.uni|10|n\xfacleo||mra:N\xfameros:\
+ fra\xe7\xf5es, pot\xeancias e nota\xe7\xe3o cient\xedfica|AE FQ A 10.\xba, Massa e tamanho dos \xe1tomos\n\
 @A\n\
 - Escrever n\xfameros em nota\xe7\xe3o cient\xedfica.\n\
 - Determinar a ordem de grandeza de um valor.\n\
@@ -298,8 +298,8 @@ Usa M(CO\u2082) = 44,01 g mol\u207b\xb9.\n\
 n = 22,0 g / 44,01 g mol\u207b\xb9 = 0,500 mol.\n\
 N = 0,500 \xd7 6,02 \xd7 10\xb2\xb3 = 3,01 \xd7 10\xb2\xb3 mol\xe9culas.\n\
 @L q1e|Fra\xe7\xe3o molar e fra\xe7\xe3o m\xe1ssica|fracao molar fracao massica composicao mistura\
- percentagem em massa|c_fqat.fr|10|n\xfacleo|q1d:Quantidade de mat\xe9ria e massa molar||AE FQ A 10.\xba,\
- Massa e tamanho dos \xe1tomos\n\
+ percentagem em massa|c_fqat.fr|10|n\xfacleo|q1d:Quantidade de mat\xe9ria e massa molar|mrb:Percentagens,\
+ aumentos e descontos|AE FQ A 10.\xba, Massa e tamanho dos \xe1tomos\n\
 @A\n\
 - Definir fra\xe7\xe3o molar e fra\xe7\xe3o m\xe1ssica.\n\
 - Calcular a composi\xe7\xe3o de uma mistura.\n\

@@ -4,7 +4,7 @@ D = "@V 1\n\
 @T Revis\xf5es do 9.\xba ano\n\
 @L r9a|Movimentos: rapidez, acelera\xe7\xe3o e gr\xe1ficos|posicao deslocamento distancia percorrida rapidez\
  media velocidade aceleracao media grafico posicao-tempo velocidade-tempo distancia de seguranca reacao\
- travagem|c_comu.uni|9|revis\xe3o|||AE FQ 9.\xba ano, Movimentos e for\xe7as\n\
+ travagem|c_comu.uni|9|revis\xe3o||m4c:Fun\xe7\xe3o afim|AE FQ 9.\xba ano, Movimentos e for\xe7as\n\
 @A\n\
 - Distinguir dist\xe2ncia percorrida de deslocamento.\n\
 - Calcular a rapidez m\xe9dia e a acelera\xe7\xe3o m\xe9dia.\n\

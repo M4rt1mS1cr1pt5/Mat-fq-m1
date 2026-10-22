@@ -4,8 +4,9 @@ D = "@V 1\n\
 @T Energia e fen\xf3menos el\xe9tricos\n\
 @L f2a|Corrente el\xe9trica, diferen\xe7a de potencial e resist\xeancia|corrente eletrica carga eletrica\
  diferenca de potencial tensao resistencia eletrica lei de ohm condutor ohmico ampere volt ohm amperimetro\
- voltimetro|c_fqci.ohm|10|n\xfacleo|r9c:Eletricidade: circuitos, grandezas el\xe9tricas e pot\xeancia||AE FQ\
- A 10.\xba, Energia e fen\xf3menos el\xe9tricos\n\
+ voltimetro|c_fqci.ohm|10|n\xfacleo|r9c:Eletricidade: circuitos, grandezas el\xe9tricas e\
+ pot\xeancia|mrc:Proporcionalidade direta e inversa;m4c:Fun\xe7\xe3o afim|AE FQ A 10.\xba, Energia e\
+ fen\xf3menos el\xe9tricos\n\
 @A\n\
 - Definir corrente el\xe9trica e calcul\xe1-la a partir da carga.\n\
 - Definir diferen\xe7a de potencial el\xe9trico.\n\
@@ -170,8 +171,8 @@ Tr\xeas resist\xeancias de 30 \u03a9 est\xe3o em paralelo. Qual \xe9 a resist\xe
 1 / Req = 3 / 30, logo Req = 10 \u03a9.\n\
 @L f2d|Geradores: for\xe7a eletromotriz e resist\xeancia interna|gerador pilha forca eletromotriz resistencia\
  interna tensao nos terminais curto-circuito circuito aberto caracteristica\
- reta|c_fqci.ger|10|n\xfacleo|f2a:Corrente el\xe9trica, diferen\xe7a de potencial e resist\xeancia||AE FQ A\
- 10.\xba, Energia e fen\xf3menos el\xe9tricos\n\
+ reta|c_fqci.ger|10|n\xfacleo|f2a:Corrente el\xe9trica, diferen\xe7a de potencial e\
+ resist\xeancia|m4c:Fun\xe7\xe3o afim|AE FQ A 10.\xba, Energia e fen\xf3menos el\xe9tricos\n\
 @A\n\
 - Definir for\xe7a eletromotriz de um gerador.\n\
 - Relacionar a tens\xe3o nos terminais com a corrente: U = \u03b5 - r I.\n\
@@ -223,8 +224,8 @@ Uma pilha tem \u03b5 = 4,5 V e r = 1,5 \u03a9. Qual \xe9 a tens\xe3o nos termina
 U = \u03b5 = 4,5 V: sem corrente, n\xe3o h\xe1 perda na resist\xeancia interna.\n\
 @L f2e|Efeito Joule, pot\xeancia e energia el\xe9trica|efeito joule potencia eletrica energia eletrica\
  quilowatt-hora custo conservacao da energia rendimento aquecimento\
- disjuntor|c_fqci.pot|10|n\xfacleo|f2d:Geradores: for\xe7a eletromotriz e resist\xeancia interna||AE FQ A\
- 10.\xba, Energia e fen\xf3menos el\xe9tricos\n\
+ disjuntor|c_fqci.pot|10|n\xfacleo|f2d:Geradores: for\xe7a eletromotriz e resist\xeancia interna|m5a:A\
+ fun\xe7\xe3o quadr\xe1tica e o seu gr\xe1fico|AE FQ A 10.\xba, Energia e fen\xf3menos el\xe9tricos\n\
 @A\n\
 - Calcular a pot\xeancia el\xe9trica: P = U I.\n\
 - Explicar o efeito Joule e usar P = R I\xb2.\n\

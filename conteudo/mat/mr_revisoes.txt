@@ -10,6 +10,7 @@ chave: frações operações potências regras expoente negativo raiz quadrada n
 calc: c_comu.sci
 ano: 9
 nivel: revisão
+liga: q1b
 fonte: AE Matemática 7.º a 9.º anos (números e operações); revisão
 #A
 - Operar com frações.
@@ -45,6 +46,7 @@ chave: percentagem aumento desconto iva variação percentual fator multiplicati
 calc: c_comu.sci
 ano: 7
 nivel: revisão
+liga: q1e
 fonte: AE Matemática 7.º ano (percentagens); revisão
 #A
 - Calcular percentagens de uma quantidade.
@@ -80,6 +82,7 @@ chave: proporcionalidade direta inversa constante de proporcionalidade y = kx y 
 calc: c_matf.fx
 ano: 9
 nivel: revisão
+liga: q5e
 fonte: AE Matemática 9.º ano (proporcionalidade inversa); revisão
 #A
 - Reconhecer grandezas direta e inversamente proporcionais.

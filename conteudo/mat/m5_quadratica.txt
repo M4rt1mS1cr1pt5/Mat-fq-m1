@@ -10,6 +10,7 @@ chave: função quadrática parábola concavidade vértice eixo de simetria form
 calc: c_matq.q2
 ano: 10
 nivel: núcleo
+liga: f1a
 fonte: AE Mat A 10.º, Funções: função quadrática
 #A
 - Reconhecer uma função quadrática f(x) = ax² + bx + c, com a ≠ 0.
@@ -172,6 +173,7 @@ calc: c_matq.iq
 ano: 10
 nivel: núcleo
 pre: m5b
+liga: af21
 fonte: AE Mat A 10.º, Funções: função quadrática
 #A
 - Estudar o sinal de uma função quadrática.

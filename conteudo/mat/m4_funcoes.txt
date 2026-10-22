@@ -138,7 +138,7 @@ calc: c_matf.afim
 ano: 10
 nivel: núcleo
 pre: m4b
-liga: af21
+liga: af21 f2d
 fonte: AE Mat A 10.º, Funções (função afim)
 #A
 - Identificar o declive e a ordenada na origem.

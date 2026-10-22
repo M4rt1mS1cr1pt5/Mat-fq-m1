@@ -11,6 +11,7 @@ calc: c_fqci.ohm
 ano: 10
 nivel: núcleo
 pre: r9c
+liga: mrc m4c
 fonte: AE FQ A 10.º, Energia e fenómenos elétricos
 #A
 - Definir corrente elétrica e calculá-la a partir da carga.
@@ -198,6 +199,7 @@ calc: c_fqci.ger
 ano: 10
 nivel: núcleo
 pre: f2a
+liga: m4c
 fonte: AE FQ A 10.º, Energia e fenómenos elétricos
 #A
 - Definir força eletromotriz de um gerador.
@@ -258,6 +260,7 @@ calc: c_fqci.pot
 ano: 10
 nivel: núcleo
 pre: f2d
+liga: m5a
 fonte: AE FQ A 10.º, Energia e fenómenos elétricos
 #A
 - Calcular a potência elétrica: P = U I.

@@ -166,8 +166,8 @@ Um tapete e um ch\xe3o de mosaico est\xe3o \xe0 mesma temperatura. Porque \xe9 q
 O mosaico tem maior condutividade t\xe9rmica: retira energia do p\xe9 mais depressa e por isso parece mais frio.\n\
 @L f3d|Capacidade t\xe9rmica m\xe1ssica e mudan\xe7as de estado|capacidade termica massica variacao de\
  entalpia de fusao vaporizacao mudanca de estado balanco energetico temperatura de equilibrio patamar gelo\
- agua|c_fqte.cal|10|n\xfacleo|f3a:Sistema, energia interna e temperatura||AE FQ A 10.\xba, Energia,\
- fen\xf3menos t\xe9rmicos e radia\xe7\xe3o\n\
+ agua|c_fqte.cal|10|n\xfacleo|f3a:Sistema, energia interna e temperatura|mrc:Proporcionalidade direta e\
+ inversa|AE FQ A 10.\xba, Energia, fen\xf3menos t\xe9rmicos e radia\xe7\xe3o\n\
 @A\n\
 - Definir capacidade t\xe9rmica m\xe1ssica.\n\
 - Calcular a energia para aquecer um corpo: Q = m c \u0394T.\n\

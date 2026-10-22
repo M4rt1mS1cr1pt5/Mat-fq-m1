@@ -3,8 +3,8 @@ D = "@V 1\n\
 @N 4\n\
 @T Fun\xe7\xe3o quadr\xe1tica\n\
 @L m5a|A fun\xe7\xe3o quadr\xe1tica e o seu gr\xe1fico|funcao quadratica parabola concavidade vertice eixo de\
- simetria forma canonica a(x-h)^2+k|c_matq.q2|10|n\xfacleo|||AE Mat A 10.\xba, Fun\xe7\xf5es: fun\xe7\xe3o\
- quadr\xe1tica\n\
+ simetria forma canonica a(x-h)^2+k|c_matq.q2|10|n\xfacleo||f1a:Energia cin\xe9tica, potencial grav\xedtica e\
+ mec\xe2nica|AE Mat A 10.\xba, Fun\xe7\xf5es: fun\xe7\xe3o quadr\xe1tica\n\
 @A\n\
 - Reconhecer uma fun\xe7\xe3o quadr\xe1tica f(x) = ax\xb2 + bx + c, com a \u2260 0.\n\
 - Relacionar o sinal de a com a concavidade da par\xe1bola.\n\
@@ -151,7 +151,7 @@ Resolve x\xb2 - 6x + 5 = 0.\n\
 x = 1 \u2228 x = 5. C.S. = {1, 5}.\n\
 @L m5c|Sinal, monotonia, extremos e inequa\xe7\xf5es|sinal monotonia crescente decrescente maximo minimo\
  extremo contradominio inequacao do 2.o grau conjunto-solucao|c_matq.iq|10|n\xfacleo|m5b:Zeros e f\xf3rmula\
- resolvente||AE Mat A 10.\xba, Fun\xe7\xf5es: fun\xe7\xe3o quadr\xe1tica\n\
+ resolvente|af21:AL 2.1 Caracter\xedsticas de uma pilha|AE Mat A 10.\xba, Fun\xe7\xf5es: fun\xe7\xe3o quadr\xe1tica\n\
 @A\n\
 - Estudar o sinal de uma fun\xe7\xe3o quadr\xe1tica.\n\
 - Indicar intervalos de monotonia e o extremo.\n\

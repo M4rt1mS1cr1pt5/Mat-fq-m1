@@ -59,7 +59,8 @@ Se o declive de Ec(d) for 0,30 N, qual \xe9 a intensidade da resultante das for\
 F(R) = 0,30 N: o declive de Ec(d) \xe9 a resultante (teorema da energia cin\xe9tica).\n\
 @L af12|AL 1.2 Movimento vertical de queda e de ressalto de uma bola|al 1.2 queda ressalto bola altura\
  energia mecanica energia dissipada grafico regressao coeficiente|c_alf1.ress|10|n\xfacleo|f1e:For\xe7as\
- n\xe3o conservativas, pot\xeancia e rendimento||Programa e AE FQ A 10.\xba, AL 1.2\n\
+ n\xe3o conservativas, pot\xeancia e rendimento|m2h:Dados bivariados: correla\xe7\xe3o e reta dos m\xednimos\
+ quadrados|Programa e AE FQ A 10.\xba, AL 1.2\n\
 @A\n\
 - Medir alturas de queda e de ressalto.\n\
 - Relacionar a altura de ressalto com a de queda (gr\xe1fico).\n\
@@ -108,7 +109,8 @@ Uma bola cai de 2,00 m e ressalta at\xe9 1,50 m. Que percentagem de energia se d
 (1 - 1,50 / 2,00) \xd7 100 = 25 %.\n\
 @L af21|AL 2.1 Caracter\xedsticas de uma pilha|al 2.1 pilha forca eletromotriz resistencia interna curva\
  caracteristica reostato amperimetro voltimetro regressao linear|c_alf1.pilha|10|n\xfacleo|f2d:Geradores:\
- for\xe7a eletromotriz e resist\xeancia interna||Programa e AE FQ A 10.\xba, AL 2.1\n\
+ for\xe7a eletromotriz e resist\xeancia interna|m4c:Fun\xe7\xe3o afim;m5c:Sinal, monotonia, extremos e\
+ inequa\xe7\xf5es|Programa e AE FQ A 10.\xba, AL 2.1\n\
 @A\n\
 - Montar um circuito para medir a tens\xe3o e a corrente de uma pilha.\n\
 - Tra\xe7ar a curva caracter\xedstica U(I).\n\
@@ -208,8 +210,8 @@ Porque \xe9 que a pot\xeancia de um painel diminui quando a radia\xe7\xe3o incid
 A mesma \xe1rea do painel recebe menos radia\xe7\xe3o por segundo: a irradi\xe2ncia efetiva \xe9 menor.\n\
 @L af32|AL 3.2 Capacidade t\xe9rmica m\xe1ssica|al 3.2 capacidade termica massica bloco calorimetrico\
  resistencia de aquecimento fonte termometro grafico temperatura tempo regressao erro\
- percentual|c_alf2.cap|10|n\xfacleo|f3d:Capacidade t\xe9rmica m\xe1ssica e mudan\xe7as de estado||Programa e\
- AE FQ A 10.\xba, AL 3.2\n\
+ percentual|c_alf2.cap|10|n\xfacleo|f3d:Capacidade t\xe9rmica m\xe1ssica e mudan\xe7as de estado|m2h:Dados\
+ bivariados: correla\xe7\xe3o e reta dos m\xednimos quadrados|Programa e AE FQ A 10.\xba, AL 3.2\n\
 @A\n\
 - Aquecer um bloco met\xe1lico com uma resist\xeancia el\xe9trica.\n\
 - Registar \u03b8(t) e fazer a regress\xe3o linear.\n\

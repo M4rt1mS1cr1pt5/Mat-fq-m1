@@ -2243,9 +2243,9 @@ T	4	149	0,0,0	Calculadora: AL 2.1 Características de uma
 T	4	166	0,0,0	pilha (tecla c)
 T	4	183	0,0,0	Pré-requisitos: Geradores (tecla l)
 R	314	17	3	170	232,232,232
-R	314	17	3	154	100,100,100
+R	314	17	3	130	100,100,100
 R	0	187	318	25	232,232,232
-T	4	200	100,100,100	◂▸ página · 1-10 de 11 · enter: mais · esc
+T	4	200	100,100,100	◂▸ página · 1-10 de 13 · enter: mais · esc
 F	75
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153

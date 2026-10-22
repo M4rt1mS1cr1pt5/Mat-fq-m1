@@ -10,6 +10,7 @@ chave: posição deslocamento distância percorrida rapidez média velocidade ac
 calc: c_comu.uni
 ano: 9
 nivel: revisão
+liga: m4c
 fonte: AE FQ 9.º ano, Movimentos e forças
 #A
 - Distinguir distância percorrida de deslocamento.

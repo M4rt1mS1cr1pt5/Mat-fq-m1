@@ -84,6 +84,7 @@ chave: ordem de grandeza notação científica escala nanómetro picómetro tama
 calc: c_comu.uni
 ano: 10
 nivel: núcleo
+liga: mra
 fonte: AE FQ A 10.º, Massa e tamanho dos átomos
 #A
 - Escrever números em notação científica.
@@ -326,6 +327,7 @@ calc: c_fqat.fr
 ano: 10
 nivel: núcleo
 pre: q1d
+liga: mrb
 fonte: AE FQ A 10.º, Massa e tamanho dos átomos
 #A
 - Definir fração molar e fração mássica.

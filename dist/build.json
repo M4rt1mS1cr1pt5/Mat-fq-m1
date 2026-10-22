@@ -4,11 +4,11 @@
  "percursos": {
   "p01_fq_licao": {
    "cpy": "ecras=63 textos=640 fora=0 teclas=50/50 pico=0 ok",
-   "mp": "ecras=63 textos=640 fora=0 teclas=50/50 pico=138720 ok"
+   "mp": "ecras=63 textos=640 fora=0 teclas=50/50 pico=138880 ok"
   },
   "p02_mat_calc": {
    "cpy": "ecras=71 textos=640 fora=0 teclas=54/54 pico=0 ok",
-   "mp": "ecras=71 textos=640 fora=0 teclas=54/54 pico=123504 ok"
+   "mp": "ecras=71 textos=640 fora=0 teclas=54/54 pico=123664 ok"
   },
   "p03_exercicios": {
    "cpy": "ecras=55 textos=483 fora=0 teclas=42/42 pico=0 ok",
@@ -32,11 +32,11 @@
   },
   "p08_fis_calc": {
    "cpy": "ecras=59 textos=550 fora=0 teclas=46/46 pico=0 ok",
-   "mp": "ecras=59 textos=550 fora=0 teclas=46/46 pico=130384 ok"
+   "mp": "ecras=59 textos=550 fora=0 teclas=46/46 pico=130560 ok"
   },
   "p09_al_pilha": {
    "cpy": "ecras=87 textos=675 fora=0 teclas=72/72 pico=0 ok",
-   "mp": "ecras=87 textos=675 fora=0 teclas=72/72 pico=124496 ok"
+   "mp": "ecras=87 textos=675 fora=0 teclas=72/72 pico=125568 ok"
   },
   "p10_mat_pontos": {
    "cpy": "ecras=49 textos=438 fora=0 teclas=34/34 pico=0 ok",
@@ -100,30 +100,30 @@
   "m1_plat": 11744,
   "m1_tp": 14779,
   "m1_ui": 22252,
-  "p_af": 19037,
+  "p_af": 19252,
   "p_aq": 22302,
-  "p_f1": 19001,
-  "p_f2": 18017,
-  "p_f3": 21575,
+  "p_f1": 19054,
+  "p_f2": 18151,
+  "p_f3": 21613,
   "p_m1": 29025,
   "p_m2": 25082,
   "p_m3": 21289,
-  "p_m4": 14085,
-  "p_m5": 17450,
+  "p_m4": 14149,
+  "p_m5": 17554,
   "p_m6": 9790,
   "p_m7": 18053,
   "p_m8": 19832,
   "p_m9": 14742,
-  "p_mr": 14233,
-  "p_q1": 22088,
+  "p_mr": 14374,
+  "p_q1": 22199,
   "p_q2": 22552,
   "p_q3": 13521,
   "p_q4": 23528,
-  "p_q5": 18121,
+  "p_q5": 18199,
   "p_q6": 13323,
   "p_r7": 7162,
   "p_r8": 10494,
-  "p_r9": 9316,
+  "p_r9": 9337,
   "x_af": 3515,
   "x_aq": 4139,
   "x_f1": 2853,

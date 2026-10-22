@@ -96,7 +96,7 @@ _AM = ("\u00e1 a#\u00e0 a#\u00e2 a#\u00e3 a#\u00e9 e#\u00ea e#\u00e8 e#"
        "\u2032 '#\u2033 \"#\u00bd 1/2#\u21cc <=>#\u2261 ==#\u00a0  #"
        "\u2080 0#\u2081 1#\u2082 2#\u2083 3#\u2084 4#\u2085 5#\u2086 6#"
        "\u2087 7#\u2088 8#\u2089 9#\u2223 |#\u2099 n#\u2090 a#\u2098 m#\u1d62 i#\u20d7 #\u0305 #\u2032 '#\u00ab \"#"
-       "\u00bb \"#\u03a9 ohm#\u2113 l#\u2191 ^#\u2193 v#\u25cf o#\u25cb o#\u2502 |#\u2500 -")
+       "\u00bb \"#\u03a9 ohm#\u2113 l#\u20ac EUR#\u2191 ^#\u2193 v#\u25cf o#\u25cb o#\u2502 |#\u2500 -")
 # Expoentes: cada sequencia passa a "^..." no modo sem simbolos.
 _SUP = "\u2070\u00b9\u00b2\u00b3\u2074\u2075\u2076\u2077\u2078\u2079\u207b\u207a"
 _SUPP = "0123456789-+"

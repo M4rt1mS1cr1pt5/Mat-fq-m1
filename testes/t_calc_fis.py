@@ -1,6 +1,7 @@
 # Testes das calculadoras de Fisica (normal, limite e invalido).
 import m1_nucleo as N
 import c_fqen
+import c_fqci
 from base import calc, erro, tem, perto
 
 
@@ -170,3 +171,119 @@ def t_ren_invalido():
     assert 'impossível' in erro(calc, c_fqen, 'ren', ['120', '100', ''])
     assert 'impossível' in erro(calc, c_fqen, 'ren', ['', '100', '120'])
     assert 'só o campo' in erro(calc, c_fqen, 'ren', ['1', '2', '3'])
+
+# ------------------------------------------------------------ c_fqci
+
+
+def t_ohm_normal():
+    r = calc(c_fqci, 'ohm', ['12', '', '0,50'])
+    tem(r[0], 'R = 24 Ω', 'P = U I = 6,0 W')
+    perto(r[2], 24.0)
+    r = calc(c_fqci, 'ohm', ['230', '46', ''])
+    tem(r[0], 'I = 5,0 A')
+
+
+def t_ohm_unidades():
+    # 2,0 mA numa resistencia de 220 ohm
+    r = calc(c_fqci, 'ohm', ['', '220', '2,0'], {2: 1})
+    tem(r[0], '0,0020 A', 'U = 0,44 V')
+    perto(r[2], 0.44)
+    # 4,7 kOhm com 12 V
+    r = calc(c_fqci, 'ohm', ['12', '4,7', ''], {1: 1})
+    perto(r[2], 12 / 4700.0)
+
+
+def t_ohm_invalido():
+    assert 'só o campo' in erro(calc, c_fqci, 'ohm', ['12', '', ''])
+    assert 'só o campo' in erro(calc, c_fqci, 'ohm', ['12', '3', '4'])
+    assert 'resistência' in erro(calc, c_fqci, 'ohm', ['', '-5', '2'])
+
+
+def t_rho_cobre():
+    # fio de cobre: 100 m, 1,5 mm2 -> 1,1 ohm
+    r = calc(c_fqci, 'rho', [1, '', '100', '1,5', ''])
+    tem(r[0], 'ρ(cobre) = 1,7 × 10⁻⁸ Ω m', '(1,5 × 10⁻⁶ m²)', 'R ≈ 1,1 Ω')
+    perto(r[2], 1.7e-8 * 100 / 1.5e-6)
+
+
+def t_rho_incognitas():
+    r = calc(c_fqci, 'rho', [1, '', '', '1,5', '5,0'])
+    perto(r[2], 5.0 * 1.5e-6 / 1.7e-8)
+    r = calc(c_fqci, 'rho', [0, '', '2,0', '0,50', '0,10'])
+    tem(r[0], 'ρ = 2,5 × 10⁻⁸ Ω m')
+    r = calc(c_fqci, 'rho', [6, '', '1,0', '', '10'])
+    tem(r[0], 'mm²')
+    perto(r[2], 1.1e-6 * 1.0 / 10)
+
+
+def t_rho_invalido():
+    assert 'deixa ρ vazio' in erro(calc, c_fqci, 'rho', [1, '2e-8', '1', '1', ''])
+    assert 'só o campo' in erro(calc, c_fqci, 'rho', [0, '', '2', '', '1'])
+    assert 'comprimento' in erro(calc, c_fqci, 'rho', [1, '', '-2', '1', ''])
+
+
+def t_assoc_serie():
+    r = calc(c_fqci, 'assoc', [0, '10; 20; 30', '12'])
+    tem(r[0], 'Req = 60 Ω', 'I total = 0,20 A', 'R3: I = 0,20 A; U = 6,0 V')
+    perto(r[2], 60.0)
+
+
+def t_assoc_paralelo():
+    r = calc(c_fqci, 'assoc', [1, '10; 20; 20', '10'])
+    tem(r[0], 'Req = 5,0 Ω', 'I total = 2,0 A', 'R2: U = 10 V; I = 0,50 A')
+    r = calc(c_fqci, 'assoc', [1, '6; 3', ''])
+    perto(r[2], 2.0)
+
+
+def t_assoc_invalido():
+    assert 'duas' in erro(calc, c_fqci, 'assoc', [0, '10', ''])
+    assert 'positiv' in erro(calc, c_fqci, 'assoc', [1, '10; 0', ''])
+    assert 'positiv' in erro(calc, c_fqci, 'assoc', [0, '10; 5', '-3'])
+
+
+def t_ger_tensao():
+    r = calc(c_fqci, 'ger', ['9,0', '1,5', '0,40', ''])
+    tem(r[0], 'U = 8,4 V', 'gerada ε I = 3,6 W', 'dissipada r I² = 0,24 W',
+        'η = U / ε = 93 %', 'I = ε / r = 6,0 A')
+    perto(r[2], 8.4)
+
+
+def t_ger_incognitas():
+    r = calc(c_fqci, 'ger', ['', '0,50', '2,0', '11'])
+    tem(r[0], 'ε = 12 V')
+    r = calc(c_fqci, 'ger', ['4,5', '', '0,30', '4,2'])
+    tem(r[0], 'r = 1,0 Ω')
+    r = calc(c_fqci, 'ger', ['4,5', '1,0', '', '4,2'])
+    perto(r[2], 0.3)
+
+
+def t_ger_invalido():
+    assert 'curto-circuito' in erro(calc, c_fqci, 'ger', ['9', '1', '12', ''])
+    assert 'maior do que ε' in erro(calc, c_fqci, 'ger', ['9', '', '1', '10'])
+    assert 'r = 0' in erro(calc, c_fqci, 'ger', ['9', '0', '', '8'])
+
+
+def t_pot_joule():
+    r = calc(c_fqci, 'pot', ['', '', '2,0', '10'])
+    tem(r[0], 'efeito Joule', 'P = 40 W')
+    perto(r[2], 40.0)
+
+
+def t_pot_custo():
+    # 230 V, 46 ohm, 2,0 h, 0,16 euros por kWh
+    r = calc(c_fqci, 'pot', ['', '230', '', '46', '2,0', '0,16'])
+    tem(r[0], 'P ≈ 1,2 × 10³ W', '2,3 kWh', '0,16 €/kWh = 0,37 €')
+    perto(r[2], 230 ** 2 / 46.0 * 7200)
+
+
+def t_pot_corrente():
+    # 2000 W a 230 V durante 30 min
+    r = calc(c_fqci, 'pot', ['2000', '230', '', '', '30'], {4: 1})
+    tem(r[0], 'I ≈ 8,70 A', '1,0 kWh')
+    perto(r[2], 3.6e6)
+
+
+def t_pot_invalido():
+    assert 'dois' in erro(calc, c_fqci, 'pot', ['100', '', '', ''])
+    assert 'dois' in erro(calc, c_fqci, 'pot', ['100', '10', '2', ''])
+    assert 'tempo' in erro(calc, c_fqci, 'pot', ['100', '10', '', '', '0'])

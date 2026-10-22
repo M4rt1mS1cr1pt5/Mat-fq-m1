@@ -1,0 +1,534 @@
+@tema f2
+disc: F
+grupo: f
+titulo: Energia e fenómenos elétricos
+calcs: c_fqci.ohm c_fqci.rho c_fqci.assoc c_fqci.ger c_fqci.pot c_fqen.ren
+
+@licao f2a
+titulo: Corrente elétrica, diferença de potencial e resistência
+chave: corrente elétrica carga elétrica diferença de potencial tensão resistência elétrica lei de ohm condutor óhmico ampere volt ohm amperímetro voltímetro
+calc: c_fqci.ohm
+ano: 10
+nivel: núcleo
+fonte: AE FQ A 10.º, Energia e fenómenos elétricos
+#A
+- Definir corrente elétrica e calculá-la a partir da carga.
+- Definir diferença de potencial elétrico.
+- Definir resistência elétrica e usar R = U / I.
+- Identificar condutores óhmicos.
+#B
+Num fio ligado a uma pilha, as cargas movem-se de forma organizada: há corrente elétrica.
+A pilha dá energia às cargas; os componentes do circuito recebem essa energia.
+A resistência mede a oposição de um componente à passagem da corrente.
+#C
+- Corrente elétrica: I = Q / Δt (em A; 1 A = 1 C s⁻¹).
+- Sentido convencional: do polo + para o polo -, no circuito exterior.
+- Diferença de potencial (tensão): U = E / Q, energia por unidade de carga (1 V = 1 J C⁻¹).
+- Resistência elétrica: R = U / I (em Ω; 1 Ω = 1 V A⁻¹).
+- Condutor óhmico: R constante a temperatura constante; U(I) é uma reta pela origem.
+#D
+Exemplo: 30 C atravessam uma secção de um fio em 1,0 min.
+I = 30 / 60 = [[0,50]] A.
+Num metal, quem se move são os eletrões, em sentido contrário ao convencional.
+Uma pilha de 1,5 V transfere 1,5 J para cada coulomb que a atravessa.
+Exemplo: uma lâmpada a 6,0 V é percorrida por 0,25 A.
+R = 6,0 / 0,25 = [[24]] Ω.
+O amperímetro liga-se em série; o voltímetro liga-se em paralelo.
+Um filamento de lâmpada não é óhmico: R aumenta quando aquece.
+Corrente contínua: sentido constante (pilhas); alternada: o sentido muda (rede, 50 Hz).
+#E
+@F Corrente elétrica|I = Q / Δt|Q: carga (C);Δt: intervalo de tempo (s)|corrente constante|30 C em 60 s: I = 0,50 A|c_fqci.ohm
+@F Diferença de potencial|U = E / Q|E: energia transferida (J);Q: carga (C)|entre dois pontos do circuito|1,5 J por coulomb: U = 1,5 V|
+@F Resistência elétrica|R = U / I|U: diferença de potencial (V);I: corrente (A)|condutor óhmico: R constante|6,0 V e 0,25 A: R = 24 Ω|c_fqci.ohm
+#F
+Dados: um carregador fornece 2,0 A a uma bateria durante 30 min.
+Objetivo: carga transferida e número de eletrões (e = 1,60 × 10⁻¹⁹ C).
+1. Δt = 30 × 60 = [[1800]] s
+2. Q = I Δt = 2,0 × 1800 = [[3,6 × 10³]] C
+3. N = Q / e = 3600 / 1,60 × 10⁻¹⁹ = [[2,3 × 10²²]] eletrões
+> Q = 3,6 × 10³ C, cerca de 2,3 × 10²² eletrões.
+Verificação: cada eletrão tem uma carga minúscula, por isso são precisos muitíssimos.
+#G
+Corrente, tensão e resistência são as três grandezas básicas de qualquer circuito.
+Saber relacioná-las permite escolher pilhas, fios e componentes.
+#H
+- Confundir corrente (A) com tensão (V).
+- Ligar o amperímetro em paralelo ou o voltímetro em série.
+- Usar o tempo em minutos em I = Q / Δt.
+- Achar que todos os componentes são óhmicos.
+#I
+- I = Q / Δt.
+- U = E / Q.
+- R = U / I.
+- Óhmico: R constante; U(I) reta pela origem.
+#J
+Se a corrente num condutor óhmico duplicar, o que acontece à diferença de potencial nos seus terminais?
+#R
+Duplica: U = R I e R mantém-se.
+#V
+V = [30 / 60, 6.0 / 0.25, 30 * 60, 2.0 * 1800, 3600 / e_carga]
+
+@licao f2b
+titulo: Resistividade e temperatura
+chave: resistividade comprimento área de secção material temperatura fio condutor metais semicondutores termístor
+calc: c_fqci.rho
+ano: 10
+nivel: núcleo
+pre: f2a
+fonte: AE FQ A 10.º, Energia e fenómenos elétricos
+#A
+- Relacionar a resistência com o comprimento e a área de um fio.
+- Usar a resistividade como propriedade do material.
+- Calcular a resistência de um fio.
+- Relacionar a resistividade com a temperatura.
+#B
+Um fio comprido e fino resiste mais à corrente do que um curto e grosso.
+O material também conta: o cobre conduz muito melhor do que o ferro.
+#C
+- R = ρ ℓ / A.
+- ℓ: comprimento (m); A: área da secção (m²).
+- ρ: resistividade, característica do material (Ω m).
+- Bons condutores têm ρ pequena (cobre: 1,7 × 10⁻⁸ Ω m, a 20 °C).
+- Nos metais, ρ aumenta com a temperatura.
+- Nos semicondutores, ρ diminui com a temperatura.
+#D
+Exemplo: fio de cobre com 100 m e secção de 1,5 mm².
+A = 1,5 mm² = [[1,5 × 10⁻⁶]] m².
+R = 1,7 × 10⁻⁸ × 100 / (1,5 × 10⁻⁶) = [[1,1]] Ω.
+Duplicar o comprimento duplica R; duplicar a área reduz R a metade.
+Os fios de cobre das casas são grossos para R ser pequena e aquecerem pouco.
+O filamento quente de uma lâmpada tem mais resistência do que frio.
+Termístores: componentes cuja resistência varia muito com a temperatura (termómetros eletrónicos).
+1 mm² = 10⁻⁶ m².
+#E
+@F Resistividade|R = ρ ℓ / A|ρ: resistividade (Ω m);ℓ: comprimento (m);A: área da secção (m²)|fio homogéneo, a temperatura constante|cobre, 100 m e 1,5 mm²: R = 1,1 Ω|c_fqci.rho
+#F
+Dados: fio de níquel-crómio (ρ = 1,1 × 10⁻⁶ Ω m) com 0,20 mm² de secção.
+Objetivo: comprimento necessário para ter R = 22 Ω.
+1. A = 0,20 × 10⁻⁶ = [[2,0 × 10⁻⁷]] m²
+2. ℓ = R A / ρ = 22 × 2,0 × 10⁻⁷ / (1,1 × 10⁻⁶) = [[4,0]] m
+> ℓ = 4,0 m.
+Verificação: o níquel-crómio tem ρ grande, por isso basta pouco fio.
+#G
+A resistividade explica a escolha dos materiais: cobre para fios, níquel-crómio para aquecedores.
+#H
+- Esquecer de passar mm² para m².
+- Achar que a resistência só depende do material.
+- Trocar ℓ e A na fórmula.
+- Achar que todos os materiais aumentam R com a temperatura.
+#I
+- R = ρ ℓ / A.
+- ρ depende do material e da temperatura.
+- Metais: ρ aumenta com a temperatura.
+#J
+Dois fios do mesmo cobre têm o mesmo comprimento; um tem o dobro da área do outro. Qual tem menor resistência?
+#R
+O de maior área: R é inversamente proporcional a A, por isso tem metade da resistência.
+#V
+V = [1.5e-6, 1.7e-8 * 100 / 1.5e-6, 0.20e-6, 22 * 2.0e-7 / 1.1e-6]
+
+@licao f2c
+titulo: Circuitos em série e em paralelo
+chave: associação em série em paralelo resistência equivalente corrente tensão nós malhas instalação doméstica amperímetro voltímetro
+calc: c_fqci.assoc
+ano: 10
+nivel: núcleo
+pre: f2a
+fonte: AE FQ A 10.º, Energia e fenómenos elétricos
+#A
+- Distinguir associações em série e em paralelo.
+- Calcular a resistência equivalente.
+- Calcular correntes e tensões em cada componente.
+- Explicar porque é que as casas usam ligações em paralelo.
+#B
+Numa série, a corrente só tem um caminho; em paralelo, divide-se por vários.
+Em casa, desligar uma lâmpada não apaga as outras: estão em paralelo.
+#C
+- Série: a mesma corrente em todos; U = U1 + U2 + ...
+- Série: Req = R1 + R2 + ...
+- Paralelo: a mesma tensão em todos; I = I1 + I2 + ...
+- Paralelo: 1 / Req = 1 / R1 + 1 / R2 + ...
+- Em paralelo, Req é menor do que a menor das resistências.
+#D
+Exemplo em série: 10 Ω, 20 Ω e 30 Ω ligadas a 12 V.
+Req = 10 + 20 + 30 = [[60]] Ω e I = 12 / 60 = [[0,20]] A.
+U1 = 10 × 0,20 = [[2,0]] V; U2 = [[4,0]] V; U3 = [[6,0]] V; a soma dá 12 V.
+Exemplo em paralelo: 6,0 Ω e 3,0 Ω.
+1 / Req = 1 / 6,0 + 1 / 3,0 = [[0,50]] Ω⁻¹, logo Req = [[2,0]] Ω.
+Em paralelo, a corrente maior passa na resistência menor.
+Nos nós, a soma das correntes que entram é igual à soma das que saem (conservação da carga).
+Em casa, todos os aparelhos ficam a 230 V e funcionam de forma independente.
+#E
+@F Associação em série|Req = R1 + R2 + ...|R1, R2: resistências (Ω)|mesma corrente em todas|10 + 20 + 30 = 60 Ω|c_fqci.assoc
+@F Associação em paralelo|1 / Req = 1 / R1 + 1 / R2 + ...|R1, R2: resistências (Ω)|mesma tensão em todas|6,0 Ω e 3,0 Ω: Req = 2,0 Ω|c_fqci.assoc
+#F
+Dados: duas lâmpadas de 12 Ω em paralelo, ligadas a 6,0 V.
+Objetivo: corrente em cada lâmpada, corrente total e Req.
+1. Em cada lâmpada: I = 6,0 / 12 = [[0,50]] A
+2. Corrente total: I = 0,50 + 0,50 = [[1,0]] A
+3. Req = 6,0 / 1,0 = [[6,0]] Ω
+> 0,50 A em cada lâmpada; 1,0 A no total; Req = 6,0 Ω.
+Verificação: duas resistências iguais em paralelo dão metade de uma: 12 / 2 = [[6,0]] Ω.
+#G
+As associações explicam as instalações elétricas e os circuitos dos aparelhos.
+Juntar mais aparelhos em paralelo aumenta a corrente total: é por isso que há disjuntores.
+#H
+- Somar resistências em paralelo como se fossem em série.
+- Esquecer de inverter 1 / Req no fim.
+- Achar que em série cada componente tem a tensão toda.
+- Achar que a corrente se "gasta" ao longo do circuito.
+#I
+- Série: mesma I; Req = soma.
+- Paralelo: mesma U; 1/Req = soma dos inversos.
+- Nós: correntes que entram = correntes que saem.
+#J
+Três resistências de 30 Ω estão em paralelo. Qual é a resistência equivalente?
+#R
+1 / Req = 3 / 30, logo Req = [[10]] Ω.
+#V
+V = [10 + 20 + 30, 12 / 60, 10 * 0.20, 20 * 0.20, 30 * 0.20, 1 / 6.0 + 1 / 3.0,
+     1 / (1 / 6.0 + 1 / 3.0), 6.0 / 12, 0.50 + 0.50, 6.0 / 1.0, 12 / 2,
+     30 / 3]
+
+@licao f2d
+titulo: Geradores: força eletromotriz e resistência interna
+chave: gerador pilha força eletromotriz resistência interna tensão nos terminais curto-circuito circuito aberto característica reta
+calc: c_fqci.ger
+ano: 10
+nivel: núcleo
+pre: f2a
+fonte: AE FQ A 10.º, Energia e fenómenos elétricos
+#A
+- Definir força eletromotriz de um gerador.
+- Relacionar a tensão nos terminais com a corrente: U = ε - r I.
+- Interpretar o gráfico U(I) de um gerador.
+- Calcular a corrente de curto-circuito.
+#B
+Uma pilha nova perde um pouco de tensão quando fornece muita corrente.
+Parte da energia fica na própria pilha, que tem uma resistência interna.
+#C
+- Força eletromotriz, ε: energia que o gerador fornece por unidade de carga (V).
+- Resistência interna, r: resistência do próprio gerador (Ω).
+- Tensão nos terminais: U = ε - r I.
+- Circuito aberto (I = 0): U = ε.
+- Curto-circuito (U = 0): I = ε / r.
+#D
+Exemplo: pilha com ε = 9,0 V e r = 1,5 Ω a fornecer 0,40 A.
+U = 9,0 - 1,5 × 0,40 = [[8,4]] V.
+Curto-circuito: I = 9,0 / 1,5 = [[6,0]] A (perigoso: a pilha aquece muito).
+O gráfico U(I) é uma reta: ordenada na origem ε e declive -r.
+Com pares (I, U) medidos, a regressão linear dá ε e r (AL 2.1).
+Ligando o gerador a uma resistência R: I = ε / (R + r).
+Um gerador ideal teria r = 0 e U = ε sempre.
+#E
+@F Gerador|U = ε - r I|ε: força eletromotriz (V);r: resistência interna (Ω);I: corrente (A)|gerador de tensão contínua|9,0 V, 1,5 Ω e 0,40 A: U = 8,4 V|c_fqci.ger
+@F Corrente de curto-circuito|I = ε / r|ε: força eletromotriz (V);r: resistência interna (Ω)|terminais ligados sem resistência|9,0 V e 1,5 Ω: I = 6,0 A|c_fqci.ger
+#F
+Dados: uma pilha dá U = 1,40 V com I = 0,20 A e U = 1,30 V com I = 0,60 A.
+Objetivo: força eletromotriz e resistência interna.
+1. r = (1,40 - 1,30) / (0,60 - 0,20) = [[0,25]] Ω
+2. ε = U + r I = 1,40 + 0,25 × 0,20 = [[1,45]] V
+> ε = 1,45 V e r = 0,25 Ω.
+Verificação: 1,45 - 0,25 × 0,60 = [[1,30]] V, como medido.
+#G
+A resistência interna explica porque é que uma pilha aquece e perde tensão quando lhe pedimos muita corrente.
+#H
+- Achar que a tensão nos terminais é sempre igual a ε.
+- Trocar o sinal: U = ε + r I num gerador.
+- Ler o declive do gráfico como +r.
+- Esquecer a resistência interna em I = ε / (R + r).
+#I
+- U = ε - r I.
+- Circuito aberto: U = ε.
+- Curto-circuito: I = ε / r.
+- Gráfico U(I): declive -r, ordenada ε.
+#J
+Uma pilha tem ε = 4,5 V e r = 1,5 Ω. Qual é a tensão nos terminais quando a corrente é nula?
+#R
+U = ε = 4,5 V: sem corrente, não há perda na resistência interna.
+#V
+r = (1.40 - 1.30) / (0.60 - 0.20)
+V = [9.0 - 1.5 * 0.40, 9.0 / 1.5, r, 1.40 + r * 0.20, 1.45 - 0.25 * 0.60]
+
+@licao f2e
+titulo: Efeito Joule, potência e energia elétrica
+chave: efeito joule potência elétrica energia elétrica quilowatt-hora custo conservação da energia rendimento aquecimento disjuntor
+calc: c_fqci.pot
+ano: 10
+nivel: núcleo
+pre: f2d
+fonte: AE FQ A 10.º, Energia e fenómenos elétricos
+#A
+- Calcular a potência elétrica: P = U I.
+- Explicar o efeito Joule e usar P = R I².
+- Calcular a energia elétrica em J e em kWh e o seu custo.
+- Aplicar a conservação da energia a um circuito.
+#B
+Um aquecedor, uma torradeira e um ferro de engomar aquecem porque a corrente passa numa resistência.
+A fatura da luz cobra a energia, em kWh, não a potência.
+#C
+- Potência elétrica: P = U I (em W).
+- Efeito Joule: P = R I² (energia elétrica passa a energia interna).
+- Também P = U² / R.
+- Energia: E = P Δt; 1 kWh = 3,6 × 10⁶ J.
+- Conservação: a potência do gerador, ε I, é igual à soma das potências nos componentes, incluindo r I².
+- Rendimento de um gerador: η = U / ε.
+#D
+Exemplo: aquecedor de 46 Ω ligado a 230 V.
+P = 230² / 46 = [[1,2 × 10³]] W.
+Em 2,0 h: E = 1,15 × 2,0 = [[2,3]] kWh.
+A 0,16 € por kWh, o custo é 2,3 × 0,16 = [[0,37]] €.
+Exemplo de conservação: pilha com ε = 9,0 V, r = 1,5 Ω e I = 0,40 A.
+ε I = [[3,6]] W; r I² = [[0,24]] W; U I = 8,4 × 0,40 = [[3,4]] W.
+3,6 W = 0,24 W + 3,36 W: a energia conserva-se.
+O efeito Joule é útil em aquecedores e indesejado nos fios e nos computadores.
+#E
+@F Potência elétrica|P = U I|U: tensão (V);I: corrente (A)|qualquer componente|230 V e 5,0 A: P = 1,2 × 10³ W|c_fqci.pot
+@F Efeito Joule|P = R I²|R: resistência (Ω);I: corrente (A)|potência dissipada numa resistência|10 Ω e 2,0 A: P = 40 W|c_fqci.pot
+@F Energia elétrica|E = P Δt|P: potência (W ou kW);Δt: tempo (s ou h)|1 kWh = 3,6 × 10⁶ J|1,15 kW durante 2,0 h: E = 2,3 kWh|c_fqci.pot
+#F
+Dados: uma resistência de 10 Ω é percorrida por 2,0 A durante 5,0 min.
+Objetivo: potência e energia dissipadas.
+1. P = R I² = 10 × 2,0² = [[40]] W
+2. Δt = 5,0 × 60 = [[3,0 × 10²]] s
+3. E = P Δt = 40 × 300 = [[1,2 × 10⁴]] J
+> P = 40 W e E = 1,2 × 10⁴ J.
+Verificação: em kWh, 12 000 / 3,6 × 10⁶ ≈ [[0,0033]] kWh, um valor pequeno.
+#G
+A potência diz a rapidez com que a energia é transferida; a energia é o que se paga.
+Poupar energia é usar menos potência ou durante menos tempo.
+#H
+- Confundir potência (W) com energia (J ou kWh).
+- Usar Δt em minutos com P em W para obter J.
+- Esquecer o quadrado em R I².
+- Achar que o kWh é uma unidade de potência.
+#I
+- P = U I = R I² = U² / R.
+- E = P Δt; 1 kWh = 3,6 × 10⁶ J.
+- ε I = r I² + U I.
+- η(gerador) = U / ε.
+#J
+Uma lâmpada de 10 W está acesa 5,0 h por dia durante 30 dias. Quanta energia gasta, em kWh?
+#R
+E = 0,010 × 5,0 × 30 = [[1,5]] kWh.
+#V
+p = 230 ** 2 / 46
+V = [p, 1.15 * 2.0, 2.3 * 0.16, 9.0 * 0.40, 1.5 * 0.40 ** 2, 8.4 * 0.40,
+     10 * 2.0 ** 2, 5.0 * 60, 40 * 300, 12000 / 3.6e6, 0.010 * 5.0 * 30]
+
+@exemplo f2e1
+nivel: 1
+titulo: Resistência e potência de uma lâmpada
+licao: f2a
+calc: c_fqci.ohm
+#T
+Enunciado: uma lâmpada ligada a 230 V é percorrida por 0,26 A. Calcula a resistência e a potência.
+Dados: U = 230 V; I = 0,26 A.
+Resolução:
+1. R = U / I = 230 / 0,26 = [[8,8 × 10²]] Ω
+2. P = U I = 230 × 0,26 = [[60]] W
+Resultado: R ≈ 8,8 × 10² Ω e P ≈ 60 W.
+Interpretação: é uma lâmpada de cerca de 60 W.
+Erros a evitar: dar mais algarismos significativos do que os de 0,26 A (2).
+#V
+V = [230 / 0.26, 230 * 0.26]
+
+@exemplo f2e2
+nivel: 2
+titulo: Pilha com resistência interna ligada a uma resistência
+licao: f2d
+calc: c_fqci.ger
+#T
+Enunciado: uma pilha com ε = 4,5 V e r = 1,5 Ω alimenta uma resistência de 7,5 Ω.
+Calcula a corrente, a tensão nos terminais e o rendimento da pilha.
+Resolução:
+1. I = ε / (R + r) = 4,5 / (7,5 + 1,5) = [[0,50]] A
+2. U = ε - r I = 4,5 - 1,5 × 0,50 = [[3,8]] V
+3. η = U / ε = 3,75 / 4,5 × 100 = [[83]] %
+Resultado: I = 0,50 A, U ≈ 3,8 V e η ≈ 83 %.
+Interpretação: cerca de 17 % da energia fica na pilha (efeito Joule em r).
+Erros a evitar: usar I = ε / R, esquecendo a resistência interna.
+#V
+i = 4.5 / (7.5 + 1.5)
+u = 4.5 - 1.5 * i
+V = [i, u, u / 4.5 * 100]
+
+@exemplo f2e3
+nivel: 3
+titulo: Quanto custa um aquecedor?
+licao: f2e
+calc: c_fqci.pot
+#T
+Enunciado: um aquecedor de 2,0 kW funciona 3,0 h por dia durante 30 dias. Considera 0,16 € por kWh.
+Calcula a energia gasta (em kWh e em J) e o custo.
+Resolução:
+1. Tempo total: 3,0 × 30 = [[90]] h
+2. E = 2,0 × 90 = [[1,8 × 10²]] kWh
+3. Em joules: 180 × 3,6 × 10⁶ = [[6,5 × 10⁸]] J
+4. Custo: 180 × 0,16 = [[29]] €
+Resultado: 1,8 × 10² kWh, cerca de 6,5 × 10⁸ J, e cerca de 29 €.
+Interpretação: reduzir uma hora por dia poupa cerca de [[9,6]] € por mês.
+Erros a evitar: multiplicar a potência em W pelo tempo em horas e chamar-lhe kWh.
+#V
+t = 3.0 * 30
+e = 2.0 * t
+V = [t, e, e * 3.6e6, e * 0.16, 2.0 * 30 * 0.16]
+
+@exercicio f2x1
+tipo: n
+licao: f2a
+#T
+Uma carga de 6,0 C atravessa um fio em 2,0 s. Qual é a corrente (em A)?
+#S
+3
+#P
+I = Q / Δt.
+#D
+I = 6,0 / 2,0 = [[3,0]] A.
+#V
+S = 6.0 / 2.0
+V = [S]
+
+@exercicio f2x2
+tipo: n
+licao: f2a
+#T
+Um condutor óhmico a 12 V é percorrido por 0,40 A. Qual é a sua resistência (em Ω)?
+#S
+30
+#P
+R = U / I.
+#D
+R = 12 / 0,40 = [[30]] Ω.
+#V
+S = 12 / 0.40
+V = [S]
+
+@exercicio f2x3
+tipo: m
+licao: f2c
+#T
+Num circuito com componentes em série:
+#O
+a corrente é a mesma em todos os componentes
+a tensão é a mesma em todos os componentes
+a resistência equivalente é menor do que cada resistência
+desligar um componente não afeta os outros
+#S
+1
+#P
+Em série, a corrente só tem um caminho.
+#D
+Em série há um só caminho: a corrente é a mesma em todos os componentes.
+#V
+S = 1
+
+@exercicio f2x4
+tipo: n
+licao: f2c
+#T
+Qual é a resistência equivalente (em Ω) de 6,0 Ω e 3,0 Ω em paralelo?
+#S
+2
+#P
+1 / Req = 1 / R1 + 1 / R2.
+#D
+1 / Req = 1 / 6,0 + 1 / 3,0 = [[0,50]], logo Req = [[2,0]] Ω.
+#V
+S = 1 / (1 / 6.0 + 1 / 3.0)
+V = [1 / 6.0 + 1 / 3.0, S]
+
+@exercicio f2x5
+tipo: v
+licao: f2b
+#T
+A resistividade de um metal aumenta quando a temperatura aumenta.
+#S
+V
+#P
+Pensa no filamento de uma lâmpada.
+#D
+Verdadeiro: nos metais, ρ aumenta com a temperatura (o filamento quente tem mais resistência).
+#V
+S = 'V'
+
+@exercicio f2x6
+tipo: n
+licao: f2d
+#T
+Um gerador com ε = 12 V e r = 0,50 Ω fornece 4,0 A. Qual é a tensão nos seus terminais (em V)?
+#S
+10
+#P
+U = ε - r I.
+#D
+U = 12 - 0,50 × 4,0 = [[10]] V.
+#V
+S = 12 - 0.50 * 4.0
+V = [S]
+
+@exercicio f2x7
+tipo: u
+licao: f2e
+unidades: kWh J MJ
+#T
+Um aparelho de 1500 W funciona durante 2,0 h. Que energia gasta?
+#S
+3
+#P
+E = P Δt; com P em kW e Δt em h dá kWh.
+#D
+E = 1,5 × 2,0 = [[3,0]] kWh = [[1,08 × 10⁷]] J.
+#V
+S = 1.5 * 2.0
+V = [S, S * 3.6e6]
+
+@exercicio f2x8
+tipo: n
+licao: f2e
+#T
+Uma resistência de 50 Ω é percorrida por 2,0 A. Que potência dissipa por efeito Joule (em W)?
+#S
+200
+#P
+P = R I².
+#D
+P = 50 × 2,0² = [[2,0 × 10²]] W.
+#V
+S = 50 * 2.0 ** 2
+V = [S]
+
+@exercicio f2x9
+tipo: m
+licao: f2a
+#T
+Para medir a diferença de potencial nos terminais de uma lâmpada, o voltímetro liga-se:
+#O
+em paralelo com a lâmpada
+em série com a lâmpada
+em série com a pilha
+em qualquer ponto do circuito
+#S
+1
+#P
+O voltímetro compara dois pontos do circuito.
+#D
+O voltímetro liga-se em paralelo, aos dois terminais do componente.
+#V
+S = 1
+
+@exercicio f2x10
+tipo: n
+licao: f2b
+modo: s2
+#T
+Qual é a resistência (em Ω) de 50 m de fio de cobre (ρ = 1,7 × 10⁻⁸ Ω m) com 1,0 mm² de secção?
+#S
+0,85
+#P
+R = ρ ℓ / A, com A em m².
+#D
+A = 1,0 × 10⁻⁶ m²; R = 1,7 × 10⁻⁸ × 50 / (1,0 × 10⁻⁶) = [[0,85]] Ω.
+#V
+S = 1.7e-8 * 50 / 1.0e-6
+V = [S]

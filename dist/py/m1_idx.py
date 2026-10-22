@@ -1,7 +1,7 @@
 # m1_idx.py - M1TR4M: indice da pesquisa (FQ, parte 1 de 1) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 346\n\
+@N 380\n\
 L|Constitui\xe7\xe3o do \xe1tomo e is\xf3topos|nucleo protao neutrao eletrao numero atomico massa|q1a\n\
 L|Tamanho dos \xe1tomos: ordens de grandeza e escalas|ordem notacao cientifica escala nanometro picometro raio|q1b\n\
 L|Massa at\xf3mica relativa|unidade media isotopos abundancia molecular mr ar|q1c\n\
@@ -195,6 +195,39 @@ X|Um motor recebe 500 J e||f1:6\n\
 X|Se o trabalho da resultante||f1:7\n\
 X|Um aparelho transfere 3,0 \xd7||f1:8\n\
 X|Um bloco de 2,0 kg a 3,0 m||f1:9\n\
+L|Corrente el\xe9trica, diferen\xe7a de potencial e resist\xeancia|eletrica carga tensao lei ohm condutor\
+ ohmico ddp|f2a\n\
+L|Resistividade e temperatura|comprimento area seccao material fio condutor metais|f2b\n\
+L|Circuitos em s\xe9rie e em paralelo|associacao resistencia equivalente corrente tensao malhas instalacao\
+ energia mecanica|f2c\n\
+L|Geradores: for\xe7a eletromotriz e resist\xeancia interna|gerador pilha tensao terminais curto-circuito\
+ circuito aberto fem|f2d\n\
+L|Efeito Joule, pot\xeancia e energia el\xe9trica|joule quilowatt-hora custo conservacao rendimento\
+ aquecimento disjuntor eficiencia|f2e\n\
+F|Corrente el\xe9trica||f2:0\n\
+F|Diferen\xe7a de potencial|ddp|f2:1\n\
+F|Resist\xeancia el\xe9trica||f2:2\n\
+F|Resistividade||f2:3\n\
+F|Associa\xe7\xe3o em s\xe9rie|energia mecanica|f2:4\n\
+F|Associa\xe7\xe3o em paralelo|energia mecanica|f2:5\n\
+F|Gerador||f2:6\n\
+F|Corrente de curto-circuito||f2:7\n\
+F|Pot\xeancia el\xe9trica||f2:8\n\
+F|Efeito Joule||f2:9\n\
+F|Energia el\xe9trica||f2:10\n\
+E|Resist\xeancia e pot\xeancia de uma l\xe2mpada||f2:0\n\
+E|Pilha com resist\xeancia interna ligada a uma resist\xeancia||f2:1\n\
+E|Quanto custa um aquecedor?||f2:2\n\
+X|Uma carga de 6,0 C atravessa||f2:0\n\
+X|Um condutor \xf3hmico a 12 V \xe9||f2:1\n\
+X|Num circuito com componentes||f2:2\n\
+X|Qual \xe9 a resist\xeancia||f2:3\n\
+X|A resistividade de um metal||f2:4\n\
+X|Um gerador com \u03b5 = 12 V e r =||f2:5\n\
+X|Um aparelho de 1500 W||f2:6\n\
+X|Uma resist\xeancia de 50 \u03a9 \xe9||f2:7\n\
+X|Para medir a diferen\xe7a de||f2:8\n\
+X|Qual \xe9 a resist\xeancia (em \u03a9)||f2:9\n\
 C|Constantes e dados|avogadro planck velocidade luz volume molar na vm|c_comd.cte\n\
 C|Dados experimentais|media incerteza absoluta relativa erro percentual|c_comd.exp\n\
 C|Regress\xe3o linear e gr\xe1fico|reta declive ordenada coeficiente correlacao interpolar|c_comd.reg\n\
@@ -206,6 +239,13 @@ C|Massa molar|formula quimica composicao percentagem hidratos|c_fqat.mm\n\
 C|Quantidade de mat\xe9ria|mol massa numero particulas avogadro volume na|c_fqat.qm\n\
 C|Massa at\xf3mica relativa m\xe9dia|isotopos abundancia|c_fqat.ar\n\
 C|Fra\xe7\xe3o molar e fra\xe7\xe3o m\xe1ssica|mistura composicao|c_fqat.fr\n\
+C|Resist\xeancia el\xe9trica (U = R I)|diferenca potencial tensao corrente lei ohm|c_fqci.ohm\n\
+C|Resistividade (R = \u03c1 \u2113 / A)|comprimento area seccao fio condutor material|c_fqci.rho\n\
+C|Resist\xeancias em s\xe9rie e em paralelo|associacao resistencia equivalente divisor corrente energia\
+ mecanica|c_fqci.assoc\n\
+C|Gerador: for\xe7a eletromotriz e resist\xeancia interna|gerador pilha curto-circuito rendimento fem\
+ eficiencia|c_fqci.ger\n\
+C|Pot\xeancia, energia e custo el\xe9tricos|potencia eletrica efeito joule quilowatt-hora fatura|c_fqci.pot\n\
 C|Espetros e fot\xf5es|fotao energia frequencia comprimento onda espetro|c_fqel.fot\n\
 C|\xc1tomo de hidrog\xe9nio|niveis energia transicao emissao absorcao lyman|c_fqel.hid\n\
 C|Configura\xe7\xe3o eletr\xf3nica|orbitais caixas hund pauli construcao valencia|c_fqel.conf\n\

@@ -6,51 +6,52 @@
  "percursos": {
   "p01_fq_licao": {
    "cpy": "ecras=63 textos=632 fora=0 teclas=50/50 pico=0 ok",
-   "mp": "ecras=63 textos=632 fora=0 teclas=50/50 pico=127104 ok"
+   "mp": "ecras=63 textos=632 fora=0 teclas=50/50 pico=127664 ok"
   },
   "p02_mat_calc": {
    "cpy": "ecras=71 textos=604 fora=0 teclas=54/54 pico=0 ok",
-   "mp": "ecras=71 textos=604 fora=0 teclas=54/54 pico=111440 ok"
+   "mp": "ecras=71 textos=604 fora=0 teclas=54/54 pico=111984 ok"
   },
   "p03_exercicios": {
-   "cpy": "ecras=54 textos=437 fora=0 teclas=41/41 pico=0 ok",
-   "mp": "ecras=54 textos=437 fora=0 teclas=41/41 pico=95568 ok"
+   "cpy": "ecras=54 textos=439 fora=0 teclas=41/41 pico=0 ok",
+   "mp": "ecras=54 textos=439 fora=0 teclas=41/41 pico=96288 ok"
   },
   "p04_pesquisa": {
    "cpy": "ecras=56 textos=554 fora=0 teclas=37/37 pico=0 ok",
-   "mp": "ecras=56 textos=554 fora=0 teclas=37/37 pico=112160 ok"
+   "mp": "ecras=56 textos=554 fora=0 teclas=37/37 pico=116544 ok"
   },
   "p05_tabela": {
    "cpy": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=0 ok",
-   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=133728 ok"
+   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=134240 ok"
   },
   "p06_definicoes": {
    "cpy": "ecras=48 textos=490 fora=0 teclas=35/35 pico=0 ok",
-   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=84432 ok"
+   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=84864 ok"
   },
   "p07_progresso": {
-   "cpy": "ecras=48 textos=466 fora=0 teclas=35/35 pico=0 ok",
-   "mp": "ecras=48 textos=466 fora=0 teclas=35/35 pico=109408 ok"
+   "cpy": "ecras=48 textos=468 fora=0 teclas=35/35 pico=0 ok",
+   "mp": "ecras=48 textos=468 fora=0 teclas=35/35 pico=109952 ok"
   },
   "p08_fis_calc": {
-   "cpy": "ecras=59 textos=534 fora=0 teclas=46/46 pico=0 ok",
-   "mp": "ecras=59 textos=534 fora=0 teclas=46/46 pico=119712 ok"
+   "cpy": "ecras=59 textos=538 fora=0 teclas=46/46 pico=0 ok",
+   "mp": "ecras=59 textos=538 fora=0 teclas=46/46 pico=120224 ok"
   }
  },
  "residente": {
   "m1_app": 11600,
-  "m1_cat": 2944,
+  "m1_cat": 3408,
   "m1_cont": 2928,
   "m1_nucleo": 16224,
   "m1_plat": 9360,
   "m1_ui": 12736,
-  "total": 55792
+  "total": 56256
  },
- "residentes": 84677,
+ "residentes": 85166,
  "tamanhos": {
   "c_comd": 10250,
   "c_comu": 8321,
   "c_fqat": 11951,
+  "c_fqci": 12261,
   "c_fqel": 9546,
   "c_fqen": 14866,
   "c_fqlg": 12630,
@@ -58,20 +59,21 @@
   "c_matq": 14376,
   "m1": 1196,
   "m1_app": 15106,
-  "m1_cat": 3080,
+  "m1_cat": 3558,
   "m1_cfg": 10213,
   "m1_cont": 5117,
   "m1_ex": 11916,
-  "m1_idx": 16731,
+  "m1_idx": 18907,
   "m1_idxm": 2509,
   "m1_ini": 3451,
   "m1_nav": 4589,
   "m1_nucleo": 27497,
   "m1_pesq": 5418,
-  "m1_plat": 11715,
+  "m1_plat": 11726,
   "m1_tp": 14779,
   "m1_ui": 20966,
   "p_f1": 18676,
+  "p_f2": 17950,
   "p_m5": 17405,
   "p_q1": 22012,
   "p_q2": 22496,
@@ -80,6 +82,7 @@
   "p_q5": 18062,
   "p_q6": 13273,
   "x_f1": 2853,
+  "x_f2": 2783,
   "x_m5": 2825,
   "x_q1": 2999,
   "x_q2": 3554,
@@ -90,7 +93,7 @@
  },
  "tempo": 3.1,
  "testes": {
-  "CPython": 132,
-  "MicroPython": 132
+  "CPython": 147,
+  "MicroPython": 147
  }
 }

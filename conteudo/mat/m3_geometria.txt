@@ -88,7 +88,7 @@ fonte: AE Mat A 10.º, Geometria sintética; manual (Unidade 3), Tarefa 2
 - Calcular o raio da inscrita com r = 2A / P.
 - Calcular ângulos com vértice no incentro.
 #B
-Para pôr dentro de um triângulo o maior círculo possível, o centro tem de ficar à mesma distância dos três lados.
+Queres pôr o maior círculo possível dentro de um triângulo? O centro tem de ficar à mesma distância dos três lados.
 #C
 - Incentro (I): interseção das bissetrizes dos ângulos internos.
 - I está à mesma distância dos três lados.
@@ -157,7 +157,7 @@ fonte: AE Mat A 10.º, Geometria sintética; manual (Unidade 3), Tarefas 3, 4 e 
 - Localizar os dois pontos em cada tipo de triângulo.
 - Usar R = hipotenusa / 2 no triângulo retângulo.
 #B
-O ponto à mesma distância de três localidades (por exemplo, Porto, Monção e Vimioso) é o centro da circunferência que passa pelas três.
+Procura-se um ponto à mesma distância de três localidades (por exemplo, Porto, Monção e Vimioso). É o centro da circunferência que passa pelas três.
 #C
 - Circuncentro (C): interseção das mediatrizes dos lados.
 - C é equidistante dos vértices: centro da circunscrita (raio R).
@@ -358,7 +358,7 @@ Onde pôr uma central que ligue três cidades com o mínimo de cabo? No ponto de
 Porque é mínimo: uma rotação de 60° transforma a soma num caminho de Q a um ponto fixo.
 Esse caminho é mínimo quando é um segmento de reta.
 A circunferência ex-inscrita é tangente a um lado e aos prolongamentos dos outros dois.
-Com lados a = QR, b = PR e c = PQ, e semiperímetro s, a ex-inscrita oposta a P toca [QR] em D.
+Sejam a = QR, b = PR, c = PQ e s o semiperímetro. A ex-inscrita oposta a P toca [QR] em D.
 Então QD = s - c e RD = s - b.
 Logo PQ + QD = PR + RD = s: cada segmento divide o perímetro ao meio.
 #E

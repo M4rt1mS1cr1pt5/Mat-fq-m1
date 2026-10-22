@@ -1,5 +1,2 @@
-conteudo/mat/m3_geometria.txt:77 (licao m3b) pág. B: frase com 21 palavras: Para pôr dentro de um triângulo o maior círculo possível, o 
-conteudo/mat/m3_geometria.txt:146 (licao m3c) pág. B: frase com 23 palavras: O ponto à mesma distância de três localidades (por exemplo, 
-conteudo/mat/m3_geometria.txt:337 (licao m3f) pág. D: frase com 21 palavras: Com lados a = QR, b = PR e c = PQ, e semiperímetro s, a ex-i
 calculadora c_matt.pit: tema mr ainda nao existe
 calculadora c_matt.sem: tema mr ainda nao existe

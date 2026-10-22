@@ -26,8 +26,8 @@ Falso. Os is\xf3topos t\xeam o mesmo n\xfamero at\xf3mico (Z).\n\
 T\xeam n\xfameros de massa (A) diferentes, porque t\xeam neutr\xf5es diferentes.\n\
 @X m|q1x4|q1b|r|\n\
 Qual \xe9 a ordem de grandeza de 6,5 \xd7 10\u207b\xb9\u2070 m?\n\
-@O 10\u207b\xb9\u2070 m|10\u207b\u2079 m|10\u207b\xb9\xb9 m|10\u207b\u2078 m\n\
-@S 2\n\
+@O 10\u207b\u2079 m|10\u207b\xb9\u2070 m|10\u207b\u2078 m|10\u207b\xb9\xb9 m\n\
+@S 1\n\
 @P Compara a mantissa com 5.\n\
 @D\n\
 A mantissa \xe9 6,5 e 6,5 \u2265 5.\n\
@@ -64,8 +64,8 @@ n = 8,0 g / 16,05 g mol\u207b\xb9 = 0,50 mol.\n\
 @X m|q1x9|q1e|r|\n\
 Uma mistura tem 1,0 mol de N\u2082 e 3,0 mol de H\u2082.\n\
 A fra\xe7\xe3o molar do H\u2082 \xe9:\n\
-@O 0,25|0,75|0,33|3,0\n\
-@S 2\n\
+@O 0,25|0,33|3,0|0,75\n\
+@S 4\n\
 @P x = n(H\u2082) / n(total).\n\
 @D\n\
 x(H\u2082) = 3,0 / (1,0 + 3,0) = 0,75.\n\

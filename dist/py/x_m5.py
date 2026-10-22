@@ -4,8 +4,8 @@ D = "@V 1\n\
 @T Fun\xe7\xe3o quadr\xe1tica\n\
 @X m|m5x1|m5a|r|\n\
 Qual \xe9 o v\xe9rtice da par\xe1bola f(x) = -(x + 2)\xb2 + 5?\n\
-@O (-2, 5)|(2, 5)|(-2, -5)|(5, -2)\n\
-@S 1\n\
+@O (2, 5)|(-2, 5)|(5, -2)|(-2, -5)\n\
+@S 2\n\
 @P Em a(x - h)\xb2 + k, o v\xe9rtice \xe9 (h, k). Aten\xe7\xe3o: x + 2 = x - (-2).\n\
 @D\n\
 x + 2 = x - (-2), logo h = -2 e k = 5.\n\
@@ -19,8 +19,8 @@ Calcula o discriminante de x\xb2 - 4x + 1.\n\
 Como \u0394 > 0, h\xe1 dois zeros: 2 - \u221a3 e 2 + \u221a3.\n\
 @X m|m5x3|m5b|r|\n\
 Quantos zeros tem f(x) = 3x\xb2 + 2x + 1?\n\
-@O Nenhum|Um|Dois|Tr\xeas\n\
-@S 1\n\
+@O Um|Nenhum|Tr\xeas|Dois\n\
+@S 2\n\
 @P Calcula \u0394 e v\xea o sinal.\n\
 @D\n\
 \u0394 = 4 - 12 = -8 < 0, logo f n\xe3o tem zeros.\n\
@@ -40,8 +40,8 @@ Falso. Com a < 0 a concavidade est\xe1 voltada para baixo.\n\
 O v\xe9rtice \xe9 ent\xe3o um m\xe1ximo.\n\
 @X m|m5x6|m5c|r|\n\
 Qual \xe9 o conjunto-solu\xe7\xe3o de x\xb2 - 9 < 0?\n\
-@O ]-3, 3[|[-3, 3]|]-\u221e, -3[ \u222a ]3, +\u221e[|]-9, 9[\n\
-@S 1\n\
+@O ]-\u221e, -3[ \u222a ]3, +\u221e[|[-3, 3]|]-3, 3[|]-9, 9[\n\
+@S 3\n\
 @P Zeros: \xb13. A par\xe1bola abre para cima.\n\
 @D\n\
 Zeros: x = -3 e x = 3. Como a > 0, a par\xe1bola fica abaixo do eixo entre os zeros.\n\
@@ -55,9 +55,9 @@ h = -8 / (2 \xd7 (-2)) = 2.\n\
 k = f(2) = -8 + 16 - 3 = 5. O m\xe1ximo \xe9 5.\n\
 @X m|m5x8|m5d|r|\n\
 O gr\xe1fico de g(x) = f(x - 3) + 1 obt\xe9m-se do de f por uma transla\xe7\xe3o:\n\
-@O 3 para a direita e 1 para cima|3 para a esquerda e 1 para cima|3 para a direita e 1 para baixo|1 para a\
- direita e 3 para cima\n\
-@S 1\n\
+@O 3 para a esquerda e 1 para cima|3 para a direita e 1 para cima|1 para a direita e 3 para cima|3 para a\
+ direita e 1 para baixo\n\
+@S 2\n\
 @P f(x - a) com a > 0 desloca para a direita.\n\
 @D\n\
 x - 3 = x - a com a = 3 > 0: 3 unidades para a direita.\n\

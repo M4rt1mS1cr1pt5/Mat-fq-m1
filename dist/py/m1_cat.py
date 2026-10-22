@@ -1,9 +1,9 @@
 # m1_cat.py - M1TR4M: catalogo gerado pelo build (nao editar).
 # TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes
 # CALC: id|nome|disciplina|tema (as palavras-chave estao no indice da pesquisa)
-NLIC = 78
-NEX = 155
-NCART = 220
+NLIC = 85
+NEX = 173
+NCART = 242
 TEMAS = (
     "q1|F|q|Massa e tamanho dos \xe1tomos|p_q1|x_q1|5|0|10|0|18|0|c_fqat.qm c_fqat.mm c_fqat.ar c_fqat.fr c_comu.sci c_comu.sf c_comu.uni|q1a q1b q1c q1d q1e",
     "q2|F|q|Energia dos eletr\xf5es nos \xe1tomos|p_q2|x_q2|5|5|10|10|14|18|c_fqel.fot c_fqel.hid c_fqel.conf c_comu.sci c_comu.uni|q2a q2b q2c q2d q2e",
@@ -20,7 +20,9 @@ TEMAS = (
     "r8|F|r|Revis\xf5es do 8.\xba ano|p_r8|x_r8|5|59|8|120|12|162|c_fqlg.ace c_fqat.mm c_fqel.fot|r8a r8b r8c r8d r8e",
     "r9|F|r|Revis\xf5es do 9.\xba ano|p_r9|x_r9|4|64|6|128|12|174|c_fqci.ohm c_fqci.pot c_fqel.conf c_comu.uni|r9a r9b r9c r9d",
     "m3|M|t|Geometria sint\xe9tica no plano|p_m3|x_m3|6|68|11|134|19|186|c_matt.pn c_matt.insc c_matt.euler c_matt.pit c_matt.sem|m3a m3b m3c m3d m3e m3f",
-    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|74|10|145|15|205|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
+    "m4|M|t|Fun\xe7\xf5es: generalidades, fun\xe7\xe3o afim e condi\xe7\xf5es|p_m4|x_m4|4|74|10|145|13|205|c_matf.fx c_matf.afim c_comd.reg|m4a m4b m4c m4d",
+    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|78|10|155|15|218|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
+    "m6|M|t|Fun\xe7\xf5es definidas por ramos e fun\xe7\xe3o m\xf3dulo|p_m6|x_m6|3|82|8|165|9|233|c_matf.ramos c_matf.mod c_matf.fx|m6a m6b m6c",
 )
 CALC = "c_alf1.plano|AL 1.1 Plano inclinado: Ec e dist\xe2ncia|F|af\n\
 c_alf1.ress|AL 1.2 Queda e ressalto de uma bola|F|af\n\
@@ -73,6 +75,10 @@ c_fqte.eq|Temperatura de equil\xedbrio de uma mistura|F|f3\n\
 c_fqte.cond|Condu\xe7\xe3o t\xe9rmica (P = k A \u0394T / \u2113)|F|f3\n\
 c_fqte.pl|Primeira Lei da Termodin\xe2mica|F|f3\n\
 c_fqte.pv|Painel fotovoltaico e irradi\xe2ncia|F|f3\n\
+c_matf.fx|Fun\xe7\xe3o escrita por ti (tabela, zeros, gr\xe1fico)|M|m4\n\
+c_matf.afim|Fun\xe7\xe3o afim|M|m4\n\
+c_matf.ramos|Fun\xe7\xe3o definida por ramos|M|m6\n\
+c_matf.mod|Fun\xe7\xe3o m\xf3dulo a\u2223x - h\u2223 + k|M|m6\n\
 c_matq.q2|Equa\xe7\xe3o do 2.\xba grau e fun\xe7\xe3o quadr\xe1tica|M|m5\n\
 c_matq.iq|Inequa\xe7\xf5es do 2.\xba grau|M|m5\n\
 c_matq.tf|Transforma\xe7\xf5es de fun\xe7\xf5es|M|m5\n\

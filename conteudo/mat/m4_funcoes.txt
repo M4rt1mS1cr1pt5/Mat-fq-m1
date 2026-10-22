@@ -1,0 +1,466 @@
+@tema m4
+disc: M
+grupo: t
+titulo: Funções: generalidades, função afim e condições
+calcs: c_matf.fx c_matf.afim c_comd.reg
+
+@licao m4a
+titulo: Conceito de função e formas de a representar
+chave: função domínio conjunto de chegada contradomínio objeto imagem variável tabela gráfico expressão analítica correspondência
+calc: c_matf.fx
+ano: 10
+nivel: núcleo
+fonte: AE Mat A 10.º, Funções; aulas de 20/10 (conceito de função)
+#A
+- Definir função, domínio, conjunto de chegada e contradomínio.
+- Distinguir objeto de imagem.
+- Representar uma função por tabela, gráfico ou expressão.
+- Reconhecer correspondências que não são funções.
+#B
+Pensa numa máquina que recebe um número e devolve sempre um só resultado.
+Pode haver números diferentes com o mesmo resultado, mas nunca dois resultados para o mesmo número.
+#C
+- Função f: A → B: a cada objeto x de A associa uma só imagem f(x).
+- Domínio, Df: o conjunto A dos objetos.
+- Conjunto de chegada: B.
+- Contradomínio, D′f: o conjunto das imagens (contido em B).
+- x: variável independente; y = f(x): variável dependente.
+- No gráfico não há dois pontos com a mesma abcissa.
+#D
+Exemplo: A = {1, 2, 3}, B = {-1, 0, 1}, f(1) = 0, f(2) = 0 e f(3) = 1.
+Então Df = {1, 2, 3} e D′f = {0, 1}: dois objetos podem ter a mesma imagem.
+Não é função: uma correspondência em que o objeto 2 tem duas imagens.
+Uma função pode ser dada por uma tabela, um gráfico ou uma expressão analítica.
+Área de um quadrado de lado x cm: f(x) = x², com x > 0.
+Com Df = {5, 10, 15}, as imagens são 25, 100 e [[225]].
+"A soma com 10": f(x) = x + 10.
+"A diferença entre o quadrado e 3": h(x) = x² - 3.
+Táxi com 2 € fixos e 1,50 € por km: T(x) = 2 + 1,5x.
+Então T(3) = 2 + 4,5 = [[6,5]] €.
+A mesma expressão com domínios diferentes dá funções diferentes.
+#E
+@F Função|f: A → B, x ↦ f(x)|A: domínio;B: conjunto de chegada;f(x): imagem de x|cada objeto tem uma só imagem|f(x) = x²: f(3) = 9|c_matf.fx
+@F Contradomínio|D′f = {f(x): x ∈ Df}|D′f: conjunto das imagens|D′f está contido em B|f(1) = f(2) = 0 e f(3) = 1: D′f = {0, 1}|
+#F
+Dados: T(x) = 2 + 1,5x (preço de um táxi, x em km), com Df = {1, 2, 3, 4}.
+Objetivo: tabela, contradomínio e objeto com imagem 6,5.
+1. T(1) = [[3,5]]; T(2) = [[5]]; T(3) = [[6,5]]; T(4) = [[8]]
+2. D′T = {3,5; 5; 6,5; 8}
+3. A imagem 6,5 corresponde ao objeto 3 (3 km).
+> D′T = {3,5; 5; 6,5; 8} e T(3) = 6,5 €.
+Verificação: cada km a mais custa mais 1,5 €.
+#G
+Uma função só fica definida com o domínio, o conjunto de chegada e a regra.
+#H
+- Confundir contradomínio com conjunto de chegada.
+- Achar que objetos diferentes não podem ter a mesma imagem.
+- Aceitar um gráfico com dois pontos na mesma vertical.
+- Esquecer o domínio quando só se dá a expressão.
+#I
+- Cada objeto tem uma só imagem.
+- Df: objetos; D′f: imagens.
+- Tabela, gráfico ou expressão analítica.
+#J
+Numa correspondência g, o objeto 1 tem as imagens 3 e 5. g pode ser uma função?
+#R
+Não: numa função cada objeto tem uma só imagem.
+#V
+V = [15 ** 2, 2 + 1.5 * 3, 2 + 1.5 * 1, 2 + 1.5 * 2, 2 + 1.5 * 3, 2 + 1.5 * 4]
+
+@licao m4b
+titulo: Estudo de uma função: zeros, sinal, monotonia e extremos
+chave: zeros sinal monotonia crescente decrescente extremos máximo mínimo absoluto relativo quadro de sinal quadro de variação interseção de gráficos
+calc: c_matf.fx
+ano: 10
+nivel: núcleo
+pre: m4a
+fonte: AE Mat A 10.º, Funções; caderno de atividades (estudo de uma função)
+#A
+- Determinar zeros e estudar o sinal de uma função.
+- Estudar a monotonia e os extremos a partir do gráfico.
+- Resumir o estudo em quadros de sinal e de variação.
+- Resolver f(x) = g(x) com os gráficos.
+#B
+Ler um gráfico é como ler o relevo num mapa: onde sobe, onde desce, os picos e os vales.
+#C
+- Zero: x tal que f(x) = 0 (o gráfico toca o eixo Ox).
+- Sinal: onde f(x) > 0 (acima de Ox) e onde f(x) < 0.
+- Crescente num intervalo: se a < b, então f(a) < f(b).
+- Máximo (mínimo) absoluto: a maior (menor) imagem.
+- Extremo relativo: maior ou menor valor perto desse ponto.
+- Interseção dos gráficos de f e g: soluções de f(x) = g(x).
+#D
+Exemplo: f(x) = x² - 4, com Df = [-3, 3].
+Zeros: x² = 4 ⇔ x = -2 ∨ x = 2.
+Sinal: f > 0 em [-3, -2[ ∪ ]2, 3]; f < 0 em ]-2, 2[.
+Monotonia: decrescente em [-3, 0] e crescente em [0, 3].
+Mínimo absoluto: f(0) = [[-4]]; máximo absoluto: f(3) = f(-3) = [[5]].
+Quadro de sinal: o sinal muda nos zeros, se o gráfico atravessar o eixo.
+Quadro de variação: setas a subir e a descer, com os extremos.
+Interseção com g(x) = 5: x² - 4 = 5 ⇔ x² = [[9]] ⇔ x = -3 ∨ x = 3.
+Num ponto de máximo relativo, a função passa de crescente a decrescente.
+#E
+@F Zeros|f(x) = 0|x: abcissa onde o gráfico toca Ox|zeros no domínio|f(x) = x² - 4: zeros -2 e 2|c_matf.fx
+@F Interseção de gráficos|f(x) = g(x)|soluções: abcissas dos pontos comuns|pontos dos dois domínios|x² - 4 = 5: x = -3 ∨ x = 3|c_matf.fx
+#F
+Dados: f(x) = x³ - 3x, com Df = [-3, 3].
+Objetivo: zeros e extremos.
+1. Zeros: x(x² - 3) = 0 ⇔ x = 0 ∨ x = -√3 ∨ x = √3, com √3 ≈ [[1,73]].
+2. Máximo relativo: f(-1) = [[2]]; mínimo relativo: f(1) = [[-2]].
+3. Máximo absoluto: f(3) = [[18]]; mínimo absoluto: f(-3) = [[-18]].
+> Zeros -√3, 0 e √3; extremos relativos 2 e -2; absolutos 18 e -18.
+Verificação: f é ímpar neste exemplo: f(-x) = -f(x).
+#G
+Um extremo relativo não tem de ser absoluto: nos extremos do domínio podem estar valores maiores.
+#H
+- Dar o zero como ponto (x, 0) quando se pede o valor de x.
+- Confundir máximo (valor de y) com maximizante (valor de x).
+- Dizer "crescente" sem indicar o intervalo.
+- Esquecer os extremos do domínio ao procurar o máximo absoluto.
+#I
+- Zeros: f(x) = 0.
+- Sinal: acima ou abaixo de Ox.
+- Monotonia e extremos por intervalos.
+- f(x) = g(x): interseção dos gráficos.
+#J
+f(2) = 0 e f é crescente em ℝ. Qual é o sinal de f(5)?
+#R
+Positivo: f é crescente e 5 > 2, logo f(5) > f(2) = 0.
+#V
+f = lambda x: x ** 3 - 3 * x
+V = [0 ** 2 - 4, 3 ** 2 - 4, 5 + 4, 3 ** 0.5, f(-1), f(1), f(3), f(-3)]
+
+@licao m4c
+titulo: Função afim
+chave: função afim linear declive ordenada na origem zero sinal monotonia reta dois pontos sistema proporcionalidade direta
+calc: c_matf.afim
+ano: 10
+nivel: núcleo
+pre: m4b
+liga: af21
+fonte: AE Mat A 10.º, Funções (função afim)
+#A
+- Identificar o declive e a ordenada na origem.
+- Determinar a expressão a partir de dois pontos.
+- Estudar zeros, sinal e monotonia.
+#B
+Um táxi cobra 2 € à partida e 1,50 € por km: o preço sobe sempre o mesmo por cada km.
+#C
+- Função afim: f(x) = mx + b, com Df = ℝ.
+- Declive m: quanto varia f quando x aumenta 1.
+- Ordenada na origem: b = f(0), onde a reta corta Oy.
+- m > 0: crescente; m < 0: decrescente; m = 0: constante.
+- Zero (com m ≠ 0): x = -b / m.
+- Linear: b = 0 (proporcionalidade direta).
+#D
+Com dois pontos: m = (y2 - y1) / (x2 - x1).
+Exemplo: A(1, 3) e B(3, 7): m = (7 - 3) / (3 - 1) = [[2]].
+b = 3 - 2 × 1 = [[1]], logo f(x) = 2x + 1.
+Também se pode resolver o sistema 3 = m + b e 7 = 3m + b.
+Zero: 2x + 1 = 0 ⇔ x = [[-0,5]].
+f > 0 em ]-0,5; +∞[ e f < 0 em ]-∞; -0,5[.
+Retas paralelas têm o mesmo declive.
+Em FQ, gráficos como U(I) numa pilha ou Ec(d) num plano inclinado são retas.
+O declive tem aí significado físico (-r ou a força resultante).
+#E
+@F Função afim|f(x) = mx + b|m: declive;b: ordenada na origem|Df = ℝ|m = 2 e b = 1: f(x) = 2x + 1|c_matf.afim
+@F Declive|m = (y2 - y1) / (x2 - x1)|(x1, y1) e (x2, y2): dois pontos da reta|x1 ≠ x2|(1, 3) e (3, 7): m = 2|c_matf.afim
+@F Zero da função afim|x = -b / m|m ≠ 0|reta não horizontal|f(x) = 2x + 1: x = -0,5|c_matf.afim
+#F
+Dados: a reta passa em A(-1, 5) e B(2, -1).
+Objetivo: expressão, zero e sinal.
+1. m = (-1 - 5) / (2 - (-1)) = [[-2]]
+2. b = 5 - (-2) × (-1) = [[3]], logo f(x) = -2x + 3.
+3. Zero: -2x + 3 = 0 ⇔ x = [[1,5]]
+4. m < 0: f > 0 em ]-∞; 1,5[ e f < 0 em ]1,5; +∞[.
+> f(x) = -2x + 3, com zero 1,5.
+Verificação: f(2) = -4 + 3 = [[-1]], como em B.
+#G
+O declive diz a rapidez com que f varia; a ordenada na origem diz o valor de partida.
+#H
+- Trocar a ordem das coordenadas no declive.
+- Ler b como o zero da função.
+- Esquecer o sinal do declive no estudo do sinal.
+- Achar que uma reta vertical é uma função afim.
+#I
+- f(x) = mx + b.
+- m = (y2 - y1) / (x2 - x1).
+- Zero: x = -b / m.
+- m > 0 crescente; m < 0 decrescente.
+#J
+Uma reta passa em (0, 4) e tem declive -1/2. Qual é o seu zero?
+#R
+-x/2 + 4 = 0 ⇔ x = [[8]].
+#V
+m = (-1 - 5) / (2 - (-1))
+b = 5 - m * (-1)
+V = [(7 - 3) / (3 - 1), 3 - 2 * 1, -1 / 2, m, b, -b / m, m * 2 + b, 4 / 0.5]
+
+@licao m4d
+titulo: Condições, conjunção, disjunção e intervalos
+chave: lógica conjuntos condição conjunção disjunção e ou intervalo conjunto-solução união interseção reta real aberto fechado
+ano: 10
+nivel: núcleo
+fonte: AE Mat A 10.º (lógica e conjuntos integrados nos temas)
+#A
+- Escrever conjuntos de números reais como intervalos.
+- Interpretar a conjunção (∧) e a disjunção (∨).
+- Determinar o conjunto-solução de condições com ∧ e ∨.
+#B
+"Ter entre 10 e 18 anos" junta duas condições com "e".
+"Ter menos de 10 ou mais de 18 anos" junta-as com "ou".
+#C
+- Condição: expressão com variável, verdadeira ou falsa conforme x.
+- Conjunto-solução (C.S.): os valores que a tornam verdadeira.
+- p ∧ q: verdadeira se as duas o forem; C.S. = interseção.
+- p ∨ q: verdadeira se pelo menos uma o for; C.S. = união.
+- Intervalos: [a, b] fechado, ]a, b[ aberto, [a, +∞[, ]-∞, a].
+- No infinito, o parêntese é sempre aberto.
+#D
+Exemplo: x > -1 ∧ x ≤ 3 ⇔ x ∈ ]-1, 3].
+Exemplo: x < -1 ∨ x ≥ 3 ⇔ x ∈ ]-∞, -1[ ∪ [3, +∞[.
+Inequação: 2x - 4 > 0 ⇔ x > 2, logo C.S. = ]2, +∞[.
+Condição impossível: C.S. = ∅ (por exemplo, x > 3 ∧ x < 1).
+Condição universal: C.S. = ℝ (por exemplo, x² ≥ 0).
+Inteiros em [-2, 3[: -2, -1, 0, 1 e 2, ou seja, [[5]] números.
+Na reta real, o intervalo fechado marca-se com bola cheia; o aberto com bola vazia.
+#E
+@F Conjunção|C.S.(p ∧ q) = C.S.(p) ∩ C.S.(q)|∧: "e";∩: interseção|condições na mesma variável|x > -1 ∧ x ≤ 3: ]-1, 3]|
+@F Disjunção|C.S.(p ∨ q) = C.S.(p) ∪ C.S.(q)|∨: "ou";∪: união|condições na mesma variável|x < -1 ∨ x ≥ 3: ]-∞, -1[ ∪ [3, +∞[|
+#F
+Dados: a condição 2x - 1 ≥ 3 ∧ x < 5.
+Objetivo: conjunto-solução e número de inteiros que a verificam.
+1. 2x - 1 ≥ 3 ⇔ 2x ≥ 4 ⇔ x ≥ [[2]]
+2. C.S. = [2, +∞[ ∩ ]-∞, 5[ = [2, 5[
+3. Inteiros: 2, 3 e 4, ou seja, [[3]] números.
+> C.S. = [2, 5[.
+Verificação: 5 não entra (x < 5) e 2 entra (x ≥ 2).
+#G
+As condições com ∧ e ∨ aparecem em todos os temas: domínios, sinal de funções e regiões do plano.
+#H
+- Trocar ∧ (interseção) com ∨ (união).
+- Fechar o intervalo no infinito.
+- Esquecer de inverter o sinal ao dividir por um número negativo.
+- Confundir ]a, b[ com o par ordenado (a, b).
+#I
+- ∧: interseção; ∨: união.
+- [a, b] fechado; ]a, b[ aberto.
+- ∅: impossível; ℝ: universal.
+#J
+Escreve como intervalo: x ≥ -3 ∧ x < 0.
+#R
+[-3, 0[.
+#V
+V = [5, (3 + 1) / 2, 3]
+
+@exemplo m4e1
+nivel: 1
+titulo: Imagens e contradomínio
+licao: m4a
+calc: c_matf.fx
+#T
+Enunciado: f(x) = x² - 1, com Df = {-2, -1, 0, 1, 2}. Determina as imagens e o contradomínio.
+Resolução:
+1. f(-2) = f(2) = [[3]]
+2. f(-1) = f(1) = [[0]]
+3. f(0) = [[-1]]
+Resultado: D′f = {-1, 0, 3}.
+Interpretação: há objetos diferentes com a mesma imagem, e f continua a ser uma função.
+Erros a evitar: escrever 3 duas vezes no contradomínio.
+#V
+f = lambda x: x * x - 1
+V = [f(2), f(1), f(0)]
+
+@exemplo m4e2
+nivel: 2
+titulo: Função afim a partir de dois pontos
+licao: m4c
+calc: c_matf.afim
+#T
+Enunciado: uma vela tem 20 cm ao fim de 1 h e 14 cm ao fim de 3 h. Supõe que arde a ritmo constante.
+Escreve a altura h em função do tempo t e calcula quando se apaga.
+Resolução:
+1. m = (14 - 20) / (3 - 1) = [[-3]] cm por hora
+2. b = 20 - (-3) × 1 = [[23]], logo h(t) = -3t + 23.
+3. Apaga-se quando h(t) = 0: t = 23 / 3 ≈ [[7,7]] h
+Resultado: h(t) = -3t + 23; apaga-se ao fim de cerca de 7,7 h.
+Interpretação: a vela tinha 23 cm no início (t = 0).
+Erros a evitar: usar 20 cm como altura inicial (é ao fim de 1 h).
+#V
+m = (14 - 20) / (3 - 1)
+b = 20 - m * 1
+V = [m, b, -b / m]
+
+@exemplo m4e3
+nivel: 3
+titulo: Interseção de uma parábola com uma reta
+licao: m4b
+calc: c_matq.q2
+#T
+Enunciado: f(x) = x² - 1 e g(x) = x + 1. Determina os pontos de interseção dos gráficos.
+Resolução:
+1. x² - 1 = x + 1 ⇔ x² - x - 2 = 0
+2. Δ = 1 + 8 = [[9]]; x = (1 ± 3) / 2
+3. x = [[-1]] ∨ x = [[2]]
+4. Pontos: (-1, g(-1)) = (-1, 0) e (2, g(2)) = (2, [[3]])
+Resultado: os gráficos cruzam-se em (-1, 0) e (2, 3).
+Interpretação: entre -1 e 2, a reta está acima da parábola.
+Erros a evitar: calcular só as abcissas e esquecer as ordenadas.
+#V
+V = [1 + 8, (1 - 3) / 2, (1 + 3) / 2, 2 + 1]
+
+@exercicio m4x1
+tipo: m
+licao: m4a
+#T
+Qual destas correspondências não é uma função?
+#O
+A cada número positivo associa as suas raízes quadradas
+A cada número real associa o seu quadrado
+A cada aluno associa a sua data de nascimento
+A cada pessoa associa a sua altura
+#S
+1
+#P
+Procura um objeto com duas imagens.
+#D
+O número 4 teria duas imagens (-2 e 2): não é uma função.
+#V
+S = 1
+
+@exercicio m4x2
+tipo: n
+licao: m4a
+#T
+Sendo f(x) = 3x - 2, quanto vale f(4)?
+#S
+10
+#P
+Substitui x por 4.
+#D
+f(4) = 3 × 4 - 2 = [[10]].
+#V
+S = 3 * 4 - 2
+V = [S]
+
+@exercicio m4x3
+tipo: n
+licao: m4a
+#T
+f(x) = x², com Df = {-2, -1, 0, 1, 2}. Quantos elementos tem o contradomínio?
+#S
+3
+#P
+Calcula as imagens e não repitas valores.
+#D
+As imagens são 4, 1 e 0: D′f = {0, 1, 4}, com [[3]] elementos.
+#V
+S = len(set([x * x for x in (-2, -1, 0, 1, 2)]))
+V = [S]
+
+@exercicio m4x4
+tipo: n
+licao: m4c
+#T
+Qual é o declive da reta que passa em (1, 2) e (4, 11)?
+#S
+3
+#P
+m = (y2 - y1) / (x2 - x1).
+#D
+m = (11 - 2) / (4 - 1) = [[3]].
+#V
+S = (11 - 2) / (4 - 1)
+V = [S]
+
+@exercicio m4x5
+tipo: n
+licao: m4c
+#T
+Qual é o zero de f(x) = 4x - 6?
+#S
+1,5
+#P
+Resolve 4x - 6 = 0.
+#D
+4x = 6 ⇔ x = [[1,5]].
+#V
+S = 6 / 4
+V = [S]
+
+@exercicio m4x6
+tipo: v
+licao: m4c
+#T
+Se o declive de uma função afim é negativo, a função é decrescente.
+#S
+V
+#P
+Quando x aumenta 1, f(x) varia m.
+#D
+Verdadeiro: com m < 0, f diminui quando x aumenta.
+#V
+S = 'V'
+
+@exercicio m4x7
+tipo: m
+licao: m4d
+#T
+Qual é o conjunto-solução de x ≥ 1 ∧ x < 4?
+#O
+[1, 4[
+]1, 4]
+]-∞, 1] ∪ ]4, +∞[
+[1, 4]
+#S
+1
+#P
+∧ corresponde à interseção.
+#D
+Os valores com x ≥ 1 e, ao mesmo tempo, x < 4: [1, 4[.
+#V
+S = 1
+
+@exercicio m4x8
+tipo: n
+licao: m4d
+#T
+Quantos números inteiros pertencem ao intervalo ]-2, 3]?
+#S
+5
+#P
+O -2 não entra; o 3 entra.
+#D
+-1, 0, 1, 2 e 3: são [[5]].
+#V
+S = len([k for k in range(-5, 6) if -2 < k <= 3])
+V = [S]
+
+@exercicio m4x9
+tipo: n
+licao: m4b
+#T
+Qual é o zero positivo de f(x) = x² - 9?
+#S
+3
+#P
+Resolve x² = 9.
+#D
+x² = 9 ⇔ x = -3 ∨ x = 3; o zero positivo é [[3]].
+#V
+S = 9 ** 0.5
+V = [S]
+
+@exercicio m4x10
+tipo: v
+licao: m4a
+#T
+O contradomínio de uma função é sempre igual ao seu conjunto de chegada.
+#S
+F
+#P
+Lembra-te do exemplo com D′f = {0, 1} e B = {-1, 0, 1}.
+#D
+Falso: o contradomínio está contido no conjunto de chegada, mas pode ser menor.
+#V
+S = 'F'

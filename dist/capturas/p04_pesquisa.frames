@@ -1348,7 +1348,7 @@ F	20
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	298	13	255,255,255	58
+T	298	13	255,255,255	59
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	mas
 R	39	19	1	13	0,0,0
@@ -1723,7 +1723,7 @@ F	44
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	29
+T	298	13	255,255,255	46
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	v
 R	25	19	1	13	0,0,0
@@ -1744,17 +1744,17 @@ T	4	149	0,51,153	X
 T	18	149	0,0,0	Qual é o valor máximo de f(x)
 T	4	166	0,51,153	X
 T	18	166	0,0,0	Qual é o vértice da parábola
-T	4	183	0,51,153	F
-T	18	183	0,0,0	Translação vertical
+T	4	183	0,51,153	X
+T	18	183	0,0,0	Qual é o vértice do gráfico
 R	314	34	3	153	232,232,232
-R	314	34	3	47	100,100,100
+R	314	34	3	29	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	45
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	21
+T	298	13	255,255,255	30
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	ve
 R	32	19	1	13	0,0,0
@@ -1773,19 +1773,19 @@ T	4	132	0,51,153	F
 T	18	132	0,0,0	Ordenada do vértice
 T	4	149	0,51,153	X
 T	18	149	0,0,0	Qual é o vértice da parábola
-T	4	166	0,51,153	F
-T	18	166	0,0,0	Translação vertical
+T	4	166	0,51,153	X
+T	18	166	0,0,0	Qual é o vértice do gráfico
 T	4	183	0,51,153	F
-T	18	183	0,0,0	Circunferência dos nove pontos
+T	18	183	0,0,0	Translação vertical
 R	314	34	3	153	232,232,232
-R	314	34	3	65	100,100,100
+R	314	34	3	45	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	46
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	11
+T	298	13	255,255,255	14
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	ver
 R	39	19	1	13	0,0,0
@@ -1804,19 +1804,19 @@ T	4	132	0,51,153	F
 T	18	132	0,0,0	Ordenada do vértice
 T	4	149	0,51,153	X
 T	18	149	0,0,0	Qual é o vértice da parábola
-T	4	166	0,51,153	F
-T	18	166	0,0,0	Translação vertical
-T	4	183	0,51,153	C
-T	18	183	0,0,0	Conversor de unidades
+T	4	166	0,51,153	X
+T	18	166	0,0,0	Qual é o vértice do gráfico
+T	4	183	0,51,153	F
+T	18	183	0,0,0	Translação vertical
 R	314	34	3	153	232,232,232
-R	314	34	3	125	100,100,100
+R	314	34	3	98	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	47
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	10
+T	298	13	255,255,255	13
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	vert
 R	46	19	1	13	0,0,0
@@ -1835,19 +1835,19 @@ T	4	132	0,51,153	F
 T	18	132	0,0,0	Ordenada do vértice
 T	4	149	0,51,153	X
 T	18	149	0,0,0	Qual é o vértice da parábola
-T	4	166	0,51,153	F
-T	18	166	0,0,0	Translação vertical
-T	4	183	0,51,153	L
-T	18	183	0,0,0	A função quadrática e o seu gráfico
+T	4	166	0,51,153	X
+T	18	166	0,0,0	Qual é o vértice do gráfico
+T	4	183	0,51,153	F
+T	18	183	0,0,0	Translação vertical
 R	314	34	3	153	232,232,232
-R	314	34	3	137	100,100,100
+R	314	34	3	105	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	48
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	10
+T	298	13	255,255,255	13
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	verti
 R	53	19	1	13	0,0,0
@@ -1866,19 +1866,19 @@ T	4	132	0,51,153	F
 T	18	132	0,0,0	Ordenada do vértice
 T	4	149	0,51,153	X
 T	18	149	0,0,0	Qual é o vértice da parábola
-T	4	166	0,51,153	F
-T	18	166	0,0,0	Translação vertical
-T	4	183	0,51,153	L
-T	18	183	0,0,0	A função quadrática e o seu gráfico
+T	4	166	0,51,153	X
+T	18	166	0,0,0	Qual é o vértice do gráfico
+T	4	183	0,51,153	F
+T	18	183	0,0,0	Translação vertical
 R	314	34	3	153	232,232,232
-R	314	34	3	137	100,100,100
+R	314	34	3	105	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	49
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	10
+T	298	13	255,255,255	13
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	vertic
 R	60	19	1	13	0,0,0
@@ -1897,19 +1897,19 @@ T	4	132	0,51,153	F
 T	18	132	0,0,0	Ordenada do vértice
 T	4	149	0,51,153	X
 T	18	149	0,0,0	Qual é o vértice da parábola
-T	4	166	0,51,153	F
-T	18	166	0,0,0	Translação vertical
-T	4	183	0,51,153	L
-T	18	183	0,0,0	A função quadrática e o seu gráfico
+T	4	166	0,51,153	X
+T	18	166	0,0,0	Qual é o vértice do gráfico
+T	4	183	0,51,153	F
+T	18	183	0,0,0	Translação vertical
 R	314	34	3	153	232,232,232
-R	314	34	3	137	100,100,100
+R	314	34	3	105	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	50
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	305	13	255,255,255	8
+T	298	13	255,255,255	11
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	vertice
 R	67	19	1	13	0,0,0
@@ -1926,17 +1926,21 @@ T	4	115	0,51,153	F
 T	18	115	0,0,0	Ordenada do vértice
 T	4	132	0,51,153	X
 T	18	132	0,0,0	Qual é o vértice da parábola
-T	4	149	0,51,153	L
-T	18	149	0,0,0	A função quadrática e o seu gráfico
-T	4	166	0,51,153	C
-T	18	166	0,0,0	Equação do 2.º grau e função quadrática
+T	4	149	0,51,153	X
+T	18	149	0,0,0	Qual é o vértice do gráfico
+T	4	166	0,51,153	L
+T	18	166	0,0,0	A função quadrática e o seu gráfico
+T	4	183	0,51,153	C
+T	18	183	0,0,0	Equação do 2.º grau e função quadrática
+R	314	34	3	153	232,232,232
+R	314	34	3	125	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	51
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	305	13	255,255,255	8
+T	298	13	255,255,255	11
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	vertice
 R	67	19	1	13	0,0,0
@@ -1953,10 +1957,14 @@ T	4	115	0,51,153	F
 T	18	115	0,0,0	Ordenada do vértice
 T	4	132	0,51,153	X
 T	18	132	0,0,0	Qual é o vértice da parábola
-T	4	149	0,51,153	L
-T	18	149	0,0,0	A função quadrática e o seu gráfico
-T	4	166	0,51,153	C
-T	18	166	0,0,0	Equação do 2.º grau e função quadrática
+T	4	149	0,51,153	X
+T	18	149	0,0,0	Qual é o vértice do gráfico
+T	4	166	0,51,153	L
+T	18	166	0,0,0	A função quadrática e o seu gráfico
+T	4	183	0,51,153	C
+T	18	183	0,0,0	Equação do 2.º grau e função quadrática
+R	314	34	3	153	232,232,232
+R	314	34	3	125	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	52
@@ -1980,7 +1988,7 @@ F	54
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	305	13	255,255,255	8
+T	298	13	255,255,255	11
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	vertice
 R	67	19	1	13	0,0,0
@@ -1997,10 +2005,14 @@ T	4	115	0,51,153	F
 T	18	115	0,0,0	Ordenada do vértice
 T	4	132	0,51,153	X
 T	18	132	0,0,0	Qual é o vértice da parábola
-T	4	149	0,51,153	L
-T	18	149	0,0,0	A função quadrática e o seu gráfico
-T	4	166	0,51,153	C
-T	18	166	0,0,0	Equação do 2.º grau e função quadrática
+T	4	149	0,51,153	X
+T	18	149	0,0,0	Qual é o vértice do gráfico
+T	4	166	0,51,153	L
+T	18	166	0,0,0	A função quadrática e o seu gráfico
+T	4	183	0,51,153	C
+T	18	183	0,0,0	Equação do 2.º grau e função quadrática
+R	314	34	3	153	232,232,232
+R	314	34	3	125	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	55

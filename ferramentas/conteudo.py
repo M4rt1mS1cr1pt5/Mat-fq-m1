@@ -50,6 +50,7 @@ import math
 import os
 import re
 import sys
+import zlib
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(RAIZ, 'src'))
@@ -179,7 +180,11 @@ def contas_sem_marca(t):
             m = DEPOIS.match(s, i + 1)
             if not m or m.group(2) or m.group(1) == '0':
                 continue
-            if OPER.search(ANTES.search(s[:i]).group(0)):
+            a = ANTES.search(s[:i]).group(0)
+            j = i - len(a) - 1
+            if j >= 0 and s[j].isalpha():
+                continue        # expressao com variavel (x² - 4 = 5)
+            if OPER.search(a):
                 r.append(ln)
                 break
     return r
@@ -651,6 +656,19 @@ def gerar_pacote(t, lic):
     return '\n'.join(o) + '\n'
 
 
+def baralhar(ops, sol, ident):
+    """Baralha as opcoes de escolha multipla de forma deterministica
+    (semente a partir do identificador do exercicio): a resposta certa
+    nao fica sempre no mesmo lugar. Devolve (opcoes, nova solucao)."""
+    s = zlib.crc32(ident.encode('utf-8')) & 0x7fffffff or 7
+    idx = list(range(len(ops)))
+    for i in range(len(idx) - 1, 0, -1):
+        s = (s * 1103515245 + 12345) % 2147483648
+        j = s % (i + 1)
+        idx[i], idx[j] = idx[j], idx[i]
+    return [ops[k] for k in idx], idx.index(int(sol) - 1) + 1
+
+
 def gerar_exercicios(t):
     o = ['@V 1', '@N %d' % len(t.exercicios), '@T ' + t.titulo]
     for b in t.exercicios:
@@ -659,10 +677,18 @@ def gerar_exercicios(t):
                                    m.get('modo', 'r'),
                                    m.get('unidades', '')]))
         o.append(tirar_marcas(b.sec['T']))
+        sol = b.sec['S'].strip()
         if b.sec.get('O'):
-            o.append('@O ' + '|'.join(tirar_marcas(x).strip() for x in
-                                      b.sec['O'].split('\n') if x.strip()))
-        o.append('@S ' + b.sec['S'].strip())
+            ops = [tirar_marcas(x).strip() for x in b.sec['O'].split('\n')
+                   if x.strip()]
+            if m['tipo'] == 'm':
+                certa = ops[int(sol) - 1]
+                ops, k = baralhar(ops, sol, b.id)
+                if ops[k - 1] != certa:
+                    raise Erro('%s: erro ao baralhar as opcoes' % b.onde())
+                sol = str(k)
+            o.append('@O ' + '|'.join(ops))
+        o.append('@S ' + sol)
         o.append('@P ' + tirar_marcas(b.sec['P']).replace('\n', ' '))
         o.append('@D')
         o.append(tirar_marcas(b.sec['D']))

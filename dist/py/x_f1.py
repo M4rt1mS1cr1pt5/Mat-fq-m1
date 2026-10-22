@@ -48,9 +48,9 @@ Um motor recebe 500 J e realiza 400 J de trabalho \xfatil. Qual \xe9 o rendiment
 \u03b7 = 400 / 500 \xd7 100 = 80 %.\n\
 @X m|f1x8|f1c|r|\n\
 Se o trabalho da resultante das for\xe7as que atuam num corpo \xe9 negativo:\n\
-@O a energia cin\xe9tica do corpo diminui|a energia cin\xe9tica do corpo aumenta|a energia cin\xe9tica n\xe3o\
- varia|a energia potencial aumenta sempre\n\
-@S 1\n\
+@O a energia cin\xe9tica n\xe3o varia|a energia potencial aumenta sempre|a energia cin\xe9tica do corpo\
+ diminui|a energia cin\xe9tica do corpo aumenta\n\
+@S 3\n\
 @P Teorema da energia cin\xe9tica: W(R) = \u0394Ec.\n\
 @D\n\
 W(R) = \u0394Ec < 0: a energia cin\xe9tica diminui (o corpo trava).\n\

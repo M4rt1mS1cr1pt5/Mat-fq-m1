@@ -10,8 +10,8 @@ Quantos \xe1tomos tem uma mol\xe9cula de di\xf3xido de carbono, CO\u2082?\n\
 1 \xe1tomo de C e 2 de O: 1 + 2 = 3.\n\
 @X m|r8x2|r8a|r|\n\
 Qual \xe9 a f\xf3rmula do composto formado pelos i\xf5es Na\u207a e CO\u2083\xb2\u207b?\n\
-@O Na\u2082CO\u2083|NaCO\u2083|Na(CO\u2083)\u2082|Na\u2083CO\u2082\n\
-@S 1\n\
+@O Na\u2083CO\u2082|Na\u2082CO\u2083|NaCO\u2083|Na(CO\u2083)\u2082\n\
+@S 2\n\
 @P A carga total tem de ser zero.\n\
 @D\n\
 2 \xd7 (+1) + 1 \xd7 (-2) = 0, logo Na\u2082CO\u2083.\n\
@@ -24,8 +24,8 @@ Qual \xe9 a f\xf3rmula do composto formado pelos i\xf5es Na\u207a e CO\u2083\xb2
 m(CO\u2082) = 12 + 32 = 44 g.\n\
 @X m|r8x4|r8c|r|\n\
 Uma solu\xe7\xe3o aquosa tem pH = 2 (a 25 \xb0C). A solu\xe7\xe3o \xe9:\n\
-@O \xe1cida|b\xe1sica|neutra|imposs\xedvel de classificar\n\
-@S 1\n\
+@O neutra|imposs\xedvel de classificar|\xe1cida|b\xe1sica\n\
+@S 3\n\
 @P Compara com 7.\n\
 @D\n\
 pH < 7: a solu\xe7\xe3o \xe9 \xe1cida.\n\
@@ -37,7 +37,7 @@ Um grito volta como eco 1,0 s depois (v = 340 m s\u207b\xb9). A que dist\xe2ncia
 d = 340 \xd7 1,0 / 2 = 1,7 \xd7 10\xb2 m.\n\
 @X m|r8x6|r8e|r|\n\
 Que tipo de lente corrige a miopia?\n\
-@O Divergente|Convergente|Espelho c\xf4ncavo|Prisma\n\
+@O Divergente|Espelho c\xf4ncavo|Prisma|Convergente\n\
 @S 1\n\
 @P O m\xedope v\xea mal ao longe; a imagem forma-se antes da retina.\n\
 @D\n\
@@ -50,9 +50,9 @@ O som propaga-se no v\xe1cuo.\n\
 Falso: o som precisa de um meio material; no v\xe1cuo n\xe3o se propaga.\n\
 @X m|r8x8|r8c|r|\n\
 Que altera\xe7\xe3o torna uma rea\xe7\xe3o qu\xedmica mais r\xe1pida?\n\
-@O Aumentar a temperatura|Diminuir a concentra\xe7\xe3o dos reagentes|Usar o s\xf3lido em peda\xe7os\
- maiores|Arrefecer os reagentes\n\
-@S 1\n\
+@O Usar o s\xf3lido em peda\xe7os maiores|Arrefecer os reagentes|Diminuir a concentra\xe7\xe3o dos\
+ reagentes|Aumentar a temperatura\n\
+@S 4\n\
 @P Pensa na agita\xe7\xe3o dos corp\xfasculos.\n\
 @D\n\
 Com mais temperatura, os corp\xfasculos movem-se mais depressa e colidem mais: a rea\xe7\xe3o \xe9 mais r\xe1pida.\n\

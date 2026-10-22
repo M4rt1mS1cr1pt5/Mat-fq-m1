@@ -1,6 +1,7 @@
 # Testes das calculadoras de Matematica (normal, limite e invalido).
 import c_matq
 import c_matt
+import c_matf
 from base import calc, erro, tem, perto
 
 
@@ -185,3 +186,98 @@ def t_sem():
     r = calc(c_matt, 'sem', ['6', '2', '', ''])
     tem(r[0], 'k = 1/3', 'redução')
     assert 'medida' in erro(calc, c_matt, 'sem', ['0', '2', '', ''])
+
+# ------------------------------------------------------------ c_matf
+
+
+def t_fx_quadratica():
+    r = calc(c_matf, 'fx', ['x^2 - 4', '-5', '5', '3'])
+    tem(r[0], 'f(3) = 5', 'x = -2,5: f(x) = 2,25', 'Zeros em [-5, 5]: -2, 2',
+        'f > 0 em ]-5, -2[ ∪ ]2, 5[', 'f < 0 em ]-2, 2[',
+        'Mínimo relativo = -4 em x = 0')
+    perto(r[2], 5.0)
+    assert r[4][0] == 'f(x) = x^2 - 4'
+
+
+def t_fx_raizes_e_extremos():
+    r = calc(c_matf, 'fx', ['x^3 - 3x', '-3', '3', ''])
+    tem(r[0], 'Zeros em [-3, 3]: -√3, 0, √3', 'Máximo relativo = 2 em x = -1',
+        'Mínimo relativo = -2 em x = 1')
+    r = calc(c_matf, 'fx', ['(x-1)^2', '-4', '4', ''])
+    tem(r[0], 'Zeros em [-4, 4]: 1', 'f < 0 em ∅')
+
+
+def t_fx_dominio():
+    r = calc(c_matf, 'fx', ['1/x', '-2', '2', ''])
+    tem(r[0], 'x = 0: sem valor', 'não está definida em parte',
+        'Zeros em [-2, 2]: nenhum')
+    assert 'definida em x = 0' in erro(calc, c_matf, 'fx', ['1/x', '-2', '2', '0'])
+
+
+def t_fx_invalido():
+    assert 'a < b' in erro(calc, c_matf, 'fx', ['x', '5', '1', ''])
+    assert 'não tem valores' in erro(calc, c_matf, 'fx', ['sqrt(x)', '-5', '-1', ''])
+
+
+def t_afim_dois_pontos():
+    r = calc(c_matf, 'afim', ['', '', '1 3', '3 7'])
+    tem(r[0], 'm = 2', 'b = yA - m xA = 1', 'f(x) = 2x + 1', 'x = -b / m = -0,5',
+        'f > 0 em ]-0,5; +∞[', 'Crescente')
+    r = calc(c_matf, 'afim', ['', '', '0 0', '3 1'])
+    tem(r[0], 'f(x) = (1/3)x')
+
+
+def t_afim_outros_dados():
+    r = calc(c_matf, 'afim', ['', '-1', '2 0', ''])
+    tem(r[0], 'm = 0,5', 'f(x) = 0,5x - 1', 'x = -b / m = 2')
+    r = calc(c_matf, 'afim', ['-0,5', '4', '', ''])
+    tem(r[0], 'f(x) = -0,5x + 4', 'Decrescente', 'f > 0 em ]-∞, 8[')
+    r = calc(c_matf, 'afim', ['0', '3', '', ''])
+    tem(r[0], 'constante', 'Zeros: nenhum')
+
+
+def t_afim_invalido():
+    assert 'vertical' in erro(calc, c_matf, 'afim', ['', '', '2 1', '2 5'])
+    assert 'Dá m e b' in erro(calc, c_matf, 'afim', ['2', '', '', ''])
+    assert 'duas coordenadas' in erro(calc, c_matf, 'afim', ['', '', '1', '2 3'])
+    assert 'deixa m e b' in erro(calc, c_matf, 'afim', ['1', '', '1 2', '2 3'])
+
+
+def t_ramos_dois():
+    r = calc(c_matf, 'ramos', ['-x', '0', 'x^2', '', '', 0, '-3'])
+    tem(r[0], '-x, se x < 0', 'x^2, se x ≥ 0', 'f(-3) = 3 (ramo 1)', '(contínua)',
+        'Zeros em [-10, 10]: 0')
+    perto(r[2], 3.0)
+
+
+def t_ramos_tres_e_esquerda():
+    r = calc(c_matf, 'ramos', ['x+1', '1', '5-x', '3', '2', 0, ''])
+    tem(r[0], '5-x, se 1 ≤ x < 3', '2, se x ≥ 3', '(salto)', 'Zeros em [-9, 13]: -1')
+    r = calc(c_matf, 'ramos', ['x', '1', '2', '', '', 1, '1'])
+    tem(r[0], 'x, se x ≤ 1', 'f(1) = 1 (ramo 1)')
+
+
+def t_ramos_invalido():
+    assert 'dois primeiros' in erro(calc, c_matf, 'ramos', ['x', '0', '', '', '', 0, ''])
+    assert 'maior do que a' in erro(calc, c_matf, 'ramos', ['x', '2', '1', '1', '0', 0, ''])
+    assert '3.º ramo' in erro(calc, c_matf, 'ramos', ['x', '0', '1', '3', '', 0, ''])
+
+
+def t_mod_ramos_zeros():
+    r = calc(c_matf, 'mod', ['-4', '0', '2', 0, ''])
+    tem(r[0], 'f(x) = -4|x| + 2', '-4x + 2, se x ≥ 0', '4x + 2, se x < 0',
+        'máximo 2', 'D′f = ]-∞, 2]', 'C.S. = {-0,5; 0,5}')
+    r = calc(c_matf, 'mod', ['1', '6', '0', 0, ''])
+    tem(r[0], 'x - 6, se x ≥ 6', '-x + 6, se x < 6', 'C.S. = {6}')
+
+
+def t_mod_condicoes():
+    r = calc(c_matf, 'mod', ['1', '6', '0', 1, '3'])
+    tem(r[0], 'f(x) < 3: C.S. = ]3, 9[')
+    r = calc(c_matf, 'mod', ['2', '-1', '-4', 2, '2'])
+    tem(r[0], 'C.S. = {-3, 1}', 'f(x) > 2: C.S. = ]-∞, -4[ ∪ ]2, +∞[')
+    r = calc(c_matf, 'mod', ['-1', '0', '0', 2, '1'])
+    tem(r[0], 'f(x) > 1: C.S. = ∅')
+    r = calc(c_matf, 'mod', ['1', '0', '0', 2, '0'])
+    tem(r[0], 'C.S. = ℝ \\ {0}')
+    assert 'a = 0' in erro(calc, c_matf, 'mod', ['0', '1', '2', 0, ''])

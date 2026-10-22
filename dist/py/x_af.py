@@ -10,7 +10,7 @@ Uma tira de 1,00 cm passa numa c\xe9lula fotoel\xe9trica em 12,5 ms. Qual \xe9 a
 v = 0,0100 / 0,0125 = 0,800 m s\u207b\xb9.\n\
 @X m|afx2|af11|r|\n\
 Na AL 1.1, o declive do gr\xe1fico Ec(d) representa:\n\
-@O a intensidade da resultante das for\xe7as|a massa do carrinho|a velocidade final|a energia potencial inicial\n\
+@O a intensidade da resultante das for\xe7as|a velocidade final|a massa do carrinho|a energia potencial inicial\n\
 @S 1\n\
 @P Teorema da energia cin\xe9tica: \u0394Ec = F(R) d.\n\
 @D\n\
@@ -35,8 +35,8 @@ A reta de regress\xe3o de uma pilha \xe9 U = -0,80 I + 1,50 (SI). Qual \xe9 a re
 O declive \xe9 -r = -0,80, logo r = 0,80 \u03a9.\n\
 @X m|afx6|af21|r|\n\
 Na AL 2.1, como se liga o volt\xedmetro?\n\
-@O Em paralelo com a pilha|Em s\xe9rie com a pilha|Em s\xe9rie com o re\xf3stato|Em qualquer ponto, em s\xe9rie\n\
-@S 1\n\
+@O Em s\xe9rie com o re\xf3stato|Em qualquer ponto, em s\xe9rie|Em s\xe9rie com a pilha|Em paralelo com a pilha\n\
+@S 4\n\
 @P O volt\xedmetro mede a diferen\xe7a de potencial entre dois pontos.\n\
 @D\n\
 O volt\xedmetro liga-se em paralelo, aos terminais da pilha.\n\
@@ -61,9 +61,9 @@ Um bloco de 0,500 kg \xe9 aquecido com 50 W e \u03b8(t) tem declive 0,110 \xb0C 
 c = 50 / (0,500 \xd7 0,110) = 9,1 \xd7 10\xb2 J kg\u207b\xb9 K\u207b\xb9.\n\
 @X m|afx10|af32|r|\n\
 Na AL 3.2, porque se isola termicamente o bloco?\n\
-@O Para reduzir a energia transferida para a vizinhan\xe7a|Para o bloco aquecer mais devagar|Para a\
- resist\xeancia n\xe3o se estragar|Para o term\xf3metro ler melhor\n\
-@S 1\n\
+@O Para o bloco aquecer mais devagar|Para reduzir a energia transferida para a vizinhan\xe7a|Para o\
+ term\xf3metro ler melhor|Para a resist\xeancia n\xe3o se estragar\n\
+@S 2\n\
 @P O m\xe9todo sup\xf5e que toda a energia el\xe9trica aquece o bloco.\n\
 @D\n\
 O isolamento reduz as perdas para a vizinhan\xe7a, que tornariam c maior do que o real.\n\

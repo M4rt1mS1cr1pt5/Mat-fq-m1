@@ -35,8 +35,8 @@ Quantos eletr\xf5es de val\xeancia tem o magn\xe9sio (Z = 12)?\n\
 Distribui\xe7\xe3o 2, 8, 2: o magn\xe9sio tem 12 - 2 - 8 = 2 eletr\xf5es de val\xeancia.\n\
 @X m|r9x6|r9d|r|\n\
 Que tipo de liga\xe7\xe3o existe no cloreto de s\xf3dio, NaCl?\n\
-@O I\xf3nica|Covalente|Met\xe1lica|Liga\xe7\xe3o de hidrog\xe9nio\n\
-@S 1\n\
+@O Covalente|Met\xe1lica|Liga\xe7\xe3o de hidrog\xe9nio|I\xf3nica\n\
+@S 4\n\
 @P O s\xf3dio \xe9 um metal; o cloro \xe9 um n\xe3o metal.\n\
 @D\n\
 Metal e n\xe3o metal: liga\xe7\xe3o i\xf3nica entre Na\u207a e Cl\u207b.\n\

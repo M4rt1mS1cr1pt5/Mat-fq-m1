@@ -16,9 +16,9 @@ Um condutor \xf3hmico a 12 V \xe9 percorrido por 0,40 A. Qual \xe9 a sua resist\
 R = 12 / 0,40 = 30 \u03a9.\n\
 @X m|f2x3|f2c|r|\n\
 Num circuito com componentes em s\xe9rie:\n\
-@O a corrente \xe9 a mesma em todos os componentes|a tens\xe3o \xe9 a mesma em todos os componentes|a\
- resist\xeancia equivalente \xe9 menor do que cada resist\xeancia|desligar um componente n\xe3o afeta os outros\n\
-@S 1\n\
+@O desligar um componente n\xe3o afeta os outros|a corrente \xe9 a mesma em todos os componentes|a tens\xe3o\
+ \xe9 a mesma em todos os componentes|a resist\xeancia equivalente \xe9 menor do que cada resist\xeancia\n\
+@S 2\n\
 @P Em s\xe9rie, a corrente s\xf3 tem um caminho.\n\
 @D\n\
 Em s\xe9rie h\xe1 um s\xf3 caminho: a corrente \xe9 a mesma em todos os componentes.\n\
@@ -54,8 +54,8 @@ Uma resist\xeancia de 50 \u03a9 \xe9 percorrida por 2,0 A. Que pot\xeancia dissi
 P = 50 \xd7 2,0\xb2 = 2,0 \xd7 10\xb2 W.\n\
 @X m|f2x9|f2a|r|\n\
 Para medir a diferen\xe7a de potencial nos terminais de uma l\xe2mpada, o volt\xedmetro liga-se:\n\
-@O em paralelo com a l\xe2mpada|em s\xe9rie com a l\xe2mpada|em s\xe9rie com a pilha|em qualquer ponto do circuito\n\
-@S 1\n\
+@O em s\xe9rie com a l\xe2mpada|em s\xe9rie com a pilha|em qualquer ponto do circuito|em paralelo com a l\xe2mpada\n\
+@S 4\n\
 @P O volt\xedmetro compara dois pontos do circuito.\n\
 @D\n\
 O volt\xedmetro liga-se em paralelo, aos dois terminais do componente.\n\

@@ -1,0 +1,360 @@
+@tema m6
+disc: M
+grupo: t
+titulo: Funções definidas por ramos e função módulo
+calcs: c_matf.ramos c_matf.mod c_matf.fx
+
+@licao m6a
+titulo: Funções definidas por ramos
+chave: função definida por ramos ramo fronteira intervalo imagem gráfico salto continuidade equação ramo a ramo tarifário
+calc: c_matf.ramos
+ano: 10
+nivel: núcleo
+pre: m4b
+fonte: AE Mat A 10.º, Funções (funções definidas por ramos)
+#A
+- Ler funções definidas por ramos.
+- Calcular imagens escolhendo o ramo certo.
+- Esboçar o gráfico e estudar zeros e sinal.
+- Resolver equações ramo a ramo.
+#B
+Num tarifário, até um certo consumo paga-se um preço e acima dele outro.
+A conta é uma função com dois ramos.
+#C
+- Função por ramos: expressões diferentes em intervalos diferentes.
+- Para calcular f(a), vê-se primeiro a que intervalo pertence a.
+- Nas fronteiras, só um ramo se aplica: atenção a < e a ≤.
+- O gráfico junta os gráficos de cada ramo, só nos seus intervalos.
+- Equações: resolve-se ramo a ramo e só valem as soluções do intervalo.
+#D
+Exemplo: f(x) = x + 1 se x < 1; f(x) = 5 - x se 1 ≤ x < 3; f(x) = 2 se x ≥ 3.
+f(0) = [[1]]; f(1) = 5 - 1 = [[4]]; f(3) = [[2]].
+Em x = 1 há um salto: à esquerda os valores aproximam-se de 2, mas f(1) = 4.
+Zeros, ramo a ramo:
+- x + 1 = 0 ⇔ x = -1, e -1 < 1: serve.
+- 5 - x = 0 ⇔ x = 5, mas 5 não está em [1, 3[: não serve.
+- O ramo constante 2 não tem zeros.
+O único zero é [[-1]].
+No gráfico, nas fronteiras marca-se bola cheia no ramo a que o ponto pertence e bola vazia no outro.
+#E
+@F Função definida por ramos|f(x) = f1(x) se x < a; f(x) = f2(x) se x ≥ a|f1 e f2: expressões de cada ramo;a: fronteira|cada x pertence a um só ramo|-x se x < 0 e x² se x ≥ 0: f(-3) = 3|c_matf.ramos
+#F
+Dados: f(x) = -x se x < 0 e f(x) = x² se x ≥ 0.
+Objetivo: f(-3), f(2) e as soluções de f(x) = 4.
+1. f(-3) = [[3]] (1.º ramo); f(2) = [[4]] (2.º ramo)
+2. 1.º ramo: -x = 4 ⇔ x = -4, e -4 < 0: serve.
+3. 2.º ramo: x² = 4 ⇔ x = -2 ∨ x = 2; só x = 2 está em [0, +∞[.
+> f(-3) = 3, f(2) = 4 e f(x) = 4 ⇔ x ∈ {-4, 2}.
+Verificação: f(-4) = [[4]] e f(2) = 4.
+#G
+O mesmo valor de x nunca pode estar em dois ramos: senão teria duas imagens.
+#H
+- Usar o ramo errado numa fronteira.
+- Aceitar soluções fora do intervalo do ramo.
+- Desenhar cada ramo em todo o eixo dos x.
+- Esquecer as bolas abertas e fechadas nas fronteiras.
+#I
+- Primeiro o ramo, depois a conta.
+- Fronteiras: cuidado com < e ≤.
+- Equações: ramo a ramo, confirmando o intervalo.
+#J
+Com f(x) = 2x se x ≤ 1 e f(x) = 3 se x > 1, quanto vale f(1)?
+#R
+f(1) = 2 × 1 = [[2]]: o 1 pertence ao 1.º ramo.
+#V
+V = [0 + 1, 5 - 1, 2, -1, 3, 2 ** 2, 4, 2 * 1]
+
+@licao m6b
+titulo: Função módulo
+chave: módulo valor absoluto distância função módulo vértice ramos equação com módulo inequação com módulo contradomínio
+calc: c_matf.mod
+ano: 10
+nivel: núcleo
+pre: m6a
+fonte: AE Mat A 10.º, Funções (função módulo); caderno de atividades
+#A
+- Definir o módulo de um número e a função módulo.
+- Escrever a|x - h| + k por ramos.
+- Determinar vértice, contradomínio, monotonia e zeros.
+- Resolver equações e inequações simples com módulo.
+#B
+O módulo é a distância a zero na reta: |-3| = |3| = 3.
+|x - h| é a distância de x a h.
+#C
+- |x| = x se x ≥ 0 e |x| = -x se x < 0.
+- f(x) = a|x - h| + k: gráfico em "V" com vértice (h, k).
+- a > 0: abre para cima, mínimo k; a < 0: abre para baixo, máximo k.
+- |x - 6| = x - 6 se x ≥ 6 e |x - 6| = -x + 6 se x < 6.
+- |x - h| = d (d > 0) ⇔ x = h - d ∨ x = h + d.
+#D
+Exemplo: f(x) = -4|x| + 2.
+Ramos: -4x + 2 se x ≥ 0 e 4x + 2 se x < 0.
+Vértice (0, 2); máximo 2; D′f = ]-∞, 2].
+Zeros: 4|x| = 2 ⇔ |x| = [[0,5]] ⇔ x = -0,5 ∨ x = 0,5.
+|x - h| < d ⇔ h - d < x < h + d (pontos a menos de d de h).
+|x - h| > d ⇔ x < h - d ∨ x > h + d.
+Exemplo: |x - 6| < 3 ⇔ 6 - 3 < x < 6 + 3: C.S. = ]3, 9[.
+Se d < 0, |x - h| = d é impossível: um módulo nunca é negativo.
+#E
+@F Módulo|∣x∣ = x se x ≥ 0; ∣x∣ = -x se x < 0|∣x∣: distância de x a 0|x real|∣-3∣ = 3|
+@F Função módulo|f(x) = a∣x - h∣ + k|(h, k): vértice;a: abertura e sentido|a ≠ 0|-4∣x∣ + 2: vértice (0, 2)|c_matf.mod
+@F Equação com módulo|∣x - h∣ = d ⇔ x = h - d ∨ x = h + d|d: distância a h|d > 0 (d = 0: só x = h)|∣x - 2∣ = 5: x = -3 ∨ x = 7|c_matf.mod
+#F
+Dados: f(x) = 2|x + 1| - 4.
+Objetivo: vértice, zeros e C.S. de f(x) > 2.
+1. Vértice: (-1, -4); a = 2 > 0, logo o mínimo é [[-4]].
+2. Zeros: 2|x + 1| = 4 ⇔ |x + 1| = 2 ⇔ x = [[-3]] ∨ x = [[1]].
+3. f(x) > 2 ⇔ |x + 1| > 3 ⇔ x < [[-4]] ∨ x > [[2]].
+> Zeros -3 e 1; f(x) > 2 em ]-∞, -4[ ∪ ]2, +∞[.
+Verificação: f(1) = 2 × 2 - 4 = [[0]].
+#G
+O módulo mede distâncias: por isso aparece em erros, tolerâncias e intervalos centrados num valor.
+#H
+- Escrever |x - 6| = x + 6.
+- Esquecer a segunda solução de |x - h| = d.
+- Resolver |x| = -2 e dar soluções.
+- Trocar "dentro" (<) com "fora" (>) nas inequações.
+#I
+- |x| é a distância a 0.
+- a|x - h| + k: vértice (h, k).
+- |x - h| = d ⇔ x = h ± d.
+- < d: dentro; > d: fora.
+#J
+Resolve a equação |x - 2| = 5.
+#R
+x - 2 = -5 ∨ x - 2 = 5 ⇔ x = [[-3]] ∨ x = [[7]].
+#V
+V = [2 / 4, -4, -1 - 2, -1 + 2, -1 - 3, -1 + 3, 2 * abs(1 + 1) - 4, 2 - 5, 2 + 5]
+
+@licao m6c
+titulo: Chão, teto, sinal e Heaviside (aprofundamento)
+chave: parte inteira chão teto função sinal heaviside função em escada arredondamento estacionamento hora começada
+ano: 10
+nivel: aprofundamento
+pre: m6a
+fonte: AE Mat A 10.º, Funções (aprofundamento)
+#A
+- Conhecer as funções chão (parte inteira) e teto.
+- Conhecer as funções sinal e de Heaviside.
+- Reconhecer gráficos em escada.
+#B
+Num parque que cobra por hora começada, 1 h 10 min paga-se como 2 h: é a função teto.
+#C
+- Chão (parte inteira), chão(x): o maior inteiro menor ou igual a x.
+- Teto, teto(x): o menor inteiro maior ou igual a x.
+- Sinal: sgn(x) = -1 se x < 0; 0 se x = 0; 1 se x > 0.
+- Heaviside: H(x) = 0 se x < 0 e H(x) = 1 se x ≥ 0.
+- São funções por ramos com gráficos em escada.
+#D
+chão(2,7) = [[2]] e chão(-2,7) = [[-3]].
+teto(2,1) = [[3]] e teto(-2,1) = [[-2]].
+Para inteiros, chão e teto coincidem: chão(4) = teto(4) = 4.
+Estacionamento a 1,20 € por hora começada, durante 2 h 15 min:
+1,20 × teto(2,25) = 1,20 × 3 = [[3,6]] €.
+sgn(-5) = -1 e H(0) = 1.
+#E
+@F Chão (parte inteira)|chão(x) = maior inteiro menor ou igual a x|x real|gráfico em escada|chão(-2,7) = -3|
+@F Teto|teto(x) = menor inteiro maior ou igual a x|x real|gráfico em escada|teto(2,1) = 3|
+#F
+Dados: um parque cobra 1,20 € por hora começada.
+Objetivo: preço para 50 min e para 3 h 5 min.
+1. 50 min: teto(50 / 60) = [[1]] hora, ou seja, 1,20 €.
+2. 3 h 5 min: teto(3 + 5 / 60) = [[4]] horas: 4 × 1,20 = [[4,8]] €.
+> Paga 1,20 € e 4,80 €.
+Verificação: 3 h exatas pagariam 3 × 1,20 = [[3,6]] €.
+#G
+Estas funções aparecem em preços por escalões e em programação (arredondamentos).
+#H
+- Achar que chão(-2,7) = -2 (é -3).
+- Confundir chão com arredondamento ao inteiro mais próximo.
+- Esquecer que H(0) = 1 com esta definição.
+#I
+- chão: arredonda para baixo; teto: para cima.
+- sgn dá -1, 0 ou 1.
+- H: 0 antes de 0, 1 a partir de 0.
+#J
+Calcula chão(-0,5) e teto(-0,5).
+#R
+chão(-0,5) = [[-1]] e teto(-0,5) = [[0]].
+#V
+V = [floor(2.7), floor(-2.7), ceil(2.1), ceil(-2.1), 1.20 * ceil(2.25),
+     ceil(50 / 60), ceil(3 + 5 / 60), 4 * 1.20, 3 * 1.20, floor(-0.5), ceil(-0.5)]
+
+@exemplo m6e1
+nivel: 1
+titulo: Imagens numa função por ramos
+licao: m6a
+calc: c_matf.ramos
+#T
+Enunciado: f(x) = 3 - x se x < 2 e f(x) = x² - 3 se x ≥ 2. Calcula f(0), f(2) e f(4).
+Resolução:
+1. 0 < 2: f(0) = 3 - 0 = [[3]]
+2. 2 ≥ 2: f(2) = 4 - 3 = [[1]]
+3. 4 ≥ 2: f(4) = 16 - 3 = [[13]]
+Resultado: f(0) = 3, f(2) = 1 e f(4) = 13.
+Interpretação: em x = 2 os dois ramos dão 1: o gráfico não tem salto.
+Erros a evitar: usar o 1.º ramo em x = 2.
+#V
+V = [3 - 0, 2 ** 2 - 3, 4 ** 2 - 3]
+
+@exemplo m6e2
+nivel: 2
+titulo: Equação com módulo
+licao: m6b
+calc: c_matf.mod
+#T
+Enunciado: resolve 3|x - 1| - 2 = 7.
+Resolução:
+1. 3|x - 1| = 9 ⇔ |x - 1| = [[3]]
+2. x - 1 = -3 ∨ x - 1 = 3
+3. x = [[-2]] ∨ x = [[4]]
+Resultado: C.S. = {-2, 4}.
+Interpretação: os dois valores estão à distância 3 de 1.
+Erros a evitar: tirar o módulo antes de isolar |x - 1|.
+#V
+V = [(7 + 2) / 3, 1 - 3, 1 + 3]
+
+@exemplo m6e3
+nivel: 3
+titulo: Tarifário da água por escalões
+licao: m6a
+calc: c_matf.ramos
+#T
+Enunciado: até 5 m³ a água custa 0,50 € por m³; o que passar de 5 m³ custa 1,20 € por m³.
+Escreve o custo c(x) para x m³ e calcula c(8) e o consumo com custo de 7,30 €.
+Resolução:
+1. c(x) = 0,5x se 0 ≤ x ≤ 5; c(x) = 2,5 + 1,2(x - 5) se x > 5.
+2. c(8) = 2,5 + 1,2 × 3 = [[6,1]] €
+3. 7,30 > 2,50, logo é o 2.º ramo: 2,5 + 1,2(x - 5) = 7,3 ⇔ x = [[9]] m³
+Resultado: c(8) = 6,10 € e o custo de 7,30 € corresponde a 9 m³.
+Interpretação: os ramos ligam-se em x = 5 (c(5) = [[2,5]] € nos dois).
+Erros a evitar: aplicar 1,20 € a todos os m³.
+#V
+V = [2.5 + 1.2 * 3, 5 + (7.3 - 2.5) / 1.2, 0.5 * 5]
+
+@exercicio m6x1
+tipo: n
+licao: m6a
+#T
+f(x) = 2x se x < 0 e f(x) = x + 3 se x ≥ 0. Quanto vale f(0)?
+#S
+3
+#P
+O 0 pertence a que ramo?
+#D
+0 ≥ 0: 2.º ramo, f(0) = 0 + 3 = [[3]].
+#V
+S = 0 + 3
+V = [S]
+
+@exercicio m6x2
+tipo: n
+licao: m6a
+#T
+f(x) = 2x se x < 0 e f(x) = x + 3 se x ≥ 0. Quanto vale f(-2)?
+#S
+-4
+#P
+-2 < 0: 1.º ramo.
+#D
+f(-2) = 2 × (-2) = [[-4]].
+#V
+S = 2 * (-2)
+V = [S]
+
+@exercicio m6x3
+tipo: n
+licao: m6b
+#T
+Quanto vale |-7| + |3|?
+#S
+10
+#P
+O módulo é a distância a zero.
+#D
+|-7| + |3| = 7 + 3 = [[10]].
+#V
+S = abs(-7) + abs(3)
+V = [S]
+
+@exercicio m6x4
+tipo: m
+licao: m6b
+#T
+Qual é o vértice do gráfico de f(x) = 3|x - 2| - 1?
+#O
+(2, -1)
+(-2, -1)
+(2, 1)
+(3, -1)
+#S
+1
+#P
+f(x) = a|x - h| + k tem vértice (h, k).
+#D
+h = 2 e k = -1: o vértice é (2, -1).
+#V
+S = 1
+
+@exercicio m6x5
+tipo: n
+licao: m6b
+#T
+Qual é a solução positiva de |x - 2| = 5?
+#S
+7
+#P
+x - 2 = 5 ou x - 2 = -5.
+#D
+x = 2 + 5 = [[7]] (a outra solução é -3).
+#V
+S = 2 + 5
+V = [S]
+
+@exercicio m6x6
+tipo: v
+licao: m6b
+#T
+A função f(x) = -|x| tem máximo 0.
+#S
+V
+#P
+O módulo nunca é negativo.
+#D
+Verdadeiro: -|x| ≤ 0 e f(0) = 0, logo o máximo é 0.
+#V
+S = 'V'
+
+@exercicio m6x7
+tipo: m
+licao: m6b
+#T
+Qual é o conjunto-solução de |x| < 3?
+#O
+]-3, 3[
+]-∞, -3[ ∪ ]3, +∞[
+[-3, 3]
+]3, +∞[
+#S
+1
+#P
+Pontos a menos de 3 unidades de 0.
+#D
+|x| < 3 ⇔ -3 < x < 3: C.S. = ]-3, 3[.
+#V
+S = 1
+
+@exercicio m6x8
+tipo: n
+licao: m6c
+#T
+Quanto vale teto(4,2)?
+#S
+5
+#P
+O menor inteiro maior ou igual a 4,2.
+#D
+teto(4,2) = [[5]].
+#V
+S = ceil(4.2)
+V = [S]

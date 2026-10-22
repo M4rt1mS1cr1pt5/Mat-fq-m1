@@ -4,8 +4,8 @@ D = "@V 1\n\
 @T Energia dos eletr\xf5es nos \xe1tomos\n\
 @X m|q2x1|q2a|r|\n\
 Qual das radia\xe7\xf5es tem fot\xf5es com mais energia?\n\
-@O Infravermelho|Luz vermelha|Luz violeta|Micro-ondas\n\
-@S 3\n\
+@O Luz violeta|Micro-ondas|Luz vermelha|Infravermelho\n\
+@S 1\n\
 @P Mais energia corresponde a maior frequ\xeancia e menor \u03bb.\n\
 @D\n\
 Das op\xe7\xf5es, a luz violeta tem a maior frequ\xeancia (menor \u03bb).\n\
@@ -43,7 +43,7 @@ Com n\xedvel final n = 3 (s\xe9rie de Paschen), o fot\xe3o \xe9 de infravermelho
 @X m|q2x6|q2c|r|\n\
 O espetro fotoeletr\xf3nico de um elemento tem picos com alturas 2 : 2 : 6 : 2.\n\
 Qual \xe9 o elemento?\n\
-@O Magn\xe9sio|N\xe9on|S\xf3dio|Oxig\xe9nio\n\
+@O Magn\xe9sio|Oxig\xe9nio|S\xf3dio|N\xe9on\n\
 @S 1\n\
 @P Soma os eletr\xf5es de todos os picos.\n\
 @D\n\
@@ -56,9 +56,9 @@ Uma orbital pode ter, no m\xe1ximo, dois eletr\xf5es, com spins opostos.\n\
 Verdadeiro: \xe9 o Princ\xedpio de Exclus\xe3o de Pauli.\n\
 @X m|q2x8|q2e|r|\n\
 Qual \xe9 a configura\xe7\xe3o eletr\xf3nica do c\xe1lcio, Ca (Z = 20), no estado fundamental?\n\
-@O 1s\xb2 2s\xb2 2p\u2076 3s\xb2 3p\u2076 4s\xb2|1s\xb2 2s\xb2 2p\u2076 3s\xb2 3p\u2076 3d\xb2|1s\xb2 2s\xb2\
- 2p\u2076 3s\xb2 3p\u2078|1s\xb2 2s\xb2 2p\u2078 3s\xb2 3p\u2076\n\
-@S 1\n\
+@O 1s\xb2 2s\xb2 2p\u2076 3s\xb2 3p\u2076 3d\xb2|1s\xb2 2s\xb2 2p\u2076 3s\xb2 3p\u2078|1s\xb2 2s\xb2\
+ 2p\u2078 3s\xb2 3p\u2076|1s\xb2 2s\xb2 2p\u2076 3s\xb2 3p\u2076 4s\xb2\n\
+@S 4\n\
 @P Depois de 3p\u2076, o subn\xedvel seguinte \xe9 o 4s.\n\
 @D\n\
 Ordem de preenchimento: 1s 2s 2p 3s 3p 4s.\n\

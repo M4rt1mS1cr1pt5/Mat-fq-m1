@@ -1,7 +1,7 @@
 # m1_idxm.py - M1TR4M: indice da pesquisa (Mat, parte 1 de 1) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 76\n\
+@N 126\n\
 L|Revis\xf5es de tri\xe2ngulos; mediatriz e bissetriz|classificacao triangulos congruencia semelhanca\
  criterio aa pitagoras|m3a\n\
 L|Incentro e circunfer\xeancia inscrita|bissetrizes tangente raio r = 2a/p triangulo tg|m3b\n\
@@ -36,6 +36,34 @@ X|A circunfer\xeancia circunscrita||m3:7\n\
 X|No tri\xe2ngulo [ABC], de||m3:8\n\
 X|Um tri\xe2ngulo tem 42 cm\xb2 de||m3:9\n\
 X|Num tri\xe2ngulo is\xf3sceles n\xe3o||m3:10\n\
+L|Conceito de fun\xe7\xe3o e formas de a representar|dominio conjunto chegada contradominio objeto imagem variavel|m4a\n\
+L|Estudo de uma fun\xe7\xe3o: zeros, sinal, monotonia e extremos|zeros sinal crescente decrescente maximo\
+ minimo absoluto|m4b\n\
+L|Fun\xe7\xe3o afim|linear declive ordenada origem zero sinal monotonia|m4c\n\
+L|Condi\xe7\xf5es, conjun\xe7\xe3o, disjun\xe7\xe3o e intervalos|logica conjuntos condicao conjuncao\
+ intervalo conjunto-solucao uniao|m4d\n\
+F|Fun\xe7\xe3o||m4:0\n\
+F|Contradom\xednio||m4:1\n\
+F|Zeros||m4:2\n\
+F|Interse\xe7\xe3o de gr\xe1ficos||m4:3\n\
+F|Fun\xe7\xe3o afim||m4:4\n\
+F|Declive||m4:5\n\
+F|Zero da fun\xe7\xe3o afim||m4:6\n\
+F|Conjun\xe7\xe3o||m4:7\n\
+F|Disjun\xe7\xe3o||m4:8\n\
+E|Imagens e contradom\xednio||m4:0\n\
+E|Fun\xe7\xe3o afim a partir de dois pontos||m4:1\n\
+E|Interse\xe7\xe3o de uma par\xe1bola com uma reta||m4:2\n\
+X|Qual destas correspond\xeancias||m4:0\n\
+X|Sendo f(x) = 3x - 2, quanto||m4:1\n\
+X|f(x) = x\xb2, com Df = {-2, -1||m4:2\n\
+X|Qual \xe9 o declive da reta que||m4:3\n\
+X|Qual \xe9 o zero de f(x) = 4x -||m4:4\n\
+X|Se o declive de uma fun\xe7\xe3o||m4:5\n\
+X|Qual \xe9 o conjunto-solu\xe7\xe3o de||m4:6\n\
+X|Quantos n\xfameros inteiros||m4:7\n\
+X|Qual \xe9 o zero positivo de||m4:8\n\
+X|O contradom\xednio de uma fun\xe7\xe3o||m4:9\n\
 L|A fun\xe7\xe3o quadr\xe1tica e o seu gr\xe1fico|parabola concavidade vertice eixo simetria forma canonica|m5a\n\
 L|Zeros e f\xf3rmula resolvente|equacao 2.o grau discriminante delta binomio fatorizacao|m5b\n\
 L|Sinal, monotonia, extremos e inequa\xe7\xf5es|sinal monotonia crescente decrescente maximo minimo extremo|m5c\n\
@@ -64,6 +92,26 @@ X|Qual \xe9 o valor m\xe1ximo de f(x)||m5:6\n\
 X|O gr\xe1fico de g(x) = f(x - 3)||m5:7\n\
 X|Determina o zero positivo de||m5:8\n\
 X|O eixo de simetria do gr\xe1fico||m5:9\n\
+L|Fun\xe7\xf5es definidas por ramos|funcao definida ramo fronteira intervalo imagem grafico|m6a\n\
+L|Fun\xe7\xe3o m\xf3dulo|valor absoluto distancia vertice ramos equacao inequacao|m6b\n\
+L|Ch\xe3o, teto, sinal e Heaviside (aprofundamento)|parte inteira chao teto funcao escada arredondamento|m6c\n\
+F|Fun\xe7\xe3o definida por ramos||m6:0\n\
+F|M\xf3dulo||m6:1\n\
+F|Fun\xe7\xe3o m\xf3dulo||m6:2\n\
+F|Equa\xe7\xe3o com m\xf3dulo||m6:3\n\
+F|Ch\xe3o (parte inteira)||m6:4\n\
+F|Teto||m6:5\n\
+E|Imagens numa fun\xe7\xe3o por ramos||m6:0\n\
+E|Equa\xe7\xe3o com m\xf3dulo||m6:1\n\
+E|Tarif\xe1rio da \xe1gua por escal\xf5es||m6:2\n\
+X|f(x) = 2x se x < 0 e f(x) = x||m6:0\n\
+X|f(x) = 2x se x < 0 e f(x) = x||m6:1\n\
+X|Quanto vale |-7| + |3|?||m6:2\n\
+X|Qual \xe9 o v\xe9rtice do gr\xe1fico||m6:3\n\
+X|Qual \xe9 a solu\xe7\xe3o positiva de||m6:4\n\
+X|A fun\xe7\xe3o f(x) = -|x| tem||m6:5\n\
+X|Qual \xe9 o conjunto-solu\xe7\xe3o de||m6:6\n\
+X|Quanto vale teto(4,2)?||m6:7\n\
 C|Constantes e dados|avogadro planck velocidade luz volume molar na vm|c_comd.cte\n\
 C|Dados experimentais|media incerteza absoluta relativa erro percentual|c_comd.exp\n\
 C|Regress\xe3o linear e gr\xe1fico|reta declive ordenada coeficiente correlacao interpolar|c_comd.reg\n\
@@ -71,6 +119,10 @@ C|Calculadora cient\xedfica|expressao potencia raiz seno cosseno tangente sen co
 C|Algarismos significativos|arredondar soma produto regra|c_comu.sf\n\
 C|Conversor de unidades|conversao comprimento massa volume temperatura energia|c_comu.uni\n\
 C|Prefixos do SI|quilo mili micro nano mega giga|c_comu.pre\n\
+C|Fun\xe7\xe3o escrita por ti (tabela, zeros, gr\xe1fico)|expressao imagem tabela valores zeros sinal|c_matf.fx\n\
+C|Fun\xe7\xe3o afim|declive ordenada origem zero reta dois|c_matf.afim\n\
+C|Fun\xe7\xe3o definida por ramos|ramo fronteira continuidade salto zeros imagem|c_matf.ramos\n\
+C|Fun\xe7\xe3o m\xf3dulo a\u2223x - h\u2223 + k|valor absoluto vertice ramos equacao inequacao|c_matf.mod\n\
 C|Equa\xe7\xe3o do 2.\xba grau e fun\xe7\xe3o quadr\xe1tica|formula resolvente binomio discriminante zeros\
  vertice|c_matq.q2\n\
 C|Inequa\xe7\xf5es do 2.\xba grau|inequacao conjunto-solucao intervalos sinal parabola|c_matq.iq\n\

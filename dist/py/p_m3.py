@@ -76,7 +76,7 @@ PB = 7 cm: todos os pontos da mediatriz est\xe3o \xe0 mesma dist\xe2ncia de A e 
 - Calcular o raio da inscrita com r = 2A / P.\n\
 - Calcular \xe2ngulos com v\xe9rtice no incentro.\n\
 @B\n\
-Para p\xf4r dentro de um tri\xe2ngulo o maior c\xedrculo poss\xedvel, o centro tem de ficar \xe0 mesma\
+Queres p\xf4r o maior c\xedrculo poss\xedvel dentro de um tri\xe2ngulo? O centro tem de ficar \xe0 mesma\
  dist\xe2ncia dos tr\xeas lados.\n\
 @C\n\
 - Incentro (I): interse\xe7\xe3o das bissetrizes dos \xe2ngulos internos.\n\
@@ -138,8 +138,8 @@ r = 3 cm, logo P = 2A / r = 2 \xd7 24 / 3 = 16 cm.\n\
 - Localizar os dois pontos em cada tipo de tri\xe2ngulo.\n\
 - Usar R = hipotenusa / 2 no tri\xe2ngulo ret\xe2ngulo.\n\
 @B\n\
-O ponto \xe0 mesma dist\xe2ncia de tr\xeas localidades (por exemplo, Porto, Mon\xe7\xe3o e Vimioso) \xe9 o\
- centro da circunfer\xeancia que passa pelas tr\xeas.\n\
+Procura-se um ponto \xe0 mesma dist\xe2ncia de tr\xeas localidades (por exemplo, Porto, Mon\xe7\xe3o e\
+ Vimioso). \xc9 o centro da circunfer\xeancia que passa pelas tr\xeas.\n\
 @C\n\
 - Circuncentro (C): interse\xe7\xe3o das mediatrizes dos lados.\n\
 - C \xe9 equidistante dos v\xe9rtices: centro da circunscrita (raio R).\n\
@@ -317,7 +317,7 @@ Onde p\xf4r uma central que ligue tr\xeas cidades com o m\xednimo de cabo? No po
 Porque \xe9 m\xednimo: uma rota\xe7\xe3o de 60\xb0 transforma a soma num caminho de Q a um ponto fixo.\n\
 Esse caminho \xe9 m\xednimo quando \xe9 um segmento de reta.\n\
 A circunfer\xeancia ex-inscrita \xe9 tangente a um lado e aos prolongamentos dos outros dois.\n\
-Com lados a = QR, b = PR e c = PQ, e semiper\xedmetro s, a ex-inscrita oposta a P toca [QR] em D.\n\
+Sejam a = QR, b = PR, c = PQ e s o semiper\xedmetro. A ex-inscrita oposta a P toca [QR] em D.\n\
 Ent\xe3o QD = s - c e RD = s - b.\n\
 Logo PQ + QD = PR + RD = s: cada segmento divide o per\xedmetro ao meio.\n\
 @F Ponto de Nagel|QD = s - c e RD = s - b|s: semiper\xedmetro;D: tang\xeancia da ex-inscrita em [QR]|qualquer\

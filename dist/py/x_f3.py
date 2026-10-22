@@ -10,9 +10,9 @@ Converte 25 \xb0C para kelvin.\n\
 T = 25 + 273,15 = 298,15 K.\n\
 @X m|f3x2|f3a|r|\n\
 Um sistema fechado:\n\
-@O troca energia com a vizinhan\xe7a mas n\xe3o troca mat\xe9ria|n\xe3o troca energia nem mat\xe9ria|troca\
- mat\xe9ria mas n\xe3o troca energia|troca energia e mat\xe9ria\n\
-@S 1\n\
+@O troca mat\xe9ria mas n\xe3o troca energia|troca energia e mat\xe9ria|troca energia com a vizinhan\xe7a mas\
+ n\xe3o troca mat\xe9ria|n\xe3o troca energia nem mat\xe9ria\n\
+@S 3\n\
 @P Fechado refere-se \xe0 mat\xe9ria.\n\
 @D\n\
 Um sistema fechado troca energia (calor, trabalho, radia\xe7\xe3o), mas n\xe3o troca mat\xe9ria.\n\
@@ -42,8 +42,8 @@ Um sistema recebe 300 J por calor e realiza 100 J de trabalho sobre a vizinhan\x
 \u0394U = -100 + 300 + 0 = 200 J.\n\
 @X m|f3x7|f3c|r|\n\
 A convec\xe7\xe3o \xe9 um processo de transfer\xeancia de energia que ocorre:\n\
-@O em l\xedquidos e gases|s\xf3 em s\xf3lidos|s\xf3 no v\xe1cuo|s\xf3 em metais\n\
-@S 1\n\
+@O s\xf3 no v\xe1cuo|s\xf3 em metais|s\xf3 em s\xf3lidos|em l\xedquidos e gases\n\
+@S 4\n\
 @P Precisa que a mat\xe9ria se possa mover.\n\
 @D\n\
 A convec\xe7\xe3o exige movimento do fluido: s\xf3 acontece em l\xedquidos e gases.\n\

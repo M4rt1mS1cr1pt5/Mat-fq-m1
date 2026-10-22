@@ -10,8 +10,8 @@ Um tri\xe2ngulo tem 30 cm\xb2 de \xe1rea e 30 cm de per\xedmetro. Qual \xe9 o ra
 r = 2 \xd7 30 / 30 = 2 cm.\n\
 @X m|m3x2|m3c|r|\n\
 Qual ponto not\xe1vel \xe9 o centro da circunfer\xeancia que passa pelos tr\xeas v\xe9rtices?\n\
-@O Circuncentro|Incentro|Baricentro|Ortocentro\n\
-@S 1\n\
+@O Incentro|Circuncentro|Ortocentro|Baricentro\n\
+@S 2\n\
 @P Est\xe1 \xe0 mesma dist\xe2ncia dos v\xe9rtices.\n\
 @D\n\
 O circuncentro (interse\xe7\xe3o das mediatrizes) est\xe1 \xe0 mesma dist\xe2ncia dos tr\xeas v\xe9rtices.\n\
@@ -35,8 +35,8 @@ Um tri\xe2ngulo ret\xe2ngulo tem catetos de 6 cm e 8 cm. Qual \xe9 o raio da cir
 Hipotenusa: \u221a(36 + 64) = 10 cm; R = 10 / 2 = 5 cm.\n\
 @X m|m3x6|m3e|r|\n\
 Num tri\xe2ngulo obtus\xe2ngulo, que pontos not\xe1veis ficam no exterior?\n\
-@O O circuncentro e o ortocentro|O incentro e o baricentro|S\xf3 o ortocentro|Nenhum\n\
-@S 1\n\
+@O S\xf3 o ortocentro|Nenhum|O circuncentro e o ortocentro|O incentro e o baricentro\n\
+@S 3\n\
 @P I e B est\xe3o sempre no interior.\n\
 @D\n\
 No obtus\xe2ngulo, o circuncentro e o ortocentro saem os dois do tri\xe2ngulo.\n\

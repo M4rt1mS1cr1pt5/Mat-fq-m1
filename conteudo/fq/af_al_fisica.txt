@@ -11,6 +11,7 @@ calc: c_alf1.plano
 ano: 10
 nivel: núcleo
 pre: f1c
+liga: m2h
 fonte: Programa e AE FQ A 10.º, AL 1.1
 #A
 - Medir velocidades com uma célula fotoelétrica.

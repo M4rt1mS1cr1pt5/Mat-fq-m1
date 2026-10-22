@@ -3,8 +3,8 @@
 # de Euler (BC = 1,4) e licao m3e (paginas A a D); sair.
 2
 1
-# temas: 2 = Geometria sintetica (enquanto nao existir m2)
-2
+# temas: 3 = Geometria sintetica
+3
 # 6 Calculadoras do tema: 1 = pontos notaveis
 6
 1

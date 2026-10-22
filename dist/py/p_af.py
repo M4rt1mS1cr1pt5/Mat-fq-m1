@@ -4,7 +4,8 @@ D = "@V 1\n\
 @T Atividades laboratoriais de F\xedsica\n\
 @L af11|AL 1.1 Movimento num plano inclinado: energia cin\xe9tica e dist\xe2ncia|al 1.1 plano inclinado\
  carrinho celula fotoeletrica tempo de passagem velocidade energia cinetica distancia regressao forca\
- resultante|c_alf1.plano|10|n\xfacleo|f1c:Teorema da energia cin\xe9tica||Programa e AE FQ A 10.\xba, AL 1.1\n\
+ resultante|c_alf1.plano|10|n\xfacleo|f1c:Teorema da energia cin\xe9tica|m2h:Dados bivariados:\
+ correla\xe7\xe3o e reta dos m\xednimos quadrados|Programa e AE FQ A 10.\xba, AL 1.1\n\
 @A\n\
 - Medir velocidades com uma c\xe9lula fotoel\xe9trica.\n\
 - Calcular a energia cin\xe9tica em v\xe1rios pontos.\n\

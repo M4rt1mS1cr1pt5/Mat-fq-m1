@@ -1,0 +1,802 @@
+@tema m2
+disc: M
+grupo: t
+titulo: Estatística
+calcs: c_mate.uni c_mate.cls c_mate.caule c_comd.reg
+
+@licao m2a
+titulo: O problema estatístico: população, amostra e variáveis
+chave: problema estatístico variabilidade população amostra censo unidade estatística variável qualitativa quantitativa discreta contínua amostragem aleatória sistemática estratificada conveniência fases
+calc: c_mate.uni
+ano: 10
+nivel: núcleo
+fonte: AE Mat A 10.º, Estatística
+#A
+- Distinguir população, amostra e unidade estatística.
+- Classificar variáveis.
+- Conhecer as fases de um estudo e os tipos de amostragem.
+#B
+A Estatística estuda a variabilidade.
+Se todos os dados fossem iguais, bastava observar um.
+#C
+- População: o conjunto a estudar; amostra: a parte observada.
+- Censo: observa-se toda a população.
+- Variável qualitativa ou quantitativa (discreta ou contínua).
+- Aleatória simples: todos com a mesma probabilidade.
+- Outras: sistemática, estratificada, por conveniência.
+- Fases: pergunta, recolha, organização, análise e conclusões.
+#D
+Exemplo: quantas horas por semana fazem desporto os 600 alunos de uma escola?
+- População: os 600 alunos; unidade estatística: cada aluno.
+- Amostra: 60 alunos, isto é, [[10]]% da população.
+- Variável: horas de desporto por semana (quantitativa contínua).
+- Amostra estratificada: os 60 repartem-se pelos anos, na proporção de cada ano.
+- Se o 10.º ano tiver 240 alunos, entram 60 × 240 / 600 = [[24]] alunos do 10.º.
+- Perguntar só aos amigos é amostragem por conveniência e pode enviesar.
+#E
+@F Amostra estratificada|ni = n × Ni / N|N: população;Ni: estrato i;n: amostra|estratos proporcionais|600 alunos, 240 no 10.º, amostra de 60: 24 do 10.º|
+@F Percentagem da amostra|n / N × 100|n: amostra;N: população|amostra tirada da população|60 em 600: 10%|
+#F
+Dados: uma escola tem 300 alunos no 10.º, 250 no 11.º e 250 no 12.º ano.
+Objetivo: amostra estratificada de 80 alunos.
+1. População: 300 + 250 + 250 = [[800]] alunos.
+2. 10.º ano: 80 × 300 / 800 = [[30]] alunos.
+3. 11.º e 12.º anos: 80 × 250 / 800 = [[25]] alunos cada.
+> 30, 25 e 25 alunos.
+Verificação: 30 + 25 + 25 = [[80]].
+#G
+As sondagens eleitorais usam amostras de cerca de mil pessoas para estimar o voto de milhões.
+#H
+- Confundir a população com a amostra.
+- Classificar o número de irmãos como contínuo (é discreto).
+- Escolher a amostra só entre conhecidos.
+#I
+- População, amostra, unidade estatística.
+- Qualitativa; quantitativa discreta ou contínua.
+- Aleatória, sistemática, estratificada.
+#J
+A altura dos alunos é uma variável discreta ou contínua?
+#R
+Contínua: pode tomar qualquer valor num intervalo.
+#V
+V = [60 / 600 * 100, 60 * 240 / 600, 300 + 250 + 250, 80 * 300 / 800, 80 * 250 / 800, 30 + 25 + 25]
+
+@licao m2b
+titulo: Tabelas de frequências, gráficos e caule-e-folhas
+chave: frequência absoluta relativa acumulada tabela de frequências gráfico de barras gráfico circular caule e folhas dados discretos qualitativos
+calc: c_mate.caule
+ano: 10
+nivel: núcleo
+pre: m2a
+fonte: AE Mat A 10.º, Estatística
+#A
+- Construir tabelas de frequências.
+- Interpretar gráficos de barras.
+- Construir um diagrama de caule-e-folhas.
+#B
+Organizar os dados mostra logo os valores mais e menos frequentes.
+#C
+- Frequência absoluta ni: quantas vezes aparece o valor.
+- Frequência relativa fi = ni / n (soma 1, ou 100%).
+- Acumulada: soma das frequências até esse valor.
+- Gráfico de barras: dados qualitativos ou discretos.
+- Caule-e-folhas: o último algarismo é a folha; folhas por ordem.
+#D
+Exemplo: número de irmãos de 20 alunos.
+- 0 irmãos: 5 alunos (fi = [[25]]%).
+- 1 irmão: 9 alunos (fi = [[45]]%).
+- 2 irmãos: 4 alunos (fi = [[20]]%).
+- 3 irmãos: 2 alunos (fi = [[10]]%).
+- Até 1 irmão: frequência acumulada 5 + 9 = [[14]], ou [[70]]%.
+Caule-e-folhas de 12, 15, 21, 23, 23, 30, 38 e 41:
+1 | 2 5
+2 | 1 3 3
+3 | 0 8
+4 | 1
+Legenda: 1 | 2 = 12.
+#E
+@F Frequência relativa|fi = ni / n|ni: frequência absoluta;n: número de dados|a soma dá 1 (100%)|9 em 20: fi = 0,45 = 45%|c_mate.uni
+@F Frequência acumulada|Ni = n1 + ... + ni|ni: frequências absolutas|valores por ordem|5 + 9 = 14|c_mate.cls
+#F
+Dados: classificações de 10 alunos: 8, 11, 12, 12, 14, 15, 15, 15, 17 e 19.
+Objetivo: caule-e-folhas e frequência relativa de 15.
+1. Caules 0 e 1 (dezenas); folhas: as unidades, por ordem.
+2. Caule 0: uma folha (8); caule 1: as outras [[9]] folhas.
+3. O 15 aparece 3 vezes: fi = 3 / 10 = [[30]]%.
+> 0 | 8 e 1 | 1 2 2 4 5 5 5 7 9.
+Verificação: 1 + 9 = [[10]] folhas, uma por dado.
+#G
+Num caule-e-folhas duplo comparam-se duas turmas, com as folhas de cada uma para o seu lado.
+#H
+- Esquecer de ordenar as folhas.
+- Saltar caules sem folhas.
+- Frequências relativas que não somam 100%.
+#I
+- ni: absoluta; fi = ni / n.
+- Acumulada: soma até ao valor.
+- Caule-e-folhas ordenado, com legenda.
+#J
+Numa turma de 25 alunos, 5 têm olhos azuis. Qual é a frequência relativa, em percentagem?
+#R
+5 / 25 = [[0,2]] = [[20]]%.
+#V
+V = [5 / 20 * 100, 9 / 20 * 100, 4 / 20 * 100, 2 / 20 * 100, 5 + 9, 14 / 20 * 100, 10 - 1, 3 / 10 * 100, 1 + 9, 5 / 25, 5 / 25 * 100]
+
+@licao m2c
+titulo: Dados agrupados em classes e histograma
+chave: classes amplitude da classe histograma ponto médio classe modal classe mediana dados contínuos frequências agrupadas
+calc: c_mate.cls
+ano: 10
+nivel: núcleo
+pre: m2b
+fonte: AE Mat A 10.º, Estatística
+#A
+- Agrupar dados contínuos em classes.
+- Construir e ler um histograma.
+- Calcular a média de dados agrupados.
+#B
+Com muitos valores diferentes, juntam-se os dados em classes, como em gavetas.
+#C
+- Classes [a, b[ com a mesma amplitude b - a.
+- Ponto médio: (a + b) / 2.
+- Histograma: retângulos juntos; altura = frequência.
+- Classe modal: a de maior frequência.
+- Média aproximada: Σ ponto médio × ni / n.
+#D
+Exemplo: tempos (min) de 20 alunos a chegar à escola.
+- [0, 10[: 3 alunos; [10, 20[: 7; [20, 30[: 8; [30, 40]: 2.
+- Pontos médios: 5, 15, 25 e 35.
+- Média ≈ (5 × 3 + 15 × 7 + 25 × 8 + 35 × 2) / 20 = [[19,5]] min.
+- Classe modal: [20, 30[.
+- Até 20 min chegam 3 + 7 = [[10]] alunos, isto é, [[50]]%.
+#E
+@F Ponto médio de uma classe|(a + b) / 2|[a, b[: classe|dados agrupados|[10, 20[: 15|c_mate.cls
+@F Média de dados agrupados|Σ xi ni / n|xi: ponto médio;ni: frequência absoluta|valor aproximado|(5 × 3 + 15 × 7 + 25 × 8 + 35 × 2) / 20 = 19,5|c_mate.cls
+#F
+Dados: alturas (cm) de 16 alunos: [150, 160[: 4; [160, 170[: 6; [170, 180[: 5; [180, 190]: 1.
+Objetivo: média aproximada, classe modal e classe mediana.
+1. Pontos médios: 155, 165, 175 e 185.
+2. Média ≈ (155 × 4 + 165 × 6 + 175 × 5 + 185 × 1) / 16 = [[166,875]] cm.
+3. Classe modal: [160, 170[, com 6 alunos.
+4. Acumuladas: 4, 10, 15 e 16; metade de 16 é 8: classe mediana [160, 170[.
+> Média ≈ 166,9 cm; classe modal e classe mediana [160, 170[.
+Verificação: 4 + 6 + 5 + 1 = [[16]] alunos.
+#G
+Os histogramas mostram a forma dos dados: simétrica ou enviesada, com uma cauda para um dos lados.
+#H
+- Deixar espaços entre as barras do histograma.
+- Pôr o mesmo dado em duas classes (o limite de cima é da classe seguinte).
+- Usar os limites das classes em vez dos pontos médios.
+#I
+- Classes [a, b[ de igual amplitude.
+- Ponto médio (a + b) / 2.
+- Média ≈ Σ xi ni / n.
+- Classe modal: maior frequência.
+#J
+Qual é o ponto médio da classe [40, 50[?
+#R
+(40 + 50) / 2 = [[45]].
+#V
+V = [(5*3 + 15*7 + 25*8 + 35*2) / 20, 3 + 7, 10 / 20 * 100, (155*4 + 165*6 + 175*5 + 185*1) / 16, 4 + 6 + 5 + 1, (40 + 50) / 2]
+
+@licao m2d
+titulo: Média, mediana e moda
+chave: medidas de localização média mediana moda ordenar dados valor central resistente valores extremos
+calc: c_mate.uni
+ano: 10
+nivel: núcleo
+pre: m2b
+fonte: AE Mat A 10.º, Estatística
+#A
+- Calcular a média, a mediana e a moda.
+- Escolher a medida mais adequada.
+- Perceber o efeito dos valores extremos.
+#B
+A média é o "ponto de equilíbrio" dos dados; a mediana é o valor do meio.
+#C
+- Média: soma dos dados / n.
+- Mediana: valor do meio dos dados ordenados.
+- n par: média dos dois valores do meio.
+- Moda: o valor mais frequente (pode não haver).
+- Valores extremos puxam a média; a mediana resiste.
+#D
+Exemplo: 2, 4, 4, 5, 7, 8, 9, 9, 9, 25 (n = 10).
+- Média: 82 / 10 = [[8,2]].
+- Mediana: (7 + 8) / 2 = [[7,5]] (5.º e 6.º dados).
+- Moda: 9, que aparece 3 vezes.
+- Sem o 25: média 57 / 9 ≈ [[6,33]] e mediana [[7]].
+- O 25 puxa a média para cima; a mediana quase não muda.
+#E
+@F Média|soma dos dados / n|n: número de dados|dados quantitativos|(2 + 4 + 9) / 3 = 5|c_mate.uni
+@F Mediana|valor do meio dos dados ordenados|n par: média dos dois do meio|dados ordenados|2, 4, 9, 11: (4 + 9) / 2 = 6,5|c_mate.uni
+#F
+Dados: salários (€) de 7 pessoas: 800, 850, 900, 900, 950, 1 000 e 4 500.
+Objetivo: média, mediana e moda; qual representa melhor o grupo?
+1. Soma: [[9 900]] €; média: 9 900 / 7 ≈ [[1 414,29]] €.
+2. Mediana: o 4.º valor, [[900]] €.
+3. Moda: 900 €.
+4. O salário de 4 500 € puxa a média para cima.
+> A mediana (900 €) representa melhor o salário típico.
+Verificação: só 1 das 7 pessoas ganha mais do que a média.
+#G
+Nas notícias sobre salários, a mediana costuma dizer mais do que a média.
+#H
+- Calcular a mediana sem ordenar.
+- Com n par, escolher só um dos dois valores do meio.
+- Usar a média quando há valores muito extremos.
+#I
+- Média = soma / n.
+- Mediana: o valor do meio.
+- Moda: o mais frequente.
+- A mediana resiste aos extremos.
+#J
+Qual é a mediana de 3, 9, 1 e 7?
+#R
+Ordenados: 1, 3, 7, 9; mediana (3 + 7) / 2 = [[5]].
+#V
+V = [82 / 10, (7 + 8) / 2, 57 / 9, 7, 800 + 850 + 900 + 900 + 950 + 1000 + 4500, 9900 / 7, 900, (3 + 7) / 2]
+
+@licao m2e
+titulo: Quartis, percentis e diagrama de extremos e quartis
+chave: quartis q1 q3 percentis diagrama de extremos e quartis caixa bigodes amplitude interquartil outliers barreiras
+calc: c_mate.uni
+ano: 10
+nivel: núcleo
+pre: m2d
+fonte: AE Mat A 10.º, Estatística; quartis e percentis pelo método do manual
+#A
+- Calcular quartis e percentis.
+- Construir um diagrama de extremos e quartis.
+- Detetar outliers.
+#B
+Os quartis dividem os dados ordenados em quatro partes com o mesmo número de dados.
+#C
+- Q1 e Q3: medianas das metades de baixo e de cima.
+- Com n ímpar, a mediana fica de fora das metades.
+- Pk: k% de n; se não for inteiro, é o dado da posição seguinte.
+- Se k% de n for inteiro: média desse dado e do seguinte.
+- Diagrama: mínimo, Q1, mediana, Q3 e máximo.
+- Outlier: fora de [Q1 - 1,5 AIQ, Q3 + 1,5 AIQ].
+#D
+Exemplo: 2, 4, 4, 5, 7, 8, 9, 9, 9, 25.
+- Metade de baixo: 2, 4, 4, 5, 7, logo Q1 = [[4]].
+- Metade de cima: 8, 9, 9, 9, 25, logo Q3 = [[9]].
+- AIQ = 9 - 4 = [[5]].
+- Barreiras: 4 - 7,5 = [[-3,5]] e 9 + 7,5 = [[16,5]]: o 25 é outlier.
+- P90: 90% de 10 = 9 (inteiro), logo média do 9.º e do 10.º dados: (9 + 25) / 2 = [[17]].
+- No diagrama, o bigode da direita vai até 9 e o 25 marca-se à parte.
+#E
+@F Amplitude interquartil|AIQ = Q3 - Q1|Q1, Q3: quartis|dados quantitativos|Q1 = 4 e Q3 = 9: AIQ = 5|c_mate.uni
+@F Barreiras dos outliers|Q1 - 1,5 AIQ e Q3 + 1,5 AIQ|AIQ: amplitude interquartil|confirma a regra no teu manual|Q1 = 4 e Q3 = 9: -3,5 e 16,5|c_mate.uni
+#F
+Dados: 11 tempos (s): 12, 13, 13, 14, 15, 16, 16, 17, 18, 20 e 31.
+Objetivo: quartis, P20 e outliers.
+1. Mediana: o 6.º dado, [[16]].
+2. Metade de baixo (sem a mediana): 12, 13, 13, 14, 15, logo Q1 = [[13]].
+3. Metade de cima: 16, 17, 18, 20, 31, logo Q3 = [[18]].
+4. AIQ = [[5]]; barreiras 13 - 7,5 = [[5,5]] e 18 + 7,5 = [[25,5]]: 31 é outlier.
+5. P20: 20% de 11 = 2,2, logo é o 3.º dado: [[13]].
+> Q1 = 13, mediana 16, Q3 = 18; outlier: 31.
+Verificação: Q1 ≤ mediana ≤ Q3 (13 ≤ 16 ≤ 18).
+#G
+Os diagramas de extremos e quartis comparam várias turmas num só gráfico.
+#H
+- Calcular quartis sem ordenar os dados.
+- Incluir a mediana nas metades quando n é ímpar.
+- Prolongar o bigode até um outlier.
+#I
+- Q1, Q3: medianas das metades.
+- Pk: k% de n.
+- AIQ = Q3 - Q1.
+- Outliers: fora das barreiras.
+#J
+Q1 = 10 e Q3 = 16. A partir de que valor um dado é outlier por excesso?
+#R
+Acima de 16 + 1,5 × 6 = [[25]].
+#V
+V = [4, 9, 9 - 4, 4 - 1.5 * 5, 9 + 1.5 * 5, (9 + 25) / 2, 16, 13, 18, 18 - 13, 13 - 7.5, 18 + 7.5, 13, 16 + 1.5 * 6]
+
+@licao m2f
+titulo: Medidas de dispersão: amplitude, variância e desvio padrão
+chave: dispersão amplitude amplitude interquartil desvios variância desvio padrão amostral n - 1 variabilidade comparar conjuntos
+calc: c_mate.uni
+ano: 10
+nivel: núcleo
+pre: m2e
+liga: aq11
+fonte: AE Mat A 10.º, Estatística
+#A
+- Calcular a amplitude e a amplitude interquartil.
+- Calcular a variância e o desvio padrão amostrais.
+- Comparar a dispersão de dois conjuntos.
+#B
+Duas turmas podem ter a mesma média e notas muito diferentes.
+A dispersão mede essa diferença.
+#C
+- Amplitude = máximo - mínimo.
+- AIQ = Q3 - Q1 (resiste a outliers).
+- Desvio de cada dado: x - média (soma 0).
+- s² = soma dos desvios² / (n - 1).
+- Desvio padrão: s = √s², nas unidades dos dados.
+#D
+Exemplo: 4, 6, 8, 10, 12 (n = 5 e média 8).
+- Desvios: -4, -2, 0, 2, 4 (soma [[0]]).
+- Quadrados: 16, 4, 0, 4, 16 (soma [[40]]).
+- s² = 40 / 4 = [[10]] e s = √10 ≈ [[3,16]].
+- Amplitude: 12 - 4 = [[8]].
+O conjunto 7, 8, 8, 8, 9 também tem média 8, mas s ≈ [[0,71]].
+#E
+@F Variância amostral|s² = Σ (x - média)² / (n - 1)|n: número de dados|dados de uma amostra|4, 6, 8, 10, 12: s² = 10|c_mate.uni
+@F Desvio padrão amostral|s = √s²|s²: variância amostral|nas unidades dos dados|s² = 10: s ≈ 3,16|c_mate.uni
+#F
+Dados: medições repetidas da mesma massa (g). A: 10,1; 10,3; 10,2. B: 9,8; 10,6; 10,2.
+Objetivo: comparar as dispersões.
+1. A e B têm a mesma média: [[10,2]] g.
+2. A: desvios -0,1; 0,1; 0; s² = 0,02 / 2 = [[0,01]] e s = [[0,1]] g.
+3. B: desvios -0,4; 0,4; 0; s² = 0,32 / 2 = [[0,16]] e s = [[0,4]] g.
+> B tem mais dispersão (s = 0,4 g contra 0,1 g).
+Verificação: as amplitudes são [[0,2]] g (A) e [[0,8]] g (B).
+#G
+Em Física e Química, medições repetidas também têm dispersão.
+A incerteza de uma medida dá uma ideia dessa variabilidade.
+#H
+- Dividir por n em vez de n - 1 (amostras).
+- Esquecer de elevar os desvios ao quadrado.
+- Dar a variância em vez do desvio padrão.
+#I
+- Amplitude = máximo - mínimo.
+- AIQ = Q3 - Q1.
+- s² = Σ (x - média)² / (n - 1).
+- s = √s².
+#J
+Se todos os dados forem iguais, quanto vale o desvio padrão?
+#R
+Vale 0: não há dispersão.
+#V
+V = [-4 - 2 + 0 + 2 + 4, 16 + 4 + 0 + 4 + 16, 40 / 4, 10 ** 0.5, 12 - 4, (2 / 4) ** 0.5, (10.1 + 10.3 + 10.2) / 3, 0.02 / 2, 0.01 ** 0.5, 0.32 / 2, 0.16 ** 0.5, 10.3 - 10.1, 10.6 - 9.8]
+
+@licao m2g
+titulo: Transformações lineares e efeito dos outliers
+chave: transformação linear y = ax + b mudança de unidades celsius fahrenheit média desvio padrão variância efeito dos outliers medidas resistentes
+calc: c_mate.uni
+ano: 10
+nivel: núcleo
+pre: m2f
+fonte: AE Mat A 10.º, Estatística
+#A
+- Prever o efeito de y = a x + b nas medidas.
+- Mudar de unidades sem refazer as contas.
+- Avaliar o efeito dos outliers.
+#B
+Somar uma constante desloca os dados; multiplicar estica-os.
+#C
+- Média, mediana e quartis também passam por y = a x + b.
+- Amplitude, AIQ e s multiplicam por |a|; o b não conta.
+- A variância multiplica por a².
+- Outliers mudam muito a média, s e a amplitude.
+- Mediana e AIQ são resistentes.
+#D
+Exemplo: temperaturas com média 20 °C e s = 3 °C; em °F, F = 1,8 C + 32.
+- Média: 1,8 × 20 + 32 = [[68]] °F.
+- s = 1,8 × 3 = [[5,4]] °F (o 32 não conta).
+- Variância: 1,8² × 9 = [[29,16]] °F².
+Se se somar 1 valor a todas as notas, a média sobe 1 e o desvio padrão fica igual.
+#E
+@F Média de y = a x + b|média(y) = a × média(x) + b|a, b: constantes|transformação linear|média 20 °C: 68 °F|c_mate.uni
+@F Desvio padrão de y = a x + b|s(y) = ∣a∣ × s(x)|a: fator da transformação|o b não conta|s = 3 °C: 5,4 °F|c_mate.uni
+#F
+Dados: alturas com média 1,65 m, mediana 1,64 m e s = 0,08 m.
+Objetivo: as mesmas medidas em centímetros e depois de somar 2 cm.
+1. Em cm (y = 100 x): média [[165]] cm, mediana [[164]] cm e s = [[8]] cm.
+2. Somando 2 cm (y = 100 x + 2): média [[167]] cm e mediana [[166]] cm.
+3. O desvio padrão continua [[8]] cm: somar não muda a dispersão.
+> Média 167 cm, mediana 166 cm e s = 8 cm.
+Verificação: a variância em cm² é 8² = [[64]].
+#G
+Mudar de unidades, como de °C para K ou de m para cm, é uma transformação linear dos dados.
+#H
+- Somar o b ao desvio padrão.
+- Multiplicar a variância por a em vez de a².
+- Achar que um outlier muda muito a mediana.
+#I
+- média(y) = a × média(x) + b.
+- s(y) = |a| × s(x).
+- Variância(y) = a² × variância(x).
+- Mediana e AIQ resistem aos outliers.
+#J
+As notas têm s = 2. Se forem todas multiplicadas por 5, qual é o novo desvio padrão?
+#R
+5 × 2 = [[10]].
+#V
+V = [1.8 * 20 + 32, 1.8 * 3, 1.8 ** 2 * 9, 165, 164, 8, 167, 166, 8, 8 ** 2, 5 * 2]
+
+@licao m2h
+titulo: Dados bivariados: correlação e reta dos mínimos quadrados
+chave: dados bivariados diagrama de dispersão nuvem de pontos correlação coeficiente de correlação linear reta dos mínimos quadrados regressão causalidade gráfico de linhas interpolar extrapolar
+calc: c_comd.reg
+ano: 10
+nivel: núcleo
+pre: m2f
+liga: af11
+fonte: AE Mat A 10.º, Estatística
+#A
+- Construir e ler um diagrama de dispersão.
+- Interpretar o coeficiente de correlação r.
+- Usar a reta dos mínimos quadrados para prever.
+#B
+Com duas variáveis, cada dado é um ponto (x, y).
+A nuvem de pontos mostra se há relação.
+#C
+- r está entre -1 e 1; perto de 1: correlação positiva forte.
+- Perto de -1: negativa forte; perto de 0: fraca.
+- Reta dos mínimos quadrados: passa no ponto das médias.
+- Prever dentro dos dados é interpolar; fora, extrapolar.
+- Correlação não é causalidade.
+#D
+Exemplo: horas de estudo x e nota y de 5 alunos: (1, 8), (2, 10), (3, 11), (4, 14) e (5, 15).
+- Médias: x = [[3]] e y = [[11,6]].
+- Reta (calculadora): y = [[1,8]]x + [[6,2]].
+- Para x = 3,5 h: y = 1,8 × 3,5 + 6,2 = [[12,5]].
+- r ≈ [[0,99]]: correlação positiva muito forte.
+Um gráfico de linhas liga pontos em que x é o tempo, por exemplo os meses do ano.
+#E
+@F Reta dos mínimos quadrados|y = a x + b|a: declive;b: ordenada na origem|passa no ponto (média dos x; média dos y)|(1, 8), ..., (5, 15): y = 1,8x + 6,2|c_comd.reg
+@F Coeficiente de correlação linear|-1 ≤ r ≤ 1|r: força e sentido da relação linear|só mede relação linear|r ≈ 0,99: positiva forte|c_comd.reg
+#F
+Dados: temperatura média (°C) e gelados vendidos (kg) em 4 semanas: (15, 20), (20, 30), (25, 42) e (30, 48).
+Objetivo: reta dos mínimos quadrados e previsão para 22 °C.
+1. Médias: x = [[22,5]] °C e y = [[35]] kg.
+2. Reta (calculadora): y = [[1,92]]x - [[8,2]].
+3. Para 22 °C: y = 1,92 × 22 - 8,2 = [[34,04]] kg (interpolação).
+4. r ≈ [[0,99]]: correlação positiva forte.
+> Cerca de 34 kg de gelados a 22 °C.
+Verificação: a reta passa no ponto das médias: 1,92 × 22,5 - 8,2 = [[35]].
+#G
+A venda de gelados e os afogamentos estão correlacionados.
+Mas um não causa o outro: ambos aumentam com o calor.
+#H
+- Concluir causalidade a partir de r.
+- Extrapolar muito longe dos dados.
+- Achar que r = 0 quer dizer que não há relação nenhuma (pode ser não linear).
+#I
+- Nuvem de pontos: relação entre x e y.
+- r entre -1 e 1.
+- y = a x + b para prever (interpolar).
+- Correlação não é causalidade.
+#J
+r = -0,95. Como é a correlação?
+#R
+Negativa e forte: quando x aumenta, y tende a diminuir.
+#V
+def reg(xs, ys):
+    n = len(xs)
+    mx = sum(xs) / n
+    my = sum(ys) / n
+    sxx = sum([(x - mx) ** 2 for x in xs])
+    syy = sum([(y - my) ** 2 for y in ys])
+    sxy = sum([(xs[i] - mx) * (ys[i] - my) for i in range(n)])
+    return mx, my, sxy / sxx, my - sxy / sxx * mx, sxy / (sxx * syy) ** 0.5
+a = reg([1, 2, 3, 4, 5], [8, 10, 11, 14, 15])
+b = reg([15, 20, 25, 30], [20, 30, 42, 48])
+V = [a[0], a[1], a[2], a[3], a[2] * 3.5 + a[3], a[4], b[0], b[1], b[2], -b[3], b[2] * 22 + b[3], b[4], b[2] * 22.5 + b[3]]
+
+@licao m2i
+titulo: Projeto de Estatística
+chave: projeto de estatística trabalho pergunta questionário recolha de dados relatório conclusões plano limitações enviesamento
+calc: c_mate.uni
+ano: 10
+nivel: núcleo
+pre: m2a
+fonte: AE Mat A 10.º, Estatística (trabalho de projeto)
+#A
+- Planear um estudo estatístico.
+- Escolher gráficos e medidas adequados.
+- Escrever conclusões honestas.
+#B
+Um projeto de Estatística começa com uma pergunta a que os dados podem responder.
+#C
+- Pergunta clara e população definida.
+- Variáveis e instrumento (questionário, medições).
+- Amostra: tamanho e forma de escolha.
+- Tabelas e gráficos adequados a cada variável.
+- Análise: localização, dispersão, outliers, correlação.
+- Conclusões com limitações e enviesamentos.
+#D
+Plano para "Os alunos que dormem mais têm melhores notas?":
+- População: os alunos do 10.º ano da escola.
+- Amostra aleatória de 40 dos 200 alunos, isto é, [[20]]%.
+- Variáveis: horas de sono e média das notas (contínuas).
+- Gráficos: histograma de cada variável e diagrama de dispersão.
+- Medidas: média, mediana, desvio padrão e r.
+- Cuidado: uma correlação não prova que dormir mais cause melhores notas.
+#E
+@F Tamanho relativo da amostra|n / N × 100|n: amostra;N: população|amostra aleatória|40 de 200: 20%|
+@F Média|soma / n|n: número de dados|variáveis quantitativas|soma de 300 h com n = 40: 7,5 h|c_mate.uni
+#F
+Dados: num inquérito a 40 alunos, as horas de sono somam 300 h e a mediana é 7 h.
+Objetivo: resumir e comentar.
+1. Média: 300 / 40 = [[7,5]] h.
+2. A média é maior do que a mediana: alguns alunos dormem muito mais (cauda à direita).
+3. Gráfico adequado: histograma com classes de 1 h.
+> Média 7,5 h e mediana 7 h; distribuição enviesada à direita.
+Verificação: 40 × 7,5 = [[300]] h.
+#G
+Um bom relatório diz como os dados foram recolhidos, para que outros possam repetir o estudo.
+#H
+- Fazer perguntas que induzem a resposta.
+- Generalizar a partir de uma amostra por conveniência.
+- Escolher um gráfico que não serve o tipo de variável.
+#I
+- Pergunta, dados, análise e conclusões.
+- Gráfico adequado à variável.
+- Dizer as limitações.
+#J
+Que gráfico se usa para relacionar duas variáveis quantitativas?
+#R
+Um diagrama de dispersão.
+#V
+V = [40 / 200 * 100, 300 / 40, 40 * 7.5]
+
+@exemplo m2e1
+nivel: 1
+titulo: Média, mediana e moda de notas
+licao: m2d
+calc: c_mate.uni
+#T
+Enunciado: notas de 8 alunos: 12, 15, 9, 15, 17, 11, 15 e 14. Calcula a média, a mediana e a moda.
+Resolução:
+1. Ordenados: 9, 11, 12, 14, 15, 15, 15, 17.
+2. Média: 108 / 8 = [[13,5]].
+3. Mediana: (14 + 15) / 2 = [[14,5]].
+4. Moda: 15.
+Resultado: média 13,5; mediana 14,5; moda 15.
+Interpretação: metade das notas é maior do que 14,5.
+Erros a evitar: calcular a mediana sem ordenar.
+#V
+V = [(12 + 15 + 9 + 15 + 17 + 11 + 15 + 14) / 8, (14 + 15) / 2]
+
+@exemplo m2e2
+nivel: 2
+titulo: Quartis e outliers com n ímpar
+licao: m2e
+calc: c_mate.uni
+#T
+Enunciado: 9 alunos demoraram (min) 5, 7, 8, 8, 10, 11, 12, 14 e 30 a resolver um problema. Calcula os quartis e verifica se há outliers.
+Resolução:
+1. Mediana: o 5.º dado, [[10]].
+2. Q1: mediana de 5, 7, 8, 8, ou seja, (7 + 8) / 2 = [[7,5]].
+3. Q3: mediana de 11, 12, 14, 30, ou seja, (12 + 14) / 2 = [[13]].
+4. AIQ = [[5,5]]; barreiras 7,5 - 8,25 = [[-0,75]] e 13 + 8,25 = [[21,25]].
+Resultado: Q1 = 7,5, mediana 10, Q3 = 13; o 30 é outlier.
+Interpretação: um aluno demorou muito mais do que os outros.
+Erros a evitar: incluir a mediana nas metades.
+#V
+V = [10, (7 + 8) / 2, (12 + 14) / 2, 13 - 7.5, 7.5 - 1.5 * 5.5, 13 + 1.5 * 5.5]
+
+@exemplo m2e3
+nivel: 3
+titulo: Reta de regressão e previsão
+licao: m2h
+calc: c_comd.reg
+#T
+Enunciado: idade (anos) e altura (cm) de 5 crianças: (2, 86), (4, 102), (6, 115), (8, 128) e (10, 140). Determina a reta dos mínimos quadrados e estima a altura aos 7 anos.
+Resolução:
+1. Médias: x = [[6]] e y = [[114,2]].
+2. Reta (calculadora): y = [[6,7]]x + [[74]].
+3. Aos 7 anos: y = 6,7 × 7 + 74 = [[120,9]] cm.
+4. r ≈ [[0,999]]: correlação positiva muito forte.
+Resultado: cerca de 121 cm aos 7 anos.
+Interpretação: é uma interpolação; aos 30 anos a reta daria [[275]] cm, um absurdo.
+Erros a evitar: usar a reta muito fora dos dados.
+#V
+xs = [2, 4, 6, 8, 10]
+ys = [86, 102, 115, 128, 140]
+mx = sum(xs) / 5
+my = sum(ys) / 5
+sxy = sum([(xs[i] - mx) * (ys[i] - my) for i in range(5)])
+sxx = sum([(x - mx) ** 2 for x in xs])
+syy = sum([(y - my) ** 2 for y in ys])
+a = sxy / sxx
+b = my - a * mx
+V = [mx, my, a, b, a * 7 + b, sxy / (sxx * syy) ** 0.5, a * 30 + b]
+
+@exercicio m2x1
+tipo: n
+licao: m2d
+#T
+Qual é a média de 4, 7, 7 e 10?
+#S
+7
+#P
+Soma os dados e divide pelo número de dados.
+#D
+(4 + 7 + 7 + 10) / 4 = [[7]].
+#V
+S = (4 + 7 + 7 + 10) / 4
+V = [S]
+
+@exercicio m2x2
+tipo: n
+licao: m2d
+#T
+Qual é a mediana de 5, 1, 9, 3, 7 e 11?
+#S
+6
+#P
+Ordena; com n par, faz a média dos dois do meio.
+#D
+Ordenados: 1, 3, 5, 7, 9, 11; mediana (5 + 7) / 2 = [[6]].
+#V
+S = (5 + 7) / 2
+V = [S]
+
+@exercicio m2x3
+tipo: m
+licao: m2a
+#T
+Qual destas variáveis é quantitativa contínua?
+#O
+o tempo de uma corrida
+o número de irmãos
+a cor dos olhos
+o clube preferido
+#S
+1
+#P
+Contínua: pode tomar qualquer valor num intervalo.
+#D
+O tempo pode ser 12,3 s ou 12,31 s; o número de irmãos é discreto; a cor e o clube são qualitativos.
+#V
+S = 1
+
+@exercicio m2x4
+tipo: n
+licao: m2e
+#T
+Dados: 2, 3, 5, 6, 8, 9, 12 e 15. Qual é o 1.º quartil?
+#S
+4
+#P
+Q1 é a mediana da metade de baixo.
+#D
+Metade de baixo: 2, 3, 5, 6; Q1 = (3 + 5) / 2 = [[4]].
+#V
+S = (3 + 5) / 2
+V = [S]
+
+@exercicio m2x5
+tipo: n
+licao: m2e
+#T
+Com Q1 = 20 e Q3 = 30, acima de que valor um dado é outlier?
+#S
+45
+#P
+Barreira de cima: Q3 + 1,5 AIQ.
+#D
+AIQ = [[10]]; 30 + 1,5 × 10 = [[45]].
+#V
+S = 30 + 1.5 * 10
+V = [30 - 20, S]
+
+@exercicio m2x6
+tipo: n
+licao: m2f
+#T
+Qual é a amplitude de 3, 9, 4, 15 e 7?
+#S
+12
+#P
+Amplitude = máximo - mínimo.
+#D
+15 - 3 = [[12]].
+#V
+S = 15 - 3
+V = [S]
+
+@exercicio m2x7
+tipo: n
+licao: m2f
+#T
+Qual é a variância amostral de 2, 4 e 6?
+#S
+4
+#P
+s² = soma dos desvios² / (n - 1).
+#D
+Média 4; desvios -2, 0, 2; s² = (4 + 0 + 4) / 2 = [[4]].
+#V
+S = (4 + 0 + 4) / 2
+V = [S]
+
+@exercicio m2x8
+tipo: v
+licao: m2g
+#T
+Se somarmos 5 a todos os dados, o desvio padrão aumenta 5.
+#S
+F
+#P
+Somar uma constante desloca os dados sem os afastar uns dos outros.
+#D
+Falso: o desvio padrão fica igual; só a média, a mediana e os quartis aumentam 5.
+#V
+S = 'F'
+
+@exercicio m2x9
+tipo: n
+licao: m2g
+#T
+A média das temperaturas é 10 °C. Qual é a média em °F, com F = 1,8 C + 32?
+#S
+50
+#P
+média(y) = a × média(x) + b.
+#D
+1,8 × 10 + 32 = [[50]] °F.
+#V
+S = 1.8 * 10 + 32
+V = [S]
+
+@exercicio m2x10
+tipo: m
+licao: m2h
+#T
+Um coeficiente de correlação r = 0,05 indica:
+#O
+correlação linear muito fraca
+correlação positiva forte
+correlação negativa forte
+que x causa y
+#S
+1
+#P
+Valores perto de 0 indicam pouca relação linear.
+#D
+r = 0,05 está perto de 0: quase não há correlação linear.
+#V
+S = 1
+
+@exercicio m2x11
+tipo: v
+licao: m2h
+#T
+Uma correlação forte entre x e y prova que x causa y.
+#S
+F
+#P
+Pensa nos gelados e nos afogamentos.
+#D
+Falso: correlação não é causalidade; pode haver uma terceira variável (o calor).
+#V
+S = 'F'
+
+@exercicio m2x12
+tipo: n
+licao: m2c
+#T
+Classes [0, 10[, [10, 20[ e [20, 30] com frequências 2, 5 e 3. Qual é a média aproximada?
+#S
+16
+#P
+Usa os pontos médios 5, 15 e 25.
+#D
+(5 × 2 + 15 × 5 + 25 × 3) / 10 = [[16]].
+#V
+S = (5 * 2 + 15 * 5 + 25 * 3) / 10
+V = [S]
+
+@exercicio m2x13
+tipo: n
+licao: m2b
+#T
+Em 50 respostas, 12 foram "sim". Qual é a frequência relativa de "sim", em percentagem?
+#S
+24
+#P
+fi = ni / n.
+#D
+12 / 50 = [[0,24]] = [[24]]%.
+#V
+S = 12 / 50 * 100
+V = [12 / 50, S]

@@ -446,7 +446,7 @@ def form(t, fs, foc=0, ft=''):
         for i in range(len(fs)):
             g = fs[i]
             u = g[1][g[3]] if g[1] and g[4] != 'c' else ''
-            lab = g[0]
+            lab = clip(g[0], cols() - 1)
             if u:
                 us = (' \u25c2' + u + '\u25b8') if len(g[1]) > 1 else ' ' + u
                 lab = clip(lab, cols() - len(us) - 1) + us

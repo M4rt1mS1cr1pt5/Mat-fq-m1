@@ -1,7 +1,7 @@
 # m1_idxm.py - M1TR4M: indice da pesquisa (Mat, parte 1 de 1) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 252\n\
+@N 298\n\
 L|Elei\xe7\xf5es: maioria simples e maioria absoluta|eleicao votacao tabela preferencias relativa votantes empate|m1a\n\
 L|M\xe9todo de Borda|pontos ordenacao preferencias pontuacao ranking eleicao concurso|m1b\n\
 L|Segunda volta e elimina\xe7\xe3o sucessiva|dois mais votados transferencia votos analise sistemas|m1c\n\
@@ -50,6 +50,53 @@ X|Com a tabela de IRS de 2026||m1:9\n\
 X|O que \xe9 a taxa marginal de||m1:10\n\
 X|Qual \xe9 o juro, em euros, de 2|energia mecanica|m1:11\n\
 X|Quanto vale, em euros, um|energia mecanica|m1:12\n\
+L|O problema estat\xedstico: popula\xe7\xe3o, amostra e vari\xe1veis|estatistico variabilidade populacao\
+ censo unidade estatistica variavel|m2a\n\
+L|Tabelas de frequ\xeancias, gr\xe1ficos e caule-e-folhas|frequencia absoluta relativa acumulada tabela\
+ frequencias grafico|m2b\n\
+L|Dados agrupados em classes e histograma|amplitude classe ponto medio modal mediana continuos energia mecanica|m2c\n\
+L|M\xe9dia, mediana e moda|medidas localizacao media ordenar dados valor central|m2d\n\
+L|Quartis, percentis e diagrama de extremos e quartis|q1 q3 caixa bigodes amplitude interquartil outliers aiq|m2e\n\
+L|Medidas de dispers\xe3o: amplitude, vari\xe2ncia e desvio padr\xe3o|dispersao amplitude interquartil\
+ desvios amostral n - aiq dp|m2f\n\
+L|Transforma\xe7\xf5es lineares e efeito dos outliers|transformacao linear y = ax + b|m2g\n\
+L|Dados bivariados: correla\xe7\xe3o e reta dos m\xednimos quadrados|bivariados diagrama dispersao nuvem\
+ pontos coeficiente linear pmq reta de regressao|m2h\n\
+L|Projeto de Estat\xedstica|trabalho pergunta questionario recolha dados relatorio conclusoes|m2i\n\
+F|Amostra estratificada||m2:0\n\
+F|Percentagem da amostra||m2:1\n\
+F|Frequ\xeancia relativa||m2:2\n\
+F|Frequ\xeancia acumulada||m2:3\n\
+F|Ponto m\xe9dio de uma classe||m2:4\n\
+F|M\xe9dia de dados agrupados||m2:5\n\
+F|M\xe9dia||m2:6\n\
+F|Mediana||m2:7\n\
+F|Amplitude interquartil|aiq|m2:8\n\
+F|Barreiras dos outliers||m2:9\n\
+F|Vari\xe2ncia amostral||m2:10\n\
+F|Desvio padr\xe3o amostral|dp|m2:11\n\
+F|M\xe9dia de y = a x + b||m2:12\n\
+F|Desvio padr\xe3o de y = a x + b|dp|m2:13\n\
+F|Reta dos m\xednimos quadrados|pmq reta de regressao|m2:14\n\
+F|Coeficiente de correla\xe7\xe3o linear||m2:15\n\
+F|Tamanho relativo da amostra||m2:16\n\
+F|M\xe9dia||m2:17\n\
+E|M\xe9dia, mediana e moda de notas||m2:0\n\
+E|Quartis e outliers com n \xedmpar||m2:1\n\
+E|Reta de regress\xe3o e previs\xe3o|minimos quadrados|m2:2\n\
+X|Qual \xe9 a m\xe9dia de 4, 7, 7 e||m2:0\n\
+X|Qual \xe9 a mediana de 5, 1, 9||m2:1\n\
+X|Qual destas vari\xe1veis \xe9||m2:2\n\
+X|Dados: 2, 3, 5, 6, 8, 9, 12 e||m2:3\n\
+X|Com Q1 = 20 e Q3 = 30, acima||m2:4\n\
+X|Qual \xe9 a amplitude de 3, 9||m2:5\n\
+X|Qual \xe9 a vari\xe2ncia amostral||m2:6\n\
+X|Se somarmos 5 a todos os||m2:7\n\
+X|A m\xe9dia das temperaturas \xe9 10||m2:8\n\
+X|Um coeficiente de correla\xe7\xe3o||m2:9\n\
+X|Uma correla\xe7\xe3o forte entre x||m2:10\n\
+X|Classes [0, 10[, [10, 20[ e||m2:11\n\
+X|Em 50 respostas, 12 foram|energia mecanica|m2:12\n\
 L|Revis\xf5es de tri\xe2ngulos; mediatriz e bissetriz|classificacao triangulos congruencia semelhanca\
  criterio aa pitagoras|m3a\n\
 L|Incentro e circunfer\xeancia inscrita|bissetrizes tangente raio r = 2a/p triangulo tg|m3b\n\
@@ -243,6 +290,9 @@ C|Sal\xe1rio: bruto e l\xedquido|salario mensal anual valor hora horas|c_matd.sa
 C|IRS por escal\xf5es|imposto taxa marginal media progressividade rendimento eficiencia|c_matd.irs\n\
 C|Juros simples e compostos|juro composto capital taxa anual capitalizacao|c_matd.jur\n\
 C|Presta\xe7\xf5es e valor atual|prestacao constante emprestimo credito amortizacao juros juro|c_matd.prest\n\
+C|Estat\xedstica de uma vari\xe1vel|media moda mediana quartis percentil amplitude|c_mate.uni\n\
+C|Dados em classes e histograma|tabela frequencias absoluta relativa acumulada ponto energia mecanica|c_mate.cls\n\
+C|Caule-e-folhas|caule folhas diagrama ordenar dados comparar|c_mate.caule\n\
 C|Fun\xe7\xe3o escrita por ti (tabela, zeros, gr\xe1fico)|expressao imagem tabela valores zeros sinal|c_matf.fx\n\
 C|Fun\xe7\xe3o afim|declive ordenada origem zero reta dois|c_matf.afim\n\
 C|Fun\xe7\xe3o definida por ramos|ramo fronteira continuidade salto zeros imagem|c_matf.ramos\n\

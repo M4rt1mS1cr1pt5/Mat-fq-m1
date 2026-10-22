@@ -1,9 +1,9 @@
 # m1_cat.py - M1TR4M: catalogo gerado pelo build (nao editar).
 # TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes
 # CALC: id|nome|disciplina|tema (as palavras-chave estao no indice da pesquisa)
-NLIC = 108
-NEX = 207
-NCART = 311
+NLIC = 117
+NEX = 220
+NCART = 338
 TEMAS = (
     "q1|F|q|Massa e tamanho dos \xe1tomos|p_q1|x_q1|5|0|10|0|18|0|c_fqat.qm c_fqat.mm c_fqat.ar c_fqat.fr c_comu.sci c_comu.sf c_comu.uni|q1a q1b q1c q1d q1e",
     "q2|F|q|Energia dos eletr\xf5es nos \xe1tomos|p_q2|x_q2|5|5|10|10|14|18|c_fqel.fot c_fqel.hid c_fqel.conf c_comu.sci c_comu.uni|q2a q2b q2c q2d q2e",
@@ -20,12 +20,13 @@ TEMAS = (
     "r8|F|r|Revis\xf5es do 8.\xba ano|p_r8|x_r8|5|59|8|120|12|162|c_fqlg.ace c_fqat.mm c_fqel.fot|r8a r8b r8c r8d r8e",
     "r9|F|r|Revis\xf5es do 9.\xba ano|p_r9|x_r9|4|64|6|128|12|174|c_fqci.ohm c_fqci.pot c_fqel.conf c_comu.uni|r9a r9b r9c r9d",
     "m1|M|t|Modelos matem\xe1ticos para a cidadania|p_m1|x_m1|10|68|13|134|30|186|c_matc.vot c_matc.mand c_matd.sal c_matd.irs c_matd.jur c_matd.prest|m1a m1b m1c m1d m1e m1f m1g m1h m1i m1j",
-    "m3|M|t|Geometria sint\xe9tica no plano|p_m3|x_m3|6|78|11|147|19|216|c_matt.pn c_matt.insc c_matt.euler c_matt.pit c_matt.sem|m3a m3b m3c m3d m3e m3f",
-    "m4|M|t|Fun\xe7\xf5es: generalidades, fun\xe7\xe3o afim e condi\xe7\xf5es|p_m4|x_m4|4|84|10|158|13|235|c_matf.fx c_matf.afim c_comd.reg|m4a m4b m4c m4d",
-    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|88|10|168|15|248|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
-    "m6|M|t|Fun\xe7\xf5es definidas por ramos e fun\xe7\xe3o m\xf3dulo|p_m6|x_m6|3|92|8|178|9|263|c_matf.ramos c_matf.mod c_matf.fx|m6a m6b m6c",
-    "m7|M|t|Geometria anal\xedtica no plano e no espa\xe7o|p_m7|x_m7|6|95|10|186|18|272|c_matg.dist c_matg.reta c_matg.medz c_matg.circ c_matg.cond|m7a m7b m7c m7d m7e m7f",
-    "m8|M|t|Vetores no plano e no espa\xe7o|p_m8|x_m8|7|101|11|196|21|290|c_matv.vet c_matv.retav c_matv.bar|m8a m8b m8c m8d m8e m8f m8g",
+    "m2|M|t|Estat\xedstica|p_m2|x_m2|9|78|13|147|27|216|c_mate.uni c_mate.cls c_mate.caule c_comd.reg|m2a m2b m2c m2d m2e m2f m2g m2h m2i",
+    "m3|M|t|Geometria sint\xe9tica no plano|p_m3|x_m3|6|87|11|160|19|243|c_matt.pn c_matt.insc c_matt.euler c_matt.pit c_matt.sem|m3a m3b m3c m3d m3e m3f",
+    "m4|M|t|Fun\xe7\xf5es: generalidades, fun\xe7\xe3o afim e condi\xe7\xf5es|p_m4|x_m4|4|93|10|171|13|262|c_matf.fx c_matf.afim c_comd.reg|m4a m4b m4c m4d",
+    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|97|10|181|15|275|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
+    "m6|M|t|Fun\xe7\xf5es definidas por ramos e fun\xe7\xe3o m\xf3dulo|p_m6|x_m6|3|101|8|191|9|290|c_matf.ramos c_matf.mod c_matf.fx|m6a m6b m6c",
+    "m7|M|t|Geometria anal\xedtica no plano e no espa\xe7o|p_m7|x_m7|6|104|10|199|18|299|c_matg.dist c_matg.reta c_matg.medz c_matg.circ c_matg.cond|m7a m7b m7c m7d m7e m7f",
+    "m8|M|t|Vetores no plano e no espa\xe7o|p_m8|x_m8|7|110|11|209|21|317|c_matv.vet c_matv.retav c_matv.bar|m8a m8b m8c m8d m8e m8f m8g",
 )
 CALC = "c_alf1.plano|AL 1.1 Plano inclinado: Ec e dist\xe2ncia|F|af\n\
 c_alf1.ress|AL 1.2 Queda e ressalto de uma bola|F|af\n\
@@ -84,6 +85,9 @@ c_matd.sal|Sal\xe1rio: bruto e l\xedquido|M|m1\n\
 c_matd.irs|IRS por escal\xf5es|M|m1\n\
 c_matd.jur|Juros simples e compostos|M|m1\n\
 c_matd.prest|Presta\xe7\xf5es e valor atual|M|m1\n\
+c_mate.uni|Estat\xedstica de uma vari\xe1vel|M|m2\n\
+c_mate.cls|Dados em classes e histograma|M|m2\n\
+c_mate.caule|Caule-e-folhas|M|m2\n\
 c_matf.fx|Fun\xe7\xe3o escrita por ti (tabela, zeros, gr\xe1fico)|M|m4\n\
 c_matf.afim|Fun\xe7\xe3o afim|M|m4\n\
 c_matf.ramos|Fun\xe7\xe3o definida por ramos|M|m6\n\

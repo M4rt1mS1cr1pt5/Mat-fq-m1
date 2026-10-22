@@ -4,7 +4,8 @@ D = "@V 1\n\
 @T Atividades laboratoriais de Qu\xedmica\n\
 @L aq11|AL 1.1 Volume e n\xfamero de mol\xe9culas de uma gota de \xe1gua|al 1.1 gota de agua volume numero de\
  moleculas massa media ensaios incerteza absoluta relativa bureta balanca\
- precisao|c_alq1.gota|10|n\xfacleo|q1d:Quantidade de mat\xe9ria e massa molar||Programa e AE FQ A 10.\xba, AL 1.1\n\
+ precisao|c_alq1.gota|10|n\xfacleo|q1d:Quantidade de mat\xe9ria e massa molar|m2f:Medidas de dispers\xe3o:\
+ amplitude, vari\xe2ncia e desvio padr\xe3o|Programa e AE FQ A 10.\xba, AL 1.1\n\
 @A\n\
 - Medir a massa de um n\xfamero conhecido de gotas.\n\
 - Calcular a massa e o volume m\xe9dios de uma gota, com incerteza.\n\

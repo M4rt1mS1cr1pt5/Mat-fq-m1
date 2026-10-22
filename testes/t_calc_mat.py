@@ -6,6 +6,7 @@ import c_matg
 import c_matv
 import c_matc
 import c_matd
+import c_mate
 from base import calc, erro, tem, perto
 
 
@@ -648,3 +649,84 @@ def t_prest_invalido():
     assert 'prestação' in erro(calc, c_matd, 'prest', [1, '1000', '', '6', '5', '12'])
     assert 'prazo' in erro(calc, c_matd, 'prest', [0, '1000', '', '6', '0', '12'])
     assert 'por ano' in erro(calc, c_matd, 'prest', [0, '1000', '', '6', '5', '0'])
+
+
+def t_uni_resumo():
+    r = calc(c_mate, 'uni', ['2 4 4 5 7 8 9 9 9 25', '', '25', '', ''])
+    tem(r[0], 'n = 10: 2 4 4 5 7 8 9 9 9 25', 'Média = 8,2', 'Moda: 9 (frequência 3)',
+        'Mediana = 7,5', 'Q1 = 4 · Q3 = 9 (medianas das metades)', 'amplitude 23',
+        'AIQ = Q3 - Q1 = 5', 'Variância ≈ 41,0667 · desvio padrão s ≈ 6,4083',
+        'Q1 - 1,5 AIQ = -3,5 e Q3 + 1,5 AIQ = 16,5', 'Outliers: 25',
+        'média ≈ 6,3333, mediana = 7', 'P25: 25% de 10 = 2,5 (posição seguinte); P25 = 4')
+    perto(r[2], 8.2)
+    assert len(r) == 5
+
+
+def t_uni_impar_e_transformacao():
+    r = calc(c_mate, 'uni', ['1 2 3 4 5 6 7 8 9', '', '25', '2', '3'])
+    tem(r[0], 'Q1 = 2,5 · Q3 = 7,5 (medianas das metades, sem a mediana)',
+        'Moda: não há', 'P25 = 3', 'P25 ≠ Q1', 'Com y = 2x + 3:', 'média = 13',
+        's ≈ 5,4772; AIQ = 10', 'Sem outliers')
+
+
+def t_uni_frequencias_e_limites():
+    r = calc(c_mate, 'uni', ['10 20 30', '2 5 3', '90', '', ''])
+    tem(r[0], 'n = 10: 10 10 20 20 20 20 20 30 30 30', 'Moda: 20 (frequência 5)',
+        'Q1 = 20 · Q3 = 30', 'P90: 90% de 10 = 9 (inteiro: média de 2 dados); P90 = 30')
+    r = calc(c_mate, 'uni', ['7 7', '', '', '', ''])
+    tem(r[0], 'Moda: 7', 'AIQ = Q3 - Q1 = 0', 'desvio padrão s = 0', 'Sem outliers')
+
+
+def t_uni_invalido():
+    assert 'pelo menos 2' in erro(calc, c_mate, 'uni', ['5', '', '', '', ''])
+    assert 'frequências' in erro(calc, c_mate, 'uni', ['1 2', '1', '', '', ''])
+    assert 'inteiros' in erro(calc, c_mate, 'uni', ['1 2', '1 0,5', '', '', ''])
+    assert 'entre 0 e 100' in erro(calc, c_mate, 'uni', ['1 2 3', '', '100', '', ''])
+
+
+def t_cls_tabela():
+    r = calc(c_mate, 'cls', ['0 10 20 30 40', '3 7 8 2', ''])
+    tem(r[0], '[0, 10[: 5; 3; 15%; 3; 15%', '[30, 40]: 35; 2; 10%; 20; 100%', 'n = 20',
+        'Média (com os pontos médios) = 19,5', 'Desvio padrão (aproximado) ≈ 8,8704',
+        'Classe modal: [20, 30[', 'a mediana fica no limite 20')
+    assert r[4][0] == 'Histograma'
+    r = calc(c_mate, 'cls', ['0 10 20 30', '4 5 2', ''])
+    tem(r[0], 'Classe mediana: [10, 20[')
+
+
+def t_cls_dados_brutos_e_amplitudes():
+    r = calc(c_mate, 'cls', ['0 10 20 40', '', '1 5 12 15 18 22 35 39 40'])
+    tem(r[0], '[0, 10[: 5; 2; 22,2%', '[20, 40]: 30; 4; 44,4%; 9; 100%',
+        'Classe modal: [10, 20[', 'amplitudes diferentes')
+    r = calc(c_mate, 'cls', ['0 10 20', '', '10 10 0'])
+    tem(r[0], '[0, 10[: 5; 1;', '[10, 20]: 15; 2;')
+
+
+def t_cls_invalido():
+    assert 'crescente' in erro(calc, c_mate, 'cls', ['0 20 10', '1 1', ''])
+    assert 'classes e' in erro(calc, c_mate, 'cls', ['0 10 20', '1 2 3', ''])
+    assert 'fora das classes' in erro(calc, c_mate, 'cls', ['0 10 20', '', '5 25'])
+    assert 'não os dois' in erro(calc, c_mate, 'cls', ['0 10', '1', '5'])
+    assert 'Não há dados' in erro(calc, c_mate, 'cls', ['0 10', '0', ''])
+
+
+def t_caule():
+    r = calc(c_mate, 'caule', ['12 15 21 23 23 30 38 41', '', 0])
+    tem(r[0], '1 | 2 5', '2 | 1 3 3', '4 | 1', 'Legenda: 1 | 2 = 12',
+        'A: n = 8, mínimo 12, mediana 23, máximo 41')
+    r = calc(c_mate, 'caule', ['2,3 2,8 3,1 4,0 4,5', '', 1])
+    tem(r[0], '2 | 3 8', '4 | 0 5', 'Legenda: 2 | 3 = 2,3')
+    r = calc(c_mate, 'caule', ['5 31', '', 0])
+    tem(r[0], '0 | 5', '1 | ', '3 | 1')
+
+
+def t_caule_duplo():
+    r = calc(c_mate, 'caule', ['12 15 21 23 23 30 38 41', '9 14 25 27 33 33 47', 0])
+    tem(r[0], '  5 2 | 1 | 4', '3 3 1 | 2 | 5 7', 'B: n = 7, mínimo 9, mediana 27')
+
+
+def t_caule_invalido():
+    assert 'não negativos' in erro(calc, c_mate, 'caule', ['-3 5', '', 0])
+    assert 'inteiros' in erro(calc, c_mate, 'caule', ['2,5 3', '', 0])
+    assert 'uma casa decimal' in erro(calc, c_mate, 'caule', ['2,55 3', '', 1])
+    assert 'Demasiados caules' in erro(calc, c_mate, 'caule', ['1 999', '', 0])

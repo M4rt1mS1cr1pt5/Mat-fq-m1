@@ -11,6 +11,7 @@ calc: c_alq1.gota
 ano: 10
 nivel: núcleo
 pre: q1d
+liga: m2f
 fonte: Programa e AE FQ A 10.º, AL 1.1
 #A
 - Medir a massa de um número conhecido de gotas.

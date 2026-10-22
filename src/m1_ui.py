@@ -212,9 +212,10 @@ def pager(t, ls, top=0, ft='', right='', keys=()):
         f = str(a) + '-' + str(b) + ' de ' + str(n)
         if b < n:
             f = f + ' \u00b7 enter: mais'
-        f = f + ' \u00b7 esc: voltar'
         if ft:
-            f = ft + ' \u00b7 ' + f
+            f = ft + ' \u00b7 ' + f + ' \u00b7 esc'
+        else:
+            f = f + ' \u00b7 esc: voltar'
         foot(f)
         P.show()
         k = P.key()
@@ -292,8 +293,6 @@ def lesson(t, pages, pg=0, top=0, ans='', lid='', extra=()):
         fx = '\u25c2\u25b8 p\u00e1gina'
         if pg == 9 and ans:
             fx = 'r: resposta \u00b7 ' + fx
-        if 'c' in extra:
-            fx = 'c l \u00b7 ' + fx
         i = avail.index(pg)
         k, top = pager(t, ls, top, fx, PAGS[pg] + ' ' + str(i + 1) + '/' +
                        str(len(avail)), ('left', 'right', 'r') + extra)

@@ -15,6 +15,8 @@ def get_key(wait=0):
         raise KeyboardInterrupt
     k = ST['keys'][ST['pos']]
     ST['pos'] += 1
+    if ST.get('trace'):
+        print('>>> TECLA ' + str(ST['pos']) + ': ' + k)
     ST['t'] += 250
     return k
 

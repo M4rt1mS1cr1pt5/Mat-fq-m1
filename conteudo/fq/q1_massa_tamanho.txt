@@ -1,0 +1,638 @@
+@tema q1
+disc: F
+grupo: q
+titulo: Massa e tamanho dos átomos
+calcs: c_fqat.qm c_fqat.mm c_fqat.ar c_fqat.fr c_comu.sci c_comu.sf c_comu.uni
+
+@licao q1a
+titulo: Constituição do átomo e isótopos
+chave: átomo núcleo protão neutrão eletrão número atómico número de massa isótopo ião catião anião
+calc: c_fqat.ar
+ano: 10
+nivel: núcleo
+fonte: AE FQ A 10.º, Massa e tamanho dos átomos
+#A
+- Descrever o átomo: núcleo com protões e neutrões, e eletrões.
+- Definir número atómico (Z) e número de massa (A).
+- Calcular o número de neutrões a partir de Z e de A.
+- Distinguir isótopos de um mesmo elemento.
+- Relacionar a carga de um ião com os eletrões ganhos ou perdidos.
+#B
+Imagina um estádio com uma ervilha no centro. A ervilha é o núcleo, com quase toda a massa. Os eletrões ocupam o resto, quase vazio.
+O número de protões é o "cartão de cidadão" do elemento. Outro número de neutrões dá outro isótopo. Outro número de eletrões dá um ião.
+#C
+- Protão (carga +1) e neutrão (sem carga) estão no núcleo.
+- Eletrão: carga -1; massa 1840 vezes menor que a do protão.
+- Número atómico, Z: número de protões.
+- Número de massa, A: protões + neutrões.
+- Isótopos: átomos com o mesmo Z e diferente A.
+- Representação: ³⁵₁₇Cl (A em cima, Z em baixo).
+#D
+O número de neutrões obtém-se por N = A - Z.
+Num átomo neutro há tantos eletrões como protões.
+Um ião positivo (catião) perdeu eletrões.
+Um ião negativo (anião) ganhou eletrões.
+Exemplo: Na⁺ tem 11 protões e 10 eletrões.
+Exemplo: Cl⁻ tem 17 protões e 18 eletrões.
+Os isótopos do carbono são ¹²C, ¹³C e ¹⁴C.
+Têm 6, 7 e 8 neutrões, mas todos têm 6 protões.
+Têm o mesmo comportamento químico, porque têm os mesmos eletrões.
+Diferem na massa e na estabilidade do núcleo.
+Caso especial: o ¹H não tem neutrões.
+O núcleo é cerca de 100 000 vezes menor do que o átomo.
+O átomo tem diâmetro da ordem de 10⁻¹⁰ m.
+#E
+@F Número de neutrões|N = A - Z|N: número de neutrões;A: número de massa;Z: número atómico|qualquer núcleo|³⁵Cl: N = 35 - 17 = 18|
+@F Eletrões de um ião|n.º de eletrões = Z - carga|Z: número atómico;carga: carga do ião, com sinal (+2, -1...)|iões monoatómicos|Mg²⁺: 12 - 2 = 10 eletrões|
+#F
+Dados: ião ³²₁₆S²⁻ (enxofre).
+Objetivo: protões, neutrões e eletrões.
+1. Protões: Z = [[16]].
+2. Neutrões: N = A - Z = 32 - 16 = [[16]].
+3. A carga 2- indica que ganhou 2 eletrões.
+4. Eletrões: 16 + 2 = [[18]].
+> 16 protões, 16 neutrões e 18 eletrões.
+Verificação: carga = 16 - 18 = [[-2]].
+#G
+Z identifica o elemento: se Z muda, muda o elemento. A carga de um ião vem só dos eletrões ganhos ou perdidos.
+O núcleo não muda numa reação química. O modelo das "bolinhas" é uma simplificação: os eletrões não têm trajetórias definidas.
+#H
+- Confundir A com o número de neutrões: N = A - Z.
+- Achar que um catião ganhou eletrões: perdeu.
+- Pensar que isótopos são elementos diferentes: têm o mesmo Z.
+- Esquecer que a massa está quase toda no núcleo.
+- Trocar A e Z na representação: A fica em cima.
+#I
+- Átomo: núcleo (protões e neutrões) e eletrões.
+- Z = n.º de protões; A = protões + neutrões.
+- N = A - Z.
+- Isótopos: mesmo Z, diferente A.
+- Catião perdeu eletrões; anião ganhou.
+- O núcleo é cerca de 10⁵ vezes menor que o átomo.
+#J
+Quantos neutrões e quantos eletrões tem o ião ⁵⁶₂₆Fe³⁺?
+#R
+Neutrões: N = 56 - 26 = [[30]].
+Eletrões: 26 - 3 = [[23]].
+#V
+V = [16, 32 - 16, 16 + 2, 16 - 18, 56 - 26, 26 - 3]
+
+@licao q1b
+titulo: Tamanho dos átomos: ordens de grandeza e escalas
+chave: ordem de grandeza notação científica escala nanómetro picómetro tamanho raio atómico nanotecnologia
+calc: c_comu.uni
+ano: 10
+nivel: núcleo
+fonte: AE FQ A 10.º, Massa e tamanho dos átomos
+#A
+- Escrever números em notação científica.
+- Determinar a ordem de grandeza de um valor.
+- Comparar tamanhos dividindo ordens de grandeza.
+- Converter entre m, nm e pm.
+- Situar objetos nas escalas, do metro ao núcleo.
+#B
+Os átomos são muito pequenos para os números do dia a dia.
+Escrever 0,000 000 000 1 m cansa e engana.
+1 × 10⁻¹⁰ m diz o mesmo de forma curta.
+A ordem de grandeza é a potência de 10 mais próxima.
+Serve para comparar sem contas finas.
+#C
+- Notação científica: a × 10ⁿ, com 1 ≤ a < 10 e n inteiro.
+- Ordem de grandeza: potência de 10 mais próxima do valor.
+- Regra: se a < 5, a ordem é 10ⁿ; se a ≥ 5, é 10ⁿ⁺¹.
+- Alguns livros usam 3,16 (raiz de 10) em vez de 5.
+- 1 nm = 10⁻⁹ m e 1 pm = 10⁻¹² m.
+#D
+O raio do átomo de hidrogénio é 5,3 × 10⁻¹¹ m.
+Como 5,3 ≥ 5, a ordem de grandeza é 10⁻¹⁰ m.
+Um cabelo tem cerca de 8 × 10⁻⁵ m de largura.
+A sua ordem de grandeza é 10⁻⁴ m.
+Para comparar, divide-se: 10⁻⁴ / 10⁻¹⁰ = 10⁶.
+O cabelo é cerca de um milhão de vezes mais largo.
+Escalas de tamanho:
+- objetos visíveis: 10⁻⁴ m ou mais;
+- células: cerca de 10⁻⁵ m;
+- nanoescala: 1 nm a 100 nm;
+- átomos: cerca de 10⁻¹⁰ m;
+- núcleos: 10⁻¹⁵ m a 10⁻¹⁴ m.
+A nanotecnologia usa materiais com 1 nm a 100 nm.
+#E
+@F Notação científica|x = a × 10ⁿ, com 1 ≤ a < 10|a: mantissa;n: expoente (inteiro)|qualquer número diferente de 0|0,00052 = 5,2 × 10⁻⁴|c_comu.sci
+@F Ordem de grandeza|OG = 10ⁿ se a < 5; OG = 10ⁿ⁺¹ se a ≥ 5|a e n: da notação científica a × 10ⁿ|comparar tamanhos|5,3 × 10⁻¹¹ m tem OG 10⁻¹⁰ m|
+@F Nanómetro e picómetro|1 nm = 10⁻⁹ m; 1 pm = 10⁻¹² m|nm: nanómetro;pm: picómetro|comprimentos à escala atómica|154 pm = 1,54 × 10⁻¹⁰ m|c_comu.uni
+#F
+Dados: um átomo de ouro tem 0,288 nm de diâmetro.
+Uma folha de ouro tem 1,0 × 10⁻⁷ m de espessura.
+Objetivo: quantos átomos cabem na espessura.
+1. 0,288 nm = 2,88 × 10⁻¹⁰ m.
+2. n = 1,0 × 10⁻⁷ m / 2,88 × 10⁻¹⁰ m = [[347]]
+3. Com 2 algarismos significativos: n ≈ [[3,5 × 10²]].
+4. Como 3,5 < 5, a ordem de grandeza é 10².
+> Cabem cerca de 350 átomos (ordem 10²).
+Verificação: 350 × 2,88 × 10⁻¹⁰ m ≈ [[1,0 × 10⁻⁷]] m.
+#G
+A ordem de grandeza dá a escala, não o valor exato. Chega para comparar objetos muito diferentes.
+Os átomos não têm uma fronteira nítida. Por isso, o raio depende do método de medida e as tabelas dão valores um pouco diferentes.
+#H
+- Escrever 34 × 10³ em vez de 3,4 × 10⁴.
+- Errar o sinal do expoente ao passar de pm para m.
+- Aplicar a regra do 5 sem passar para notação científica.
+- Somar expoentes ao dividir: subtraem-se.
+- Confundir nm (10⁻⁹ m) com µm (10⁻⁶ m).
+#I
+- Notação científica: a × 10ⁿ, com 1 ≤ a < 10.
+- Ordem de grandeza: 10ⁿ se a < 5; 10ⁿ⁺¹ se a ≥ 5.
+- 1 nm = 10⁻⁹ m; 1 pm = 10⁻¹² m.
+- Átomo: cerca de 10⁻¹⁰ m; núcleo: 10⁻¹⁵ m a 10⁻¹⁴ m.
+- Para comparar, divide-se (subtraem-se expoentes).
+#J
+O raio do átomo de hidrogénio é 53 pm.
+Escreve-o em metros, em notação científica.
+Indica a sua ordem de grandeza.
+#R
+53 pm = [[5,3 × 10⁻¹¹]] m.
+Como 5,3 ≥ 5, a ordem de grandeza é 10⁻¹⁰ m.
+#V
+n = 1.0e-7 / 2.88e-10
+V = [n, n, 350 * 2.88e-10, 53e-12]
+
+@licao q1c
+titulo: Massa atómica relativa
+chave: unidade de massa atómica massa atómica relativa média isótopos abundância massa molecular relativa mr ar
+calc: c_fqat.ar
+ano: 10
+nivel: núcleo
+pre: q1a
+fonte: AE FQ A 10.º, Massa e tamanho dos átomos
+#A
+- Definir a unidade de massa atómica (u).
+- Definir massa atómica relativa, Ar.
+- Calcular Ar média a partir dos isótopos e abundâncias.
+- Calcular a massa molecular relativa, Mr.
+- Explicar porque Ar não é um número inteiro.
+#B
+Os átomos são leves demais para se pesarem em gramas. Usa-se uma "unidade de átomo": 1/12 da massa do carbono-12.
+Um elemento é uma mistura de isótopos. Ar é uma média pesada, como uma média de testes com pesos diferentes. O isótopo mais abundante pesa mais na média.
+#C
+- Unidade de massa atómica: 1 u = 1/12 da massa de um átomo de ¹²C.
+- 1 u ≈ 1,66 × 10⁻²⁷ kg.
+- Massa isotópica relativa: massa do isótopo a dividir por 1 u.
+- Abundância: percentagem de átomos de cada isótopo na natureza.
+- Ar: média das massas isotópicas, pesada pelas abundâncias.
+- Mr: soma das Ar de todos os átomos da fórmula.
+- Ar e Mr não têm unidades.
+#D
+O cloro tem dois isótopos estáveis.
+O ³⁵Cl tem massa 34,97 e abundância 75,76 %.
+O ³⁷Cl tem massa 36,97 e abundância 24,24 %.
+Ar = (34,97 × 75,76 + 36,97 × 24,24) / 100 = 35,45.
+O valor fica perto de 35 porque o ³⁵Cl é o mais abundante.
+Nenhum átomo de cloro tem massa 35,45: é uma média.
+Para moléculas, somam-se as Ar de todos os átomos.
+Mr(H₂O) = 2 × 1,01 + 16,00 = 18,02.
+Mr(CO₂) = 12,01 + 2 × 16,00 = 44,01.
+Os valores de Ar estão na tabela periódica.
+O exame usa Ar com duas casas decimais.
+#E
+@F Massa atómica relativa média|Ar = Σ (Ar,i × %i) / 100|Ar,i: massa isotópica relativa do isótopo i;%i: abundância do isótopo i, em %|as abundâncias somam 100 %|Cl: (34,97 × 75,76 + 36,97 × 24,24) / 100 = 35,45|c_fqat.ar
+@F Massa molecular relativa|Mr = Σ (n.º de átomos × Ar)|Ar: massa atómica relativa de cada elemento|qualquer fórmula química|Mr(H₂O) = 2 × 1,01 + 16,00 = 18,02|c_fqat.mm
+@F Unidade de massa atómica|1 u = m(¹²C) / 12 ≈ 1,66 × 10⁻²⁷ kg|m(¹²C): massa de um átomo de carbono-12|massas de átomos e moléculas|um átomo de ¹H tem cerca de 1,0 u|
+#F
+Dados: isótopos do magnésio.
+- ²⁴Mg: 23,99 e 78,99 %
+- ²⁵Mg: 24,99 e 10,00 %
+- ²⁶Mg: 25,98 e 11,01 %
+Objetivo: Ar(Mg).
+1. Multiplica cada massa pela abundância.
+2. Ar = (23,99 × 78,99 + 24,99 × 10,00 + 25,98 × 11,01) / 100
+3. Ar = [[2430,9]] / 100 = [[24,31]]
+> Ar(Mg) = 24,31
+Verificação: 24,31 está entre 23,99 e 25,98 e perto de 24.
+O ²⁴Mg é o mais abundante, logo a média fica perto de 24.
+#G
+Ar é uma média: diz quanto pesa, em média, um átomo do elemento.
+O isótopo mais abundante "puxa" a média.
+Os valores da tabela vêm de muitas medições (espectrometria de massa).
+As abundâncias podem variar um pouco de amostra para amostra.
+#H
+- Fazer a média simples (dividir por 2) sem usar as abundâncias.
+- Esquecer de dividir por 100 quando as abundâncias estão em %.
+- Dar unidades a Ar ou a Mr: são números sem unidades.
+- Confundir o número de massa A (inteiro) com a massa isotópica.
+- Pensar que todos os átomos de cloro têm 35,45 u.
+#I
+- 1 u = 1/12 da massa do ¹²C ≈ 1,66 × 10⁻²⁷ kg.
+- Ar = Σ (Ar,i × %i) / 100.
+- Ar é a média pesada das massas dos isótopos.
+- Mr = soma das Ar dos átomos da fórmula.
+- Ar e Mr não têm unidades.
+#J
+O boro tem os isótopos ¹⁰B (10,01; 19,9 %) e ¹¹B (11,01; 80,1 %).
+Calcula Ar(B).
+#R
+Ar = (10,01 × 19,9 + 11,01 × 80,1) / 100 = [[10,81]].
+#V
+s = 23.99 * 78.99 + 24.99 * 10.00 + 25.98 * 11.01
+V = [s, s / 100, (10.01 * 19.9 + 11.01 * 80.1) / 100]
+
+@licao q1d
+titulo: Quantidade de matéria e massa molar
+chave: quantidade de matéria mol mole constante de avogadro massa molar número de partículas n m m n na
+calc: c_fqat.qm
+ano: 10
+nivel: núcleo
+pre: q1c
+fonte: AE FQ A 10.º, Massa e tamanho dos átomos
+#A
+- Definir quantidade de matéria e a sua unidade, a mole.
+- Usar a constante de Avogadro para contar partículas.
+- Definir massa molar e relacioná-la com Ar e Mr.
+- Calcular n, m e N com n = m / M e N = n × NA.
+- Apresentar resultados com os algarismos significativos certos.
+#B
+Há biliões de átomos em qualquer grão de areia.
+Contar um a um é impossível.
+A química conta "às dúzias", mas com uma dúzia gigante: a mole.
+Uma mole tem 6,02 × 10²³ partículas.
+A massa de uma mole é a massa molar.
+Em gramas, tem o mesmo valor que Mr.
+#C
+- Quantidade de matéria, n: conta partículas; unidade SI: mole (mol).
+- Constante de Avogadro: NA = 6,02 × 10²³ mol⁻¹.
+- NA é o número de partículas numa mole.
+- Massa molar, M: massa de uma mole; unidade g mol⁻¹.
+- M em g mol⁻¹ tem o valor numérico de Mr (ou de Ar).
+#D
+O número de partículas é N = n × NA.
+A massa e a quantidade ligam-se por n = m / M.
+Juntando: N = (m / M) × NA.
+Diz sempre de que partículas falas.
+1 mol de H₂O tem 1 mol de moléculas.
+Tem também 2 mol de átomos de H e 1 mol de átomos de O.
+Ao todo, são 3 mol de átomos.
+Com M em g mol⁻¹, a massa tem de estar em gramas.
+NA tem 3 algarismos significativos (6,02).
+O resultado não pode ter mais algarismos do que os dados.
+Desde 2019, NA vale exatamente 6,022 140 76 × 10²³ mol⁻¹.
+O exame usa o valor arredondado 6,02 × 10²³ mol⁻¹.
+#E
+@F Quantidade de matéria e massa|n = m / M|n: quantidade de matéria (mol);m: massa (g);M: massa molar (g mol⁻¹)|substância pura|n = 36,04 g / 18,02 g mol⁻¹ = 2,000 mol|c_fqat.qm
+@F Número de partículas|N = n × NA|N: número de partículas;n: quantidade de matéria (mol);NA: 6,02 × 10²³ mol⁻¹|qualquer tipo de partícula|0,50 mol têm 3,0 × 10²³ partículas|c_fqat.qm
+@F Massa molar|M = m / n|M: massa molar (g mol⁻¹);m: massa (g);n: quantidade de matéria (mol)|M em g mol⁻¹ tem o valor de Mr|M(CO₂) = 44,01 g mol⁻¹|c_fqat.mm
+#F
+Pergunta: quantas moléculas e quantos átomos há em 9,0 g de água?
+Dados: m = 9,0 g; M(H₂O) = 18,02 g mol⁻¹.
+1. n = m / M = 9,0 g / 18,02 g mol⁻¹ = [[0,50]] mol
+2. N = n × NA = 0,50 mol × 6,02 × 10²³ mol⁻¹
+3. N = [[3,0 × 10²³]] moléculas
+4. Cada molécula tem 3 átomos: 3 × 3,0 × 10²³ = [[9,0 × 10²³]]
+> 3,0 × 10²³ moléculas e 9,0 × 10²³ átomos.
+O resultado tem 2 algarismos significativos, como a massa.
+Verificação: 9,0 g é metade de 18 g, logo é meia mole.
+#G
+A mole liga o mundo dos átomos à balança do laboratório.
+Massas iguais de substâncias diferentes têm números de partículas diferentes.
+1 g de H₂ tem muito mais moléculas do que 1 g de O₂.
+Uma mole de qualquer substância tem o mesmo número de partículas.
+#H
+- Usar NA para passar de massa a mole: é preciso M.
+- Esquecer quantos átomos tem cada molécula.
+- Escrever M em g em vez de g mol⁻¹.
+- Arredondar n cedo demais e perder algarismos.
+- Dar mais algarismos significativos do que os dados.
+#I
+- n em mol; 1 mol = 6,02 × 10²³ partículas.
+- n = m / M e N = n × NA.
+- M em g mol⁻¹ tem o valor de Mr.
+- Diz sempre de que partículas falas.
+- O resultado tem os alg. sig. do dado com menos.
+#J
+Calcula n e o número de moléculas em 22,0 g de CO₂.
+Usa M(CO₂) = 44,01 g mol⁻¹.
+#R
+n = 22,0 g / 44,01 g mol⁻¹ = [[0,500]] mol.
+N = 0,500 × 6,02 × 10²³ = [[3,01 × 10²³]] moléculas.
+#V
+n = 9.0 / 18.02
+n2 = 22.0 / 44.01
+V = [n, n * NA, 3 * n * NA, n2, n2 * NA]
+
+@licao q1e
+titulo: Fração molar e fração mássica
+chave: fração molar fração mássica composição mistura percentagem em massa
+calc: c_fqat.fr
+ano: 10
+nivel: núcleo
+pre: q1d
+fonte: AE FQ A 10.º, Massa e tamanho dos átomos
+#A
+- Definir fração molar e fração mássica.
+- Calcular a composição de uma mistura.
+- Passar uma fração a percentagem.
+- Verificar que as frações de uma mistura somam 1.
+#B
+Numa mistura, cada componente tem a sua "fatia".
+A fatia pode contar partículas: é a fração molar.
+Também pode contar massa: é a fração mássica.
+As duas fatias diferem quando as partículas têm massas diferentes.
+#C
+- Fração molar de A: x_A = n_A / n_total.
+- Fração mássica de A: w_A = m_A / m_total.
+- As frações não têm unidades.
+- Em percentagem, multiplica-se por 100.
+- A soma das frações de todos os componentes é 1.
+#D
+Para a fração molar, todas as quantidades vêm em mol.
+Se tens massas, passa-as primeiro a mol com n = m / M.
+Para a fração mássica, todas as massas vêm na mesma unidade.
+Exemplo: 1,0 mol de N₂ e 3,0 mol de H₂.
+x(H₂) = 3,0 / 4,0 = 0,75 e x(N₂) = 0,25.
+As massas são 28 g de N₂ e 6,1 g de H₂.
+Assim, w(H₂) é só cerca de 0,18.
+O H₂ tem mais moléculas, mas menos massa.
+#E
+@F Fração molar|x_A = n_A / n_total|x_A: fração molar de A;n_A: quantidade de A (mol);n_total: quantidade total (mol)|misturas|1 mol de A em 4 mol: x_A = 0,25|c_fqat.fr
+@F Fração mássica|w_A = m_A / m_total|w_A: fração mássica de A;m_A: massa de A;m_total: massa total, na mesma unidade|misturas e compostos|20 g de sal em 200 g: w = 0,10|c_fqat.fr
+#F
+Mistura: 36,0 g de água (M = 18,02 g mol⁻¹).
+Mais 46,0 g de etanol (M = 46,08 g mol⁻¹).
+Objetivo: fração molar e fração mássica da água.
+1. n(água) = 36,0 / 18,02 = [[2,00]] mol
+2. n(etanol) = 46,0 / 46,08 = [[0,998]] mol
+3. x(água) = 2,00 / (2,00 + 0,998) = [[0,667]]
+4. w(água) = 36,0 / (36,0 + 46,0) = [[0,439]]
+> x(água) = 0,667 (66,7 %); w(água) = 0,439 (43,9 %)
+Verificação: x(etanol) = 1 - 0,667 = [[0,333]]
+#G
+A água tem mais moléculas, logo maior fração molar.
+Tem menos massa, logo menor fração mássica.
+As moléculas de água são mais leves do que as de etanol.
+As frações não dependem do tamanho da amostra.
+#H
+- Juntar massas e quantidades no mesmo total.
+- Dar unidades às frações.
+- Usar x quando o enunciado pede w, ou o contrário.
+- Esquecer de multiplicar por 100 para obter %.
+- Arredondar cedo e as frações não somarem 1.
+#I
+- x_A = n_A / n_total; w_A = m_A / m_total.
+- Sem unidades; as frações somam 1.
+- Em %: multiplica por 100.
+- x e w diferem quando as massas molares diferem.
+#J
+Um latão tem 70 g de cobre e 30 g de zinco.
+Qual é a fração mássica do zinco?
+#R
+w(Zn) = 30 g / (70 g + 30 g) = [[0,30]], ou seja, 30 %.
+#V
+na = 36.0 / 18.02
+ne = 46.0 / 46.08
+x = na / (na + ne)
+V = [na, ne, x, 36.0 / 82.0, 1 - 0.667, 30 / 100]
+
+@exemplo q1e1
+nivel: 1
+titulo: Átomos numa amostra de ferro
+licao: q1d
+calc: c_fqat.qm
+#T
+Enunciado: quantos átomos há em 2,0 mol de ferro?
+Dados: n = 2,0 mol; NA = 6,02 × 10²³ mol⁻¹.
+Objetivo: número de átomos, N.
+Método: N = n × NA.
+Resolução:
+1. N = 2,0 mol × 6,02 × 10²³ mol⁻¹
+2. N = [[1,204 × 10²⁴]]
+3. Com 2 algarismos significativos: N = [[1,2 × 10²⁴]]
+Resultado: há 1,2 × 10²⁴ átomos de ferro.
+Interpretação: duas moles têm o dobro das partículas de uma mole.
+Erros a evitar: dar o resultado com 4 algarismos (o dado tem 2).
+#V
+V = [2.0 * NA, 2.0 * NA]
+
+@exemplo q1e2
+nivel: 2
+titulo: Massa atómica relativa do cobre
+licao: q1c
+calc: c_fqat.ar
+#T
+Enunciado: calcula Ar(Cu) a partir dos isótopos.
+Dados: ⁶³Cu, massa 62,93, abundância 69,15 %.
+⁶⁵Cu, massa 64,93, abundância 30,85 %.
+Objetivo: massa atómica relativa média.
+Método: Ar = Σ (Ar,i × %i) / 100.
+Resolução:
+1. 62,93 × 69,15 = [[4351,6]]
+2. 64,93 × 30,85 = [[2003,1]]
+3. Ar = (4351,6 + 2003,1) / 100 = [[63,55]]
+Resultado: Ar(Cu) = 63,55.
+Interpretação: o valor fica mais perto de 63, o isótopo mais abundante.
+Erros a evitar: fazer a média simples, (62,93 + 64,93) / 2 = [[63,93]].
+#V
+a = 62.93 * 69.15
+b = 64.93 * 30.85
+V = [a, b, (a + b) / 100, (62.93 + 64.93) / 2]
+
+@exemplo q1e3
+nivel: 3
+titulo: Átomos de oxigénio num sal hidratado
+licao: q1d
+calc: c_fqat.mm
+#T
+Enunciado: quantos átomos de oxigénio há em 5,00 g de CuSO₄·5H₂O?
+Dados: m = 5,00 g; NA = 6,02 × 10²³ mol⁻¹.
+Objetivo: número de átomos de O.
+Método: M, depois n, depois partículas, depois átomos de O.
+Resolução:
+1. M = 63,55 + 32,06 + 4 × 16,00 + 5 × 18,02 = [[249,71]] g mol⁻¹
+2. n = 5,00 / 249,71 = [[0,0200]] mol
+3. Cada unidade tem 4 + 5 = 9 átomos de O.
+4. n(O) = 9 × 0,0200 = [[0,180]] mol
+5. N(O) = 0,180 × 6,02 × 10²³ = [[1,08 × 10²³]]
+Resultado: 1,08 × 10²³ átomos de oxigénio.
+Interpretação: a água de hidratação também tem oxigénio e conta.
+Erros a evitar: contar só os 4 O do sulfato.
+#V
+M = 63.55 + 32.06 + 4 * 16.00 + 5 * 18.02
+n = 5.00 / M
+V = [M, n, 9 * n, 9 * n * NA]
+
+@exercicio q1x1
+tipo: m
+licao: q1a
+#T
+O ião ²⁷₁₃Al³⁺ tem:
+#O
+13 protões, 14 neutrões e 10 eletrões
+13 protões, 14 neutrões e 16 eletrões
+27 protões, 13 neutrões e 10 eletrões
+13 protões, 27 neutrões e 13 eletrões
+#S
+1
+#P
+N = A - Z; um catião 3+ perdeu 3 eletrões.
+#D
+Protões: Z = 13. Neutrões: 27 - 13 = [[14]].
+Eletrões: 13 - 3 = [[10]] (perdeu 3 eletrões).
+#V
+S = 1
+V = [27 - 13, 13 - 3]
+
+@exercicio q1x2
+tipo: n
+licao: q1a
+#T
+Quantos neutrões tem o núcleo de ⁵⁶₂₆Fe?
+#S
+30
+#P
+Usa N = A - Z.
+#D
+N = A - Z = 56 - 26 = [[30]].
+#V
+S = 56 - 26
+V = [S]
+
+@exercicio q1x3
+tipo: v
+licao: q1a
+#T
+Os isótopos de um elemento têm o mesmo número de massa.
+#S
+F
+#P
+O que é igual nos isótopos: Z ou A?
+#D
+Falso. Os isótopos têm o mesmo número atómico (Z).
+Têm números de massa (A) diferentes, porque têm neutrões diferentes.
+#V
+S = 'F'
+
+@exercicio q1x4
+tipo: m
+licao: q1b
+#T
+Qual é a ordem de grandeza de 6,5 × 10⁻¹⁰ m?
+#O
+10⁻¹⁰ m
+10⁻⁹ m
+10⁻¹¹ m
+10⁻⁸ m
+#S
+2
+#P
+Compara a mantissa com 5.
+#D
+A mantissa é 6,5 e 6,5 ≥ 5.
+Por isso, a ordem de grandeza é 10⁻¹⁰⁺¹ = 10⁻⁹ m.
+#V
+a, n = 6.5, -10
+S = 2 if a >= 5 else 1
+
+@exercicio q1x5
+tipo: n
+licao: q1c
+modo: d2
+#T
+O lítio tem os isótopos ⁶Li (6,02; 7,59 %) e ⁷Li (7,02; 92,41 %).
+Calcula Ar(Li), com duas casas decimais.
+#S
+6,94
+#P
+Ar = Σ (massa × abundância) / 100.
+#D
+Ar = (6,02 × 7,59 + 7,02 × 92,41) / 100 = [[6,94]].
+#V
+S = (6.02 * 7.59 + 7.02 * 92.41) / 100
+V = [S]
+
+@exercicio q1x6
+tipo: u
+licao: q1d
+modo: s3
+unidades: g kg mg
+#T
+Calcula a massa de 0,250 mol de cloreto de sódio.
+Usa M(NaCl) = 58,44 g mol⁻¹. Escolhe a unidade.
+#S
+14,6
+#P
+m = n × M.
+#D
+m = n × M = 0,250 mol × 58,44 g mol⁻¹ = [[14,6]] g.
+(Também vale 0,0146 kg ou 1,46 × 10⁴ mg.)
+#V
+S = 0.250 * 58.44
+V = [S]
+
+@exercicio q1x7
+tipo: n
+licao: q1d
+modo: s2
+#T
+Quantas moléculas há em 0,10 mol de O₂?
+Responde com 2 algarismos significativos.
+#S
+6,0e22
+#P
+N = n × NA, com NA = 6,02 × 10²³ mol⁻¹.
+#D
+N = 0,10 × 6,02 × 10²³ = [[6,0 × 10²²]] moléculas.
+#V
+S = 0.10 * NA
+V = [S]
+
+@exercicio q1x8
+tipo: n
+licao: q1d
+modo: s2
+#T
+Qual é a quantidade de matéria em 8,0 g de metano, CH₄?
+Usa M(CH₄) = 16,05 g mol⁻¹ e 2 algarismos significativos.
+#S
+0,50
+#P
+n = m / M.
+#D
+n = 8,0 g / 16,05 g mol⁻¹ = [[0,50]] mol.
+#V
+S = 8.0 / 16.05
+V = [S]
+
+@exercicio q1x9
+tipo: m
+licao: q1e
+#T
+Uma mistura tem 1,0 mol de N₂ e 3,0 mol de H₂.
+A fração molar do H₂ é:
+#O
+0,25
+0,75
+0,33
+3,0
+#S
+2
+#P
+x = n(H₂) / n(total).
+#D
+x(H₂) = 3,0 / (1,0 + 3,0) = [[0,75]].
+0,33 seria 1,0 / 3,0, que não é uma fração molar.
+#V
+x = 3.0 / 4.0
+S = 2
+V = [x]
+
+@exercicio q1x10
+tipo: v
+licao: q1b
+#T
+Um nanómetro é igual a 10⁻⁹ m.
+#S
+V
+#P
+nano = 10⁻⁹.
+#D
+Verdadeiro: o prefixo nano corresponde a 10⁻⁹.
+Logo 1 nm = 10⁻⁹ m = 1000 pm.
+#V
+S = 'V'

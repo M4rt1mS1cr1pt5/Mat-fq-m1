@@ -248,7 +248,9 @@ def pick_theme(d):
 
 
 def disc(d):
-    gs = [x for x in GR if x[0] == d]
+    gs = [x for x in GR if x[0] == d and
+          [i for i in range(len(K.TEMAS)) if th(i)[1] == d and
+           th(i)[2] == x[1]]]
     sel = 0
     while True:
         S['where'] = DN[d]
@@ -615,11 +617,12 @@ def calc(cid):
 def res_menu(t, r):
     # Ecra de resultado com as opcoes. Devolve a tecla que o fechou.
     gr = len(r) > 4 and r[4]
-    o = '1 passos \u00b7 2 alterar \u00b7 3 novo \u00b7 4 usar'
+    o = '\n\nOp\u00e7\u00f5es: 1 passos \u00b7 2 alterar \u00b7 3 novo \u00b7 4 usar'
     if gr:
         o = o + ' \u00b7 5 gr\u00e1fico'
     while True:
-        k = U.text(t, r[0], o, '', ('1', '2', '3', '4', '5'))
+        k = U.text(t, r[0] + o, '1-' + ('5' if gr else '4') + ': op\u00e7\u00f5es',
+                   '', ('1', '2', '3', '4', '5'))
         if k == '1':
             U.text(t + ' \u00b7 passos', r[1] if len(r) > 1 and r[1] else
                    'Esta calculadora n\u00e3o tem mais passos.')

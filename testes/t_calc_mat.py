@@ -5,8 +5,8 @@ from base import calc, erro, tem, perto
 
 def t_q2_racional():
     r = calc(c_matq, 'q2', ['2', '-3', '1'])
-    tem(r[0], 'x = 1/2 ∨ x = 1', 'V(3/4; -1/8)',
-        'f(x) = 2(x - 3/4)² - 1/8', "D' = [-1/8, +∞[")
+    tem(r[0], 'x = 1/2 ∨ x = 1', 'V(3/4, -1/8)',
+        'f(x) = 2(x - 3/4)² - 1/8', "D′f = [-1/8, +∞[", 'C.S. = {1/2, 1}')
 
 
 def t_q2_radical():
@@ -23,7 +23,7 @@ def t_q2_delta_zero():
 
 def t_q2_sem_zeros():
     r = calc(c_matq, 'q2', ['1/2', '1', '5'])
-    tem(r[0], 'não há zeros', 'C.S. = ∅', 'V(-1; 9/2)')
+    tem(r[0], 'não há zeros', 'C.S. = ∅', 'V(-1, 9/2)')
 
 
 def t_q2_a_zero():

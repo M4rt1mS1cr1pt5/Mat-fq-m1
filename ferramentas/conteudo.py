@@ -22,7 +22,7 @@ Formato das fontes (conteudo/**/*.txt), um ficheiro por tema:
     #E                 so linhas "@F nome|formula|simbolos;...|condicoes|exemplo|calc"
     #R                 resposta do exercicio J
     #V                 codigo Python (so corre no computador) que define V,
-                       a lista dos valores marcados com {..} nas paginas
+                       a lista dos valores marcados com [[..]] nas paginas
                        F, J e R, pela ordem em que aparecem
 
     @exemplo q1e1
@@ -43,8 +43,8 @@ Formato das fontes (conteudo/**/*.txt), um ficheiro por tema:
     #D resolucao   #V codigo que define S (e V se houver marcas)
 
 Linhas que comecam por "%%" sao comentarios.
-Marcas: "{2,45}" e um numero que o build recalcula; "{=1/3}" compara
-o valor exato. No pacote gerado as chavetas desaparecem.
+Marcas: "[[2,45]]" e um numero que o build recalcula; "[[=1/3]]" compara
+o valor exato. No pacote gerado os parenteses retos duplos desaparecem.
 """
 import math
 import os
@@ -148,7 +148,7 @@ def ler_ficheiro(fn):
 # ------------------------------------------------------------ marcas
 
 
-MARCA = re.compile(r'\{([^{}]+)\}')
+MARCA = re.compile(r'\[\[(.+?)\]\]')
 
 
 def tirar_marcas(t):
@@ -198,15 +198,15 @@ def confere(txt, V, onde):
         if s.startswith('='):
             e = valor(s[1:])
             if abs(e - v) > 1e-9 * max(1.0, abs(v)):
-                raise Erro('%s: marca {%s} = %r mas o calculo da %r' %
+                raise Erro('%s: marca [[%s]] = %r mas o calculo da %r' %
                            (onde, s, e, v))
             continue
         u = ulp(s)
         if u is None:
-            raise Erro('%s: marca {%s} nao e um numero' % (onde, s))
+            raise Erro('%s: marca [[%s]] nao e um numero' % (onde, s))
         e = valor(s)
         if abs(e - v) > 0.5 * u * (1 + 1e-9) + 1e-12 * abs(v):
-            raise Erro('%s: marca {%s} mas o calculo da %r (arredondado: %s)' %
+            raise Erro('%s: marca [[%s]] mas o calculo da %r (arredondado: %s)' %
                        (onde, s, v, N.fmt(v, 0, 10)))
 
 
@@ -347,15 +347,23 @@ def validar(temas, calcs_ids, avisos):
             if c not in calcs_ids:
                 raise Erro('%s: calculadora %s nao existe' % (t.b.onde(), c))
     lic = {b.id: (t, b) for t in temas for b in t.licoes}
+    erros = []
     for t in temas:
         if not t.licoes:
-            raise Erro('%s: tema sem licoes' % t.b.onde())
-        for b in t.licoes:
-            validar_licao(t, b, lic, calcs_ids, avisos)
-        for b in t.exemplos:
-            validar_exemplo(t, b, lic, calcs_ids, avisos)
-        for b in t.exercicios:
-            validar_exercicio(t, b, lic, avisos)
+            erros.append('%s: tema sem licoes' % t.b.onde())
+        for fn, bs in ((validar_licao, t.licoes), (validar_exemplo, t.exemplos),
+                       (validar_exercicio, t.exercicios)):
+            for b in bs:
+                try:
+                    if fn is validar_exercicio:
+                        fn(t, b, lic, avisos)
+                    else:
+                        fn(t, b, lic, calcs_ids, avisos)
+                except Erro as e:
+                    erros.append(str(e))
+    if erros:
+        raise Erro('%d erros nos conteudos:\n  ' % len(erros) +
+                   '\n  '.join(erros))
     return ids
 
 
@@ -391,16 +399,20 @@ def validar_licao(t, b, lic, calcs_ids, avisos):
     lim = {'A': ('b', 5), 'B': ('l', 8), 'C': ('l', 12), 'D': ('l', 30),
            'F': ('l', 30), 'G': ('l', 8), 'H': ('b', 5), 'I': ('b', 6),
            'J': ('l', 10)}
-    for p, (k, n) in lim.items():
+    errs = []
+    for p in 'ABCDFGHIJ':
+        k, n = lim[p]
         s = b.sec.get(p, '')
         if not s:
             continue
         v = balas(s) if k == 'b' else nlinhas(s)
         if v > n:
-            raise Erro('%s: pagina %s tem %d %s (max. %d)' % (
+            errs.append('%s: pagina %s tem %d %s (max. %d)' % (
                 b.onde(), p, v, 'pontos' if k == 'b' else 'linhas', n))
         if k == 'b' and balas(s) != len([x for x in s.split('\n') if x]):
-            raise Erro('%s: pagina %s so tem pontos "- "' % (b.onde(), p))
+            errs.append('%s: pagina %s so tem pontos "- "' % (b.onde(), p))
+    if errs:
+        raise Erro('\n  '.join(errs))
     for f in b.formulas:
         if len(f) != 6:
             raise Erro('%s: formula com %d campos (sao 6): %s' % (
@@ -441,7 +453,7 @@ def validar_exemplo(t, b, lic, calcs_ids, avisos):
     env = correr_v(b, b.sec['V']) if b.sec.get('V') else {}
     confere(b.sec['T'], env.get('V'), b.onde())
     if marcas(b.sec['T']) == [] and re.search(r'\d', b.sec['T']):
-        avisos.append('%s: exemplo com numeros sem marcas {..}' % b.onde())
+        avisos.append('%s: exemplo com numeros sem marcas [[..]]' % b.onde())
     for n, fr in frases_longas(b.sec['T']):
         avisos.append('%s: frase com %d palavras: %s' % (b.onde(), n, fr))
 

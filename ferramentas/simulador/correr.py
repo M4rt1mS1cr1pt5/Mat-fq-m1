@@ -46,6 +46,7 @@ def main():
     import ti_draw
     ks = ler_teclas(teclas)
     ti_system.ST['keys'] = ks
+    ti_system.ST['trace'] = '--rastreio' in a
     if estado:
         try:
             f = open(estado)

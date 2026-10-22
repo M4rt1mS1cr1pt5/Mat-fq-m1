@@ -1,0 +1,558 @@
+@tema m5
+disc: M
+grupo: t
+titulo: Função quadrática
+calcs: c_matq.q2 c_matq.iq c_matq.tf c_comu.sci
+
+@licao m5a
+titulo: A função quadrática e o seu gráfico
+chave: função quadrática parábola concavidade vértice eixo de simetria forma canónica a(x-h)²+k
+calc: c_matq.q2
+ano: 10
+nivel: núcleo
+fonte: AE Mat A 10.º, Funções: função quadrática
+#A
+- Reconhecer uma função quadrática f(x) = ax² + bx + c, com a ≠ 0.
+- Relacionar o sinal de a com a concavidade da parábola.
+- Determinar o vértice e o eixo de simetria.
+- Escrever f na forma canónica a(x - h)² + k.
+- Obter o gráfico a partir do de y = x².
+#B
+O gráfico de uma função quadrática é uma parábola, como o jato de água de uma fonte.
+Se a > 0, abre para cima, como um sorriso; se a < 0, abre para baixo. O vértice é o ponto mais baixo (ou mais alto). A parábola é simétrica em relação a uma reta vertical: o eixo.
+#C
+- Função quadrática: f(x) = ax² + bx + c, com a, b, c ∈ ℝ e a ≠ 0.
+- Df = ℝ. O gráfico chama-se parábola.
+- Forma canónica: f(x) = a(x - h)² + k.
+- Vértice: V(h, k). Eixo de simetria: x = h.
+- a > 0: concavidade voltada para cima; k é o mínimo.
+- a < 0: concavidade voltada para baixo; k é o máximo.
+- Na forma geral: h = -b/(2a) e k = f(h).
+#D
+Parte-se do gráfico de y = x², com vértice em (0, 0).
+y = ax² estica (|a| > 1) ou encolhe (0 < |a| < 1) na vertical.
+Se a < 0, há também reflexão no eixo Ox.
+y = a(x - h)² + k é y = ax² transladada.
+A translação leva o vértice de (0, 0) para (h, k).
+Exemplo: f(x) = 2(x - 1)² + 3.
+Tem vértice V(1, 3) e eixo x = 1.
+Como a = 2 > 0, o mínimo é 3.
+Para passar da forma geral à canónica, calcula-se h e k.
+Exemplo: f(x) = x² - 4x + 1.
+h = -(-4)/(2 × 1) = 2 e k = f(2) = 4 - 8 + 1 = -3.
+Logo f(x) = (x - 2)² - 3.
+Atenção ao sinal: (x - 2)² dá h = 2 e (x + 2)² dá h = -2.
+#E
+@F Forma canónica|f(x) = a(x - h)² + k|a: abertura e concavidade (a ≠ 0);(h, k): vértice da parábola|qualquer função quadrática|f(x) = 2(x - 1)² + 3 tem vértice (1, 3)|c_matq.q2
+@F Abcissa do vértice|h = -b / (2a)|a, b: coeficientes de f(x) = ax² + bx + c|a ≠ 0|f(x) = x² - 4x + 1: h = 2|c_matq.q2
+@F Ordenada do vértice|k = f(h) = c - b² / (4a)|h: abcissa do vértice;a, b, c: coeficientes|a ≠ 0|f(x) = x² - 4x + 1: k = -3|c_matq.q2
+#F
+Dados: f(x) = -2x² + 8x - 5.
+Objetivo: vértice, eixo, concavidade e forma canónica.
+1. a = -2, b = 8, c = -5.
+2. h = -8 / (2 × (-2)) = [[2]]
+3. k = f(2) = -2 × 4 + 16 - 5 = [[3]]
+4. Vértice V(2, 3); eixo de simetria x = 2.
+5. a < 0: concavidade voltada para baixo; máximo 3.
+> f(x) = -2(x - 2)² + 3
+Verificação: f(0) = -2 × 4 + 3 = [[-5]], igual a c.
+#G
+A forma canónica mostra logo o vértice.
+A forma geral mostra logo a ordenada na origem, c.
+O máximo ou o mínimo de uma grandeza está no vértice.
+Exemplos: altura máxima de um lançamento, área máxima de um terreno.
+#H
+- Ler h com o sinal trocado: em (x + 3)², h = -3.
+- Esquecer o a ao calcular k = f(h).
+- Achar que a > 0 dá um máximo: dá um mínimo.
+- Dizer que o eixo de simetria é y = h: é x = h.
+- Esquecer que a = 0 não dá uma função quadrática.
+#I
+- f(x) = ax² + bx + c, com a ≠ 0; gráfico: parábola.
+- Forma canónica a(x - h)² + k; vértice (h, k).
+- Eixo de simetria: x = h, com h = -b/(2a).
+- a > 0: concavidade para cima e mínimo k.
+- a < 0: concavidade para baixo e máximo k.
+#J
+Determina o vértice de f(x) = x² + 6x + 5.
+#R
+h = -6 / (2 × 1) = [[-3]]; k = f(-3) = 9 - 18 + 5 = [[-4]].
+Vértice: V(-3, -4).
+#V
+f = lambda x: -2 * x * x + 8 * x - 5
+h = -8 / (2 * -2)
+V = [h, f(h), -2 * 4 + 3, -6 / 2, 9 - 18 + 5]
+
+@licao m5b
+titulo: Zeros e fórmula resolvente
+chave: zeros equação do 2.º grau fórmula resolvente discriminante delta binómio discriminante fatorização
+calc: c_matq.q2
+ano: 10
+nivel: núcleo
+pre: m5a
+fonte: AE Mat A 10.º, Funções: função quadrática
+#A
+- Calcular o discriminante Δ = b² - 4ac.
+- Relacionar o sinal de Δ com o número de zeros.
+- Resolver equações do 2.º grau com a fórmula resolvente.
+- Resolver equações incompletas sem a fórmula.
+- Fatorizar ax² + bx + c usando os zeros.
+#B
+Os zeros são os pontos onde a parábola corta o eixo Ox.
+Uma parábola pode cortá-lo duas vezes, tocá-lo uma vez, ou não o tocar.
+O discriminante diz qual destes casos acontece.
+A fórmula resolvente dá os zeros em qualquer caso.
+#C
+- Equação do 2.º grau: ax² + bx + c = 0, com a ≠ 0.
+- Discriminante: Δ = b² - 4ac.
+- Fórmula resolvente: x = (-b ± √Δ) / (2a).
+- Δ > 0: dois zeros diferentes.
+- Δ = 0: um zero (duplo), que é a abcissa do vértice.
+- Δ < 0: não há zeros; a equação é impossível em ℝ.
+- Fatorização (Δ ≥ 0): ax² + bx + c = a(x - x₁)(x - x₂).
+#D
+Exemplo: x² - 5x + 6 = 0.
+Δ = 25 - 24 = 1, logo há dois zeros.
+x = (5 ± 1) / 2, ou seja, x = 2 ∨ x = 3.
+C.S. = {2, 3}.
+Equações incompletas resolvem-se mais depressa:
+- c = 0: x(ax + b) = 0, logo x = 0 ∨ x = -b/a.
+- b = 0: x² = -c/a, que só tem solução se -c/a ≥ 0.
+Exemplo: 2x² - 8 = 0 dá x² = 4, logo x = -2 ∨ x = 2.
+Exemplo: 3x² + 6x = 0 dá 3x(x + 2) = 0, logo x = 0 ∨ x = -2.
+Quando √Δ não é inteira, deixa-se a forma exata.
+Exemplo: x² - 2x - 1 = 0 dá x = 1 - √2 ∨ x = 1 + √2.
+A soma dos zeros é -b/a e o produto é c/a.
+#E
+@F Discriminante|Δ = b² - 4ac|a, b, c: coeficientes de ax² + bx + c|a ≠ 0|x² - 5x + 6: Δ = 25 - 24 = 1|c_matq.q2
+@F Fórmula resolvente|x = (-b ± √Δ) / (2a)|Δ: discriminante;a, b: coeficientes|Δ ≥ 0 (senão não há zeros)|x² - 5x + 6 = 0: x = (5 ± 1)/2|c_matq.q2
+@F Fatorização|ax² + bx + c = a(x - x₁)(x - x₂)|x₁, x₂: zeros (iguais se Δ = 0)|Δ ≥ 0|x² - 5x + 6 = (x - 2)(x - 3)|c_matq.q2
+#F
+Dados: 2x² - 5x + 2 = 0.
+Objetivo: resolver a equação.
+1. a = 2, b = -5, c = 2.
+2. Δ = (-5)² - 4 × 2 × 2 = [[9]]
+3. Δ > 0: há dois zeros.
+4. x = (5 ± 3) / 4
+5. x = 2/4 = [[=1/2]] ∨ x = 8/4 = [[2]]
+> C.S. = {1/2, 2}
+Verificação: 2 × (1/2)² - 5 × 1/2 + 2 = [[0]].
+#G
+O sinal de Δ resume a posição da parábola face ao eixo Ox.
+Δ = 0 quer dizer que o vértice está em cima do eixo.
+Num problema, cada zero tem de fazer sentido no contexto.
+Um tempo ou um comprimento negativo rejeita-se.
+#H
+- Esquecer o sinal de b: com b = -5, -b = 5.
+- Dividir só √Δ por 2a, e não -b ± √Δ.
+- Escrever √Δ com Δ negativo.
+- Usar a fórmula com a equação por igualar a zero.
+- Perder soluções ao dividir por x: fatoriza em vez disso.
+#I
+- Δ = b² - 4ac.
+- Δ > 0: 2 zeros; Δ = 0: 1 zero; Δ < 0: nenhum.
+- x = (-b ± √Δ) / (2a).
+- Incompletas: fatorizar (c = 0) ou isolar x² (b = 0).
+- Fatorização: a(x - x₁)(x - x₂).
+- Deixa a forma exata quando √Δ não é inteira.
+#J
+Resolve x² - 6x + 5 = 0.
+#R
+Δ = 36 - 20 = [[16]]; x = (6 ± 4) / 2.
+x = [[1]] ∨ x = [[5]]. C.S. = {1, 5}.
+#V
+d = 25 - 16
+V = [d, 2 / 4, 8 / 4, 2 * 0.25 - 2.5 + 2, 36 - 20, (6 - 4) / 2, (6 + 4) / 2]
+
+@licao m5c
+titulo: Sinal, monotonia, extremos e inequações
+chave: sinal monotonia crescente decrescente máximo mínimo extremo contradomínio inequação do 2.º grau conjunto-solução
+calc: c_matq.iq
+ano: 10
+nivel: núcleo
+pre: m5b
+fonte: AE Mat A 10.º, Funções: função quadrática
+#A
+- Estudar o sinal de uma função quadrática.
+- Indicar intervalos de monotonia e o extremo.
+- Indicar o contradomínio.
+- Resolver inequações do 2.º grau.
+- Escrever o conjunto-solução com intervalos.
+#B
+O sinal diz onde a parábola está acima ou abaixo do eixo Ox.
+A monotonia diz onde sobe e onde desce.
+Tudo depende de duas coisas: a concavidade e os zeros.
+Um esboço rápido resolve quase tudo.
+#C
+- f é positiva onde o gráfico está acima de Ox; negativa abaixo.
+- Com a > 0: f decresce em ]-∞, h] e cresce em [h, +∞[.
+- Com a > 0: mínimo k e D'f = [k, +∞[.
+- Com a < 0: f cresce em ]-∞, h], decresce em [h, +∞[.
+- Com a < 0: máximo k e D'f = ]-∞, k].
+- Inequação do 2.º grau: ax² + bx + c > 0 (ou ≥, <, ≤).
+#D
+Método para resolver uma inequação:
+1. Passa tudo para um membro: ax² + bx + c ? 0.
+2. Calcula os zeros.
+3. Esboça a parábola com a concavidade certa.
+4. Lê onde o gráfico está acima (> 0) ou abaixo (< 0).
+Exemplo: x² - 5x + 6 ≤ 0.
+Zeros 2 e 3; a = 1 > 0, a parábola abre para cima.
+Fica abaixo do eixo entre os zeros.
+C.S. = [2, 3] (fechado, porque ≤ inclui os zeros).
+Exemplo: -x² + 4 > 0.
+Zeros -2 e 2; a = -1 < 0, abre para baixo.
+Fica acima do eixo entre os zeros: C.S. = ]-2, 2[.
+Sem zeros, o sinal é sempre o de a.
+Exemplo: x² + 1 > 0 é verdade para todo o x: C.S. = ℝ.
+E x² + 1 < 0 nunca acontece: C.S. = ∅.
+#E
+@F Sinal com dois zeros (a > 0)|f(x) > 0 em ]-∞, x₁[ ∪ ]x₂, +∞[; f(x) < 0 em ]x₁, x₂[|x₁ < x₂: zeros|a > 0 (com a < 0 os sinais trocam)|x² - 5x + 6 < 0 em ]2, 3[|c_matq.iq
+@F Contradomínio|a > 0: D'f = [k, +∞[; a < 0: D'f = ]-∞, k]|k: ordenada do vértice|função quadrática com Df = ℝ|f(x) = (x - 1)² + 2: D'f = [2, +∞[|c_matq.q2
+#F
+Dados: inequação x² + 2x - 3 > 0.
+Objetivo: conjunto-solução.
+1. Δ = 4 + 12 = [[16]]
+2. x = (-2 ± 4) / 2, logo x = [[-3]] ∨ x = [[1]]
+3. a = 1 > 0: parábola com concavidade para cima.
+4. Está acima do eixo fora dos zeros.
+> C.S. = ]-∞, -3[ ∪ ]1, +∞[
+Verificação: x = 2 dá 4 + 4 - 3 = [[5]] > 0 (está no C.S.).
+E x = 0 dá [[-3]] < 0 (não está no C.S.).
+#G
+As inequações respondem a perguntas como "quando é que o lucro é positivo?".
+O vértice dá o lucro máximo; os zeros dão os limites.
+Se o sinal for ≥ ou ≤, os zeros entram no conjunto-solução.
+#H
+- Usar parênteses retos fechados com > ou <.
+- Esquecer de olhar para a concavidade.
+- Escrever o C.S. como pontos em vez de intervalos.
+- Trocar o sentido da inequação ao passar termos de membro.
+- Escrever ]1, -3[ em vez de ]-3, 1[: o menor vem primeiro.
+#I
+- Sinal: depende de a e dos zeros.
+- a > 0: negativa entre os zeros; positiva fora deles.
+- a < 0: positiva entre os zeros; negativa fora deles.
+- Extremo no vértice: mínimo se a > 0, máximo se a < 0.
+- Inequação: zeros, esboço, leitura do sinal.
+#J
+Resolve a inequação x² - 4 ≤ 0.
+#R
+Zeros: x² = 4, logo x = [[-2]] ∨ x = [[2]].
+a > 0, logo a parábola está abaixo do eixo entre os zeros.
+C.S. = [-2, 2].
+#V
+V = [16, (-2 - 4) / 2, (-2 + 4) / 2, 4 + 4 - 3, -3, -2, 2]
+
+@licao m5d
+titulo: Transformações de gráficos de funções
+chave: transformações translação dilatação contração reflexão f(x-a) f(x)+b c f(x) gráfico
+calc: c_matq.tf
+ano: 10
+nivel: núcleo
+pre: m5a
+fonte: AE Mat A 10.º, Funções: transformações f(x - a), f(x) + b e c f(x)
+#A
+- Obter o gráfico de f(x) + b a partir do de f.
+- Obter o gráfico de f(x - a) a partir do de f.
+- Obter o gráfico de c × f(x) a partir do de f.
+- Relacionar estas transformações com a forma canónica.
+#B
+Transformar um gráfico é como mexer num desenho.
+Podes deslizá-lo para cima ou para baixo, para a esquerda ou para a direita.
+Também podes esticá-lo ou encolhê-lo na vertical.
+Com um sinal menos, ele vira ao contrário (reflexão).
+#C
+- f(x) + b: translação vertical de b unidades.
+- f(x - a): translação horizontal de a unidades (a > 0: direita; a < 0: esquerda).
+- c × f(x), c > 1: dilatação vertical de coeficiente c.
+- c × f(x), 0 < c < 1: contração vertical de coeficiente c.
+- c < 0: há também reflexão no eixo Ox.
+- O ponto (x, y) do gráfico de f passa a (x + a, c y + b).
+#D
+Partimos de f(x) = x², com vértice (0, 0).
+g(x) = x² + 3 sobe 3 unidades: vértice (0, 3).
+g(x) = (x - 2)² desliza 2 para a direita: vértice (2, 0).
+g(x) = (x + 2)² desliza 2 para a esquerda: (x + 2) = (x - (-2)).
+g(x) = 3x² fica mais "fechada": as ordenadas triplicam.
+g(x) = 0,5x² fica mais "aberta": as ordenadas passam a metade.
+g(x) = -x² é a reflexão de x² no eixo Ox.
+Juntando tudo: g(x) = 2(x - 1)² + 3.
+Primeiro dilatação de coeficiente 2.
+Depois translação de 1 para a direita e 3 para cima.
+O vértice passa de (0, 0) para (1, 3).
+Os zeros de f(x - a) são os zeros de f somados com a.
+#E
+@F Translação vertical|g(x) = f(x) + b|b > 0: para cima; b < 0: para baixo|qualquer função f|x² + 3: vértice (0, 3)|c_matq.tf
+@F Translação horizontal|g(x) = f(x - a)|a > 0: para a direita; a < 0: para a esquerda|qualquer função f|(x - 2)²: vértice (2, 0)|c_matq.tf
+@F Dilatação ou contração vertical|g(x) = c × f(x)|c > 1: dilatação; 0 < c < 1: contração; c < 0: com reflexão em Ox|c ≠ 0|3x²: as ordenadas triplicam|c_matq.tf
+#F
+Dados: o gráfico de f passa em A(1, 4).
+g(x) = 2 f(x - 3) - 1.
+Objetivo: o ponto do gráfico de g que corresponde a A.
+1. Translação horizontal: x passa a 1 + 3 = [[4]].
+2. Dilatação: y passa a 2 × 4 = [[8]].
+3. Translação vertical: 8 - 1 = [[7]].
+> O ponto correspondente é (4, 7).
+Verificação: g(4) = 2 f(1) - 1 = 2 × 4 - 1 = [[7]].
+#G
+As transformações explicam a forma canónica a(x - h)² + k.
+Toda a parábola é x² dilatada, refletida e transladada.
+O mesmo vale para outras funções, como o módulo |x|.
+#H
+- Achar que f(x - 2) desloca para a esquerda: desloca para a direita.
+- Aplicar o b dentro do parêntese: f(x) + b não é f(x + b).
+- Multiplicar as abcissas em vez das ordenadas em c f(x).
+- Esquecer a reflexão quando c < 0.
+#I
+- f(x) + b: translação vertical de b.
+- f(x - a): translação horizontal de a (a > 0: direita).
+- c f(x): dilatação (c > 1) ou contração (0 < c < 1); c < 0 reflete.
+- (x, y) passa a (x + a, c y + b).
+#J
+O gráfico de f passa em B(-2, 5).
+Que ponto do gráfico de g(x) = f(x + 1) + 2 lhe corresponde?
+#R
+f(x + 1) = f(x - (-1)): desloca 1 para a esquerda: -2 - 1 = [[-3]].
+Sobe 2: 5 + 2 = [[7]]. O ponto é (-3, 7).
+#V
+V = [1 + 3, 2 * 4, 8 - 1, 2 * 4 - 1, -2 - 1, 5 + 2]
+
+@exemplo m5e1
+nivel: 1
+titulo: Vértice e eixo de uma parábola
+licao: m5a
+calc: c_matq.q2
+#T
+Enunciado: indica o vértice, o eixo e a concavidade de f(x) = 3(x + 2)² - 1.
+Dados: forma canónica a(x - h)² + k.
+Objetivo: vértice, eixo de simetria e concavidade.
+Método: ler h e k; atenção ao sinal de h.
+Resolução:
+1. x + 2 = x - (-2), logo h = [[-2]].
+2. k = [[-1]].
+3. a = 3 > 0: concavidade voltada para cima.
+Resultado: V(-2, -1); eixo x = -2; mínimo -1.
+Interpretação: é a parábola de y = 3x² com o vértice em (-2, -1).
+Erros a evitar: escrever h = 2.
+#V
+V = [-2, -1]
+
+@exemplo m5e2
+nivel: 2
+titulo: Equação do 2.º grau com fração
+licao: m5b
+calc: c_matq.q2
+#T
+Enunciado: resolve 3x² - 7x + 2 = 0.
+Dados: a = 3, b = -7, c = 2.
+Objetivo: conjunto-solução.
+Método: discriminante e fórmula resolvente.
+Resolução:
+1. Δ = 49 - 24 = [[25]]
+2. x = (7 ± 5) / 6
+3. x = 2/6 = [[=1/3]] ∨ x = 12/6 = [[2]]
+Resultado: C.S. = {1/3, 2}.
+Interpretação: a parábola corta o eixo Ox em x = 1/3 e em x = 2.
+Erros a evitar: dividir só o 5 por 6.
+Verificação: 3 × (1/3)² - 7 × (1/3) + 2 = [[0]].
+#V
+V = [25, 2 / 6, 12 / 6, 3 / 9 - 7 / 3 + 2]
+
+@exemplo m5e3
+nivel: 3
+titulo: Altura máxima de um lançamento
+licao: m5c
+calc: c_matq.q2
+#T
+Enunciado: a altura de uma bola, em metros, é h(t) = -5t² + 20t + 1.
+t é o tempo, em segundos, desde o lançamento.
+Objetivo: altura máxima e instante em que a bola chega ao chão.
+Método: vértice da parábola e zero positivo.
+Resolução:
+1. t do vértice: -20 / (2 × (-5)) = [[2]] s
+2. h(2) = -20 + 40 + 1 = [[21]] m (altura máxima)
+3. Chão: -5t² + 20t + 1 = 0, com Δ = 400 + 20 = [[420]].
+4. t = (-20 - √420) / (-10) = 2 + √105/5 ≈ [[4,05]] s
+5. O outro zero é negativo e rejeita-se.
+Resultado: altura máxima 21 m aos 2 s; chega ao chão aos 4,05 s.
+Interpretação: a = -5 < 0 garante que o vértice é um máximo.
+Erros a evitar: aceitar o tempo negativo.
+#V
+t = (-20 - sqrt(420)) / (-10)
+V = [2, -20 + 40 + 1, 420, t]
+
+@exercicio m5x1
+tipo: m
+licao: m5a
+#T
+Qual é o vértice da parábola f(x) = -(x + 2)² + 5?
+#O
+(-2, 5)
+(2, 5)
+(-2, -5)
+(5, -2)
+#S
+1
+#P
+Em a(x - h)² + k, o vértice é (h, k). Atenção: x + 2 = x - (-2).
+#D
+x + 2 = x - (-2), logo h = -2 e k = 5.
+O vértice é (-2, 5); como a = -1 < 0, 5 é o máximo.
+#V
+S = 1
+
+@exercicio m5x2
+tipo: n
+licao: m5b
+#T
+Calcula o discriminante de x² - 4x + 1.
+#S
+12
+#P
+Δ = b² - 4ac.
+#D
+Δ = (-4)² - 4 × 1 × 1 = 16 - 4 = [[12]].
+Como Δ > 0, há dois zeros: 2 - √3 e 2 + √3.
+#V
+S = 16 - 4
+V = [S]
+
+@exercicio m5x3
+tipo: m
+licao: m5b
+#T
+Quantos zeros tem f(x) = 3x² + 2x + 1?
+#O
+Nenhum
+Um
+Dois
+Três
+#S
+1
+#P
+Calcula Δ e vê o sinal.
+#D
+Δ = 4 - 12 = [[-8]] < 0, logo f não tem zeros.
+#V
+d = 4 - 12
+S = 1 if d < 0 else (2 if d == 0 else 3)
+V = [d]
+
+@exercicio m5x4
+tipo: n
+licao: m5b
+#T
+Qual é o zero positivo de f(x) = x² - x - 6?
+#S
+3
+#P
+Usa a fórmula resolvente ou fatoriza: (x - 3)(x + 2).
+#D
+Δ = 1 + 24 = [[25]]; x = (1 ± 5) / 2.
+x = [[3]] ∨ x = [[-2]]. O zero positivo é 3.
+#V
+S = (1 + 5) / 2
+V = [25, S, (1 - 5) / 2]
+
+@exercicio m5x5
+tipo: v
+licao: m5a
+#T
+Se a < 0, a parábola de f(x) = ax² + bx + c tem a concavidade voltada para cima.
+#S
+F
+#P
+Pensa em y = -x².
+#D
+Falso. Com a < 0 a concavidade está voltada para baixo.
+O vértice é então um máximo.
+#V
+S = 'F'
+
+@exercicio m5x6
+tipo: m
+licao: m5c
+#T
+Qual é o conjunto-solução de x² - 9 < 0?
+#O
+]-3, 3[
+[-3, 3]
+]-∞, -3[ ∪ ]3, +∞[
+]-9, 9[
+#S
+1
+#P
+Zeros: ±3. A parábola abre para cima.
+#D
+Zeros: x = -3 e x = 3. Como a > 0, a parábola fica abaixo do eixo entre os zeros.
+O sinal < não inclui os zeros: C.S. = ]-3, 3[.
+#V
+S = 1
+
+@exercicio m5x7
+tipo: n
+licao: m5c
+#T
+Qual é o valor máximo de f(x) = -2x² + 8x - 3?
+#S
+5
+#P
+O máximo é a ordenada do vértice: h = -b/(2a).
+#D
+h = -8 / (2 × (-2)) = [[2]].
+k = f(2) = -8 + 16 - 3 = [[5]]. O máximo é 5.
+#V
+S = -2 * 4 + 16 - 3
+V = [2, S]
+
+@exercicio m5x8
+tipo: m
+licao: m5d
+#T
+O gráfico de g(x) = f(x - 3) + 1 obtém-se do de f por uma translação:
+#O
+3 para a direita e 1 para cima
+3 para a esquerda e 1 para cima
+3 para a direita e 1 para baixo
+1 para a direita e 3 para cima
+#S
+1
+#P
+f(x - a) com a > 0 desloca para a direita.
+#D
+x - 3 = x - a com a = 3 > 0: 3 unidades para a direita.
++ 1 fora de f: 1 unidade para cima.
+#V
+S = 1
+
+@exercicio m5x9
+tipo: n
+licao: m5b
+modo: d2
+#T
+Determina o zero positivo de 2x² + 3x - 4, arredondado às centésimas.
+#S
+0,85
+#P
+x = (-b + √Δ) / (2a), com Δ = 9 + 32.
+#D
+Δ = 9 + 32 = [[41]]; x = (-3 + √41) / 4 ≈ [[0,85]].
+#V
+S = (-3 + sqrt(41)) / 4
+V = [41, S]
+
+@exercicio m5x10
+tipo: v
+licao: m5a
+#T
+O eixo de simetria do gráfico de f(x) = x² - 6x + 1 é a reta x = 3.
+#S
+V
+#P
+h = -b/(2a).
+#D
+Verdadeiro: h = -(-6) / (2 × 1) = [[3]], logo o eixo é x = 3.
+#V
+S = 'V'
+V = [3]

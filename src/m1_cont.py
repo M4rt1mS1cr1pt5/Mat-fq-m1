@@ -114,7 +114,9 @@ def parts(txt):
                 d[cur] = '\n'.join(buf)
             cur = ln[1]
             buf = []
-            if cur == 'F':
+            if cur == 'F' and len(ln) > 3:
+                # "@F nome|formula|..." e uma formula; "@F" sozinho e a
+                # pagina F (exemplo resolvido).
                 fs.append(ln[3:].split('|'))
                 cur = None
             elif len(ln) > 3:

@@ -1,0 +1,58 @@
+# Percurso 1: FQ > Quimica > Massa e tamanho dos atomos: licao q1a (todas
+# as paginas e a resposta J), formulario, exemplo, calculadora da massa
+# molar (com passos), resumo; sair.
+1
+enter
+1
+1
+# menu do tema: 1 Licoes; licao 1
+1
+1
+right
+right
+right
+right
+right
+right
+right
+right
+right
+r
+esc
+left
+esc
+esc
+# 2 Formulario do tema (12 formulas: 1 e enter)
+2
+1
+enter
+esc
+esc
+# 3 Exemplos: o 3.o
+3
+3
+esc
+esc
+# 6 Calculadoras do tema: 2 = massa molar
+6
+2
+clear
+H
+2
+S
+O
+4
+enter
+1
+esc
+esc
+esc
+# 7 Resumo
+7
+esc
+esc
+esc
+esc
+1
+3
+enter

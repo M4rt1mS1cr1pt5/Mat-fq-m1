@@ -1,0 +1,59 @@
+# Percurso 2: Matematica > Funcao quadratica: licao m5b, calculadora do
+# 2.o grau (com grafico) e inequacao do 2.o grau; sair.
+2
+1
+1
+# licoes: a 2.a
+1
+2
+right
+right
+right
+right
+right
+esc
+esc
+# 6 Calculadoras do tema: 1 = 2.o grau
+6
+1
+clear
+2
+down
+clear
+-
+3
+down
+clear
+1
+enter
+5
+right
++
+esc
+esc
+# 2 = inequacao
+2
+clear
+1
+down
+clear
+-
+5
+down
+clear
+6
+down
+right
+right
+right
+enter
+5
+esc
+esc
+esc
+esc
+esc
+esc
+1
+3
+enter

@@ -124,12 +124,23 @@ def roots(a, b, c, ra, rb, rc):
     return out, d, dt
 
 
+def sep(*ts):
+    # Separador ", " ou "; " (quando algum valor tem virgula decimal).
+    for t in ts:
+        if ',' in t:
+            return '; '
+    return ', '
+
+
+def pt(a, b):
+    return '(' + a + sep(a, b) + b + ')'
+
+
 def iv(a, b, ca, cb):
     # Intervalo "]a, b[" (a, b: textos; None = infinito).
     sa = MINF if a is None else a
     sb = INF if b is None else b
-    sep = '; ' if ',' in sa or ',' in sb else ', '
-    return ('[' if ca and a is not None else ']') + sa + sep + sb + \
+    return ('[' if ca and a is not None else ']') + sa + sep(sa, sb) + sb + \
         (']' if cb and b is not None else '[')
 
 
@@ -149,11 +160,16 @@ def fields():
 
 
 def window(a, b, c, zs):
+    # Janela do grafico: centrada no vertice, com os zeros bem visiveis.
     h = -b / (2 * a) if a else 0
-    xs = [z[0] for z in zs] + [h]
-    w = max(4.0, (max(xs) - min(xs)) * 1.6)
-    x0 = h - w / 2 - 1
-    x1 = h + w / 2 + 1
+    k = c - b * b / (4 * a) if a else c
+    if zs:
+        s = max([abs(z[0] - h) for z in zs])
+    else:
+        s = math.sqrt(abs(k / a)) if a else 1.0
+    w = max(1.0, 1.6 * s)
+    x0 = h - w
+    x1 = h + w
     ys = [a * x * x + b * x + c for x in (x0, x1, h)]
     y0 = min(ys + [0])
     y1 = max(ys + [0])
@@ -201,7 +217,8 @@ def _q2(v):
         if zs[0][1] is not None and '\u221a' in zs[0][1]:
             o.append('  (' + ' \u2228 '.join(['x ' + N.AP + ' ' + N.fmt(z[0])
                                          for z in zs]) + ')')
-        o.append('C.S. = {' + '; '.join([num(z[0], z[1]) for z in zs]) + '}')
+        ts = [num(z[0], z[1]) for z in zs]
+        o.append('C.S. = {' + sep(*ts).join(ts) + '}')
     else:
         o.append('C.S. = \u2205')
     h = -b / (2 * a)
@@ -215,11 +232,11 @@ def _q2(v):
     sh = num(h, hx)
     sk = num(k, kx)
     up = a > 0
-    o += ['V\u00e9rtice: V(' + sh + '; ' + sk + ')', 'Eixo de simetria: x = ' + sh,
+    o += ['V\u00e9rtice: V' + pt(sh, sk), 'Eixo de simetria: x = ' + sh,
           'Concavidade voltada para ' + ('cima' if up else 'baixo') +
           ' (a ' + ('>' if up else '<') + ' 0)',
           ('M\u00ednimo' if up else 'M\u00e1ximo') + ': ' + sk + ' (em x = ' + sh + ')',
-          "D' = " + (iv(sk, None, 1, 0) if up else iv(None, sk, 0, 1)),
+          "D\u2032f = " + (iv(sk, None, 1, 0) if up else iv(None, sk, 0, 1)),
           ('Decrescente' if up else 'Crescente') + ' em ' + iv(None, sh, 0, 1) +
           '; ' + ('crescente' if up else 'decrescente') + ' em ' +
           iv(sh, None, 1, 0)]

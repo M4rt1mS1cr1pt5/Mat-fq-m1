@@ -80,6 +80,7 @@ calc: c_fqen.tr
 ano: 10
 nivel: núcleo
 pre: f1a
+liga: m8a m8g
 fonte: AE FQ A 10.º, Energia e movimentos
 #A
 - Definir trabalho como transferência de energia por ação de uma força.
@@ -147,6 +148,7 @@ calc: c_fqen.tec
 ano: 10
 nivel: núcleo
 pre: f1b
+liga: m8b
 fonte: AE FQ A 10.º, Energia e movimentos
 #A
 - Enunciar o teorema da energia cinética.

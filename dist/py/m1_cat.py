@@ -1,9 +1,9 @@
 # m1_cat.py - M1TR4M: catalogo gerado pelo build (nao editar).
 # TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes
 # CALC: id|nome|disciplina|tema (as palavras-chave estao no indice da pesquisa)
-NLIC = 91
-NEX = 183
-NCART = 260
+NLIC = 98
+NEX = 194
+NCART = 281
 TEMAS = (
     "q1|F|q|Massa e tamanho dos \xe1tomos|p_q1|x_q1|5|0|10|0|18|0|c_fqat.qm c_fqat.mm c_fqat.ar c_fqat.fr c_comu.sci c_comu.sf c_comu.uni|q1a q1b q1c q1d q1e",
     "q2|F|q|Energia dos eletr\xf5es nos \xe1tomos|p_q2|x_q2|5|5|10|10|14|18|c_fqel.fot c_fqel.hid c_fqel.conf c_comu.sci c_comu.uni|q2a q2b q2c q2d q2e",
@@ -24,6 +24,7 @@ TEMAS = (
     "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|78|10|155|15|218|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
     "m6|M|t|Fun\xe7\xf5es definidas por ramos e fun\xe7\xe3o m\xf3dulo|p_m6|x_m6|3|82|8|165|9|233|c_matf.ramos c_matf.mod c_matf.fx|m6a m6b m6c",
     "m7|M|t|Geometria anal\xedtica no plano e no espa\xe7o|p_m7|x_m7|6|85|10|173|18|242|c_matg.dist c_matg.reta c_matg.medz c_matg.circ c_matg.cond|m7a m7b m7c m7d m7e m7f",
+    "m8|M|t|Vetores no plano e no espa\xe7o|p_m8|x_m8|7|91|11|183|21|260|c_matv.vet c_matv.retav c_matv.bar|m8a m8b m8c m8d m8e m8f m8g",
 )
 CALC = "c_alf1.plano|AL 1.1 Plano inclinado: Ec e dist\xe2ncia|F|af\n\
 c_alf1.ress|AL 1.2 Queda e ressalto de uma bola|F|af\n\
@@ -92,7 +93,10 @@ c_matt.pn|Pontos not\xe1veis do tri\xe2ngulo (com desenho)|M|m3\n\
 c_matt.insc|Circunfer\xeancias inscrita e circunscrita|M|m3\n\
 c_matt.euler|Reta de Euler e nove pontos|M|m3\n\
 c_matt.pit|Teorema de Pit\xe1goras|M|mr\n\
-c_matt.sem|Semelhan\xe7a de figuras|M|mr"
+c_matt.sem|Semelhan\xe7a de figuras|M|mr\n\
+c_matv.vet|Opera\xe7\xf5es com vetores|M|m8\n\
+c_matv.retav|Equa\xe7\xe3o vetorial da reta|M|m8\n\
+c_matv.bar|Baricentro com vetores|M|m8"
 BUILD = "2026-10-22"
 # Partes do indice da pesquisa: modulo:disciplina
 IDX = "m1_idx:F m1_idx2:F m1_idxm:M"

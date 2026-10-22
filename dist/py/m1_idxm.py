@@ -1,7 +1,7 @@
 # m1_idxm.py - M1TR4M: indice da pesquisa (Mat, parte 1 de 1) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 162\n\
+@N 200\n\
 L|Revis\xf5es de tri\xe2ngulos; mediatriz e bissetriz|classificacao triangulos congruencia semelhanca\
  criterio aa pitagoras|m3a\n\
 L|Incentro e circunfer\xeancia inscrita|bissetrizes tangente raio r = 2a/p triangulo tg|m3b\n\
@@ -146,6 +146,42 @@ X|Qual \xe9 o raio da superf\xedcie||m7:6\n\
 X|Que condi\xe7\xe3o define o 1.\xba||m7:7\n\
 X|No espa\xe7o, a condi\xe7\xe3o x = 3||m7:8\n\
 X|Uma esfera tem centro (2, -5||m7:9\n\
+L|Vetores: dire\xe7\xe3o, sentido e norma|vetor segmento orientado direcao vetores iguais simetrico|m8a\n\
+L|Opera\xe7\xf5es com vetores|soma regra triangulo paralelogramo diferenca ponto mais vetor|m8b\n\
+L|Coordenadas e norma de um vetor|ab = b - posicao operacoes plano vetores|m8c\n\
+L|Vetores colineares|mesma direcao v = ku coordenadas proporcionais vetor|m8d\n\
+L|Equa\xe7\xe3o vetorial da reta|vetor diretor parametro ponto pertence declive m vetores|m8e\n\
+L|Vetores em problemas de geometria (aprofundamento)|quarto vertice paralelogramo ponto medio baricentro\
+ medianas energia mecanica vetor|m8f\n\
+L|Produto escalar (extens\xe3o, 11.\xba)|angulo dois vetores perpendiculares cosseno trabalho forca cos vetor|m8g\n\
+F|Vetor sim\xe9trico|vetores|m8:0\n\
+F|Transla\xe7\xe3o||m8:1\n\
+F|Regra do tri\xe2ngulo||m8:2\n\
+F|Produto por um n\xfamero real||m8:3\n\
+F|Vetor definido por dois pontos|vetores|m8:4\n\
+F|Norma de um vetor|vetores|m8:5\n\
+F|Vetores colineares|vetor|m8:6\n\
+F|Pontos alinhados||m8:7\n\
+F|Equa\xe7\xe3o vetorial da reta||m8:8\n\
+F|Declive e vetor diretor|vetores|m8:9\n\
+F|Quarto v\xe9rtice do paralelogramo||m8:10\n\
+F|Baricentro||m8:11\n\
+F|Produto escalar (11.\xba)||m8:12\n\
+F|\xc2ngulo de dois vetores (11.\xba)|vetor|m8:13\n\
+E|Vetor, norma e ponto m\xe9dio||m8:0\n\
+E|Tr\xeas pontos alinhados||m8:1\n\
+E|Da equa\xe7\xe3o vetorial \xe0 reduzida||m8:2\n\
+X|Qual \xe9 a norma do vetor u =|vetores|m8:0\n\
+X|Num paralelogramo [ABCD], que||m8:1\n\
+X|A(2, -1) e AB = (3, 4). Qual||m8:2\n\
+X|Se \u2016u\u2016 = 3 e \u2016v\u2016 = 4, ent\xe3o||m8:3\n\
+X|Para que valor de a s\xe3o u =||m8:4\n\
+X|Qual destes \xe9 um vetor|vetores|m8:5\n\
+X|O ponto P(3, 1) pertence \xe0||m8:6\n\
+X|\u2016u\u2016 = 2,5. Qual \xe9 a norma de||m8:7\n\
+X|Tri\xe2ngulo de v\xe9rtices A(1||m8:8\n\
+X|A(1, 0, 2) e B(3, -2, 3).||m8:9\n\
+X|Qual \xe9 o produto escalar de u||m8:10\n\
 C|Constantes e dados|avogadro planck velocidade luz volume molar na vm|c_comd.cte\n\
 C|Dados experimentais|media incerteza absoluta relativa erro percentual|c_comd.exp\n\
 C|Regress\xe3o linear e gr\xe1fico|reta declive ordenada coeficiente correlacao interpolar|c_comd.reg\n\
@@ -170,4 +206,7 @@ C|Pontos not\xe1veis do tri\xe2ngulo (com desenho)|incentro circuncentro ortocen
 C|Circunfer\xeancias inscrita e circunscrita|raio circunferencia r = 2a/p triangulo|c_matt.insc\n\
 C|Reta de Euler e nove pontos|ob = 2bc circunferencia raio r/2|c_matt.euler\n\
 C|Teorema de Pit\xe1goras|hipotenusa catetos triangulo retangulo|c_matt.pit\n\
-C|Semelhan\xe7a de figuras|razao ampliacao reducao areas lados correspondentes|c_matt.sem"
+C|Semelhan\xe7a de figuras|razao ampliacao reducao areas lados correspondentes|c_matt.sem\n\
+C|Opera\xe7\xf5es com vetores|vetor norma soma diferenca produto numero|c_matv.vet\n\
+C|Equa\xe7\xe3o vetorial da reta|vetor diretor ponto pertence declive m vetores|c_matv.retav\n\
+C|Baricentro com vetores|mediana g = + 2/3 am vetor|c_matv.bar"

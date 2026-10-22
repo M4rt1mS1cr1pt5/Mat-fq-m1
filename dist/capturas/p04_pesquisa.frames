@@ -1348,7 +1348,7 @@ F	20
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	298	13	255,255,255	59
+T	249	13	255,255,255	60 (máx.)
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	mas
 R	39	19	1	13	0,0,0
@@ -1372,7 +1372,7 @@ T	18	166	0,0,0	Massa e peso na Lua
 T	4	183	0,51,153	E
 T	18	183	0,0,0	Massa e volume de uma gota
 R	314	34	3	153	232,232,232
-R	314	34	3	23	100,100,100
+R	314	34	3	22	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	21
@@ -1723,7 +1723,7 @@ F	44
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	50
+T	249	13	255,255,255	60 (máx.)
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	v
 R	25	19	1	13	0,0,0
@@ -1731,30 +1731,30 @@ R	0	34	313	17	204,224,255
 T	4	47	0,51,153	E
 T	18	47	0,0,0	Vértice e eixo de uma parábola
 T	4	64	0,51,153	F
-T	18	64	0,0,0	Abcissa do vértice
+T	18	64	0,0,0	Vetor definido por dois pontos
 T	4	81	0,51,153	F
-T	18	81	0,0,0	Ângulo com vértice no incentro
+T	18	81	0,0,0	Vetor simétrico
 T	4	98	0,51,153	E
-T	18	98	0,0,0	Ângulos com vértice no incentro
-T	4	115	0,51,153	F
-T	18	115	0,0,0	Dilatação ou contração vertical
+T	18	98	0,0,0	Vetor, norma e ponto médio
+T	4	115	0,51,153	L
+T	18	115	0,0,0	Vetores colineares
 T	4	132	0,51,153	F
-T	18	132	0,0,0	Ordenada do vértice
-T	4	149	0,51,153	X
-T	18	149	0,0,0	Qual é o valor máximo de f(x)
-T	4	166	0,51,153	X
-T	18	166	0,0,0	Qual é o vértice da parábola
-T	4	183	0,51,153	X
-T	18	183	0,0,0	Qual é o vértice do gráfico
+T	18	132	0,0,0	Vetores colineares
+T	4	149	0,51,153	L
+T	18	149	0,0,0	Vetores em problemas de geometria (aprof…
+T	4	166	0,51,153	L
+T	18	166	0,0,0	Vetores: direção, sentido e norma
+T	4	183	0,51,153	F
+T	18	183	0,0,0	Abcissa do vértice
 R	314	34	3	153	232,232,232
-R	314	34	3	27	100,100,100
+R	314	34	3	22	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	45
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	33
+T	298	13	255,255,255	56
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	ve
 R	32	19	1	13	0,0,0
@@ -1762,30 +1762,30 @@ R	0	34	313	17	204,224,255
 T	4	47	0,51,153	E
 T	18	47	0,0,0	Vértice e eixo de uma parábola
 T	4	64	0,51,153	F
-T	18	64	0,0,0	Abcissa do vértice
+T	18	64	0,0,0	Vetor definido por dois pontos
 T	4	81	0,51,153	F
-T	18	81	0,0,0	Ângulo com vértice no incentro
+T	18	81	0,0,0	Vetor simétrico
 T	4	98	0,51,153	E
-T	18	98	0,0,0	Ângulos com vértice no incentro
-T	4	115	0,51,153	F
-T	18	115	0,0,0	Dilatação ou contração vertical
+T	18	98	0,0,0	Vetor, norma e ponto médio
+T	4	115	0,51,153	L
+T	18	115	0,0,0	Vetores colineares
 T	4	132	0,51,153	F
-T	18	132	0,0,0	Ordenada do vértice
-T	4	149	0,51,153	X
-T	18	149	0,0,0	Qual é o vértice da parábola
-T	4	166	0,51,153	X
-T	18	166	0,0,0	Qual é o vértice do gráfico
+T	18	132	0,0,0	Vetores colineares
+T	4	149	0,51,153	L
+T	18	149	0,0,0	Vetores em problemas de geometria (aprof…
+T	4	166	0,51,153	L
+T	18	166	0,0,0	Vetores: direção, sentido e norma
 T	4	183	0,51,153	F
-T	18	183	0,0,0	Translação vertical
+T	18	183	0,0,0	Abcissa do vértice
 R	314	34	3	153	232,232,232
-R	314	34	3	41	100,100,100
+R	314	34	3	24	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	46
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	16
+T	298	13	255,255,255	19
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	ver
 R	39	19	1	13	0,0,0
@@ -1807,16 +1807,16 @@ T	18	149	0,0,0	Qual é o vértice da parábola
 T	4	166	0,51,153	X
 T	18	166	0,0,0	Qual é o vértice do gráfico
 T	4	183	0,51,153	F
-T	18	183	0,0,0	Translação vertical
+T	18	183	0,0,0	Quarto vértice do paralelogramo
 R	314	34	3	153	232,232,232
-R	314	34	3	86	100,100,100
+R	314	34	3	72	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	47
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	15
+T	298	13	255,255,255	18
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	vert
 R	46	19	1	13	0,0,0
@@ -1838,16 +1838,16 @@ T	18	149	0,0,0	Qual é o vértice da parábola
 T	4	166	0,51,153	X
 T	18	166	0,0,0	Qual é o vértice do gráfico
 T	4	183	0,51,153	F
-T	18	183	0,0,0	Translação vertical
+T	18	183	0,0,0	Quarto vértice do paralelogramo
 R	314	34	3	153	232,232,232
-R	314	34	3	91	100,100,100
+R	314	34	3	76	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	48
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	15
+T	298	13	255,255,255	18
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	verti
 R	53	19	1	13	0,0,0
@@ -1869,16 +1869,16 @@ T	18	149	0,0,0	Qual é o vértice da parábola
 T	4	166	0,51,153	X
 T	18	166	0,0,0	Qual é o vértice do gráfico
 T	4	183	0,51,153	F
-T	18	183	0,0,0	Translação vertical
+T	18	183	0,0,0	Quarto vértice do paralelogramo
 R	314	34	3	153	232,232,232
-R	314	34	3	91	100,100,100
+R	314	34	3	76	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	49
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	15
+T	298	13	255,255,255	18
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	vertic
 R	60	19	1	13	0,0,0
@@ -1900,16 +1900,16 @@ T	18	149	0,0,0	Qual é o vértice da parábola
 T	4	166	0,51,153	X
 T	18	166	0,0,0	Qual é o vértice do gráfico
 T	4	183	0,51,153	F
-T	18	183	0,0,0	Translação vertical
+T	18	183	0,0,0	Quarto vértice do paralelogramo
 R	314	34	3	153	232,232,232
-R	314	34	3	91	100,100,100
+R	314	34	3	76	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	50
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	11
+T	298	13	255,255,255	14
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	vertice
 R	67	19	1	13	0,0,0
@@ -1928,19 +1928,19 @@ T	4	132	0,51,153	X
 T	18	132	0,0,0	Qual é o vértice da parábola
 T	4	149	0,51,153	X
 T	18	149	0,0,0	Qual é o vértice do gráfico
-T	4	166	0,51,153	L
-T	18	166	0,0,0	A função quadrática e o seu gráfico
-T	4	183	0,51,153	C
-T	18	183	0,0,0	Equação do 2.º grau e função quadrática
+T	4	166	0,51,153	F
+T	18	166	0,0,0	Quarto vértice do paralelogramo
+T	4	183	0,51,153	X
+T	18	183	0,0,0	Triângulo de vértices A(1
 R	314	34	3	153	232,232,232
-R	314	34	3	125	100,100,100
+R	314	34	3	98	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	51
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	11
+T	298	13	255,255,255	14
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	vertice
 R	67	19	1	13	0,0,0
@@ -1959,12 +1959,12 @@ T	4	132	0,51,153	X
 T	18	132	0,0,0	Qual é o vértice da parábola
 T	4	149	0,51,153	X
 T	18	149	0,0,0	Qual é o vértice do gráfico
-T	4	166	0,51,153	L
-T	18	166	0,0,0	A função quadrática e o seu gráfico
-T	4	183	0,51,153	C
-T	18	183	0,0,0	Equação do 2.º grau e função quadrática
+T	4	166	0,51,153	F
+T	18	166	0,0,0	Quarto vértice do paralelogramo
+T	4	183	0,51,153	X
+T	18	183	0,0,0	Triângulo de vértices A(1
 R	314	34	3	153	232,232,232
-R	314	34	3	125	100,100,100
+R	314	34	3	98	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	52
@@ -1988,7 +1988,7 @@ F	54
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	11
+T	298	13	255,255,255	14
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	vertice
 R	67	19	1	13	0,0,0
@@ -2007,12 +2007,12 @@ T	4	132	0,51,153	X
 T	18	132	0,0,0	Qual é o vértice da parábola
 T	4	149	0,51,153	X
 T	18	149	0,0,0	Qual é o vértice do gráfico
-T	4	166	0,51,153	L
-T	18	166	0,0,0	A função quadrática e o seu gráfico
-T	4	183	0,51,153	C
-T	18	183	0,0,0	Equação do 2.º grau e função quadrática
+T	4	166	0,51,153	F
+T	18	166	0,0,0	Quarto vértice do paralelogramo
+T	4	183	0,51,153	X
+T	18	183	0,0,0	Triângulo de vértices A(1
 R	314	34	3	153	232,232,232
-R	314	34	3	125	100,100,100
+R	314	34	3	98	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	55

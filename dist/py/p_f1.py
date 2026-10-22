@@ -66,7 +66,8 @@ Um carro de 1,2 \xd7 10\xb3 kg passa de 10 m s\u207b\xb9 para 20 m s\u207b\xb9. 
 Por 4: a velocidade duplica e Ec \xe9 proporcional a v\xb2 (passa de 6,0 \xd7 10\u2074 J para 2,4 \xd7 10\u2075 J).\n\
 @L f1b|Trabalho de uma for\xe7a constante|trabalho forca constante deslocamento angulo componente eficaz\
  trabalho potente resistente nulo joule|c_fqen.tr|10|n\xfacleo|f1a:Energia cin\xe9tica, potencial\
- grav\xedtica e mec\xe2nica||AE FQ A 10.\xba, Energia e movimentos\n\
+ grav\xedtica e mec\xe2nica|m8a:Vetores: dire\xe7\xe3o, sentido e norma;m8g:Produto escalar (extens\xe3o,\
+ 11.\xba)|AE FQ A 10.\xba, Energia e movimentos\n\
 @A\n\
 - Definir trabalho como transfer\xeancia de energia por a\xe7\xe3o de uma for\xe7a.\n\
 - Calcular o trabalho de uma for\xe7a constante.\n\
@@ -122,8 +123,8 @@ Uma for\xe7a de 20 N, perpendicular a um deslocamento de 4,0 m, realiza que trab
 @R\n\
 Nenhum: W = 20 \xd7 4,0 \xd7 cos 90\xb0 = 0 J.\n\
 @L f1c|Teorema da energia cin\xe9tica|teorema da energia cinetica trabalho da resultante soma dos trabalhos\
- variacao da energia cinetica travagem|c_fqen.tec|10|n\xfacleo|f1b:Trabalho de uma for\xe7a constante||AE FQ\
- A 10.\xba, Energia e movimentos\n\
+ variacao da energia cinetica travagem|c_fqen.tec|10|n\xfacleo|f1b:Trabalho de uma for\xe7a\
+ constante|m8b:Opera\xe7\xf5es com vetores|AE FQ A 10.\xba, Energia e movimentos\n\
 @A\n\
 - Enunciar o teorema da energia cin\xe9tica.\n\
 - Calcular o trabalho da resultante a partir da varia\xe7\xe3o de Ec.\n\

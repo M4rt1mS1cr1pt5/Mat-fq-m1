@@ -3,6 +3,7 @@ import c_matq
 import c_matt
 import c_matf
 import c_matg
+import c_matv
 from base import calc, erro, tem, perto
 
 
@@ -380,3 +381,79 @@ def t_cond_invalido():
     assert 'Falta um sinal' in erro(calc, c_matg, 'cond', ['y + x', ''])
     assert 'Falta um membro' in erro(calc, c_matg, 'cond', ['y >', ''])
     assert 'condição' in erro(calc, c_matg, 'cond', ['', ''])
+
+
+def t_vet_operacoes():
+    r = calc(c_matv, 'vet', ['3 -4', '-6 8', '2', '1 1', ''])
+    tem(r[0], '‖u‖ = √(9 + 16) = 5', 'u + v = (-3, 4)', 'u - v = (9, -12)',
+        'Colineares: v = (-2) u (sentidos opostos)', '2 u = (6, -8)',
+        '‖2 u‖ = |2| × ‖u‖ = 10', 'A + u = (4, -3)')
+    perto(r[2], 5)
+
+
+def t_vet_ab_espaco():
+    r = calc(c_matv, 'vet', ['', '', '', '1 2 3', '4 6 3'])
+    tem(r[0], 'u = AB = B - A', 'u = (3, 4, 0)', '= 5')
+    r = calc(c_matv, 'vet', ['1 2', '3 1', '-1/2', '', ''])
+    tem(r[0], '√5 ≈ 2,2361', 'Não são colineares', '(-0,5) u = (-0,5; -1)')
+
+
+def t_vet_nulo():
+    r = calc(c_matv, 'vet', ['0 0', '1 2', '', '', ''])
+    tem(r[0], 'vetor nulo', 'u + v = (1, 2)')
+    assert 'colinear' not in r[0]
+    assert r[2] == 0
+
+
+def t_vet_invalido():
+    assert 'mesmo número' in erro(calc, c_matv, 'vet', ['1 2', '1 2 3', '', '', ''])
+    assert 'Escreve u' in erro(calc, c_matv, 'vet', ['', '', '', '1 1', ''])
+    assert 'deixa B vazio' in erro(calc, c_matv, 'vet', ['1 2', '', '', '0 0', '1 1'])
+    assert '2 ou 3' in erro(calc, c_matv, 'vet', ['1 2 3 4', '', '', '', ''])
+
+
+def t_retav_pertence():
+    r = calc(c_matv, 'retav', ['1 2', '2 3', '', '5 8'])
+    tem(r[0], '(x, y) = (1, 2) + k (2, 3), k ∈ ℝ', 'm = u2 / u1 = 3 / 2 = 1,5',
+        'y = 1,5x + 0,5', 'P pertence à reta (k = 2)')
+    perto(r[2], 1.5)
+    r = calc(c_matv, 'retav', ['0 1', '3 1', '', '6 4'])
+    tem(r[0], '1 / 3 = 1/3 ≈ 0,3333', 'y = (1/3)x + 1', 'P não pertence')
+
+
+def t_retav_dois_pontos_vertical():
+    r = calc(c_matv, 'retav', ['1 2', '', '4 2', '0 0'])
+    tem(r[0], 'k (3, 0)', 'y = 2', 'AP = (-1, -2) não é colinear')
+    r = calc(c_matv, 'retav', ['1 2', '0 3', '', '1 -7'])
+    tem(r[0], 'Reta vertical: x = 1 (sem declive)', 'P = A + (-3) u')
+    assert r[2] is None
+    r = calc(c_matv, 'retav', ['2 1', '-2 4', '', '2 1'])
+    tem(r[0], '4 / (-2) = -2', 'y = -2x + 5', 'k = 0')
+
+
+def t_retav_espaco():
+    r = calc(c_matv, 'retav', ['1 2 3', '1 -1 2', '', '3 0 7'])
+    tem(r[0], '(x, y, z) = (1, 2, 3) + k (1, -1, 2)', 'P pertence à reta (k = 2)')
+    assert 'Declive' not in r[0]
+
+
+def t_retav_invalido():
+    assert 'nulo' in erro(calc, c_matv, 'retav', ['1 2', '0 0', '', ''])
+    assert 'nulo' in erro(calc, c_matv, 'retav', ['1 2', '', '1 2', ''])
+    assert 'não os dois' in erro(calc, c_matv, 'retav', ['1 2', '1 1', '3 3', ''])
+    assert 'segundo ponto' in erro(calc, c_matv, 'retav', ['1 2', '', '', ''])
+    assert 'mesmo número' in erro(calc, c_matv, 'retav', ['1 2', '1 1 1', '', ''])
+
+
+def t_bar():
+    r = calc(c_matv, 'bar', ['0 0', '6 0', '3 6'])
+    tem(r[0], 'M (ponto médio de [BC]) = (4,5; 3)', 'G = A + 2/3 AM',
+        '> G = (3, 2)', '(A + B + C) / 3 = (3, 2)')
+    r = calc(c_matv, 'bar', ['0 0 0', '3 0 0', '0 3 3'])
+    tem(r[0], 'G = (1, 1, 1)')
+
+
+def t_bar_invalido():
+    assert 'alinhados' in erro(calc, c_matv, 'bar', ['0 0', '1 1', '2 2'])
+    assert 'alinhados' in erro(calc, c_matv, 'bar', ['1 1', '1 1', '2 3'])
+    assert 'mesmo número' in erro(calc, c_matv, 'bar', ['0 0', '1 1 1', '2 3'])

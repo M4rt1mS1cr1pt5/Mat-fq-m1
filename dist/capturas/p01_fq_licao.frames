@@ -1316,6 +1316,8 @@ T	4	81	0,51,153	 4
 T	25	81	0,0,0	Ligação química
 T	4	98	0,51,153	 5
 T	25	98	0,0,0	Gases e dispersões
+T	4	115	0,51,153	 6
+T	25	115	0,0,0	Transformações químicas
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	17
@@ -2016,6 +2018,8 @@ T	4	81	0,51,153	 4
 T	25	81	0,0,0	Ligação química
 T	4	98	0,51,153	 5
 T	25	98	0,0,0	Gases e dispersões
+T	4	115	0,51,153	 6
+T	25	115	0,0,0	Transformações químicas
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	59

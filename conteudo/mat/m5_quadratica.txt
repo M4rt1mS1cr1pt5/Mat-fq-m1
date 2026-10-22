@@ -39,7 +39,7 @@ Tem vértice V(1, 3) e eixo x = 1.
 Como a = 2 > 0, o mínimo é 3.
 Para passar da forma geral à canónica, calcula-se h e k.
 Exemplo: f(x) = x² - 4x + 1.
-h = -(-4)/(2 × 1) = 2 e k = f(2) = 4 - 8 + 1 = -3.
+h = -(-4)/(2 × 1) = [[2]] e k = f(2) = 4 - 8 + 1 = [[-3]].
 Logo f(x) = (x - 2)² - 3.
 Atenção ao sinal: (x - 2)² dá h = 2 e (x + 2)² dá h = -2.
 #E
@@ -81,7 +81,7 @@ Vértice: V(-3, -4).
 #V
 f = lambda x: -2 * x * x + 8 * x - 5
 h = -8 / (2 * -2)
-V = [h, f(h), -2 * 4 + 3, -6 / 2, 9 - 18 + 5]
+V = [4 / 2, 4 - 8 + 1, h, f(h), -2 * 4 + 3, -6 / 2, 9 - 18 + 5]
 
 @licao m5b
 titulo: Zeros e fórmula resolvente
@@ -112,16 +112,16 @@ A fórmula resolvente dá os zeros em qualquer caso.
 - Fatorização (Δ ≥ 0): ax² + bx + c = a(x - x₁)(x - x₂).
 #D
 Exemplo: x² - 5x + 6 = 0.
-Δ = 25 - 24 = 1, logo há dois zeros.
-x = (5 ± 1) / 2, ou seja, x = 2 ∨ x = 3.
+Δ = 25 - 24 = [[1]], logo há dois zeros.
+x = (5 ± 1) / 2, ou seja, x = [[2]] ∨ x = [[3]].
 C.S. = {2, 3}.
 Equações incompletas resolvem-se mais depressa:
 - c = 0: x(ax + b) = 0, logo x = 0 ∨ x = -b/a.
 - b = 0: x² = -c/a, que só tem solução se -c/a ≥ 0.
-Exemplo: 2x² - 8 = 0 dá x² = 4, logo x = -2 ∨ x = 2.
-Exemplo: 3x² + 6x = 0 dá 3x(x + 2) = 0, logo x = 0 ∨ x = -2.
+Exemplo: 2x² - 8 = 0 dá x² = [[4]], logo x = [[-2]] ∨ x = [[2]].
+Exemplo: 3x² + 6x = 0 dá 3x(x + 2) = 0, logo x = 0 ∨ x = [[-2]].
 Quando √Δ não é inteira, deixa-se a forma exata.
-Exemplo: x² - 2x - 1 = 0 dá x = 1 - √2 ∨ x = 1 + √2.
+Exemplo: x² - 2x - 1 = 0 dá x = [[=1 - √2]] ∨ x = [[=1 + √2]].
 A soma dos zeros é -b/a e o produto é c/a.
 #E
 @F Discriminante|Δ = b² - 4ac|a, b, c: coeficientes de ax² + bx + c|a ≠ 0|x² - 5x + 6: Δ = 25 - 24 = 1|c_matq.q2
@@ -162,7 +162,8 @@ Resolve x² - 6x + 5 = 0.
 x = [[1]] ∨ x = [[5]]. C.S. = {1, 5}.
 #V
 d = 25 - 16
-V = [d, 2 / 4, 8 / 4, 2 * 0.25 - 2.5 + 2, 36 - 20, (6 - 4) / 2, (6 + 4) / 2]
+V = [25 - 24, (5 - 1) / 2, (5 + 1) / 2, 8 / 2, -(4 ** 0.5), 4 ** 0.5,
+     -6 / 3, (2 - 8 ** 0.5) / 2, (2 + 8 ** 0.5) / 2, d, 2 / 4, 8 / 4, 2 * 0.25 - 2.5 + 2, 36 - 20, (6 - 4) / 2, (6 + 4) / 2]
 
 @licao m5c
 titulo: Sinal, monotonia, extremos e inequações
@@ -197,11 +198,11 @@ Método para resolver uma inequação:
 3. Esboça a parábola com a concavidade certa.
 4. Lê onde o gráfico está acima (> 0) ou abaixo (< 0).
 Exemplo: x² - 5x + 6 ≤ 0.
-Zeros 2 e 3; a = 1 > 0, a parábola abre para cima.
+Zeros [[2]] e [[3]]; a = 1 > 0, a parábola abre para cima.
 Fica abaixo do eixo entre os zeros.
 C.S. = [2, 3] (fechado, porque ≤ inclui os zeros).
 Exemplo: -x² + 4 > 0.
-Zeros -2 e 2; a = -1 < 0, abre para baixo.
+Zeros [[-2]] e [[2]]; a = -1 < 0, abre para baixo.
 Fica acima do eixo entre os zeros: C.S. = ]-2, 2[.
 Sem zeros, o sinal é sempre o de a.
 Exemplo: x² + 1 > 0 é verdade para todo o x: C.S. = ℝ.
@@ -242,7 +243,9 @@ Zeros: x² = 4, logo x = [[-2]] ∨ x = [[2]].
 a > 0, logo a parábola está abaixo do eixo entre os zeros.
 C.S. = [-2, 2].
 #V
-V = [16, (-2 - 4) / 2, (-2 + 4) / 2, 4 + 4 - 3, -3, -2, 2]
+z = lambda a, b, c: [(-b - (b * b - 4 * a * c) ** 0.5) / (2 * a),
+                     (-b + (b * b - 4 * a * c) ** 0.5) / (2 * a)]
+V = z(1, -5, 6) + sorted(z(-1, 0, 4)) + [16, (-2 - 4) / 2, (-2 + 4) / 2, 4 + 4 - 3, -3, -2, 2]
 
 @licao m5d
 titulo: Transformações de gráficos de funções

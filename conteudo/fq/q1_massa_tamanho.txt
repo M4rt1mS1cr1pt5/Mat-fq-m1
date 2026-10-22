@@ -107,7 +107,7 @@ O raio do átomo de hidrogénio é 5,3 × 10⁻¹¹ m.
 Como 5,3 ≥ 5, a ordem de grandeza é 10⁻¹⁰ m.
 Um cabelo tem cerca de 8 × 10⁻⁵ m de largura.
 A sua ordem de grandeza é 10⁻⁴ m.
-Para comparar, divide-se: 10⁻⁴ / 10⁻¹⁰ = 10⁶.
+Para comparar, divide-se: 10⁻⁴ / 10⁻¹⁰ = [[=10⁶]].
 O cabelo é cerca de um milhão de vezes mais largo.
 Escalas de tamanho:
 - objetos visíveis: 10⁻⁴ m ou mais;
@@ -154,7 +154,7 @@ Indica a sua ordem de grandeza.
 Como 5,3 ≥ 5, a ordem de grandeza é 10⁻¹⁰ m.
 #V
 n = 1.0e-7 / 2.88e-10
-V = [n, n, 350 * 2.88e-10, 53e-12]
+V = [1e-4 / 1e-10, n, n, 350 * 2.88e-10, 53e-12]
 
 @licao q1c
 titulo: Massa atómica relativa
@@ -185,12 +185,12 @@ Um elemento é uma mistura de isótopos. Ar é uma média pesada, como uma médi
 O cloro tem dois isótopos estáveis.
 O ³⁵Cl tem massa 34,97 e abundância 75,76 %.
 O ³⁷Cl tem massa 36,97 e abundância 24,24 %.
-Ar = (34,97 × 75,76 + 36,97 × 24,24) / 100 = 35,45.
+Ar = (34,97 × 75,76 + 36,97 × 24,24) / 100 = [[35,45]].
 O valor fica perto de 35 porque o ³⁵Cl é o mais abundante.
 Nenhum átomo de cloro tem massa 35,45: é uma média.
 Para moléculas, somam-se as Ar de todos os átomos.
-Mr(H₂O) = 2 × 1,01 + 16,00 = 18,02.
-Mr(CO₂) = 12,01 + 2 × 16,00 = 44,01.
+Mr(H₂O) = 2 × 1,01 + 16,00 = [[18,02]].
+Mr(CO₂) = 12,01 + 2 × 16,00 = [[44,01]].
 Os valores de Ar estão na tabela periódica.
 O exame usa Ar com duas casas decimais.
 #E
@@ -233,7 +233,8 @@ Calcula Ar(B).
 Ar = (10,01 × 19,9 + 11,01 × 80,1) / 100 = [[10,81]].
 #V
 s = 23.99 * 78.99 + 24.99 * 10.00 + 25.98 * 11.01
-V = [s, s / 100, (10.01 * 19.9 + 11.01 * 80.1) / 100]
+V = [(34.97 * 75.76 + 36.97 * 24.24) / 100, 2 * 1.01 + 16.00,
+     12.01 + 2 * 16.00, s, s / 100, (10.01 * 19.9 + 11.01 * 80.1) / 100]
 
 @licao q1d
 titulo: Quantidade de matéria e massa molar
@@ -346,9 +347,9 @@ Para a fração molar, todas as quantidades vêm em mol.
 Se tens massas, passa-as primeiro a mol com n = m / M.
 Para a fração mássica, todas as massas vêm na mesma unidade.
 Exemplo: 1,0 mol de N₂ e 3,0 mol de H₂.
-x(H₂) = 3,0 / 4,0 = 0,75 e x(N₂) = 0,25.
-As massas são 28 g de N₂ e 6,1 g de H₂.
-Assim, w(H₂) é só cerca de 0,18.
+x(H₂) = 3,0 / 4,0 = [[0,75]] e x(N₂) = [[0,25]].
+As massas são [[28]] g de N₂ e [[6,1]] g de H₂.
+Assim, w(H₂) é só cerca de [[0,18]].
 O H₂ tem mais moléculas, mas menos massa.
 #E
 @F Fração molar|x_A = n_A / n_total|x_A: fração molar de A;n_A: quantidade de A (mol);n_total: quantidade total (mol)|misturas|1 mol de A em 4 mol: x_A = 0,25|c_fqat.fr
@@ -388,7 +389,8 @@ w(Zn) = 30 g / (70 g + 30 g) = [[0,30]], ou seja, 30 %.
 na = 36.0 / 18.02
 ne = 46.0 / 46.08
 x = na / (na + ne)
-V = [na, ne, x, 36.0 / 82.0, 1 - 0.667, 30 / 100]
+V = [3.0 / 4.0, 1.0 / 4.0, 1.0 * 28.02, 3.0 * 2.02,
+     3.0 * 2.02 / (1.0 * 28.02 + 3.0 * 2.02), na, ne, x, 36.0 / 82.0, 1 - 0.667, 30 / 100]
 
 @exemplo q1e1
 nivel: 1
@@ -446,7 +448,7 @@ Método: M, depois n, depois partículas, depois átomos de O.
 Resolução:
 1. M = 63,55 + 32,06 + 4 × 16,00 + 5 × 18,02 = [[249,71]] g mol⁻¹
 2. n = 5,00 / 249,71 = [[0,0200]] mol
-3. Cada unidade tem 4 + 5 = 9 átomos de O.
+3. Cada unidade tem 4 + 5 = [[9]] átomos de O.
 4. n(O) = 9 × 0,0200 = [[0,180]] mol
 5. N(O) = 0,180 × 6,02 × 10²³ = [[1,08 × 10²³]]
 Resultado: 1,08 × 10²³ átomos de oxigénio.
@@ -455,7 +457,7 @@ Erros a evitar: contar só os 4 O do sulfato.
 #V
 M = 63.55 + 32.06 + 4 * 16.00 + 5 * 18.02
 n = 5.00 / M
-V = [M, n, 9 * n, 9 * n * NA]
+V = [M, n, 4 + 5, 9 * n, 9 * n * NA]
 
 @exercicio q1x1
 tipo: m

@@ -23,7 +23,7 @@ Formato das fontes (conteudo/**/*.txt), um ficheiro por tema:
     #R                 resposta do exercicio J
     #V                 codigo Python (so corre no computador) que define V,
                        a lista dos valores marcados com [[..]] nas paginas
-                       F, J e R, pela ordem em que aparecem
+                       A a J e R, pela ordem em que aparecem
 
     @exemplo q1e1
     nivel: 1 | 2 | 3   (basico, intermedio, avancado)
@@ -157,6 +157,32 @@ def tirar_marcas(t):
 
 def marcas(t):
     return MARCA.findall(t)
+
+
+OPER = re.compile(r'[\d)²³#]\s*[×/+−-]\s*[\d(√#]')
+ANTES = re.compile(r'[\d\s,.()×/+−\-²³√π·#]*$')
+DEPOIS = re.compile(r'\s*[−-]?(\d+(?:,\d+)?)(?:\s*×\s*10[⁻⁰¹²³⁴⁵⁶⁷⁸⁹]+)?'
+                    r'(\s*[×/+−-]\s*[\d(√])?')
+
+
+def contas_sem_marca(t):
+    """Linhas com uma conta acabada em '= numero' sem marca [[..]].
+
+    So conta o ultimo '=' de uma cadeia (2 + 3 = 5, nao 2 = 1 + 1 = ...)
+    e ignora '= 0' (equacoes) e numeros dados (sem conta antes do '=')."""
+    r = []
+    for ln in t.split('\n'):
+        s = MARCA.sub('#', ln)
+        for i, ch in enumerate(s):
+            if ch != '=':
+                continue
+            m = DEPOIS.match(s, i + 1)
+            if not m or m.group(2) or m.group(1) == '0':
+                continue
+            if OPER.search(ANTES.search(s[:i]).group(0)):
+                r.append(ln)
+                break
+    return r
 
 
 SUPR = '⁰¹²³⁴⁵⁶⁷⁸⁹'
@@ -425,9 +451,11 @@ def validar_licao(t, b, lic, calcs_ids, avisos):
         if n > 10:
             raise Erro('%s: formula "%s" ocupa %d linhas (max. 10)' %
                        (b.onde(), f[0], n))
-    texto = '\n'.join(b.sec.get(p, '') for p in 'FJR')
+    texto = '\n'.join(b.sec.get(p, '') for p in PAGS + 'R')
     env = correr_v(b, b.sec['V']) if b.sec.get('V') else {}
     confere(texto, env.get('V'), b.onde())
+    for ln in contas_sem_marca(texto):
+        avisos.append('%s: conta sem marca [[..]]: %s' % (b.onde(), ln))
     for p in 'ABCDFGHIJR':
         for n, fr in frases_longas(b.sec.get(p, '')):
             avisos.append('%s pág. %s: frase com %d palavras: %s' %
@@ -452,6 +480,8 @@ def validar_exemplo(t, b, lic, calcs_ids, avisos):
                    (b.onde(), nlinhas(b.sec['T'])))
     env = correr_v(b, b.sec['V']) if b.sec.get('V') else {}
     confere(b.sec['T'], env.get('V'), b.onde())
+    for ln in contas_sem_marca(b.sec['T']):
+        avisos.append('%s: conta sem marca [[..]]: %s' % (b.onde(), ln))
     if marcas(b.sec['T']) == [] and re.search(r'\d', b.sec['T']):
         avisos.append('%s: exemplo com numeros sem marcas [[..]]' % b.onde())
     for n, fr in frases_longas(b.sec['T']):
@@ -525,6 +555,8 @@ def validar_exercicio(t, b, lic, avisos):
                                b.onde())
     texto = '\n'.join(b.sec.get(k, '') for k in 'TOD')
     confere(texto, env.get('V'), b.onde())
+    for ln in contas_sem_marca(b.sec.get('D', '')):
+        avisos.append('%s: conta sem marca [[..]]: %s' % (b.onde(), ln))
     if nlinhas(b.sec['T']) > 10:
         raise Erro('%s: enunciado com %d linhas (max. 10)' %
                    (b.onde(), nlinhas(b.sec['T'])))

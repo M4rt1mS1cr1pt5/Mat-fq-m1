@@ -1,0 +1,413 @@
+@tema q6
+disc: F
+grupo: q
+titulo: Transformações químicas
+calcs: c_fqlg.dh c_fqel.fot c_fqlg.ace
+
+@licao q6a
+titulo: Energia nas reações: variação de entalpia
+chave: reação química quebra formação de ligações variação de entalpia exotérmica endotérmica sistema vizinhança energias de ligação
+calc: c_fqlg.dh
+ano: 10
+nivel: núcleo
+pre: q4a
+fonte: AE FQ A 10.º, Transformações químicas
+#A
+- Explicar uma reação como quebra e formação de ligações.
+- Distinguir reações exotérmicas de endotérmicas.
+- Interpretar o sinal da variação de entalpia, ΔH.
+- Calcular ΔH a partir das energias de ligação.
+#B
+Numa reação, as ligações dos reagentes partem-se e formam-se ligações novas nos produtos.
+Partir custa energia; formar devolve energia.
+Se se devolve mais do que se gasta, a reação aquece a vizinhança: é exotérmica.
+#C
+- Sistema: o que se estuda (reagentes e produtos); vizinhança: o resto.
+- Variação de entalpia, ΔH: energia trocada como calor, a pressão constante.
+- Exotérmica: ΔH < 0 (liberta energia para a vizinhança).
+- Endotérmica: ΔH > 0 (absorve energia da vizinhança).
+- ΔH = Σ E(ligações quebradas) - Σ E(ligações formadas).
+#D
+Exemplo: combustão do metano, CH₄ + 2 O₂ → CO₂ + 2 H₂O.
+Quebram-se 4 C-H e 2 O=O: 4 × 413 + 2 × 498 = [[2648]] kJ.
+Formam-se 2 C=O e 4 O-H: 2 × 799 + 4 × 463 = [[3450]] kJ.
+ΔH = 2648 - 3450 = [[-802]] kJ mol⁻¹: é exotérmica.
+As energias de ligação são médias; o valor obtido é aproximado.
+Exemplos exotérmicos: combustões, respiração celular.
+Exemplos endotérmicos: fotossíntese, decomposição do calcário.
+Numa reação endotérmica a vizinhança arrefece.
+ΔH refere-se às quantidades da equação acertada.
+Se a equação se multiplicar por 2, ΔH também duplica.
+#E
+@F Variação de entalpia|ΔH = Σ E(quebradas) - Σ E(formadas)|E: energias de ligação (kJ mol⁻¹)|valores médios; usa os do enunciado|H₂ + Cl₂ → 2 HCl: 678 - 862 = -184 kJ|c_fqlg.dh
+@F Sinal de ΔH|ΔH < 0: exotérmica; ΔH > 0: endotérmica|ΔH: variação de entalpia do sistema|pressão constante|ΔH = -802 kJ: exotérmica|c_fqlg.dh
+#F
+Dados: H₂ + Cl₂ → 2 HCl.
+Energias (kJ mol⁻¹): H-H 436; Cl-Cl 242; H-Cl 431.
+Objetivo: ΔH e tipo de reação.
+1. Quebradas: 436 + 242 = [[678]] kJ
+2. Formadas: 2 × 431 = [[862]] kJ
+3. ΔH = 678 - 862 = [[-184]] kJ mol⁻¹
+> ΔH = -184 kJ mol⁻¹: reação exotérmica.
+Verificação: formam-se mais ligações fortes do que as que se partem.
+#G
+O sinal de ΔH diz para onde vai a energia: para fora (exo) ou para dentro (endo).
+É por isso que as combustões servem para aquecer e para produzir energia.
+#H
+- Fazer formadas menos quebradas (o sinal fica trocado).
+- Esquecer de multiplicar pelos coeficientes da equação.
+- Achar que endotérmica significa "que aquece".
+- Esquecer que a energia de ligação é por mole.
+#I
+- Reação: quebrar e formar ligações.
+- ΔH = Σ quebradas - Σ formadas.
+- ΔH < 0: exotérmica; ΔH > 0: endotérmica.
+- Multiplica pelos coeficientes da equação.
+#J
+Uma reação tem ΔH = +180 kJ mol⁻¹. É exotérmica ou endotérmica?
+#R
+Endotérmica: ΔH > 0, o sistema absorve [[180]] kJ por mole de reação.
+#V
+V = [4 * 413 + 2 * 498, 2 * 799 + 4 * 463, 2648 - 3450, 436 + 242, 2 * 431, 678 - 862, 180]
+
+@licao q6b
+titulo: Reações fotoquímicas e radicais livres
+chave: reação fotoquímica fotólise fotodissociação fotoionização radicais livres eletrão desemparelhado luz ultravioleta
+calc: c_fqel.fot
+ano: 10
+nivel: núcleo
+pre: q6a
+fonte: AE FQ A 10.º, Transformações químicas
+#A
+- Definir reação fotoquímica.
+- Distinguir fotodissociação de fotoionização.
+- Definir radical livre e explicar a sua reatividade.
+- Calcular a energia mínima de um fotão para quebrar uma ligação.
+#B
+Alguns fotões, sobretudo de UV, têm energia para partir ligações.
+É assim que a luz do sol descora tecidos e queima a pele.
+Os fragmentos que ficam com eletrões desemparelhados são muito reativos.
+#C
+- Reação fotoquímica: reação provocada pela luz.
+- Fotodissociação: a luz quebra uma ligação (ex.: O₂ → 2 O).
+- Fotoionização: a luz remove um eletrão (ex.: N₂ → N₂⁺ + e⁻).
+- Radical livre: espécie com um ou mais eletrões desemparelhados (ex.: Cl•, O•, •OH).
+- Os radicais livres são muito reativos.
+#D
+Para quebrar uma ligação, um fotão precisa de energia igual ou superior à energia de ligação.
+A energia por molécula obtém-se dividindo por NA.
+Exemplo: O=O, 498 kJ mol⁻¹, ou [[8,27 × 10⁻¹⁹]] J por molécula.
+O λ máximo é h c / E = [[2,40 × 10⁻⁷]] m = [[240]] nm (UV).
+Luz visível não tem energia suficiente para esta quebra.
+A fotossíntese também é uma reação fotoquímica.
+Nos radicais, o ponto (•) marca o eletrão desemparelhado.
+Os radicais livres participam em reações em cadeia.
+No corpo humano, podem danificar células (os antioxidantes ajudam a travá-los).
+#E
+@F Energia por molécula|E = E(kJ mol⁻¹) × 1000 / NA|NA: 6,02 × 10²³ mol⁻¹|uma ligação por molécula|O=O: 498 × 1000 / NA = 8,27 × 10⁻¹⁹ J|c_fqel.fot
+@F Comprimento de onda máximo|λ máx = h c / E|E: energia necessária por molécula (J);h c = 1,99 × 10⁻²⁵ J m|fotões com λ menor também servem|O=O: λ máx = 240 nm|c_fqel.fot
+#F
+Dados: energia da ligação Cl-Cl = 242 kJ mol⁻¹.
+Objetivo: maior λ capaz de dissociar o Cl₂.
+1. E = 242 × 1000 / 6,02 × 10²³ = [[4,02 × 10⁻¹⁹]] J
+2. λ = 6,63 × 10⁻³⁴ × 3,00 × 10⁸ / 4,02 × 10⁻¹⁹ = [[4,95 × 10⁻⁷]] m
+> λ máximo ≈ 495 nm (luz visível azul-esverdeada).
+Verificação: a ligação Cl-Cl é fraca; até luz visível a quebra.
+#G
+Ligações mais fracas quebram-se com luz de menor energia.
+Por isso o Cl₂ reage com o H₂ à luz e quase não reage no escuro.
+#H
+- Usar a energia por mole como se fosse por molécula.
+- Achar que um fotão com menos energia do que a ligação a quebra.
+- Esquecer que os radicais têm eletrões desemparelhados.
+- Confundir fotodissociação com fotoionização.
+#I
+- Reação fotoquímica: provocada pela luz.
+- Fotodissociação: quebra de ligações; fotoionização: perda de eletrão.
+- Radical livre: eletrão desemparelhado, muito reativo.
+- λ máx = h c / E (E por molécula).
+#J
+Porque é que um radical livre como o Cl• é tão reativo?
+#R
+Tem um eletrão desemparelhado: tende a formar uma ligação com outra espécie para ficar com o octeto.
+#V
+e0 = 498e3 / NA
+e = 242e3 / NA
+V = [e0, h * c / e0, h * c / e0 * 1e9, e, h * c / e]
+
+@licao q6c
+titulo: Ozono estratosférico e CFC
+chave: ozono estratosfera camada de ozono cfc clorofluorocarbonetos radicais cloro buraco do ozono radiação ultravioleta protocolo de montreal
+ano: 10
+nivel: núcleo
+pre: q6b
+fonte: AE FQ A 10.º, Transformações químicas
+#A
+- Explicar a formação e a decomposição do ozono na estratosfera.
+- Relacionar a camada de ozono com a filtragem da radiação UV.
+- Explicar como os CFC destroem o ozono.
+- Referir medidas de proteção da camada de ozono.
+#B
+Lá em cima, o ozono funciona como um protetor solar do planeta.
+Forma-se e desfaz-se sem parar, absorvendo UV.
+Os CFC libertam cloro, que desfaz o ozono muito depressa.
+#C
+- Ozono: O₃; existe sobretudo na estratosfera (cerca de 15 km a 35 km).
+- Formação: O₂ + UV → 2 O; depois O + O₂ → O₃.
+- Decomposição: O₃ + UV → O₂ + O.
+- CFC: clorofluorocarbonetos (ex.: CCl₃F), usados em aerossóis e frigoríficos.
+- Na estratosfera, a radiação UV liberta radicais Cl• dos CFC.
+#D
+A formação e a decomposição do ozono absorvem radiação UV.
+O equilíbrio entre as duas mantém a camada de ozono.
+O radical cloro destrói o ozono em cadeia:
+- Cl• + O₃ → ClO• + O₂;
+- ClO• + O → Cl• + O₂.
+O cloro volta a ficar livre: um só radical destrói milhares de moléculas de O₃.
+Funciona como catalisador da decomposição.
+A diminuição do ozono sobre a Antártida chama-se "buraco do ozono".
+Menos ozono deixa passar mais UV: mais cancro de pele e cataratas.
+O Protocolo de Montreal (1987) proibiu gradualmente os CFC.
+Os substitutos (HCFC, HFC) não destroem tanto o ozono.
+A camada de ozono está a recuperar devagar.
+#E
+@F Formação do ozono|O₂ + UV → 2 O; O + O₂ → O₃|O: oxigénio atómico (radical)|estratosfera|absorve radiação UV|
+@F Destruição pelo cloro|Cl• + O₃ → ClO• + O₂; ClO• + O → Cl• + O₂|Cl•: radical cloro (regenerado no fim)|estratosfera, na presença de CFC|um Cl• destrói muitas moléculas de O₃|
+#F
+Dados: as duas etapas da destruição do ozono pelo cloro.
+Objetivo: equação global e papel do cloro.
+1. Cl• + O₃ → ClO• + O₂
+2. ClO• + O → Cl• + O₂
+3. Soma, cortando o que aparece dos dois lados: O₃ + O → 2 O₂.
+4. O Cl• aparece no início e no fim: não se gasta.
+> Global: O₃ + O → 2 O₂; o Cl• é um catalisador.
+Verificação: há [[4]] átomos de O de cada lado (3 + 1 = 2 × 2).
+#G
+Pequenas quantidades de CFC causam grande dano porque o cloro se regenera.
+O Protocolo de Montreal é um exemplo de sucesso de cooperação ambiental.
+#H
+- Confundir o ozono estratosférico (útil) com o troposférico (poluente).
+- Achar que o buraco do ozono é a causa principal do aquecimento global.
+- Esquecer que o radical cloro é regenerado.
+- Pensar que os CFC são tóxicos ao nível do solo (são estáveis; o perigo é lá em cima).
+#I
+- O₃ na estratosfera filtra UV.
+- Forma-se de O₂ + UV e decompõe-se com UV.
+- CFC + UV libertam Cl•.
+- Cl• catalisa a destruição do O₃.
+- Protocolo de Montreal (1987): fim dos CFC.
+#J
+Porque é que o radical Cl• é chamado catalisador na destruição do ozono?
+#R
+Porque participa na reação mas é regenerado no fim: não se gasta e repete o ciclo muitas vezes.
+#V
+V = [3 + 1]
+
+@exemplo q6e1
+nivel: 1
+titulo: Exotérmica ou endotérmica?
+licao: q6a
+#T
+Enunciado: a combustão de 1 mol de etanol tem ΔH = -1367 kJ mol⁻¹.
+Classifica a reação e calcula a energia libertada por 0,50 mol.
+Resolução:
+1. ΔH < 0: reação exotérmica.
+2. Energia libertada: 0,50 × 1367 = [[6,8 × 10²]] kJ
+Resultado: exotérmica; 0,50 mol libertam cerca de 6,8 × 10² kJ.
+Interpretação: é a energia que aquece a vizinhança.
+Erros a evitar: dar o resultado com sinal positivo como "energia absorvida".
+#V
+V = [0.50 * 1367]
+
+@exemplo q6e2
+nivel: 2
+titulo: Entalpia da síntese do amoníaco
+licao: q6a
+calc: c_fqlg.dh
+#T
+Enunciado: estima ΔH para N₂ + 3 H₂ → 2 NH₃.
+Dados (kJ mol⁻¹): N≡N 945; H-H 436; N-H 391.
+Resolução:
+1. Quebradas: 945 + 3 × 436 = [[2253]] kJ
+2. Formadas: 2 × 3 × 391 = [[2346]] kJ (cada NH₃ tem 3 ligações N-H)
+3. ΔH = 2253 - 2346 = [[-93]] kJ mol⁻¹
+Resultado: ΔH ≈ -93 kJ mol⁻¹: exotérmica.
+Interpretação: o valor tabelado é -92 kJ mol⁻¹; as energias médias dão uma estimativa.
+Erros a evitar: contar só 3 ligações N-H (são 6).
+#V
+V = [945 + 3 * 436, 2 * 3 * 391, 2253 - 2346]
+
+@exemplo q6e3
+nivel: 3
+titulo: Fotão para quebrar a ligação O=O
+licao: q6b
+calc: c_fqel.fot
+#T
+Enunciado: que λ máximo pode ter um fotão que dissocia o O₂?
+Dados: E(O=O) = 498 kJ mol⁻¹; NA = 6,02 × 10²³ mol⁻¹.
+Resolução:
+1. Por molécula: 498 × 1000 / 6,02 × 10²³ = [[8,27 × 10⁻¹⁹]] J
+2. λ = 6,63 × 10⁻³⁴ × 3,00 × 10⁸ / 8,27 × 10⁻¹⁹ = [[2,40 × 10⁻⁷]] m
+Resultado: λ máximo ≈ 240 nm (UV).
+Interpretação: na estratosfera, a radiação UV dissocia o O₂ e permite formar O₃.
+Erros a evitar: esquecer de dividir por NA.
+#V
+e = 498e3 / NA
+V = [e, h * c / e]
+
+@exercicio q6x1
+tipo: m
+licao: q6a
+#T
+Uma reação com ΔH = -250 kJ mol⁻¹:
+#O
+liberta energia para a vizinhança
+absorve energia da vizinhança
+não troca energia
+só ocorre com luz
+#S
+1
+#P
+O sinal de ΔH diz para onde vai a energia.
+#D
+ΔH < 0: reação exotérmica, liberta energia para a vizinhança.
+#V
+S = 1
+
+@exercicio q6x2
+tipo: n
+licao: q6a
+#T
+Estima ΔH (kJ mol⁻¹) de H₂ + F₂ → 2 HF. Dados: H-H 436; F-F 159; H-F 567.
+#S
+-539
+#P
+ΔH = Σ quebradas - Σ formadas.
+#D
+Quebradas: 436 + 159 = [[595]] kJ. Formadas: 2 × 567 = [[1134]] kJ.
+ΔH = 595 - 1134 = [[-539]] kJ mol⁻¹.
+#V
+S = 436 + 159 - 2 * 567
+V = [595, 1134, S]
+
+@exercicio q6x3
+tipo: v
+licao: q6a
+#T
+Numa reação endotérmica, a temperatura da vizinhança desce.
+#S
+V
+#P
+O sistema absorve energia de onde?
+#D
+Verdadeiro: o sistema absorve energia da vizinhança, que arrefece.
+#V
+S = 'V'
+
+@exercicio q6x4
+tipo: m
+licao: q6b
+#T
+Um radical livre é uma espécie que:
+#O
+tem pelo menos um eletrão desemparelhado
+tem carga positiva
+só existe no estado sólido
+tem todos os eletrões emparelhados
+#S
+1
+#P
+O ponto em Cl• indica...
+#D
+Os radicais livres têm um ou mais eletrões desemparelhados; por isso são muito reativos.
+#V
+S = 1
+
+@exercicio q6x5
+tipo: n
+licao: q6b
+modo: s3
+#T
+A energia da ligação Br-Br é 193 kJ mol⁻¹. Qual é o λ máximo (em nm) de um fotão que a quebra?
+#S
+620
+#P
+Passa para J por molécula e usa λ = h c / E.
+#D
+E = 193 × 1000 / 6,02 × 10²³ = [[3,21 × 10⁻¹⁹]] J.
+λ = 6,63 × 10⁻³⁴ × 3,00 × 10⁸ / 3,21 × 10⁻¹⁹ = [[6,20 × 10⁻⁷]] m = [[620]] nm.
+#V
+e = 193e3 / NA
+S = h * c / e * 1e9
+V = [e, h * c / e, S]
+
+@exercicio q6x6
+tipo: m
+licao: q6b
+#T
+A reação O₂ + radiação UV → 2 O é uma:
+#O
+fotodissociação
+fotoionização
+combustão
+neutralização
+#S
+1
+#P
+A ligação O=O parte-se.
+#D
+A luz parte a ligação O=O: é uma fotodissociação.
+#V
+S = 1
+
+@exercicio q6x7
+tipo: v
+licao: q6c
+#T
+Um único radical cloro pode destruir muitas moléculas de ozono.
+#S
+V
+#P
+O Cl• é regenerado no fim do ciclo.
+#D
+Verdadeiro: o Cl• atua como catalisador e é regenerado, repetindo o ciclo.
+#V
+S = 'V'
+
+@exercicio q6x8
+tipo: m
+licao: q6c
+#T
+Que acordo internacional levou ao fim do uso dos CFC?
+#O
+Protocolo de Montreal
+Protocolo de Quioto
+Acordo de Paris
+Tratado de Lisboa
+#S
+1
+#P
+Foi assinado em 1987.
+#D
+O Protocolo de Montreal (1987) reduziu e eliminou os CFC.
+#V
+S = 1
+
+@exercicio q6x9
+tipo: m
+licao: q6c
+#T
+Qual é a principal função da camada de ozono?
+#O
+Absorver parte da radiação ultravioleta
+Produzir oxigénio para respirar
+Absorver o dióxido de carbono
+Refletir a luz visível
+#S
+1
+#P
+O ozono "filtra" um tipo de radiação perigosa.
+#D
+O ozono estratosférico absorve grande parte da radiação UV do Sol.
+#V
+S = 1

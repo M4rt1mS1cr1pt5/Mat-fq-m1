@@ -174,3 +174,105 @@ def t_conf_invalido():
     assert '1 a 36' in erro(calc, c_fqel, 'conf', ['40', '0'])
     assert '1 a 36' in erro(calc, c_fqel, 'conf', ['1,5', '0'])
     assert 'teria' in erro(calc, c_fqel, 'conf', ['8', '-40'])
+
+
+# ---- c_fqlg
+import c_fqlg
+
+
+def t_dh_metano():
+    r = calc(c_fqlg, 'dh', ['4 C-H; 2 O=O', '2 C=O; 4 O-H'])
+    tem(r[0], 'ΔH = -802 kJ', 'exotérmica')
+
+
+def t_dh_endo():
+    r = calc(c_fqlg, 'dh', ['2 C=O:805', '1 O=O'])
+    tem(r[0], 'ΔH = 1112', 'endotérmica')
+
+
+def t_dh_triplas():
+    r = calc(c_fqlg, 'dh', ['1 N#N; 3 H-H', '6 N-H'])
+    tem(r[0], 'ΔH = -93')
+    r = calc(c_fqlg, 'dh', ['1 N≡N; 3 H-H', '6 H-N'])
+    tem(r[0], 'ΔH = -93')
+
+
+def t_dh_invalido():
+    assert 'sem energia' in erro(calc, c_fqlg, 'dh', ['1 X-Y', '1 H-H'])
+    assert 'Escreve' in erro(calc, c_fqlg, 'dh', ['', '1 H-H'])
+
+
+def t_ace_simples():
+    tem(calc(c_fqlg, 'ace', ['H2 + O2 -> H2O'])[0], '2 H2 + O2 → 2 H2O')
+    tem(calc(c_fqlg, 'ace', ['N2 + H2 = NH3'])[0], 'N2 + 3 H2 → 2 NH3')
+
+
+def t_ace_dificil():
+    tem(calc(c_fqlg, 'ace', ['KMnO4 + HCl -> KCl + MnCl2 + H2O + Cl2'])[0],
+        '2 KMnO4 + 16 HCl → 2 KCl + 2 MnCl2 + 8 H2O + 5 Cl2')
+    tem(calc(c_fqlg, 'ace', ['Ca(OH)2 + H3PO4 -> Ca3(PO4)2 + H2O'])[0],
+        '3 Ca(OH)2 + 2 H3PO4 → Ca3(PO4)2 + 6 H2O')
+
+
+def t_ace_invalido():
+    assert '->' in erro(calc, c_fqlg, 'ace', ['H2 + O2'])
+    assert 'um dos lados' in erro(calc, c_fqlg, 'ace', ['H2 -> O2'])
+    assert 'Faltam' in erro(calc, c_fqlg, 'ace', [' -> H2O'])
+
+
+def t_lew_tabela():
+    ms = [m.split('|') for m in c_fqlg.MOL.split('\n')]
+    assert len(ms) == 18
+    for m in ms:
+        assert len(m) == 9, m
+        assert int(m[2]) % 2 == 0
+        assert m[7] in ('polar', 'apolar')
+
+
+# ---- c_fqso
+import c_fqso
+
+
+def t_con_normal():
+    r = calc(c_fqso, 'con', ['5,85', '58,44', '', '0,250'])
+    tem(r[0], 'c ≈ 0,400 mol', 'cₘ = 23,4 g')
+
+
+def t_con_ml():
+    r = calc(c_fqso, 'con', ['', '', '0,050', '250'], {3: 2})
+    tem(r[0], 'c = 0,20 mol')
+
+
+def t_con_invalido():
+    assert 'Escreve a massa' in erro(calc, c_fqso, 'con', ['', '', '', '0,25'])
+    assert 'positivo' in erro(calc, c_fqso, 'con', ['', '', '0,1', '0'])
+
+
+def t_pes():
+    r = calc(c_fqso, 'pes', ['0,100', '250', '58,44'])
+    tem(r[0], 'm ≈ 1,46 g', 'n = 0,0250 mol')
+
+
+def t_per():
+    tem(calc(c_fqso, 'per', [0, '20,0', '200,0'])[0], '10,0 %')
+    tem(calc(c_fqso, 'per', [2, '0,005', '1000'])[0], 'ppm = 5')
+    assert 'mais do que' in erro(calc, c_fqso, 'per', [0, '30', '20'])
+
+
+def t_dil():
+    r = calc(c_fqso, 'dil', ['0,500', '25,0', '0,100', ''])
+    tem(r[0], 'V final = 125 mL', 'f = Vf / Vi = ci / cf = 5,00')
+    r = calc(c_fqso, 'dil', ['1,00', '', '0,250', '100'])
+    tem(r[0], 'V inicial = 25,0 mL')
+
+
+def t_dil_invalido():
+    assert 'não é uma diluição' in erro(calc, c_fqso, 'dil',
+                                        ['0,1', '10', '0,5', ''])
+    assert 'só o campo' in erro(calc, c_fqso, 'dil', ['0,1', '', '', '10'])
+
+
+def t_gas():
+    r = calc(c_fqso, 'gas', ['44,01', '', '', '11,2'])
+    tem(r[0], 'ρ ≈ 1,96 g dm⁻³', 'n = 0,500 mol', 'm = n × M = 22,0 g')
+    assert 'no máximo' in erro(calc, c_fqso, 'gas', ['32', '1', '1', ''])

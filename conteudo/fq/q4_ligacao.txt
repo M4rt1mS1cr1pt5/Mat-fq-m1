@@ -169,11 +169,11 @@ Método para uma molécula:
 3. Liga os átomos com pares simples.
 4. Completa os octetos com pares não ligantes.
 5. Se faltarem eletrões, faz ligações duplas ou triplas.
-Exemplo H₂O: 2 × 1 + 6 = 8 eletrões, 4 pares.
+Exemplo H₂O: 2 × 1 + 6 = [[8]] eletrões, [[4]] pares.
 2 pares ligantes (O-H) e 2 não ligantes no O.
-Exemplo N₂: 2 × 5 = 10 eletrões, 5 pares: N≡N e 1 par não ligante em cada N.
-Exemplo CO₂: 4 + 2 × 6 = 16, 8 pares: O=C=O e 2 pares em cada O.
-Exemplo NH₃: 5 + 3 = 8, 4 pares: 3 ligantes e 1 não ligante no N.
+Exemplo N₂: 2 × 5 = [[10]] eletrões, [[5]] pares: N≡N e 1 par não ligante em cada N.
+Exemplo CO₂: 4 + 2 × 6 = [[16]], [[8]] pares: O=C=O e 2 pares em cada O.
+Exemplo NH₃: 5 + 3 = [[8]], [[4]] pares: 3 ligantes e 1 não ligante no N.
 #E
 @F Pares de eletrões de valência|pares = (Σ eletrões de valência) / 2|eletrões de valência: grupo (1-2) ou grupo - 10 (13-18)|moléculas neutras|CO₂: (4 + 2 × 6) / 2 = 8 pares|c_fqlg.lew
 #F
@@ -203,9 +203,10 @@ Os pares não ligantes também ocupam espaço e afetam a forma da molécula.
 #J
 Quantos pares de eletrões de valência tem a molécula de O₂ e que ligação há entre os O?
 #R
-2 × 6 = 12 eletrões: [[6]] pares. Ligação dupla O=O e 2 pares não ligantes em cada O.
+2 × 6 = [[12]] eletrões: [[6]] pares. Ligação dupla O=O e 2 pares não ligantes em cada O.
 #V
-V = [4 + 4, 8 / 2, 4 - 4, 12 / 2]
+V = [2 * 1 + 6, 8 / 2, 2 * 5, 10 / 2, 4 + 2 * 6, 16 / 2, 5 + 3, 8 / 2,
+     4 + 4, 8 / 2, 4 - 4, 2 * 6, 12 / 2]
 
 @licao q4d
 titulo: Geometria e polaridade das moléculas
@@ -523,10 +524,10 @@ Quantos pares de eletrões não ligantes tem a molécula de H₂O?
 #P
 Conta os eletrões de valência e os pares ligantes.
 #D
-2 × 1 + 6 = 8 eletrões, 4 pares. 2 são ligantes (O-H): sobram [[2]] não ligantes no O.
+2 × 1 + 6 = [[8]] eletrões, [[4]] pares. 2 são ligantes (O-H): sobram [[2]] não ligantes no O.
 #V
 S = 4 - 2
-V = [S]
+V = [2 * 1 + 6, 8 / 2, S]
 
 @exercicio q4x5
 tipo: m

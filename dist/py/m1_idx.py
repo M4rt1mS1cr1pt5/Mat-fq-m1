@@ -1,7 +1,7 @@
 # m1_idx.py - M1TR4M: indice da pesquisa gerado pelo build.
 # Cada linha: etiqueta|disciplina|titulo|palavras|alvo
 D = "@V 1\n\
-@N 321\n\
+@N 342\n\
 L|F|Constitui\u00e7\u00e3o do \u00e1tomo e is\u00f3topos|aniao atomico catiao de eletrao iao isotopo massa\
  neutrao nucleo numero protao m|q1a\n\
 L|F|Tamanho dos \u00e1tomos: ordens de grandeza e escalas|atomico cientifica escala nanometro nanotecnologia\
@@ -153,6 +153,30 @@ X|F|Que massa de NaOH (M = 40,00 g mol\u207b\u00b9) \u00e9 ||q5:6\n\
 X|F|Que volume, em mL, de solu\u00e7\u00e3o 1,00 mol d||q5:7\n\
 X|F|Diluiu-se uma solu\u00e7\u00e3o com fator de dilui||q5:8\n\
 X|F|Uma \u00e1gua tem 0,050 g de nitratos em 1,0 ||q5:9\n\
+L|F|Energia nas rea\u00e7\u00f5es: varia\u00e7\u00e3o de entalpia|endotermica energias exotermica formacao\
+ ligacao ligacoes quebra quimica reacao sistema vizinhanca|q6a\n\
+L|F|Rea\u00e7\u00f5es fotoqu\u00edmicas e radicais livres|desemparelhado eletrao fotodissociacao\
+ fotoionizacao fotolise fotoquimica luz reacao ultravioleta|q6b\n\
+L|F|Ozono estratosf\u00e9rico e CFC|buraco camada cloro clorofluorocarbonetos de do estratosfera montreal\
+ protocolo radiacao radicais ultravioleta|q6c\n\
+F|F|Varia\u00e7\u00e3o de entalpia||q6:0\n\
+F|F|Sinal de \u0394H||q6:1\n\
+F|F|Energia por mol\u00e9cula||q6:2\n\
+F|F|Comprimento de onda m\u00e1ximo||q6:3\n\
+F|F|Forma\u00e7\u00e3o do ozono||q6:4\n\
+F|F|Destrui\u00e7\u00e3o pelo cloro||q6:5\n\
+E|F|Exot\u00e9rmica ou endot\u00e9rmica?||q6:0\n\
+E|F|Entalpia da s\u00edntese do amon\u00edaco||q6:1\n\
+E|F|Fot\u00e3o para quebrar a liga\u00e7\u00e3o O=O||q6:2\n\
+X|F|Uma rea\u00e7\u00e3o com \u0394H = -250 kJ mol\u207b\u00b9:||q6:0\n\
+X|F|Estima \u0394H (kJ mol\u207b\u00b9) de H\u2082 + F\u2082 \u2192 2 HF. ||q6:1\n\
+X|F|Numa rea\u00e7\u00e3o endot\u00e9rmica, a temperatura d||q6:2\n\
+X|F|Um radical livre \u00e9 uma esp\u00e9cie que:||q6:3\n\
+X|F|A energia da liga\u00e7\u00e3o Br-Br \u00e9 193 kJ mol\u207b||q6:4\n\
+X|F|A rea\u00e7\u00e3o O\u2082 + radia\u00e7\u00e3o UV \u2192 2 O \u00e9 uma:||q6:5\n\
+X|F|Um \u00fanico radical cloro pode destruir mui||q6:6\n\
+X|F|Que acordo internacional levou ao fim do||q6:7\n\
+X|F|Qual \u00e9 a principal fun\u00e7\u00e3o da camada de o||q6:8\n\
 L|M|A fun\u00e7\u00e3o quadr\u00e1tica e o seu gr\u00e1fico|a(x-h)^2+k canonica concavidade de eixo forma\
  parabola simetria vertice|m5a\n\
 L|M|Zeros e f\u00f3rmula resolvente|2.o binomio delta discriminante do equacao fatorizacao grau|m5b\n\

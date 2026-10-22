@@ -32,8 +32,8 @@ O volume molar depende da pressão e da temperatura, não do gás.
 A 25 °C e 1 atm, Vm é cerca de 24,5 dm³ mol⁻¹.
 Em PTN, 1 mol de O₂, de N₂ ou de CO₂ ocupa 22,4 dm³.
 A massa volúmica de um gás é proporcional à sua massa molar.
-Exemplo: ρ(CO₂) = 44,01 / 22,4 = 1,96 g dm⁻³ em PTN.
-O ar seco tem ρ ≈ 1,29 g dm⁻³ em PTN (M ≈ 28,97 g mol⁻¹).
+Exemplo: ρ(CO₂) = 44,01 / 22,4 = [[1,96]] g dm⁻³ em PTN.
+O ar seco tem ρ ≈ [[1,29]] g dm⁻³ em PTN (M ≈ 28,97 g mol⁻¹).
 Gases com M maior do que a do ar acumulam-se em baixo (CO₂).
 Gases com M menor sobem (He, H₂).
 Os volumes de gases na mesma pressão e temperatura somam-se como as quantidades.
@@ -68,7 +68,7 @@ n = 3,2 / 32,00 = [[0,10]] mol; V = 0,10 × 22,4 = [[2,2]] dm³.
 #V
 n = 8.80 / 44.01
 n2 = 3.2 / 32.00
-V = [n, n * 22.4, 44.01 / 22.4, 8.80 / (n * 22.4), n2, n2 * 22.4]
+V = [44.01 / 22.4, 28.97 / 22.4, n, n * 22.4, 44.01 / 22.4, 8.80 / (n * 22.4), n2, n2 * 22.4]
 
 @licao q5b
 titulo: Composição da troposfera e poluentes
@@ -223,12 +223,12 @@ Pode contar-se em moles, em gramas ou em percentagem.
 - cₘ = c × M.
 #D
 O V é sempre o volume da solução, não o do solvente.
-Passa os volumes a dm³: 250 mL = 0,250 dm³.
+Passa os volumes a dm³: 250 mL = [[0,250]] dm³.
 Para preparar uma solução de concentração conhecida:
 1. calcula n = c × V;
 2. calcula m = n × M;
 3. pesa o soluto, dissolve-o e completa o balão volumétrico.
-Exemplo: 250 mL de NaCl 0,100 mol dm⁻³: n = 0,0250 mol e m = 1,46 g.
+Exemplo: 250 mL de NaCl 0,100 mol dm⁻³: n = [[0,0250]] mol e m = [[1,46]] g.
 As percentagens comparam a mesma grandeza: massa com massa, volume com volume.
 O ppm usa-se para concentrações muito pequenas, como poluentes na água.
 #E
@@ -263,7 +263,7 @@ Que massa de glicose (M = 180,2 g mol⁻¹) é preciso para 100 mL de solução 
 n = 0,200 × 0,100 = [[0,0200]] mol; m = 0,0200 × 180,2 = [[3,60]] g.
 #V
 n = 2.92 / 58.44
-V = [n, n / 0.500, 2.92 / 0.500, 0.100 * 58.44, 0.200 * 0.100, 0.0200 * 180.2]
+V = [250 / 1000, 0.100 * 0.250, 0.100 * 0.250 * 58.44, n, n / 0.500, 2.92 / 0.500, 0.100 * 58.44, 0.200 * 0.100, 0.0200 * 180.2]
 
 @licao q5e
 titulo: Diluição de soluções
@@ -288,8 +288,8 @@ Na diluição a quantidade de soluto fica igual; a concentração diminui.
 - f é maior do que 1 e não tem unidades.
 #D
 Exemplo: de uma solução 0,500 mol dm⁻³ preparar 100 mL de 0,100 mol dm⁻³.
-Vi = cf × Vf / ci = 0,100 × 100 / 0,500 = 20,0 mL.
-f = 100 / 20,0 = 5,00: a solução fica 5 vezes mais diluída.
+Vi = cf × Vf / ci = 0,100 × 100 / 0,500 = [[20,0]] mL.
+f = 100 / 20,0 = [[5,00]]: a solução fica 5 vezes mais diluída.
 Procedimento:
 1. medir Vi com uma pipeta volumétrica;
 2. passar para um balão volumétrico de volume Vf;
@@ -325,7 +325,7 @@ Diluíram-se 5,0 mL de uma solução até 100,0 mL. Qual é o fator de diluiçã
 f = 100,0 / 5,0 = [[20]].
 #V
 vi = 0.0400 * 250 / 1.00
-V = [vi, 250 / vi, 1.00 / 0.0400, 100.0 / 5.0]
+V = [0.100 * 100 / 0.500, 100 / 20.0, vi, 250 / vi, 1.00 / 0.0400, 100.0 / 5.0]
 
 @exemplo q5e1
 nivel: 1

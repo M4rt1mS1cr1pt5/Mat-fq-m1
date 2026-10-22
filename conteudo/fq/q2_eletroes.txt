@@ -105,7 +105,7 @@ Como os degraus são fixos, os fotões só têm certas energias: daí as riscas.
 - Ionização: o eletrão vai para n = ∞, onde E = 0.
 #D
 As energias dos níveis são negativas: o eletrão está ligado ao núcleo.
-E₁ = -2,18 × 10⁻¹⁸ J; E₂ = -5,45 × 10⁻¹⁹ J; E₃ = -2,42 × 10⁻¹⁹ J.
+E₁ = -2,18 × 10⁻¹⁸ J; E₂ = [[-5,45 × 10⁻¹⁹]] J; E₃ = [[-2,42 × 10⁻¹⁹]] J.
 Os níveis ficam mais próximos à medida que n aumenta.
 Desexcitação (descer de nível): emite um fotão.
 Excitação (subir de nível): absorve um fotão com a energia exata.
@@ -153,7 +153,7 @@ E = |E₁ - E₃| = 2,18 × 10⁻¹⁸ × (1 - 1/9) = [[1,94 × 10⁻¹⁸]] J (
 e4 = -2.18e-18 / 16
 e2 = -2.18e-18 / 4
 ef = abs(e2 - e4)
-V = [e4, e2, ef, h * c / ef, 2.18e-18 * (1 - 1 / 9)]
+V = [-2.18e-18 / 4, -2.18e-18 / 9, e4, e2, ef, h * c / ef, 2.18e-18 * (1 - 1 / 9)]
 
 @licao q2c
 titulo: Espetroscopia fotoeletrónica e energia de remoção

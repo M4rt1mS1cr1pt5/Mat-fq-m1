@@ -1,16 +1,17 @@
 # m1_cat.py - M1TR4M: catalogo gerado pelo build (nao editar).
 # TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes
 # CALC: id|nome|disciplina|tema (as palavras-chave estao no indice da pesquisa)
-NLIC = 28
-NEX = 59
-NCART = 82
+NLIC = 31
+NEX = 68
+NCART = 91
 TEMAS = (
     "q1|F|q|Massa e tamanho dos \u00e1tomos|p_q1|x_q1|5|0|10|0|18|0|c_fqat.qm c_fqat.mm c_fqat.ar c_fqat.fr c_comu.sci c_comu.sf c_comu.uni|q1a q1b q1c q1d q1e",
     "q2|F|q|Energia dos eletr\u00f5es nos \u00e1tomos|p_q2|x_q2|5|5|10|10|14|18|c_fqel.fot c_fqel.hid c_fqel.conf c_comu.sci c_comu.uni|q2a q2b q2c q2d q2e",
     "q3|F|q|Tabela Peri\u00f3dica|p_q3|x_q3|3|10|9|20|8|32|c_fqel.conf c_fqel.fot c_fqat.mm|q3a q3b q3c",
     "q4|F|q|Liga\u00e7\u00e3o qu\u00edmica|p_q4|x_q4|6|13|10|29|13|40|c_fqlg.lew c_fqlg.dh c_fqel.conf c_fqat.mm|q4a q4b q4c q4d q4e q4f",
     "q5|F|q|Gases e dispers\u00f5es|p_q5|x_q5|5|19|10|39|14|53|c_fqso.gas c_fqso.con c_fqso.pes c_fqso.per c_fqso.dil c_fqat.mm c_fqat.fr|q5a q5b q5c q5d q5e",
-    "m5|M|t|Fun\u00e7\u00e3o quadr\u00e1tica|p_m5|x_m5|4|24|10|49|15|67|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
+    "q6|F|q|Transforma\u00e7\u00f5es qu\u00edmicas|p_q6|x_q6|3|24|9|49|9|67|c_fqlg.dh c_fqel.fot c_fqlg.ace|q6a q6b q6c",
+    "m5|M|t|Fun\u00e7\u00e3o quadr\u00e1tica|p_m5|x_m5|4|27|10|58|15|76|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
 )
 CALC = "c_comd.cte|Constantes e dados|C|\n\
 c_comd.exp|Dados experimentais|C|\n\

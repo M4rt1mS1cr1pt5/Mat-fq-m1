@@ -199,7 +199,7 @@ Objetivo: identificar o elemento.
 3. Z = 11: é o sódio, Na.
 4. Configuração: 1s² 2s² 2p⁶ 3s¹.
 > O elemento é o sódio (11 eletrões).
-Verificação: o pico de menor energia, 0,50 MJ mol⁻¹ = [[500]] kJ mol⁻¹, está perto da energia de ionização do Na (496 kJ mol⁻¹).
+Verificação: o pico de menor energia é 0,50 MJ mol⁻¹ = [[500]] kJ mol⁻¹. Está perto da energia de ionização do Na (496 kJ mol⁻¹).
 #G
 Quanto mais perto do núcleo, mais energia é preciso para remover o eletrão.
 Os eletrões de valência são os mais fáceis de remover: são os que participam nas reações.

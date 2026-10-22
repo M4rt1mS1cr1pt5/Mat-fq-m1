@@ -1,9 +1,9 @@
 # m1_cont.py - M1TR4M: leitor de pacotes.
 # Importa um pacote quando o aluno abre um tema e liberta-o quando sai.
-# Ha tres ranhuras: 'p' (conteudos: licoes, exercicios, indice, tabela
-# periodica), 'c' (calculadoras) e 'f' (ferramentas grandes que so se
-# usam as vezes: treino, definicoes, pesquisa). Nunca ha mais de um
-# modulo em cada ranhura.
+# Ranhuras: 'p' (conteudos: licoes, exercicios, tabela periodica), 'c'
+# (calculadoras), 'f' (ferramentas grandes que so se usam as vezes:
+# treino, definicoes, pesquisa) e 'i0', 'i1'... (partes do indice, so
+# durante a pesquisa). Nunca ha mais de um modulo em cada ranhura.
 # Formato dos pacotes (seccao 4.3 do prompt): uma unica constante D com
 # marcadores de linha "@V versao", "@N numero", "@L licao", "@A".."@J",
 # "@R resposta", "@F formula", "@E exemplo", "@X exercicio".
@@ -24,7 +24,7 @@ class Falta(Exception):
 def drop(slot):
     # Liberta o pacote da ranhura: apaga referencias, tira-o de
     # sys.modules e recolhe o lixo.
-    n = SL[slot][1]
+    n = SL.get(slot, [None, ''])[1]
     SL[slot] = [None, '']
     if n:
         P.unload(n)
@@ -33,8 +33,9 @@ def drop(slot):
 
 def get(slot, name):
     # Devolve o modulo "name", carregando-o se for preciso.
-    if SL[slot][1] == name and SL[slot][0] is not None:
-        return SL[slot][0]
+    s = SL.get(slot)
+    if s and s[1] == name and s[0] is not None:
+        return s[0]
     drop(slot)
     if not P.has_mods() and name not in SEEN:
         if len(SEEN) >= 2 and 0 <= P.free() < 250000:

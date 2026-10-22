@@ -871,6 +871,12 @@ def sfm(*vs):
     return m
 
 
+def sfv(*xs):
+    # Como sfm, mas recebe dados (valor, alg. sig.): ignora os vazios e
+    # os zeros ("parte do repouso" nao limita o resultado).
+    return sfm(*[x[1] for x in xs if x is not None and x[0] != 0])
+
+
 def res(sym, x, u='', sf=0, dec=-1):
     # Linha de resultado: "> m = 2,5 g" ou "> m ~ 2,47 g".
     s = eq(x, sf, dec)

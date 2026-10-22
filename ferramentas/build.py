@@ -159,11 +159,17 @@ def main(args):
     passo(4, 'Gerar o indice e o catalogo')
     els = dados.elementos()
     ctes = [(c['nome'], c['simbolo']) for c in dados.constantes()]
+    idx = CT.gerar_indice(temas, calcs, els, ctes)
+    for nome, d, txt in idx:
+        escrever(nome + '.py', txt)
     cat = CT.gerar_catalogo(temas, calcs)
     cat += 'BUILD = "%s"\n' % rel['data']
+    cat += '# Partes do indice da pesquisa: modulo:disciplina\n'
+    cat += 'IDX = "%s"\n' % ' '.join(n + ':' + d for n, d, x in idx)
     cat += CT.literal('LIMITES', limites() or 'ver RELATORIO.md')
     escrever('m1_cat.py', cat)
-    escrever('m1_idx.py', CT.gerar_indice(temas, calcs, els, ctes))
+    print('  indice da pesquisa em %d partes: %s' % (
+        len(idx), ', '.join(n for n, d, x in idx)))
 
     tam = {}
     for f in sorted(os.listdir(PY)):
@@ -174,7 +180,7 @@ def main(args):
     for m, s in tam.items():
         lim = ORC.get(m)
         if lim is None:
-            for k in ('p_', 'c_', 'x_'):
+            for k in ('p_', 'c_', 'x_', 'm1_idx'):
                 if m.startswith(k):
                     lim = ORC[k]
         if lim and s > lim:

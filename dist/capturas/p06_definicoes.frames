@@ -1321,7 +1321,7 @@ T	25	64	0,0,0	Notação científica a partir de 10⁶
 T	4	81	0,51,153	 4
 T	25	81	0,0,0	Unidade angular: graus
 T	4	98	0,51,153	 5
-T	25	98	0,0,0	Valor de g: 9,8 m s⁻² (manual)
+T	25	98	0,0,0	Valor de g: 10 m s⁻² (exame)
 T	4	115	0,51,153	 6
 T	25	115	0,0,0	Tolerância dos exercícios: 0,1 %
 T	4	132	0,51,153	 7
@@ -1348,7 +1348,7 @@ T	25	64	0,0,0	Notação científica a partir de 10⁶
 T	4	81	0,51,153	 4
 T	25	81	0,0,0	Unidade angular: graus
 T	4	98	0,51,153	 5
-T	25	98	0,0,0	Valor de g: 9,8 m s⁻² (manual)
+T	25	98	0,0,0	Valor de g: 10 m s⁻² (exame)
 T	4	115	0,51,153	 6
 T	25	115	0,0,0	Tolerância dos exercícios: 0,1 %
 T	4	132	0,51,153	 7
@@ -1375,7 +1375,7 @@ T	25	64	0,0,0	Notação científica a partir de 10⁶
 T	4	81	0,51,153	 4
 T	25	81	0,0,0	Unidade angular: graus
 T	4	98	0,51,153	 5
-T	25	98	0,0,0	Valor de g: 9,8 m s⁻² (manual)
+T	25	98	0,0,0	Valor de g: 10 m s⁻² (exame)
 T	4	115	0,51,153	 6
 T	25	115	0,0,0	Tolerância dos exercícios: 0,1 %
 T	4	132	0,51,153	 7
@@ -1402,7 +1402,7 @@ T	25	64	0,0,0	Notação científica a partir de 10⁶
 T	4	81	0,51,153	 4
 T	25	81	0,0,0	Unidade angular: graus
 T	4	98	0,51,153	 5
-T	25	98	0,0,0	Valor de g: 9,8 m s⁻² (manual)
+T	25	98	0,0,0	Valor de g: 10 m s⁻² (exame)
 T	4	115	0,51,153	 6
 T	25	115	0,0,0	Tolerância dos exercícios: 0,1 %
 T	4	132	0,51,153	 7
@@ -1441,7 +1441,7 @@ T	25	64	0,0,0	Notacao cientifica a partir de 10^6
 T	4	81	0,51,153	 4
 T	25	81	0,0,0	Unidade angular: graus
 T	4	98	0,51,153	 5
-T	25	98	0,0,0	Valor de g: 9,8 m s^-2 (manual)
+T	25	98	0,0,0	Valor de g: 10 m s^-2 (exame)
 T	4	115	0,51,153	 6
 T	25	115	0,0,0	Tolerancia dos exercicios: 0,1 %
 R	0	119	313	17	204,224,255
@@ -1562,7 +1562,7 @@ T	28	64	0,0,0	Notacao cientifica a partir de 10^6
 T	4	81	0,51,153	 4
 T	28	81	0,0,0	Unidade angular: graus
 T	4	98	0,51,153	 5
-T	28	98	0,0,0	Valor de g: 9,8 m s^-2 (manual)
+T	28	98	0,0,0	Valor de g: 10 m s^-2 (exame)
 T	4	115	0,51,153	 6
 T	28	115	0,0,0	Tolerancia dos exercicios: 0,1 %
 T	4	132	0,51,153	 7
@@ -1590,7 +1590,7 @@ T	28	64	0,0,0	Notacao cientifica a partir de 10^6
 T	4	81	0,51,153	 4
 T	28	81	0,0,0	Unidade angular: graus
 T	4	98	0,51,153	 5
-T	28	98	0,0,0	Valor de g: 9,8 m s^-2 (manual)
+T	28	98	0,0,0	Valor de g: 10 m s^-2 (exame)
 T	4	115	0,51,153	 6
 T	28	115	0,0,0	Tolerancia dos exercicios: 0,1 %
 T	4	132	0,51,153	 7
@@ -1627,7 +1627,7 @@ T	25	64	0,0,0	Notação científica a partir de 10⁶
 T	4	81	0,51,153	 4
 T	25	81	0,0,0	Unidade angular: graus
 T	4	98	0,51,153	 5
-T	25	98	0,0,0	Valor de g: 9,8 m s⁻² (manual)
+T	25	98	0,0,0	Valor de g: 10 m s⁻² (exame)
 T	4	115	0,51,153	 6
 T	25	115	0,0,0	Tolerância dos exercícios: 0,1 %
 T	4	132	0,51,153	 7

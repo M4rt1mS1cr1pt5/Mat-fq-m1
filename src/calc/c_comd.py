@@ -14,39 +14,39 @@ import m1_ui as U
 
 X = N.X
 # --- dados (gerado) ---
-CTE = "Velocidade de propaga\u00e7\u00e3o da luz no v\u00e1cuo|c|3,00 \u00d7 10\u2078|m s\u207b\u00b9|IAVE, Tabela\
+CTE = "Velocidade de propaga\xe7\xe3o da luz no v\xe1cuo|c|3,00 \xd7 10\u2078|m s\u207b\xb9|IAVE, Tabela de\
+ Constantes do exame de FQ A (715)|2024 (confirmar)\n\
+M\xf3dulo da acelera\xe7\xe3o grav\xedtica junto \xe0 superf\xedcie da Terra|g|10|m s\u207b\xb2|IAVE, Tabela\
  de Constantes do exame de FQ A (715)|2024 (confirmar)\n\
-M\u00f3dulo da acelera\u00e7\u00e3o grav\u00edtica junto \u00e0 superf\u00edcie da Terra|g|10|m\
- s\u207b\u00b2|IAVE, Tabela de Constantes do exame de FQ A (715)|2024 (confirmar)\n\
-Constante de gravita\u00e7\u00e3o universal|G|6,67 \u00d7 10\u207b\u00b9\u00b9|N m\u00b2 kg\u207b\u00b2|IAVE,\
- Tabela de Constantes do exame de FQ A (715)|2024 (confirmar)\n\
-Constante de Avogadro|NA|6,02 \u00d7 10\u00b2\u00b3|mol\u207b\u00b9|IAVE, Tabela de Constantes do exame de FQ\
- A (715)|2024 (confirmar)\n\
-Constante de Stefan-Boltzmann|\u03c3|5,67 \u00d7 10\u207b\u2078|W m\u207b\u00b2 K\u207b\u2074|IAVE, Tabela de\
- Constantes do exame de FQ A (715); extens\u00e3o no 10.\u00ba ano|2024 (confirmar)\n\
-Produto i\u00f3nico da \u00e1gua (25 \u00b0C)|Kw|1,00 \u00d7 10\u207b\u00b9\u2074||IAVE, Tabela de Constantes\
- do exame de FQ A (715); mat\u00e9ria do 11.\u00ba ano|2024 (confirmar)\n\
-Volume molar de um g\u00e1s (PTN)|Vm|22,4|dm\u00b3 mol\u207b\u00b9|IAVE, Tabela de Constantes do exame de FQ\
- A (715)|2024 (confirmar)\n\
-Constante de Planck|h|6,63 \u00d7 10\u207b\u00b3\u2074|J s|valor arredondado; CODATA: 6,626 070 15 \u00d7\
- 10\u207b\u00b3\u2074 J s (exato)|2018\n\
-Carga elementar|e|1,60 \u00d7 10\u207b\u00b9\u2079|C|valor arredondado; CODATA: 1,602 176 634 \u00d7\
- 10\u207b\u00b9\u2079 C (exato)|2018\n\
-Eletr\u00e3o-volt|eV|1,60 \u00d7 10\u207b\u00b9\u2079|J|1 eV = e \u00d7 1 V; CODATA|2018\n\
-Unidade de massa at\u00f3mica|u|1,66 \u00d7 10\u207b\u00b2\u2077|kg|valor arredondado; CODATA: 1,660 539 066\
- 60 \u00d7 10\u207b\u00b2\u2077 kg|2018\n\
-Acelera\u00e7\u00e3o grav\u00edtica padr\u00e3o|gn|9,80665|m s\u207b\u00b2|valor convencional (3.\u00aa CGPM)|1901\n\
-Energia do eletr\u00e3o no n\u00edvel n do \u00e1tomo de hidrog\u00e9nio|En|-2,18 \u00d7\
- 10\u207b\u00b9\u2078/n\u00b2|J|modelo de Bohr (valor usado nos manuais)|\u2014\n\
-Capacidade t\u00e9rmica m\u00e1ssica da \u00e1gua l\u00edquida|c|4,18 \u00d7 10\u00b3|J kg\u207b\u00b9\
- K\u207b\u00b9|valor usado nos manuais (varia com a temperatura)|\u2014\n\
-Varia\u00e7\u00e3o de entalpia (m\u00e1ssica) de fus\u00e3o do gelo|\u0394Hf|3,34 \u00d7 10\u2075|J\
- kg\u207b\u00b9|valor tabelado a 0 \u00b0C|\u2014\n\
-Varia\u00e7\u00e3o de entalpia (m\u00e1ssica) de vaporiza\u00e7\u00e3o da \u00e1gua|\u0394Hv|2,26 \u00d7\
- 10\u2076|J kg\u207b\u00b9|valor tabelado a 100 \u00b0C|\u2014\n\
-Massa vol\u00famica da \u00e1gua (4 \u00b0C)|\u03c1|1,00 \u00d7 10\u00b3|kg m\u207b\u00b3|valor arredondado|\u2014\n\
-Press\u00e3o normal (1 atm)|p|1,01325 \u00d7 10\u2075|Pa|valor convencional|\u2014\n\
-Zero da escala Celsius em kelvin|T0|273,15|K|defini\u00e7\u00e3o da escala Celsius|\u2014"
+Constante de gravita\xe7\xe3o universal|G|6,67 \xd7 10\u207b\xb9\xb9|N m\xb2 kg\u207b\xb2|IAVE, Tabela de\
+ Constantes do exame de FQ A (715)|2024 (confirmar)\n\
+Constante de Avogadro|NA|6,02 \xd7 10\xb2\xb3|mol\u207b\xb9|IAVE, Tabela de Constantes do exame de FQ A\
+ (715)|2024 (confirmar)\n\
+Constante de Stefan-Boltzmann|\u03c3|5,67 \xd7 10\u207b\u2078|W m\u207b\xb2 K\u207b\u2074|IAVE, Tabela de\
+ Constantes do exame de FQ A (715); extens\xe3o no 10.\xba ano|2024 (confirmar)\n\
+Produto i\xf3nico da \xe1gua (25 \xb0C)|Kw|1,00 \xd7 10\u207b\xb9\u2074||IAVE, Tabela de Constantes do exame\
+ de FQ A (715); mat\xe9ria do 11.\xba ano|2024 (confirmar)\n\
+Volume molar de um g\xe1s (PTN)|Vm|22,4|dm\xb3 mol\u207b\xb9|IAVE, Tabela de Constantes do exame de FQ A\
+ (715)|2024 (confirmar)\n\
+Constante de Planck|h|6,63 \xd7 10\u207b\xb3\u2074|J s|valor arredondado; CODATA: 6,626 070 15 \xd7\
+ 10\u207b\xb3\u2074 J s (exato)|2018\n\
+Carga elementar|e|1,60 \xd7 10\u207b\xb9\u2079|C|valor arredondado; CODATA: 1,602 176 634 \xd7\
+ 10\u207b\xb9\u2079 C (exato)|2018\n\
+Eletr\xe3o-volt|eV|1,60 \xd7 10\u207b\xb9\u2079|J|1 eV = e \xd7 1 V; CODATA|2018\n\
+Unidade de massa at\xf3mica|u|1,66 \xd7 10\u207b\xb2\u2077|kg|valor arredondado; CODATA: 1,660 539 066 60\
+ \xd7 10\u207b\xb2\u2077 kg|2018\n\
+Acelera\xe7\xe3o grav\xedtica padr\xe3o|gn|9,80665|m s\u207b\xb2|valor convencional (3.\xaa CGPM)|1901\n\
+Energia do eletr\xe3o no n\xedvel n do \xe1tomo de hidrog\xe9nio|En|-2,18 \xd7\
+ 10\u207b\xb9\u2078/n\xb2|J|modelo de Bohr (valor usado nos manuais)|\u2014\n\
+Capacidade t\xe9rmica m\xe1ssica da \xe1gua l\xedquida|c|4,18 \xd7 10\xb3|J kg\u207b\xb9 K\u207b\xb9|valor\
+ usado nos manuais (varia com a temperatura)|\u2014\n\
+Varia\xe7\xe3o de entalpia (m\xe1ssica) de fus\xe3o do gelo|\u0394Hf|3,34 \xd7 10\u2075|J kg\u207b\xb9|valor\
+ tabelado a 0 \xb0C|\u2014\n\
+Varia\xe7\xe3o de entalpia (m\xe1ssica) de vaporiza\xe7\xe3o da \xe1gua|\u0394Hv|2,26 \xd7 10\u2076|J\
+ kg\u207b\xb9|valor tabelado a 100 \xb0C|\u2014\n\
+Massa vol\xfamica da \xe1gua (4 \xb0C)|\u03c1|1,00 \xd7 10\xb3|kg m\u207b\xb3|valor arredondado|\u2014\n\
+Press\xe3o normal (1 atm)|p|1,01325 \xd7 10\u2075|Pa|valor convencional|\u2014\n\
+Zero da escala Celsius em kelvin|T0|273,15|K|defini\xe7\xe3o da escala Celsius|\u2014"
 # --- fim dos dados ---
 
 

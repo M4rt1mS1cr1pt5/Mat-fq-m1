@@ -1,0 +1,53 @@
+# Percurso 8: FQ > Fisica > Energia e movimentos: calculadora da
+# conservacao da energia mecanica (queda de 20 m), passos, energia
+# mecanica (2,0 kg; 3,0 m/s; 5,0 m), licao f1d (4 paginas); sair.
+1
+enter
+2
+1
+# 6 Calculadoras do tema: 2 = conservacao (hA = 20; o resto por defeito)
+6
+2
+2
+0
+enter
+enter
+enter
+enter
+enter
+enter
+# resultado: 1 = passos
+1
+esc
+esc
+# 1 = energia mecanica: m, v, h
+1
+2
+,
+0
+enter
+3
+,
+0
+enter
+5
+,
+0
+enter
+esc
+esc
+# 1 Licoes: a 4.a (conservacao da energia mecanica)
+1
+4
+right
+right
+right
+right
+esc
+esc
+esc
+esc
+esc
+1
+3
+enter

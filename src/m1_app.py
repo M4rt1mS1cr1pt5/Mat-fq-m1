@@ -22,7 +22,7 @@ S = {'cfg': None, 'ex': None, 'lic': None, 'tst': None, 'rev': None,
 # Definicoes (lista "m1def"): versao, casas decimais, alg. sig. auto,
 # expoente da notacao cientifica, angulo (0 graus), g (indice em GV),
 # tolerancia (indice em TOL), simbolos (2/1/0), cw, lh, dy.
-DEF = [1, 4, 1, 6, 0, 0, 0, 2, 7, 17, 13]
+DEF = [1, 4, 1, 6, 0, 1, 0, 2, 7, 17, 13]
 GV = (9.8, 10.0, 9.80665)
 GT = ('9,8 m s\u207b\u00b2 (manual)', '10 m s\u207b\u00b2 (exame)',
       '9,80665 m s\u207b\u00b2 (padr\u00e3o)')

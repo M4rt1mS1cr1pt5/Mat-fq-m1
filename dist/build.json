@@ -1,90 +1,96 @@
 {
  "avisos": [
-  "conteudo/fq/q2_eletroes.txt:158 (licao q2c) pág. F: frase com 20 palavras: Verificação: o pico de menor energia, 0,50 MJ mol⁻¹ = 500 kJ",
-  "conteudo/fq/q4_ligacao.txt:278 (licao q4e) pág. G: frase com 23 palavras: O grupo funcional decide o comportamento químico: os álcoois",
   "calculadora c_fqlg.ace: tema r8 ainda nao existe"
  ],
  "data": "2026-10-22",
  "percursos": {
   "p01_fq_licao": {
-   "cpy": "ecras=63 textos=628 fora=0 teclas=50/50 pico=0 ok",
-   "mp": "ecras=63 textos=628 fora=0 teclas=50/50 pico=125840 ok"
+   "cpy": "ecras=63 textos=632 fora=0 teclas=50/50 pico=0 ok",
+   "mp": "ecras=63 textos=632 fora=0 teclas=50/50 pico=127104 ok"
   },
   "p02_mat_calc": {
    "cpy": "ecras=71 textos=604 fora=0 teclas=54/54 pico=0 ok",
-   "mp": "ecras=71 textos=604 fora=0 teclas=54/54 pico=110016 ok"
+   "mp": "ecras=71 textos=604 fora=0 teclas=54/54 pico=111440 ok"
   },
   "p03_exercicios": {
-   "cpy": "ecras=54 textos=435 fora=0 teclas=41/41 pico=0 ok",
-   "mp": "ecras=54 textos=435 fora=0 teclas=41/41 pico=94224 ok"
+   "cpy": "ecras=54 textos=437 fora=0 teclas=41/41 pico=0 ok",
+   "mp": "ecras=54 textos=437 fora=0 teclas=41/41 pico=95568 ok"
   },
   "p04_pesquisa": {
-   "cpy": "ecras=50 textos=572 fora=0 teclas=37/37 pico=0 ok",
-   "mp": "ecras=50 textos=572 fora=0 teclas=37/37 pico=110320 ok"
+   "cpy": "ecras=56 textos=554 fora=0 teclas=37/37 pico=0 ok",
+   "mp": "ecras=56 textos=554 fora=0 teclas=37/37 pico=112160 ok"
   },
   "p05_tabela": {
    "cpy": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=0 ok",
-   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=132656 ok"
+   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=133728 ok"
   },
   "p06_definicoes": {
    "cpy": "ecras=48 textos=490 fora=0 teclas=35/35 pico=0 ok",
-   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=83248 ok"
+   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=84432 ok"
   },
   "p07_progresso": {
-   "cpy": "ecras=48 textos=460 fora=0 teclas=35/35 pico=0 ok",
-   "mp": "ecras=48 textos=460 fora=0 teclas=35/35 pico=108112 ok"
+   "cpy": "ecras=48 textos=466 fora=0 teclas=35/35 pico=0 ok",
+   "mp": "ecras=48 textos=466 fora=0 teclas=35/35 pico=109408 ok"
+  },
+  "p08_fis_calc": {
+   "cpy": "ecras=59 textos=534 fora=0 teclas=46/46 pico=0 ok",
+   "mp": "ecras=59 textos=534 fora=0 teclas=46/46 pico=119712 ok"
   }
  },
  "residente": {
-  "m1_app": 11680,
-  "m1_cat": 2400,
-  "m1_cont": 2800,
-  "m1_nucleo": 15952,
-  "m1_plat": 9344,
-  "m1_ui": 12768,
-  "total": 54944
+  "m1_app": 11600,
+  "m1_cat": 2944,
+  "m1_cont": 2928,
+  "m1_nucleo": 16224,
+  "m1_plat": 9360,
+  "m1_ui": 12736,
+  "total": 55792
  },
- "residentes": 83941,
+ "residentes": 84677,
  "tamanhos": {
-  "c_comd": 10452,
+  "c_comd": 10250,
   "c_comu": 8321,
   "c_fqat": 11951,
   "c_fqel": 9546,
+  "c_fqen": 14866,
   "c_fqlg": 12630,
   "c_fqso": 8527,
   "c_matq": 14376,
   "m1": 1196,
   "m1_app": 15106,
-  "m1_cat": 2642,
+  "m1_cat": 3080,
   "m1_cfg": 10213,
-  "m1_cont": 5054,
+  "m1_cont": 5117,
   "m1_ex": 11916,
-  "m1_idx": 20070,
+  "m1_idx": 16731,
+  "m1_idxm": 2509,
   "m1_ini": 3451,
   "m1_nav": 4589,
-  "m1_nucleo": 27282,
-  "m1_pesq": 4518,
-  "m1_plat": 11695,
-  "m1_tp": 15429,
+  "m1_nucleo": 27497,
+  "m1_pesq": 5418,
+  "m1_plat": 11715,
+  "m1_tp": 14779,
   "m1_ui": 20966,
-  "p_m5": 18507,
-  "p_q1": 23642,
-  "p_q2": 24198,
-  "p_q3": 14469,
-  "p_q4": 25212,
-  "p_q5": 19258,
-  "p_q6": 14207,
-  "x_m5": 2967,
-  "x_q1": 3181,
-  "x_q2": 3814,
-  "x_q3": 3085,
-  "x_q4": 3204,
-  "x_q5": 2888,
-  "x_q6": 3182
+  "p_f1": 18676,
+  "p_m5": 17405,
+  "p_q1": 22012,
+  "p_q2": 22496,
+  "p_q3": 13521,
+  "p_q4": 23453,
+  "p_q5": 18062,
+  "p_q6": 13273,
+  "x_f1": 2853,
+  "x_m5": 2825,
+  "x_q1": 2999,
+  "x_q2": 3554,
+  "x_q3": 2867,
+  "x_q4": 2994,
+  "x_q5": 2732,
+  "x_q6": 2998
  },
- "tempo": 2.6,
+ "tempo": 3.1,
  "testes": {
-  "CPython": 107,
-  "MicroPython": 107
+  "CPython": 132,
+  "MicroPython": 132
  }
 }

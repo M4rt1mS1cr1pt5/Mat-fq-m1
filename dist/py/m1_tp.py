@@ -12,124 +12,124 @@ import m1_app as A
 
 VER = 1
 # --- dados (gerado) ---
-TD = "1|H|Hidrog\u00e9nio|1.008|1|1|s|n\u00e3o metal|g\u00e1s|53|1312\n\
-2|He|H\u00e9lio|4.0026|18|1|s|g\u00e1s nobre|g\u00e1s|31|2372\n\
-3|Li|L\u00edtio|6.94|1|2|s|metal alcalino|s\u00f3lido|167|520\n\
-4|Be|Ber\u00edlio|9.0122|2|2|s|metal alcalinoterroso|s\u00f3lido|112|900\n\
-5|B|Boro|10.81|13|2|p|semimetal|s\u00f3lido|87|801\n\
-6|C|Carbono|12.011|14|2|p|n\u00e3o metal|s\u00f3lido|67|1086\n\
-7|N|Azoto|14.007|15|2|p|n\u00e3o metal|g\u00e1s|56|1402\n\
-8|O|Oxig\u00e9nio|15.999|16|2|p|n\u00e3o metal|g\u00e1s|48|1314\n\
-9|F|Fl\u00faor|18.998|17|2|p|halog\u00e9neo|g\u00e1s|42|1681\n\
-10|Ne|N\u00e9on|20.180|18|2|p|g\u00e1s nobre|g\u00e1s|38|2081\n\
-11|Na|S\u00f3dio|22.990|1|3|s|metal alcalino|s\u00f3lido|190|496\n\
-12|Mg|Magn\u00e9sio|24.305|2|3|s|metal alcalinoterroso|s\u00f3lido|145|738\n\
-13|Al|Alum\u00ednio|26.982|13|3|p|metal|s\u00f3lido|118|578\n\
-14|Si|Sil\u00edcio|28.085|14|3|p|semimetal|s\u00f3lido|111|787\n\
-15|P|F\u00f3sforo|30.974|15|3|p|n\u00e3o metal|s\u00f3lido|98|1012\n\
-16|S|Enxofre|32.06|16|3|p|n\u00e3o metal|s\u00f3lido|88|1000\n\
-17|Cl|Cloro|35.45|17|3|p|halog\u00e9neo|g\u00e1s|79|1251\n\
-18|Ar|\u00c1rgon|39.95|18|3|p|g\u00e1s nobre|g\u00e1s|71|1521\n\
-19|K|Pot\u00e1ssio|39.098|1|4|s|metal alcalino|s\u00f3lido|243|419\n\
-20|Ca|C\u00e1lcio|40.078|2|4|s|metal alcalinoterroso|s\u00f3lido|194|590\n\
-21|Sc|Esc\u00e2ndio|44.956|3|4|d|metal de transi\u00e7\u00e3o|s\u00f3lido|184|633\n\
-22|Ti|Tit\u00e2nio|47.867|4|4|d|metal de transi\u00e7\u00e3o|s\u00f3lido|176|659\n\
-23|V|Van\u00e1dio|50.942|5|4|d|metal de transi\u00e7\u00e3o|s\u00f3lido|171|651\n\
-24|Cr|Cr\u00f3mio|51.996|6|4|d|metal de transi\u00e7\u00e3o|s\u00f3lido|166|653\n\
-25|Mn|Mangan\u00eas|54.938|7|4|d|metal de transi\u00e7\u00e3o|s\u00f3lido|161|717\n\
-26|Fe|Ferro|55.845|8|4|d|metal de transi\u00e7\u00e3o|s\u00f3lido|156|762\n\
-27|Co|Cobalto|58.933|9|4|d|metal de transi\u00e7\u00e3o|s\u00f3lido|152|760\n\
-28|Ni|N\u00edquel|58.693|10|4|d|metal de transi\u00e7\u00e3o|s\u00f3lido|149|737\n\
-29|Cu|Cobre|63.546|11|4|d|metal de transi\u00e7\u00e3o|s\u00f3lido|145|745\n\
-30|Zn|Zinco|65.38|12|4|d|metal de transi\u00e7\u00e3o|s\u00f3lido|142|906\n\
-31|Ga|G\u00e1lio|69.723|13|4|p|metal|s\u00f3lido|136|579\n\
-32|Ge|Germ\u00e2nio|72.630|14|4|p|semimetal|s\u00f3lido|125|762\n\
-33|As|Ars\u00e9nio|74.922|15|4|p|semimetal|s\u00f3lido|114|947\n\
-34|Se|Sel\u00e9nio|78.971|16|4|p|n\u00e3o metal|s\u00f3lido|103|941\n\
-35|Br|Bromo|79.904|17|4|p|halog\u00e9neo|l\u00edquido|94|1140\n\
-36|Kr|Cr\u00edpton|83.798|18|4|p|g\u00e1s nobre|g\u00e1s|88|1351\n\
-37|Rb|Rub\u00eddio|85.468|1|5|s|metal alcalino|s\u00f3lido|265|403\n\
-38|Sr|Estr\u00f4ncio|87.62|2|5|s|metal alcalinoterroso|s\u00f3lido|219|550\n\
-39|Y|\u00cdtrio|88.906|3|5|d|metal de transi\u00e7\u00e3o|s\u00f3lido|212|600\n\
-40|Zr|Zirc\u00f3nio|91.224|4|5|d|metal de transi\u00e7\u00e3o|s\u00f3lido|206|640\n\
-41|Nb|Ni\u00f3bio|92.906|5|5|d|metal de transi\u00e7\u00e3o|s\u00f3lido|198|652\n\
-42|Mo|Molibd\u00e9nio|95.95|6|5|d|metal de transi\u00e7\u00e3o|s\u00f3lido|190|684\n\
-43|Tc|Tecn\u00e9cio|[98]|7|5|d|metal de transi\u00e7\u00e3o|s\u00f3lido|183|702\n\
-44|Ru|Rut\u00e9nio|101.07|8|5|d|metal de transi\u00e7\u00e3o|s\u00f3lido|178|710\n\
-45|Rh|R\u00f3dio|102.91|9|5|d|metal de transi\u00e7\u00e3o|s\u00f3lido|173|720\n\
-46|Pd|Pal\u00e1dio|106.42|10|5|d|metal de transi\u00e7\u00e3o|s\u00f3lido|169|804\n\
-47|Ag|Prata|107.87|11|5|d|metal de transi\u00e7\u00e3o|s\u00f3lido|165|731\n\
-48|Cd|C\u00e1dmio|112.41|12|5|d|metal de transi\u00e7\u00e3o|s\u00f3lido|161|868\n\
-49|In|\u00cdndio|114.82|13|5|p|metal|s\u00f3lido|156|558\n\
-50|Sn|Estanho|118.71|14|5|p|metal|s\u00f3lido|145|709\n\
-51|Sb|Antim\u00f3nio|121.76|15|5|p|semimetal|s\u00f3lido|133|834\n\
-52|Te|Tel\u00fario|127.60|16|5|p|semimetal|s\u00f3lido|123|869\n\
-53|I|Iodo|126.90|17|5|p|halog\u00e9neo|s\u00f3lido|115|1008\n\
-54|Xe|X\u00e9non|131.29|18|5|p|g\u00e1s nobre|g\u00e1s|108|1170\n\
-55|Cs|C\u00e9sio|132.91|1|6|s|metal alcalino|s\u00f3lido||\n\
-56|Ba|B\u00e1rio|137.33|2|6|s|metal alcalinoterroso|s\u00f3lido||\n\
-57|La|Lant\u00e2nio|138.91|3|6|d|lantan\u00eddeo|s\u00f3lido||\n\
-58|Ce|C\u00e9rio|140.12||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-59|Pr|Praseod\u00edmio|140.91||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-60|Nd|Neod\u00edmio|144.24||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-61|Pm|Prom\u00e9cio|[145]||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-62|Sm|Sam\u00e1rio|150.36||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-63|Eu|Eur\u00f3pio|151.96||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-64|Gd|Gadol\u00ednio|157.25||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-65|Tb|T\u00e9rbio|158.93||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-66|Dy|Dispr\u00f3sio|162.50||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-67|Ho|H\u00f3lmio|164.93||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-68|Er|\u00c9rbio|167.26||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-69|Tm|T\u00falio|168.93||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-70|Yb|It\u00e9rbio|173.05||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-71|Lu|Lut\u00e9cio|174.97||6|f|lantan\u00eddeo|s\u00f3lido||\n\
-72|Hf|H\u00e1fnio|178.49|4|6|d|metal de transi\u00e7\u00e3o|s\u00f3lido||\n\
-73|Ta|T\u00e2ntalo|180.95|5|6|d|metal de transi\u00e7\u00e3o|s\u00f3lido||\n\
-74|W|Tungst\u00e9nio|183.84|6|6|d|metal de transi\u00e7\u00e3o|s\u00f3lido||\n\
-75|Re|R\u00e9nio|186.21|7|6|d|metal de transi\u00e7\u00e3o|s\u00f3lido||\n\
-76|Os|\u00d3smio|190.23|8|6|d|metal de transi\u00e7\u00e3o|s\u00f3lido||\n\
-77|Ir|Ir\u00eddio|192.22|9|6|d|metal de transi\u00e7\u00e3o|s\u00f3lido||\n\
-78|Pt|Platina|195.08|10|6|d|metal de transi\u00e7\u00e3o|s\u00f3lido||\n\
-79|Au|Ouro|196.97|11|6|d|metal de transi\u00e7\u00e3o|s\u00f3lido||\n\
-80|Hg|Merc\u00fario|200.59|12|6|d|metal de transi\u00e7\u00e3o|l\u00edquido||\n\
-81|Tl|T\u00e1lio|204.38|13|6|p|metal|s\u00f3lido||\n\
-82|Pb|Chumbo|207.2|14|6|p|metal|s\u00f3lido||\n\
-83|Bi|Bismuto|208.98|15|6|p|metal|s\u00f3lido||\n\
-84|Po|Pol\u00f3nio|[209]|16|6|p|metal|s\u00f3lido||\n\
-85|At|\u00c1stato|[210]|17|6|p|halog\u00e9neo|s\u00f3lido||\n\
-86|Rn|R\u00e1don|[222]|18|6|p|g\u00e1s nobre|g\u00e1s||\n\
-87|Fr|Fr\u00e2ncio|[223]|1|7|s|metal alcalino|s\u00f3lido||\n\
-88|Ra|R\u00e1dio|[226]|2|7|s|metal alcalinoterroso|s\u00f3lido||\n\
-89|Ac|Act\u00ednio|[227]|3|7|d|act\u00ednideo|s\u00f3lido||\n\
-90|Th|T\u00f3rio|232.04||7|f|act\u00ednideo|s\u00f3lido||\n\
-91|Pa|Protact\u00ednio|231.04||7|f|act\u00ednideo|s\u00f3lido||\n\
-92|U|Ur\u00e2nio|238.03||7|f|act\u00ednideo|s\u00f3lido||\n\
-93|Np|Nept\u00fanio|[237]||7|f|act\u00ednideo|s\u00f3lido||\n\
-94|Pu|Plut\u00f3nio|[244]||7|f|act\u00ednideo|s\u00f3lido||\n\
-95|Am|Amer\u00edcio|[243]||7|f|act\u00ednideo|s\u00f3lido||\n\
-96|Cm|C\u00fario|[247]||7|f|act\u00ednideo|s\u00f3lido||\n\
-97|Bk|Berqu\u00e9lio|[247]||7|f|act\u00ednideo|s\u00f3lido||\n\
-98|Cf|Calif\u00f3rnio|[251]||7|f|act\u00ednideo|s\u00f3lido||\n\
-99|Es|Einst\u00e9nio|[252]||7|f|act\u00ednideo|s\u00f3lido||\n\
-100|Fm|F\u00e9rmio|[257]||7|f|act\u00ednideo|desconhecido||\n\
-101|Md|Mendel\u00e9vio|[258]||7|f|act\u00ednideo|desconhecido||\n\
-102|No|Nob\u00e9lio|[259]||7|f|act\u00ednideo|desconhecido||\n\
-103|Lr|Laur\u00eancio|[262]||7|f|act\u00ednideo|desconhecido||\n\
-104|Rf|Rutherf\u00f3rdio|[267]|4|7|d|metal de transi\u00e7\u00e3o (previsto)|desconhecido||\n\
-105|Db|D\u00fabnio|[268]|5|7|d|metal de transi\u00e7\u00e3o (previsto)|desconhecido||\n\
-106|Sg|Seab\u00f3rgio|[269]|6|7|d|metal de transi\u00e7\u00e3o (previsto)|desconhecido||\n\
-107|Bh|B\u00f3hrio|[270]|7|7|d|metal de transi\u00e7\u00e3o (previsto)|desconhecido||\n\
-108|Hs|H\u00e1ssio|[269]|8|7|d|metal de transi\u00e7\u00e3o (previsto)|desconhecido||\n\
-109|Mt|Meitn\u00e9rio|[278]|9|7|d|metal de transi\u00e7\u00e3o (previsto)|desconhecido||\n\
-110|Ds|Darmst\u00e1cio|[281]|10|7|d|metal de transi\u00e7\u00e3o (previsto)|desconhecido||\n\
-111|Rg|Roentg\u00e9nio|[282]|11|7|d|metal de transi\u00e7\u00e3o (previsto)|desconhecido||\n\
-112|Cn|Copern\u00edcio|[285]|12|7|d|metal de transi\u00e7\u00e3o (previsto)|desconhecido||\n\
-113|Nh|Nip\u00f3nio|[286]|13|7|p|metal (previsto)|desconhecido||\n\
-114|Fl|Fler\u00f3vio|[289]|14|7|p|metal (previsto)|desconhecido||\n\
-115|Mc|Mosc\u00f3vio|[290]|15|7|p|metal (previsto)|desconhecido||\n\
-116|Lv|Liverm\u00f3rio|[293]|16|7|p|metal (previsto)|desconhecido||\n\
-117|Ts|Tenesso|[294]|17|7|p|halog\u00e9neo (previsto)|desconhecido||\n\
-118|Og|Ogan\u00e9sson|[294]|18|7|p|g\u00e1s nobre (previsto)|desconhecido||"
+TD = "1|H|Hidrog\xe9nio|1.008|1|1|s|n\xe3o metal|g\xe1s|53|1312\n\
+2|He|H\xe9lio|4.0026|18|1|s|g\xe1s nobre|g\xe1s|31|2372\n\
+3|Li|L\xedtio|6.94|1|2|s|metal alcalino|s\xf3lido|167|520\n\
+4|Be|Ber\xedlio|9.0122|2|2|s|metal alcalinoterroso|s\xf3lido|112|900\n\
+5|B|Boro|10.81|13|2|p|semimetal|s\xf3lido|87|801\n\
+6|C|Carbono|12.011|14|2|p|n\xe3o metal|s\xf3lido|67|1086\n\
+7|N|Azoto|14.007|15|2|p|n\xe3o metal|g\xe1s|56|1402\n\
+8|O|Oxig\xe9nio|15.999|16|2|p|n\xe3o metal|g\xe1s|48|1314\n\
+9|F|Fl\xfaor|18.998|17|2|p|halog\xe9neo|g\xe1s|42|1681\n\
+10|Ne|N\xe9on|20.180|18|2|p|g\xe1s nobre|g\xe1s|38|2081\n\
+11|Na|S\xf3dio|22.990|1|3|s|metal alcalino|s\xf3lido|190|496\n\
+12|Mg|Magn\xe9sio|24.305|2|3|s|metal alcalinoterroso|s\xf3lido|145|738\n\
+13|Al|Alum\xednio|26.982|13|3|p|metal|s\xf3lido|118|578\n\
+14|Si|Sil\xedcio|28.085|14|3|p|semimetal|s\xf3lido|111|787\n\
+15|P|F\xf3sforo|30.974|15|3|p|n\xe3o metal|s\xf3lido|98|1012\n\
+16|S|Enxofre|32.06|16|3|p|n\xe3o metal|s\xf3lido|88|1000\n\
+17|Cl|Cloro|35.45|17|3|p|halog\xe9neo|g\xe1s|79|1251\n\
+18|Ar|\xc1rgon|39.95|18|3|p|g\xe1s nobre|g\xe1s|71|1521\n\
+19|K|Pot\xe1ssio|39.098|1|4|s|metal alcalino|s\xf3lido|243|419\n\
+20|Ca|C\xe1lcio|40.078|2|4|s|metal alcalinoterroso|s\xf3lido|194|590\n\
+21|Sc|Esc\xe2ndio|44.956|3|4|d|metal de transi\xe7\xe3o|s\xf3lido|184|633\n\
+22|Ti|Tit\xe2nio|47.867|4|4|d|metal de transi\xe7\xe3o|s\xf3lido|176|659\n\
+23|V|Van\xe1dio|50.942|5|4|d|metal de transi\xe7\xe3o|s\xf3lido|171|651\n\
+24|Cr|Cr\xf3mio|51.996|6|4|d|metal de transi\xe7\xe3o|s\xf3lido|166|653\n\
+25|Mn|Mangan\xeas|54.938|7|4|d|metal de transi\xe7\xe3o|s\xf3lido|161|717\n\
+26|Fe|Ferro|55.845|8|4|d|metal de transi\xe7\xe3o|s\xf3lido|156|762\n\
+27|Co|Cobalto|58.933|9|4|d|metal de transi\xe7\xe3o|s\xf3lido|152|760\n\
+28|Ni|N\xedquel|58.693|10|4|d|metal de transi\xe7\xe3o|s\xf3lido|149|737\n\
+29|Cu|Cobre|63.546|11|4|d|metal de transi\xe7\xe3o|s\xf3lido|145|745\n\
+30|Zn|Zinco|65.38|12|4|d|metal de transi\xe7\xe3o|s\xf3lido|142|906\n\
+31|Ga|G\xe1lio|69.723|13|4|p|metal|s\xf3lido|136|579\n\
+32|Ge|Germ\xe2nio|72.630|14|4|p|semimetal|s\xf3lido|125|762\n\
+33|As|Ars\xe9nio|74.922|15|4|p|semimetal|s\xf3lido|114|947\n\
+34|Se|Sel\xe9nio|78.971|16|4|p|n\xe3o metal|s\xf3lido|103|941\n\
+35|Br|Bromo|79.904|17|4|p|halog\xe9neo|l\xedquido|94|1140\n\
+36|Kr|Cr\xedpton|83.798|18|4|p|g\xe1s nobre|g\xe1s|88|1351\n\
+37|Rb|Rub\xeddio|85.468|1|5|s|metal alcalino|s\xf3lido|265|403\n\
+38|Sr|Estr\xf4ncio|87.62|2|5|s|metal alcalinoterroso|s\xf3lido|219|550\n\
+39|Y|\xcdtrio|88.906|3|5|d|metal de transi\xe7\xe3o|s\xf3lido|212|600\n\
+40|Zr|Zirc\xf3nio|91.224|4|5|d|metal de transi\xe7\xe3o|s\xf3lido|206|640\n\
+41|Nb|Ni\xf3bio|92.906|5|5|d|metal de transi\xe7\xe3o|s\xf3lido|198|652\n\
+42|Mo|Molibd\xe9nio|95.95|6|5|d|metal de transi\xe7\xe3o|s\xf3lido|190|684\n\
+43|Tc|Tecn\xe9cio|[98]|7|5|d|metal de transi\xe7\xe3o|s\xf3lido|183|702\n\
+44|Ru|Rut\xe9nio|101.07|8|5|d|metal de transi\xe7\xe3o|s\xf3lido|178|710\n\
+45|Rh|R\xf3dio|102.91|9|5|d|metal de transi\xe7\xe3o|s\xf3lido|173|720\n\
+46|Pd|Pal\xe1dio|106.42|10|5|d|metal de transi\xe7\xe3o|s\xf3lido|169|804\n\
+47|Ag|Prata|107.87|11|5|d|metal de transi\xe7\xe3o|s\xf3lido|165|731\n\
+48|Cd|C\xe1dmio|112.41|12|5|d|metal de transi\xe7\xe3o|s\xf3lido|161|868\n\
+49|In|\xcdndio|114.82|13|5|p|metal|s\xf3lido|156|558\n\
+50|Sn|Estanho|118.71|14|5|p|metal|s\xf3lido|145|709\n\
+51|Sb|Antim\xf3nio|121.76|15|5|p|semimetal|s\xf3lido|133|834\n\
+52|Te|Tel\xfario|127.60|16|5|p|semimetal|s\xf3lido|123|869\n\
+53|I|Iodo|126.90|17|5|p|halog\xe9neo|s\xf3lido|115|1008\n\
+54|Xe|X\xe9non|131.29|18|5|p|g\xe1s nobre|g\xe1s|108|1170\n\
+55|Cs|C\xe9sio|132.91|1|6|s|metal alcalino|s\xf3lido||\n\
+56|Ba|B\xe1rio|137.33|2|6|s|metal alcalinoterroso|s\xf3lido||\n\
+57|La|Lant\xe2nio|138.91|3|6|d|lantan\xeddeo|s\xf3lido||\n\
+58|Ce|C\xe9rio|140.12||6|f|lantan\xeddeo|s\xf3lido||\n\
+59|Pr|Praseod\xedmio|140.91||6|f|lantan\xeddeo|s\xf3lido||\n\
+60|Nd|Neod\xedmio|144.24||6|f|lantan\xeddeo|s\xf3lido||\n\
+61|Pm|Prom\xe9cio|[145]||6|f|lantan\xeddeo|s\xf3lido||\n\
+62|Sm|Sam\xe1rio|150.36||6|f|lantan\xeddeo|s\xf3lido||\n\
+63|Eu|Eur\xf3pio|151.96||6|f|lantan\xeddeo|s\xf3lido||\n\
+64|Gd|Gadol\xednio|157.25||6|f|lantan\xeddeo|s\xf3lido||\n\
+65|Tb|T\xe9rbio|158.93||6|f|lantan\xeddeo|s\xf3lido||\n\
+66|Dy|Dispr\xf3sio|162.50||6|f|lantan\xeddeo|s\xf3lido||\n\
+67|Ho|H\xf3lmio|164.93||6|f|lantan\xeddeo|s\xf3lido||\n\
+68|Er|\xc9rbio|167.26||6|f|lantan\xeddeo|s\xf3lido||\n\
+69|Tm|T\xfalio|168.93||6|f|lantan\xeddeo|s\xf3lido||\n\
+70|Yb|It\xe9rbio|173.05||6|f|lantan\xeddeo|s\xf3lido||\n\
+71|Lu|Lut\xe9cio|174.97||6|f|lantan\xeddeo|s\xf3lido||\n\
+72|Hf|H\xe1fnio|178.49|4|6|d|metal de transi\xe7\xe3o|s\xf3lido||\n\
+73|Ta|T\xe2ntalo|180.95|5|6|d|metal de transi\xe7\xe3o|s\xf3lido||\n\
+74|W|Tungst\xe9nio|183.84|6|6|d|metal de transi\xe7\xe3o|s\xf3lido||\n\
+75|Re|R\xe9nio|186.21|7|6|d|metal de transi\xe7\xe3o|s\xf3lido||\n\
+76|Os|\xd3smio|190.23|8|6|d|metal de transi\xe7\xe3o|s\xf3lido||\n\
+77|Ir|Ir\xeddio|192.22|9|6|d|metal de transi\xe7\xe3o|s\xf3lido||\n\
+78|Pt|Platina|195.08|10|6|d|metal de transi\xe7\xe3o|s\xf3lido||\n\
+79|Au|Ouro|196.97|11|6|d|metal de transi\xe7\xe3o|s\xf3lido||\n\
+80|Hg|Merc\xfario|200.59|12|6|d|metal de transi\xe7\xe3o|l\xedquido||\n\
+81|Tl|T\xe1lio|204.38|13|6|p|metal|s\xf3lido||\n\
+82|Pb|Chumbo|207.2|14|6|p|metal|s\xf3lido||\n\
+83|Bi|Bismuto|208.98|15|6|p|metal|s\xf3lido||\n\
+84|Po|Pol\xf3nio|[209]|16|6|p|metal|s\xf3lido||\n\
+85|At|\xc1stato|[210]|17|6|p|halog\xe9neo|s\xf3lido||\n\
+86|Rn|R\xe1don|[222]|18|6|p|g\xe1s nobre|g\xe1s||\n\
+87|Fr|Fr\xe2ncio|[223]|1|7|s|metal alcalino|s\xf3lido||\n\
+88|Ra|R\xe1dio|[226]|2|7|s|metal alcalinoterroso|s\xf3lido||\n\
+89|Ac|Act\xednio|[227]|3|7|d|act\xednideo|s\xf3lido||\n\
+90|Th|T\xf3rio|232.04||7|f|act\xednideo|s\xf3lido||\n\
+91|Pa|Protact\xednio|231.04||7|f|act\xednideo|s\xf3lido||\n\
+92|U|Ur\xe2nio|238.03||7|f|act\xednideo|s\xf3lido||\n\
+93|Np|Nept\xfanio|[237]||7|f|act\xednideo|s\xf3lido||\n\
+94|Pu|Plut\xf3nio|[244]||7|f|act\xednideo|s\xf3lido||\n\
+95|Am|Amer\xedcio|[243]||7|f|act\xednideo|s\xf3lido||\n\
+96|Cm|C\xfario|[247]||7|f|act\xednideo|s\xf3lido||\n\
+97|Bk|Berqu\xe9lio|[247]||7|f|act\xednideo|s\xf3lido||\n\
+98|Cf|Calif\xf3rnio|[251]||7|f|act\xednideo|s\xf3lido||\n\
+99|Es|Einst\xe9nio|[252]||7|f|act\xednideo|s\xf3lido||\n\
+100|Fm|F\xe9rmio|[257]||7|f|act\xednideo|desconhecido||\n\
+101|Md|Mendel\xe9vio|[258]||7|f|act\xednideo|desconhecido||\n\
+102|No|Nob\xe9lio|[259]||7|f|act\xednideo|desconhecido||\n\
+103|Lr|Laur\xeancio|[262]||7|f|act\xednideo|desconhecido||\n\
+104|Rf|Rutherf\xf3rdio|[267]|4|7|d|metal de transi\xe7\xe3o (previsto)|desconhecido||\n\
+105|Db|D\xfabnio|[268]|5|7|d|metal de transi\xe7\xe3o (previsto)|desconhecido||\n\
+106|Sg|Seab\xf3rgio|[269]|6|7|d|metal de transi\xe7\xe3o (previsto)|desconhecido||\n\
+107|Bh|B\xf3hrio|[270]|7|7|d|metal de transi\xe7\xe3o (previsto)|desconhecido||\n\
+108|Hs|H\xe1ssio|[269]|8|7|d|metal de transi\xe7\xe3o (previsto)|desconhecido||\n\
+109|Mt|Meitn\xe9rio|[278]|9|7|d|metal de transi\xe7\xe3o (previsto)|desconhecido||\n\
+110|Ds|Darmst\xe1cio|[281]|10|7|d|metal de transi\xe7\xe3o (previsto)|desconhecido||\n\
+111|Rg|Roentg\xe9nio|[282]|11|7|d|metal de transi\xe7\xe3o (previsto)|desconhecido||\n\
+112|Cn|Copern\xedcio|[285]|12|7|d|metal de transi\xe7\xe3o (previsto)|desconhecido||\n\
+113|Nh|Nip\xf3nio|[286]|13|7|p|metal (previsto)|desconhecido||\n\
+114|Fl|Fler\xf3vio|[289]|14|7|p|metal (previsto)|desconhecido||\n\
+115|Mc|Mosc\xf3vio|[290]|15|7|p|metal (previsto)|desconhecido||\n\
+116|Lv|Liverm\xf3rio|[293]|16|7|p|metal (previsto)|desconhecido||\n\
+117|Ts|Tenesso|[294]|17|7|p|halog\xe9neo (previsto)|desconhecido||\n\
+118|Og|Ogan\xe9sson|[294]|18|7|p|g\xe1s nobre (previsto)|desconhecido||"
 # --- fim dos dados ---
 FONTES = ('Ar: IUPAC (valores abreviados); [n] = n.\u00ba de massa do is\u00f3topo '
           'mais est\u00e1vel. Raio: calculado (Clementi e outros, 1967). '

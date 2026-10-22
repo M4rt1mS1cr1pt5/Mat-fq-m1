@@ -56,3 +56,33 @@ def t_falta():
     except C.Falta:
         return
     raise AssertionError('esperava Falta')
+
+
+# ------------------------------------------------------------ pesquisa
+IDX = ('@V 1\n@N 4\nL|Função quadrática|vertice parabola|m5a\n'
+       'F|Fórmula resolvente||m5:2\n'
+       'C|Equação do 2.º grau|quadratica zeros|c_matq.q2\n'
+       'X|Quadrática com zeros 2 e 3||m5:0')
+
+
+def t_pesq_ordem():
+    import m1_pesq as Q
+    L = Q.fold(IDX)
+    assert len(L) == len(IDX)
+    r = Q.find(L, 'quadratica', 0, [])
+    r.sort(key=lambda x: (x[0], x[1], x[2], x[3]))
+    # titulo que comeca pela pesquisa, palavra do titulo, palavra-chave
+    assert [x[0] for x in r] == [1, 2, 4]
+    assert r[0][1] == 'quadratica com zeros 2 e 3'
+    assert IDX[r[2][3]:].startswith('C|')
+
+
+def t_pesq_campos():
+    import m1_pesq as Q
+    L = Q.fold(IDX)
+    # 'm5' so aparece nos alvos: nao conta
+    assert Q.find(L, 'm5', 0, []) == []
+    assert Q.find(L, 'formula resolvente', 1, [])[0][:3] == (
+        0, 'formula resolvente', 1)
+    # palavra do titulo antes de palavra-chave
+    assert sorted([x[0] for x in Q.find(L, 'zeros', 0, [])]) == [2, 4]

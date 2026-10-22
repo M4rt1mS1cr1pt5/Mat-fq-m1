@@ -1264,6 +1264,12 @@ R	314	17	3	130	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	14
+R	20	98	278	25	204,224,255
+T	32	115	0,51,153	A abrir o índice…
+F	15
+R	20	98	278	25	204,224,255
+T	32	115	0,51,153	A abrir o índice…
+F	16
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
@@ -1273,7 +1279,7 @@ R	18	19	1	13	0,0,0
 T	4	47	100,100,100	Escreve uma palavra (sem acentos serve).
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	15
+F	17
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
@@ -1304,7 +1310,7 @@ R	314	34	3	153	232,232,232
 R	314	34	3	22	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	16
+F	18
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
@@ -1335,11 +1341,11 @@ R	314	34	3	153	232,232,232
 R	314	34	3	22	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	17
+F	19
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	298	13	255,255,255	32
+T	298	13	255,255,255	34
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	mas
 R	39	19	1	13	0,0,0
@@ -1363,14 +1369,14 @@ T	18	166	0,0,0	Massa molecular relativa
 T	4	183	0,51,153	K
 T	18	183	0,0,0	Massa volúmica da água (4 °C)
 R	314	34	3	153	232,232,232
-R	314	34	3	43	100,100,100
+R	314	34	3	40	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	18
+F	20
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	298	13	255,255,255	32
+T	298	13	255,255,255	34
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	mass
 R	46	19	1	13	0,0,0
@@ -1394,14 +1400,14 @@ T	18	166	0,0,0	Massa molecular relativa
 T	4	183	0,51,153	K
 T	18	183	0,0,0	Massa volúmica da água (4 °C)
 R	314	34	3	153	232,232,232
-R	314	34	3	43	100,100,100
+R	314	34	3	40	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	19
+F	21
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	298	13	255,255,255	25
+T	298	13	255,255,255	27
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa
 R	53	19	1	13	0,0,0
@@ -1425,14 +1431,14 @@ T	18	166	0,0,0	Massa molecular relativa
 T	4	183	0,51,153	K
 T	18	183	0,0,0	Massa volúmica da água (4 °C)
 R	314	34	3	153	232,232,232
-R	314	34	3	55	100,100,100
+R	314	34	3	51	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	20
+F	22
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	298	13	255,255,255	25
+T	298	13	255,255,255	27
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa 
 R	60	19	1	13	0,0,0
@@ -1456,14 +1462,14 @@ T	18	166	0,0,0	Massa molecular relativa
 T	4	183	0,51,153	K
 T	18	183	0,0,0	Massa volúmica da água (4 °C)
 R	314	34	3	153	232,232,232
-R	314	34	3	55	100,100,100
+R	314	34	3	51	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	21
+F	23
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	305	13	255,255,255	8
+T	305	13	255,255,255	4
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa m
 R	67	19	1	13	0,0,0
@@ -1476,21 +1482,13 @@ T	4	81	0,51,153	F
 T	18	81	0,0,0	Massa molecular relativa
 T	4	98	0,51,153	L
 T	18	98	0,0,0	Quantidade de matéria e massa molar
-T	4	115	0,51,153	L
-T	18	115	0,0,0	Composição quantitativa de soluções
-T	4	132	0,51,153	L
-T	18	132	0,0,0	Fração molar e fração mássica
-T	4	149	0,51,153	C
-T	18	149	0,0,0	Gases (PTN)
-T	4	166	0,51,153	C
-T	18	166	0,0,0	Quantidade de matéria
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	22
+F	24
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	305	13	255,255,255	6
+T	305	13	255,255,255	4
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa mo
 R	74	19	1	13	0,0,0
@@ -1503,17 +1501,13 @@ T	4	81	0,51,153	F
 T	18	81	0,0,0	Massa molecular relativa
 T	4	98	0,51,153	L
 T	18	98	0,0,0	Quantidade de matéria e massa molar
-T	4	115	0,51,153	C
-T	18	115	0,0,0	Gases (PTN)
-T	4	132	0,51,153	C
-T	18	132	0,0,0	Quantidade de matéria
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	23
+F	25
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	305	13	255,255,255	6
+T	305	13	255,255,255	4
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa mol
 R	81	19	1	13	0,0,0
@@ -1526,17 +1520,13 @@ T	4	81	0,51,153	F
 T	18	81	0,0,0	Massa molecular relativa
 T	4	98	0,51,153	L
 T	18	98	0,0,0	Quantidade de matéria e massa molar
-T	4	115	0,51,153	C
-T	18	115	0,0,0	Gases (PTN)
-T	4	132	0,51,153	C
-T	18	132	0,0,0	Quantidade de matéria
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	24
+F	26
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	305	13	255,255,255	4
+T	305	13	255,255,255	3
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa mola
 R	88	19	1	13	0,0,0
@@ -1547,15 +1537,13 @@ T	4	64	0,51,153	C
 T	18	64	0,0,0	Massa molar
 T	4	81	0,51,153	L
 T	18	81	0,0,0	Quantidade de matéria e massa molar
-T	4	98	0,51,153	C
-T	18	98	0,0,0	Gases (PTN)
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	25
+F	27
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	305	13	255,255,255	4
+T	305	13	255,255,255	3
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa molar
 R	95	19	1	13	0,0,0
@@ -1566,11 +1554,9 @@ T	4	64	0,51,153	C
 T	18	64	0,0,0	Massa molar
 T	4	81	0,51,153	L
 T	18	81	0,0,0	Quantidade de matéria e massa molar
-T	4	98	0,51,153	C
-T	18	98	0,0,0	Gases (PTN)
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	26
+F	28
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Fórmula
@@ -1585,11 +1571,17 @@ T	4	149	0,0,0	Lição: Quantidade de matéria e massa molar
 T	4	166	0,0,0	Calculadora: Massa molar (tecla c)
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1-9 de 9 · esc: voltar
-F	27
+F	29
+R	20	98	278	25	204,224,255
+T	32	115	0,51,153	A abrir o índice…
+F	30
+R	20	98	278	25	204,224,255
+T	32	115	0,51,153	A abrir o índice…
+F	31
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	305	13	255,255,255	4
+T	305	13	255,255,255	3
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa molar
 R	95	19	1	13	0,0,0
@@ -1600,15 +1592,13 @@ T	4	64	0,51,153	C
 T	18	64	0,0,0	Massa molar
 T	4	81	0,51,153	L
 T	18	81	0,0,0	Quantidade de matéria e massa molar
-T	4	98	0,51,153	C
-T	18	98	0,0,0	Gases (PTN)
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	28
+F	32
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · FQ
-T	305	13	255,255,255	4
+T	305	13	255,255,255	3
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	massa molar
 R	95	19	1	13	0,0,0
@@ -1619,11 +1609,12 @@ T	4	64	0,51,153	C
 T	18	64	0,0,0	Massa molar
 T	4	81	0,51,153	L
 T	18	81	0,0,0	Quantidade de matéria e massa molar
-T	4	98	0,51,153	C
-T	18	98	0,0,0	Gases (PTN)
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	29
+F	33
+R	20	98	278	25	204,224,255
+T	32	115	0,51,153	A abrir o índice…
+F	34
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1634,7 +1625,7 @@ R	95	19	1	13	0,0,0
 T	4	47	100,100,100	Sem resultados. Experimenta outra palavra.
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	30
+F	35
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1645,7 +1636,7 @@ R	88	19	1	13	0,0,0
 T	4	47	100,100,100	Sem resultados. Experimenta outra palavra.
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	31
+F	36
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1656,7 +1647,7 @@ R	81	19	1	13	0,0,0
 T	4	47	100,100,100	Sem resultados. Experimenta outra palavra.
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	32
+F	37
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1667,7 +1658,7 @@ R	74	19	1	13	0,0,0
 T	4	47	100,100,100	Sem resultados. Experimenta outra palavra.
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	33
+F	38
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1678,7 +1669,7 @@ R	67	19	1	13	0,0,0
 T	4	47	100,100,100	Sem resultados. Experimenta outra palavra.
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	34
+F	39
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1691,7 +1682,7 @@ T	4	47	0,51,153	C
 T	18	47	0,0,0	Conversor de unidades
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	35
+F	40
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1704,7 +1695,7 @@ T	4	47	0,51,153	C
 T	18	47	0,0,0	Conversor de unidades
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	36
+F	41
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1714,7 +1705,7 @@ R	18	19	1	13	0,0,0
 T	4	47	100,100,100	Escreve uma palavra (sem acentos serve).
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	37
+F	42
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1732,9 +1723,9 @@ T	18	81	0,0,0	Dilatação ou contração vertical
 T	4	98	0,51,153	F
 T	18	98	0,0,0	Ordenada do vértice
 T	4	115	0,51,153	X
-T	18	115	0,0,0	Qual é o valor máximo de f(x) = -2x² + 8
+T	18	115	0,0,0	Qual é o valor máximo de f(x)
 T	4	132	0,51,153	X
-T	18	132	0,0,0	Qual é o vértice da parábola f(x) = -(x 
+T	18	132	0,0,0	Qual é o vértice da parábola
 T	4	149	0,51,153	F
 T	18	149	0,0,0	Translação vertical
 T	4	166	0,51,153	C
@@ -1745,7 +1736,7 @@ R	314	34	3	153	232,232,232
 R	314	34	3	72	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	38
+F	43
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1763,7 +1754,7 @@ T	18	81	0,0,0	Dilatação ou contração vertical
 T	4	98	0,51,153	F
 T	18	98	0,0,0	Ordenada do vértice
 T	4	115	0,51,153	X
-T	18	115	0,0,0	Qual é o vértice da parábola f(x) = -(x 
+T	18	115	0,0,0	Qual é o vértice da parábola
 T	4	132	0,51,153	F
 T	18	132	0,0,0	Translação vertical
 T	4	149	0,51,153	C
@@ -1776,7 +1767,7 @@ R	314	34	3	153	232,232,232
 R	314	34	3	105	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	39
+F	44
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1794,7 +1785,7 @@ T	18	81	0,0,0	Dilatação ou contração vertical
 T	4	98	0,51,153	F
 T	18	98	0,0,0	Ordenada do vértice
 T	4	115	0,51,153	X
-T	18	115	0,0,0	Qual é o vértice da parábola f(x) = -(x 
+T	18	115	0,0,0	Qual é o vértice da parábola
 T	4	132	0,51,153	F
 T	18	132	0,0,0	Translação vertical
 T	4	149	0,51,153	C
@@ -1805,7 +1796,7 @@ T	4	183	0,51,153	C
 T	18	183	0,0,0	Equação do 2.º grau e função quadrática
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	40
+F	45
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1823,7 +1814,7 @@ T	18	81	0,0,0	Dilatação ou contração vertical
 T	4	98	0,51,153	F
 T	18	98	0,0,0	Ordenada do vértice
 T	4	115	0,51,153	X
-T	18	115	0,0,0	Qual é o vértice da parábola f(x) = -(x 
+T	18	115	0,0,0	Qual é o vértice da parábola
 T	4	132	0,51,153	F
 T	18	132	0,0,0	Translação vertical
 T	4	149	0,51,153	L
@@ -1832,7 +1823,7 @@ T	4	166	0,51,153	C
 T	18	166	0,0,0	Equação do 2.º grau e função quadrática
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	41
+F	46
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1850,7 +1841,7 @@ T	18	81	0,0,0	Dilatação ou contração vertical
 T	4	98	0,51,153	F
 T	18	98	0,0,0	Ordenada do vértice
 T	4	115	0,51,153	X
-T	18	115	0,0,0	Qual é o vértice da parábola f(x) = -(x 
+T	18	115	0,0,0	Qual é o vértice da parábola
 T	4	132	0,51,153	F
 T	18	132	0,0,0	Translação vertical
 T	4	149	0,51,153	L
@@ -1859,7 +1850,7 @@ T	4	166	0,51,153	C
 T	18	166	0,0,0	Equação do 2.º grau e função quadrática
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	42
+F	47
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1877,7 +1868,7 @@ T	18	81	0,0,0	Dilatação ou contração vertical
 T	4	98	0,51,153	F
 T	18	98	0,0,0	Ordenada do vértice
 T	4	115	0,51,153	X
-T	18	115	0,0,0	Qual é o vértice da parábola f(x) = -(x 
+T	18	115	0,0,0	Qual é o vértice da parábola
 T	4	132	0,51,153	F
 T	18	132	0,0,0	Translação vertical
 T	4	149	0,51,153	L
@@ -1886,7 +1877,7 @@ T	4	166	0,51,153	C
 T	18	166	0,0,0	Equação do 2.º grau e função quadrática
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	43
+F	48
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1902,14 +1893,14 @@ T	18	64	0,0,0	Abcissa do vértice
 T	4	81	0,51,153	F
 T	18	81	0,0,0	Ordenada do vértice
 T	4	98	0,51,153	X
-T	18	98	0,0,0	Qual é o vértice da parábola f(x) = -(x 
+T	18	98	0,0,0	Qual é o vértice da parábola
 T	4	115	0,51,153	L
 T	18	115	0,0,0	A função quadrática e o seu gráfico
 T	4	132	0,51,153	C
 T	18	132	0,0,0	Equação do 2.º grau e função quadrática
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	44
+F	49
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1925,14 +1916,14 @@ T	18	64	0,0,0	Abcissa do vértice
 T	4	81	0,51,153	F
 T	18	81	0,0,0	Ordenada do vértice
 T	4	98	0,51,153	X
-T	18	98	0,0,0	Qual é o vértice da parábola f(x) = -(x 
+T	18	98	0,0,0	Qual é o vértice da parábola
 T	4	115	0,51,153	L
 T	18	115	0,0,0	A função quadrática e o seu gráfico
 T	4	132	0,51,153	C
 T	18	132	0,0,0	Equação do 2.º grau e função quadrática
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	45
+F	50
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Fórmula
@@ -1946,7 +1937,10 @@ T	4	132	0,0,0	Calculadora: Equação do 2.º grau e função
 T	4	149	0,0,0	quadrática (tecla c)
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1-8 de 8 · esc: voltar
-F	46
+F	51
+R	20	98	278	25	204,224,255
+T	32	115	0,51,153	A abrir o índice…
+F	52
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
@@ -1962,14 +1956,14 @@ T	18	64	0,0,0	Abcissa do vértice
 T	4	81	0,51,153	F
 T	18	81	0,0,0	Ordenada do vértice
 T	4	98	0,51,153	X
-T	18	98	0,0,0	Qual é o vértice da parábola f(x) = -(x 
+T	18	98	0,0,0	Qual é o vértice da parábola
 T	4	115	0,51,153	L
 T	18	115	0,0,0	A função quadrática e o seu gráfico
 T	4	132	0,51,153	C
 T	18	132	0,0,0	Equação do 2.º grau e função quadrática
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
-F	47
+F	53
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	M1TR4M · FQ e Mat 10.º
@@ -1998,7 +1992,7 @@ R	314	17	3	170	232,232,232
 R	314	17	3	130	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
-F	48
+F	54
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	M1TR4M · FQ e Mat 10.º
@@ -2027,7 +2021,7 @@ R	314	17	3	170	232,232,232
 R	314	17	3	130	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1_ · enter: opção 1
-F	49
+F	55
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Sair
@@ -2038,7 +2032,7 @@ T	4	47	0,51,153	 2
 T	25	47	0,0,0	Não
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	1: sim · 2: não · esc: não
-F	50
+F	56
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	M1TR4M

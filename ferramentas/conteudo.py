@@ -64,7 +64,7 @@ SINONIMOS = [
     ('sen', 'seno'), ('cos', 'cosseno'), ('tg', 'tangente'),
     ('epg', 'energia potencial gravitica'), ('ec', 'energia cinetica'),
     ('em', 'energia mecanica'), ('mol', 'quantidade de materia'),
-    ('m', 'massa'), ('na', 'avogadro'), ('vm', 'volume molar'),
+    ('na', 'avogadro'), ('vm', 'volume molar'),
     ('ddp', 'diferenca de potencial'), ('fem', 'forca eletromotriz'),
     ('aiq', 'amplitude interquartil'), ('dp', 'desvio padrao'),
     ('pmq', 'minimos quadrados'), ('reta de regressao', 'minimos quadrados'),
@@ -568,7 +568,7 @@ def validar_exercicio(t, b, lic, avisos):
 
 
 def esc(s):
-    """Texto -> conteudo de uma string Python ASCII (\\uXXXX, \\n)."""
+    """Texto -> conteudo de uma string Python ASCII (\\xXX, \\uXXXX, \\n)."""
     o = []
     for ch in s:
         c = ord(ch)
@@ -582,6 +582,8 @@ def esc(s):
             raise Erro('caracter de controlo %r' % ch)
         elif c < 128:
             o.append(ch)
+        elif c < 256:
+            o.append('\\x%02x' % c)
         elif c <= 0xFFFF:
             o.append('\\u%04x' % c)
         else:
@@ -601,8 +603,8 @@ def literal(nome, texto, cab=''):
             k = e.rfind(' ', 40, 110)
             if k < 0:
                 k = 100
-                while e[k - 1] == '\\' or re.search(r'\\u[0-9a-f]{0,3}$',
-                                                     e[:k]):
+                while e[k - 1] == '\\' or re.search(
+                        r'\\(u[0-9a-f]{0,3}|x[0-9a-f]?)$', e[:k]):
                     k -= 1
             corpo.append(e[:k] + '\\')
             e = e[k:]
@@ -718,35 +720,98 @@ def sinonimos(txt):
     return (txt + ' ' + ' '.join(extra)).strip()
 
 
-def gerar_indice(temas, calcs, elementos, constantes):
-    """Indice da pesquisa: TAG|disc|titulo|palavras|alvo."""
-    o = []
+PARAGEM = set('a o as os e de do da dos das em no na nos nas num numa um '
+              'uma uns umas com por para pelo pela ao aos que se ou nao'
+              .split())
+MAXP = {'L': 7, 'C': 6}
 
-    def add(tag, d, tit, pal, alvo):
-        pal = sinonimos(' '.join(sorted(set(norm(pal).split()) -
-                                        set(norm(tit).split()))))
-        o.append('|'.join([tag, d, tit, pal, alvo]))
+
+def sinonimos_extra(txt):
+    """Sinonimos (as duas direcoes) que faltam no texto ja normalizado."""
+    w = ' ' + txt + ' '
+    ex = []
+    for a, b in SINONIMOS:
+        if ' ' + a + ' ' in w and ' ' + b + ' ' not in w and b not in ex:
+            ex.append(b)
+        if ' ' + b + ' ' in w and ' ' + a + ' ' not in w and a not in ex:
+            ex.append(a)
+    return ex
+
+
+def palavras(tag, tit, pal):
+    """Palavras-chave de um registo: sem as do titulo, sem palavras de
+    ligacao, pela ordem do ficheiro (as primeiras sao as mais
+    importantes), no maximo MAXP[tag], mais os sinonimos do titulo e
+    das palavras."""
+    t = norm(tit).split()
+    vistos = set(t) | PARAGEM
+    o = []
+    for w in norm(pal).split():
+        if w not in vistos:
+            vistos.add(w)
+            o.append(w)
+    o = o[:MAXP.get(tag, 99)]
+    return ' '.join(o + sinonimos_extra(' '.join(t + o)))
+
+
+def resumo(txt, n=30):
+    """Inicio do enunciado (n carateres no maximo, cortado numa palavra)."""
+    s = tirar_marcas(txt).split('\n')[0].strip()
+    if len(s) <= n:
+        return s
+    k = s.rfind(' ', 0, n)
+    return s[:k if k > 10 else n].rstrip(' ,;:(')
+
+
+IDX_MAX = 28 * 1024     # bytes de codigo por parte do indice (max. 30 KB)
+
+
+def gerar_indice(temas, calcs, elementos, constantes):
+    """Indice da pesquisa, por disciplina e partido em partes de IDX_MAX
+    bytes no maximo: devolve [(modulo, disciplina, texto)]. Cada linha:
+    TAG|titulo|palavras|alvo. FQ tem tambem a tabela periodica e as
+    constantes; as calculadoras comuns ficam nas duas disciplinas."""
+    o = {'F': [], 'M': []}
+
+    def add(d, tag, tit, pal, alvo):
+        for k in ('F', 'M') if d == 'C' else (d,):
+            o[k].append('|'.join([tag, tit, palavras(tag, tit, pal), alvo]))
     for t in temas:
         for b in t.licoes:
-            add('L', t.disc, b.meta['titulo'], b.meta['chave'], b.id)
+            add(t.disc, 'L', b.meta['titulo'], b.meta['chave'], b.id)
         k = 0
         for b in t.licoes:
             for f in b.formulas:
-                add('F', t.disc, f[0], '', t.id + ':' + str(k))
+                add(t.disc, 'F', f[0], '', t.id + ':' + str(k))
                 k += 1
         for i, b in enumerate(t.exemplos):
-            add('E', t.disc, b.meta['titulo'], '', t.id + ':' + str(i))
+            add(t.disc, 'E', b.meta['titulo'], '', t.id + ':' + str(i))
         for i, b in enumerate(t.exercicios):
-            tit = b.meta.get('titulo') or tirar_marcas(
-                b.sec['T']).split('\n')[0][:40]
-            add('X', t.disc, tit, '', t.id + ':' + str(i))
+            tit = b.meta.get('titulo') or resumo(b.sec['T'])
+            add(t.disc, 'X', tit, '', t.id + ':' + str(i))
     for c in calcs:
-        add('C', c[3], c[1], c[2], c[0])
+        add(c[3], 'C', c[1], c[2], c[0])
     for e in elementos:
-        add('T', 'F', e['nome'], e['simbolo'].lower() + ' ' + e['z'],
-            e['z'])
+        add('F', 'T', e['nome'], e['simbolo'].lower() + ' ' + e['z'], e['z'])
     for i, c in enumerate(constantes):
-        add('K', 'F', c[0], c[1], str(i))
-    cab = ('# m1_idx.py - M1TR4M: indice da pesquisa gerado pelo build.\n'
-           '# Cada linha: etiqueta|disciplina|titulo|palavras|alvo\n')
-    return cab + literal('D', '@V 1\n@N %d\n' % len(o) + '\n'.join(o))
+        add('F', 'K', c[0], c[1], str(i))
+    out = []
+    for d, base in (('F', 'm1_idx'), ('M', 'm1_idxm')):
+        partes = [[]]
+        n = 0
+        for r in o[d]:
+            s = len(esc(r)) + 4
+            if n + s > IDX_MAX - 600 and partes[-1]:
+                partes.append([])
+                n = 0
+            partes[-1].append(r)
+            n += s
+        for i, p in enumerate(partes):
+            nome = base + (str(i + 1) if i else '')
+            cab = ('# %s.py - M1TR4M: indice da pesquisa (%s, parte %d de '
+                   '%d) gerado pelo build.\n# Cada linha: etiqueta|titulo|'
+                   'palavras|alvo\n' % (nome, 'FQ' if d == 'F' else 'Mat',
+                                        i + 1, len(partes)))
+            out.append((nome, d, cab + literal(
+                'D', '@V 1\n@N %d\n' % len(p) + '\n'.join(p))))
+    return out

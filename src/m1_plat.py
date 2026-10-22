@@ -92,11 +92,11 @@ _AM = ("\u00e1 a#\u00e0 a#\u00e2 a#\u00e3 a#\u00e9 e#\u00ea e#\u00e8 e#"
        "\u2016 |#\u211d R#\u221e inf#\u03bb lambda#\u03bd v#\u03c1 ro#"
        "\u03b7 eta#\u03b1 alfa#\u03b2 beta#\u03b8 teta#\u03c3 sigma#"
        "\u03b5 eps#\u03bc u#\u00b5 u#\u03a3 Soma#\u2220 ang#\u22a5 perp#"
-       "\u2225 //#\u25b8 >#\u25c2 <#\u2713 v#\u2717 x#\u2605 *#\u2022 -#"
+       "\u2225 //#\u25b8 >#\u25c2 <#\u2713 v#\u2717 x#\u2605 *#\u2022 .#"
        "\u2032 '#\u2033 \"#\u00bd 1/2#\u21cc <=>#\u2261 ==#\u00a0  #"
        "\u2080 0#\u2081 1#\u2082 2#\u2083 3#\u2084 4#\u2085 5#\u2086 6#"
        "\u2087 7#\u2088 8#\u2089 9#\u2223 |#\u2099 n#\u2090 a#\u2098 m#\u1d62 i#\u20d7 #\u0305 #\u2032 '#\u00ab \"#"
-       "\u00bb \"#\u2191 ^#\u2193 v#\u25cf o#\u25cb o#\u2502 |#\u2500 -")
+       "\u00bb \"#\u03a9 ohm#\u2113 l#\u2191 ^#\u2193 v#\u25cf o#\u25cb o#\u2502 |#\u2500 -")
 # Expoentes: cada sequencia passa a "^..." no modo sem simbolos.
 _SUP = "\u2070\u00b9\u00b2\u00b3\u2074\u2075\u2076\u2077\u2078\u2079\u207b\u207a"
 _SUPP = "0123456789-+"

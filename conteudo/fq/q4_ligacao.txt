@@ -320,7 +320,7 @@ Objetivo: família, fórmula e massa molar.
 > Buteno, C₄H₈, M = 56,12 g mol⁻¹.
 Verificação: o alcano com 4 C (C₄H₁₀) tem mais 2 H.
 #G
-O grupo funcional decide o comportamento químico: os álcoois e os ácidos carboxílicos são muito diferentes, mesmo com o mesmo número de carbonos.
+O grupo funcional decide o comportamento químico. Um álcool e um ácido carboxílico são muito diferentes, mesmo com o mesmo número de carbonos.
 #H
 - Confundir aldeído (no fim da cadeia) com cetona (no meio).
 - Esquecer o H na fórmula geral do alcano: CₙH₂ₙ₊₂.

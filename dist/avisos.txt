@@ -1,3 +1,1 @@
-conteudo/fq/q2_eletroes.txt:158 (licao q2c) pág. F: frase com 20 palavras: Verificação: o pico de menor energia, 0,50 MJ mol⁻¹ = 500 kJ
-conteudo/fq/q4_ligacao.txt:278 (licao q4e) pág. G: frase com 23 palavras: O grupo funcional decide o comportamento químico: os álcoois
 calculadora c_fqlg.ace: tema r8 ainda nao existe

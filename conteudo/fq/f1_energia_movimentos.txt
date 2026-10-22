@@ -1,0 +1,557 @@
+@tema f1
+disc: F
+grupo: f
+titulo: Energia e movimentos
+calcs: c_fqen.em c_fqen.cons c_fqen.tr c_fqen.wp c_fqen.tec c_fqen.pot c_fqen.ren
+
+@licao f1a
+titulo: Energia cinética, potencial gravítica e mecânica
+chave: energia cinética energia potencial gravítica energia mecânica sistema mecânico modelo da partícula material centro de massa nível de referência
+calc: c_fqen.em
+ano: 10
+nivel: núcleo
+fonte: AE FQ A 10.º, Energia e movimentos
+#A
+- Distinguir energia cinética de energia potencial gravítica.
+- Calcular Ec, Epg e Em.
+- Usar o modelo da partícula material.
+- Escolher um nível de referência para a Epg.
+#B
+Um carro em andamento, um livro numa prateleira e uma bola a cair têm energia.
+A energia associada ao movimento é a cinética; a associada à posição é a potencial.
+Somadas, dão a energia mecânica.
+#C
+- Energia cinética: Ec = ½ m v² (m em kg, v em m s⁻¹, Ec em J).
+- Energia potencial gravítica do sistema corpo + Terra: Epg = m g h.
+- h: altura acima do nível de referência, onde Epg = 0.
+- Energia mecânica: Em = Ec + Epg.
+- Partícula material: o corpo reduz-se ao centro de massa, com toda a massa.
+- O modelo serve quando só interessa a translação do corpo.
+#D
+Exemplo: m = 2,0 kg, v = 3,0 m s⁻¹, h = 5,0 m e g = 10 m s⁻².
+Ec = ½ × 2,0 × 3,0² = [[9,0]] J.
+Epg = 2,0 × 10 × 5,0 = [[1,0 × 10²]] J.
+Em = 9,0 + 100 = [[1,1 × 10²]] J.
+Ec nunca é negativa; Epg é negativa abaixo do nível de referência.
+Duplicar a velocidade quadruplica a energia cinética.
+Duplicar a massa duplica Ec e Epg.
+O nível de referência escolhe-se; a variação de Epg não depende dele.
+A energia interna (agitação e ligações das partículas) não faz parte da energia mecânica.
+#E
+@F Energia cinética|Ec = ½ m v²|m: massa (kg);v: módulo da velocidade (m s⁻¹)|Ec ≥ 0|m = 2,0 kg e v = 3,0 m s⁻¹: Ec = 9,0 J|c_fqen.em
+@F Energia potencial gravítica|Epg = m g h|g: aceleração gravítica (m s⁻²);h: altura acima do nível de referência (m)|perto da superfície da Terra|m = 2,0 kg e h = 5,0 m: Epg = 1,0 × 10² J|c_fqen.em
+@F Energia mecânica|Em = Ec + Epg|Ec e Epg em J|sistema corpo + Terra|Em = 9,0 + 100 = 1,1 × 10² J|c_fqen.em
+#F
+Dados: bola de 0,45 kg a 12 m s⁻¹, a 2,0 m do chão; g = 10 m s⁻².
+Objetivo: Ec, Epg (referência no chão) e Em.
+1. Ec = ½ × 0,45 × 12² = [[32]] J
+2. Epg = 0,45 × 10 × 2,0 = [[9,0]] J
+3. Em = 32,4 + 9,0 = [[41]] J
+> Em ≈ 41 J.
+Verificação: Ec > Epg, porque a velocidade é grande e a altura é pequena.
+#G
+A energia mecânica explica montanhas-russas, quedas e saltos.
+Muitos problemas resolvem-se sem conhecer as forças: basta comparar energias.
+#H
+- Esquecer o quadrado da velocidade em Ec.
+- Usar a massa em gramas ou a velocidade em km/h.
+- Medir as alturas a partir de níveis diferentes.
+- Achar que a Epg tem de ser positiva.
+#I
+- Ec = ½ m v² (depende de v²).
+- Epg = m g h (depende do nível de referência).
+- Em = Ec + Epg.
+- Partícula material: o corpo reduz-se ao centro de massa.
+#J
+Um carro de 1,2 × 10³ kg passa de 10 m s⁻¹ para 20 m s⁻¹. Por quanto se multiplica a sua energia cinética?
+#R
+Por [[4]]: a velocidade duplica e Ec é proporcional a v² (passa de [[6,0 × 10⁴]] J para [[2,4 × 10⁵]] J).
+#V
+g = 10
+V = [0.5 * 2.0 * 3.0 ** 2, 2.0 * g * 5.0, 0.5 * 2.0 * 3.0 ** 2 + 2.0 * g * 5.0,
+     0.5 * 0.45 * 12 ** 2, 0.45 * g * 2.0, 0.5 * 0.45 * 12 ** 2 + 0.45 * g * 2.0,
+     (20 / 10) ** 2, 0.5 * 1.2e3 * 10 ** 2, 0.5 * 1.2e3 * 20 ** 2]
+
+@licao f1b
+titulo: Trabalho de uma força constante
+chave: trabalho força constante deslocamento ângulo componente eficaz trabalho potente resistente nulo joule
+calc: c_fqen.tr
+ano: 10
+nivel: núcleo
+pre: f1a
+fonte: AE FQ A 10.º, Energia e movimentos
+#A
+- Definir trabalho como transferência de energia por ação de uma força.
+- Calcular o trabalho de uma força constante.
+- Classificar o trabalho como potente, resistente ou nulo.
+- Identificar a componente eficaz da força.
+#B
+Empurrar um carrinho transfere-lhe energia; segurar uma mala parado não.
+Em Física, só há trabalho quando a força tem componente na direção do deslocamento.
+#C
+- Trabalho, W: energia transferida por uma força cujo ponto de aplicação se desloca.
+- W = F d cos α (F em N, d em m, W em J).
+- α: ângulo entre a força e o deslocamento.
+- Componente eficaz: F cos α, na direção do deslocamento.
+- α < 90°: potente (W > 0); α = 90°: nulo; α > 90°: resistente (W < 0).
+- 1 J = 1 N × 1 m.
+#D
+Exemplo: puxa-se um caixote 5,0 m com uma força de 10 N a 60° do chão.
+W = 10 × 5,0 × cos 60° = [[25]] J (potente).
+Só a componente eficaz, 10 × cos 60° = [[5,0]] N, realiza trabalho.
+A componente perpendicular, F sen α, não realiza trabalho.
+Num plano horizontal, o peso e a reação normal são perpendiculares ao deslocamento: W = 0.
+O atrito opõe-se ao movimento: α = 180°.
+Exemplo: atrito de 4,0 N ao longo de 3,0 m: W = 4,0 × 3,0 × cos 180° = [[-12]] J.
+Com várias forças, o trabalho total é a soma dos trabalhos de cada força.
+O trabalho total é igual ao trabalho da resultante.
+#E
+@F Trabalho de uma força constante|W = F d cos α|F: intensidade da força (N);d: deslocamento (m);α: ângulo entre a força e o deslocamento|força constante e trajetória retilínea|F = 10 N, d = 5,0 m e α = 60°: W = 25 J|c_fqen.tr
+#F
+Dados: empurra-se um carrinho 8,0 m com 50 N a 30° do deslocamento; o atrito vale 15 N.
+Objetivo: trabalho de cada força e trabalho total.
+1. W(F) = 50 × 8,0 × cos 30° = [[3,5 × 10²]] J
+2. W(Fa) = 15 × 8,0 × cos 180° = [[-1,2 × 10²]] J
+3. W(P) = W(N) = 0 (forças perpendiculares ao deslocamento)
+4. W(total) = 346 - 120 = [[2,3 × 10²]] J
+> W(total) ≈ 2,3 × 10² J (potente).
+Verificação: a força aplicada transfere mais energia do que o atrito retira.
+#G
+O trabalho mede a energia que uma força transfere.
+Liga as forças, do 9.º ano, à energia, do 10.º ano.
+#H
+- Usar o ângulo com a vertical em vez do ângulo com o deslocamento.
+- Esquecer que o atrito tem α = 180°.
+- Achar que segurar um peso parado realiza trabalho.
+- Calcular o cosseno com a calculadora em radianos.
+#I
+- W = F d cos α.
+- α < 90°: potente; 90°: nulo; α > 90°: resistente.
+- Só a componente eficaz realiza trabalho.
+- Trabalho total = soma dos trabalhos.
+#J
+Uma força de 20 N, perpendicular a um deslocamento de 4,0 m, realiza que trabalho?
+#R
+Nenhum: W = 20 × 4,0 × cos 90° = [[0]] J.
+#V
+V = [10 * 5.0 * cos(radians(60)), 10 * cos(radians(60)),
+     4.0 * 3.0 * cos(radians(180)),
+     50 * 8.0 * cos(radians(30)), 15 * 8.0 * cos(radians(180)),
+     50 * 8.0 * cos(radians(30)) - 120, 20 * 4.0 * cos(radians(90))]
+
+@licao f1c
+titulo: Teorema da energia cinética
+chave: teorema da energia cinética trabalho da resultante soma dos trabalhos variação da energia cinética travagem
+calc: c_fqen.tec
+ano: 10
+nivel: núcleo
+pre: f1b
+fonte: AE FQ A 10.º, Energia e movimentos
+#A
+- Enunciar o teorema da energia cinética.
+- Calcular o trabalho da resultante a partir da variação de Ec.
+- Calcular velocidades a partir do trabalho das forças.
+- Relacionar o sinal do trabalho total com a variação de Ec.
+#B
+Quando várias forças atuam num corpo, o efeito na velocidade depende do trabalho de todas.
+Se o trabalho total é positivo, o corpo acelera; se é negativo, trava.
+#C
+- Teorema da energia cinética: W(R) = ΔEc = Ec,f - Ec,i.
+- W(R): trabalho da resultante, igual à soma dos trabalhos de todas as forças.
+- W(R) > 0: Ec aumenta; W(R) < 0: Ec diminui.
+- W(R) = 0: Ec não varia.
+- Vale para todas as forças, conservativas ou não.
+#D
+Exemplo: um carro de 1000 kg passa de 10 m s⁻¹ para 20 m s⁻¹.
+W(R) = ½ × 1000 × (20² - 10²) = [[1,5 × 10⁵]] J.
+Exemplo: um bloco de 2,0 kg a 4,0 m s⁻¹ para ao fim de 4,0 m, travado pelo atrito.
+ΔEc = 0 - ½ × 2,0 × 4,0² = [[-16]] J, logo W(Fa) = -16 J.
+Como W(Fa) = -Fa d, o atrito vale 16 / 4,0 = [[4,0]] N.
+Para obter a velocidade final: vf = √(vi² + 2 W(R) / m).
+O teorema dispensa o cálculo da aceleração.
+#E
+@F Teorema da energia cinética|W(R) = ΔEc = ½ m vf² - ½ m vi²|W(R): trabalho da resultante (J);vi e vf: velocidades inicial e final|forças de qualquer tipo|1000 kg de 10 para 20 m s⁻¹: W(R) = 1,5 × 10⁵ J|c_fqen.tec
+#F
+Dados: um trenó de 50 kg parte do repouso. Puxa-se com 120 N, na direção do movimento, ao longo de 10 m. O atrito vale 40 N.
+Objetivo: velocidade final.
+1. W(F) = 120 × 10 = [[1,2 × 10³]] J
+2. W(Fa) = -40 × 10 = [[-4,0 × 10²]] J
+3. W(R) = 1200 - 400 = [[8,0 × 10²]] J
+4. vf = √(2 × 800 / 50) = [[5,7]] m s⁻¹
+> vf ≈ 5,7 m s⁻¹.
+Verificação: Ec final = ½ × 50 × 5,66² ≈ [[8,0 × 10²]] J = W(R).
+#G
+O teorema liga o trabalho das forças à variação da velocidade.
+É muito útil quando se conhecem as forças e as distâncias, mas não o tempo.
+#H
+- Usar o trabalho de uma só força em vez do trabalho total.
+- Esquecer o sinal negativo do trabalho do atrito.
+- Calcular vf² e esquecer a raiz quadrada.
+- Somar velocidades em vez de energias.
+#I
+- W(R) = ΔEc.
+- W(R) = soma dos trabalhos de todas as forças.
+- W(R) > 0: acelera; W(R) < 0: trava.
+#J
+Um corpo de 4,0 kg tem Ec = 50 J. Que trabalho total é preciso para o parar?
+#R
+W(R) = 0 - 50 = [[-50]] J (trabalho resistente).
+#V
+V = [0.5 * 1000 * (20 ** 2 - 10 ** 2), 0 - 0.5 * 2.0 * 4.0 ** 2, 16 / 4.0,
+     120 * 10, -40 * 10, 1200 - 400, sqrt(2 * 800 / 50),
+     0.5 * 50 * 5.66 ** 2, 0 - 50]
+
+@licao f1d
+titulo: Forças conservativas e conservação da energia mecânica
+chave: força conservativa não conservativa trabalho do peso trajetória conservação da energia mecânica queda livre escorrega altura máxima
+calc: c_fqen.cons
+ano: 10
+nivel: núcleo
+pre: f1c
+fonte: AE FQ A 10.º, Energia e movimentos
+#A
+- Distinguir forças conservativas de não conservativas.
+- Relacionar o trabalho do peso com a variação de Epg.
+- Aplicar a conservação da energia mecânica.
+- Calcular velocidades e alturas pela conservação.
+#B
+Uma bola atirada ao ar perde velocidade a subir e recupera-a a descer.
+Sem resistência do ar, volta à mão com a mesma velocidade: a energia mecânica conserva-se.
+#C
+- Força conservativa: o trabalho entre dois pontos não depende da trajetória (ex.: peso).
+- Trabalho do peso: W(P) = -ΔEpg = m g (hi - hf).
+- Não conservativas: atrito, resistência do ar, forças de motores.
+- Se só as forças conservativas realizam trabalho: Em,i = Em,f.
+- Nesse caso, ΔEc = -ΔEpg.
+#D
+Exemplo: um corpo cai 20 m a partir do repouso, sem resistência do ar (g = 10 m s⁻²).
+m g h = ½ m v² e a massa corta-se: v = √(2 × 10 × 20) = [[20]] m s⁻¹.
+A velocidade final não depende da massa.
+Num escorrega sem atrito, a velocidade no fundo só depende do desnível.
+A reação normal é perpendicular ao deslocamento: W(N) = 0 e não altera a Em.
+Lançamento vertical com 12 m s⁻¹: h máx = 12² / (2 × 10) = [[7,2]] m.
+Um corpo de 2,0 kg desce 5,0 m: W(P) = 2,0 × 10 × 5,0 = [[1,0 × 10²]] J.
+A subir, o trabalho do peso é negativo e a Epg aumenta.
+#E
+@F Trabalho do peso|W(P) = -ΔEpg = m g (hi - hf)|hi e hf: alturas inicial e final (m)|peso constante (perto da Terra)|2,0 kg desce 5,0 m: W(P) = 1,0 × 10² J|c_fqen.wp
+@F Conservação da energia mecânica|½ m vi² + m g hi = ½ m vf² + m g hf|i e f: estados inicial e final|só forças conservativas realizam trabalho|queda de 20 m a partir do repouso: v = 20 m s⁻¹|c_fqen.cons
+#F
+Dados: um skater parte do repouso no topo de uma rampa com 3,2 m de altura. Sem atrito; g = 10 m s⁻².
+Objetivo: velocidade no fundo e a 1,4 m de altura.
+1. No fundo: v = √(2 × 10 × 3,2) = [[8,0]] m s⁻¹
+2. A 1,4 m: v = √(2 × 10 × (3,2 - 1,4)) = [[6,0]] m s⁻¹
+> v = 8,0 m s⁻¹ no fundo e 6,0 m s⁻¹ a 1,4 m.
+Verificação: a 1,4 m ainda há Epg, por isso a velocidade é menor.
+#G
+A conservação da energia mecânica resolve movimentos complicados comparando só dois estados.
+Na realidade há sempre algum atrito: a conservação é um modelo.
+#H
+- Achar que a velocidade de queda depende da massa.
+- Usar a conservação quando há atrito ou resistência do ar.
+- Medir alturas a partir de níveis diferentes.
+- Trocar o sinal em W(P) = -ΔEpg.
+#I
+- O peso é uma força conservativa.
+- W(P) = -ΔEpg.
+- Só forças conservativas: Em constante.
+- Queda a partir do repouso: v = √(2 g h).
+#J
+Duas bolas, de 1 kg e de 5 kg, caem da mesma altura sem resistência do ar. Qual chega ao chão mais depressa?
+#R
+Chegam com a mesma velocidade: v = √(2 g h) não depende da massa.
+#V
+g = 10
+V = [sqrt(2 * g * 20), 12 ** 2 / (2 * g), 2.0 * g * 5.0,
+     sqrt(2 * g * 3.2), sqrt(2 * g * (3.2 - 1.4))]
+
+@licao f1e
+titulo: Forças não conservativas, potência e rendimento
+chave: forças não conservativas atrito resistência do ar energia dissipada variação da energia mecânica potência watt rendimento quilowatt-hora
+calc: c_fqen.ren
+ano: 10
+nivel: núcleo
+pre: f1d
+fonte: AE FQ A 10.º, Energia e movimentos
+#A
+- Relacionar o trabalho das forças não conservativas com ΔEm.
+- Calcular a energia dissipada.
+- Calcular a potência.
+- Calcular o rendimento de um processo.
+#B
+Um carro trava e para: a energia cinética passa para energia interna dos travões e do ar.
+Nenhuma máquina aproveita toda a energia que recebe.
+#C
+- W(Fnc) = ΔEm: trabalho das forças não conservativas.
+- Com atrito ou resistência do ar, W(Fnc) < 0 e a Em diminui.
+- Energia dissipada: Ed = -ΔEm (aumenta a energia interna).
+- Potência: P = E / Δt (em W; 1 W = 1 J s⁻¹).
+- Rendimento: η = E(útil) / E(fornecida) × 100 %.
+- 1 kWh = 3,6 × 10⁶ J.
+#D
+Exemplo: uma bola de 57 g cai de 1,20 m e ressalta até 0,90 m (g = 10 m s⁻²).
+Em,i = 0,057 × 10 × 1,20 = [[0,68]] J; Em,f = 0,057 × 10 × 0,90 = [[0,51]] J.
+Dissipada: 0,684 - 0,513 = [[0,17]] J, isto é, [[25]] % da inicial.
+Exemplo: um motor eleva 50 kg a 6,0 m em 10 s e recebe 4,0 kJ.
+E(útil) = 50 × 10 × 6,0 = [[3,0 × 10³]] J; P(útil) = 3000 / 10 = [[3,0 × 10²]] W.
+η = 3000 / 4000 × 100 = [[75]] %.
+A energia total conserva-se sempre: a dissipada não desaparece.
+Dissipar é tornar a energia menos útil, mais "espalhada".
+#E
+@F Forças não conservativas|W(Fnc) = ΔEm|W(Fnc): trabalho das forças não conservativas (J)|atrito, resistência do ar, motores|bola de 57 g de 1,20 m a 0,90 m: ΔEm = -0,17 J|c_fqen.cons
+@F Potência|P = E / Δt|E: energia transferida (J);Δt: intervalo de tempo (s)|potência média|3,0 kJ em 10 s: P = 3,0 × 10² W|c_fqen.pot
+@F Rendimento|η = E(útil) / E(fornecida) × 100 %|também com potências úteis e fornecidas|η < 100 %|3,0 kJ úteis de 4,0 kJ: η = 75 %|c_fqen.ren
+#F
+Dados: uma grua de 2,0 kW eleva 400 kg a 15 m em 40 s; g = 10 m s⁻².
+Objetivo: energia útil, energia fornecida e rendimento.
+1. E(útil) = 400 × 10 × 15 = [[6,0 × 10⁴]] J
+2. E(fornecida) = 2,0 × 10³ × 40 = [[8,0 × 10⁴]] J
+3. η = 6,0 × 10⁴ / (8,0 × 10⁴) × 100 = [[75]] %
+> η = 75 %; dissipam-se [[2,0 × 10⁴]] J.
+Verificação: η < 100 %, como tem de ser.
+#G
+A energia que uma máquina recebe vai toda para algum lado: parte é útil, o resto é dissipada.
+Aumentar o rendimento poupa energia e dinheiro.
+#H
+- Esquecer que W(Fnc) é negativo quando há dissipação.
+- Juntar potência em kW com tempo em s sem converter.
+- Trocar a energia útil com a fornecida (dá η > 100 %).
+- Dizer que a energia dissipada desaparece.
+#I
+- W(Fnc) = ΔEm.
+- Ed = -ΔEm.
+- P = E / Δt.
+- η = E(útil) / E(fornecida) × 100 %.
+#J
+Uma lâmpada de 60 W transforma 6,0 J por segundo em luz. Qual é o seu rendimento?
+#R
+η = 6,0 / 60 × 100 = [[10]] %; o resto é dissipado como calor.
+#V
+g = 10
+ei = 0.057 * g * 1.20
+ef = 0.057 * g * 0.90
+eu = 50 * g * 6.0
+eg = 400 * g * 15
+V = [ei, ef, ei - ef, (ei - ef) / ei * 100, eu, eu / 10, eu / 4000 * 100,
+     eg, 2.0e3 * 40, eg / 8.0e4 * 100, 8.0e4 - eg, 6.0 / 60 * 100]
+
+@exemplo f1e1
+nivel: 1
+titulo: Energia cinética de um ciclista
+licao: f1a
+calc: c_fqen.em
+#T
+Enunciado: um ciclista e a bicicleta têm 70 kg e seguem a 36 km/h. Qual é a energia cinética?
+Dados: m = 70 kg; v = 36 km/h.
+Resolução:
+1. v = 36 / 3,6 = [[10]] m s⁻¹
+2. Ec = ½ × 70 × 10² = [[3,5 × 10³]] J
+Resultado: Ec = 3,5 × 10³ J.
+Interpretação: a 72 km/h a energia cinética seria 4 vezes maior.
+Erros a evitar: usar 36 km/h diretamente na fórmula (dá um valor 13 vezes maior).
+#V
+v = 36 / 3.6
+V = [v, 0.5 * 70 * v ** 2]
+
+@exemplo f1e2
+nivel: 2
+titulo: Bloco num plano inclinado com atrito
+licao: f1e
+calc: c_fqen.cons
+#T
+Enunciado: um bloco de 2,0 kg parte do repouso e desce 5,0 m num plano inclinado a 30°. Chega ao fundo a 6,0 m s⁻¹ (g = 10 m s⁻²).
+Calcula a energia dissipada e a força de atrito.
+Resolução:
+1. Altura: h = 5,0 × sen 30° = [[2,5]] m
+2. Em,i = 2,0 × 10 × 2,5 = [[50]] J
+3. Em,f = ½ × 2,0 × 6,0² = [[36]] J
+4. Ed = 50 - 36 = [[14]] J
+5. W(Fa) = -Fa d, logo Fa = 14 / 5,0 = [[2,8]] N
+Resultado: dissipam-se 14 J; o atrito vale 2,8 N.
+Interpretação: sem atrito chegaria ao fundo a √(2 × 10 × 2,5) ≈ [[7,1]] m s⁻¹.
+Erros a evitar: usar d = 5,0 m como altura.
+#V
+h = 5.0 * sin(radians(30))
+ei = 2.0 * 10 * h
+ef = 0.5 * 2.0 * 6.0 ** 2
+V = [h, ei, ef, ei - ef, (ei - ef) / 5.0, sqrt(2 * 10 * h)]
+
+@exemplo f1e3
+nivel: 3
+titulo: Montanha-russa real
+licao: f1e
+calc: c_fqen.cons
+#T
+Enunciado: um carro de 500 kg parte do repouso a 30 m de altura. Passa a 10 m de altura com 18 m s⁻¹ (g = 10 m s⁻²).
+Que percentagem da energia mecânica foi dissipada?
+Resolução:
+1. Em,i = 500 × 10 × 30 = [[1,5 × 10⁵]] J
+2. Em,f = ½ × 500 × 18² + 500 × 10 × 10 = [[1,31 × 10⁵]] J
+3. Ed = 150 000 - 131 000 = [[1,9 × 10⁴]] J
+4. Percentagem: 19 000 / 150 000 × 100 = [[13]] %
+Resultado: dissipam-se cerca de 13 % da energia mecânica.
+Interpretação: sem atrito, chegaria aos 10 m a √(2 × 10 × 20) = [[20]] m s⁻¹.
+Erros a evitar: esquecer a Epg no ponto a 10 m.
+#V
+ei = 500 * 10 * 30
+ef = 0.5 * 500 * 18 ** 2 + 500 * 10 * 10
+V = [ei, ef, ei - ef, (ei - ef) / ei * 100, sqrt(2 * 10 * 20)]
+
+@exercicio f1x1
+tipo: n
+licao: f1a
+#T
+Qual é a energia cinética (em J) de uma bola de 0,50 kg a 4,0 m s⁻¹?
+#S
+4
+#P
+Ec = ½ m v².
+#D
+Ec = ½ × 0,50 × 4,0² = [[4,0]] J.
+#V
+S = 0.5 * 0.50 * 4.0 ** 2
+V = [S]
+
+@exercicio f1x2
+tipo: m
+licao: f1b
+#T
+Um caixote desliza num chão horizontal. Que força não realiza trabalho?
+#O
+O peso
+O atrito
+Uma força que o puxa na horizontal
+A resistência do ar
+#S
+1
+#P
+Compara a direção de cada força com a do deslocamento.
+#D
+O peso é perpendicular ao deslocamento horizontal (α = 90°): W = 0.
+#V
+S = 1
+
+@exercicio f1x3
+tipo: n
+licao: f1b
+#T
+Uma força de 30 N faz 60° com um deslocamento de 2,0 m. Qual é o seu trabalho (em J)?
+#S
+30
+#P
+W = F d cos α.
+#D
+W = 30 × 2,0 × cos 60° = [[30]] J.
+#V
+S = 30 * 2.0 * cos(radians(60))
+V = [S]
+
+@exercicio f1x4
+tipo: v
+licao: f1d
+#T
+O trabalho realizado pelo peso de um corpo depende da trajetória entre dois pontos.
+#S
+F
+#P
+O peso é uma força conservativa.
+#D
+Falso: o peso é conservativo; o trabalho só depende do desnível, W(P) = -ΔEpg.
+#V
+S = 'F'
+
+@exercicio f1x5
+tipo: n
+licao: f1d
+#T
+Um corpo cai 5,0 m a partir do repouso, sem resistência do ar (g = 10 m s⁻²). Com que velocidade (em m s⁻¹) chega ao chão?
+#S
+10
+#P
+Conservação da energia mecânica: m g h = ½ m v².
+#D
+v = √(2 × 10 × 5,0) = [[10]] m s⁻¹.
+#V
+S = sqrt(2 * 10 * 5.0)
+V = [S]
+
+@exercicio f1x6
+tipo: u
+licao: f1a
+unidades: J kJ
+#T
+Calcula a Epg de uma pessoa de 60 kg a 12 m acima do chão (g = 10 m s⁻²; referência no chão).
+#S
+7200
+#P
+Epg = m g h; podes responder em J ou em kJ.
+#D
+Epg = 60 × 10 × 12 = [[7,2 × 10³]] J = 7,2 kJ.
+#V
+S = 60 * 10 * 12
+V = [S]
+
+@exercicio f1x7
+tipo: n
+licao: f1e
+#T
+Um motor recebe 500 J e realiza 400 J de trabalho útil. Qual é o rendimento (em %)?
+#S
+80
+#P
+η = E(útil) / E(fornecida) × 100 %.
+#D
+η = 400 / 500 × 100 = [[80]] %.
+#V
+S = 400 / 500 * 100
+V = [S]
+
+@exercicio f1x8
+tipo: m
+licao: f1c
+#T
+Se o trabalho da resultante das forças que atuam num corpo é negativo:
+#O
+a energia cinética do corpo diminui
+a energia cinética do corpo aumenta
+a energia cinética não varia
+a energia potencial aumenta sempre
+#S
+1
+#P
+Teorema da energia cinética: W(R) = ΔEc.
+#D
+W(R) = ΔEc < 0: a energia cinética diminui (o corpo trava).
+#V
+S = 1
+
+@exercicio f1x9
+tipo: n
+licao: f1e
+#T
+Um aparelho transfere 3,0 × 10⁴ J em 1,0 min. Qual é a sua potência (em W)?
+#S
+500
+#P
+P = E / Δt, com Δt em segundos.
+#D
+P = 3,0 × 10⁴ / 60 = [[5,0 × 10²]] W.
+#V
+S = 3.0e4 / 60
+V = [S]
+
+@exercicio f1x10
+tipo: n
+licao: f1c
+#T
+Um bloco de 2,0 kg a 3,0 m s⁻¹ para ao fim de 1,5 m num chão horizontal. Qual é a intensidade da força de atrito (em N)?
+#S
+6
+#P
+W(Fa) = ΔEc e W(Fa) = -Fa d.
+#D
+ΔEc = 0 - ½ × 2,0 × 3,0² = [[-9,0]] J.
+Fa = 9,0 / 1,5 = [[6,0]] N.
+#V
+de = -0.5 * 2.0 * 3.0 ** 2
+S = -de / 1.5
+V = [de, S]

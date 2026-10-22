@@ -1299,6 +1299,8 @@ T	4	13	255,255,255	Física e Química A
 R	0	17	313	17	204,224,255
 T	4	30	0,51,153	 1
 T	25	30	0,0,0	Química
+T	4	47	0,51,153	 2
+T	25	47	0,0,0	Física
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	16
@@ -1475,6 +1477,8 @@ T	4	13	255,255,255	Física e Química A
 R	0	17	313	17	204,224,255
 T	4	30	0,51,153	 1
 T	25	30	0,0,0	Química
+T	4	47	0,51,153	 2
+T	25	47	0,0,0	Física
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	26
@@ -1599,9 +1603,9 @@ T	4	149	0,0,0	Lições vistas: 0/3
 T	4	166	0,0,0	Exercícios: 0/9 feitos, 0 certos
 T	4	183	0,51,153	Ligação química
 R	314	17	3	170	232,232,232
-R	314	17	3	80	100,100,100
+R	314	17	3	70	100,100,100
 R	0	187	318	25	232,232,232
-T	4	200	100,100,100	1-10 de 21 · enter: mais · esc: voltar
+T	4	200	100,100,100	1-10 de 24 · enter: mais · esc: voltar
 F	32
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
@@ -1726,6 +1730,8 @@ T	4	98	0,51,153	 5
 T	25	98	0,0,0	Gases e dispersões
 T	4	115	0,51,153	 6
 T	25	115	0,0,0	Transformações químicas
+T	4	132	0,51,153	 7
+T	25	132	0,0,0	Energia e movimentos
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	39

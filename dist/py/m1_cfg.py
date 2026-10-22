@@ -101,7 +101,7 @@ def calib():
         P.line(0, y, P.E['W'], y, 5)
         n = P.E['cols']
         P.put(0, 3, 'M' * n, 0)
-        P.put(0, 4, '0123456789' * (n // 10 + 1), 0)
+        P.put(0, 4, ('0123456789' * (n // 10 + 1))[:n], 0)
         for r in range(3, 6):
             P.line(0, r * lh, P.E['W'], r * lh, 9)
         P.put(0, 6, 'cw=' + str(cw) + ' lh=' + str(lh) + ' dy=' + str(dy) +

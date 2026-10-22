@@ -4,149 +4,70 @@
  "percursos": {
   "p01_fq_licao": {
    "cpy": "ecras=63 textos=608 fora=0 teclas=50/50 pico=0 ok",
-   "mp": "ecras=63 textos=608 fora=0 teclas=50/50 pico=124400 ok"
+   "mp": "ecras=63 textos=608 fora=0 teclas=50/50 pico=122992 ok"
   },
   "p02_mat_calc": {
    "cpy": "ecras=71 textos=604 fora=0 teclas=54/54 pico=0 ok",
-   "mp": "ecras=71 textos=604 fora=0 teclas=54/54 pico=108112 ok"
+   "mp": "ecras=71 textos=604 fora=0 teclas=54/54 pico=107664 ok"
+  },
+  "p03_exercicios": {
+   "cpy": "ecras=54 textos=425 fora=0 teclas=41/41 pico=0 ok",
+   "mp": "ecras=54 textos=425 fora=0 teclas=41/41 pico=91024 ok"
+  },
+  "p04_pesquisa": {
+   "cpy": "ecras=50 textos=556 fora=0 teclas=37/37 pico=0 ok",
+   "mp": "ecras=50 textos=556 fora=0 teclas=37/37 pico=97024 ok"
+  },
+  "p05_tabela": {
+   "cpy": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=0 ok",
+   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=130592 ok"
+  },
+  "p06_definicoes": {
+   "cpy": "ecras=48 textos=490 fora=0 teclas=35/35 pico=0 ok",
+   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=81200 ok"
+  },
+  "p07_progresso": {
+   "cpy": "ecras=48 textos=426 fora=0 teclas=35/35 pico=0 ok",
+   "mp": "ecras=48 textos=426 fora=0 teclas=35/35 pico=105616 ok"
   }
  },
- "picos": {
-  "c_comd": [
-   111212,
-   121412,
-   ""
-  ],
-  "c_comu": [
-   111212,
-   119372,
-   ""
-  ],
-  "c_fqat": [
-   111212,
-   122432,
-   ""
-  ],
-  "c_matq": [
-   115292,
-   130592,
-   ""
-  ],
-  "m1_app": [
-   110192,
-   133652,
-   ""
-  ],
-  "m1_cat": [
-   9212,
-   9212,
-   ""
-  ],
-  "m1_cfg": [
-   111212,
-   121412,
-   ""
-  ],
-  "m1_cont": [
-   35732,
-   40832,
-   ""
-  ],
-  "m1_ex": [
-   110192,
-   123452,
-   ""
-  ],
-  "m1_idx": [
-   127532,
-   136712,
-   ""
-  ],
-  "m1_nucleo": [
-   76532,
-   104072,
-   ""
-  ],
-  "m1_pesq": [
-   111212,
-   111212,
-   ""
-  ],
-  "m1_plat": [
-   32672,
-   44912,
-   ""
-  ],
-  "m1_tp": [
-   124472,
-   140792,
-   ""
-  ],
-  "m1_ui": [
-   98972,
-   119372,
-   ""
-  ],
-  "p_m5": [
-   140792,
-   160172,
-   ""
-  ],
-  "p_q1": [
-   148952,
-   172412,
-   ""
-  ],
-  "x_m5": [
-   110192,
-   110192,
-   ""
-  ],
-  "x_q1": [
-   110192,
-   110192,
-   ""
-  ]
- },
  "residente": {
-  "m1_app": 17536,
-  "m1_cat": 2064,
+  "m1_app": 11568,
+  "m1_cat": 1168,
   "m1_cont": 2800,
   "m1_nucleo": 15904,
   "m1_plat": 9312,
   "m1_ui": 12768,
-  "total": 60384
+  "total": 53520
  },
- "residentes": 90123,
+ "residentes": 82371,
  "tamanhos": {
   "c_comd": 10452,
   "c_comu": 8321,
   "c_fqat": 11951,
   "c_matq": 14376,
   "m1": 1196,
-  "m1_app": 22000,
-  "m1_cat": 2216,
-  "m1_cfg": 10207,
+  "m1_app": 15106,
+  "m1_cat": 1358,
+  "m1_cfg": 10213,
   "m1_cont": 5054,
-  "m1_ex": 11786,
+  "m1_ex": 11916,
   "m1_idx": 9897,
+  "m1_ini": 3451,
+  "m1_nav": 4589,
   "m1_nucleo": 27041,
   "m1_pesq": 4518,
   "m1_plat": 11650,
-  "m1_tp": 15404,
+  "m1_tp": 15429,
   "m1_ui": 20966,
   "p_m5": 18507,
   "p_q1": 23642,
   "x_m5": 2967,
   "x_q1": 3181
  },
- "tempo": 9.2,
+ "tempo": 2.4,
  "testes": {
   "CPython": 77,
   "MicroPython": 77
- },
- "tns": {
-  "documento": 81077,
-  "pylib": 19
  }
 }

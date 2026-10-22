@@ -42,6 +42,12 @@ def load(ti):
     return out
 
 
+def first(x):
+    # Primeira linha do enunciado (para as listas de exercicios).
+    t = x.get('T', '').split('\n')[0]
+    return t if t else TIPO[x['h'][0]]
+
+
 def state(gi):
     return A.S['ex'][gi] if gi < len(A.S['ex']) else 0
 
@@ -92,8 +98,9 @@ def ask(x, t, n, k, test=0):
     us = h[4].split(' ')
     fs = [N.fld('Valor', '', ''), N.fld('Unidade', '', '', 'c', us)]
     while True:
-        U.text(head, txt + '\n\nenter: responder (valor e unidade)', '', '',
-               ('enter',))
+        if U.text(head, txt + '\n\nenter: responder (valor e unidade)', '',
+                  '', ('enter',)) == 'esc':
+            return None
         if not U.form(head, fs):
             return None
         try:
@@ -135,8 +142,7 @@ def train(ti):
         it = []
         for i in range(len(xs)):
             st = state(off + i)
-            it.append(MARCA[st] + ' ' + str(i + 1) + '. ' +
-                      TIPO[xs[i]['h'][0]])
+            it.append(MARCA[st] + ' ' + first(xs[i]))
         A.S['where'] = 'treino ' + t[0]
         r = U.menu('Treino \u00b7 ' + t[3], it, sel,
                    '\u2713 certo \u00b7 \u2717 errado \u00b7 \u00b7 por fazer \u00b7 esc')
@@ -231,7 +237,7 @@ def test(ti):
             i = order[k]
             r = res[i]
             m = '\u2014' if r is None else (U.OKS if r else U.ERS)
-            it.append(m + str(k + 1) + '. ' + TIPO[xs[i]['h'][0]])
+            it.append(m + first(xs[i]))
         r = U.menu(str(c) + ' de ' + str(n) + ' certas', it, sel,
                    'enter: ver a resolu\u00e7\u00e3o \u00b7 esc: sair')
         if r < 0:
@@ -265,7 +271,7 @@ def review(ti):
     r = U.menu('Revis\u00e3o r\u00e1pida \u00b7 ' + A.th(ti)[3],
                ['Resumos (p\u00e1ginas I)', 'Cart\u00f5es pergunta-resposta'])
     if r == 0:
-        A.summary(ti)
+        A.nav('summary', ti)
     elif r == 1:
         flash(ti)
 

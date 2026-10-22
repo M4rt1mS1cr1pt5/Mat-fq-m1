@@ -231,6 +231,8 @@ def sheet(z):
 def find(q):
     # Elemento por Z, simbolo ou nome (sem acentos); 0 se nao existe.
     q = q.strip()
+    if not q:
+        return 0
     if q.isdigit():
         z = int(q)
         return z if 1 <= z <= 118 else 0
@@ -245,17 +247,6 @@ def find(q):
 
 
 def run():
-    if not P.E['g']:
-        while True:
-            q = U.edit('Tabela peri\u00f3dica', 'Nome, s\u00edmbolo ou n\u00famero '
-                       'at\u00f3mico do elemento:', '')
-            if q is None:
-                return
-            z = find(q)
-            if z:
-                sheet(z)
-            else:
-                U.msg('Tabela peri\u00f3dica', 'Elemento n\u00e3o encontrado: ' + q)
     es = rows()
     grid = {}
     for e in es:
@@ -273,18 +264,28 @@ def run():
         P.begin()
         U.title('Tabela peri\u00f3dica', ('', 'grupo ' + cur[4], 'per\u00edodo ' + cur[5],
                                        'bloco ' + cur[6])[flt])
+        tl = [[' '] * 36 for i in range(9)]
         for (rr, cc), e in grid.items():
-            x = x0 + cc * cw
-            y = y0 + rr * ch + (4 if rr >= 7 else 0)
             on = flt == 0 or flt == 1 and e[4] == cur[4] and e[4] or \
                 flt == 2 and e[5] == cur[5] and rr < 7 or \
                 flt == 3 and e[6] == cur[6]
+            if not P.E['g']:
+                s = '##' if (rr, cc) == (r, c) else (e[1] if on else '..')
+                tl[rr][2 * cc] = s[0]
+                if len(s) > 1:
+                    tl[rr][2 * cc + 1] = s[1]
+                continue
+            x = x0 + cc * cw
+            y = y0 + rr * ch + (4 if rr >= 7 else 0)
             if (rr, cc) == (r, c):
                 P.rect(x, y, cw - 1, ch - 1, 2)
                 P.txt(x + 1, y - 2, e[1], 10)
             else:
                 P.rect(x, y, cw - 1, ch - 1, BC[e[6]] if on else 1)
                 P.txt(x + 1, y - 2, e[1], 0 if on else 9)
+        if not P.E['g']:
+            for k in range(9):
+                P.put(0, 1 + k, ''.join(tl[k]), 0)
         info = cur[0] + ' ' + cur[1] + ' ' + cur[2] + '  Ar ' + ar2(cur)
         P.put(0, 10, U.clip(info, U.cols()), 2)
         U.foot(('procura: ' + q + '_' if q else 'setas \u00b7 enter: ficha') +

@@ -1,0 +1,25 @@
+# Percurso 5: tabela periodica (cursor, ficha, filtro e procura por nome).
+5
+right
+right
+right
+down
+down
+enter
+esc
+tab
+tab
+c
+u
+enter
+enter
+esc
+up
+up
+left
+enter
+esc
+esc
+1
+3
+enter

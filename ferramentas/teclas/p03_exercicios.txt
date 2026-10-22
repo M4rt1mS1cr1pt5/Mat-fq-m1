@@ -1,0 +1,47 @@
+# Percurso 3: exercicios (treino com certo, errado, pista e resolucao) e
+# teste do capitulo (todas as perguntas sem resposta).
+9
+1
+1
+# treino de FQ: exercicio 1 (certo) e resolucao
+1
+1
+enter
+1
+1
+esc
+# exercicio 2 (numerico, certo)
+enter
+3
+0
+enter
+enter
+# exercicio 3 (V/F): errado, pista, certo
+3
+1
+2
+esc
+2
+enter
+esc
+# teste do capitulo de Matematica
+9
+2
+1
+2
+enter
+esc
+esc
+esc
+esc
+esc
+esc
+esc
+esc
+esc
+esc
+esc
+enter
+1
+3
+enter

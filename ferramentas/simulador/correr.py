@@ -67,6 +67,20 @@ def main():
     import m1_plat
     # Data e memoria fixas: a saida e igual em todas as corridas.
     m1_plat.today = lambda: (2026, 10, 22)
+    m1_plat.mod_file = lambda m: ''
+    if texto:
+        # memoria fixa no modo texto (para comparar os dois Pythons)
+        class GC:
+            def collect(self):
+                pass
+
+            def mem_free(self):
+                return 400000
+
+            def mem_alloc(self):
+                return 100000
+        sys.modules['gc'] = GC()
+        m1_plat.gc = GC()
     if texto:
         # Modo texto: sem ti_draw; as teclas vem da mesma sequencia (em vez
         # de input(), para a saida ser igual nos dois Pythons).

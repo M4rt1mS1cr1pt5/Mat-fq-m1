@@ -658,13 +658,15 @@ def gerar_catalogo(temas, calcs):
     cab = ('# m1_cat.py - M1TR4M: catalogo gerado pelo build (nao editar).\n'
            '# TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|'
            'n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes\n'
-           '# CALC: id|nome|palavras|disciplina|tema\n')
+           '# CALC: id|nome|disciplina|tema (as palavras-chave estao no '
+           'indice da pesquisa)\n')
     s = cab + 'NLIC = %d\nNEX = %d\nNCART = %d\n' % (ol, oe, oc)
     s += 'TEMAS = (\n'
     for x in o:
         s += '    "' + esc(x) + '",\n'
     s += ')\n'
-    s += literal('CALC', '\n'.join('|'.join(c) for c in calcs))
+    s += literal('CALC', '\n'.join('|'.join([c[0], c[1], c[3], c[4]])
+                                    for c in calcs))
     return s
 
 

@@ -40,40 +40,6 @@ DN = {'F': 'F\u00edsica e Qu\u00edmica A', 'M': 'Matem\u00e1tica A',
 # ------------------------------------------------------------ estado
 
 
-def _ld(nm, n, fill=0):
-    # Le uma lista guardada; se nao existir ou for de outra versao,
-    # comeca vazia. Ajusta o tamanho ao catalogo atual.
-    v = P.load(nm)
-    ok = v is not None and len(v) >= 1
-    if ok:
-        try:
-            v = [int(x) for x in v]
-            ok = v[0] == 1
-        except Exception:
-            ok = False
-    if not ok:
-        if v is None and nm == 'm1def':
-            S['gv'] = P.save('m1t', [1])
-        v = [1]
-    v = v[:n + 1]
-    while len(v) < n + 1:
-        v.append(fill)
-    return v
-
-
-def load_state():
-    c = _ld('m1def', len(DEF) - 1)
-    if len(c) != len(DEF) or c[1] == 0 and c[8] == 0:
-        c = list(DEF)
-    S['cfg'] = c
-    S['ex'] = _ld('m1prog', K.NEX)
-    S['lic'] = _ld('m1lic', K.NLIC)
-    S['tst'] = _ld('m1tst', 2 * len(K.TEMAS))
-    S['rev'] = _ld('m1rev', K.NCART)
-    S['pos'] = _ld('m1pos', 4)
-    apply_cfg()
-
-
 def apply_cfg():
     c = S['cfg']
     N.CF['dec'] = c[1]
@@ -134,7 +100,7 @@ def tfind(tid):
 
 
 def calcs():
-    # Catalogo das calculadoras: [id, nome, palavras, disciplina, tema].
+    # Catalogo das calculadoras: [id, nome, disciplina, tema].
     return [ln.split('|') for ln in K.CALC.split('\n') if ln]
 
 
@@ -169,28 +135,32 @@ def main_menu():
         elif r == 2:
             search()
         elif r == 3:
-            calc_menu('')
+            nav('calc_menu', '')
         elif r == 4:
             C.get('p', 'm1_tp').run()
         elif r in (5, 7, 8, 10):
-            d = pick_disc()
-            if d:
-                i = pick_theme(d)
-                if i >= 0:
-                    if r == 5:
-                        formulas(i)
-                    elif r == 7:
-                        examples(i)
-                    elif r == 8:
-                        ex_menu(i)
-                    else:
-                        tool('m1_ex', 'review', i)
+            i = nav('pick')
+            if i >= 0:
+                if r == 5:
+                    nav('formulas', i)
+                elif r == 7:
+                    nav('examples', i)
+                elif r == 8:
+                    nav('ex_menu', i)
+                else:
+                    tool('m1_ex', 'review', i)
         elif r == 6:
-            consts()
+            nav('consts')
         elif r == 9:
             tool('m1_ex', 'progress')
         elif r == 11:
             tool('m1_cfg')
+
+
+def nav(fn, *a):
+    # Ecras de consulta (formulario, exemplos, menus de calculadoras...)
+    # vivem no modulo m1_nav, carregado a pedido.
+    return getattr(C.get('f', 'm1_nav'), fn)(*a)
 
 
 def tool(nm, fn='run', a=None):
@@ -229,22 +199,11 @@ def go(t):
         tid, n = v.split(':')
         i = tfind(tid)
         if k == 'F':
-            fshow(i, int(n))
+            nav('fshow', i, int(n))
         elif k == 'E':
-            eshow(i, int(n))
+            nav('eshow', i, int(n))
         else:
             tool('m1_ex', 'one', (i, int(n)))
-
-
-def pick_disc():
-    r = U.menu('Disciplina', [DN['F'], DN['M']])
-    return ('F', 'M')[r] if r >= 0 else ''
-
-
-def pick_theme(d):
-    ts = [i for i in range(len(K.TEMAS)) if th(i)[1] == d]
-    r = U.menu(DN[d], [th(i)[3] for i in ts])
-    return ts[r] if r >= 0 else -1
 
 
 def disc(d):
@@ -296,26 +255,18 @@ def theme(i):
         if a == 0:
             lessons(i)
         elif a == 1:
-            formulas(i)
+            nav('formulas', i)
         elif a == 2:
-            examples(i)
+            nav('examples', i)
         elif a == 3:
             tool('m1_ex', 'train', i)
         elif a == 4:
             tool('m1_ex', 'test', i)
         elif a == 5:
-            calc_list(t[12].split(' '), t[3])
+            nav('calc_list', t[12].split(' '), t[3])
         else:
-            summary(i)
+            nav('summary', i)
 
-
-def ex_menu(i):
-    r = U.menu(th(i)[3], ['Treino (um exerc\u00edcio de cada vez)',
-                          'Teste do cap\u00edtulo'])
-    if r == 0:
-        tool('m1_ex', 'train', i)
-    elif r == 1:
-        tool('m1_ex', 'test', i)
 
 # ------------------------------------------------------------ licoes
 
@@ -414,139 +365,7 @@ def goto_lesson(lid):
 # ------------------------------------------------------------ formulario
 
 
-def flist(i):
-    # Formulas do tema: lista de (campos, titulo da licao).
-    D = C.get('p', th(i)[4]).D
-    ls = C.recs(D, 'L')
-    out = []
-    for f, pos in C.recs(D, 'F'):
-        lt = ''
-        for h, p in ls:
-            if p < pos:
-                lt = h[1]
-        out.append((f, lt))
-    return out
-
-
-def formulas(i):
-    fs = flist(i)
-    if not fs:
-        U.msg('Formul\u00e1rio', 'Este tema n\u00e3o tem f\u00f3rmulas.')
-        return
-    sel = 0
-    while True:
-        S['where'] = 'formul\u00e1rio'
-        r = U.menu('Formul\u00e1rio \u00b7 ' + th(i)[3], [f[0][0] for f in fs], sel)
-        if r < 0:
-            return
-        sel = r
-        fshow(i, r, fs)
-
-
-def fshow(i, k, fs=None):
-    # Mostra a formula k do tema i (com a licao e a calculadora ligadas).
-    if fs is None:
-        fs = flist(i)
-    f, lt = fs[k]
-    s = C.ftext(f) + '\nLi\u00e7\u00e3o: ' + lt
-    cid = f[5] if len(f) > 5 else ''
-    if cid:
-        s = s + '\nCalculadora: ' + cname(cid) + ' (tecla c)'
-    if U.text('F\u00f3rmula', s, '', '', ('c',) if cid else ()) == 'c':
-        calc(cid)
-
-
-def examples(i):
-    D = C.get('p', th(i)[4]).D
-    es = C.recs(D, 'E')
-    D = None
-    if not es:
-        U.msg('Exemplos', 'Este tema n\u00e3o tem exemplos.')
-        return
-    sel = 0
-    while True:
-        S['where'] = 'exemplos'
-        r = U.menu('Exemplos \u00b7 ' + th(i)[3],
-                   [NIV[int(e[0][0])] + ': ' + e[0][2] for e in es], sel)
-        if r < 0:
-            return
-        sel = r
-        eshow(i, r)
-
-
-def eshow(i, k):
-    # Mostra o exemplo resolvido k do tema i.
-    D = C.get('p', th(i)[4]).D
-    h, pos = C.recs(D, 'E')[k]
-    b = C.body(D, pos)
-    D = None
-    cid = h[3] if len(h) > 3 else ''
-    if U.text(NIV[int(h[0])] + ': ' + h[2], b, 'c: calculadora' if cid
-              else '', '', ('c',) if cid else ()) == 'c':
-        calc(cid)
-
-
-def summary(i):
-    D = C.get('p', th(i)[4]).D
-    o = []
-    for h, pos in C.recs(D, 'L'):
-        d = C.parts(C.body(D, pos))
-        if d.get('I'):
-            o.append('# ' + h[1])
-            o.append(d['I'])
-            o.append('')
-    D = None
-    U.text('Resumo \u00b7 ' + th(i)[3], '\n'.join(o))
-
 # ------------------------------------------------------------ calculadoras
-
-
-def calc_menu(d):
-    ds = (('F', DN['F']), ('M', DN['M']), ('C', 'Comuns'))
-    while True:
-        S['where'] = 'calculadoras'
-        r = U.menu('Calculadoras', [x[1] for x in ds] +
-                   ['Hist\u00f3rico (\u00faltimos 5)'])
-        if r < 0:
-            return
-        if r == 3:
-            hist()
-            continue
-        cs = [c for c in calcs() if c[3] == ds[r][0]]
-        calc_list([c[0] for c in cs], ds[r][1])
-
-
-def calc_list(ids, t):
-    names = [cname(c) for c in ids]
-    sel = 0
-    while True:
-        r = U.menu(t, names, sel)
-        if r < 0:
-            return
-        sel = r
-        calc(ids[r])
-
-
-def hist():
-    h = S['h']
-    if not h:
-        U.msg('Hist\u00f3rico', 'Ainda n\u00e3o h\u00e1 resultados.')
-        return
-    r = U.menu('Hist\u00f3rico', [x[0] + ' = ' + N.fmt(x[1]) + ' ' + x[2]
-                                for x in h], 0,
-               'enter: usar como ans \u00b7 esc')
-    if r >= 0:
-        N.CF['ans'] = h[r][1]
-        U.msg('Hist\u00f3rico', 'Escreve ans num campo para usar ' +
-              N.fmt(h[r][1]) + '.')
-
-
-def consts():
-    r = U.menu('Constantes e unidades', ['Constantes e dados',
-                                         'Conversor de unidades',
-                                         'Prefixos do SI'])
-    if r >= 0:
-        calc(('c_comd.cte', 'c_comu.uni', 'c_comu.pre')[r])
 
 
 def calc(cid):
@@ -608,7 +427,7 @@ def calc(cid):
                 fs[j][2] = dflt[j]
             foc = 0
         elif k == '4':
-            calc_menu('')
+            nav('calc_menu', '')
             return
         elif k == 'esc' or not fs:
             return
@@ -637,72 +456,12 @@ ERR_ = '\u2717 '
 # ------------------------------------------------------------ arranque
 
 
-def splash():
-    # Animacao curta (max. 2 s): atomo com orbitas, poligonos e o nome.
-    t0 = P.ms()
-    W = P.E['W']
-    H = P.E['H']
-    if not P.E['g']:
-        print('M1TR4M \u00b7 F\u00edsica e Qu\u00edmica A \u00b7 Matem\u00e1tica A '
-              '\u2014 10.\u00ba ano \u00b7 by M1TR4M')
-        return
-    import math
-    cx = W // 2
-    cy = 62
-    for fr in range(12):
-        P.begin()
-        a = fr * 0.5
-        for o in range(3):
-            pts = []
-            for s in range(0, 360, 30):
-                r = s * math.pi / 180
-                x = 70 * math.cos(r)
-                y = 22 * math.sin(r)
-                ang = o * math.pi / 3
-                pts.append((cx + x * math.cos(ang) - y * math.sin(ang),
-                            cy + x * math.sin(ang) + y * math.cos(ang)))
-            P.poly([p[0] for p in pts], [p[1] for p in pts], 4)
-            r = a + o * 2.1
-            x = 70 * math.cos(r)
-            y = 22 * math.sin(r)
-            ang = o * math.pi / 3
-            P.circ(cx + x * math.cos(ang) - y * math.sin(ang),
-                   cy + x * math.sin(ang) + y * math.cos(ang), 4, 5, 1)
-        P.circ(cx, cy, 9, 2, 1)
-        for k in range(3):
-            P.poly([18 + k * 8, 40 + k * 8, 29 + k * 8],
-                   [190 - k * 30, 190 - k * 30, 170 - k * 30], 6 if k % 2 else 3)
-        big('M1TR4M', cx - 84, 104, 4)
-        s = 'F\u00edsica e Qu\u00edmica A \u00b7 Matem\u00e1tica A \u2014 10.\u00ba ano'
-        P.txt(cx - len(s) * P.E['cw'] // 2, 146, s, 0)
-        P.txt(cx - 6 * P.E['cw'] // 2, 166, 'by M1TR4M', 7)
-        P.show()
-        if P.key(0) or P.ms() - t0 > 1800:
-            break
-
-
-# Letras grandes 5x7 (cada linha e um numero de 5 bits).
-BIG = {'M': (17, 27, 21, 21, 17, 17, 17), '1': (4, 12, 4, 4, 4, 4, 14),
-       'T': (31, 4, 4, 4, 4, 4, 4), 'R': (30, 17, 17, 30, 20, 18, 17),
-       '4': (2, 6, 10, 18, 31, 2, 2)}
-
-
-def big(s, x, y, k):
-    for ch in s:
-        rows = BIG.get(ch, ())
-        for r in range(len(rows)):
-            for c in range(5):
-                if rows[r] & (16 >> c):
-                    P.rect(x + c * k, y + r * k, k, k, 2)
-        x += 6 * k
-
-
 def run(f0=-1):
     # Ciclo principal com a protecao geral contra erros (seccao 4.7).
     S['f0'] = f0
     P.init()
-    load_state()
-    splash()
+    C.get('f', 'm1_ini').start()
+    C.drop('f')
     while True:
         try:
             main_menu()

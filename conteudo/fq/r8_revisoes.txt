@@ -345,3 +345,18 @@ Pensa na agitação dos corpúsculos.
 Com mais temperatura, os corpúsculos movem-se mais depressa e colidem mais: a reação é mais rápida.
 #V
 S = 1
+
+@exemplo r8e3
+nivel: 3
+titulo: Luz à Lua e de volta
+licao: r8e
+#T
+Enunciado: um feixe laser é enviado da Terra, reflete-se num espelho na Lua e volta. A distância à Lua é 3,84 × 10⁸ m e c = 3,00 × 10⁸ m s⁻¹. Quanto tempo demora a ida e volta?
+Resolução:
+1. Distância percorrida: 2 × 3,84 × 10⁸ = [[7,68 × 10⁸]] m.
+2. t = 7,68 × 10⁸ / (3,00 × 10⁸) = [[2,56]] s.
+Resultado: cerca de 2,56 s.
+Interpretação: é assim que se mede a distância à Lua, com os refletores deixados pelas missões Apollo.
+Erros a evitar: esquecer que a luz vai e volta.
+#V
+V = [2 * 3.84e8, 7.68e8 / 3.00e8]

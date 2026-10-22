@@ -12,11 +12,11 @@
   },
   "p03_exercicios": {
    "cpy": "ecras=55 textos=483 fora=0 teclas=42/42 pico=0 ok",
-   "mp": "ecras=55 textos=483 fora=0 teclas=42/42 pico=108784 ok"
+   "mp": "ecras=55 textos=483 fora=0 teclas=42/42 pico=108848 ok"
   },
   "p04_pesquisa": {
    "cpy": "ecras=58 textos=588 fora=0 teclas=37/37 pico=0 ok",
-   "mp": "ecras=58 textos=588 fora=0 teclas=37/37 pico=178320 ok"
+   "mp": "ecras=58 textos=588 fora=0 teclas=37/37 pico=178864 ok"
   },
   "p05_tabela": {
    "cpy": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=0 ok",
@@ -90,8 +90,8 @@
   "m1_cfg": 10266,
   "m1_cont": 5117,
   "m1_ex": 11916,
-  "m1_idx": 28279,
-  "m1_idx2": 1256,
+  "m1_idx": 28281,
+  "m1_idx2": 1541,
   "m1_idxm": 21350,
   "m1_ini": 3451,
   "m1_nav": 4589,
@@ -121,9 +121,9 @@
   "p_q4": 23528,
   "p_q5": 18121,
   "p_q6": 13323,
-  "p_r7": 6427,
-  "p_r8": 9863,
-  "p_r9": 8716,
+  "p_r7": 7162,
+  "p_r8": 10494,
+  "p_r9": 9316,
   "x_af": 3515,
   "x_aq": 4139,
   "x_f1": 2853,
@@ -145,11 +145,11 @@
   "x_q4": 2994,
   "x_q5": 2732,
   "x_q6": 2998,
-  "x_r7": 1630,
+  "x_r7": 2108,
   "x_r8": 2132,
-  "x_r9": 1537
+  "x_r9": 1943
  },
- "tempo": 7.4,
+ "tempo": 6.9,
  "testes": {
   "CPython": 275,
   "MicroPython": 275

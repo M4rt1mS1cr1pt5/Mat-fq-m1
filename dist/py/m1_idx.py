@@ -1,7 +1,7 @@
 # m1_idx.py - M1TR4M: indice da pesquisa (FQ, parte 1 de 2) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 523\n\
+@N 520\n\
 L|Constitui\xe7\xe3o do \xe1tomo e is\xf3topos|nucleo protao neutrao eletrao numero atomico massa|q1a\n\
 L|Tamanho dos \xe1tomos: ordens de grandeza e escalas|ordem notacao cientifica escala nanometro picometro raio|q1b\n\
 L|Massa at\xf3mica relativa|unidade media isotopos abundancia molecular mr ar|q1c\n\
@@ -341,12 +341,15 @@ F|Massa vol\xfamica||r7:3\n\
 F|Kelvin e Celsius||r7:4\n\
 E|Massa e peso na Lua|avogadro|r7:0\n\
 E|Que l\xedquido \xe9?||r7:1\n\
+E|Calor que sai de casa no inverno||r7:2\n\
 X|Qual \xe9 o peso (em N) de uma||r7:0\n\
 X|Um astronauta vai da Terra||r7:1\n\
 X|Um objeto tem 40 g e 50 cm\xb3.||r7:2\n\
 X|Que t\xe9cnica separa um s\xf3lido||r7:3\n\
 X|O calor \xe9 uma forma de||r7:4\n\
 X|Numa panela com \xe1gua a||r7:5\n\
+X|Converte 300 K em graus|energia mecanica|r7:6\n\
+X|Como se transfere a energia||r7:7\n\
 L|\xc1tomos, mol\xe9culas, i\xf5es e f\xf3rmulas qu\xedmicas|modelo corpuscular atomo molecula iao catiao aniao|r8a\n\
 L|Equa\xe7\xf5es qu\xedmicas e Lei de Lavoisier|equacao quimica reagentes produtos coeficientes\
  estequiometricos acerto|r8b\n\
@@ -364,6 +367,7 @@ F|Lei da reflex\xe3o||r8:5\n\
 F|Tempo de propaga\xe7\xe3o da luz||r8:6\n\
 E|Acertar a s\xedntese da \xe1gua||r8:0\n\
 E|Profundidade medida com um sonar||r8:1\n\
+E|Luz \xe0 Lua e de volta||r8:2\n\
 X|Quantos \xe1tomos tem uma||r8:0\n\
 X|Qual \xe9 a f\xf3rmula do composto||r8:1\n\
 X|12 g de carbono reagem||r8:2\n\
@@ -389,12 +393,15 @@ F|N\xfamero de neutr\xf5es||r9:6\n\
 F|Eletr\xf5es de um i\xe3o||r9:7\n\
 E|Rapidez m\xe9dia de uma viagem||r9:0\n\
 E|Dist\xe2ncia de seguran\xe7a||r9:1\n\
+E|Quanto custa um aquecedor||r9:2\n\
 X|Um ciclista passa de 2,0 m||r9:0\n\
 X|Que resultante (em N) d\xe1 a um||r9:1\n\
 X|A a\xe7\xe3o e a rea\xe7\xe3o anulam-se||r9:2\n\
 X|Uma l\xe2mpada de 60 W est\xe1||r9:3\n\
 X|Quantos eletr\xf5es de val\xeancia||r9:4\n\
 X|Que tipo de liga\xe7\xe3o existe no||r9:5\n\
+X|Um aparelho de 500 W funciona||r9:6\n\
+X|A impuls\xe3o sobre um corpo||r9:7\n\
 C|AL 1.1 Plano inclinado: Ec e dist\xe2ncia|inclinado carrinho velocidade tempo passagem celula energia\
  cinetica|c_alf1.plano\n\
 C|AL 1.2 Queda e ressalto de uma bola|altura energia dissipada coeficiente restituicao regressao|c_alf1.ress\n\
@@ -552,14 +559,4 @@ T|Einst\xe9nio|es 99|99\n\
 T|F\xe9rmio|fm 100|100\n\
 T|Mendel\xe9vio|md 101|101\n\
 T|Nob\xe9lio|102|102\n\
-T|Laur\xeancio|lr 103|103\n\
-T|Rutherf\xf3rdio|rf 104|104\n\
-T|D\xfabnio|db 105|105\n\
-T|Seab\xf3rgio|sg 106|106\n\
-T|B\xf3hrio|bh 107|107\n\
-T|H\xe1ssio|hs 108|108\n\
-T|Meitn\xe9rio|mt 109|109\n\
-T|Darmst\xe1cio|ds 110|110\n\
-T|Roentg\xe9nio|rg 111|111\n\
-T|Copern\xedcio|cn 112|112\n\
-T|Nip\xf3nio|nh 113|113"
+T|Laur\xeancio|lr 103|103"

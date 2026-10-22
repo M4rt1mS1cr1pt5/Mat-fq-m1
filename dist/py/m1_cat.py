@@ -2,7 +2,7 @@
 # TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes
 # CALC: id|nome|disciplina|tema (as palavras-chave estao no indice da pesquisa)
 NLIC = 130
-NEX = 239
+NEX = 243
 NCART = 377
 TEMAS = (
     "q1|F|q|Massa e tamanho dos \xe1tomos|p_q1|x_q1|5|0|10|0|18|0|c_fqat.qm c_fqat.mm c_fqat.ar c_fqat.fr c_comu.sci c_comu.sf c_comu.uni|q1a q1b q1c q1d q1e",
@@ -16,19 +16,19 @@ TEMAS = (
     "f3|F|f|Energia, fen\xf3menos t\xe9rmicos e radia\xe7\xe3o|p_f3|x_f3|6|37|10|78|17|107|c_fqte.cal c_fqte.est c_fqte.eq c_fqte.cond c_fqte.pl c_fqte.pv c_fqen.ren c_comu.uni|f3a f3b f3c f3d f3e f3f",
     "aq|F|a|Atividades laboratoriais de Qu\xedmica|p_aq|x_aq|7|43|14|88|16|124|c_alq1.gota c_alq1.chama c_alq1.dens c_alq2.misc c_alq2.sol c_fqso.dil c_comd.exp|aq11 aq12 aq13 aq21 aq22 aq23 aq24",
     "af|F|a|Atividades laboratoriais de F\xedsica|p_af|x_af|6|50|12|102|14|140|c_alf1.plano c_alf1.ress c_alf1.pilha c_alf2.painel c_alf2.cap c_alf2.fusao c_comd.reg c_comd.exp|af11 af12 af21 af31 af32 af33",
-    "r7|F|r|Revis\xf5es do 7.\xba ano|p_r7|x_r7|3|56|6|114|8|154|c_comu.uni c_comu.sci|r7a r7b r7c",
-    "r8|F|r|Revis\xf5es do 8.\xba ano|p_r8|x_r8|5|59|8|120|12|162|c_fqlg.ace c_fqat.mm c_fqel.fot|r8a r8b r8c r8d r8e",
-    "r9|F|r|Revis\xf5es do 9.\xba ano|p_r9|x_r9|4|64|6|128|12|174|c_fqci.ohm c_fqci.pot c_fqel.conf c_comu.uni|r9a r9b r9c r9d",
-    "m1|M|t|Modelos matem\xe1ticos para a cidadania|p_m1|x_m1|10|68|13|134|30|186|c_matc.vot c_matc.mand c_matd.sal c_matd.irs c_matd.jur c_matd.prest|m1a m1b m1c m1d m1e m1f m1g m1h m1i m1j",
-    "m2|M|t|Estat\xedstica|p_m2|x_m2|9|78|13|147|27|216|c_mate.uni c_mate.cls c_mate.caule c_comd.reg|m2a m2b m2c m2d m2e m2f m2g m2h m2i",
-    "m3|M|t|Geometria sint\xe9tica no plano|p_m3|x_m3|6|87|11|160|19|243|c_matt.pn c_matt.insc c_matt.euler c_matt.pit c_matt.sem|m3a m3b m3c m3d m3e m3f",
-    "m4|M|t|Fun\xe7\xf5es: generalidades, fun\xe7\xe3o afim e condi\xe7\xf5es|p_m4|x_m4|4|93|10|171|13|262|c_matf.fx c_matf.afim c_comd.reg|m4a m4b m4c m4d",
-    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|97|10|181|15|275|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
-    "m6|M|t|Fun\xe7\xf5es definidas por ramos e fun\xe7\xe3o m\xf3dulo|p_m6|x_m6|3|101|8|191|9|290|c_matf.ramos c_matf.mod c_matf.fx|m6a m6b m6c",
-    "m7|M|t|Geometria anal\xedtica no plano e no espa\xe7o|p_m7|x_m7|6|104|10|199|18|299|c_matg.dist c_matg.reta c_matg.medz c_matg.circ c_matg.cond|m7a m7b m7c m7d m7e m7f",
-    "m8|M|t|Vetores no plano e no espa\xe7o|p_m8|x_m8|7|110|11|209|21|317|c_matv.vet c_matv.retav c_matv.bar|m8a m8b m8c m8d m8e m8f m8g",
-    "m9|M|t|Trigonometria (revis\xe3o do 9.\xba ano e extens\xe3o)|p_m9|x_m9|5|117|10|220|15|338|c_matr.tri c_matr.rad c_matr.res c_comu.sci|m9a m9b m9c m9d m9e",
-    "mr|M|r|Revis\xf5es do 3.\xba ciclo|p_mr|x_mr|8|122|9|230|24|353|c_matt.pit c_matt.sem c_comu.sci c_matq.q2|mra mrb mrc mrd mre mrf mrg mrh",
+    "r7|F|r|Revis\xf5es do 7.\xba ano|p_r7|x_r7|3|56|8|114|8|154|c_comu.uni c_comu.sci|r7a r7b r7c",
+    "r8|F|r|Revis\xf5es do 8.\xba ano|p_r8|x_r8|5|59|8|122|12|162|c_fqlg.ace c_fqat.mm c_fqel.fot|r8a r8b r8c r8d r8e",
+    "r9|F|r|Revis\xf5es do 9.\xba ano|p_r9|x_r9|4|64|8|130|12|174|c_fqci.ohm c_fqci.pot c_fqel.conf c_comu.uni|r9a r9b r9c r9d",
+    "m1|M|t|Modelos matem\xe1ticos para a cidadania|p_m1|x_m1|10|68|13|138|30|186|c_matc.vot c_matc.mand c_matd.sal c_matd.irs c_matd.jur c_matd.prest|m1a m1b m1c m1d m1e m1f m1g m1h m1i m1j",
+    "m2|M|t|Estat\xedstica|p_m2|x_m2|9|78|13|151|27|216|c_mate.uni c_mate.cls c_mate.caule c_comd.reg|m2a m2b m2c m2d m2e m2f m2g m2h m2i",
+    "m3|M|t|Geometria sint\xe9tica no plano|p_m3|x_m3|6|87|11|164|19|243|c_matt.pn c_matt.insc c_matt.euler c_matt.pit c_matt.sem|m3a m3b m3c m3d m3e m3f",
+    "m4|M|t|Fun\xe7\xf5es: generalidades, fun\xe7\xe3o afim e condi\xe7\xf5es|p_m4|x_m4|4|93|10|175|13|262|c_matf.fx c_matf.afim c_comd.reg|m4a m4b m4c m4d",
+    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|97|10|185|15|275|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
+    "m6|M|t|Fun\xe7\xf5es definidas por ramos e fun\xe7\xe3o m\xf3dulo|p_m6|x_m6|3|101|8|195|9|290|c_matf.ramos c_matf.mod c_matf.fx|m6a m6b m6c",
+    "m7|M|t|Geometria anal\xedtica no plano e no espa\xe7o|p_m7|x_m7|6|104|10|203|18|299|c_matg.dist c_matg.reta c_matg.medz c_matg.circ c_matg.cond|m7a m7b m7c m7d m7e m7f",
+    "m8|M|t|Vetores no plano e no espa\xe7o|p_m8|x_m8|7|110|11|213|21|317|c_matv.vet c_matv.retav c_matv.bar|m8a m8b m8c m8d m8e m8f m8g",
+    "m9|M|t|Trigonometria (revis\xe3o do 9.\xba ano e extens\xe3o)|p_m9|x_m9|5|117|10|224|15|338|c_matr.tri c_matr.rad c_matr.res c_comu.sci|m9a m9b m9c m9d m9e",
+    "mr|M|r|Revis\xf5es do 3.\xba ciclo|p_mr|x_mr|8|122|9|234|24|353|c_matt.pit c_matt.sem c_comu.sci c_matq.q2|mra mrb mrc mrd mre mrf mrg mrh",
 )
 CALC = "c_alf1.plano|AL 1.1 Plano inclinado: Ec e dist\xe2ncia|F|af\n\
 c_alf1.ress|AL 1.2 Queda e ressalto de uma bola|F|af\n\

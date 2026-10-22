@@ -241,3 +241,54 @@ Há movimento do próprio líquido.
 É convecção: correntes no fluido transportam a energia.
 #V
 S = 1
+
+@exemplo r7e3
+nivel: 3
+titulo: Calor que sai de casa no inverno
+licao: r7c
+#T
+Enunciado: num dia de inverno estão -5 °C lá fora e 20 °C dentro de casa. Em que sentido se transfere a energia como calor? Qual é a diferença de temperatura em °C e em K?
+Resolução:
+1. O calor passa do corpo mais quente para o mais frio: de dentro para fora.
+2. Diferença: 20 - (-5) = [[25]] °C, que é também [[25]] K.
+3. Em kelvin: -5 + 273,15 = [[268,15]] K e 20 + 273,15 = [[293,15]] K.
+Resultado: o calor sai de casa; a diferença é de 25 °C, ou 25 K.
+Interpretação: o isolamento das paredes e das janelas diminui a condução de calor para fora.
+Erros a evitar: somar 273,15 a uma diferença de temperaturas.
+#V
+V = [20 - (-5), 293.15 - 268.15, -5 + 273.15, 20 + 273.15]
+
+@exercicio r7x7
+tipo: n
+licao: r7c
+modo: d2
+#T
+Converte 300 K em graus Celsius.
+#S
+26,85
+#P
+θ = T - 273,15.
+#D
+θ = 300 - 273,15 = [[26,85]] °C.
+#V
+S = 300 - 273.15
+V = [S]
+
+@exercicio r7x8
+tipo: m
+licao: r7c
+#T
+Como se transfere a energia ao longo de uma colher de metal mergulhada numa sopa quente?
+#O
+Por condução
+Por convecção
+Por radiação
+Por evaporação
+#S
+1
+#P
+A colher é um sólido.
+#D
+Nos sólidos, a energia passa de partícula para partícula: é condução.
+#V
+S = 1

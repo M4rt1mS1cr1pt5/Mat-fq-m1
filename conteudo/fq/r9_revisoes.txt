@@ -272,3 +272,49 @@ O sódio é um metal; o cloro é um não metal.
 Metal e não metal: ligação iónica entre Na⁺ e Cl⁻.
 #V
 S = 1
+
+@exemplo r9e3
+nivel: 3
+titulo: Quanto custa um aquecedor
+licao: r9c
+calc: c_fqci.pot
+#T
+Enunciado: um aquecedor de 2000 W, ligado a 230 V, funciona 3 h por dia durante 30 dias. O kWh custa 0,16 €. Calcula a corrente, a energia gasta e o custo.
+Resolução:
+1. I = 2000 / 230 ≈ [[8,7]] A.
+2. E = 2 kW × 3 h × 30 = [[180]] kWh.
+3. Custo: 180 × 0,16 = [[28,80]] €.
+Resultado: I ≈ 8,7 A; 180 kWh; 28,80 €.
+Interpretação: os aquecedores elétricos estão entre os aparelhos que mais gastam.
+Erros a evitar: multiplicar a potência em W pelas horas e chamar kWh ao resultado.
+#V
+V = [2000 / 230, 2 * 3 * 30, 180 * 0.16]
+
+@exercicio r9x7
+tipo: n
+licao: r9c
+#T
+Um aparelho de 500 W funciona durante 2 h. Que energia gasta, em kWh?
+#S
+1
+#P
+E = P Δt, com P em kW e Δt em h.
+#D
+E = 0,500 × 2 = [[1]] kWh.
+#V
+S = 0.5 * 2
+V = [S]
+
+@exercicio r9x8
+tipo: v
+licao: r9b
+#T
+A impulsão sobre um corpo mergulhado depende do volume imerso e da massa volúmica do líquido.
+#S
+V
+#P
+Lembra a Lei de Arquimedes.
+#D
+Verdadeiro: I = ρ(fluido) V(imerso) g.
+#V
+S = 'V'

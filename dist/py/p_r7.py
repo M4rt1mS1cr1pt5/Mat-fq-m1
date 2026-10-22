@@ -108,4 +108,14 @@ Resolu\xe7\xe3o:\n\
 Resultado: \xe9 provavelmente \xe1lcool (etanol).\n\
 Interpreta\xe7\xe3o: a massa vol\xfamica \xe9 uma propriedade caracter\xedstica.\n\
 Erros a evitar: confundir mL com L (1 mL = 1 cm\xb3).\n\
+@E 3|r7e3|Calor que sai de casa no inverno||r7c\n\
+Enunciado: num dia de inverno est\xe3o -5 \xb0C l\xe1 fora e 20 \xb0C dentro de casa. Em que sentido se\
+ transfere a energia como calor? Qual \xe9 a diferen\xe7a de temperatura em \xb0C e em K?\n\
+Resolu\xe7\xe3o:\n\
+1. O calor passa do corpo mais quente para o mais frio: de dentro para fora.\n\
+2. Diferen\xe7a: 20 - (-5) = 25 \xb0C, que \xe9 tamb\xe9m 25 K.\n\
+3. Em kelvin: -5 + 273,15 = 268,15 K e 20 + 273,15 = 293,15 K.\n\
+Resultado: o calor sai de casa; a diferen\xe7a \xe9 de 25 \xb0C, ou 25 K.\n\
+Interpreta\xe7\xe3o: o isolamento das paredes e das janelas diminui a condu\xe7\xe3o de calor para fora.\n\
+Erros a evitar: somar 273,15 a uma diferen\xe7a de temperaturas.\n\
 "

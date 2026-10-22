@@ -162,4 +162,14 @@ Resolu\xe7\xe3o:\n\
 Resultado: cerca de 3,0 \xd7 10\xb2 m.\n\
 Interpreta\xe7\xe3o: os sonares usam ultrassons, que n\xe3o ouvimos.\n\
 Erros a evitar: esquecer que o som percorre a dist\xe2ncia duas vezes.\n\
+@E 3|r8e3|Luz \xe0 Lua e de volta||r8e\n\
+Enunciado: um feixe laser \xe9 enviado da Terra, reflete-se num espelho na Lua e volta. A dist\xe2ncia \xe0\
+ Lua \xe9 3,84 \xd7 10\u2078 m e c = 3,00 \xd7 10\u2078 m s\u207b\xb9. Quanto tempo demora a ida e volta?\n\
+Resolu\xe7\xe3o:\n\
+1. Dist\xe2ncia percorrida: 2 \xd7 3,84 \xd7 10\u2078 = 7,68 \xd7 10\u2078 m.\n\
+2. t = 7,68 \xd7 10\u2078 / (3,00 \xd7 10\u2078) = 2,56 s.\n\
+Resultado: cerca de 2,56 s.\n\
+Interpreta\xe7\xe3o: \xe9 assim que se mede a dist\xe2ncia \xe0 Lua, com os refletores deixados pelas\
+ miss\xf5es Apollo.\n\
+Erros a evitar: esquecer que a luz vai e volta.\n\
 "

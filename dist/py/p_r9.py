@@ -142,4 +142,14 @@ Resolu\xe7\xe3o:\n\
 Resultado: s\xe3o precisos cerca de 56 m para parar.\n\
 Interpreta\xe7\xe3o: com sono ou \xe1lcool o tempo de rea\xe7\xe3o aumenta, e a dist\xe2ncia tamb\xe9m.\n\
 Erros a evitar: esquecer a dist\xe2ncia percorrida durante o tempo de rea\xe7\xe3o.\n\
+@E 3|r9e3|Quanto custa um aquecedor|c_fqci.pot|r9c\n\
+Enunciado: um aquecedor de 2000 W, ligado a 230 V, funciona 3 h por dia durante 30 dias. O kWh custa 0,16\
+ \u20ac. Calcula a corrente, a energia gasta e o custo.\n\
+Resolu\xe7\xe3o:\n\
+1. I = 2000 / 230 \u2248 8,7 A.\n\
+2. E = 2 kW \xd7 3 h \xd7 30 = 180 kWh.\n\
+3. Custo: 180 \xd7 0,16 = 28,80 \u20ac.\n\
+Resultado: I \u2248 8,7 A; 180 kWh; 28,80 \u20ac.\n\
+Interpreta\xe7\xe3o: os aquecedores el\xe9tricos est\xe3o entre os aparelhos que mais gastam.\n\
+Erros a evitar: multiplicar a pot\xeancia em W pelas horas e chamar kWh ao resultado.\n\
 "

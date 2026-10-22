@@ -1,7 +1,17 @@
 # m1_idx2.py - M1TR4M: indice da pesquisa (FQ, parte 2 de 2) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 24\n\
+@N 34\n\
+T|Rutherf\xf3rdio|rf 104|104\n\
+T|D\xfabnio|db 105|105\n\
+T|Seab\xf3rgio|sg 106|106\n\
+T|B\xf3hrio|bh 107|107\n\
+T|H\xe1ssio|hs 108|108\n\
+T|Meitn\xe9rio|mt 109|109\n\
+T|Darmst\xe1cio|ds 110|110\n\
+T|Roentg\xe9nio|rg 111|111\n\
+T|Copern\xedcio|cn 112|112\n\
+T|Nip\xf3nio|nh 113|113\n\
 T|Fler\xf3vio|fl 114|114\n\
 T|Mosc\xf3vio|mc 115|115\n\
 T|Liverm\xf3rio|lv 116|116\n\

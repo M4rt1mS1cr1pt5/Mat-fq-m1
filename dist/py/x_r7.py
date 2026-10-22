@@ -1,6 +1,6 @@
 # x_r7.py - M1TR4M: exercicios de Revis\xf5es do 7.\xba ano (gerado pelo build).
 D = "@V 1\n\
-@N 6\n\
+@N 8\n\
 @T Revis\xf5es do 7.\xba ano\n\
 @X n|r7x1|r7a|r|\n\
 Qual \xe9 o peso (em N) de uma mochila de 5,0 kg na Terra (g = 9,8 m s\u207b\xb2)?\n\
@@ -41,4 +41,17 @@ Numa panela com \xe1gua a aquecer, a \xe1gua quente sobe e a fria desce. Que pro
 @P H\xe1 movimento do pr\xf3prio l\xedquido.\n\
 @D\n\
 \xc9 convec\xe7\xe3o: correntes no fluido transportam a energia.\n\
+@X n|r7x7|r7c|d2|\n\
+Converte 300 K em graus Celsius.\n\
+@S 26,85\n\
+@P \u03b8 = T - 273,15.\n\
+@D\n\
+\u03b8 = 300 - 273,15 = 26,85 \xb0C.\n\
+@X m|r7x8|r7c|r|\n\
+Como se transfere a energia ao longo de uma colher de metal mergulhada numa sopa quente?\n\
+@O Por condu\xe7\xe3o|Por radia\xe7\xe3o|Por convec\xe7\xe3o|Por evapora\xe7\xe3o\n\
+@S 1\n\
+@P A colher \xe9 um s\xf3lido.\n\
+@D\n\
+Nos s\xf3lidos, a energia passa de part\xedcula para part\xedcula: \xe9 condu\xe7\xe3o.\n\
 "

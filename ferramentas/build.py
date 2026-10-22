@@ -125,6 +125,14 @@ def main(args):
         if c[4] and c[4] not in [t.id for t in temas]:
             avisos.append('calculadora %s: tema %s ainda nao existe' %
                           (c[0], c[4]))
+    # minimos da seccao 11: 3 exemplos e 8 exercicios por tema; nas AL,
+    # 2 exercicios por atividade
+    for t in temas:
+        mx = 2 * len(t.licoes) if t.grupo == 'a' else 8
+        if len(t.exemplos) < 3 or len(t.exercicios) < mx:
+            avisos.append('tema %s: %d exemplos (min. 3) e %d exercicios '
+                          '(min. %d)' % (t.id, len(t.exemplos),
+                                         len(t.exercicios), mx))
     nl = sum(len(t.licoes) for t in temas)
     ne = sum(len(t.exemplos) for t in temas)
     nx = sum(len(t.exercicios) for t in temas)

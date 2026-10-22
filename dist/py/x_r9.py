@@ -1,6 +1,6 @@
 # x_r9.py - M1TR4M: exercicios de Revis\xf5es do 9.\xba ano (gerado pelo build).
 D = "@V 1\n\
-@N 6\n\
+@N 8\n\
 @T Revis\xf5es do 9.\xba ano\n\
 @X n|r9x1|r9a|r|\n\
 Um ciclista passa de 2,0 m s\u207b\xb9 para 8,0 m s\u207b\xb9 em 3,0 s. Qual \xe9 a acelera\xe7\xe3o m\xe9dia\
@@ -40,4 +40,16 @@ Que tipo de liga\xe7\xe3o existe no cloreto de s\xf3dio, NaCl?\n\
 @P O s\xf3dio \xe9 um metal; o cloro \xe9 um n\xe3o metal.\n\
 @D\n\
 Metal e n\xe3o metal: liga\xe7\xe3o i\xf3nica entre Na\u207a e Cl\u207b.\n\
+@X n|r9x7|r9c|r|\n\
+Um aparelho de 500 W funciona durante 2 h. Que energia gasta, em kWh?\n\
+@S 1\n\
+@P E = P \u0394t, com P em kW e \u0394t em h.\n\
+@D\n\
+E = 0,500 \xd7 2 = 1 kWh.\n\
+@X v|r9x8|r9b|r|\n\
+A impuls\xe3o sobre um corpo mergulhado depende do volume imerso e da massa vol\xfamica do l\xedquido.\n\
+@S V\n\
+@P Lembra a Lei de Arquimedes.\n\
+@D\n\
+Verdadeiro: I = \u03c1(fluido) V(imerso) g.\n\
 "

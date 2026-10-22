@@ -418,6 +418,9 @@ def comp(s, allow_x=1):
             elif ch in 'xX' and allow_x:
                 tok = 1
                 i += 1
+            elif ch in 'yY' and allow_x > 1:
+                tok = 3
+                i += 1
             else:
                 err('S\u00edmbolo desconhecido: ' + ch)
         elif ch == '\u221a':
@@ -546,14 +549,17 @@ def _push(o, out, st):
     st.append(o)
 
 
-def ev(code, x=0.0):
-    # Calcula o valor da expressao compilada para um valor de x.
+def ev(code, x=0.0, y=0.0):
+    # Calcula o valor da expressao compilada para x (e y, se comp foi
+    # chamada com allow_x=2).
     st = []
     for c in code:
         if isinstance(c, float):
             st.append(c)
         elif c == 1:
             st.append(x)
+        elif c == 3:
+            st.append(y)
         elif c == 2:
             st.append(CF['ans'])
         elif c < 15:

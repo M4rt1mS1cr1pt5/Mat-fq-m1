@@ -1,7 +1,7 @@
 # m1_idxm.py - M1TR4M: indice da pesquisa (Mat, parte 1 de 1) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 126\n\
+@N 162\n\
 L|Revis\xf5es de tri\xe2ngulos; mediatriz e bissetriz|classificacao triangulos congruencia semelhanca\
  criterio aa pitagoras|m3a\n\
 L|Incentro e circunfer\xeancia inscrita|bissetrizes tangente raio r = 2a/p triangulo tg|m3b\n\
@@ -112,6 +112,40 @@ X|Qual \xe9 a solu\xe7\xe3o positiva de||m6:4\n\
 X|A fun\xe7\xe3o f(x) = -|x| tem||m6:5\n\
 X|Qual \xe9 o conjunto-solu\xe7\xe3o de||m6:6\n\
 X|Quanto vale teto(4,2)?||m6:7\n\
+L|Referenciais: quadrantes, octantes, planos e simetrias|referencial cartesiano quadrantes octantes\
+ coordenados paralelos retas|m7a\n\
+L|Dist\xe2ncia e ponto m\xe9dio|entre dois pontos plano espaco pitagoras diametro|m7b\n\
+L|Mediatriz e plano mediador|equidistante equacao lugar geometrico perpendicular ponto medio|m7c\n\
+L|Equa\xe7\xe3o reduzida da reta e semiplanos|declive ordenada origem retas paralelas vertical horizontal|m7d\n\
+L|Condi\xe7\xf5es no plano com conjun\xe7\xe3o e disjun\xe7\xe3o|regiao intersecao uniao semiplano faixa\
+ quadrante circulo|m7e\n\
+L|Circunfer\xeancia, c\xedrculo, superf\xedcie esf\xe9rica e esfera|circunferencia circulo centro raio\
+ equacao reduzida diametro|m7f\n\
+F|Sim\xe9tricos no plano||m7:0\n\
+F|Planos paralelos aos coordenados||m7:1\n\
+F|Dist\xe2ncia entre dois pontos||m7:2\n\
+F|Ponto m\xe9dio||m7:3\n\
+F|Mediatriz||m7:4\n\
+F|Plano mediador||m7:5\n\
+F|Equa\xe7\xe3o reduzida da reta||m7:6\n\
+F|Semiplanos||m7:7\n\
+F|Regi\xe3o definida por \u2227||m7:8\n\
+F|Regi\xe3o definida por \u2228||m7:9\n\
+F|Circunfer\xeancia||m7:10\n\
+F|Superf\xedcie esf\xe9rica||m7:11\n\
+E|Dist\xe2ncia e ponto m\xe9dio||m7:0\n\
+E|Equa\xe7\xe3o de uma mediatriz||m7:1\n\
+E|Circunfer\xeancia de di\xe2metro dado e um ponto||m7:2\n\
+X|Qual \xe9 a dist\xe2ncia entre A(1||m7:0\n\
+X|Qual \xe9 o sim\xe9trico de P(3||m7:1\n\
+X|M(2, 3) \xe9 o ponto m\xe9dio de||m7:2\n\
+X|Qual \xe9 a ordenada na origem|avogadro|m7:3\n\
+X|Duas retas com declives 2 e||m7:4\n\
+X|Qual \xe9 o centro da||m7:5\n\
+X|Qual \xe9 o raio da superf\xedcie||m7:6\n\
+X|Que condi\xe7\xe3o define o 1.\xba||m7:7\n\
+X|No espa\xe7o, a condi\xe7\xe3o x = 3||m7:8\n\
+X|Uma esfera tem centro (2, -5||m7:9\n\
 C|Constantes e dados|avogadro planck velocidade luz volume molar na vm|c_comd.cte\n\
 C|Dados experimentais|media incerteza absoluta relativa erro percentual|c_comd.exp\n\
 C|Regress\xe3o linear e gr\xe1fico|reta declive ordenada coeficiente correlacao interpolar|c_comd.reg\n\
@@ -123,6 +157,11 @@ C|Fun\xe7\xe3o escrita por ti (tabela, zeros, gr\xe1fico)|expressao imagem tabel
 C|Fun\xe7\xe3o afim|declive ordenada origem zero reta dois|c_matf.afim\n\
 C|Fun\xe7\xe3o definida por ramos|ramo fronteira continuidade salto zeros imagem|c_matf.ramos\n\
 C|Fun\xe7\xe3o m\xf3dulo a\u2223x - h\u2223 + k|valor absoluto vertice ramos equacao inequacao|c_matf.mod\n\
+C|Dist\xe2ncia e ponto m\xe9dio|entre dois pontos plano espaco coordenadas|c_matg.dist\n\
+C|Equa\xe7\xe3o reduzida da reta|declive ordenada origem vertical horizontal paralela|c_matg.reta\n\
+C|Mediatriz e plano mediador|equidistante equacao|c_matg.medz\n\
+C|Circunfer\xeancia e superf\xedcie esf\xe9rica|circulo esfera centro raio equacao reduzida|c_matg.circ\n\
+C|Condi\xe7\xf5es no plano (regi\xe3o)|condicao conjuncao disjuncao semiplano regiao desenhar|c_matg.cond\n\
 C|Equa\xe7\xe3o do 2.\xba grau e fun\xe7\xe3o quadr\xe1tica|formula resolvente binomio discriminante zeros\
  vertice|c_matq.q2\n\
 C|Inequa\xe7\xf5es do 2.\xba grau|inequacao conjunto-solucao intervalos sinal parabola|c_matq.iq\n\

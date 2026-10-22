@@ -2,7 +2,7 @@
 """Verificacao do codigo (secao 5, passo 5 do prompt).
 
 Para cada modulo: so ASCII; sem f-strings, operador :=, anotacoes de
-tipos, eval nem exec; so importa os modulos permitidos (math, time,
+tipos, eval nem exec, nem metodos de str que o MicroPython 1.12 nao tem; so importa os modulos permitidos (math, time,
 ti_system, ti_draw; gc e sys so dentro de try/except; e os da propria
 app); compila com o mpy-cross do MicroPython 1.12 de 32 bits.
 """
@@ -14,6 +14,11 @@ import sys
 import tokenize
 
 PERMITIDOS = {'math', 'time', 'ti_system', 'ti_draw'}
+# Metodos de str que o MicroPython 1.12 nao tem (falham so no aparelho).
+SEM_MP = {'capitalize', 'title', 'ljust', 'rjust', 'zfill', 'center',
+          'casefold', 'swapcase', 'expandtabs', 'format_map', 'isnumeric',
+          'isdecimal', 'isidentifier', 'isprintable', 'istitle',
+          'removeprefix', 'removesuffix'}
 SO_EM_TRY = {'gc', 'sys'}
 PROPRIOS = ('m1', 'c_', 'p_', 'x_')
 
@@ -44,6 +49,11 @@ def verificar_fonte(caminho, texto, extra_ok=()):
     except SyntaxError as e:
         erros.append('%s:%s: erro de sintaxe: %s' % (nome, e.lineno, e.msg))
         return erros
+    modulos = set()
+    for no in ast.walk(arv):
+        if isinstance(no, ast.Import):
+            for a in no.names:
+                modulos.add(a.asname or a.name)
     dentro_try = set()
     for no in ast.walk(arv):
         if isinstance(no, ast.Try):
@@ -60,6 +70,12 @@ def verificar_fonte(caminho, texto, extra_ok=()):
                     a.annotation is not None for a in
                     no.args.args + no.args.kwonlyargs):
                 erros.append('%s:%d: anotacao de tipo' % (nome, no.lineno))
+        if isinstance(no, ast.Call) and isinstance(no.func, ast.Attribute) \
+                and no.func.attr in SEM_MP and not (
+                    isinstance(no.func.value, ast.Name) and
+                    no.func.value.id in modulos):
+            erros.append('%s:%d: .%s() nao existe no MicroPython 1.12' %
+                         (nome, no.lineno, no.func.attr))
         if isinstance(no, ast.Call) and isinstance(no.func, ast.Name) and \
                 no.func.id in ('eval', 'exec', 'compile'):
             erros.append('%s:%d: %s' % (nome, no.lineno, no.func.id))

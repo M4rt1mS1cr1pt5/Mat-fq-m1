@@ -1,9 +1,9 @@
 # m1_cat.py - M1TR4M: catalogo gerado pelo build (nao editar).
 # TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes
 # CALC: id|nome|disciplina|tema (as palavras-chave estao no indice da pesquisa)
-NLIC = 85
-NEX = 173
-NCART = 242
+NLIC = 91
+NEX = 183
+NCART = 260
 TEMAS = (
     "q1|F|q|Massa e tamanho dos \xe1tomos|p_q1|x_q1|5|0|10|0|18|0|c_fqat.qm c_fqat.mm c_fqat.ar c_fqat.fr c_comu.sci c_comu.sf c_comu.uni|q1a q1b q1c q1d q1e",
     "q2|F|q|Energia dos eletr\xf5es nos \xe1tomos|p_q2|x_q2|5|5|10|10|14|18|c_fqel.fot c_fqel.hid c_fqel.conf c_comu.sci c_comu.uni|q2a q2b q2c q2d q2e",
@@ -23,6 +23,7 @@ TEMAS = (
     "m4|M|t|Fun\xe7\xf5es: generalidades, fun\xe7\xe3o afim e condi\xe7\xf5es|p_m4|x_m4|4|74|10|145|13|205|c_matf.fx c_matf.afim c_comd.reg|m4a m4b m4c m4d",
     "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|78|10|155|15|218|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
     "m6|M|t|Fun\xe7\xf5es definidas por ramos e fun\xe7\xe3o m\xf3dulo|p_m6|x_m6|3|82|8|165|9|233|c_matf.ramos c_matf.mod c_matf.fx|m6a m6b m6c",
+    "m7|M|t|Geometria anal\xedtica no plano e no espa\xe7o|p_m7|x_m7|6|85|10|173|18|242|c_matg.dist c_matg.reta c_matg.medz c_matg.circ c_matg.cond|m7a m7b m7c m7d m7e m7f",
 )
 CALC = "c_alf1.plano|AL 1.1 Plano inclinado: Ec e dist\xe2ncia|F|af\n\
 c_alf1.ress|AL 1.2 Queda e ressalto de uma bola|F|af\n\
@@ -79,6 +80,11 @@ c_matf.fx|Fun\xe7\xe3o escrita por ti (tabela, zeros, gr\xe1fico)|M|m4\n\
 c_matf.afim|Fun\xe7\xe3o afim|M|m4\n\
 c_matf.ramos|Fun\xe7\xe3o definida por ramos|M|m6\n\
 c_matf.mod|Fun\xe7\xe3o m\xf3dulo a\u2223x - h\u2223 + k|M|m6\n\
+c_matg.dist|Dist\xe2ncia e ponto m\xe9dio|M|m7\n\
+c_matg.reta|Equa\xe7\xe3o reduzida da reta|M|m7\n\
+c_matg.medz|Mediatriz e plano mediador|M|m7\n\
+c_matg.circ|Circunfer\xeancia e superf\xedcie esf\xe9rica|M|m7\n\
+c_matg.cond|Condi\xe7\xf5es no plano (regi\xe3o)|M|m7\n\
 c_matq.q2|Equa\xe7\xe3o do 2.\xba grau e fun\xe7\xe3o quadr\xe1tica|M|m5\n\
 c_matq.iq|Inequa\xe7\xf5es do 2.\xba grau|M|m5\n\
 c_matq.tf|Transforma\xe7\xf5es de fun\xe7\xf5es|M|m5\n\

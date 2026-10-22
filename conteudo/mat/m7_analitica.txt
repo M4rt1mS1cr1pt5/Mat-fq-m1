@@ -1,0 +1,561 @@
+@tema m7
+disc: M
+grupo: t
+titulo: Geometria analítica no plano e no espaço
+calcs: c_matg.dist c_matg.reta c_matg.medz c_matg.circ c_matg.cond
+
+@licao m7a
+titulo: Referenciais: quadrantes, octantes, planos e simetrias
+chave: referencial cartesiano quadrantes octantes planos coordenados planos paralelos retas paralelas aos eixos reflexão simétrico meia-volta coordenadas
+calc: c_matg.dist
+ano: 10
+nivel: núcleo
+fonte: AE Mat A 10.º, Geometria analítica; caderno de atividades (Unidade 5)
+#A
+- Identificar quadrantes, octantes e planos coordenados.
+- Escrever equações de planos paralelos aos planos coordenados.
+- Escrever condições de retas paralelas aos eixos.
+- Determinar simétricos de pontos.
+#B
+Um referencial dá uma "morada" a cada ponto: no plano bastam dois números; no espaço, três.
+#C
+- No plano, os eixos dividem-no em 4 quadrantes (1.º: x > 0 ∧ y > 0).
+- No espaço: planos xOy (z = 0), xOz (y = 0) e yOz (x = 0); 8 octantes.
+- x = a: plano paralelo a yOz; z = c: plano paralelo a xOy.
+- x = 3 ∧ z = 5: reta paralela a Oy (só y varia).
+- Simétrico em relação a Ox: (x, -y); a Oy: (-x, y).
+- Meia-volta (em relação à origem): (-x, -y).
+#D
+Exemplo: P(2, -3) está no 4.º quadrante.
+Simétricos de P: em relação a Ox, (2, 3); a Oy, (-2, -3); à origem, (-2, 3).
+No espaço, Q(1, -2, 4):
+- simétrico em relação ao plano xOy: (1, -2, -4) (troca o sinal de z);
+- em relação ao eixo Oz: (-1, 2, 4) (troca x e y);
+- em relação à origem: (-1, 2, -4).
+O eixo Oy é definido por x = 0 ∧ z = 0.
+O 1.º octante: x > 0 ∧ y > 0 ∧ z > 0.
+A distância de Q ao plano xOy é |4| = [[4]].
+#E
+@F Simétricos no plano|Ox: (x, -y); Oy: (-x, y); origem: (-x, -y)|(x, y): ponto inicial|reflexões e meia-volta|P(2, -3): em relação a Ox, (2, 3)|
+@F Planos paralelos aos coordenados|x = a; y = b; z = c|x = a é paralelo a yOz|no espaço|plano por (1, 2, 5) paralelo a xOy: z = 5|
+#F
+Dados: A(3, -1, 2).
+Objetivo: simétricos de A e um plano por A.
+1. Em relação ao plano xOz (troca o sinal de y): (3, 1, 2).
+2. Em relação ao eixo Ox (troca y e z): (3, 1, -2).
+3. Plano por A paralelo a xOy: z = 2.
+4. Distância de A ao plano yOz: |3| = [[3]].
+> (3, 1, 2), (3, 1, -2) e z = 2.
+Verificação: os simétricos estão à mesma distância de xOz e de Ox.
+#G
+Os referenciais permitem passar da geometria para contas com números.
+#H
+- Trocar o eixo com o plano na simetria.
+- Esquecer que no espaço x = a é um plano (no plano é uma reta).
+- Confundir o 2.º com o 4.º quadrante.
+- Mudar o sinal de todas as coordenadas numa reflexão num eixo.
+#I
+- 4 quadrantes no plano; 8 octantes no espaço.
+- x = a, y = b, z = c: planos paralelos aos coordenados.
+- Simétricos: troca-se o sinal das coordenadas certas.
+#J
+Em que quadrante está o ponto (-4, 2)?
+#R
+No 2.º quadrante: x < 0 ∧ y > 0.
+#V
+V = [abs(4), abs(3)]
+
+@licao m7b
+titulo: Distância e ponto médio
+chave: distância entre dois pontos ponto médio plano espaço pitágoras diâmetro raio perímetro coordenadas
+calc: c_matg.dist
+ano: 10
+nivel: núcleo
+pre: m7a
+fonte: AE Mat A 10.º, Geometria analítica
+#A
+- Calcular a distância entre dois pontos no plano e no espaço.
+- Calcular as coordenadas do ponto médio.
+- Usar a distância e o ponto médio em problemas.
+#B
+A distância entre dois pontos é a hipotenusa de um triângulo retângulo com os catetos paralelos aos eixos.
+#C
+- d(A, B) = √((x2 - x1)² + (y2 - y1)²).
+- No espaço junta-se (z2 - z1)².
+- Ponto médio: M = ((x1 + x2) / 2, (y1 + y2) / 2).
+- No espaço, também a média das cotas.
+#D
+Exemplo: A(1, 2) e B(4, 6): AB = √(9 + 16) = [[5]].
+O ponto médio é M = (2,5; 4).
+No espaço: A(1, 2, 3) e B(2, 0, 1): AB = √(1 + 4 + 4) = [[3]].
+Conhecendo A e o ponto médio M, o outro extremo é B = 2M - A.
+Exemplo: A(1, 1) e M(3, 2) dão B = (5, 3).
+A distância de P(x, y) à origem é √(x² + y²).
+#E
+@F Distância entre dois pontos|d = √((x2 - x1)² + (y2 - y1)² + (z2 - z1)²)|sem o termo em z no plano|qualquer par de pontos|(1, 2) e (4, 6): d = 5|c_matg.dist
+@F Ponto médio|M = ((x1 + x2) / 2, (y1 + y2) / 2, (z1 + z2) / 2)|sem a coordenada z no plano|segmento [AB]|(1, 2) e (4, 6): M = (2,5; 4)|c_matg.dist
+#F
+Dados: A(-1, 2) e B(3, -1).
+Objetivo: AB, ponto médio e raio da circunferência de diâmetro [AB].
+1. AB = √(4² + (-3)²) = √(16 + 9) = [[5]]
+2. M = ((-1 + 3) / 2, (2 - 1) / 2): abcissa [[1]] e ordenada [[0,5]]
+3. Raio: 5 / 2 = [[2,5]]
+> AB = 5, M(1; 0,5) e r = 2,5.
+Verificação: MA = √(4 + 2,25) = [[2,5]] = r.
+#G
+O ponto médio fica à mesma distância dos dois extremos: é o centro da circunferência de diâmetro [AB].
+#H
+- Somar as diferenças em vez dos seus quadrados.
+- Esquecer a raiz quadrada.
+- Subtrair as coordenadas no ponto médio (é uma média).
+- Esquecer a coordenada z no espaço.
+#I
+- d = √(soma dos quadrados das diferenças).
+- M = média das coordenadas.
+- B = 2M - A.
+#J
+Qual é a distância entre A(0, 0, 0) e B(2, 3, 6)?
+#R
+AB = √(4 + 9 + 36) = √49 = [[7]].
+#V
+V = [(9 + 16) ** 0.5, (1 + 4 + 4) ** 0.5, (16 + 9) ** 0.5, (-1 + 3) / 2,
+     (2 - 1) / 2, 5 / 2, (4 + 2.25) ** 0.5, (4 + 9 + 36) ** 0.5]
+
+@licao m7c
+titulo: Mediatriz e plano mediador
+chave: mediatriz plano mediador equidistante equação lugar geométrico perpendicular ponto médio
+calc: c_matg.medz
+ano: 10
+nivel: núcleo
+pre: m7b m3a
+fonte: AE Mat A 10.º, Geometria analítica
+#A
+- Definir mediatriz e plano mediador.
+- Obter a equação igualando distâncias.
+- Verificar que a mediatriz passa no ponto médio.
+#B
+A mediatriz da geometria sintética ganha agora uma equação: são os pontos P com PA = PB.
+#C
+- Mediatriz de [AB] (no plano): pontos P(x, y) com PA = PB.
+- Plano mediador (no espaço): pontos P(x, y, z) com PA = PB.
+- Equação: iguala-se PA² = PB² e simplifica-se.
+- Os termos x², y² (e z²) cortam-se: fica uma equação do 1.º grau.
+- A mediatriz é perpendicular a [AB] e passa no ponto médio.
+#D
+Exemplo: A(1, 1) e B(5, 3).
+(x - 1)² + (y - 1)² = (x - 5)² + (y - 3)²
+-2x + 1 - 2y + 1 = -10x + 25 - 6y + 9
+8x + 4y = 32 ⇔ y = -2x + 8.
+Verificação: o ponto médio M(3, 2) está na reta: -6 + 8 = [[2]].
+Declive de AB: (3 - 1) / (5 - 1) = [[0,5]]; a mediatriz tem declive -2.
+O produto dos declives de retas perpendiculares é -1: 0,5 × (-2) = [[-1]].
+#E
+@F Mediatriz|PA² = PB²|P(x, y): ponto da mediatriz|A ≠ B|A(1, 1) e B(5, 3): y = -2x + 8|c_matg.medz
+@F Plano mediador|(x - x1)² + (y - y1)² + (z - z1)² = (x - x2)² + (y - y2)² + (z - z2)²|A(x1, y1, z1) e B(x2, y2, z2)|no espaço|A(1, 2, 3) e B(3, 2, 1): x - z = 0|c_matg.medz
+#F
+Dados: A(1, 2, 3) e B(3, 2, 1).
+Objetivo: equação do plano mediador de [AB].
+1. (x - 1)² + (y - 2)² + (z - 3)² = (x - 3)² + (y - 2)² + (z - 1)²
+2. -2x + 1 - 6z + 9 = -6x + 9 - 2z + 1
+3. 4x - 4z = 0 ⇔ x - z = 0
+> Plano mediador: x - z = 0.
+Verificação: o ponto médio M(2, 2, 2) verifica x - z = [[0]].
+#G
+A mediatriz e o plano mediador são lugares geométricos. Todos os seus pontos estão à mesma distância de A e de B.
+#H
+- Igualar as distâncias sem as elevar ao quadrado (fica com raízes).
+- Errar o desenvolvimento de (x - a)².
+- Esquecer de verificar com o ponto médio.
+- Achar que a mediatriz passa em A ou em B.
+#I
+- PA = PB, igualando os quadrados.
+- Equação do 1.º grau (reta ou plano).
+- Passa no ponto médio e é perpendicular a [AB].
+#J
+Qual é a mediatriz de [AB], com A(0, 0) e B(4, 0)?
+#R
+x = 2: a reta vertical que passa no ponto médio (2, 0).
+#V
+V = [-2 * 3 + 8, (3 - 1) / (5 - 1), 0.5 * (-2), 2 - 2]
+
+@licao m7d
+titulo: Equação reduzida da reta e semiplanos
+chave: equação reduzida da reta declive ordenada na origem retas paralelas reta vertical horizontal semiplano acima abaixo
+calc: c_matg.reta
+ano: 10
+nivel: núcleo
+pre: m4c
+fonte: AE Mat A 10.º, Geometria analítica
+#A
+- Escrever a equação reduzida de uma reta.
+- Reconhecer retas paralelas, verticais e horizontais.
+- Representar semiplanos com inequações.
+#B
+Uma reta fica definida por dois pontos, ou por um ponto e a inclinação.
+#C
+- Equação reduzida: y = mx + b.
+- m = (y2 - y1) / (x2 - x1); retas paralelas têm o mesmo declive.
+- Reta vertical: x = a (não tem declive); horizontal: y = b.
+- y > mx + b: semiplano acima da reta; y < mx + b: abaixo.
+- Com ≥ ou ≤, a reta faz parte do semiplano (fechado).
+#D
+Exemplo: reta por A(1, 3) e B(3, 7): m = [[2]] e b = 3 - 2 × 1 = [[1]].
+A equação é y = 2x + 1; a paralela pela origem é y = 2x.
+Semiplano y ≥ 2x + 1: pontos acima da reta, incluindo a reta.
+P(0, 5): 5 ≥ 1, pertence.
+Q(2, 1): 1 ≥ 5 é falso, não pertence.
+Se dois pontos têm a mesma abcissa, a reta é vertical: x = abcissa comum.
+#E
+@F Equação reduzida da reta|y = mx + b|m: declive;b: ordenada na origem|reta não vertical|m = 2 e b = 1: y = 2x + 1|c_matg.reta
+@F Semiplanos|y > mx + b (acima) ou y < mx + b (abaixo)|≥ e ≤ incluem a reta|reta não vertical|y ≥ 2x + 1: P(0, 5) pertence|c_matg.cond
+#F
+Dados: a reta r passa em A(-1, 2) e tem declive -0,5; P(4, 4).
+Objetivo: equação de r, paralela por P e posição de P.
+1. b = 2 - (-0,5) × (-1) = [[1,5]], logo r: y = -0,5x + 1,5.
+2. Paralela por P: b′ = 4 - (-0,5) × 4 = [[6]], logo y = -0,5x + 6.
+3. Em r, para x = 4: y = [[-0,5]]; como 4 > -0,5, P está acima de r.
+> r: y = -0,5x + 1,5; paralela: y = -0,5x + 6; P acima de r.
+Verificação: A verifica r: -0,5 × (-1) + 1,5 = [[2]].
+#G
+A equação reduzida mostra logo a inclinação e onde a reta corta Oy.
+#H
+- Calcular o declive com Δx / Δy.
+- Escrever y = a para uma reta vertical.
+- Trocar "acima" com "abaixo" nos semiplanos.
+- Esquecer que ≤ inclui a própria reta.
+#I
+- y = mx + b.
+- Paralelas: mesmo m.
+- x = a vertical; y = b horizontal.
+- y > mx + b: acima.
+#J
+Escreve a equação da reta horizontal que passa em (3, -2).
+#R
+y = -2.
+#V
+V = [(7 - 3) / (3 - 1), 3 - 2 * 1, 2 - (-0.5) * (-1), 4 - (-0.5) * 4,
+     -0.5 * 4 + 1.5, -0.5 * (-1) + 1.5]
+
+@licao m7e
+titulo: Condições no plano com conjunção e disjunção
+chave: condições no plano região conjunção disjunção interseção união semiplano faixa quadrante círculo semicírculo
+calc: c_matg.cond
+ano: 10
+nivel: núcleo
+pre: m4d m7d
+fonte: AE Mat A 10.º, Geometria analítica
+#A
+- Associar condições em x e y a regiões do plano.
+- Interpretar ∧ como interseção e ∨ como união de regiões.
+- Verificar se um ponto pertence a uma região.
+#B
+Num mapa, "a norte do rio e a oeste da estrada" é uma região: duas condições ao mesmo tempo.
+#C
+- Uma condição em x e y define uma região do plano.
+- ∧: interseção das regiões; ∨: união.
+- x ≥ 0 ∧ y ≥ 0: 1.º quadrante, com os eixos.
+- -1 ≤ x ≤ 2: faixa vertical entre x = -1 e x = 2.
+- (x - a)² + (y - b)² ≤ r²: círculo.
+#D
+Exemplo: y ≥ x - 1 ∧ x ≤ 2: acima da reta y = x - 1 e à esquerda de x = 2.
+O ponto (1, 1) verifica: 1 ≥ 0 e 1 ≤ 2.
+O ponto (3, 1) não verifica: 3 ≤ 2 é falso.
+Com ∨: x < -1 ∨ x > 1 são duas regiões separadas.
+Para descrever uma região, identificam-se as fronteiras (retas ou circunferências) e o lado de cada uma.
+Testa o lado com um ponto fácil, como a origem.
+#E
+@F Região definida por ∧|C.S.(p ∧ q) = região de p ∩ região de q|p e q: condições em x e y|plano|y ≥ x - 1 ∧ x ≤ 2|c_matg.cond
+@F Região definida por ∨|C.S.(p ∨ q) = região de p ∪ região de q|p e q: condições em x e y|plano|x < -1 ∨ x > 1|c_matg.cond
+#F
+Dados: a região definida por x² + y² ≤ 4 ∧ y ≥ 0.
+Objetivo: descrever a região e calcular a área.
+1. x² + y² ≤ 4: círculo de centro O e raio [[2]].
+2. y ≥ 0: semiplano superior (acima de Ox, com o eixo).
+3. Região: semicírculo superior; área = π × 2² / 2 = [[=2π]] ≈ [[6,28]].
+> Semicírculo de raio 2, com área 2π.
+Verificação: (0, 1) pertence: 1 ≤ 4 e 1 ≥ 0.
+#G
+As condições com ∧ e ∨ permitem descrever regiões complicadas juntando peças simples.
+#H
+- Trocar ∧ (interseção) com ∨ (união).
+- Esquecer as fronteiras incluídas (≤, ≥).
+- Escolher o lado errado de uma reta.
+- Esquecer que x = 2 no plano é uma reta.
+#I
+- ∧: interseção; ∨: união.
+- Fronteiras: retas e circunferências.
+- Testa o lado com um ponto.
+#J
+Que condição define o 3.º quadrante, sem os eixos?
+#R
+x < 0 ∧ y < 0.
+#V
+V = [4 ** 0.5, pi * 2 ** 2 / 2, pi * 2 ** 2 / 2]
+
+@licao m7f
+titulo: Circunferência, círculo, superfície esférica e esfera
+chave: circunferência círculo superfície esférica esfera centro raio equação reduzida diâmetro tangente plano coordenado
+calc: c_matg.circ
+ano: 10
+nivel: núcleo
+pre: m7b
+fonte: AE Mat A 10.º, Geometria analítica; caderno de atividades (Unidade 5)
+#A
+- Escrever a equação reduzida da circunferência e da superfície esférica.
+- Distinguir circunferência de círculo e superfície esférica de esfera.
+- Usar diâmetros e pontos para obter o centro e o raio.
+#B
+A circunferência é o conjunto dos pontos à mesma distância de um centro: a distância dá a equação.
+#C
+- Circunferência de centro (a, b) e raio r: (x - a)² + (y - b)² = r².
+- Círculo: (x - a)² + (y - b)² ≤ r².
+- Superfície esférica: (x - a)² + (y - b)² + (z - c)² = r².
+- Esfera: o mesmo com ≤.
+- Esfera tangente a um plano coordenado: r = |coordenada do centro|.
+#D
+Exemplo: centro (1, -2) e raio 3: (x - 1)² + (y + 2)² = 9.
+Com o centro e um ponto, o raio é a distância entre eles.
+Com um diâmetro [AB], o centro é o ponto médio e o raio é AB / 2.
+Exemplo: A(1, 1) e B(5, 1): centro (3, 1) e raio [[2]].
+A equação é (x - 3)² + (y - 1)² = 4.
+O ponto (3, 3) está sobre a circunferência: 0 + 4 = [[4]].
+Esfera de centro (1, 2, -3) tangente a xOy: r = |-3| = [[3]].
+#E
+@F Circunferência|(x - a)² + (y - b)² = r²|(a, b): centro;r: raio|no plano|centro (1, -2), r = 3: (x - 1)² + (y + 2)² = 9|c_matg.circ
+@F Superfície esférica|(x - a)² + (y - b)² + (z - c)² = r²|(a, b, c): centro;r: raio|no espaço (≤ para a esfera)|centro (2, -1, 3), r = 3|c_matg.circ
+#F
+Dados: superfície esférica de centro C(2, -1, 3) que passa em P(4, 1, 2).
+Objetivo: equação e posição de Q(2, -1, 0).
+1. r² = (4 - 2)² + (1 + 1)² + (2 - 3)² = [[9]], logo r = [[3]].
+2. Equação: (x - 2)² + (y + 1)² + (z - 3)² = 9.
+3. Q: 0 + 0 + (0 - 3)² = [[9]]: Q está sobre a superfície.
+> (x - 2)² + (y + 1)² + (z - 3)² = 9; Q pertence à superfície.
+Verificação: |3| = r, por isso a superfície é tangente a xOy, precisamente em Q.
+#G
+A equação reduzida mostra logo o centro (com os sinais trocados) e o raio (a raiz do 2.º membro).
+#H
+- Ler o centro sem trocar os sinais: (x + 2)² corresponde a a = -2.
+- Escrever r em vez de r² no 2.º membro.
+- Confundir circunferência (só a linha) com círculo.
+- Esquecer o termo em z no espaço.
+#I
+- (x - a)² + (y - b)² = r².
+- Com ≤: círculo (ou esfera).
+- Diâmetro: centro no ponto médio, r = metade.
+#J
+Escreve a equação da circunferência de centro na origem e raio 4.
+#R
+x² + y² = [[16]].
+#V
+V = [((5 - 1) ** 2) ** 0.5 / 2, (3 - 3) ** 2 + (3 - 1) ** 2, abs(-3), 2 ** 2 + 2 ** 2 + 1, 3, (0 - 3) ** 2, 4 ** 2]
+
+@exemplo m7e1
+nivel: 1
+titulo: Distância e ponto médio
+licao: m7b
+calc: c_matg.dist
+#T
+Enunciado: A(2, -1) e B(8, 7). Calcula AB e o ponto médio de [AB].
+Resolução:
+1. AB = √(6² + 8²) = √(36 + 64) = [[10]]
+2. M = ((2 + 8) / 2, (-1 + 7) / 2) = (5, 3): abcissa [[5]] e ordenada [[3]]
+Resultado: AB = 10 e M(5, 3).
+Interpretação: M está a 5 unidades de A e de B.
+Erros a evitar: escrever √(6 + 8).
+#V
+V = [(36 + 64) ** 0.5, (2 + 8) / 2, (-1 + 7) / 2]
+
+@exemplo m7e2
+nivel: 2
+titulo: Equação de uma mediatriz
+licao: m7c
+calc: c_matg.medz
+#T
+Enunciado: determina a equação reduzida da mediatriz de [AB], com A(-2, 1) e B(4, 3).
+Resolução:
+1. (x + 2)² + (y - 1)² = (x - 4)² + (y - 3)²
+2. 4x + 4 - 2y + 1 = -8x + 16 - 6y + 9
+3. 12x + 4y = 20 ⇔ y = -3x + 5
+Resultado: y = -3x + 5.
+Interpretação: o ponto médio (1, 2) verifica: -3 + 5 = [[2]].
+Erros a evitar: (x + 2)² = x² + 4 (falta o termo 4x).
+#V
+V = [-3 * 1 + 5]
+
+@exemplo m7e3
+nivel: 3
+titulo: Circunferência de diâmetro dado e um ponto
+licao: m7f
+calc: c_matg.circ
+#T
+Enunciado: [AB] é um diâmetro, com A(-1, 4) e B(5, -4). Escreve a equação e vê se P(6, 3) está dentro.
+Resolução:
+1. Centro: ponto médio ((-1 + 5) / 2, (4 - 4) / 2) = (2, 0): abcissa [[2]]
+2. AB = √(36 + 64) = [[10]], logo r = [[5]] e r² = 25.
+3. Equação: (x - 2)² + y² = 25.
+4. P: (6 - 2)² + 3² = [[25]]: P está sobre a circunferência.
+Resultado: (x - 2)² + y² = 25; P pertence à circunferência.
+Interpretação: o ângulo APB é reto, porque [AB] é um diâmetro.
+Erros a evitar: usar AB como raio.
+#V
+V = [(-1 + 5) / 2, (36 + 64) ** 0.5, (36 + 64) ** 0.5 / 2, (6 - 2) ** 2 + 3 ** 2]
+
+@exercicio m7x1
+tipo: n
+licao: m7b
+#T
+Qual é a distância entre A(1, 1) e B(4, 5)?
+#S
+5
+#P
+d = √((x2 - x1)² + (y2 - y1)²).
+#D
+AB = √(9 + 16) = [[5]].
+#V
+S = (9 + 16) ** 0.5
+V = [S]
+
+@exercicio m7x2
+tipo: m
+licao: m7a
+#T
+Qual é o simétrico de P(3, -5) em relação ao eixo Oy?
+#O
+(-3, -5)
+(3, 5)
+(-3, 5)
+(5, -3)
+#S
+1
+#P
+Na reflexão em Oy muda o sinal da abcissa.
+#D
+Em relação a Oy: (x, y) → (-x, y), logo (-3, -5).
+#V
+S = 1
+
+@exercicio m7x3
+tipo: n
+licao: m7b
+#T
+M(2, 3) é o ponto médio de [AB] e A(-1, 1). Qual é a abcissa de B?
+#S
+5
+#P
+B = 2M - A.
+#D
+xB = 2 × 2 - (-1) = [[5]] (e yB = 2 × 3 - 1 = [[5]]).
+#V
+S = 2 * 2 - (-1)
+V = [S, 2 * 3 - 1]
+
+@exercicio m7x4
+tipo: n
+licao: m7d
+#T
+Qual é a ordenada na origem da reta que passa em (2, 5) com declive 3?
+#S
+-1
+#P
+b = y - mx.
+#D
+b = 5 - 3 × 2 = [[-1]]: y = 3x - 1.
+#V
+S = 5 - 3 * 2
+V = [S]
+
+@exercicio m7x5
+tipo: v
+licao: m7d
+#T
+Duas retas com declives 2 e -1/2 são paralelas.
+#S
+F
+#P
+Retas paralelas têm o mesmo declive.
+#D
+Falso: são perpendiculares (2 × (-1/2) = -1), não paralelas.
+#V
+S = 'F'
+
+@exercicio m7x6
+tipo: m
+licao: m7f
+#T
+Qual é o centro da circunferência (x + 3)² + (y - 1)² = 16?
+#O
+(-3, 1)
+(3, -1)
+(-3, -1)
+(3, 1)
+#S
+1
+#P
+(x - a)² + (y - b)² = r², com centro (a, b).
+#D
+x + 3 = x - (-3): a = -3 e b = 1; o centro é (-3, 1) e o raio 4.
+#V
+S = 1
+
+@exercicio m7x7
+tipo: n
+licao: m7f
+#T
+Qual é o raio da superfície esférica (x - 1)² + y² + (z + 2)² = 49?
+#S
+7
+#P
+O 2.º membro é r².
+#D
+r = √49 = [[7]].
+#V
+S = 49 ** 0.5
+V = [S]
+
+@exercicio m7x8
+tipo: m
+licao: m7e
+#T
+Que condição define o 1.º quadrante, incluindo os eixos?
+#O
+x ≥ 0 ∧ y ≥ 0
+x ≥ 0 ∨ y ≥ 0
+x > 0 ∧ y > 0
+x ≤ 0 ∧ y ≥ 0
+#S
+1
+#P
+∧: as duas condições ao mesmo tempo; ≥ inclui os eixos.
+#D
+1.º quadrante com os eixos: x ≥ 0 ∧ y ≥ 0.
+#V
+S = 1
+
+@exercicio m7x9
+tipo: v
+licao: m7a
+#T
+No espaço, a condição x = 3 define uma reta.
+#S
+F
+#P
+Que pontos têm abcissa 3 no espaço?
+#D
+Falso: no espaço, x = 3 é um plano paralelo a yOz (no plano seria uma reta).
+#V
+S = 'F'
+
+@exercicio m7x10
+tipo: n
+licao: m7f
+#T
+Uma esfera tem centro (2, -5, 4) e é tangente ao plano xOz. Qual é o raio?
+#S
+5
+#P
+Tangente a xOz: o raio é a distância do centro a esse plano (|y|).
+#D
+r = |-5| = [[5]].
+#V
+S = abs(-5)
+V = [S]

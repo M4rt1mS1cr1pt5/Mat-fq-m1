@@ -2,6 +2,7 @@
 import c_matq
 import c_matt
 import c_matf
+import c_matg
 from base import calc, erro, tem, perto
 
 
@@ -281,3 +282,101 @@ def t_mod_condicoes():
     r = calc(c_matf, 'mod', ['1', '0', '0', 2, '0'])
     tem(r[0], 'C.S. = ℝ \\ {0}')
     assert 'a = 0' in erro(calc, c_matf, 'mod', ['0', '1', '2', 0, ''])
+
+# ------------------------------------------------------------ c_matg
+
+
+def t_dist_plano_espaco():
+    r = calc(c_matg, 'dist', ['1 2', '4 6'])
+    tem(r[0], 'AB = √(9 + 16)', 'AB = 5', 'M = (2,5; 4)')
+    perto(r[2], 5.0)
+    r = calc(c_matg, 'dist', ['1 2 3', '2 0 1'])
+    tem(r[0], '(zB - zA)²', 'AB = 3', 'M = (1,5; 1; 2)')
+    r = calc(c_matg, 'dist', ['0 0', '1 1'])
+    tem(r[0], 'AB = √2')
+
+
+def t_dist_invalido():
+    assert 'mesmo número' in erro(calc, c_matg, 'dist', ['1 2', '1 2 3'])
+    assert 'coordenadas' in erro(calc, c_matg, 'dist', ['1', '1 2'])
+    assert 'coordenadas' in erro(calc, c_matg, 'dist', ['', '1 2'])
+
+
+def t_reta_dois_pontos():
+    r = calc(c_matg, 'reta', ['1 3', '3 7', '', '0 0'])
+    tem(r[0], 'm = 2', 'y = 2x + 1', 'Corta Ox em (-0,5; 0)', 'Paralela por P: y = 2x')
+    perto(r[2], 2.0)
+
+
+def t_reta_vertical_e_declive():
+    r = calc(c_matg, 'reta', ['2 1', '2 5', '', ''])
+    tem(r[0], 'reta vertical', 'x = 2', 'não está definido')
+    r = calc(c_matg, 'reta', ['-1 2', '', '-0,5', '4 4'])
+    tem(r[0], 'y = -0,5x + 1,5', 'Paralela por P: y = -0,5x + 6')
+    r = calc(c_matg, 'reta', ['0 5', '3 5', '', ''])
+    tem(r[0], 'y = 5', 'horizontal')
+
+
+def t_reta_invalido():
+    assert 'só um dos dois' in erro(calc, c_matg, 'reta', ['1 1', '2 2', '3', ''])
+    assert 'só um dos dois' in erro(calc, c_matg, 'reta', ['1 1', '', '', ''])
+    assert 'mesmo ponto' in erro(calc, c_matg, 'reta', ['1 1', '1 1', '', ''])
+
+
+def t_medz_plano():
+    r = calc(c_matg, 'medz', ['1 1', '5 3'])
+    tem(r[0], '(x - 1)² + (y - 1)² =', 'Simplificando: 2x + y = 8',
+        'Mediatriz: y = -2x + 8', 'M = (3, 2)')
+    r = calc(c_matg, 'medz', ['1 1', '1 5'])
+    tem(r[0], 'Mediatriz: y = 3')
+    r = calc(c_matg, 'medz', ['0 0', '4 0'])
+    tem(r[0], 'x = 2 (reta vertical)')
+
+
+def t_medz_espaco_e_invalido():
+    r = calc(c_matg, 'medz', ['1 2 3', '3 2 1'])
+    tem(r[0], 'Plano mediador: x - z = 0', 'M = (2, 2, 2)')
+    assert 'mesmo ponto' in erro(calc, c_matg, 'medz', ['1 1', '1 1'])
+
+
+def t_circ_plano():
+    r = calc(c_matg, 'circ', [0, '1 -2', '3', '', ''])
+    tem(r[0], '(x - 1)² + (y + 2)² = 9', 'Círculo: (x - 1)² + (y + 2)² ≤ 9')
+    r = calc(c_matg, 'circ', [1, '0 0', '', '3 4', '1 1'])
+    tem(r[0], 'x² + y² = 25', 'dentro')
+    r = calc(c_matg, 'circ', [2, '1 1', '', '5 1', '3 3'])
+    tem(r[0], 'Centro (3, 1)', '(x - 3)² + (y - 1)² = 4', 'sobre a circunferência')
+    r = calc(c_matg, 'circ', [0, '0 0', '2', '', '3 0'])
+    tem(r[0], 'fora')
+
+
+def t_circ_espaco_e_invalido():
+    r = calc(c_matg, 'circ', [0, '1 2 -3', '3', '', ''])
+    tem(r[0], 'Superfície esférica: (x - 1)² + (y - 2)² + (z + 3)² = 9',
+        'Tangente ao(s) plano(s) xOy')
+    assert 'raio' in erro(calc, c_matg, 'circ', [0, '1 1', '-2', '', ''])
+    assert 'iguais' in erro(calc, c_matg, 'circ', [1, '1 1', '', '1 1', ''])
+    assert 'raio vazio' in erro(calc, c_matg, 'circ', [1, '1 1', '2', '3 3', ''])
+
+
+def t_cond_conjuncao():
+    r = calc(c_matg, 'cond', ['y >= x - 1 e x <= 2', '1 1'])
+    tem(r[0], 'y ≥ x - 1 ∧ x ≤ 2', 'y ≥ x - 1: 1 ≥ 0 ✓', 'verifica a condição')
+    assert r[2] is True
+    r = calc(c_matg, 'cond', ['y >= x - 1 e x <= 2', '3 1'])
+    tem(r[0], 'x ≤ 2: 3 ≤ 2 ✗', 'não verifica')
+
+
+def t_cond_disjuncao_e_igualdade():
+    r = calc(c_matg, 'cond', ['x^2 + y^2 <= 4 ou y > 2', '3 0'])
+    tem(r[0], 'x^2 + y^2 ≤ 4 ∨ y > 2', 'não verifica')
+    r = calc(c_matg, 'cond', ['x^2 + y^2 <= 4 ou y > 2', '0 3'])
+    assert r[2] is True
+    r = calc(c_matg, 'cond', ['y = 2x + 1', '1 3'])
+    tem(r[0], '3 = 3 ✓')
+
+
+def t_cond_invalido():
+    assert 'Falta um sinal' in erro(calc, c_matg, 'cond', ['y + x', ''])
+    assert 'Falta um membro' in erro(calc, c_matg, 'cond', ['y >', ''])
+    assert 'condição' in erro(calc, c_matg, 'cond', ['', ''])

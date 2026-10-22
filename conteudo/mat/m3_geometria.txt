@@ -10,6 +10,7 @@ chave: classificação de triângulos congruência semelhança critério aa pit�
 calc: c_matt.pit
 ano: 10
 nivel: núcleo
+pre: mrf mrg
 fonte: AE Mat A 10.º, Geometria sintética; manual (Unidade 3)
 #A
 - Classificar triângulos quanto aos lados e aos ângulos.

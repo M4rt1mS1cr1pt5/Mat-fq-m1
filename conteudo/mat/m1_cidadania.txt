@@ -352,6 +352,7 @@ chave: salário bruto líquido segurança social 11% entidade empregadora 23,75%
 calc: c_matd.sal
 ano: 10
 nivel: núcleo
+pre: mrb
 fonte: AE Mat A 10.º, Modelos matemáticos para a cidadania (finanças pessoais); Código do Trabalho, art. 268.º e 271.º
 #A
 - Calcular o salário líquido a partir do bruto.
@@ -480,6 +481,7 @@ chave: juro simples juro composto capital taxa de juro capitalização mensal tr
 calc: c_matd.jur
 ano: 10
 nivel: núcleo
+pre: mrb
 fonte: AE Mat A 10.º, Modelos matemáticos para a cidadania (poupança e crédito)
 #A
 - Calcular juros simples.

@@ -59,7 +59,7 @@ Em que quadrante est\xe1 o ponto (-4, 2)?\n\
 No 2.\xba quadrante: x < 0 \u2227 y > 0.\n\
 @L m7b|Dist\xe2ncia e ponto m\xe9dio|distancia entre dois pontos ponto medio plano espaco pitagoras diametro\
  raio perimetro coordenadas|c_matg.dist|10|n\xfacleo|m7a:Referenciais: quadrantes, octantes, planos e\
- simetrias||AE Mat A 10.\xba, Geometria anal\xedtica\n\
+ simetrias;mrf:Teorema de Pit\xe1goras||AE Mat A 10.\xba, Geometria anal\xedtica\n\
 @A\n\
 - Calcular a dist\xe2ncia entre dois pontos no plano e no espa\xe7o.\n\
 - Calcular as coordenadas do ponto m\xe9dio.\n\

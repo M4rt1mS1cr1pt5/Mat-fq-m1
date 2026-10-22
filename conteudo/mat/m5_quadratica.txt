@@ -89,7 +89,7 @@ chave: zeros equação do 2.º grau fórmula resolvente discriminante delta bin�
 calc: c_matq.q2
 ano: 10
 nivel: núcleo
-pre: m5a
+pre: m5a mrd
 fonte: AE Mat A 10.º, Funções: função quadrática
 #A
 - Calcular o discriminante Δ = b² - 4ac.

@@ -1733,18 +1733,18 @@ T	18	47	0,0,0	Valor atual
 T	4	64	0,51,153	F
 T	18	64	0,0,0	Valor da hora
 T	4	81	0,51,153	F
-T	18	81	0,0,0	Variância amostral
-T	4	98	0,51,153	E
-T	18	98	0,0,0	Vértice e eixo de uma parábola
-T	4	115	0,51,153	F
-T	18	115	0,0,0	Vetor definido por dois pontos
+T	18	81	0,0,0	Variação percentual
+T	4	98	0,51,153	F
+T	18	98	0,0,0	Variância amostral
+T	4	115	0,51,153	E
+T	18	115	0,0,0	Vértice e eixo de uma parábola
 T	4	132	0,51,153	F
-T	18	132	0,0,0	Vetor simétrico
-T	4	149	0,51,153	E
-T	18	149	0,0,0	Vetor, norma e ponto médio
-T	4	166	0,51,153	L
-T	18	166	0,0,0	Vetores colineares
-T	4	183	0,51,153	F
+T	18	132	0,0,0	Vetor definido por dois pontos
+T	4	149	0,51,153	F
+T	18	149	0,0,0	Vetor simétrico
+T	4	166	0,51,153	E
+T	18	166	0,0,0	Vetor, norma e ponto médio
+T	4	183	0,51,153	L
 T	18	183	0,0,0	Vetores colineares
 R	314	34	3	153	232,232,232
 R	314	34	3	22	100,100,100
@@ -1785,7 +1785,7 @@ F	46
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	24
+T	298	13	255,255,255	29
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	ver
 R	39	19	1	13	0,0,0
@@ -1809,14 +1809,14 @@ T	18	166	0,0,0	Qual é o vértice do gráfico
 T	4	183	0,51,153	F
 T	18	183	0,0,0	Quarto vértice do paralelogramo
 R	314	34	3	153	232,232,232
-R	314	34	3	57	100,100,100
+R	314	34	3	47	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	47
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · Mat
-T	298	13	255,255,255	18
+T	298	13	255,255,255	20
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	vert
 R	46	19	1	13	0,0,0
@@ -1840,7 +1840,7 @@ T	18	166	0,0,0	Qual é o vértice do gráfico
 T	4	183	0,51,153	F
 T	18	183	0,0,0	Quarto vértice do paralelogramo
 R	314	34	3	153	232,232,232
-R	314	34	3	76	100,100,100
+R	314	34	3	68	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	48

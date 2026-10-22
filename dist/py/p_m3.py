@@ -4,7 +4,8 @@ D = "@V 1\n\
 @T Geometria sint\xe9tica no plano\n\
 @L m3a|Revis\xf5es de tri\xe2ngulos; mediatriz e bissetriz|classificacao de triangulos congruencia semelhanca\
  criterio aa pitagoras area angulos internos mediatriz bissetriz lugar geometrico distancia de um ponto a uma\
- reta|c_matt.pit|10|n\xfacleo|||AE Mat A 10.\xba, Geometria sint\xe9tica; manual (Unidade 3)\n\
+ reta|c_matt.pit|10|n\xfacleo|mrf:Teorema de Pit\xe1goras;mrg:Semelhan\xe7a de figuras||AE Mat A 10.\xba,\
+ Geometria sint\xe9tica; manual (Unidade 3)\n\
 @A\n\
 - Classificar tri\xe2ngulos quanto aos lados e aos \xe2ngulos.\n\
 - Usar os crit\xe9rios de congru\xeancia e de semelhan\xe7a.\n\

@@ -1,69 +1,66 @@
 {
- "avisos": [
-  "calculadora c_matt.pit: tema mr ainda nao existe",
-  "calculadora c_matt.sem: tema mr ainda nao existe"
- ],
+ "avisos": [],
  "data": "2026-10-22",
  "percursos": {
   "p01_fq_licao": {
    "cpy": "ecras=63 textos=640 fora=0 teclas=50/50 pico=0 ok",
-   "mp": "ecras=63 textos=640 fora=0 teclas=50/50 pico=137408 ok"
+   "mp": "ecras=63 textos=640 fora=0 teclas=50/50 pico=138720 ok"
   },
   "p02_mat_calc": {
-   "cpy": "ecras=71 textos=636 fora=0 teclas=54/54 pico=0 ok",
-   "mp": "ecras=71 textos=636 fora=0 teclas=54/54 pico=122272 ok"
+   "cpy": "ecras=71 textos=640 fora=0 teclas=54/54 pico=0 ok",
+   "mp": "ecras=71 textos=640 fora=0 teclas=54/54 pico=123504 ok"
   },
   "p03_exercicios": {
-   "cpy": "ecras=55 textos=481 fora=0 teclas=42/42 pico=0 ok",
-   "mp": "ecras=55 textos=481 fora=0 teclas=42/42 pico=107856 ok"
+   "cpy": "ecras=55 textos=483 fora=0 teclas=42/42 pico=0 ok",
+   "mp": "ecras=55 textos=483 fora=0 teclas=42/42 pico=108784 ok"
   },
   "p04_pesquisa": {
    "cpy": "ecras=58 textos=588 fora=0 teclas=37/37 pico=0 ok",
-   "mp": "ecras=58 textos=588 fora=0 teclas=37/37 pico=174208 ok"
+   "mp": "ecras=58 textos=588 fora=0 teclas=37/37 pico=178320 ok"
   },
   "p05_tabela": {
    "cpy": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=0 ok",
-   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=142512 ok"
+   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=143184 ok"
   },
   "p06_definicoes": {
    "cpy": "ecras=48 textos=490 fora=0 teclas=35/35 pico=0 ok",
-   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=93280 ok"
+   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=93936 ok"
   },
   "p07_progresso": {
-   "cpy": "ecras=48 textos=506 fora=0 teclas=35/35 pico=0 ok",
-   "mp": "ecras=48 textos=506 fora=0 teclas=35/35 pico=122336 ok"
+   "cpy": "ecras=48 textos=508 fora=0 teclas=35/35 pico=0 ok",
+   "mp": "ecras=48 textos=508 fora=0 teclas=35/35 pico=123728 ok"
   },
   "p08_fis_calc": {
    "cpy": "ecras=59 textos=550 fora=0 teclas=46/46 pico=0 ok",
-   "mp": "ecras=59 textos=550 fora=0 teclas=46/46 pico=129712 ok"
+   "mp": "ecras=59 textos=550 fora=0 teclas=46/46 pico=130384 ok"
   },
   "p09_al_pilha": {
    "cpy": "ecras=87 textos=675 fora=0 teclas=72/72 pico=0 ok",
-   "mp": "ecras=87 textos=675 fora=0 teclas=72/72 pico=123824 ok"
+   "mp": "ecras=87 textos=675 fora=0 teclas=72/72 pico=124496 ok"
   },
   "p10_mat_pontos": {
-   "cpy": "ecras=49 textos=434 fora=0 teclas=34/34 pico=0 ok",
-   "mp": "ecras=49 textos=434 fora=0 teclas=34/34 pico=130272 ok"
+   "cpy": "ecras=49 textos=438 fora=0 teclas=34/34 pico=0 ok",
+   "mp": "ecras=49 textos=438 fora=0 teclas=34/34 pico=131120 ok"
   },
   "p11_mat_cidadania": {
-   "cpy": "ecras=51 textos=459 fora=0 teclas=36/36 pico=0 ok",
-   "mp": "ecras=51 textos=459 fora=0 teclas=36/36 pico=133088 ok"
+   "cpy": "ecras=50 textos=557 fora=0 teclas=37/37 pico=0 ok",
+   "mp": "ecras=50 textos=557 fora=0 teclas=37/37 pico=130112 ok"
   },
   "p12_mat_estatistica": {
-   "cpy": "ecras=56 textos=500 fora=0 teclas=40/40 pico=0 ok",
-   "mp": "ecras=56 textos=500 fora=0 teclas=40/40 pico=139776 ok"
+   "cpy": "ecras=56 textos=504 fora=0 teclas=40/40 pico=0 ok",
+   "mp": "ecras=56 textos=504 fora=0 teclas=40/40 pico=140496 ok"
   }
  },
  "residente": {
   "m1_app": 11552,
-  "m1_cat": 8160,
+  "m1_cat": 8320,
   "m1_cont": 2848,
   "m1_nucleo": 17952,
   "m1_plat": 9376,
   "m1_ui": 12112,
-  "total": 62000
+  "total": 62160
  },
- "residentes": 92138,
+ "residentes": 92284,
  "tamanhos": {
   "c_alf1": 6737,
   "c_alf2": 7353,
@@ -89,13 +86,13 @@
   "c_matv": 8685,
   "m1": 1196,
   "m1_app": 15101,
-  "m1_cat": 8357,
+  "m1_cat": 8503,
   "m1_cfg": 10266,
   "m1_cont": 5117,
   "m1_ex": 11916,
   "m1_idx": 28279,
   "m1_idx2": 1256,
-  "m1_idxm": 19407,
+  "m1_idxm": 21350,
   "m1_ini": 3451,
   "m1_nav": 4589,
   "m1_nucleo": 28371,
@@ -108,15 +105,16 @@
   "p_f1": 19001,
   "p_f2": 18017,
   "p_f3": 21575,
-  "p_m1": 28947,
+  "p_m1": 29025,
   "p_m2": 25082,
-  "p_m3": 21231,
-  "p_m4": 13995,
-  "p_m5": 17405,
+  "p_m3": 21289,
+  "p_m4": 14085,
+  "p_m5": 17450,
   "p_m6": 9790,
-  "p_m7": 18025,
+  "p_m7": 18053,
   "p_m8": 19832,
-  "p_m9": 14686,
+  "p_m9": 14742,
+  "p_mr": 14233,
   "p_q1": 22088,
   "p_q2": 22552,
   "p_q3": 13521,
@@ -140,6 +138,7 @@
   "x_m7": 2414,
   "x_m8": 2487,
   "x_m9": 2352,
+  "x_mr": 1865,
   "x_q1": 2999,
   "x_q2": 3554,
   "x_q3": 2867,
@@ -150,7 +149,7 @@
   "x_r8": 2132,
   "x_r9": 1537
  },
- "tempo": 7.8,
+ "tempo": 7.4,
  "testes": {
   "CPython": 275,
   "MicroPython": 275

@@ -1270,6 +1270,8 @@ T	4	13	255,255,255	Matemática A
 R	0	17	313	17	204,224,255
 T	4	30	0,51,153	 1
 T	25	30	0,0,0	Temas do 10.º ano
+T	4	47	0,51,153	 2
+T	25	47	0,0,0	Revisões do 3.º ciclo
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	15
@@ -1349,9 +1351,9 @@ T	4	149	0,0,0	  fórmula.
 T	4	166	0,0,0	- Fatorizar ax² + bx + c usando os zeros.
 T	4	183	0,0,0	Nível: núcleo · 10.º ano
 R	314	17	3	170	232,232,232
-R	314	17	3	106	100,100,100
+R	314	17	3	100	100,100,100
 R	0	187	318	25	232,232,232
-T	4	200	100,100,100	◂▸ página · 1-10 de 16 · enter: mais · esc
+T	4	200	100,100,100	◂▸ página · 1-10 de 17 · enter: mais · esc
 F	19
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
@@ -2577,6 +2579,8 @@ T	4	13	255,255,255	Matemática A
 R	0	17	313	17	204,224,255
 T	4	30	0,51,153	 1
 T	25	30	0,0,0	Temas do 10.º ano
+T	4	47	0,51,153	 2
+T	25	47	0,0,0	Revisões do 3.º ciclo
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	número ou enter: abrir · esc: voltar
 F	68

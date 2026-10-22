@@ -4,8 +4,8 @@ D = "@V 1\n\
 @T Trigonometria (revis\xe3o do 9.\xba ano e extens\xe3o)\n\
 @L m9a|Raz\xf5es trigonom\xe9tricas de um \xe2ngulo agudo|trigonometria seno cosseno tangente razoes\
  trigonometricas angulo agudo cateto oposto adjacente hipotenusa triangulo\
- retangulo|c_matr.tri|9|revis\xe3o||f1b:Trabalho de uma for\xe7a constante|AE Matem\xe1tica 9.\xba ano\
- (trigonometria); revis\xe3o para o 10.\xba ano\n\
+ retangulo|c_matr.tri|9|revis\xe3o|mrf:Teorema de Pit\xe1goras;mrg:Semelhan\xe7a de figuras|f1b:Trabalho de\
+ uma for\xe7a constante|AE Matem\xe1tica 9.\xba ano (trigonometria); revis\xe3o para o 10.\xba ano\n\
 @A\n\
 - Definir seno, cosseno e tangente de um \xe2ngulo agudo.\n\
 - Calcular raz\xf5es trigonom\xe9tricas num tri\xe2ngulo ret\xe2ngulo.\n\

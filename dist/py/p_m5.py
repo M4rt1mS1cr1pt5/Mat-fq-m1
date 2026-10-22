@@ -76,8 +76,8 @@ Determina o v\xe9rtice de f(x) = x\xb2 + 6x + 5.\n\
 h = -6 / (2 \xd7 1) = -3; k = f(-3) = 9 - 18 + 5 = -4.\n\
 V\xe9rtice: V(-3, -4).\n\
 @L m5b|Zeros e f\xf3rmula resolvente|zeros equacao do 2.o grau formula resolvente discriminante delta binomio\
- discriminante fatorizacao|c_matq.q2|10|n\xfacleo|m5a:A fun\xe7\xe3o quadr\xe1tica e o seu gr\xe1fico||AE Mat\
- A 10.\xba, Fun\xe7\xf5es: fun\xe7\xe3o quadr\xe1tica\n\
+ discriminante fatorizacao|c_matq.q2|10|n\xfacleo|m5a:A fun\xe7\xe3o quadr\xe1tica e o seu\
+ gr\xe1fico;mrd:Equa\xe7\xf5es do 1.\xba grau e sistemas||AE Mat A 10.\xba, Fun\xe7\xf5es: fun\xe7\xe3o quadr\xe1tica\n\
 @A\n\
 - Calcular o discriminante \u0394 = b\xb2 - 4ac.\n\
 - Relacionar o sinal de \u0394 com o n\xfamero de zeros.\n\

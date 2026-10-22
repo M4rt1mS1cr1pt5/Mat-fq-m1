@@ -1,9 +1,9 @@
 # m1_cat.py - M1TR4M: catalogo gerado pelo build (nao editar).
 # TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes
 # CALC: id|nome|disciplina|tema (as palavras-chave estao no indice da pesquisa)
-NLIC = 122
-NEX = 230
-NCART = 353
+NLIC = 130
+NEX = 239
+NCART = 377
 TEMAS = (
     "q1|F|q|Massa e tamanho dos \xe1tomos|p_q1|x_q1|5|0|10|0|18|0|c_fqat.qm c_fqat.mm c_fqat.ar c_fqat.fr c_comu.sci c_comu.sf c_comu.uni|q1a q1b q1c q1d q1e",
     "q2|F|q|Energia dos eletr\xf5es nos \xe1tomos|p_q2|x_q2|5|5|10|10|14|18|c_fqel.fot c_fqel.hid c_fqel.conf c_comu.sci c_comu.uni|q2a q2b q2c q2d q2e",
@@ -28,6 +28,7 @@ TEMAS = (
     "m7|M|t|Geometria anal\xedtica no plano e no espa\xe7o|p_m7|x_m7|6|104|10|199|18|299|c_matg.dist c_matg.reta c_matg.medz c_matg.circ c_matg.cond|m7a m7b m7c m7d m7e m7f",
     "m8|M|t|Vetores no plano e no espa\xe7o|p_m8|x_m8|7|110|11|209|21|317|c_matv.vet c_matv.retav c_matv.bar|m8a m8b m8c m8d m8e m8f m8g",
     "m9|M|t|Trigonometria (revis\xe3o do 9.\xba ano e extens\xe3o)|p_m9|x_m9|5|117|10|220|15|338|c_matr.tri c_matr.rad c_matr.res c_comu.sci|m9a m9b m9c m9d m9e",
+    "mr|M|r|Revis\xf5es do 3.\xba ciclo|p_mr|x_mr|8|122|9|230|24|353|c_matt.pit c_matt.sem c_comu.sci c_matq.q2|mra mrb mrc mrd mre mrf mrg mrh",
 )
 CALC = "c_alf1.plano|AL 1.1 Plano inclinado: Ec e dist\xe2ncia|F|af\n\
 c_alf1.ress|AL 1.2 Queda e ressalto de uma bola|F|af\n\

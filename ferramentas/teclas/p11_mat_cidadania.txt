@@ -3,8 +3,9 @@
 # votacao (todos os metodos), com os valores por defeito; sair.
 2
 1
-# temas: 1 = Modelos matematicos para a cidadania
+# temas: 1 = Modelos matematicos para a cidadania (10 temas: 1 e enter)
 1
+enter
 # 6 Calculadoras do tema: 2 = mandatos; 4 campos, o ultimo e o metodo
 6
 2

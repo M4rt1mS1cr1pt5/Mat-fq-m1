@@ -3,8 +3,9 @@ D = "@V 1\n\
 @N 4\n\
 @T Fun\xe7\xf5es: generalidades, fun\xe7\xe3o afim e condi\xe7\xf5es\n\
 @L m4a|Conceito de fun\xe7\xe3o e formas de a representar|funcao dominio conjunto de chegada contradominio\
- objeto imagem variavel tabela grafico expressao analitica correspondencia|c_matf.fx|10|n\xfacleo|||AE Mat A\
- 10.\xba, Fun\xe7\xf5es; aulas de 20/10 (conceito de fun\xe7\xe3o)\n\
+ objeto imagem variavel tabela grafico expressao analitica\
+ correspondencia|c_matf.fx|10|n\xfacleo|mrc:Proporcionalidade direta e inversa||AE Mat A 10.\xba,\
+ Fun\xe7\xf5es; aulas de 20/10 (conceito de fun\xe7\xe3o)\n\
 @A\n\
 - Definir fun\xe7\xe3o, dom\xednio, conjunto de chegada e contradom\xednio.\n\
 - Distinguir objeto de imagem.\n\
@@ -171,8 +172,9 @@ Uma reta passa em (0, 4) e tem declive -1/2. Qual \xe9 o seu zero?\n\
 @R\n\
 -x/2 + 4 = 0 \u21d4 x = 8.\n\
 @L m4d|Condi\xe7\xf5es, conjun\xe7\xe3o, disjun\xe7\xe3o e intervalos|logica conjuntos condicao conjuncao\
- disjuncao e ou intervalo conjunto-solucao uniao intersecao reta real aberto fechado||10|n\xfacleo|||AE Mat A\
- 10.\xba (l\xf3gica e conjuntos integrados nos temas)\n\
+ disjuncao e ou intervalo conjunto-solucao uniao intersecao reta real aberto\
+ fechado||10|n\xfacleo|mre:Intervalos e inequa\xe7\xf5es do 1.\xba grau||AE Mat A 10.\xba (l\xf3gica e\
+ conjuntos integrados nos temas)\n\
 @A\n\
 - Escrever conjuntos de n\xfameros reais como intervalos.\n\
 - Interpretar a conjun\xe7\xe3o (\u2227) e a disjun\xe7\xe3o (\u2228).\n\

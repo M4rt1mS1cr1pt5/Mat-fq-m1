@@ -1,7 +1,7 @@
 # m1_idxm.py - M1TR4M: indice da pesquisa (Mat, parte 1 de 1) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 329\n\
+@N 365\n\
 L|Elei\xe7\xf5es: maioria simples e maioria absoluta|eleicao votacao tabela preferencias relativa votantes empate|m1a\n\
 L|M\xe9todo de Borda|pontos ordenacao preferencias pontuacao ranking eleicao concurso|m1b\n\
 L|Segunda volta e elimina\xe7\xe3o sucessiva|dois mais votados transferencia votos analise sistemas|m1c\n\
@@ -306,6 +306,43 @@ X|Qual \xe9 o valor exato de cos|cosseno|m9:6\n\
 X|Quantos graus tem \u03c0/6 rad?||m9:7\n\
 X|Num tri\xe2ngulo, b = 5, c = 8 e||m9:8\n\
 X|Com A = 90\xb0, a lei dos||m9:9\n\
+L|N\xfameros: fra\xe7\xf5es, pot\xeancias e nota\xe7\xe3o cient\xedfica|fracoes operacoes regras expoente\
+ negativo raiz quadrada|mra\n\
+L|Percentagens, aumentos e descontos|percentagem aumento desconto iva variacao percentual fator|mrb\n\
+L|Proporcionalidade direta e inversa|constante y = kx k/x hiperbole regra|mrc\n\
+L|Equa\xe7\xf5es do 1.\xba grau e sistemas|equacao resolver solucao denominadores sistema duas metodo|mrd\n\
+L|Intervalos e inequa\xe7\xf5es do 1.\xba grau|numeros reais inequacao conjunto-solucao inverter sinal reta|mre\n\
+L|Teorema de Pit\xe1goras|hipotenusa catetos triangulo retangulo reciproco diagonal ternos|mrf\n\
+L|Semelhan\xe7a de figuras|razao ampliacao reducao criterios aa lal lll|mrg\n\
+L|\xc1reas e volumes|circulo perimetro prisma cilindro cone piramide esfera|mrh\n\
+F|Produto de pot\xeancias com a mesma base||mr:0\n\
+F|Nota\xe7\xe3o cient\xedfica||mr:1\n\
+F|Aumento percentual||mr:2\n\
+F|Varia\xe7\xe3o percentual||mr:3\n\
+F|Proporcionalidade direta||mr:4\n\
+F|Proporcionalidade inversa||mr:5\n\
+F|Equa\xe7\xe3o do 1.\xba grau||mr:6\n\
+F|M\xe9todo de substitui\xe7\xe3o||mr:7\n\
+F|Inverter o sinal||mr:8\n\
+F|Intervalo fechado||mr:9\n\
+F|Teorema de Pit\xe1goras||mr:10\n\
+F|Diagonal de um paralelep\xedpedo||mr:11\n\
+F|Raz\xe3o de semelhan\xe7a||mr:12\n\
+F|\xc1reas e volumes||mr:13\n\
+F|Volume do cilindro||mr:14\n\
+F|Volume da esfera||mr:15\n\
+E|Desconto em percentagem|energia mecanica|mr:0\n\
+E|Uma vara dentro de uma caixa||mr:1\n\
+E|Um sistema num problema||mr:2\n\
+X|Quanto vale 2\u207b\xb3, em forma|energia mecanica|mr:0\n\
+X|Quanto \xe9 15% de 80?||mr:1\n\
+X|Um pre\xe7o de 50 \u20ac sobe 20% e||mr:2\n\
+X|Se x \xd7 y = 36 em todos os|energia mecanica|mr:3\n\
+X|Resolve 5x + 3 = 2x - 9.||mr:4\n\
+X|Qual \xe9 o conjunto-solu\xe7\xe3o de||mr:5\n\
+X|Os catetos de um tri\xe2ngulo||mr:6\n\
+X|Duas figuras semelhantes t\xeam||mr:7\n\
+X|Qual \xe9 o volume, em m\xb3, de um|energia mecanica|mr:8\n\
 C|Constantes e dados|avogadro planck velocidade luz volume molar na vm|c_comd.cte\n\
 C|Dados experimentais|media incerteza absoluta relativa erro percentual|c_comd.exp\n\
 C|Regress\xe3o linear e gr\xe1fico|reta declive ordenada coeficiente correlacao interpolar|c_comd.reg\n\

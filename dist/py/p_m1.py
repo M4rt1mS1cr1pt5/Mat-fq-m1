@@ -304,8 +304,8 @@ No m\xe9todo de Sainte-Lagu\xeb, por que n\xfamero se divide para o 4.\xba quoci
 Pelo 4.\xba n\xfamero \xedmpar: 7.\n\
 @L m1g|Sal\xe1rio: bruto, l\xedquido e valor por hora|salario bruto liquido seguranca social 11% entidade\
  empregadora 23,75% retencao na fonte 14 meses subsidios valor por hora horas extra trabalho\
- suplementar|c_matd.sal|10|n\xfacleo|||AE Mat A 10.\xba, Modelos matem\xe1ticos para a cidadania (finan\xe7as\
- pessoais); C\xf3digo do Trabalho, art. 268.\xba e 271.\xba\n\
+ suplementar|c_matd.sal|10|n\xfacleo|mrb:Percentagens, aumentos e descontos||AE Mat A 10.\xba, Modelos\
+ matem\xe1ticos para a cidadania (finan\xe7as pessoais); C\xf3digo do Trabalho, art. 268.\xba e 271.\xba\n\
 @A\n\
 - Calcular o sal\xe1rio l\xedquido a partir do bruto.\n\
 - Calcular o sal\xe1rio anual e o valor da hora.\n\
@@ -421,7 +421,8 @@ Com a tabela de 2026, qual \xe9 a taxa marginal de um rendimento colet\xe1vel de
 34,9%: 30 000 \u20ac est\xe1 no 6.\xba escal\xe3o (de 29 397 \u20ac a 43 090 \u20ac).\n\
 @L m1i|Juro simples e juro composto|juro simples juro composto capital taxa de juro capitalizacao mensal\
  trimestral deposito a prazo taxa anual efetiva poupanca imposto 28% regra dos\
- 72|c_matd.jur|10|n\xfacleo|||AE Mat A 10.\xba, Modelos matem\xe1ticos para a cidadania (poupan\xe7a e cr\xe9dito)\n\
+ 72|c_matd.jur|10|n\xfacleo|mrb:Percentagens, aumentos e descontos||AE Mat A 10.\xba, Modelos matem\xe1ticos\
+ para a cidadania (poupan\xe7a e cr\xe9dito)\n\
 @A\n\
 - Calcular juros simples.\n\
 - Calcular juros compostos com v\xe1rios per\xedodos de capitaliza\xe7\xe3o.\n\

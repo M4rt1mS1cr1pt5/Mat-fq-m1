@@ -11,6 +11,7 @@ calc: c_matr.tri
 ano: 9
 nivel: revisão
 liga: f1b
+pre: mrf mrg
 fonte: AE Matemática 9.º ano (trigonometria); revisão para o 10.º ano
 #A
 - Definir seno, cosseno e tangente de um ângulo agudo.

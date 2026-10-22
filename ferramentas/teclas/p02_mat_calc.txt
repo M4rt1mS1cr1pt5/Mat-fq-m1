@@ -2,8 +2,8 @@
 # 2.o grau (com grafico) e inequacao do 2.o grau; sair.
 2
 1
-# temas de Matematica por ordem (m1, m2, m3...): a Funcao quadratica e a
-# 5.a
+# temas de Matematica por ordem (m1, m2, m3..., mr): a Funcao quadratica
+# e a 5.a (com 10 temas, so o 1 espera por enter)
 5
 # licoes: a 2.a
 1

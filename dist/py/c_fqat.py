@@ -233,8 +233,8 @@ def _qm(v):
 
 def ar():
     return ('Massa at\u00f3mica relativa m\u00e9dia',
-            [N.fld('Massas isot\u00f3picas relativas (;)', '', '', 'l'),
-             N.fld('Abund\u00e2ncias em % (;)', '', '', 'l')], _ar)
+            [N.fld('Massas isot\u00f3picas relativas', '', '', 'l'),
+             N.fld('Abund\u00e2ncias em %', '', '', 'l')], _ar)
 
 
 def _ar(v):
@@ -264,8 +264,8 @@ def fr():
     return ('Fra\u00e7\u00e3o molar e m\u00e1ssica',
             [N.fld('Tipo', '', '', 'c', ['fra\u00e7\u00e3o molar (n em mol)',
                                          'fra\u00e7\u00e3o m\u00e1ssica (m em g)']),
-             N.fld('Quantidades ou massas (;)', '', '', 'l'),
-             N.fld('Nomes dos componentes (;, opcional)', '', '', 't')], _fr)
+             N.fld('Quantidades ou massas', '', '', 'l'),
+             N.fld('Nomes dos componentes (opcional)', '', '', 't')], _fr)
 
 
 def _fr(v):
@@ -275,7 +275,7 @@ def _fr(v):
         N.need(x[0] >= 0, 'Os valores n\u00e3o podem ser negativos')
     tot = sum([x[0] for x in xs])
     N.need(tot > 0, 'O total \u00e9 zero')
-    ns = [x.strip() for x in nm.split(';')] if nm else []
+    ns = [x for x in nm.replace(';', ' ').split(' ') if x] if nm else []
     sy = 'x' if tp == 0 else 'w'
     o = ['= ' + sy + '(i) = ' + ('n(i) / n total' if tp == 0 else
                                     'm(i) / m total'),

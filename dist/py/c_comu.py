@@ -59,7 +59,7 @@ def sf():
             [N.fld('Opera\u00e7\u00e3o', '', '', 'c',
                    ['contar e arredondar', 'soma', 'subtra\u00e7\u00e3o (1.\u00ba - restantes)',
                     'multiplica\u00e7\u00e3o', 'divis\u00e3o (1.\u00ba / restantes)']),
-             N.fld('N\u00fameros (separa com ;)', '', '0,0250; 12,3', 't'),
+             N.fld('N\u00fameros (separa com espa\u00e7os)', '', '0,0250 12,3', 't'),
              N.fld('Arredondar a (alg. sig., opcional)', '', '', 'o')], _sf)
 
 

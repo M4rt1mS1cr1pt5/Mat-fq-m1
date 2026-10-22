@@ -469,7 +469,7 @@ def run(f0=-1):
         except KeyboardInterrupt:
             break
         except MemoryError:
-            for sl in ('p', 'c', 'f'):
+            for sl in list(C.SL):
                 C.drop(sl)
             P.collect()
             U.msg('Mem\u00f3ria', 'Faltou mem\u00f3ria em: ' + S['where'] +

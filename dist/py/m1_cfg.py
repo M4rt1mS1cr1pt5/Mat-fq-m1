@@ -150,7 +150,7 @@ AJ = (('Teclas e navega\u00e7\u00e3o',
        'ou \u221a, sin cos tan (tamb\u00e9m sen e tg).\n'
        'Multiplica\u00e7\u00e3o impl\u00edcita: 2x e 3(x+1).\n'
        'ans \u00e9 o \u00faltimo resultado de uma calculadora.\n'
-       'Listas de dados: separa os valores com ; (2,5; 3,1; 4).'),
+       'Listas de dados: separa os valores com espa\u00e7os (2,5 3,1 4); com ' '\u00d7 10^n, usa ; entre os valores.'),
       ('Unidades e f\u00f3rmulas qu\u00edmicas',
        'Nas calculadoras, escolhe a unidade de cada campo com \u25c2\u25b8 '
        '(quando h\u00e1 mais do que uma).\n'

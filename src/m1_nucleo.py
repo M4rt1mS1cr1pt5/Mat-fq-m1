@@ -947,7 +947,7 @@ def rdf(fs):
             elif k == 'l':
                 vs = [num(x) for x in lst(f[2])]
                 if not vs:
-                    err('Escreve os valores separados por ; (2,5; 3,1)')
+                    err('Escreve os valores separados por espa\u00e7os (2,5 3,1)')
                 out.append(vs)
             elif k == 'c':
                 out.append(f[3])

@@ -78,7 +78,7 @@ def cte():
 
 def exp():
     return ('Dados experimentais',
-            [N.fld('Valores medidos (separa com ;)', '', '', 't'),
+            [N.fld('Valores medidos (separa com espa\u00e7os)', '', '', 't'),
              N.fld('Unidade (opcional)', '', '', 't'),
              N.fld('Incerteza de leitura (opcional)', '', '', 'o'),
              N.fld('Valor de refer\u00eancia (opcional)', '', '', 'o')], _exp)
@@ -96,7 +96,7 @@ def ndec(s):
 def _exp(v):
     txt, un, il, ref = v
     ps = N.lst(txt)
-    N.need(len(ps) >= 1, 'Escreve os valores medidos separados por ;')
+    N.need(len(ps) >= 1, 'Escreve os valores medidos separados por espa\u00e7os')
     xs = [N.num(p)[0] for p in ps]
     n = len(xs)
     m = sum(xs) / n
@@ -141,8 +141,8 @@ def _exp(v):
 
 def reg():
     return ('Regress\u00e3o linear',
-            [N.fld('Valores de x (separa com ;)', '', '', 'l'),
-             N.fld('Valores de y (separa com ;)', '', '', 'l'),
+            [N.fld('Valores de x (separa com espa\u00e7os)', '', '', 'l'),
+             N.fld('Valores de y (separa com espa\u00e7os)', '', '', 'l'),
              N.fld('Unidade de x (opcional)', '', '', 't'),
              N.fld('Unidade de y (opcional)', '', '', 't'),
              N.fld('Interpolar em x = (opcional)', '', '', 'o')], _reg)

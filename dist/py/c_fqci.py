@@ -137,8 +137,8 @@ def assoc():
     return ('Resist\u00eancias em s\u00e9rie e em paralelo',
             [N.fld('Associa\u00e7\u00e3o', '', '', 'c', ['em s\u00e9rie',
                                                      'em paralelo']),
-             N.fld('Resist\u00eancias em \u03a9 (separa com ;)', '',
-                   '10; 20; 30', 'l'),
+             N.fld('Resist\u00eancias em \u03a9 (separa com espa\u00e7os)', '',
+                   '10 20 30', 'l'),
              N.fld('Diferen\u00e7a de potencial total U (opcional)', US, '',
                    'o')], _assoc)
 

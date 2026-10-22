@@ -44,7 +44,7 @@ def ensaios(xs):
 def gota():
     return ('AL 1.1 Gota de \u00e1gua',
             [N.fld('Massa de n gotas em cada ensaio (g)', '',
-                   '0,99; 1,02; 1,01', 'l'),
+                   '0,99 1,02 1,01', 'l'),
              N.fld('N\u00famero de gotas n em cada ensaio', '', '20'),
              N.fld('Incerteza de leitura da balan\u00e7a (g)', '', '0,01')],
             _gota)

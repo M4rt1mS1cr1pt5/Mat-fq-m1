@@ -10,23 +10,23 @@
   },
   "p02_mat_calc": {
    "cpy": "ecras=71 textos=604 fora=0 teclas=54/54 pico=0 ok",
-   "mp": "ecras=71 textos=604 fora=0 teclas=54/54 pico=114736 ok"
+   "mp": "ecras=71 textos=604 fora=0 teclas=54/54 pico=114672 ok"
   },
   "p03_exercicios": {
    "cpy": "ecras=55 textos=465 fora=0 teclas=42/42 pico=0 ok",
-   "mp": "ecras=55 textos=465 fora=0 teclas=42/42 pico=101008 ok"
+   "mp": "ecras=55 textos=465 fora=0 teclas=42/42 pico=101024 ok"
   },
   "p04_pesquisa": {
    "cpy": "ecras=56 textos=558 fora=0 teclas=37/37 pico=0 ok",
-   "mp": "ecras=56 textos=558 fora=0 teclas=37/37 pico=132208 ok"
+   "mp": "ecras=56 textos=558 fora=0 teclas=37/37 pico=132240 ok"
   },
   "p05_tabela": {
    "cpy": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=0 ok",
-   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=136768 ok"
+   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=136736 ok"
   },
   "p06_definicoes": {
    "cpy": "ecras=48 textos=490 fora=0 teclas=35/35 pico=0 ok",
-   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=87344 ok"
+   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=87360 ok"
   },
   "p07_progresso": {
    "cpy": "ecras=48 textos=528 fora=0 teclas=35/35 pico=0 ok",
@@ -34,28 +34,32 @@
   },
   "p08_fis_calc": {
    "cpy": "ecras=59 textos=546 fora=0 teclas=46/46 pico=0 ok",
-   "mp": "ecras=59 textos=546 fora=0 teclas=46/46 pico=122752 ok"
+   "mp": "ecras=59 textos=546 fora=0 teclas=46/46 pico=122944 ok"
+  },
+  "p09_al_pilha": {
+   "cpy": "ecras=87 textos=671 fora=0 teclas=72/72 pico=0 ok",
+   "mp": "ecras=87 textos=671 fora=0 teclas=72/72 pico=117856 ok"
   }
  },
  "residente": {
   "m1_app": 11712,
   "m1_cat": 4944,
   "m1_cont": 2848,
-  "m1_nucleo": 17872,
+  "m1_nucleo": 17888,
   "m1_plat": 9360,
   "m1_ui": 11520,
-  "total": 58256
+  "total": 58272
  },
- "residentes": 87490,
+ "residentes": 87495,
  "tamanhos": {
   "c_alf1": 6737,
   "c_alf2": 7353,
-  "c_alq1": 6246,
+  "c_alq1": 6244,
   "c_alq2": 5011,
-  "c_comd": 10004,
-  "c_comu": 8321,
+  "c_comd": 10048,
+  "c_comu": 8331,
   "c_fqat": 11951,
-  "c_fqci": 12261,
+  "c_fqci": 12270,
   "c_fqel": 9546,
   "c_fqen": 14866,
   "c_fqlg": 12630,
@@ -63,16 +67,16 @@
   "c_fqte": 14625,
   "c_matq": 14376,
   "m1": 1196,
-  "m1_app": 15106,
+  "m1_app": 15101,
   "m1_cat": 5198,
-  "m1_cfg": 10213,
+  "m1_cfg": 10266,
   "m1_cont": 5117,
   "m1_ex": 11916,
   "m1_idx": 26160,
   "m1_idxm": 2509,
   "m1_ini": 3451,
   "m1_nav": 4589,
-  "m1_nucleo": 28181,
+  "m1_nucleo": 28191,
   "m1_pesq": 5418,
   "m1_plat": 11726,
   "m1_tp": 14779,
@@ -102,7 +106,7 @@
   "x_q5": 2732,
   "x_q6": 2998
  },
- "tempo": 3.2,
+ "tempo": 3.3,
  "testes": {
   "CPython": 189,
   "MicroPython": 189

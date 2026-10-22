@@ -1,0 +1,81 @@
+# Percurso 9: FQ > Atividades laboratoriais > AL de Fisica: assistente
+# da AL 2.1 (pilha) com listas separadas por espacos, passos e
+# grafico; licao af21 (pagina F); sair.
+1
+enter
+# grupos de FQ: 3 = atividades laboratoriais; temas: 2 = AL de Fisica
+3
+2
+# 6 Calculadoras do tema: 3 = pilha
+6
+3
+# correntes em mA
+5
+0
+space
+1
+0
+0
+space
+1
+5
+0
+space
+2
+0
+0
+space
+2
+5
+0
+enter
+# tensoes em V
+4
+,
+4
+0
+space
+4
+,
+3
+2
+space
+4
+,
+2
+6
+space
+4
+,
+1
+8
+space
+4
+,
+1
+1
+enter
+# resultado: 1 passos, 5 grafico (+ zoom), esc
+1
+esc
+5
++
+esc
+esc
+esc
+# 1 Licoes: 3.a (AL 2.1), paginas A a F
+1
+3
+right
+right
+right
+right
+right
+esc
+esc
+esc
+esc
+esc
+1
+3
+enter

@@ -1,7 +1,7 @@
 # m1_idx.py - M1TR4M: indice da pesquisa (FQ, parte 1 de 1) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 380\n\
+@N 416\n\
 L|Constitui\xe7\xe3o do \xe1tomo e is\xf3topos|nucleo protao neutrao eletrao numero atomico massa|q1a\n\
 L|Tamanho dos \xe1tomos: ordens de grandeza e escalas|ordem notacao cientifica escala nanometro picometro raio|q1b\n\
 L|Massa at\xf3mica relativa|unidade media isotopos abundancia molecular mr ar|q1c\n\
@@ -228,6 +228,39 @@ X|Um aparelho de 1500 W||f2:6\n\
 X|Uma resist\xeancia de 50 \u03a9 \xe9||f2:7\n\
 X|Para medir a diferen\xe7a de||f2:8\n\
 X|Qual \xe9 a resist\xeancia (em \u03a9)||f2:9\n\
+L|Sistema, energia interna e temperatura|sistema fronteira vizinhanca isolado fechado aberto kelvin|f3a\n\
+L|Calor, trabalho e radia\xe7\xe3o; irradi\xe2ncia e pain\xe9is fotovoltaicos|calor radiacao transferencia\
+ energia painel fotovoltaico coletor|f3b\n\
+L|Condu\xe7\xe3o e convec\xe7\xe3o|condutividade termica isolamento termico bom condutor isolador|f3c\n\
+L|Capacidade t\xe9rmica m\xe1ssica e mudan\xe7as de estado|variacao entalpia fusao vaporizacao mudanca\
+ balanco energetico|f3d\n\
+L|Primeira e Segunda Leis da Termodin\xe2mica e rendimento|lei energia interna convencao sinais degradacao\
+ maquina eficiencia|f3e\n\
+L|Leis de Stefan-Boltzmann e de Wien (extens\xe3o)|lei deslocamento corpo negro emissividade comprimento onda|f3f\n\
+F|Kelvin e Celsius||f3:0\n\
+F|Irradi\xe2ncia||f3:1\n\
+F|Rendimento de um painel fotovoltaico|eficiencia|f3:2\n\
+F|Condu\xe7\xe3o t\xe9rmica||f3:3\n\
+F|Capacidade t\xe9rmica m\xe1ssica||f3:4\n\
+F|Mudan\xe7a de estado||f3:5\n\
+F|Temperatura de equil\xedbrio||f3:6\n\
+F|Primeira Lei da Termodin\xe2mica||f3:7\n\
+F|Rendimento de uma m\xe1quina t\xe9rmica|eficiencia|f3:8\n\
+F|Lei de Stefan-Boltzmann (extens\xe3o)||f3:9\n\
+F|Lei de Wien (extens\xe3o)||f3:10\n\
+E|Aquecer \xe1gua||f3:0\n\
+E|Quanto tempo demora uma chaleira?||f3:1\n\
+E|Medir a entalpia de fus\xe3o do gelo||f3:2\n\
+X|Converte 25 \xb0C para kelvin.||f3:0\n\
+X|Um sistema fechado:||f3:1\n\
+X|Que energia (em J) recebe||f3:2\n\
+X|Que energia (em J) \xe9 precisa||f3:3\n\
+X|Durante a ebuli\xe7\xe3o da \xe1gua||f3:4\n\
+X|Um sistema recebe 300 J por||f3:5\n\
+X|A convec\xe7\xe3o \xe9 um processo de||f3:6\n\
+X|Um painel de 1,5 m\xb2 recebe Er||f3:7\n\
+X|Misturam-se 0,10 kg de \xe1gua a||f3:8\n\
+X|Uma placa isoladora (k =||f3:9\n\
 C|Constantes e dados|avogadro planck velocidade luz volume molar na vm|c_comd.cte\n\
 C|Dados experimentais|media incerteza absoluta relativa erro percentual|c_comd.exp\n\
 C|Regress\xe3o linear e gr\xe1fico|reta declive ordenada coeficiente correlacao interpolar|c_comd.reg\n\
@@ -265,6 +298,12 @@ C|Massa de soluto a pesar|preparar solucao balao volumetrico concentracao preten
 C|Percentagem e partes por milh\xe3o|massa volume ppm composicao|c_fqso.per\n\
 C|Dilui\xe7\xe3o de solu\xe7\xf5es|fator ci vi cf vf solucao|c_fqso.dil\n\
 C|Gases (PTN)|volume molar massa volumica densidade ptn vm|c_fqso.gas\n\
+C|Capacidade t\xe9rmica m\xe1ssica (Q = m c \u0394T)|calor energia aquecimento variacao temperatura agua|c_fqte.cal\n\
+C|Mudan\xe7a de estado (Q = m \u0394H)|fusao vaporizacao entalpia gelo agua ebulicao|c_fqte.est\n\
+C|Temperatura de equil\xedbrio de uma mistura|balanco energetico sistema isolado gelo|c_fqte.eq\n\
+C|Condu\xe7\xe3o t\xe9rmica (P = k A \u0394T / \u2113)|condutividade isolamento parede janela fluxo|c_fqte.cond\n\
+C|Primeira Lei da Termodin\xe2mica|energia interna trabalho calor radiacao sistema|c_fqte.pl\n\
+C|Painel fotovoltaico e irradi\xe2ncia|radiacao potencia eletrica rendimento sol eficiencia|c_fqte.pv\n\
 T|Hidrog\xe9nio|h 1|1\n\
 T|H\xe9lio|he 2|2\n\
 T|L\xedtio|li 3|3\n\

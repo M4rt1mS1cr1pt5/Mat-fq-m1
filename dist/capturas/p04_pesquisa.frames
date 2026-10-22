@@ -1288,24 +1288,24 @@ R	16	17	284	17	204,224,255
 T	18	30	0,0,0	m
 R	25	19	1	13	0,0,0
 R	0	34	313	17	204,224,255
-T	4	47	0,51,153	T
-T	18	47	0,0,0	Magnésio
-T	4	64	0,51,153	T
-T	18	64	0,0,0	Manganês
-T	4	81	0,51,153	L
-T	18	81	0,0,0	Massa atómica relativa
-T	4	98	0,51,153	E
-T	18	98	0,0,0	Massa atómica relativa do cobre
+T	4	47	0,51,153	L
+T	18	47	0,0,0	Massa atómica relativa
+T	4	64	0,51,153	E
+T	18	64	0,0,0	Massa atómica relativa do cobre
+T	4	81	0,51,153	F
+T	18	81	0,0,0	Massa atómica relativa média
+T	4	98	0,51,153	C
+T	18	98	0,0,0	Massa atómica relativa média
 T	4	115	0,51,153	F
-T	18	115	0,0,0	Massa atómica relativa média
+T	18	115	0,0,0	Massa molar
 T	4	132	0,51,153	C
-T	18	132	0,0,0	Massa atómica relativa média
-T	4	149	0,51,153	C
-T	18	149	0,0,0	Massa de soluto a pesar
+T	18	132	0,0,0	Massa molar
+T	4	149	0,51,153	F
+T	18	149	0,0,0	Massa molecular relativa
 T	4	166	0,51,153	F
-T	18	166	0,0,0	Massa molar
-T	4	183	0,51,153	C
-T	18	183	0,0,0	Massa molar
+T	18	166	0,0,0	Massa volúmica de um gás
+T	4	183	0,51,153	E
+T	18	183	0,0,0	Medir a entalpia de fusão do gelo
 R	314	34	3	153	232,232,232
 R	314	34	3	22	100,100,100
 R	0	187	318	25	232,232,232
@@ -1345,7 +1345,7 @@ F	19
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	298	13	255,255,255	34
+T	298	13	255,255,255	37
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	mas
 R	39	19	1	13	0,0,0
@@ -1369,14 +1369,14 @@ T	18	166	0,0,0	Massa molecular relativa
 T	4	183	0,51,153	K
 T	18	183	0,0,0	Massa volúmica da água (4 °C)
 R	314	34	3	153	232,232,232
-R	314	34	3	40	100,100,100
+R	314	34	3	37	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	20
 R	0	0	318	212	255,255,255
 R	0	0	318	17	0,51,153
 T	4	13	255,255,255	Pesquisa · tudo
-T	298	13	255,255,255	34
+T	298	13	255,255,255	37
 R	16	17	284	17	204,224,255
 T	18	30	0,0,0	mass
 R	46	19	1	13	0,0,0
@@ -1400,7 +1400,7 @@ T	18	166	0,0,0	Massa molecular relativa
 T	4	183	0,51,153	K
 T	18	183	0,0,0	Massa volúmica da água (4 °C)
 R	314	34	3	153	232,232,232
-R	314	34	3	40	100,100,100
+R	314	34	3	37	100,100,100
 R	0	187	318	25	232,232,232
 T	4	200	100,100,100	enter: abrir · tab: filtro · esc: voltar
 F	21

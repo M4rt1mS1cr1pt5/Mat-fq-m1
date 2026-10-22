@@ -2,6 +2,7 @@
 import m1_nucleo as N
 import c_fqen
 import c_fqci
+import c_fqte
 from base import calc, erro, tem, perto
 
 
@@ -287,3 +288,134 @@ def t_pot_invalido():
     assert 'dois' in erro(calc, c_fqci, 'pot', ['100', '', '', ''])
     assert 'dois' in erro(calc, c_fqci, 'pot', ['100', '10', '2', ''])
     assert 'tempo' in erro(calc, c_fqci, 'pot', ['100', '10', '', '', '0'])
+
+# ------------------------------------------------------------ c_fqte
+
+
+def t_cal_energia():
+    # 0,500 kg de agua de 20 para 80 graus
+    r = calc(c_fqte, 'cal', [1, '', '0,500', '', '20', '80'])
+    tem(r[0], 'c(água) = 4,18 × 10³', 'ΔT = 60 K', 'Q ≈ 1,3 × 10⁵ J', 'recebe')
+    perto(r[2], 0.5 * 4180 * 60)
+    r = calc(c_fqte, 'cal', [1, '', '0,500', '', '20,0', '80,0'])
+    tem(r[0], 'Q ≈ 1,25 × 10⁵ J')
+
+
+def t_cal_incognitas():
+    r = calc(c_fqte, 'cal', [0, '2,1e4', '0,500', '', '20', '30'])
+    tem(r[0], 'c = 4,2 × 10³')
+    r = calc(c_fqte, 'cal', [3, '4,5e3', '', '', '20', '70'])
+    tem(r[0], 'c(alumínio) = 9,0 × 10²', 'm = 0,10 kg')
+    r = calc(c_fqte, 'cal', [1, '-8,36e3', '0,200', '', '30', ''])
+    tem(r[0], 'θf = 20 °C')
+    r = calc(c_fqte, 'cal', [1, '2,09e4', '0,500', '', '', '30,0'])
+    perto(r[2], 20.0)
+
+
+def t_cal_kelvin():
+    # temperaturas em kelvin: a diferenca e a mesma
+    r = calc(c_fqte, 'cal', [1, '', '0,500', '', '293', '353'], {4: 1, 5: 1})
+    perto(r[2], 0.5 * 4180 * 60, 1e-6)
+
+
+def t_cal_invalido():
+    assert 'deixa c vazio' in erro(calc, c_fqte, 'cal',
+                                   [1, '', '1', '4000', '20', '30'])
+    assert 'ΔT = 0' in erro(calc, c_fqte, 'cal', [0, '2e4', '0,5', '', '20', '20'])
+    assert 'só o campo' in erro(calc, c_fqte, 'cal', [0, '', '2', '', '20', '25'])
+    assert 'incoerentes' in erro(calc, c_fqte, 'cal',
+                                 [1, '-100', '', '', '20', '30'])
+
+
+def t_est_normal():
+    r = calc(c_fqte, 'est', [0, '', '0,100', ''])
+    tem(r[0], 'ΔH = 3,34 × 10⁵ J kg⁻¹ (a 0 °C)', 'Q = 3,34 × 10⁴ J',
+        'não varia')
+    r = calc(c_fqte, 'est', [1, '', '', '4,52e5'])
+    tem(r[0], 'm = 0,200 kg')
+    perto(r[2], 0.2)
+
+
+def t_est_escrevo():
+    r = calc(c_fqte, 'est', [2, '', '0,050', '1,7e4'])
+    tem(r[0], 'ΔH = 3,4 × 10⁵ J kg⁻¹')
+    assert 'deixa ΔH vazio' in erro(calc, c_fqte, 'est', [0, '1e4', '', '2'])
+    assert 'massa' in erro(calc, c_fqte, 'est', [0, '', '-1', ''])
+
+
+def t_eq_sem_mudanca():
+    r = calc(c_fqte, 'eq', ['0,200', '4,18e3', '60', 0, '0,100', '4,18e3',
+                            '15'])
+    tem(r[0], 'θe = 45 °C', '1,3 × 10⁴ J')
+    perto(r[2], 45.0)
+    r = calc(c_fqte, 'eq', ['0,200', '4,18e3', '80', 0, '0,300', '9,0e2',
+                            '20'])
+    perto(r[2], (0.2 * 4180 * 80 + 0.3 * 900 * 20) / (0.2 * 4180 + 0.3 * 900))
+
+
+def t_eq_gelo():
+    r = calc(c_fqte, 'eq', ['0,300', '4,18e3', '40', 1, '0,050', '4,18e3', '0'])
+    tem(r[0], 'θe ≈ 23 °C', 'fundir o gelo: 1,7 × 10⁴ J')
+    perto(r[2], (0.3 * 4180 * 40 - 0.05 * 3.34e5) / (0.3 * 4180 + 0.05 * 4180))
+    r = calc(c_fqte, 'eq', ['0,100', '4,18e3', '20', 1, '0,100', '4,18e3', '0'])
+    tem(r[0], 'Nem todo o gelo funde', 'Funde ≈ 0,025 kg', 'Sobra 0,075 kg')
+    assert r[2] == 0.0
+
+
+def t_eq_invalido():
+    assert 'massa do corpo 2' in erro(calc, c_fqte, 'eq',
+                                     ['1', '4180', '20', 0, '0', '4180', '10'])
+    assert 'acima de 0' in erro(calc, c_fqte, 'eq',
+                                ['1', '4180', '-5', 1, '1', '4180', '0'])
+
+
+def t_cond_potencia():
+    # vidro: k = 0,80; 1,5 m2; 20 K; 4,0 mm
+    r = calc(c_fqte, 'cond', ['0,80', '1,5', '20', '4,0', ''], {3: 2})
+    tem(r[0], '0,0040 m', 'P = 6,0 × 10³ W')
+    perto(r[2], 6000.0)
+
+
+def t_cond_incognitas():
+    r = calc(c_fqte, 'cond', ['', '2,0', '15', '0,10', '24'])
+    tem(r[0], 'k = 0,080 W m⁻¹ K⁻¹')
+    r = calc(c_fqte, 'cond', ['0,80', '2,0', '', '5,0', '480'], {3: 2})
+    tem(r[0], 'ΔT = 1,5 K')
+    r = calc(c_fqte, 'cond', ['400', '1,0e-4', '50', '', '2,0'])
+    perto(r[2], 1.0)
+
+
+def t_cond_invalido():
+    assert 'só o campo' in erro(calc, c_fqte, 'cond', ['1', '1', '1', '1', '1'])
+    assert 'espessura' in erro(calc, c_fqte, 'cond', ['1', '1', '1', '0', ''])
+
+
+def t_pl_normal():
+    r = calc(c_fqte, 'pl', ['0', '500', '0', ''])
+    tem(r[0], 'ΔU = 500 J', 'aumenta')
+    r = calc(c_fqte, 'pl', ['-200', '', '0', '300'])
+    tem(r[0], 'Q = 500 J', 'recebe')
+    r = calc(c_fqte, 'pl', ['', '-300', '0', '-500'])
+    tem(r[0], 'W = -200 J', 'cede')
+
+
+def t_pl_limites():
+    r = calc(c_fqte, 'pl', ['100', '-100', '0', ''])
+    tem(r[0], 'não varia')
+    assert 'só o campo' in erro(calc, c_fqte, 'pl', ['100', '200', '300', '600'])
+
+
+def t_pv_normal():
+    r = calc(c_fqte, 'pv', ['1,0e3', '0,50', '80', '', ''])
+    tem(r[0], 'P(rad) = 5,0 × 10² W', 'η = 16 %')
+    perto(r[2], 16.0)
+    r = calc(c_fqte, 'pv', ['800', '100', '', '5,0', '0,30'], {1: 1})
+    tem(r[0], 'P(rad) = 8,00 W', 'P(el) = 1,5 W', 'η ≈ 19 %')
+
+
+def t_pv_invalido():
+    assert 'tensão e a corrente' in erro(calc, c_fqte, 'pv',
+                                         ['1,0e3', '2,0', '', '', ''])
+    assert '100 %' in erro(calc, c_fqte, 'pv', ['1,0e3', '0,50', '600', '', ''])
+    assert 'não os três' in erro(calc, c_fqte, 'pv',
+                                 ['1,0e3', '0,50', '60', '5', '2'])

@@ -1,9 +1,9 @@
 # m1_cat.py - M1TR4M: catalogo gerado pelo build (nao editar).
 # TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes
 # CALC: id|nome|disciplina|tema (as palavras-chave estao no indice da pesquisa)
-NLIC = 41
-NEX = 88
-NCART = 122
+NLIC = 47
+NEX = 98
+NCART = 139
 TEMAS = (
     "q1|F|q|Massa e tamanho dos \xe1tomos|p_q1|x_q1|5|0|10|0|18|0|c_fqat.qm c_fqat.mm c_fqat.ar c_fqat.fr c_comu.sci c_comu.sf c_comu.uni|q1a q1b q1c q1d q1e",
     "q2|F|q|Energia dos eletr\xf5es nos \xe1tomos|p_q2|x_q2|5|5|10|10|14|18|c_fqel.fot c_fqel.hid c_fqel.conf c_comu.sci c_comu.uni|q2a q2b q2c q2d q2e",
@@ -13,7 +13,8 @@ TEMAS = (
     "q6|F|q|Transforma\xe7\xf5es qu\xedmicas|p_q6|x_q6|3|24|9|49|9|67|c_fqlg.dh c_fqel.fot c_fqlg.ace|q6a q6b q6c",
     "f1|F|f|Energia e movimentos|p_f1|x_f1|5|27|10|58|15|76|c_fqen.em c_fqen.cons c_fqen.tr c_fqen.wp c_fqen.tec c_fqen.pot c_fqen.ren|f1a f1b f1c f1d f1e",
     "f2|F|f|Energia e fen\xf3menos el\xe9tricos|p_f2|x_f2|5|32|10|68|16|91|c_fqci.ohm c_fqci.rho c_fqci.assoc c_fqci.ger c_fqci.pot c_fqen.ren|f2a f2b f2c f2d f2e",
-    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|37|10|78|15|107|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
+    "f3|F|f|Energia, fen\xf3menos t\xe9rmicos e radia\xe7\xe3o|p_f3|x_f3|6|37|10|78|17|107|c_fqte.cal c_fqte.est c_fqte.eq c_fqte.cond c_fqte.pl c_fqte.pv c_fqen.ren c_comu.uni|f3a f3b f3c f3d f3e f3f",
+    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|43|10|88|15|124|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
 )
 CALC = "c_comd.cte|Constantes e dados|C|\n\
 c_comd.exp|Dados experimentais|C|\n\
@@ -49,6 +50,12 @@ c_fqso.pes|Massa de soluto a pesar|F|q5\n\
 c_fqso.per|Percentagem e partes por milh\xe3o|F|q5\n\
 c_fqso.dil|Dilui\xe7\xe3o de solu\xe7\xf5es|F|q5\n\
 c_fqso.gas|Gases (PTN)|F|q5\n\
+c_fqte.cal|Capacidade t\xe9rmica m\xe1ssica (Q = m c \u0394T)|F|f3\n\
+c_fqte.est|Mudan\xe7a de estado (Q = m \u0394H)|F|f3\n\
+c_fqte.eq|Temperatura de equil\xedbrio de uma mistura|F|f3\n\
+c_fqte.cond|Condu\xe7\xe3o t\xe9rmica (P = k A \u0394T / \u2113)|F|f3\n\
+c_fqte.pl|Primeira Lei da Termodin\xe2mica|F|f3\n\
+c_fqte.pv|Painel fotovoltaico e irradi\xe2ncia|F|f3\n\
 c_matq.q2|Equa\xe7\xe3o do 2.\xba grau e fun\xe7\xe3o quadr\xe1tica|M|m5\n\
 c_matq.iq|Inequa\xe7\xf5es do 2.\xba grau|M|m5\n\
 c_matq.tf|Transforma\xe7\xf5es de fun\xe7\xf5es|M|m5"

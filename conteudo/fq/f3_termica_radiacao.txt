@@ -1,0 +1,578 @@
+@tema f3
+disc: F
+grupo: f
+titulo: Energia, fenómenos térmicos e radiação
+calcs: c_fqte.cal c_fqte.est c_fqte.eq c_fqte.cond c_fqte.pl c_fqte.pv c_fqen.ren c_comu.uni
+
+@licao f3a
+titulo: Sistema, energia interna e temperatura
+chave: sistema fronteira vizinhança sistema isolado fechado aberto energia interna temperatura kelvin celsius equilíbrio térmico zero absoluto termómetro
+calc: c_comu.uni
+ano: 10
+nivel: núcleo
+fonte: AE FQ A 10.º, Energia, fenómenos térmicos e radiação
+#A
+- Distinguir sistema, fronteira e vizinhança.
+- Classificar sistemas como isolados, fechados ou abertos.
+- Relacionar a energia interna com as partículas do sistema.
+- Converter temperaturas entre Celsius e Kelvin.
+- Explicar o equilíbrio térmico.
+#B
+Para estudar trocas de energia, escolhe-se o que interessa (o sistema) e separa-se do resto.
+A temperatura mede a agitação das partículas: quanto mais agitadas, mais quente.
+#C
+- Sistema: o que se estuda; vizinhança: o resto; fronteira: o que os separa.
+- Isolado: não troca nada; fechado: só troca energia; aberto: energia e matéria.
+- Energia interna, U: soma das energias das partículas (cinética e potencial).
+- Temperatura: relacionada com a energia cinética média das partículas.
+- T (K) = θ (°C) + 273,15.
+- Equilíbrio térmico: corpos em contacto ficam à mesma temperatura.
+#D
+Exemplo: 25 °C correspondem a 25 + 273,15 = [[298,15]] K.
+Uma variação de 1 °C é igual a uma variação de 1 K.
+O zero absoluto, 0 K = -273,15 °C, é a temperatura mais baixa possível.
+Um termómetro mede a sua própria temperatura: é preciso esperar pelo equilíbrio térmico.
+Mais massa à mesma temperatura tem mais energia interna.
+Uma garrafa-termo aproxima-se de um sistema isolado.
+O corpo humano é um sistema aberto: troca matéria e energia.
+#E
+@F Kelvin e Celsius|T = θ + 273,15|T: temperatura (K);θ: temperatura (°C)|ΔT (K) = Δθ (°C)|25 °C = 298,15 K|c_comu.uni
+#F
+Dados: a água ferve a 100 °C (pressão normal) e o azoto líquido a 77 K.
+Objetivo: escrever as duas temperaturas nas duas escalas.
+1. 100 °C = 100 + 273,15 = [[373,15]] K
+2. 77 K = 77 - 273,15 = [[-196]] °C
+> 100 °C = 373,15 K e 77 K ≈ -196 °C.
+Verificação: em kelvin as temperaturas são sempre positivas.
+#G
+Escolher bem o sistema é o primeiro passo de qualquer balanço energético.
+#H
+- Confundir temperatura com energia interna.
+- Somar 273 a uma variação de temperatura.
+- Achar que um sistema fechado não troca energia.
+- Escrever "graus kelvin" (diz-se só kelvin, K).
+#I
+- Sistema, vizinhança e fronteira.
+- Isolado, fechado e aberto.
+- T (K) = θ (°C) + 273,15.
+- Equilíbrio térmico: a mesma temperatura.
+#J
+Uma lata fechada aquece ao sol. É um sistema isolado, fechado ou aberto?
+#R
+Fechado: troca energia (recebe radiação), mas não troca matéria.
+#V
+V = [25 + 273.15, 100 + 273.15, 77 - 273.15]
+
+@licao f3b
+titulo: Calor, trabalho e radiação; irradiância e painéis fotovoltaicos
+chave: calor trabalho radiação transferência de energia irradiância painel fotovoltaico coletor solar emissão absorção infravermelho rendimento
+calc: c_fqte.pv
+ano: 10
+nivel: núcleo
+pre: f3a
+fonte: AE FQ A 10.º, Energia, fenómenos térmicos e radiação
+#A
+- Identificar calor, trabalho e radiação como transferências de energia.
+- Relacionar a radiação emitida com a temperatura.
+- Definir irradiância.
+- Calcular o rendimento de um painel fotovoltaico.
+#B
+O Sol aquece-nos sem contacto: a energia chega por radiação.
+Esfregar as mãos aquece-as por trabalho; uma caneca quente aquece-as por calor.
+#C
+- Calor: energia transferida por diferença de temperatura (condução e convecção).
+- Trabalho: energia transferida por ação de forças (ou por corrente elétrica).
+- Radiação: energia transferida por ondas eletromagnéticas, mesmo no vácuo.
+- Todos os corpos emitem radiação; quanto mais quentes, mais emitem.
+- Irradiância: Er = P / A (W m⁻²).
+- Painel: η = P(elétrica) / P(radiação) × 100 %.
+#D
+À temperatura ambiente, os corpos emitem sobretudo infravermelho; muito quentes, também visível.
+Um bom absorsor de radiação é também um bom emissor.
+Superfícies escuras absorvem mais; superfícies claras e polidas refletem mais.
+Com sol direto, à superfície da Terra, Er ≈ 1,0 × 10³ W m⁻².
+Exemplo: um painel de 2,0 m² com Er = 1,0 × 10³ W m⁻² recebe P = [[2,0 × 10³]] W.
+Se produzir 320 W elétricos: η = 320 / 2000 × 100 = [[16]] %.
+Painel fotovoltaico: radiação → energia elétrica.
+Coletor solar: radiação → energia interna da água.
+O rendimento depende da inclinação, da temperatura e da hora do dia.
+#E
+@F Irradiância|Er = P / A|P: potência da radiação (W);A: área (m²)|radiação perpendicular à superfície|1,0 × 10³ W m⁻² em 2,0 m²: P = 2,0 × 10³ W|c_fqte.pv
+@F Rendimento de um painel fotovoltaico|η = P(elétrica) / (Er A) × 100 %|Er: irradiância (W m⁻²);A: área (m²)|η < 100 %|320 W de 2000 W: η = 16 %|c_fqte.pv
+#F
+Dados: um painel de 1,6 m² recebe Er = 8,0 × 10² W m⁻² e fornece 4,0 A a 48 V.
+Objetivo: rendimento.
+1. P(rad) = 8,0 × 10² × 1,6 = [[1,3 × 10³]] W
+2. P(el) = U I = 48 × 4,0 = [[1,9 × 10²]] W
+3. η = 192 / 1280 × 100 = [[15]] %
+> η ≈ 15 %.
+Verificação: está na gama habitual dos painéis comerciais (cerca de 15 % a 22 %).
+#G
+A energia do Sol é renovável e gratuita; o desafio é aproveitá-la com bom rendimento.
+#H
+- Achar que o calor é energia "contida" num corpo.
+- Esquecer que a radiação não precisa de meio material.
+- Usar a área em cm² sem converter.
+- Confundir painel fotovoltaico com coletor solar.
+#I
+- Calor, trabalho e radiação transferem energia.
+- Er = P / A.
+- η = P(el) / P(rad) × 100 %.
+#J
+Porque é que os coletores solares costumam ser pretos?
+#R
+As superfícies escuras absorvem mais radiação; assim, transfere-se mais energia para a água.
+#V
+V = [1.0e3 * 2.0, 320 / 2000 * 100, 8.0e2 * 1.6, 48 * 4.0, 192 / 1280 * 100]
+
+@licao f3c
+titulo: Condução e convecção
+chave: condução convecção condutividade térmica isolamento térmico bom condutor isolador fluido correntes de convecção janela parede
+calc: c_fqte.cond
+ano: 10
+nivel: núcleo
+pre: f3b
+fonte: AE FQ A 10.º, Energia, fenómenos térmicos e radiação
+#A
+- Explicar a condução e a convecção.
+- Comparar materiais pela condutividade térmica.
+- Calcular a energia transferida por condução em cada segundo.
+- Relacionar o isolamento térmico com materiais de k pequeno.
+#B
+Uma colher de metal num chá quente aquece até ao cabo: é condução.
+A água aquecida no fundo da panela sobe e a fria desce: é convecção.
+#C
+- Condução: transferência por colisões entre partículas, sem transporte de matéria.
+- Convecção: transferência pelo movimento do próprio fluido (líquido ou gás).
+- Condutividade térmica, k (W m⁻¹ K⁻¹): facilidade em conduzir.
+- P = k A ΔT / ℓ: energia transferida por segundo.
+- Bons condutores: metais (k grande); isoladores: ar, lã, esferovite (k pequeno).
+#D
+Valores aproximados de k (W m⁻¹ K⁻¹): cobre 4 × 10²; vidro 0,8; ar 0,03.
+Exemplo: janela de vidro com 1,5 m², 4,0 mm de espessura e 20 K de diferença.
+P = 0,80 × 1,5 × 20 / 0,0040 = [[6,0 × 10³]] W.
+Os vidros duplos têm uma camada de ar, que conduz muito pouco.
+O fluido quente é menos denso e sobe; o frio desce.
+A convecção explica as brisas, o aquecimento de uma sala e as correntes oceânicas.
+Os radiadores ficam em baixo e os aparelhos de ar condicionado em cima.
+#E
+@F Condução térmica|P = k A ΔT / ℓ|k: condutividade térmica (W m⁻¹ K⁻¹);A: área (m²);ΔT: diferença de temperatura (K);ℓ: espessura (m)|regime estacionário|vidro, 1,5 m², 20 K e 4,0 mm: P = 6,0 × 10³ W|c_fqte.cond
+#F
+Dados: parede de 10 m², 0,20 m de espessura e k = 0,60 W m⁻¹ K⁻¹; 20 °C dentro e 5 °C fora.
+Objetivo: energia perdida por condução numa hora.
+1. ΔT = 20 - 5 = [[15]] K
+2. P = 0,60 × 10 × 15 / 0,20 = [[4,5 × 10²]] W
+3. E = 450 × 3600 = [[1,6 × 10⁶]] J
+> Perdem-se cerca de 1,6 × 10⁶ J por hora.
+Verificação: duplicar a espessura reduziria a perda a metade.
+#G
+Isolar bem uma casa reduz a energia perdida e a fatura do aquecimento.
+#H
+- Achar que na convecção não há transporte de matéria.
+- Esquecer de passar a espessura para metros.
+- Achar que o metal frio ao toque está a menor temperatura do que a madeira ao lado.
+- Confundir condutividade térmica com resistividade elétrica.
+#I
+- Condução: colisões entre partículas.
+- Convecção: movimento do fluido.
+- P = k A ΔT / ℓ.
+- k pequeno: bom isolador.
+#J
+Um tapete e um chão de mosaico estão à mesma temperatura. Porque é que o tapete parece mais quente?
+#R
+O mosaico tem maior condutividade térmica: retira energia do pé mais depressa e por isso parece mais frio.
+#V
+V = [0.80 * 1.5 * 20 / 0.0040, 20 - 5, 0.60 * 10 * 15 / 0.20, 450 * 3600]
+
+@licao f3d
+titulo: Capacidade térmica mássica e mudanças de estado
+chave: capacidade térmica mássica variação de entalpia de fusão vaporização mudança de estado balanço energético temperatura de equilíbrio patamar gelo água
+calc: c_fqte.cal
+ano: 10
+nivel: núcleo
+pre: f3a
+fonte: AE FQ A 10.º, Energia, fenómenos térmicos e radiação
+#A
+- Definir capacidade térmica mássica.
+- Calcular a energia para aquecer um corpo: Q = m c ΔT.
+- Calcular a energia de uma mudança de estado: Q = m ΔH.
+- Fazer balanços energéticos simples.
+#B
+A água demora muito a aquecer e a arrefecer: tem uma capacidade térmica mássica grande.
+Por isso o clima junto ao mar é mais ameno.
+#C
+- Capacidade térmica mássica, c: energia para aquecer 1 kg em 1 K (J kg⁻¹ K⁻¹).
+- Q = m c ΔT.
+- Água líquida: c = 4,18 × 10³ J kg⁻¹ K⁻¹.
+- Variação de entalpia mássica de mudança de estado, ΔH (J kg⁻¹): Q = m ΔH.
+- Fusão do gelo: 3,34 × 10⁵ J kg⁻¹; vaporização da água: 2,26 × 10⁶ J kg⁻¹.
+- Durante uma mudança de estado, a temperatura não varia.
+#D
+Exemplo: aquecer 0,500 kg de água de 20,0 °C a 80,0 °C.
+Q = 0,500 × 4,18 × 10³ × 60,0 = [[1,25 × 10⁵]] J.
+Fundir 0,100 kg de gelo a 0 °C: Q = 0,100 × 3,34 × 10⁵ = [[3,34 × 10⁴]] J.
+Com essa energia, a mesma água líquida aqueceria cerca de [[80]] °C.
+Num sistema isolado, a energia cedida pelo corpo quente é igual à recebida pelo frio.
+Exemplo: 0,200 kg de água a 60 °C com 0,100 kg a 15 °C.
+θe = (0,200 × 60 + 0,100 × 15) / 0,300 = [[45]] °C.
+Num gráfico θ(t) de aquecimento, os patamares são as mudanças de estado.
+#E
+@F Capacidade térmica mássica|Q = m c ΔT|m: massa (kg);c: capacidade térmica mássica (J kg⁻¹ K⁻¹);ΔT: variação de temperatura (K)|sem mudança de estado|0,500 kg de água e 60 K: Q = 1,25 × 10⁵ J|c_fqte.cal
+@F Mudança de estado|Q = m ΔH|ΔH: variação de entalpia mássica (J kg⁻¹)|temperatura constante|0,100 kg de gelo: Q = 3,34 × 10⁴ J|c_fqte.est
+@F Temperatura de equilíbrio|θe = (m1 c1 θ1 + m2 c2 θ2) / (m1 c1 + m2 c2)|1 e 2: os dois corpos|sistema isolado, sem mudanças de estado|0,200 kg a 60 °C e 0,100 kg a 15 °C: 45 °C|c_fqte.eq
+#F
+Dados: 0,300 kg de água a 40 °C recebem 0,050 kg de gelo a 0 °C, num recipiente isolado.
+Objetivo: temperatura final.
+1. Fundir o gelo: 0,050 × 3,34 × 10⁵ = [[1,7 × 10⁴]] J
+2. Balanço: 0,300 × 4180 × (40 - θe) = 16 700 + 0,050 × 4180 × θe
+3. θe = (50 160 - 16 700) / (1254 + 209) = [[23]] °C
+> θe ≈ 23 °C.
+Verificação: a água arrefece muito, porque fundir o gelo gasta muita energia.
+#G
+A grande capacidade térmica mássica da água torna-a ótima para transportar energia (radiadores, motores).
+#H
+- Somar 273 a uma diferença de temperatura.
+- Esquecer a energia da mudança de estado nos balanços.
+- Usar a massa em gramas.
+- Achar que a temperatura sobe durante a fusão.
+#I
+- Q = m c ΔT.
+- Q = m ΔH (temperatura constante).
+- Sistema isolado: energia cedida = energia recebida.
+#J
+Porque é que uma mistura de água e gelo fica a 0 °C enquanto houver gelo?
+#R
+A energia recebida é usada para fundir o gelo (mudança de estado), não para subir a temperatura.
+#V
+V = [0.500 * 4.18e3 * 60.0, 0.100 * 3.34e5, 0.100 * 3.34e5 / (0.100 * 4.18e3),
+     (0.200 * 60 + 0.100 * 15) / 0.300, 0.050 * 3.34e5,
+     (0.300 * 4180 * 40 - 0.050 * 3.34e5) / (0.300 * 4180 + 0.050 * 4180)]
+
+@licao f3e
+titulo: Primeira e Segunda Leis da Termodinâmica e rendimento
+chave: primeira lei da termodinâmica segunda lei energia interna convenção de sinais degradação da energia máquina térmica rendimento conservação
+calc: c_fqte.pl
+ano: 10
+nivel: núcleo
+pre: f3d
+fonte: AE FQ A 10.º, Energia, fenómenos térmicos e radiação
+#A
+- Enunciar a Primeira Lei da Termodinâmica.
+- Aplicar a convenção de sinais.
+- Interpretar a Segunda Lei como degradação da energia.
+- Calcular o rendimento de máquinas térmicas.
+#B
+A energia nunca se perde, mas fica cada vez menos útil.
+Um motor nunca transforma toda a energia do combustível em movimento.
+#C
+- Primeira Lei: ΔU = W + Q + R (conservação da energia).
+- Energia recebida pelo sistema é positiva; cedida é negativa.
+- Sistema isolado: ΔU = 0.
+- Segunda Lei: nos processos espontâneos, a energia útil diminui (degradação).
+- O calor flui espontaneamente do corpo quente para o frio.
+- Nenhuma máquina térmica tem rendimento de 100 %.
+#D
+Exemplo: um gás recebe 500 J por calor e realiza 200 J de trabalho sobre a vizinhança.
+W = -200 J e Q = +500 J, logo ΔU = -200 + 500 = [[300]] J.
+Comprimir depressa o ar de uma bomba de bicicleta: W > 0 e a temperatura sobe.
+Máquina térmica: recebe energia de uma fonte quente, realiza trabalho e cede o resto a uma fonte fria.
+Rendimento: η = W / Q(fornecida) × 100 %.
+Exemplo: um motor recebe 1,0 × 10⁴ J e realiza 2,5 × 10³ J de trabalho: η = [[25]] %.
+Os restantes [[7,5 × 10³]] J dissipam-se na vizinhança.
+#E
+@F Primeira Lei da Termodinâmica|ΔU = W + Q + R|W: trabalho;Q: calor;R: radiação (J; recebidos > 0)|qualquer sistema|Q = 500 J e W = -200 J: ΔU = 300 J|c_fqte.pl
+@F Rendimento de uma máquina térmica|η = W / Q(fornecida) × 100 %|W: trabalho útil (J);Q(fornecida): energia recebida da fonte quente (J)|η < 100 % (Segunda Lei)|2,5 × 10³ J de 1,0 × 10⁴ J: η = 25 %|c_fqen.ren
+#F
+Dados: a vizinhança realiza 150 J de trabalho sobre um sistema, que cede 400 J por calor; R = 0.
+Objetivo: variação da energia interna.
+1. W = +150 J (recebido) e Q = -400 J (cedido).
+2. ΔU = 150 - 400 + 0 = [[-250]] J
+> ΔU = -250 J: a energia interna diminui.
+Verificação: o sistema cede mais energia do que recebe, por isso ΔU < 0.
+#G
+A Primeira Lei diz que a energia se conserva; a Segunda diz para onde ela se "espalha".
+#H
+- Trocar os sinais de W e de Q.
+- Achar que a energia dissipada desaparece.
+- Esperar rendimentos de 100 %.
+- Confundir calor com temperatura.
+#I
+- ΔU = W + Q + R.
+- Recebido > 0; cedido < 0.
+- Segunda Lei: degradação da energia; η < 100 %.
+#J
+A energia interna de um sistema isolado pode aumentar?
+#R
+Não: num sistema isolado W = Q = R = 0, logo ΔU = 0.
+#V
+V = [-200 + 500, 2.5e3 / 1.0e4 * 100, 1.0e4 - 2.5e3, 150 - 400 + 0]
+
+@licao f3f
+titulo: Leis de Stefan-Boltzmann e de Wien (extensão)
+chave: lei de stefan-boltzmann lei de wien deslocamento de wien corpo negro emissividade comprimento de onda de máxima emissão estrelas cor
+ano: 10
+nivel: extensão
+pre: f3b
+fonte: Extensão (fora das AE do 10.º ano); constantes da tabela do exame de FQ A
+#A
+- Relacionar a potência emitida com a temperatura.
+- Relacionar o comprimento de onda de máxima emissão com a temperatura.
+- Reconhecer que estas leis são extensão no 10.º ano.
+#B
+Um ferro ao rubro brilha vermelho; mais quente, fica branco: a cor depende da temperatura.
+#C
+- Extensão: estas leis não fazem parte das Aprendizagens Essenciais do 10.º ano.
+- Stefan-Boltzmann: P = e σ A T⁴ (T em K).
+- σ = 5,67 × 10⁻⁸ W m⁻² K⁻⁴; e: emissividade, entre 0 e 1.
+- Wien: λmáx T = 2,898 × 10⁻³ m K.
+- Quanto maior T, menor λmáx.
+#D
+Wien: o Sol, a cerca de 5800 K, emite mais a λmáx = 2,898 × 10⁻³ / 5800 = [[5,0 × 10⁻⁷]] m (visível).
+Wien: o corpo humano, a 310 K, emite mais a λmáx ≈ [[9,3 × 10⁻⁶]] m (infravermelho).
+Stefan-Boltzmann: duplicar T multiplica a potência emitida por 2⁴ = [[16]].
+As câmaras térmicas detetam o infravermelho emitido pelos corpos.
+#E
+@F Lei de Stefan-Boltzmann (extensão)|P = e σ A T⁴|σ = 5,67 × 10⁻⁸ W m⁻² K⁻⁴;e: emissividade;A: área (m²);T: temperatura (K)|T em kelvin|duplicar T: P vezes 16|
+@F Lei de Wien (extensão)|λmáx T = 2,898 × 10⁻³ m K|λmáx: comprimento de onda de máxima emissão (m);T: temperatura (K)|corpo negro (aproximação)|Sol, 5800 K: λmáx = 5,0 × 10⁻⁷ m|
+#F
+Dados: uma estrela tem λmáx = 3,0 × 10⁻⁷ m.
+Objetivo: temperatura da superfície.
+1. T = 2,898 × 10⁻³ / (3,0 × 10⁻⁷) = [[9,7 × 10³]] K
+> T ≈ 9,7 × 10³ K.
+Verificação: λmáx menor do que o do Sol, logo a estrela é mais quente.
+#G
+A cor das estrelas indica a sua temperatura: as azuladas são as mais quentes.
+#H
+- Usar a temperatura em °C.
+- Esquecer a quarta potência em Stefan-Boltzmann.
+- Achar que um corpo frio não emite radiação.
+#I
+- P = e σ A T⁴.
+- λmáx T = 2,898 × 10⁻³ m K.
+- Mais quente: emite mais e a menor λ.
+#J
+Uma estrela azulada e outra avermelhada: qual tem maior temperatura à superfície?
+#R
+A azulada: menor λmáx corresponde a maior temperatura (lei de Wien).
+#V
+b = 2.898e-3
+V = [b / 5800, b / 310, 2 ** 4, b / 3.0e-7]
+
+@exemplo f3e1
+nivel: 1
+titulo: Aquecer água
+licao: f3d
+calc: c_fqte.cal
+#T
+Enunciado: que energia é necessária para aquecer 2,0 kg de água de 15 °C a 45 °C?
+Dados: m = 2,0 kg; c = 4,18 × 10³ J kg⁻¹ K⁻¹; Δθ = 30 °C.
+Resolução:
+1. ΔT = 45 - 15 = [[30]] K
+2. Q = 2,0 × 4,18 × 10³ × 30 = [[2,5 × 10⁵]] J
+Resultado: Q ≈ 2,5 × 10⁵ J.
+Interpretação: é muita energia, porque a água tem c elevada.
+Erros a evitar: somar 273 à variação de temperatura.
+#V
+V = [45 - 15, 2.0 * 4.18e3 * 30]
+
+@exemplo f3e2
+nivel: 2
+titulo: Quanto tempo demora uma chaleira?
+licao: f3d
+calc: c_fqte.cal
+#T
+Enunciado: uma chaleira de 2000 W aquece 1,0 kg de água de 20 °C a 100 °C, com rendimento de 80 %.
+Quanto tempo demora?
+Resolução:
+1. Q(útil) = 1,0 × 4180 × 80 = [[3,3 × 10⁵]] J
+2. E(fornecida) = Q(útil) / 0,80 = [[4,2 × 10⁵]] J
+3. Δt = E / P = 418 000 / 2000 = [[2,1 × 10²]] s
+Resultado: cerca de 2,1 × 10² s (3,5 min).
+Interpretação: sem perdas, bastariam [[1,7 × 10²]] s.
+Erros a evitar: multiplicar pelo rendimento em vez de dividir.
+#V
+q = 1.0 * 4180 * 80
+e = q / 0.80
+V = [q, e, e / 2000, q / 2000]
+
+@exemplo f3e3
+nivel: 3
+titulo: Medir a entalpia de fusão do gelo
+licao: f3d
+calc: c_fqte.eq
+#T
+Enunciado: num calorímetro, 0,250 kg de água a 40,0 °C recebem 0,060 kg de gelo a 0 °C; a temperatura final é 16,0 °C.
+Calcula ΔH de fusão e o erro percentual (valor tabelado: 3,34 × 10⁵ J kg⁻¹).
+Resolução:
+1. Cedida pela água: 0,250 × 4180 × (40,0 - 16,0) = [[2,51 × 10⁴]] J
+2. Para aquecer o gelo fundido até 16,0 °C: 0,060 × 4180 × 16,0 = [[4,0 × 10³]] J
+3. Para fundir o gelo: 25 080 - 4013 = [[2,1 × 10⁴]] J
+4. ΔH = 21 067 / 0,060 = [[3,5 × 10⁵]] J kg⁻¹
+5. Erro: (3,51 - 3,34) / 3,34 × 100 = [[5]] %
+Resultado: ΔH ≈ 3,5 × 10⁵ J kg⁻¹, com erro de cerca de 5 %.
+Interpretação: o calorímetro não é perfeito: troca alguma energia com a vizinhança.
+Erros a evitar: esquecer que o gelo fundido também aquece de 0 °C a 16,0 °C.
+#V
+qa = 0.250 * 4180 * (40.0 - 16.0)
+qg = 0.060 * 4180 * 16.0
+h = (qa - qg) / 0.060
+V = [qa, qg, qa - qg, h, (h - 3.34e5) / 3.34e5 * 100]
+
+@exercicio f3x1
+tipo: n
+licao: f3a
+#T
+Converte 25 °C para kelvin.
+#S
+298,15
+#P
+T (K) = θ (°C) + 273,15.
+#D
+T = 25 + 273,15 = [[298,15]] K.
+#V
+S = 25 + 273.15
+V = [S]
+
+@exercicio f3x2
+tipo: m
+licao: f3a
+#T
+Um sistema fechado:
+#O
+troca energia com a vizinhança mas não troca matéria
+não troca energia nem matéria
+troca matéria mas não troca energia
+troca energia e matéria
+#S
+1
+#P
+Fechado refere-se à matéria.
+#D
+Um sistema fechado troca energia (calor, trabalho, radiação), mas não troca matéria.
+#V
+S = 1
+
+@exercicio f3x3
+tipo: n
+licao: f3d
+modo: s2
+#T
+Que energia (em J) recebe 0,20 kg de água ao aquecer 10 °C? (c = 4,18 × 10³ J kg⁻¹ K⁻¹)
+#S
+8360
+#P
+Q = m c ΔT.
+#D
+Q = 0,20 × 4,18 × 10³ × 10 = [[8,4 × 10³]] J.
+#V
+S = 0.20 * 4.18e3 * 10
+V = [S]
+
+@exercicio f3x4
+tipo: n
+licao: f3d
+modo: s3
+#T
+Que energia (em J) é precisa para fundir 0,50 kg de gelo a 0 °C? (ΔH = 3,34 × 10⁵ J kg⁻¹)
+#S
+167000
+#P
+Q = m ΔH.
+#D
+Q = 0,50 × 3,34 × 10⁵ = [[1,67 × 10⁵]] J.
+#V
+S = 0.50 * 3.34e5
+V = [S]
+
+@exercicio f3x5
+tipo: v
+licao: f3d
+#T
+Durante a ebulição da água pura, a pressão constante, a temperatura aumenta.
+#S
+F
+#P
+O que acontece à temperatura numa mudança de estado?
+#D
+Falso: durante a mudança de estado a temperatura mantém-se (patamar).
+#V
+S = 'F'
+
+@exercicio f3x6
+tipo: n
+licao: f3e
+#T
+Um sistema recebe 300 J por calor e realiza 100 J de trabalho sobre a vizinhança (R = 0). Qual é ΔU (em J)?
+#S
+200
+#P
+ΔU = W + Q + R; o trabalho realizado pelo sistema é cedido (negativo).
+#D
+ΔU = -100 + 300 + 0 = [[200]] J.
+#V
+S = -100 + 300
+V = [S]
+
+@exercicio f3x7
+tipo: m
+licao: f3c
+#T
+A convecção é um processo de transferência de energia que ocorre:
+#O
+em líquidos e gases
+só em sólidos
+só no vácuo
+só em metais
+#S
+1
+#P
+Precisa que a matéria se possa mover.
+#D
+A convecção exige movimento do fluido: só acontece em líquidos e gases.
+#V
+S = 1
+
+@exercicio f3x8
+tipo: n
+licao: f3b
+#T
+Um painel de 1,5 m² recebe Er = 1,0 × 10³ W m⁻² e fornece 270 W elétricos. Qual é o rendimento (em %)?
+#S
+18
+#P
+η = P(el) / (Er A) × 100 %.
+#D
+P(rad) = 1,0 × 10³ × 1,5 = [[1,5 × 10³]] W; η = 270 / 1500 × 100 = [[18]] %.
+#V
+S = 270 / (1.0e3 * 1.5) * 100
+V = [1.0e3 * 1.5, S]
+
+@exercicio f3x9
+tipo: n
+licao: f3d
+#T
+Misturam-se 0,10 kg de água a 80 °C com 0,30 kg de água a 20 °C, num recipiente isolado. Qual é a temperatura final (em °C)?
+#S
+35
+#P
+Média pesada pelas massas (a mesma c).
+#D
+θe = (0,10 × 80 + 0,30 × 20) / 0,40 = [[35]] °C.
+#V
+S = (0.10 * 80 + 0.30 * 20) / 0.40
+V = [S]
+
+@exercicio f3x10
+tipo: n
+licao: f3c
+#T
+Uma placa isoladora (k = 0,040 W m⁻¹ K⁻¹) tem 2,0 m² e 5,0 cm de espessura; ΔT = 20 K. Qual é a potência transferida (em W)?
+#S
+32
+#P
+P = k A ΔT / ℓ, com ℓ em metros.
+#D
+P = 0,040 × 2,0 × 20 / 0,050 = [[32]] W.
+#V
+S = 0.040 * 2.0 * 20 / 0.050
+V = [S]

@@ -1,78 +1,1280 @@
 {
  "avisos": [],
+ "conteudo": {
+  "a7": {
+   "calcs": 5,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 2,
+    "n": 6,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 6,
+   "grupo": "7",
+   "licoes": 5,
+   "titulo": "Álgebra (7.º ano)"
+  },
+  "a8": {
+   "calcs": 6,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 3,
+    "n": 5,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 7,
+   "grupo": "8",
+   "licoes": 5,
+   "titulo": "Álgebra (8.º ano)"
+  },
+  "a9": {
+   "calcs": 5,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 2,
+    "n": 5,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 4,
+   "grupo": "9",
+   "licoes": 4,
+   "titulo": "Álgebra (9.º ano)"
+  },
+  "af": {
+   "calcs": 8,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 3,
+    "n": 6,
+    "u": 0,
+    "v": 3
+   },
+   "formulas": 8,
+   "grupo": "a",
+   "licoes": 6,
+   "titulo": "Atividades laboratoriais de Física"
+  },
+  "aq": {
+   "calcs": 7,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 5,
+    "n": 6,
+    "u": 0,
+    "v": 3
+   },
+   "formulas": 9,
+   "grupo": "a",
+   "licoes": 7,
+   "titulo": "Atividades laboratoriais de Química"
+  },
+  "d7": {
+   "calcs": 3,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 1,
+    "n": 6,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 5,
+   "grupo": "7",
+   "licoes": 3,
+   "titulo": "Dados (7.º ano)"
+  },
+  "d8": {
+   "calcs": 3,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 2,
+    "n": 5,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 2,
+   "grupo": "8",
+   "licoes": 2,
+   "titulo": "Dados (8.º ano)"
+  },
+  "d9": {
+   "calcs": 3,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 1,
+    "n": 6,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 4,
+   "grupo": "9",
+   "licoes": 3,
+   "titulo": "Probabilidades (9.º ano)"
+  },
+  "f1": {
+   "calcs": 7,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 2,
+    "n": 6,
+    "u": 1,
+    "v": 1
+   },
+   "formulas": 10,
+   "grupo": "f",
+   "licoes": 5,
+   "titulo": "Energia e movimentos"
+  },
+  "f2": {
+   "calcs": 6,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 2,
+    "n": 6,
+    "u": 1,
+    "v": 1
+   },
+   "formulas": 11,
+   "grupo": "f",
+   "licoes": 5,
+   "titulo": "Energia e fenómenos elétricos"
+  },
+  "f3": {
+   "calcs": 8,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 2,
+    "n": 7,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 11,
+   "grupo": "f",
+   "licoes": 6,
+   "titulo": "Energia, fenómenos térmicos e radiação"
+  },
+  "g7": {
+   "calcs": 3,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 2,
+    "n": 6,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 9,
+   "grupo": "7",
+   "licoes": 5,
+   "titulo": "Geometria e Medida (7.º ano)"
+  },
+  "g8": {
+   "calcs": 4,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 3,
+    "n": 4,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 6,
+   "grupo": "8",
+   "licoes": 4,
+   "titulo": "Geometria e Medida (8.º ano)"
+  },
+  "g9": {
+   "calcs": 5,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 3,
+    "n": 7,
+    "u": 0,
+    "v": 0
+   },
+   "formulas": 9,
+   "grupo": "9",
+   "licoes": 6,
+   "titulo": "Geometria e Medida (9.º ano)"
+  },
+  "m2": {
+   "calcs": 4,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 2,
+    "n": 9,
+    "u": 0,
+    "v": 2
+   },
+   "formulas": 18,
+   "grupo": "t",
+   "licoes": 9,
+   "titulo": "Estatística"
+  },
+  "m3": {
+   "calcs": 5,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 2,
+    "n": 7,
+    "u": 0,
+    "v": 2
+   },
+   "formulas": 13,
+   "grupo": "t",
+   "licoes": 6,
+   "titulo": "Geometria sintética no plano"
+  },
+  "m4": {
+   "calcs": 3,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 2,
+    "n": 6,
+    "u": 0,
+    "v": 2
+   },
+   "formulas": 9,
+   "grupo": "t",
+   "licoes": 4,
+   "titulo": "Funções: generalidades, função afim e condições"
+  },
+  "m5": {
+   "calcs": 4,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 4,
+    "n": 4,
+    "u": 0,
+    "v": 2
+   },
+   "formulas": 11,
+   "grupo": "t",
+   "licoes": 4,
+   "titulo": "Função quadrática"
+  },
+  "m6": {
+   "calcs": 3,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 2,
+    "n": 5,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 6,
+   "grupo": "t",
+   "licoes": 3,
+   "titulo": "Funções definidas por ramos e função módulo"
+  },
+  "m7": {
+   "calcs": 5,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 3,
+    "n": 5,
+    "u": 0,
+    "v": 2
+   },
+   "formulas": 12,
+   "grupo": "t",
+   "licoes": 6,
+   "titulo": "Geometria analítica no plano e no espaço"
+  },
+  "m8": {
+   "calcs": 3,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 2,
+    "n": 7,
+    "u": 0,
+    "v": 2
+   },
+   "formulas": 14,
+   "grupo": "t",
+   "licoes": 7,
+   "titulo": "Vetores no plano e no espaço"
+  },
+  "n7": {
+   "calcs": 4,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 2,
+    "n": 6,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 9,
+   "grupo": "7",
+   "licoes": 5,
+   "titulo": "Números (7.º ano)"
+  },
+  "n8": {
+   "calcs": 4,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 3,
+    "n": 4,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 5,
+   "grupo": "8",
+   "licoes": 3,
+   "titulo": "Números (8.º ano)"
+  },
+  "n9": {
+   "calcs": 3,
+   "disc": "M",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 5,
+    "n": 2,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 3,
+   "grupo": "9",
+   "licoes": 3,
+   "titulo": "Números (9.º ano)"
+  },
+  "q1": {
+   "calcs": 7,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 3,
+    "n": 4,
+    "u": 1,
+    "v": 2
+   },
+   "formulas": 13,
+   "grupo": "q",
+   "licoes": 5,
+   "titulo": "Massa e tamanho dos átomos"
+  },
+  "q2": {
+   "calcs": 5,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 4,
+    "n": 4,
+    "u": 0,
+    "v": 2
+   },
+   "formulas": 9,
+   "grupo": "q",
+   "licoes": 5,
+   "titulo": "Energia dos eletrões nos átomos"
+  },
+  "q3": {
+   "calcs": 3,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 5,
+    "n": 2,
+    "u": 0,
+    "v": 2
+   },
+   "formulas": 5,
+   "grupo": "q",
+   "licoes": 3,
+   "titulo": "Tabela Periódica"
+  },
+  "q4": {
+   "calcs": 4,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 6,
+    "n": 2,
+    "u": 0,
+    "v": 2
+   },
+   "formulas": 7,
+   "grupo": "q",
+   "licoes": 6,
+   "titulo": "Ligação química"
+  },
+  "q5": {
+   "calcs": 7,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 4,
+    "n": 4,
+    "u": 1,
+    "v": 1
+   },
+   "formulas": 9,
+   "grupo": "q",
+   "licoes": 5,
+   "titulo": "Gases e dispersões"
+  },
+  "q6": {
+   "calcs": 3,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 5,
+    "n": 2,
+    "u": 0,
+    "v": 2
+   },
+   "formulas": 6,
+   "grupo": "q",
+   "licoes": 3,
+   "titulo": "Transformações químicas"
+  },
+  "r7": {
+   "calcs": 2,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 4,
+    "n": 3,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 5,
+   "grupo": "r",
+   "licoes": 3,
+   "titulo": "Revisões do 7.º ano"
+  },
+  "r8": {
+   "calcs": 3,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 4,
+    "n": 3,
+    "u": 0,
+    "v": 1
+   },
+   "formulas": 7,
+   "grupo": "r",
+   "licoes": 5,
+   "titulo": "Revisões do 8.º ano"
+  },
+  "r9": {
+   "calcs": 4,
+   "disc": "F",
+   "exemplos": [
+    1,
+    1,
+    1
+   ],
+   "exercicios": {
+    "m": 1,
+    "n": 5,
+    "u": 0,
+    "v": 2
+   },
+   "formulas": 8,
+   "grupo": "r",
+   "licoes": 4,
+   "titulo": "Revisões do 9.º ano"
+  }
+ },
  "data": "2026-10-23",
  "edicoes": {
   "FQ": {
-   "bytes": 287766,
+   "bytes": 288546,
    "conteudo": "9 temas (q1 q2 q3 q4 q5 q6 f1 f2 f3), 38 calculadoras; 40 modulos; dicionario de 576 palavras",
-   "percurso": "ecras=45 textos=674 fora=0 teclas=32/32 pico=421936 ok"
+   "heap_min_kb": 876,
+   "percurso": "ecras=45 textos=674 fora=0 teclas=32/32 pico=422736 ok"
   },
   "Mat": {
-   "bytes": 299805,
+   "bytes": 300293,
    "conteudo": "12 temas (n7 a7 g7 d7 n8 a8 g8 d8 n9 a9 g9 d9), 35 calculadoras; 51 modulos; dicionario de 379 palavras",
-   "percurso": "ecras=64 textos=650 fora=0 teclas=49/49 pico=423808 ok"
+   "heap_min_kb": 1176,
+   "percurso": "ecras=64 textos=650 fora=0 teclas=49/49 pico=424304 ok"
   }
  },
  "percursos": {
   "p01_fq_licao": {
    "cpy": "ecras=63 textos=640 fora=0 teclas=50/50 pico=0 ok",
-   "mp": "ecras=63 textos=640 fora=0 teclas=50/50 pico=142624 ok"
+   "mp": "ecras=63 textos=640 fora=0 teclas=50/50 pico=143536 ok"
   },
   "p02_mat_calc": {
    "cpy": "ecras=71 textos=640 fora=0 teclas=54/54 pico=0 ok",
-   "mp": "ecras=71 textos=640 fora=0 teclas=54/54 pico=127376 ok"
+   "mp": "ecras=71 textos=640 fora=0 teclas=54/54 pico=128256 ok"
   },
   "p03_exercicios": {
    "cpy": "ecras=56 textos=467 fora=0 teclas=43/43 pico=0 ok",
-   "mp": "ecras=56 textos=467 fora=0 teclas=43/43 pico=111328 ok"
+   "mp": "ecras=56 textos=467 fora=0 teclas=43/43 pico=112240 ok"
   },
   "p04_pesquisa": {
    "cpy": "ecras=62 textos=596 fora=0 teclas=37/37 pico=0 ok",
-   "mp": "ecras=62 textos=596 fora=0 teclas=37/37 pico=197456 ok"
+   "mp": "ecras=62 textos=596 fora=0 teclas=37/37 pico=198064 ok"
   },
   "p05_tabela": {
    "cpy": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=0 ok",
-   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=141856 ok"
+   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=142768 ok"
   },
   "p06_definicoes": {
    "cpy": "ecras=48 textos=490 fora=0 teclas=35/35 pico=0 ok",
-   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=93744 ok"
+   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=96768 ok"
   },
   "p07_progresso": {
    "cpy": "ecras=48 textos=500 fora=0 teclas=35/35 pico=0 ok",
-   "mp": "ecras=48 textos=500 fora=0 teclas=35/35 pico=132464 ok"
+   "mp": "ecras=48 textos=500 fora=0 teclas=35/35 pico=133456 ok"
   },
   "p08_fis_calc": {
    "cpy": "ecras=59 textos=550 fora=0 teclas=46/46 pico=0 ok",
-   "mp": "ecras=59 textos=550 fora=0 teclas=46/46 pico=135776 ok"
+   "mp": "ecras=59 textos=550 fora=0 teclas=46/46 pico=136688 ok"
   },
   "p09_al_pilha": {
    "cpy": "ecras=87 textos=675 fora=0 teclas=72/72 pico=0 ok",
-   "mp": "ecras=87 textos=675 fora=0 teclas=72/72 pico=132448 ok"
+   "mp": "ecras=87 textos=675 fora=0 teclas=72/72 pico=133248 ok"
   },
   "p10_mat_pontos": {
    "cpy": "ecras=49 textos=438 fora=0 teclas=34/34 pico=0 ok",
-   "mp": "ecras=49 textos=438 fora=0 teclas=34/34 pico=137536 ok"
+   "mp": "ecras=49 textos=438 fora=0 teclas=34/34 pico=138464 ok"
   },
   "p11_mat_anos": {
    "cpy": "ecras=64 textos=658 fora=0 teclas=49/49 pico=0 ok",
-   "mp": "ecras=64 textos=658 fora=0 teclas=49/49 pico=153344 ok"
+   "mp": "ecras=64 textos=658 fora=0 teclas=49/49 pico=154208 ok"
   },
   "p12_mat_estatistica": {
    "cpy": "ecras=56 textos=504 fora=0 teclas=40/40 pico=0 ok",
-   "mp": "ecras=56 textos=504 fora=0 teclas=40/40 pico=145392 ok"
+   "mp": "ecras=56 textos=504 fora=0 teclas=40/40 pico=146224 ok"
   }
  },
+ "picos": {
+  "c_alf1": [
+   109172,
+   109172,
+   ""
+  ],
+  "c_alf2": [
+   109172,
+   109172,
+   ""
+  ],
+  "c_alq1": [
+   109172,
+   109172,
+   ""
+  ],
+  "c_alq2": [
+   109172,
+   109172,
+   ""
+  ],
+  "c_comd": [
+   109172,
+   120392,
+   ""
+  ],
+  "c_comu": [
+   109172,
+   109172,
+   ""
+  ],
+  "c_fqat": [
+   109172,
+   121412,
+   ""
+  ],
+  "c_fqci": [
+   109172,
+   122432,
+   ""
+  ],
+  "c_fqel": [
+   109172,
+   119372,
+   ""
+  ],
+  "c_fqen": [
+   110192,
+   125492,
+   ""
+  ],
+  "c_fqlg": [
+   109172,
+   122432,
+   ""
+  ],
+  "c_fqso": [
+   109172,
+   109172,
+   ""
+  ],
+  "c_fqte": [
+   109172,
+   124472,
+   ""
+  ],
+  "c_mate": [
+   115292,
+   130592,
+   ""
+  ],
+  "c_matf": [
+   121412,
+   138752,
+   ""
+  ],
+  "c_matg": [
+   124472,
+   141812,
+   ""
+  ],
+  "c_matq": [
+   115292,
+   130592,
+   ""
+  ],
+  "c_matr": [
+   109172,
+   122432,
+   ""
+  ],
+  "c_matt": [
+   112232,
+   127532,
+   ""
+  ],
+  "c_matv": [
+   109172,
+   109172,
+   ""
+  ],
+  "c_mexp": [
+   147932,
+   166292,
+   ""
+  ],
+  "c_mgeo": [
+   135692,
+   157112,
+   ""
+  ],
+  "c_mgtr": [
+   148952,
+   165272,
+   ""
+  ],
+  "c_mnum": [
+   146912,
+   164252,
+   ""
+  ],
+  "c_mpol": [
+   145892,
+   162212,
+   ""
+  ],
+  "c_mprb": [
+   155072,
+   176492,
+   ""
+  ],
+  "c_mprp": [
+   146912,
+   162212,
+   ""
+  ],
+  "c_mrea": [
+   145892,
+   162212,
+   ""
+  ],
+  "c_msol": [
+   109172,
+   120392,
+   ""
+  ],
+  "m1_app": [
+   109172,
+   125492,
+   ""
+  ],
+  "m1_calc": [
+   109172,
+   119372,
+   ""
+  ],
+  "m1_cat": [
+   10232,
+   16352,
+   ""
+  ],
+  "m1_cfg": [
+   109172,
+   120392,
+   ""
+  ],
+  "m1_cont": [
+   36752,
+   42872,
+   ""
+  ],
+  "m1_ex": [
+   109172,
+   121412,
+   ""
+  ],
+  "m1_idx": [
+   160172,
+   189752,
+   ""
+  ],
+  "m1_idx2": [
+   109172,
+   109172,
+   ""
+  ],
+  "m1_idxm": [
+   160172,
+   189752,
+   ""
+  ],
+  "m1_idxm2": [
+   109172,
+   109172,
+   ""
+  ],
+  "m1_ini": [
+   109172,
+   109172,
+   ""
+  ],
+  "m1_nav": [
+   109172,
+   109172,
+   ""
+  ],
+  "m1_nucleo": [
+   80612,
+   109172,
+   ""
+  ],
+  "m1_pesq": [
+   109172,
+   109172,
+   ""
+  ],
+  "m1_plat": [
+   32672,
+   44912,
+   ""
+  ],
+  "m1_q": [
+   133652,
+   153032,
+   ""
+  ],
+  "m1_tp": [
+   123452,
+   131612,
+   ""
+  ],
+  "m1_ui": [
+   103052,
+   124472,
+   ""
+  ],
+  "p_a7": [
+   117332,
+   125492,
+   ""
+  ],
+  "p_a8": [
+   117332,
+   125492,
+   ""
+  ],
+  "p_a9": [
+   115292,
+   115292,
+   ""
+  ],
+  "p_af": [
+   143852,
+   163232,
+   ""
+  ],
+  "p_aq": [
+   148952,
+   172412,
+   ""
+  ],
+  "p_d7": [
+   115292,
+   115292,
+   ""
+  ],
+  "p_d8": [
+   109172,
+   109172,
+   ""
+  ],
+  "p_d9": [
+   115292,
+   115292,
+   ""
+  ],
+  "p_f1": [
+   142832,
+   163232,
+   ""
+  ],
+  "p_f2": [
+   140792,
+   160172,
+   ""
+  ],
+  "p_f3": [
+   146912,
+   169352,
+   ""
+  ],
+  "p_g7": [
+   117332,
+   128552,
+   ""
+  ],
+  "p_g8": [
+   116312,
+   122432,
+   ""
+  ],
+  "p_g9": [
+   129572,
+   140792,
+   ""
+  ],
+  "p_m2": [
+   155072,
+   180572,
+   ""
+  ],
+  "p_m3": [
+   147932,
+   169352,
+   ""
+  ],
+  "p_m4": [
+   134672,
+   148952,
+   ""
+  ],
+  "p_m5": [
+   139772,
+   158132,
+   ""
+  ],
+  "p_m6": [
+   117332,
+   128552,
+   ""
+  ],
+  "p_m7": [
+   141812,
+   160172,
+   ""
+  ],
+  "p_m8": [
+   144872,
+   165272,
+   ""
+  ],
+  "p_n7": [
+   117332,
+   127532,
+   ""
+  ],
+  "p_n8": [
+   115292,
+   115292,
+   ""
+  ],
+  "p_n9": [
+   109172,
+   109172,
+   ""
+  ],
+  "p_q1": [
+   147932,
+   170372,
+   ""
+  ],
+  "p_q2": [
+   147932,
+   171392,
+   ""
+  ],
+  "p_q3": [
+   132632,
+   146912,
+   ""
+  ],
+  "p_q4": [
+   149972,
+   174452,
+   ""
+  ],
+  "p_q5": [
+   140792,
+   160172,
+   ""
+  ],
+  "p_q6": [
+   131612,
+   145892,
+   ""
+  ],
+  "p_r7": [
+   115292,
+   121412,
+   ""
+  ],
+  "p_r8": [
+   118352,
+   129572,
+   ""
+  ],
+  "p_r9": [
+   117332,
+   125492,
+   ""
+  ],
+  "x_a7": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_a8": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_a9": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_af": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_aq": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_d7": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_d8": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_d9": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_f1": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_f2": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_f3": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_g7": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_g8": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_g9": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_m2": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_m3": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_m4": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_m5": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_m6": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_m7": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_m8": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_n7": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_n8": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_n9": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_q1": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_q2": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_q3": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_q4": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_q5": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_q6": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_r7": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_r8": [
+   109172,
+   109172,
+   ""
+  ],
+  "x_r9": [
+   109172,
+   109172,
+   ""
+  ]
+ },
+ "previa": {
+  "ecras": 12,
+  "ficheiro": "dist/previa.png"
+ },
  "residente": {
-  "m1_app": 11760,
-  "m1_cat": 5600,
-  "m1_cont": 3088,
+  "m1_app": 11744,
+  "m1_cat": 6272,
+  "m1_cont": 3328,
   "m1_nucleo": 17952,
   "m1_plat": 9472,
   "m1_ui": 12000,
-  "total": 59872
+  "total": 60768
  },
- "residentes": 89730,
+ "residentes": 90859,
  "tamanhos": {
   "c_alf1": 6737,
   "c_alf2": 7353,
@@ -95,20 +1297,20 @@
   "c_matt": 14847,
   "c_matv": 8685,
   "c_mexp": 17381,
-  "c_mgeo": 20821,
+  "c_mgeo": 20899,
   "c_mgtr": 15696,
   "c_mnum": 16675,
   "c_mpol": 15047,
   "c_mprb": 21297,
   "c_mprp": 14312,
-  "c_mrea": 14987,
+  "c_mrea": 15024,
   "c_msol": 10834,
-  "m1": 1196,
+  "m1": 1213,
   "m1_app": 15441,
   "m1_calc": 5729,
-  "m1_cat": 5140,
-  "m1_cfg": 10364,
-  "m1_cont": 5410,
+  "m1_cat": 5914,
+  "m1_cfg": 10371,
+  "m1_cont": 5748,
   "m1_ex": 11916,
   "m1_idx": 28281,
   "m1_idx2": 1541,
@@ -189,13 +1391,13 @@
   "x_r8": 2132,
   "x_r9": 1943
  },
- "tempo": 85.5,
+ "tempo": 151.5,
  "testes": {
-  "CPython": 336,
-  "MicroPython": 336
+  "CPython": 338,
+  "MicroPython": 338
  },
  "tns": {
-  "documento": 394040,
+  "documento": 394591,
   "pylib": 113
  }
 }

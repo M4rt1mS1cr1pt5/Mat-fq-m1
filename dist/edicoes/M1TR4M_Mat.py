@@ -1443,10 +1443,10 @@ def _m_c_mgeo():
   if 12<=a<=168:
    t=a*math.pi/180
    ux,uy=(math.cos(t),math.sin(t))
-   B=(20.0,1.0)
-   T=(20.0+2*ux/uy,3.0)
-   p0=(B[0]-ux/uy,0.0)
-   p1=(T[0]+ux/uy,4.0)
+   B=(20.0,11.0)
+   T=(20.0+2*ux/uy,13.0)
+   p0=(B[0]-ux/uy,10.0)
+   p1=(T[0]+ux/uy,14.0)
    x0=min(p0[0],p1[0])-1.5
    x1=max(p0[0],p1[0])+1.5
    w=max(x1-x0,2.1*4.6)
@@ -1459,7 +1459,7 @@ def _m_c_mgeo():
     for j in range(4):
      b=(a/2+90*j)*math.pi/180
      rot.append((P[0]+0.55*math.cos(b)-6*d,P[1]+0.55*math.sin(b)+6*d,str(j0+j)))
-   gr=('Paralelas cortadas por uma secante',[('s',[(X0,1.0,X1,1.0),(X0,3.0,X1,3.0)],0),('s',[(p0[0],p0[1],p1[0],p1[1])],6),('t',rot[:4],2),('t',rot[4:],5)],X0,X1,2-h/2,2+h/2,'1=3=5=7: '+s1+'; 2=4=6=8: '+s2)
+   gr=('Paralelas cortadas por uma secante',[('s',[(X0,11.0,X1,11.0),(X0,13.0,X1,13.0)],0),('s',[(p0[0],p0[1],p1[0],p1[1])],6),('t',rot[:4],2),('t',rot[4:],5)],X0,X1,12-h/2,12+h/2,'1=3=5=7: '+s1+'; 2=4=6=8: '+s2)
   return('\n'.join(o),st,a,'',gr)if gr else('\n'.join(o),st,a,'')
  UN=['u.c.','cm','m','mm','dm','km']
  def ue(u,k):
@@ -2985,6 +2985,8 @@ def _m_c_mrea():
    N.need(r[0]!=0,'O resultado \xe9 0')
    mr,nr=cien(r)
    o.append('> '+ctxt(mr,nr))
+  else:
+   o[0]='> '+o[0]
   st=('Nota\xe7\xe3o cient\xedfica: a \xd7 10\u207f com 1 \u2264 a < 10 e n inteiro.\nMultiplicar: multiplicam-se os n\xfameros e somam-se os expoentes.\nDividir: dividem-se os n\xfameros e subtraem-se os ex'
 'poentes.\nSomar: primeiro, a mesma pot\xeancia de 10.')
   return('\n'.join(o),st,Q.qf(r),'')
@@ -3810,7 +3812,8 @@ def _m_m1_cat():
 'a9|M|9|\xc1lgebra (9.\xba ano)|p_a9|x_a9|4|35|8|76|8|87|c_mexp.ineq c_matq.q2 c_mpol.fat c_mprp.inv c_matf.fx|a9a a9b a9c a9d','g9|M|9|Geometria e Medida (9.\xba ano)|p_g9|x_g9|6|39|10|84|15|95|c_mgtr.circ c_matr.tri c_matr.rad c_msol.sol|g9a g9b g9c g9d g9e g9f',
 'd9|M|9|Probabilidades (9.\xba ano)|p_d9|x_d9|3|45|8|94|7|110|c_mprb.prob c_mprb.dados c_mprb.urna|d9a d9b d9c')
  BUILD='2026-10-23'
- LIMITES='ver RELATORIO.md'
+ LIMITES=('- Tempos e mem\xf3ria medidos s\xf3 no computador (MicroPython 1.12 de 32 bits). No aparelho, v\xea o Diagn\xf3stico.\n- S\xf3 n\xfameros reais: n\xe3o h\xe1 n\xfameros complexos.\n- Edi\xe7\xf5es de '
+'reserva: s\xf3 FQ do 10.\xba ano ou Matem\xe1tica do 7.\xba ao 9.\xba ano, sem pesquisa.')
  return _ns('NLIC NEX NCART TEMAS BUILD LIMITES',NLIC,NEX,NCART,TEMAS,BUILD,LIMITES)
 
 
@@ -3921,8 +3924,8 @@ def _m_m1_cfg():
 'num texto longo, avan\xe7a\n- esc ou 0: volta ao ecr\xe3 anterior\n- del: apaga um car\xe1cter; clear: limpa o campo\n- shift: uma mai\xfascula; tab: fixa as mai\xfasculas\nO rodap\xe9 diz sempre o qu'
 'e fazem enter e esc.')),('N\xfameros e express\xf5es',('N\xfameros: 2,5 ou 2.5; fra\xe7\xf5es 3/4; nota\xe7\xe3o cient\xedfica 6,02e23 ou 6,02*10^23.\nExpress\xf5es: + - * / ^, par\xeanteses, |x| (m\xf3dulo), pi, sqrt( ) ou \u221a, sin cos tan (tamb\xe9m s'
 'en e tg).\nMultiplica\xe7\xe3o impl\xedcita: 2x e 3(x+1).\nans \xe9 o \xfaltimo resultado de uma calculadora.\nListas de dados: separa os valores com espa\xe7os (2,5 3,1 4); com \xd7 10^n, usa ; entre'
-' os valores.')),('Unidades e f\xf3rmulas qu\xedmicas',('Nas calculadoras, escolhe a unidade de cada campo com \u25c2\u25b8 (quando h\xe1 mais do que uma).\nF\xf3rmulas qu\xedmicas: mai\xfasculas e min\xfasculas como na tabela: H2SO4, Ca(OH)2, CuSO4.5H2O (o'
-' ponto separa a \xe1gua de hidrata\xe7\xe3o). Co \xe9 cobalto; CO \xe9 mon\xf3xido de carbono.')),('Gravar o progresso','A app guarda as defini\xe7\xf5es e o progresso em vari\xe1veis do documento (m1def, m1prog...).\nPara ficarem guardados de vez, grava o documento: ctrl+S (ou menu Ficheiro > Guardar) antes de o fechar.'),
+' os valores.')),('Unidades e f\xf3rmulas qu\xedmicas',('Nas calculadoras, se um campo tem v\xe1rias unidades, \u25be leva \xe0 unidade e \u25c2\u25b8 mudam-na.\nF\xf3rmulas qu\xedmicas: mai\xfasculas e min\xfasculas como na tabela: H2SO4, Ca(OH)2, CuSO4.5H'
+'2O (o ponto separa a \xe1gua de hidrata\xe7\xe3o). Co \xe9 cobalto; CO \xe9 mon\xf3xido de carbono.')),('Gravar o progresso','A app guarda as defini\xe7\xf5es e o progresso em vari\xe1veis do documento (m1def, m1prog...).\nPara ficarem guardados de vez, grava o documento: ctrl+S (ou menu Ficheiro > Guardar) antes de o fechar.'),
 ('Modo de exame','Em modo de exame (Press-to-Test) a calculadora torna os documentos inacess\xedveis. A M1TR4M n\xe3o tenta contornar isso: \xe9 uma ferramenta de estudo para usar fora dos testes.'))
  def help_():
   sel=0
@@ -4021,15 +4024,21 @@ def _m_m1_cont():
    raise
   D=getattr(m,'D',None)
   if D is not None:
-   v=head(D,'V')
-   if v!=str(PVER):
+   try:
+    check(D,name)
+   except Falta:
     P.unload(name)
-    raise Falta('M\xf3dulo '+name+' desatualizado (vers\xe3o '+v+'; esta app l\xea a '+str(PVER)+')')
-   nl=head(D,'N')
-   if nl!=''and(not nl.isdigit()):
-    raise Falta('M\xf3dulo '+name+' estragado')
+    raise
   SL[slot]=[m,name]
   return m
+ def check(D,name):
+  v=head(D,'V')
+  if v!=str(PVER):
+   raise Falta('M\xf3dulo '+name+' desatualizado (vers\xe3o '+v+'; esta app l\xea a '+str(PVER)+')')
+  nl=head(D,'N')
+  k=D.count('\n@L ')or D.count('\n@X ')
+  if nl!=''and(not nl.isdigit()or(k and int(nl)!=k)):
+   raise Falta('M\xf3dulo '+name+' estragado (instala '+name+'.tns de novo)')
  def head(D,k):
   i=D.find('@'+k+' ')
   if i<0 or i>200:
@@ -4098,7 +4107,7 @@ def _m_m1_cont():
      pg[4]='\n\n'.join([ftext(f)for f in fs])
     return(h,pg,d.get('R',''),fs)
   raise Falta('Li\xe7\xe3o '+lid+' n\xe3o encontrada')
- return _ns('P SL WARN Falta drop get recs body parts ftext lesson',P,SL,WARN,Falta,drop,get,recs,body,parts,ftext,lesson)
+ return _ns('P SL WARN Falta drop get check recs body parts ftext lesson',P,SL,WARN,Falta,drop,get,check,recs,body,parts,ftext,lesson)
 
 
 _F['m1_cont'] = _m_m1_cont

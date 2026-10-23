@@ -58,16 +58,27 @@ def get(slot, name):
         raise
     D = getattr(m, 'D', None)
     if D is not None:
-        v = head(D, 'V')
-        if v != str(PVER):
+        try:
+            check(D, name)
+        except Falta:
             P.unload(name)
-            raise Falta('M\u00f3dulo ' + name + ' desatualizado (vers\u00e3o ' +
-                        v + '; esta app l\u00ea a ' + str(PVER) + ')')
-        nl = head(D, 'N')
-        if nl != '' and not nl.isdigit():
-            raise Falta('M\u00f3dulo ' + name + ' estragado')
+            raise
     SL[slot] = [m, name]
     return m
+
+
+def check(D, name):
+    # Confirma a versao do pacote e o numero de registos (@N): licoes
+    # (@L) num pacote de licoes, exercicios (@X) num de exercicios.
+    v = head(D, 'V')
+    if v != str(PVER):
+        raise Falta('M\u00f3dulo ' + name + ' desatualizado (vers\u00e3o ' +
+                    v + '; esta app l\u00ea a ' + str(PVER) + ')')
+    nl = head(D, 'N')
+    k = D.count('\n@L ') or D.count('\n@X ')
+    if nl != '' and (not nl.isdigit() or (k and int(nl) != k)):
+        raise Falta('M\u00f3dulo ' + name + ' estragado (instala ' + name +
+                    '.tns de novo)')
 
 
 def head(D, k):

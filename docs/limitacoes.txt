@@ -1,0 +1,12 @@
+# Limitações conhecidas (ecrã "Sobre a M1TR4M"). Uma por linha.
+# Prefixos: "F: " só FQ, "M: " só Matemática, "A: " só a app completa
+# (não vai para as edições de reserva); sem prefixo: em todas.
+- Tempos e memória medidos só no computador (MicroPython 1.12 de 32 bits). No aparelho, vê o Diagnóstico.
+- Só números reais: não há números complexos.
+F: - Configuração eletrónica: Z de 1 a 36. Raio atómico e energia de ionização: Z de 1 a 54.
+F: - Lewis, geometria e polaridade: só as moléculas da tabela do programa.
+F: - Acerto de equações químicas: até 8 espécies.
+F: - Constantes do exame (IAVE): confirma o ano da tabela que vais usar.
+A: - A pesquisa procura o texto escrito: não corrige erros de escrita.
+A: - AL 2.3 e AL 2.4 de Química: usam as calculadoras gerais (diluição e fotões).
+- Edições de reserva: só FQ do 10.º ano ou Matemática do 7.º ao 9.º ano, sem pesquisa.

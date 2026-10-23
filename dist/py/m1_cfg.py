@@ -152,8 +152,8 @@ AJ = (('Teclas e navega\u00e7\u00e3o',
        'ans \u00e9 o \u00faltimo resultado de uma calculadora.\n'
        'Listas de dados: separa os valores com espa\u00e7os (2,5 3,1 4); com ' '\u00d7 10^n, usa ; entre os valores.'),
       ('Unidades e f\u00f3rmulas qu\u00edmicas',
-       'Nas calculadoras, escolhe a unidade de cada campo com \u25c2\u25b8 '
-       '(quando h\u00e1 mais do que uma).\n'
+       'Nas calculadoras, se um campo tem v\u00e1rias unidades, \u25be leva '
+       '\u00e0 unidade e \u25c2\u25b8 mudam-na.\n'
        'F\u00f3rmulas qu\u00edmicas: mai\u00fasculas e min\u00fasculas como na tabela: '
        'H2SO4, Ca(OH)2, CuSO4.5H2O (o ponto separa a \u00e1gua de '
        'hidrata\u00e7\u00e3o). Co \u00e9 cobalto; CO \u00e9 mon\u00f3xido de carbono.'),

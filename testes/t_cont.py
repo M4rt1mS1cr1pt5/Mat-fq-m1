@@ -58,6 +58,22 @@ def t_falta():
     raise AssertionError('esperava Falta')
 
 
+def t_check():
+    # Versao e numero de licoes (@N 2 e duas licoes @L): aceita.
+    C.check(D, 't')
+    for d, err in ((D.replace('@V 1', '@V 2'), 'desatualizado'),
+                   (D.replace('@N 2', '@N 3'), 'estragado'),
+                   (D.replace('@N 2', '@N x'), 'estragado')):
+        try:
+            C.check(d, 't')
+        except C.Falta as e:
+            assert err in str(e), str(e)
+            continue
+        raise AssertionError('esperava Falta: ' + err)
+    # Indice da pesquisa: @N conta as entradas (sem @L nem @X).
+    C.check(IDX, 'i')
+
+
 # ------------------------------------------------------------ pesquisa
 IDX = ('@V 1\n@N 4\nL|Função quadrática|vertice parabola|m5a\n'
        'F|Fórmula resolvente||m5:2\n'

@@ -102,6 +102,8 @@ def _ncie(v):
         N.need(r[0] != 0, 'O resultado \u00e9 0')
         mr, nr = cien(r)
         o.append('> ' + ctxt(mr, nr))
+    else:
+        o[0] = '> ' + o[0]
     st = 'Nota\u00e7\u00e3o cient\u00edfica: a \u00d7 10\u207f com 1 \u2264 a < 10 e n inteiro.\n' \
         'Multiplicar: multiplicam-se os n\u00fameros e somam-se os expoentes.\n' \
         'Dividir: dividem-se os n\u00fameros e subtraem-se os expoentes.\n' \

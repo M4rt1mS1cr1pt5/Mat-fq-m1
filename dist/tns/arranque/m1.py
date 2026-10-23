@@ -1,6 +1,6 @@
 # m1.py - M1TR4M: arranque. Mede a memoria, importa o nucleo, mostra o
 # ecra inicial e apanha qualquer erro fatal com uma mensagem clara.
-# Fisica e Quimica A e Matematica A, 10.o ano. by M1TR4M
+# Fisica e Quimica A (10.o ano) e Matematica (7.o ao 10.o ano). by M1TR4M
 
 MODO = 'PyLib'
 

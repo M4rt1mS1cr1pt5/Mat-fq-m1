@@ -59,6 +59,8 @@ def t_ang_paralelas():
     g = r[4]
     assert g[6] == '1=3=5=7: 35°; 2=4=6=8: 145°'
     assert len(g[1][2][1]) == 4 and len(g[1][3][1]) == 4
+    # Desenho sem eixos: o 0 fica fora da janela nas duas direcoes.
+    assert not g[2] <= 0 <= g[3] and not g[4] <= 0 <= g[5]
     tem(calc(c_mgeo, 'ang', [6, '90', ''])[0], 'os 8 ângulos são retos')
     assert len(calc(c_mgeo, 'ang', [6, '5', ''])) == 4   # sem desenho
     assert '0°' in erro(calc, c_mgeo, 'ang', [6, '0', ''])

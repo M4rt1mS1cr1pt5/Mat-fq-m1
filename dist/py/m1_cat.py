@@ -42,4 +42,12 @@ TEMAS = (
 BUILD = "2026-10-23"
 # Partes do indice da pesquisa: modulo:disciplina
 IDX = "m1_idx:F m1_idx2:F m1_idxm:M m1_idxm2:M"
-LIMITES = "ver RELATORIO.md"
+LIMITES = "- Tempos e mem\xf3ria medidos s\xf3 no computador (MicroPython 1.12 de 32 bits). No aparelho, v\xea o Diagn\xf3stico.\n\
+- S\xf3 n\xfameros reais: n\xe3o h\xe1 n\xfameros complexos.\n\
+- Configura\xe7\xe3o eletr\xf3nica: Z de 1 a 36. Raio at\xf3mico e energia de ioniza\xe7\xe3o: Z de 1 a 54.\n\
+- Lewis, geometria e polaridade: s\xf3 as mol\xe9culas da tabela do programa.\n\
+- Acerto de equa\xe7\xf5es qu\xedmicas: at\xe9 8 esp\xe9cies.\n\
+- Constantes do exame (IAVE): confirma o ano da tabela que vais usar.\n\
+- A pesquisa procura o texto escrito: n\xe3o corrige erros de escrita.\n\
+- AL 2.3 e AL 2.4 de Qu\xedmica: usam as calculadoras gerais (dilui\xe7\xe3o e fot\xf5es).\n\
+- Edi\xe7\xf5es de reserva: s\xf3 FQ do 10.\xba ano ou Matem\xe1tica do 7.\xba ao 9.\xba ano, sem pesquisa."

@@ -2216,7 +2216,10 @@ def _m_m1_cat():
 'f1|F|f|Energia e movimentos|p_f1|x_f1|5|27|10|58|15|76|c_fqen.em c_fqen.cons c_fqen.tr c_fqen.wp c_fqen.tec c_fqen.pot c_fqen.ren|f1a f1b f1c f1d f1e','f2|F|f|Energia e fen\xf3menos el\xe9tricos|p_f2|x_f2|5|32|10|68|16|91|c_fqci.ohm c_fqci.rho c_fqci.assoc c_fqci.ger c_fqci.pot c_fqen.ren|f2a f2b f2c f2d f2e',
 'f3|F|f|Energia, fen\xf3menos t\xe9rmicos e radia\xe7\xe3o|p_f3|x_f3|6|37|10|78|17|107|c_fqte.cal c_fqte.est c_fqte.eq c_fqte.cond c_fqte.pl c_fqte.pv c_fqen.ren c_comu.uni|f3a f3b f3c f3d f3e f3f')
  BUILD='2026-10-23'
- LIMITES='ver RELATORIO.md'
+ LIMITES=('- Tempos e mem\xf3ria medidos s\xf3 no computador (MicroPython 1.12 de 32 bits). No aparelho, v\xea o Diagn\xf3stico.\n- S\xf3 n\xfameros reais: n\xe3o h\xe1 n\xfameros complexos.\n- Configura\xe7\xe3'
+'o eletr\xf3nica: Z de 1 a 36. Raio at\xf3mico e energia de ioniza\xe7\xe3o: Z de 1 a 54.\n- Lewis, geometria e polaridade: s\xf3 as mol\xe9culas da tabela do programa.\n- Acerto de equa\xe7\xf5es qu'
+'\xedmicas: at\xe9 8 esp\xe9cies.\n- Constantes do exame (IAVE): confirma o ano da tabela que vais usar.\n- Edi\xe7\xf5es de reserva: s\xf3 FQ do 10.\xba ano ou Matem\xe1tica do 7.\xba ao 9.\xba ano, s'
+'em pesquisa.')
  return _ns('NLIC NEX NCART TEMAS BUILD LIMITES',NLIC,NEX,NCART,TEMAS,BUILD,LIMITES)
 
 
@@ -2327,8 +2330,8 @@ def _m_m1_cfg():
 'num texto longo, avan\xe7a\n- esc ou 0: volta ao ecr\xe3 anterior\n- del: apaga um car\xe1cter; clear: limpa o campo\n- shift: uma mai\xfascula; tab: fixa as mai\xfasculas\nO rodap\xe9 diz sempre o qu'
 'e fazem enter e esc.')),('N\xfameros e express\xf5es',('N\xfameros: 2,5 ou 2.5; fra\xe7\xf5es 3/4; nota\xe7\xe3o cient\xedfica 6,02e23 ou 6,02*10^23.\nExpress\xf5es: + - * / ^, par\xeanteses, |x| (m\xf3dulo), pi, sqrt( ) ou \u221a, sin cos tan (tamb\xe9m s'
 'en e tg).\nMultiplica\xe7\xe3o impl\xedcita: 2x e 3(x+1).\nans \xe9 o \xfaltimo resultado de uma calculadora.\nListas de dados: separa os valores com espa\xe7os (2,5 3,1 4); com \xd7 10^n, usa ; entre'
-' os valores.')),('Unidades e f\xf3rmulas qu\xedmicas',('Nas calculadoras, escolhe a unidade de cada campo com \u25c2\u25b8 (quando h\xe1 mais do que uma).\nF\xf3rmulas qu\xedmicas: mai\xfasculas e min\xfasculas como na tabela: H2SO4, Ca(OH)2, CuSO4.5H2O (o'
-' ponto separa a \xe1gua de hidrata\xe7\xe3o). Co \xe9 cobalto; CO \xe9 mon\xf3xido de carbono.')),('Gravar o progresso','A app guarda as defini\xe7\xf5es e o progresso em vari\xe1veis do documento (m1def, m1prog...).\nPara ficarem guardados de vez, grava o documento: ctrl+S (ou menu Ficheiro > Guardar) antes de o fechar.'),
+' os valores.')),('Unidades e f\xf3rmulas qu\xedmicas',('Nas calculadoras, se um campo tem v\xe1rias unidades, \u25be leva \xe0 unidade e \u25c2\u25b8 mudam-na.\nF\xf3rmulas qu\xedmicas: mai\xfasculas e min\xfasculas como na tabela: H2SO4, Ca(OH)2, CuSO4.5H'
+'2O (o ponto separa a \xe1gua de hidrata\xe7\xe3o). Co \xe9 cobalto; CO \xe9 mon\xf3xido de carbono.')),('Gravar o progresso','A app guarda as defini\xe7\xf5es e o progresso em vari\xe1veis do documento (m1def, m1prog...).\nPara ficarem guardados de vez, grava o documento: ctrl+S (ou menu Ficheiro > Guardar) antes de o fechar.'),
 ('Modo de exame','Em modo de exame (Press-to-Test) a calculadora torna os documentos inacess\xedveis. A M1TR4M n\xe3o tenta contornar isso: \xe9 uma ferramenta de estudo para usar fora dos testes.'))
  def help_():
   sel=0
@@ -2427,15 +2430,21 @@ def _m_m1_cont():
    raise
   D=getattr(m,'D',None)
   if D is not None:
-   v=head(D,'V')
-   if v!=str(PVER):
+   try:
+    check(D,name)
+   except Falta:
     P.unload(name)
-    raise Falta('M\xf3dulo '+name+' desatualizado (vers\xe3o '+v+'; esta app l\xea a '+str(PVER)+')')
-   nl=head(D,'N')
-   if nl!=''and(not nl.isdigit()):
-    raise Falta('M\xf3dulo '+name+' estragado')
+    raise
   SL[slot]=[m,name]
   return m
+ def check(D,name):
+  v=head(D,'V')
+  if v!=str(PVER):
+   raise Falta('M\xf3dulo '+name+' desatualizado (vers\xe3o '+v+'; esta app l\xea a '+str(PVER)+')')
+  nl=head(D,'N')
+  k=D.count('\n@L ')or D.count('\n@X ')
+  if nl!=''and(not nl.isdigit()or(k and int(nl)!=k)):
+   raise Falta('M\xf3dulo '+name+' estragado (instala '+name+'.tns de novo)')
  def head(D,k):
   i=D.find('@'+k+' ')
   if i<0 or i>200:
@@ -2504,7 +2513,7 @@ def _m_m1_cont():
      pg[4]='\n\n'.join([ftext(f)for f in fs])
     return(h,pg,d.get('R',''),fs)
   raise Falta('Li\xe7\xe3o '+lid+' n\xe3o encontrada')
- return _ns('P SL WARN Falta drop get recs body parts ftext lesson',P,SL,WARN,Falta,drop,get,recs,body,parts,ftext,lesson)
+ return _ns('P SL WARN Falta drop get check recs body parts ftext lesson',P,SL,WARN,Falta,drop,get,check,recs,body,parts,ftext,lesson)
 
 
 _F['m1_cont'] = _m_m1_cont

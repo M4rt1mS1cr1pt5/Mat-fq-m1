@@ -7,14 +7,16 @@
   4. Gerar indice e catalogo 9. Edicoes de reserva (ficheiro unico, ate
   5. Verificar o codigo        300 KB, ver edicoes.py) e empacotar (Luna),
                                conferindo cada .py byte a byte
-                            10. Relatorio
+                            10. Previa (dist/previa.png, ver previa.py) e
+                                relatorio (dist/build.json)
 
 Uso: python3 ferramentas/build.py [--rapido] [--sem-tns]
   --rapido   salta as medicoes de memoria por bissecao (passos 7a e 9)
   --sem-tns  nao cria os .tns (as edicoes de reserva geram-se na mesma)
 Ferramentas: MicroPython 1.12 (porta unix, 32 bits), mpy-cross e Luna,
 procurados em ferramentas/bin, no PATH ou nas variaveis M1_MP, M1_MPY,
-M1_LUNA (ver ferramentas/prepara.sh).
+M1_LUNA (ver ferramentas/prepara.sh). A previa precisa do Pillow; sem
+ele, salta com um aviso.
 """
 import datetime
 import json
@@ -101,11 +103,23 @@ def escrever(nome, texto):
     return p
 
 
-def limites():
+def limites(disc=None):
+    # docs/limitacoes.txt: uma limitacao por linha ('#' comenta). Prefixos
+    # 'F: ' e 'M: ' (so essa disciplina) e 'A: ' (so a app completa).
+    # disc=None: app completa (todas as linhas); 'F' ou 'M': edicao.
     p = os.path.join(RAIZ, 'docs', 'limitacoes.txt')
-    if os.path.exists(p):
-        return open(p, encoding='utf-8').read().strip()
-    return ''
+    if not os.path.exists(p):
+        return ''
+    out = []
+    for ln in open(p, encoding='utf-8').read().split('\n'):
+        if not ln.strip() or ln.startswith('#'):
+            continue
+        tag = ln[0] if ln[:3] in ('F: ', 'M: ', 'A: ') else ''
+        if tag:
+            ln = ln[3:]
+        if disc is None or tag in ('', disc):
+            out.append(ln)
+    return '\n'.join(out)
 
 
 def main(args):
@@ -147,6 +161,18 @@ def main(args):
           '%d calculadoras' % (len(temas), nl, nf, ne, nx, len(calcs)))
     print('  %d avisos (frases longas e outros)' % len(avisos))
     rel['avisos'] = avisos
+    # Contagens por tema para o relatorio (Parte C): exemplos por nivel
+    # (1, 2, 3) e exercicios por tipo (m, n, u, v).
+    rel['conteudo'] = dict((t.id, {
+        'disc': t.disc, 'grupo': t.grupo, 'titulo': t.titulo,
+        'licoes': len(t.licoes),
+        'formulas': sum(len(b.formulas) for b in t.licoes),
+        'exemplos': [sum(1 for x in t.exemplos if x.meta['nivel'] == n)
+                     for n in '123'],
+        'exercicios': dict((k, sum(1 for x in t.exercicios
+                                   if x.meta['tipo'] == k))
+                           for k in CT.TIPOS),
+        'calcs': len(t.calcs)}) for t in temas)
 
     passo(2, 'Verificar a matematica (blocos #V)')
     print('  feito durante a validacao: todas as marcas [[..]] conferem')
@@ -221,6 +247,18 @@ def main(args):
           'imports permitidos; compilam no mpy-cross 1.12' % n)
 
     passo(6, 'Testar')
+    # Um teste com o nome de outro do mesmo ficheiro substitui-o e nunca
+    # corre: recusa nomes repetidos.
+    pt = os.path.join(RAIZ, 'testes')
+    for f in sorted(os.listdir(pt)):
+        if f.startswith('t_') and f.endswith('.py'):
+            ns = re.findall(r'^def (t_\w+)', open(os.path.join(pt, f),
+                                                  encoding='utf-8').read(),
+                            re.M)
+            rep = sorted(set(n for n in ns if ns.count(n) > 1))
+            if rep:
+                raise Falha('testes/%s: nomes repetidos: %s' % (
+                    f, ', '.join(rep)))
     rel['testes'] = {}
     for nome, cmd in (('CPython', [sys.executable]),
                       ('MicroPython', [mp, '-X', 'heapsize=2M'])):
@@ -266,7 +304,8 @@ def main(args):
     else:
         empacotar(lun, rel)
 
-    passo(10, 'Relatorio')
+    passo(10, 'Previa e relatorio')
+    previa(rel)
     rel['tempo'] = round(time.time() - t0, 1)
     with open(os.path.join(DIST, 'build.json'), 'w', encoding='utf-8') as f:
         json.dump(rel, f, ensure_ascii=False, indent=1, sort_keys=True)
@@ -275,11 +314,31 @@ def main(args):
     print('  dist/build.json e dist/avisos.txt (%.0f s)' % rel['tempo'])
 
 
+def previa(rel):
+    # Imagem com os ecras principais, tirados das capturas (passos 8 e 9).
+    try:
+        import PIL  # noqa: F401
+    except ImportError:
+        print('  previa saltada: Pillow nao instalado')
+        rel['avisos'].append('previa: Pillow nao instalado, sem dist/previa.png')
+        return
+    import previa as PV
+    try:
+        n = PV.gerar(os.path.join(DIST, 'capturas'),
+                     os.path.join(DIST, 'previa.png'))
+    except RuntimeError as e:
+        raise Falha(str(e))
+    rel['previa'] = {'ficheiro': 'dist/previa.png', 'ecras': n}
+    print('  dist/previa.png: %d ecras' % n)
+
+
 def percursos(mp, rel):
     pasta = os.path.join(RAIZ, 'ferramentas', 'teclas')
     corr = os.path.join(RAIZ, 'ferramentas', 'simulador', 'correr.py')
     cap = os.path.join(DIST, 'capturas')
-    os.makedirs(cap, exist_ok=True)
+    # Sem capturas antigas: um percurso apagado nao deixa ecras na previa.
+    shutil.rmtree(cap, ignore_errors=True)
+    os.makedirs(cap)
     fs = sorted(f for f in os.listdir(pasta) if f.endswith('.txt'))
     rel['percursos'] = {}
     for f in fs:
@@ -333,10 +392,11 @@ def reserva(mp, mpyc, rel, rapido, temas, calcs, ctes):
     # um percurso de teclas nos dois Pythons e, no build completo, medir
     # o heap minimo do MicroPython que as deixa correr.
     extra = {'data': rel['data'], 'elementos': dados.elementos(),
-             'constantes': ctes, 'limites': limites() or 'ver RELATORIO.md'}
+             'constantes': ctes}
     ok = verifica.substitutos(PY)
     rel['edicoes'] = {}
     for ed in ED.EDICOES:
+        extra['limites'] = limites(ed['disc']) or 'ver RELATORIO.md'
         try:
             p, tam, resumo = ED.gerar(PY, temas, calcs, ed, extra)
         except ED.Falha as e:

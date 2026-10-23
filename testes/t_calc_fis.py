@@ -154,7 +154,7 @@ def t_pot_tempo_potencia():
     perto(r[2], 20.0)
 
 
-def t_pot_invalido():
+def t_pot_mec_invalido():
     assert 'só o campo' in erro(calc, c_fqen, 'pot', ['', '', '5'])
     assert 'tempo' in erro(calc, c_fqen, 'pot', ['10', '0', ''])
 
@@ -284,7 +284,7 @@ def t_pot_corrente():
     perto(r[2], 3.6e6)
 
 
-def t_pot_invalido():
+def t_pot_ele_invalido():
     assert 'dois' in erro(calc, c_fqci, 'pot', ['100', '', '', ''])
     assert 'dois' in erro(calc, c_fqci, 'pot', ['100', '10', '2', ''])
     assert 'tempo' in erro(calc, c_fqci, 'pot', ['100', '10', '', '', '0'])

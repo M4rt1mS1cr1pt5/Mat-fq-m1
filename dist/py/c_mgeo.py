@@ -201,10 +201,11 @@ def paralelas(a):
     if 12 <= a <= 168:
         t = a * math.pi / 180
         ux, uy = math.cos(t), math.sin(t)
-        B = (20.0, 1.0)
-        T = (20.0 + 2 * ux / uy, 3.0)
-        p0 = (B[0] - ux / uy, 0.0)
-        p1 = (T[0] + ux / uy, 4.0)
+        # Figura em y = 10..14: o 0 fica fora da janela (sem eixo).
+        B = (20.0, 11.0)
+        T = (20.0 + 2 * ux / uy, 13.0)
+        p0 = (B[0] - ux / uy, 10.0)
+        p1 = (T[0] + ux / uy, 14.0)
         x0 = min(p0[0], p1[0]) - 1.5
         x1 = max(p0[0], p1[0]) + 1.5
         w = max(x1 - x0, 2.1 * 4.6)
@@ -219,10 +220,10 @@ def paralelas(a):
                 rot.append((P[0] + 0.55 * math.cos(b) - 6 * d,
                             P[1] + 0.55 * math.sin(b) + 6 * d, str(j0 + j)))
         gr = ('Paralelas cortadas por uma secante',
-              [('s', [(X0, 1.0, X1, 1.0), (X0, 3.0, X1, 3.0)], 0),
+              [('s', [(X0, 11.0, X1, 11.0), (X0, 13.0, X1, 13.0)], 0),
                ('s', [(p0[0], p0[1], p1[0], p1[1])], 6),
                ('t', rot[:4], 2), ('t', rot[4:], 5)],
-              X0, X1, 2 - h / 2, 2 + h / 2,
+              X0, X1, 12 - h / 2, 12 + h / 2,
               '1=3=5=7: ' + s1 + '; 2=4=6=8: ' + s2)
     return ('\n'.join(o), st, a, '', gr) if gr else ('\n'.join(o), st, a, '')
 

@@ -2,6 +2,8 @@
 # teclas. Uso:
 #   python3 correr.py TECLAS [--log FRAMES] [--estado FICH] [--texto]
 #   micropython -X heapsize=512K correr.py TECLAS ...
+#   python3 correr.py TECLAS --src PASTA --edicao   (edicao de reserva copiada
+#                                                  como PASTA/m1.py)
 # Sem --texto usa o ti_draw falso (ecra grafico simulado). Com --texto o
 # ti_draw fica desligado e a app escreve cada ecra com print.
 # No fim escreve um resumo: ecras, textos fora do ecra, teclas usadas,
@@ -64,6 +66,23 @@ def main():
         ti_draw.ST['mem'] = gc
     except ImportError:
         pass
+    if '--edicao' in a:
+        # Edicao de reserva: um so ficheiro (copiado como m1.py para a
+        # pasta --src); o m1_plat esta la dentro e nao se pode ajustar.
+        import m1
+        fim = 'ok'
+        if ti_system.ST['esgotou']:
+            fim = 'FALHA: a sequencia acabou antes de a app sair'
+        elif ti_system.ST['pos'] < len(ks):
+            fim = 'FALHA: sobraram %d teclas' % (len(ks) - ti_system.ST['pos'])
+        if log:
+            ti_draw.ST['log'].close()
+        print('RESUMO ecras=%d textos=%d fora=%d teclas=%d/%d pico=%d %s' % (
+            ti_draw.ST['n'], ti_draw.ST['texts'], len(ti_draw.ST['viol']),
+            ti_system.ST['pos'], len(ks), ti_draw.ST['peak'], fim))
+        for v in ti_draw.ST['viol']:
+            print('FORA', v)
+        return
     import m1_plat
     # Data e memoria fixas: a saida e igual em todas as corridas.
     m1_plat.today = lambda: (2026, 10, 22)

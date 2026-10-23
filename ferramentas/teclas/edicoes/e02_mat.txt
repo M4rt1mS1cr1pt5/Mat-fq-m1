@@ -1,0 +1,56 @@
+# Edicao de reserva Mat: 7.o ano > Geometria e Medida: angulos em retas
+# paralelas (desenho) e area do quadrado por defeito; licao g7a; depois
+# Calculadoras > Matematica > 9.o ano: dois dados (tabela); sair.
+2
+1
+3
+# 6 = Calculadoras do tema; 1 = angulos
+6
+1
+left
+enter
+enter
+enter
+5
+esc
+esc
+# 2 = areas e perimetros (7 campos)
+2
+enter
+enter
+enter
+enter
+enter
+enter
+enter
+esc
+esc
+# 1 Licoes: 1.a (5 paginas)
+1
+1
+right
+right
+right
+right
+esc
+esc
+esc
+esc
+esc
+# 4 Calculadoras > 2 Matematica > 3 = 9.o ano; 12 = dois dados (1, 2)
+4
+2
+3
+1
+2
+enter
+enter
+5
+esc
+esc
+esc
+esc
+esc
+1
+3
+enter

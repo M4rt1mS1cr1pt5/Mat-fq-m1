@@ -4,11 +4,14 @@
   1. Validar conteudos       6. Testar (CPython e MicroPython 32 bits)
   2. Verificar a matematica  7. Medir a memoria (heap de 512 KB)
   3. Gerar os pacotes        8. Simular o ecra (percursos de teclas)
-  4. Gerar indice e catalogo 9. Empacotar (Luna) e conferir byte a byte
-  5. Verificar o codigo     10. Relatorio
+  4. Gerar indice e catalogo 9. Edicoes de reserva (ficheiro unico, ate
+  5. Verificar o codigo        300 KB, ver edicoes.py) e empacotar (Luna),
+                               conferindo cada .py byte a byte
+                            10. Relatorio
 
 Uso: python3 ferramentas/build.py [--rapido] [--sem-tns]
-  --rapido   salta a medicao de memoria por bissecao (passo 7a)
+  --rapido   salta as medicoes de memoria por bissecao (passos 7a e 9)
+  --sem-tns  nao cria os .tns (as edicoes de reserva geram-se na mesma)
 Ferramentas: MicroPython 1.12 (porta unix, 32 bits), mpy-cross e Luna,
 procurados em ferramentas/bin, no PATH ou nas variaveis M1_MP, M1_MPY,
 M1_LUNA (ver ferramentas/prepara.sh).
@@ -29,6 +32,7 @@ import dados  # noqa: E402
 import verifica  # noqa: E402
 import memoria  # noqa: E402
 import tns  # noqa: E402
+import edicoes as ED  # noqa: E402
 
 SRC = os.path.join(RAIZ, 'src')
 DIST = os.path.join(RAIZ, 'dist')
@@ -45,6 +49,7 @@ ORC = {'m1': 4 * KB, 'm1_plat': 12 * KB, 'm1_nucleo': 35 * KB,
 ORC_APP = 30 * KB          # m1_app + m1_cont + m1_cat
 ORC_RES = 115 * KB         # todos os residentes
 HEAP = 512 * KB
+HEAP_ED = 1536 * KB        # heap dos percursos das edicoes de reserva
 
 
 class Falha(Exception):
@@ -255,8 +260,9 @@ def main(args):
           'sobrar, modo texto igual nos dois Pythons' % caminhos)
 
     passo(9, 'Empacotar')
+    reserva(mp, mpyc, rel, '--rapido' in args, temas, calcs, ctes)
     if '--sem-tns' in args or not lun:
-        print('  saltado' + ('' if lun else ' (Luna nao encontrado)'))
+        print('  .tns saltados' + ('' if lun else ' (Luna nao encontrado)'))
     else:
         empacotar(lun, rel)
 
@@ -311,6 +317,71 @@ def percursos(mp, rel):
     return len(fs)
 
 
+def corre_edicao(cmd, teclas, sim, log=None):
+    corr = os.path.join(RAIZ, 'ferramentas', 'simulador', 'correr.py')
+    r = subprocess.run(cmd + [corr, teclas, '--src', sim, '--edicao'] +
+                       (['--log', log] if log else []),
+                       capture_output=True, text=True, timeout=900)
+    out = r.stdout + r.stderr
+    m = re.search(r'RESUMO (.*)', out)
+    ok = bool(m) and m.group(1).endswith(' ok') and 'fora=0' in m.group(1)
+    return ok, (m.group(1) if m else out[-1500:])
+
+
+def reserva(mp, mpyc, rel, rapido, temas, calcs, ctes):
+    # Edicoes de reserva (seccao 4.8): gerar, verificar o codigo, correr
+    # um percurso de teclas nos dois Pythons e, no build completo, medir
+    # o heap minimo do MicroPython que as deixa correr.
+    extra = {'data': rel['data'], 'elementos': dados.elementos(),
+             'constantes': ctes, 'limites': limites() or 'ver RELATORIO.md'}
+    ok = verifica.substitutos(PY)
+    rel['edicoes'] = {}
+    for ed in ED.EDICOES:
+        try:
+            p, tam, resumo = ED.gerar(PY, temas, calcs, ed, extra)
+        except ED.Falha as e:
+            raise Falha(str(e))
+        texto = open(p, encoding='ascii').read()
+        e = verifica.verificar_fonte(p, texto) + verifica.mpy_cross(p, mpyc)
+        if not e:
+            e = verifica.sem_substituto(p, texto, ok)
+        if e:
+            raise Falha('edicao %s: %s' % (ed['id'], '; '.join(e)))
+        sim = os.path.join(DIST, 'edicoes', 'sim_' + ed['id'])
+        os.makedirs(sim, exist_ok=True)
+        shutil.copy(p, os.path.join(sim, 'm1.py'))
+        teclas = os.path.join(RAIZ, 'ferramentas', 'teclas', 'edicoes',
+                              ed['teclas'] + '.txt')
+        log = os.path.join(DIST, 'capturas', ed['teclas'] + '.frames')
+        res = {}
+        for py, cmd in (('cpy', [sys.executable]),
+                        ('mp', [mp, '-X', 'heapsize=%d' % HEAP_ED])):
+            bom, r = corre_edicao(cmd, teclas, sim, log if py == 'cpy' else
+                                  None)
+            if not bom:
+                raise Falha('edicao %s, percurso %s (%s): %s' % (
+                    ed['id'], ed['teclas'], py, r))
+            res[py] = r
+        info = {'bytes': tam, 'conteudo': resumo, 'percurso': res['mp']}
+        if not rapido:
+            # heap minimo (bissecao, passo de 16 KB)
+            lo, hi = 256, HEAP_ED // KB
+            while hi - lo > 16:
+                mid = (lo + hi) // 2
+                if corre_edicao([mp, '-X', 'heapsize=%dK' % mid], teclas,
+                                sim)[0]:
+                    hi = mid
+                else:
+                    lo = mid
+            info['heap_min_kb'] = hi
+        shutil.rmtree(sim)
+        rel['edicoes'][ed['id']] = info
+        print('  M1TR4M %s: %d bytes (max. %d); %s; percurso %s ok nos dois '
+              'Pythons%s' % (ed['id'], tam, ED.LIMITE, resumo, ed['teclas'],
+                             '; heap minimo %d KB' % info['heap_min_kb']
+                             if 'heap_min_kb' in info else ''))
+
+
 def empacotar(lun, rel):
     tnsd = os.path.join(DIST, 'tns')
     if os.path.isdir(tnsd):
@@ -343,13 +414,19 @@ def empacotar(lun, rel):
     out = os.path.join(tnsd, 'M1TR4M_sonda.tns')
     tns.luna(lun, son, out)
     erros += tns.confere(out, son)
+    # edicoes de reserva: um so programa cada
+    for ed in ED.EDICOES:
+        p = os.path.join(DIST, 'edicoes', ed['ficheiro'] + '.py')
+        out = os.path.join(tnsd, ed['ficheiro'] + '.tns')
+        tns.luna(lun, [p], out)
+        erros += tns.confere(out, [p])
     if erros:
         raise Falha('\n'.join(erros))
     n = len(os.listdir(os.path.join(tnsd, 'PyLib')))
     rel['tns'] = {'documento': os.path.getsize(doc), 'pylib': n}
     print('  M1TR4M.tns (%d modulos, %d bytes), %d .tns para a PyLib, '
-          'arranque e sonda; cada .py confere byte a byte' % (
-              len(todos), os.path.getsize(doc), n))
+          'arranque, sonda e %d edicoes de reserva; cada .py confere byte a '
+          'byte' % (len(todos), os.path.getsize(doc), n, len(ED.EDICOES)))
 
 
 if __name__ == '__main__':

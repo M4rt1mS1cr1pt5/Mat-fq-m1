@@ -221,6 +221,9 @@ def go(t):
 
 def disc(d):
     gs = grupos(d)
+    if not gs:
+        U.msg(DN[d], 'Esta edi\u00e7\u00e3o n\u00e3o tem temas de ' + DN[d] + '.')
+        return
     sel = 0
     while True:
         S['where'] = DN[d]

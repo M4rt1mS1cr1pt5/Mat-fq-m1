@@ -33,6 +33,9 @@ def pick_theme(d):
     # Com mais de um grupo (Quimica, Fisica...; 7.o, 8.o... ano), escolhe
     # primeiro o grupo.
     gs = A.grupos(d)
+    if not gs:
+        U.msg(DN[d], 'Esta edi\u00e7\u00e3o n\u00e3o tem temas de ' + DN[d] + '.')
+        return -1
     while True:
         g = 0
         if len(gs) > 1:
@@ -159,6 +162,10 @@ def calc_menu(d):
             ids = [c[0] for i in g[2] for c in cs if c[3] == th(i)[0]]
             if ids:
                 gs.append((g[1], ids))
+        if not cs:
+            U.msg(ds[r][1], 'Esta edi\u00e7\u00e3o n\u00e3o tem calculadoras de ' +
+                  ds[r][1] + '.')
+            continue
         if not gs:
             calc_list([c[0] for c in cs], ds[r][1])
             continue

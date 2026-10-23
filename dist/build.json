@@ -1,66 +1,78 @@
 {
  "avisos": [],
  "data": "2026-10-23",
+ "edicoes": {
+  "FQ": {
+   "bytes": 287766,
+   "conteudo": "9 temas (q1 q2 q3 q4 q5 q6 f1 f2 f3), 38 calculadoras; 40 modulos; dicionario de 576 palavras",
+   "percurso": "ecras=45 textos=674 fora=0 teclas=32/32 pico=421936 ok"
+  },
+  "Mat": {
+   "bytes": 299805,
+   "conteudo": "12 temas (n7 a7 g7 d7 n8 a8 g8 d8 n9 a9 g9 d9), 35 calculadoras; 51 modulos; dicionario de 379 palavras",
+   "percurso": "ecras=64 textos=650 fora=0 teclas=49/49 pico=423808 ok"
+  }
+ },
  "percursos": {
   "p01_fq_licao": {
    "cpy": "ecras=63 textos=640 fora=0 teclas=50/50 pico=0 ok",
-   "mp": "ecras=63 textos=640 fora=0 teclas=50/50 pico=143552 ok"
+   "mp": "ecras=63 textos=640 fora=0 teclas=50/50 pico=142624 ok"
   },
   "p02_mat_calc": {
    "cpy": "ecras=71 textos=640 fora=0 teclas=54/54 pico=0 ok",
-   "mp": "ecras=71 textos=640 fora=0 teclas=54/54 pico=128160 ok"
+   "mp": "ecras=71 textos=640 fora=0 teclas=54/54 pico=127376 ok"
   },
   "p03_exercicios": {
    "cpy": "ecras=56 textos=467 fora=0 teclas=43/43 pico=0 ok",
-   "mp": "ecras=56 textos=467 fora=0 teclas=43/43 pico=112144 ok"
+   "mp": "ecras=56 textos=467 fora=0 teclas=43/43 pico=111328 ok"
   },
   "p04_pesquisa": {
    "cpy": "ecras=62 textos=596 fora=0 teclas=37/37 pico=0 ok",
-   "mp": "ecras=62 textos=596 fora=0 teclas=37/37 pico=194896 ok"
+   "mp": "ecras=62 textos=596 fora=0 teclas=37/37 pico=197456 ok"
   },
   "p05_tabela": {
    "cpy": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=0 ok",
-   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=141104 ok"
+   "mp": "ecras=37 textos=2203 fora=0 teclas=24/24 pico=141856 ok"
   },
   "p06_definicoes": {
    "cpy": "ecras=48 textos=490 fora=0 teclas=35/35 pico=0 ok",
-   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=93056 ok"
+   "mp": "ecras=48 textos=490 fora=0 teclas=35/35 pico=93744 ok"
   },
   "p07_progresso": {
    "cpy": "ecras=48 textos=500 fora=0 teclas=35/35 pico=0 ok",
-   "mp": "ecras=48 textos=500 fora=0 teclas=35/35 pico=131984 ok"
+   "mp": "ecras=48 textos=500 fora=0 teclas=35/35 pico=132464 ok"
   },
   "p08_fis_calc": {
    "cpy": "ecras=59 textos=550 fora=0 teclas=46/46 pico=0 ok",
-   "mp": "ecras=59 textos=550 fora=0 teclas=46/46 pico=134880 ok"
+   "mp": "ecras=59 textos=550 fora=0 teclas=46/46 pico=135776 ok"
   },
   "p09_al_pilha": {
    "cpy": "ecras=87 textos=675 fora=0 teclas=72/72 pico=0 ok",
-   "mp": "ecras=87 textos=675 fora=0 teclas=72/72 pico=129824 ok"
+   "mp": "ecras=87 textos=675 fora=0 teclas=72/72 pico=132448 ok"
   },
   "p10_mat_pontos": {
    "cpy": "ecras=49 textos=438 fora=0 teclas=34/34 pico=0 ok",
-   "mp": "ecras=49 textos=438 fora=0 teclas=34/34 pico=136736 ok"
+   "mp": "ecras=49 textos=438 fora=0 teclas=34/34 pico=137536 ok"
   },
   "p11_mat_anos": {
    "cpy": "ecras=64 textos=658 fora=0 teclas=49/49 pico=0 ok",
-   "mp": "ecras=64 textos=658 fora=0 teclas=49/49 pico=152528 ok"
+   "mp": "ecras=64 textos=658 fora=0 teclas=49/49 pico=153344 ok"
   },
   "p12_mat_estatistica": {
    "cpy": "ecras=56 textos=504 fora=0 teclas=40/40 pico=0 ok",
-   "mp": "ecras=56 textos=504 fora=0 teclas=40/40 pico=144592 ok"
+   "mp": "ecras=56 textos=504 fora=0 teclas=40/40 pico=145392 ok"
   }
  },
  "residente": {
-  "m1_app": 11680,
+  "m1_app": 11760,
   "m1_cat": 5600,
-  "m1_cont": 2944,
+  "m1_cont": 3088,
   "m1_nucleo": 17952,
   "m1_plat": 9472,
   "m1_ui": 12000,
-  "total": 59648
+  "total": 59872
  },
- "residentes": 89376,
+ "residentes": 89730,
  "tamanhos": {
   "c_alf1": 6737,
   "c_alf2": 7353,
@@ -92,18 +104,18 @@
   "c_mrea": 14987,
   "c_msol": 10834,
   "m1": 1196,
-  "m1_app": 15328,
+  "m1_app": 15441,
   "m1_calc": 5729,
   "m1_cat": 5140,
   "m1_cfg": 10364,
-  "m1_cont": 5169,
+  "m1_cont": 5410,
   "m1_ex": 11916,
   "m1_idx": 28281,
   "m1_idx2": 1541,
   "m1_idxm": 28229,
   "m1_idxm2": 2860,
   "m1_ini": 3463,
-  "m1_nav": 5373,
+  "m1_nav": 5647,
   "m1_nucleo": 28371,
   "m1_pesq": 5418,
   "m1_plat": 11920,
@@ -177,13 +189,13 @@
   "x_r8": 2132,
   "x_r9": 1943
  },
- "tempo": 7.1,
+ "tempo": 85.5,
  "testes": {
   "CPython": 336,
   "MicroPython": 336
  },
  "tns": {
-  "documento": 393859,
+  "documento": 394040,
   "pylib": 113
  }
 }

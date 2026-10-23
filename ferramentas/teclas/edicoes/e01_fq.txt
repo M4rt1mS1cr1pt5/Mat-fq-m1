@@ -1,0 +1,39 @@
+# Edicao de reserva FQ: licao q1a (paginas A a J), calculadora de massa
+# molar, tabela periodica (ficha do carbono) e exercicio de q1; sair.
+1
+enter
+# Quimica > q1 > Licoes > 1.a
+1
+1
+1
+1
+right
+right
+right
+right
+right
+right
+right
+right
+right
+esc
+esc
+# 6 Calculadoras do tema: 2 = massa molar (formula por defeito)
+6
+2
+enter
+# esc: resultado, lista, tema, temas, grupos
+esc
+esc
+esc
+esc
+esc
+# menu principal: 5 Tabela periodica, enter (ficha), esc
+5
+enter
+esc
+esc
+# sair: menu principal 13 (1, 3) e confirmar
+1
+3
+enter

@@ -56,6 +56,13 @@ def verificar_fonte(caminho, texto, extra_ok=()):
         if isinstance(no, ast.Import):
             for a in no.names:
                 modulos.add(a.asname or a.name)
+        # nas edicoes de reserva os modulos vem de _imp('nome')
+        if isinstance(no, ast.Assign) and isinstance(no.value, ast.Call) \
+                and isinstance(no.value.func, ast.Name) and \
+                no.value.func.id == '_imp':
+            for t in no.targets:
+                if isinstance(t, ast.Name):
+                    modulos.add(t.id)
     dentro_try = set()
     for no in ast.walk(arv):
         if isinstance(no, ast.Try):

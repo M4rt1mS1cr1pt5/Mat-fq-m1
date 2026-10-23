@@ -48,7 +48,11 @@ def get(slot, name):
     try:
         m = __import__(name)
     except ImportError:
-        raise Falta('Falta o m\u00f3dulo ' + name + ' (instala ' + name + '.tns)')
+        # _ED so existe nas edicoes de reserva (ficheiro unico).
+        ed = globals().get('_ED')
+        raise Falta(('A edi\u00e7\u00e3o de reserva ' + ed + ' n\u00e3o inclui ' +
+                     name) if ed else ('Falta o m\u00f3dulo ' + name +
+                                       ' (instala ' + name + '.tns)'))
     except MemoryError:
         P.collect()
         raise

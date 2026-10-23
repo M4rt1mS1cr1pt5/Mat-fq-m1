@@ -1,0 +1,254 @@
+@tema d8
+disc: M
+grupo: 8
+titulo: Dados (8.º ano)
+calcs: c_mate.uni c_mate.cls c_mprb.freq
+formato: ficha
+
+@licao d8a
+titulo: Quartis e diagrama de extremos e quartis
+chave: quartis primeiro quartil terceiro quartil mediana amplitude interquartil diagrama de extremos e quartis caixa com bigodes outliers
+calc: c_mate.uni
+ano: 8
+nivel: núcleo
+fonte: AE Matemática 8.º ano, Dados (quartis)
+#A
+- Calcular os quartis de um conjunto de dados.
+- Construir e ler um diagrama de extremos e quartis.
+- Calcular a amplitude interquartil.
+#C
+- Ordena os dados; a mediana divide-os em duas metades.
+- Q1: mediana da metade de baixo; Q3: mediana da metade de cima.
+- Com n ímpar, a mediana não entra em nenhuma metade.
+- Diagrama: mínimo, Q1, mediana, Q3 e máximo.
+- Amplitude interquartil: AIQ = Q3 - Q1 (onde estão os 50% centrais).
+#E
+@F Amplitude interquartil|AIQ = Q3 - Q1|Q1, Q3: 1.º e 3.º quartis|mede a dispersão dos 50% centrais|Q1 = 6, Q3 = 10: AIQ = 4|c_mate.uni
+#F
+Dados: 3, 5, 6, 6, 7, 8, 9, 10, 12, 20 (já ordenados).
+Objetivo: os cinco números do diagrama e a AIQ.
+1. n = 10 é par: mediana = (7 + 8) / 2 = [[7,5]].
+2. Metade de baixo: 3, 5, 6, 6, 7, logo Q1 = [[6]].
+3. Metade de cima: 8, 9, 10, 12, 20, logo Q3 = [[10]].
+4. AIQ = 10 - 6 = [[4]]
+> Mínimo 3; Q1 = 6; mediana 7,5; Q3 = 10; máximo 20.
+Verificação: 20 está muito acima de Q3 + 1,5 × AIQ = [[16]]: é um valor atípico.
+#J
+Num diagrama, Q1 = 12 e Q3 = 20. Que percentagem dos dados está entre 12 e 20?
+#R
+Cerca de [[50]]% (os dados entre Q1 e Q3).
+#V
+V = [(7 + 8) / 2, 6, 10, 10 - 6, 10 + 1.5 * 4, 50]
+
+@licao d8b
+titulo: Dados em classes e histograma
+chave: classes amplitude da classe histograma ponto médio classe modal frequência acumulada tabela de frequências agrupadas dados contínuos
+calc: c_mate.cls
+ano: 8
+nivel: núcleo
+fonte: AE Matemática 8.º ano, Dados (classes e histogramas)
+#A
+- Agrupar dados em classes.
+- Construir e ler um histograma.
+- Calcular a média aproximada com os pontos médios.
+#C
+- Classes [a, b[: o limite de baixo entra, o de cima não.
+- Histograma: retângulos juntos; a altura é a frequência.
+- Classe modal: a de maior frequência.
+- Ponto médio de [a, b[: (a + b) / 2.
+- Média aproximada: Σ(ponto médio × frequência) / n.
+#E
+@F Média de dados agrupados|x̄ ≈ Σ(xᵢ × nᵢ) / n|xᵢ: ponto médio da classe;nᵢ: frequência|valor aproximado|[0, 10[ com 3 e [10, 20[ com 7: x̄ ≈ 12|c_mate.cls
+#F
+Dados: alturas (cm) de 20 alunos: [150, 155[ 3; [155, 160[ 7; [160, 165[ 6; [165, 170[ 4.
+Objetivo: classe modal e média aproximada.
+1. Classe modal: [155, 160[ (7 alunos).
+2. Pontos médios: 152,5; 157,5; 162,5; 167,5.
+3. Σ = 152,5 × 3 + 157,5 × 7 + 162,5 × 6 + 167,5 × 4 = [[3205]].
+4. Média ≈ 3205 / 20 = [[160,25]] cm.
+> Classe modal [155, 160[; média ≈ 160,25 cm.
+Verificação: 3 + 7 + 6 + 4 = [[20]] alunos ✓.
+#J
+Qual é o ponto médio da classe [40, 50[?
+#R
+(40 + 50) / 2 = [[45]].
+#V
+V = [152.5 * 3 + 157.5 * 7 + 162.5 * 6 + 167.5 * 4, 3205 / 20, 3 + 7 + 6 + 4, 45]
+
+@exemplo d8e1
+nivel: 1
+titulo: Quartis com n ímpar
+licao: d8a
+calc: c_mate.uni
+#T
+Enunciado: tempos (min) de 9 alunos a ir para a escola: 9, 11, 12, 13, 14, 15, 16, 18, 20. Calcula Q1, a mediana e Q3.
+Resolução:
+1. Mediana: o 5.º dado, [[14]].
+2. Metade de baixo: 9, 11, 12, 13, logo Q1 = (11 + 12) / 2 = [[11,5]].
+3. Metade de cima: 15, 16, 18, 20, logo Q3 = (16 + 18) / 2 = [[17]].
+Resultado: Q1 = 11,5; mediana 14; Q3 = 17.
+Interpretação: metade dos alunos demora entre 11,5 e 17 minutos.
+Erros a evitar: pôr a mediana dentro das metades quando n é ímpar.
+#V
+V = [14, (11 + 12) / 2, (16 + 18) / 2]
+
+@exemplo d8e2
+nivel: 2
+titulo: Comparar duas turmas
+licao: d8a
+calc: c_mate.uni
+#T
+Enunciado: no teste, a turma A tem mediana 14 e AIQ 3; a turma B tem mediana 14 e AIQ 7. O que se conclui?
+Resolução:
+1. As medianas são iguais: o centro das notas é o mesmo.
+2. A AIQ da turma B é maior: 7 - 3 = [[4]] valores a mais.
+3. As notas centrais da turma A estão mais concentradas.
+Resultado: a turma A é mais homogénea.
+Interpretação: a AIQ mede a dispersão; a mediana mede o centro.
+Erros a evitar: concluir que as turmas são iguais só pelas medianas.
+#V
+V = [7 - 3]
+
+@exemplo d8e3
+nivel: 3
+titulo: Tempo de estudo agrupado
+licao: d8b
+calc: c_mate.cls
+#T
+Enunciado: tempo de estudo semanal (h) de 25 alunos: [0, 2[ 4; [2, 4[ 9; [4, 6[ 8; [6, 8[ 4. Calcula a média aproximada e a percentagem que estuda pelo menos 4 h.
+Resolução:
+1. Pontos médios: 1, 3, 5 e 7.
+2. Média ≈ (1 × 4 + 3 × 9 + 5 × 8 + 7 × 4) / 25 = [[3,96]] h.
+3. Pelo menos 4 h: 8 + 4 = [[12]] alunos, ou seja, 12 / 25 = [[48]]%.
+Resultado: média ≈ 3,96 h; 48% estudam pelo menos 4 h.
+Interpretação: a média é aproximada porque não se sabem os dados exatos.
+Erros a evitar: usar os limites das classes em vez dos pontos médios.
+#V
+V = [(1 * 4 + 3 * 9 + 5 * 8 + 7 * 4) / 25, 8 + 4, 12 / 25 * 100]
+
+@exercicio d8x1
+tipo: n
+licao: d8a
+#T
+Calcula Q1 dos dados 2, 4, 5, 7, 8, 10, 11, 13.
+#S
+4,5
+#P
+Metade de baixo: 2, 4, 5, 7.
+#D
+Q1 = (4 + 5) / 2 = [[4,5]].
+#V
+S = (4 + 5) / 2
+V = [S]
+
+@exercicio d8x2
+tipo: n
+licao: d8a
+#T
+Calcula Q3 dos dados 1, 3, 3, 4, 6, 7, 9 (n = 7).
+#S
+7
+#P
+Com n ímpar, a mediana (4) fica de fora.
+#D
+Metade de cima: 6, 7, 9; Q3 = [[7]].
+#V
+S = 7
+V = [S]
+
+@exercicio d8x3
+tipo: n
+licao: d8a
+#T
+Num diagrama de extremos e quartis: mínimo 2, Q1 = 5, mediana 8, Q3 = 11, máximo 15. Qual é a amplitude interquartil?
+#S
+6
+#P
+AIQ = Q3 - Q1.
+#D
+11 - 5 = [[6]].
+#V
+S = 11 - 5
+V = [S]
+
+@exercicio d8x4
+tipo: m
+licao: d8a
+#T
+Que percentagem dos dados está, aproximadamente, abaixo de Q1?
+#O
+10%
+25%
+50%
+75%
+#S
+2
+#P
+Os quartis dividem os dados em quatro partes.
+#D
+Abaixo de Q1 está cerca de 25% dos dados.
+#V
+S = 2
+
+@exercicio d8x5
+tipo: v
+licao: d8a
+#T
+A amplitude interquartil é sempre maior do que a amplitude total.
+#S
+F
+#P
+A AIQ só usa os 50% centrais.
+#D
+Falso: AIQ = Q3 - Q1 nunca é maior do que máximo - mínimo.
+#V
+S = 'F'
+
+@exercicio d8x6
+tipo: n
+licao: d8b
+#T
+Qual é o ponto médio da classe [12,5; 17,5[?
+#S
+15
+#P
+(a + b) / 2.
+#D
+(12,5 + 17,5) / 2 = [[15]].
+#V
+S = (12.5 + 17.5) / 2
+V = [S]
+
+@exercicio d8x7
+tipo: n
+licao: d8b
+#T
+Classes [0, 10[ com 2 dados, [10, 20[ com 5 e [20, 30[ com 3. Qual é a média aproximada?
+#S
+16
+#P
+Pontos médios 5, 15 e 25.
+#D
+(5 × 2 + 15 × 5 + 25 × 3) / 10 = [[16]].
+#V
+S = (5 * 2 + 15 * 5 + 25 * 3) / 10
+V = [S]
+
+@exercicio d8x8
+tipo: m
+licao: d8b
+#T
+Num histograma, as barras...
+#O
+estão separadas por espaços
+estão encostadas umas às outras
+têm larguras ao acaso
+representam dados qualitativos
+#S
+2
+#P
+As classes são intervalos seguidos.
+#D
+Num histograma as barras estão encostadas: as classes são intervalos contíguos.
+#V
+S = 2

@@ -2,9 +2,9 @@
 # triangulo [PQR] com os valores por defeito, desenho (com zoom), reta
 # de Euler (BC = 1,4) e licao m3e (paginas A a D); sair.
 2
-1
-# temas: 3 = Geometria sintetica
-3
+# 4 = 10.o ano; temas: 2 = Geometria sintetica
+4
+2
 # 6 Calculadoras do tema: 1 = pontos notaveis
 6
 1

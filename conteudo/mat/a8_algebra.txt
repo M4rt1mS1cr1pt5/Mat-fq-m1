@@ -1,0 +1,375 @@
+@tema a8
+disc: M
+grupo: 8
+titulo: Álgebra (8.º ano)
+calcs: c_mpol.pol c_mpol.fat c_mexp.eq1 c_mexp.sis c_matf.afim c_mpol.ruf
+formato: ficha
+
+@licao a8a
+titulo: Polinómios e casos notáveis
+chave: monómio polinómio grau termos semelhantes multiplicar polinómios casos notáveis quadrado do binómio diferença de quadrados
+calc: c_mpol.pol
+ano: 8
+nivel: núcleo
+fonte: AE Matemática 8.º ano, Expressões algébricas (polinómios)
+#A
+- Somar, subtrair e multiplicar polinómios.
+- Usar os casos notáveis.
+- Escrever um polinómio na forma reduzida e dizer o grau.
+#C
+- Multiplicar: cada termo de um por cada termo do outro.
+- Quadrado do binómio: (a + b)² = a² + 2ab + b²; (a - b)² = a² - 2ab + b².
+- Diferença de quadrados: (a + b)(a - b) = a² - b².
+- Cuidado: (a + b)² não é a² + b².
+- Forma reduzida: juntar os termos semelhantes e ordenar pelo grau.
+#E
+@F Quadrado do binómio|(a ± b)² = a² ± 2ab + b²|a, b: monómios|o termo do meio é o dobro do produto|(x + 3)² = x² + 6x + 9|c_mpol.pol
+@F Diferença de quadrados|(a + b)(a - b) = a² - b²|a, b: monómios|soma vezes diferença|(x - 1)(x + 1) = x² - 1|c_mpol.pol
+#F
+Dados: (x + 3)² - (x - 1)(x + 1).
+Objetivo: forma reduzida e valor para x = 2.
+1. (x + 3)² = x² + 6x + 9.
+2. (x - 1)(x + 1) = x² - 1.
+3. x² + 6x + 9 - x² + 1 = 6x + 10.
+4. Para x = 2: 6 × 2 + 10 = [[22]]
+> 6x + 10 (grau 1); vale 22 para x = 2.
+Verificação: (2 + 3)² - 1 × 3 = [[22]] ✓.
+#J
+Desenvolve (2x - 5)².
+#R
+4x² - 20x + 25 (para x = 1 vale [[9]]).
+#V
+V = [6 * 2 + 10, (2 + 3) ** 2 - 1 * 3, 4 - 20 + 25]
+
+@licao a8b
+titulo: Fatorizar e resolver equações por fatorização
+chave: fatorizar fator comum pôr em evidência casos notáveis diferença de quadrados lei do anulamento do produto equação do 2.º grau incompleta
+calc: c_mpol.fat
+ano: 8
+nivel: núcleo
+fonte: AE Matemática 8.º ano, Equações (fatorização)
+#A
+- Fatorizar pondo um fator comum em evidência.
+- Fatorizar com os casos notáveis.
+- Resolver equações com a lei do anulamento do produto.
+#C
+- Fator comum: 2x² - 8x = 2x(x - 4).
+- Diferença de quadrados: x² - 9 = (x - 3)(x + 3).
+- Quadrado do binómio: x² + 6x + 9 = (x + 3)².
+- Lei do anulamento do produto: a × b = 0 ⇔ a = 0 ou b = 0.
+- Para resolver: tudo no 1.º membro, fatoriza e iguala cada fator a 0.
+#E
+@F Lei do anulamento do produto|a × b = 0 ⇔ a = 0 ∨ b = 0|a, b: números ou expressões|um produto é 0 se um dos fatores for 0|x(x - 4) = 0 ⇔ x = 0 ∨ x = 4|c_mpol.fat
+#F
+Dados: 2x² = 8x e x² - 25 = 0.
+Objetivo: resolver as duas equações.
+1. 2x² - 8x = 0 ⇔ 2x(x - 4) = 0 ⇔ x = 0 ∨ x = [[4]]
+2. x² - 25 = 0 ⇔ (x - 5)(x + 5) = 0 ⇔ x = [[5]] ∨ x = [[-5]]
+> C.S. = {0; 4} e C.S. = {-5; 5}.
+Verificação: 2 × 4² = [[32]] e 8 × 4 = [[32]] ✓.
+#J
+Fatoriza x² - 10x + 25.
+#R
+(x - 5)², um quadrado do binómio (para x = 0 vale [[25]]).
+#V
+V = [8 / 2, 5, -5, 2 * 4 ** 2, 8 * 4, 25]
+
+@licao a8c
+titulo: Equações com denominadores e equações literais
+chave: equação com denominadores mmc equação literal resolver em ordem a uma letra fórmulas isolar variável
+calc: c_mexp.eq1
+ano: 8
+nivel: núcleo
+fonte: AE Matemática 8.º ano, Equações (literais)
+#A
+- Resolver equações do 1.º grau com denominadores.
+- Resolver uma fórmula em ordem a uma das letras.
+#C
+- Denominadores: multiplica os dois membros pelo m.m.c.
+- Atenção ao sinal - antes de uma fração: -(x - 1)/2 = (-x + 1)/2.
+- Equação literal: a incógnita é a letra pedida; as outras são números.
+- Isola a incógnita como numa equação numérica.
+- Ex.: A = b × h / 2 em ordem a h: h = 2A / b (b ≠ 0).
+#E
+@F Resolver em ordem a uma letra|isolar a letra pedida, como numa equação|as outras letras são números|não se pode dividir por 0|v = d / t ⇔ d = v × t|c_mexp.eq1
+#F
+Dados: (x - 1)/2 + x/3 = 4.
+Objetivo: resolver a equação.
+1. m.m.c.(2, 3) = 6; × 6: 3(x - 1) + 2x = 24.
+2. 3x - 3 + 2x = 24, logo 5x = [[27]].
+3. x = 27/5 = [[5,4]]
+> C.S. = {5,4}.
+Verificação: (5,4 - 1)/2 + 5,4/3 = 2,2 + 1,8 = [[4]] ✓.
+#J
+Resolve P = 2c + 2l em ordem a l.
+#R
+2l = P - 2c, logo l = (P - 2c) / 2 (com P = 20 e c = 6, l = [[4]]).
+#V
+V = [24 + 3, 27 / 5, (5.4 - 1) / 2 + 5.4 / 3, (20 - 12) / 2]
+
+@licao a8d
+titulo: Sistemas de duas equações
+chave: sistema de duas equações do 1.º grau duas incógnitas método de substituição solução par ordenado possível determinado indeterminado impossível retas
+calc: c_mexp.sis
+ano: 8
+nivel: núcleo
+fonte: AE Matemática 8.º ano, Sistemas de equações
+#A
+- Resolver sistemas pelo método de substituição.
+- Classificar um sistema.
+- Interpretar a solução como o ponto de interseção de duas retas.
+#C
+- Isola uma incógnita numa das equações.
+- Substitui na outra e resolve a equação com uma só incógnita.
+- Volta à expressão isolada para calcular a outra incógnita.
+- Possível e determinado: uma solução (retas concorrentes).
+- Impossível: retas paralelas; indeterminado: retas coincidentes.
+#E
+@F Método de substituição|isolar uma incógnita e substituir na outra equação|x, y: incógnitas|sistemas de duas equações do 1.º grau|x + y = 10 e 2x - y = 2: (4, 6)|c_mexp.sis
+#F
+Dados: x + y = 10 e 2x - y = 2.
+Objetivo: resolver o sistema.
+1. Da 1.ª: x = 10 - y.
+2. Na 2.ª: 2(10 - y) - y = 2, logo -3y = [[-18]].
+3. y = -18 : (-3) = [[6]]
+4. x = 10 - 6 = [[4]]
+> (x, y) = (4, 6): sistema possível e determinado.
+Verificação: 2 × 4 - 6 = [[2]] ✓.
+#J
+Num estacionamento há carros e motas: 20 veículos e 70 rodas. Quantos carros há?
+#R
+c + m = 20 e 4c + 2m = 70: c = [[15]] carros e 5 motas.
+#V
+V = [2 - 20, -18 / -3, 10 - 6, 2 * 4 - 6, (70 - 2 * 20) / 2]
+
+@licao a8e
+titulo: Função afim
+chave: função afim y = mx + b declive ordenada na origem gráfico reta função linear proporcionalidade direta zero da função dois pontos
+calc: c_matf.afim
+ano: 8
+nivel: núcleo
+fonte: AE Matemática 8.º ano, Funções (função afim)
+#A
+- Reconhecer uma função afim e o seu gráfico (uma reta).
+- Interpretar o declive e a ordenada na origem.
+- Escrever a expressão a partir de dois pontos.
+#C
+- Função afim: f(x) = mx + b; o gráfico é uma reta.
+- m (declive): quanto sobe y quando x aumenta 1.
+- b (ordenada na origem): onde a reta corta o eixo Oy.
+- Com b = 0: função linear (proporcionalidade direta).
+- Dois pontos: m = (y₂ - y₁) / (x₂ - x₁); depois b = y₁ - m x₁.
+#E
+@F Declive|m = (y₂ - y₁) / (x₂ - x₁)|(x₁, y₁) e (x₂, y₂): pontos da reta|x₁ ≠ x₂|(1, 3) e (3, 7): m = 2|c_matf.afim
+@F Função afim|f(x) = m x + b|m: declive;b: ordenada na origem|o gráfico é uma reta|m = 2, b = 1: f(x) = 2x + 1|c_matf.afim
+#F
+Dados: a reta passa em A(1, 3) e B(3, 7).
+Objetivo: expressão da função afim e zero.
+1. m = (7 - 3) / (3 - 1) = [[2]]
+2. b = 3 - 2 × 1 = [[1]], logo f(x) = 2x + 1.
+3. Zero: 2x + 1 = 0 ⇔ x = [[-0,5]].
+> f(x) = 2x + 1; o zero é -0,5.
+Verificação: f(3) = 2 × 3 + 1 = [[7]] ✓.
+#J
+Um táxi cobra 3,50 € fixos e 0,80 € por km. Quanto custa uma viagem de 10 km?
+#R
+f(x) = 0,8x + 3,5; f(10) = [[11,50]] €.
+#V
+V = [(7 - 3) / (3 - 1), 3 - 2 * 1, -1 / 2, 2 * 3 + 1, 0.8 * 10 + 3.5]
+
+@exemplo a8e1
+nivel: 1
+titulo: Área de um quadrado aumentado
+licao: a8a
+calc: c_mpol.pol
+#T
+Enunciado: o lado de um quadrado mede x cm. Aumenta-se o lado 3 cm. Quanto aumenta a área?
+Resolução:
+1. Nova área: (x + 3)² = x² + 6x + 9.
+2. Aumento: x² + 6x + 9 - x² = 6x + 9.
+3. Para x = 5: 6 × 5 + 9 = [[39]] cm².
+Resultado: a área aumenta 6x + 9 cm² (39 cm² se x = 5).
+Interpretação: 8² - 5² = [[39]] ✓.
+Erros a evitar: escrever (x + 3)² = x² + 9.
+#V
+V = [6 * 5 + 9, 8 ** 2 - 5 ** 2]
+
+@exemplo a8e2
+nivel: 2
+titulo: Bilhetes de cinema
+licao: a8d
+calc: c_mexp.sis
+#T
+Enunciado: foram vendidos 120 bilhetes: os de adulto custam 7 € e os de criança 4 €. Receberam-se 690 €. Quantos bilhetes de cada tipo se venderam?
+Resolução:
+1. a + c = 120 e 7a + 4c = 690.
+2. a = 120 - c; 7(120 - c) + 4c = 690, logo -3c = [[-150]].
+3. c = [[50]] e a = 120 - 50 = [[70]].
+Resultado: 70 bilhetes de adulto e 50 de criança.
+Interpretação: 7 × 70 + 4 × 50 = [[690]] ✓.
+Erros a evitar: trocar as incógnitas na resposta.
+#V
+V = [690 - 840, 150 / 3, 120 - 50, 7 * 70 + 4 * 50]
+
+@exemplo a8e3
+nivel: 3
+titulo: Duas tarifas de telemóvel
+licao: a8e
+calc: c_matf.afim
+#T
+Enunciado: o tarifário A custa 10 € por mês e 0,05 € por minuto. O B custa 0,15 € por minuto, sem mensalidade. A partir de quantos minutos o A fica mais barato?
+Resolução:
+1. A(x) = 0,05x + 10 e B(x) = 0,15x.
+2. Iguais quando 0,05x + 10 = 0,15x, ou seja, 0,1x = 10 e x = [[100]] min.
+3. Para 200 min: A = [[20]] € e B = [[30]] €.
+Resultado: acima de 100 minutos, o tarifário A é mais barato.
+Interpretação: as duas retas cruzam-se no ponto (100, 15).
+Erros a evitar: comparar só as mensalidades.
+#V
+V = [10 / 0.1, 0.05 * 200 + 10, 0.15 * 200]
+
+@exercicio a8x1
+tipo: m
+licao: a8a
+#T
+Qual é o desenvolvimento de (x - 4)²?
+#O
+x² - 16
+x² - 8x + 16
+x² + 16
+x² - 4x + 16
+#S
+2
+#P
+(a - b)² = a² - 2ab + b².
+#D
+x² - 2 × 4x + 16 = x² - 8x + 16.
+#V
+S = 2 if all((x - 4) ** 2 == x * x - 8 * x + 16 for x in range(5)) else 0
+
+@exercicio a8x2
+tipo: n
+licao: a8a
+#T
+Qual é o valor de (3x + 1)(3x - 1) para x = 2?
+#S
+35
+#P
+É uma diferença de quadrados: 9x² - 1.
+#D
+9 × 4 - 1 = [[35]].
+#V
+S = (3 * 2 + 1) * (3 * 2 - 1)
+V = [S]
+
+@exercicio a8x3
+tipo: m
+licao: a8b
+#T
+Qual é a fatorização de 3x² - 12?
+#O
+3(x - 2)²
+3(x - 2)(x + 2)
+(3x - 2)(x + 6)
+3x(x - 4)
+#S
+2
+#P
+Fator comum 3 e depois diferença de quadrados.
+#D
+3(x² - 4) = 3(x - 2)(x + 2).
+#V
+S = 2 if all(3 * x * x - 12 == 3 * (x - 2) * (x + 2) for x in range(5)) else 0
+
+@exercicio a8x4
+tipo: n
+licao: a8b
+#T
+A equação x² = 7x tem duas soluções. Qual é a solução diferente de zero?
+#S
+7
+#P
+x² - 7x = 0 ⇔ x(x - 7) = 0.
+#D
+x = 0 ou x = [[7]].
+#V
+S = 7
+V = [S]
+
+@exercicio a8x5
+tipo: n
+licao: a8c
+#T
+Resolve x/2 - (x - 3)/4 = 2.
+#S
+5
+#P
+Multiplica tudo por 4.
+#D
+2x - (x - 3) = 8 ⇔ x + 3 = 8 ⇔ x = [[5]].
+#V
+S = 8 - 3
+V = [S]
+
+@exercicio a8x6
+tipo: m
+licao: a8c
+#T
+Qual é a fórmula v = d / t resolvida em ordem a t?
+#O
+t = v × d
+t = d / v
+t = v / d
+t = d - v
+#S
+2
+#P
+Multiplica por t e divide por v.
+#D
+v t = d, logo t = d / v (v ≠ 0).
+#V
+S = 2 if abs(100 / 20 - 5) < 1e-12 else 0
+
+@exercicio a8x7
+tipo: n
+licao: a8d
+#T
+No sistema x - y = 3 e x + y = 11, quanto vale x?
+#S
+7
+#P
+Soma as duas equações ou isola x na primeira.
+#D
+x = y + 3; 2y + 3 = 11, y = 4 e x = [[7]].
+#V
+S = (3 + 11) / 2
+V = [S]
+
+@exercicio a8x8
+tipo: v
+licao: a8d
+#T
+O sistema x + y = 2 e x + y = 5 é impossível.
+#S
+V
+#P
+Pode x + y valer 2 e 5 ao mesmo tempo?
+#D
+Verdadeiro: as retas x + y = 2 e x + y = 5 são paralelas; não há solução.
+#V
+S = 'V'
+
+@exercicio a8x9
+tipo: n
+licao: a8e
+#T
+Qual é o declive da reta que passa em (2, 5) e (6, 3)?
+#S
+-0,5
+#P
+m = (y₂ - y₁) / (x₂ - x₁).
+#D
+(3 - 5) / (6 - 2) = [[-0,5]].
+#V
+S = (3 - 5) / (6 - 2)
+V = [S]

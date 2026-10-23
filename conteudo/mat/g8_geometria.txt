@@ -1,0 +1,327 @@
+@tema g8
+disc: M
+grupo: 8
+titulo: Geometria e Medida (8.º ano)
+calcs: c_matt.pit c_mgtr.iso c_matg.dist c_matv.vet
+formato: ficha
+
+@licao g8a
+titulo: Teorema de Pitágoras
+chave: teorema de pitágoras hipotenusa catetos triângulo retângulo calcular um lado diagonal raiz quadrada
+calc: c_matt.pit
+ano: 8
+nivel: núcleo
+fonte: AE Matemática 8.º ano, Teorema de Pitágoras
+#A
+- Identificar a hipotenusa e os catetos.
+- Calcular um lado de um triângulo retângulo.
+- Aplicar o teorema a diagonais e alturas.
+#C
+- Num triângulo retângulo: c² = a² + b² (c: hipotenusa).
+- A hipotenusa é o lado oposto ao ângulo reto (o maior).
+- Hipotenusa: c = √(a² + b²).
+- Cateto: a = √(c² - b²).
+- Diagonal de um retângulo c × l: √(c² + l²).
+- Dá o valor exato (√) e o aproximado.
+#E
+@F Teorema de Pitágoras|c² = a² + b²|c: hipotenusa;a, b: catetos|só em triângulos retângulos|catetos 3 e 4: c = 5|c_matt.pit
+#F
+Dados: um ecrã retangular tem 48 cm por 27 cm.
+Objetivo: medir a diagonal, em polegadas (1 pol = 2,54 cm).
+1. d² = 48² + 27² = 2304 + 729 = [[3033]]
+2. d = √3033 ≈ [[55,07]] cm
+3. Em polegadas: 55,07 / 2,54 ≈ [[21,7]]
+> A diagonal mede cerca de 55 cm, ou seja, quase 22 polegadas.
+Verificação: 55,07² ≈ [[3033]] ✓.
+#J
+Uma escada de 5 m está encostada a uma parede, com o pé a 1,4 m da parede. A que altura chega?
+#R
+√(5² - 1,4²) = √23,04 = [[4,8]] m.
+#V
+V = [48 ** 2 + 27 ** 2, sqrt(3033), sqrt(3033) / 2.54, 55.07 ** 2, sqrt(25 - 1.96)]
+
+@licao g8b
+titulo: Recíproco do teorema de Pitágoras e aplicações
+chave: recíproco do teorema de pitágoras verificar triângulo retângulo distância entre dois pontos diagonal espacial ternos pitagóricos
+calc: c_matt.pit
+ano: 8
+nivel: núcleo
+fonte: AE Matemática 8.º ano, Teorema de Pitágoras (recíproco)
+#A
+- Verificar se um triângulo é retângulo pelos lados.
+- Calcular a distância entre dois pontos do plano.
+- Calcular a diagonal de um paralelepípedo.
+#C
+- Recíproco: se o maior lado ao quadrado é a soma dos quadrados dos outros, o triângulo é retângulo.
+- Maior² > soma: obtusângulo; maior² < soma: acutângulo.
+- Distância: d = √((x₂ - x₁)² + (y₂ - y₁)²).
+- Diagonal espacial: √(c² + l² + h²).
+- Ternos pitagóricos: 3, 4, 5; 5, 12, 13; 8, 15, 17.
+#E
+@F Distância entre dois pontos|d = √((x₂ - x₁)² + (y₂ - y₁)²)|(x₁, y₁) e (x₂, y₂): os pontos|plano com referencial|(1, 2) e (4, 6): d = 5|c_matg.dist
+#F
+Dados: lados de 9, 12 e 15 cm; pontos A(1, 2) e B(7, 10).
+Objetivo: ver se o triângulo é retângulo e calcular AB.
+1. 15² = [[225]] e 9² + 12² = 81 + 144 = [[225]]: é retângulo.
+2. AB = √(6² + 8²) = √100 = [[10]]
+> O triângulo é retângulo; AB = 10.
+Verificação: 9, 12, 15 é o terno 3, 4, 5 vezes 3 ✓.
+#J
+Um triângulo tem lados 6, 7 e 9. É retângulo?
+#R
+Não: 9² = 81 e 6² + 7² = [[85]]; como 81 < 85, é acutângulo.
+#V
+V = [15 ** 2, 81 + 144, sqrt(6 ** 2 + 8 ** 2), 36 + 49]
+
+@licao g8c
+titulo: Vetores e translações
+chave: vetor direção sentido comprimento norma translação associada a um vetor coordenadas de um vetor soma de vetores imagem
+calc: c_mgtr.iso
+ano: 8
+nivel: núcleo
+fonte: AE Matemática 8.º ano, Vetores e translações
+#A
+- Caracterizar um vetor (direção, sentido e comprimento).
+- Aplicar uma translação a uma figura.
+- Somar vetores e usar coordenadas.
+#C
+- Vetor: direção, sentido e comprimento.
+- Vetor AB = B - A (coordenadas).
+- Translação de vetor (a, b): (x, y) → (x + a, y + b).
+- A translação mantém comprimentos, ângulos e a orientação.
+- Soma de vetores: somam-se as coordenadas (regra do paralelogramo).
+#E
+@F Translação de vetor (a, b)|(x, y) → (x + a, y + b)|(a, b): coordenadas do vetor|no plano com referencial|A(1, 1) com (3, 2): A'(4, 3)|c_mgtr.iso
+@F Vetor definido por dois pontos|AB = B - A = (x_B - x_A, y_B - y_A)|A e B: pontos|AB e BA são simétricos|A(1, 2) e B(4, 6): AB = (3, 4)|c_matv.vet
+#F
+Dados: triângulo A(1, 1), B(4, 1), C(2, 3) e o vetor u = (3, 2).
+Objetivo: imagem pela translação de vetor u.
+1. A'(1 + 3, 1 + 2) = A'([[4]], [[3]])
+2. B'(4 + 3, 1 + 2) = B'(7, 3)
+3. C'(2 + 3, 3 + 2) = C'(5, 5)
+> A'(4, 3), B'(7, 3) e C'(5, 5).
+Verificação: AB = A'B' = [[3]] ✓.
+#J
+Qual é o vetor que leva P(2, -1) a Q(5, 3)?
+#R
+PQ = (5 - 2, 3 - (-1)) = (3, 4); comprimento [[5]].
+#V
+V = [1 + 3, 1 + 2, 4 - 1, sqrt(3 ** 2 + 4 ** 2)]
+
+@licao g8d
+titulo: Isometrias: reflexões e rotações
+chave: isometria reflexão eixo de reflexão rotação centro amplitude meia-volta simetria axial simetria de rotação imagem coordenadas
+calc: c_mgtr.iso
+ano: 8
+nivel: núcleo
+fonte: AE Matemática 8.º ano, Isometrias
+#A
+- Aplicar reflexões e rotações a figuras.
+- Usar as regras com coordenadas.
+- Reconhecer simetrias de uma figura.
+#C
+- Isometria: mantém comprimentos e ângulos (a imagem é congruente).
+- Reflexão no eixo Ox: (x, -y); no eixo Oy: (-x, y); na reta y = x: (y, x).
+- Rotação de 90° (sentido positivo) de centro O: (-y, x).
+- Rotação de 180° de centro O: (-x, -y) (meia-volta).
+- A reflexão troca a orientação; translações e rotações mantêm-na.
+#E
+@F Rotação de 90° de centro O|(x, y) → (-y, x)|sentido positivo (contrário ao dos ponteiros)|centro na origem|(4, 1) → (-1, 4)|c_mgtr.iso
+@F Reflexões nos eixos|Ox: (x, -y); Oy: (-x, y)|eixo de reflexão|o eixo é a mediatriz de cada segmento [PP']|(2, 3) em Ox: (2, -3)|c_mgtr.iso
+#F
+Dados: o ponto P(4, 1).
+Objetivo: imagens por reflexão em Oy, rotação de 90° e meia-volta (centro O).
+1. Reflexão em Oy: (-4, 1).
+2. Rotação de 90°: (-1, 4).
+3. Meia-volta: (-4, -1).
+> (-4, 1), (-1, 4) e (-4, -1).
+Verificação: todas estão a √17 ≈ [[4,12]] de O, como P ✓.
+#J
+Quantos eixos de simetria tem um hexágono regular?
+#R
+Tem [[6]] eixos de simetria e simetria de rotação de ordem 6.
+#V
+V = [sqrt(17), 6]
+
+@exemplo g8e1
+nivel: 1
+titulo: Diagonal de um campo
+licao: g8a
+calc: c_matt.pit
+#T
+Enunciado: um campo de futebol tem 105 m por 68 m. Quanto mede a diagonal?
+Resolução:
+1. d² = 105² + 68² = [[11 025]] + [[4624]] = [[15 649]]
+2. d = √15 649 ≈ [[125,1]] m
+Resultado: cerca de 125 m.
+Interpretação: é mais curto atravessar na diagonal do que pelos lados (173 m).
+Erros a evitar: somar os lados sem os elevar ao quadrado.
+#V
+V = [105 ** 2, 68 ** 2, 105 ** 2 + 68 ** 2, sqrt(105 ** 2 + 68 ** 2)]
+
+@exemplo g8e2
+nivel: 2
+titulo: Altura de um triângulo equilátero
+licao: g8a
+calc: c_matt.pit
+#T
+Enunciado: um triângulo equilátero tem 6 cm de lado. Calcula a altura e a área (valores exatos).
+Resolução:
+1. A altura divide a base ao meio: catetos 3 e h; hipotenusa 6.
+2. h = √(6² - 3²) = √27 = [[=3√3]] ≈ [[5,20]] cm.
+3. Área = 6 × 3√3 / 2 = [[=9√3]] ≈ [[15,59]] cm².
+Resultado: h = 3√3 cm e A = 9√3 cm².
+Interpretação: em geral, h = l√3 / 2.
+Erros a evitar: usar o lado inteiro (6) como cateto.
+#V
+V = [sqrt(27), sqrt(27), 9 * sqrt(3), 9 * sqrt(3)]
+
+@exemplo g8e3
+nivel: 3
+titulo: Uma rotação de centro qualquer
+licao: g8d
+calc: c_mgtr.iso
+#T
+Enunciado: roda o ponto P(4, 1) 90° (sentido positivo) em torno do centro C(1, 1).
+Resolução:
+1. Vetor CP = (4 - 1, 1 - 1) = (3, 0).
+2. Rodar 90°: (a, b) → (-b, a), logo (3, 0) → (0, 3).
+3. P' = C + (0, 3) = ([[1]], [[4]]).
+Resultado: P'(1, 4).
+Interpretação: CP = CP' = [[3]]: a rotação mantém a distância ao centro.
+Erros a evitar: rodar P em torno da origem.
+#V
+V = [1 + 0, 1 + 3, 3]
+
+@exercicio g8x1
+tipo: n
+licao: g8a
+#T
+Os catetos de um triângulo retângulo medem 5 cm e 12 cm. Quanto mede a hipotenusa?
+#S
+13
+#P
+c = √(a² + b²).
+#D
+√(25 + 144) = √169 = [[13]] cm.
+#V
+S = sqrt(5 ** 2 + 12 ** 2)
+V = [S]
+
+@exercicio g8x2
+tipo: n
+licao: g8a
+modo: d2
+#T
+A diagonal de um quadrado mede 10 cm. Quanto mede o lado, com duas casas decimais?
+#S
+7,07
+#P
+l² + l² = 10².
+#D
+2l² = 100, l = √50 ≈ [[7,07]] cm.
+#V
+S = sqrt(50)
+V = [S]
+
+@exercicio g8x3
+tipo: m
+licao: g8b
+#T
+Qual destes ternos são os lados de um triângulo retângulo?
+#O
+4, 5, 6
+5, 12, 13
+6, 8, 11
+7, 8, 9
+#S
+2
+#P
+Testa maior² = soma dos outros dois ao quadrado.
+#D
+13² = 169 = 25 + 144.
+#V
+S = 2 if 13 ** 2 == 5 ** 2 + 12 ** 2 else 0
+
+@exercicio g8x4
+tipo: n
+licao: g8b
+#T
+Qual é a distância entre A(-1, 2) e B(5, 10)?
+#S
+10
+#P
+d = √(Δx² + Δy²).
+#D
+√(6² + 8²) = [[10]].
+#V
+S = sqrt(6 ** 2 + 8 ** 2)
+V = [S]
+
+@exercicio g8x5
+tipo: n
+licao: g8b
+modo: d2
+#T
+Uma caixa tem 30 cm × 40 cm × 20 cm. Qual é o comprimento da diagonal espacial, em cm, com duas casas decimais?
+#S
+53,85
+#P
+√(c² + l² + h²).
+#D
+√(900 + 1600 + 400) = √2900 ≈ [[53,85]] cm.
+#V
+S = sqrt(2900)
+V = [S]
+
+@exercicio g8x6
+tipo: m
+licao: g8c
+#T
+A translação de vetor (-2, 5) leva o ponto (3, -1) a...
+#O
+(1, 4)
+(5, -6)
+(-6, -5)
+(1, -6)
+#S
+1
+#P
+Soma as coordenadas do vetor.
+#D
+(3 - 2, -1 + 5) = (1, 4).
+#V
+S = 1 if (3 - 2, -1 + 5) == (1, 4) else 0
+
+@exercicio g8x7
+tipo: m
+licao: g8d
+#T
+Qual é a imagem de (2, -3) pela rotação de 180° de centro O?
+#O
+(-2, 3)
+(3, 2)
+(-3, 2)
+(2, 3)
+#S
+1
+#P
+Meia-volta: (x, y) → (-x, -y).
+#D
+(-2, 3).
+#V
+S = 1
+
+@exercicio g8x8
+tipo: v
+licao: g8d
+#T
+A reflexão num eixo mantém a orientação dos vértices da figura.
+#S
+F
+#P
+Olha para uma mão ao espelho.
+#D
+Falso: a reflexão troca a orientação; translações e rotações mantêm-na.
+#V
+S = 'F'

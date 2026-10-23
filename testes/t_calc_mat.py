@@ -5,8 +5,6 @@ import c_matt
 import c_matf
 import c_matg
 import c_matv
-import c_matc
-import c_matd
 import c_mate
 import c_matr
 from base import calc, erro, tem, perto
@@ -178,13 +176,27 @@ def t_euler_raios():
 
 def t_pit():
     r = calc(c_matt, 'pit', ['3', '4', ''])
-    tem(r[0], 'c = √(a² + b²) = 5')
+    tem(r[0], 'c² = 3² + 4² = 9 + 16 = 25', '> c = √25 = 5')
     r = calc(c_matt, 'pit', ['', '5', '13'])
     perto(r[2], 12.0)
+    tem(r[0], 'a² = c² - b² = 13² - 5² = 169 - 25 = 144', '> a = √144 = 12')
     r = calc(c_matt, 'pit', ['1', '1', ''])
-    tem(r[0], '√2')
+    tem(r[0], '> c = √2 ≈ 1,41')
+    r = calc(c_matt, 'pit', ['2', '2', ''])
+    tem(r[0], '> c = √8 = 2√2 ≈ 2,83')
     assert 'maior' in erro(calc, c_matt, 'pit', ['', '13', '5'])
-    assert 'só o campo' in erro(calc, c_matt, 'pit', ['3', '4', '5'])
+    assert 'só o campo' in erro(calc, c_matt, 'pit', ['3', '', ''])
+
+
+def t_pit_reciproco():
+    r = calc(c_matt, 'pit', ['8', '6', '10'])
+    tem(r[0], '10² = 100', '6² + 8² = 36 + 64 = 100', 'é retângulo',
+        'opõe-se ao lado 10')
+    tem(calc(c_matt, 'pit', ['5', '6', '7'])[0], '49 < 61', 'acutângulo')
+    tem(calc(c_matt, 'pit', ['4', '5', '8'])[0], '64 > 41', 'obtusângulo')
+    tem(calc(c_matt, 'pit', ['1,5', '2', '2,5'])[0], 'é retângulo')
+    assert 'não há triângulo' in erro(calc, c_matt, 'pit', ['1', '2', '4'])
+    assert 'positivo' in erro(calc, c_matt, 'pit', ['0', '2', '2'])
 
 
 def t_sem():
@@ -462,195 +474,6 @@ def t_bar_invalido():
     assert 'alinhados' in erro(calc, c_matv, 'bar', ['0 0', '1 1', '2 2'])
     assert 'alinhados' in erro(calc, c_matv, 'bar', ['1 1', '1 1', '2 3'])
     assert 'mesmo número' in erro(calc, c_matv, 'bar', ['0 0', '1 1 1', '2 3'])
-
-
-def t_vot_todos():
-    r = calc(c_matc, 'vot', ['10 8 7 4', 'ABC BCA CBA CAB', 0])
-    tem(r[0], '29 votantes', 'Votos em 1.º lugar: A 10 · B 8 · C 11',
-        'Maioria simples (relativa): C (11 votos)', 'mais de metade dos votos (14,5)',
-        'A 53 · B 62 · C 59', 'Borda: B (62 pontos)',
-        'Segunda volta entre C e A: C 19 · A 10', '1.ª contagem: A 10 · B 8 · C 11 → sai B',
-        'Eliminação sucessiva: C (maioria absoluta)', 'A vs B: 14 - 15 → B',
-        'Vencedor de Condorcet: B', 'vencedores diferentes')
-
-
-def t_vot_maioria_absoluta():
-    r = calc(c_matc, 'vot', ['60 40', 'AB BA', 0])
-    tem(r[0], 'Maioria absoluta: A (60 > 50)', 'não é precisa', 'Borda: A (160 pontos)')
-    assert 'diferentes' not in r[0]
-
-
-def t_vot_empates():
-    r = calc(c_matc, 'vot', ['5 5', 'AB BA', 0])
-    tem(r[0], 'Maioria simples: empate entre A e B', 'Segunda volta: empate',
-        'Borda: empate entre A e B', 'A vs B: 5 - 5 → empate', 'Não há vencedor de Condorcet')
-    r = calc(c_matc, 'vot', ['1 1 1', 'ABC BCA CAB', 5])
-    tem(r[0], 'A vs B: 2 - 1 → A', 'B vs C: 2 - 1 → B', 'A vs C: 1 - 2 → C',
-        'Não há vencedor de Condorcet')
-    r = calc(c_matc, 'vot', ['1 1 1', 'ABC BCA CAB', 4])
-    tem(r[0], 'Eliminação sucessiva: empate entre A, B e C')
-
-
-def t_vot_eliminacao():
-    r = calc(c_matc, 'vot', ['6 4 2 2', 'ABCD BACD CBAD DCBA', 4])
-    tem(r[0], 'sai C e D (empate no último lugar: saem todos)',
-        '2.ª contagem: A 6 · B 8', 'Eliminação sucessiva: B')
-    r = calc(c_matc, 'vot', ['6 4 2 2', 'abcd bacd cbad dcba', 3])
-    tem(r[0], 'Segunda volta entre A e B: A 6 · B 8', 'Segunda volta: B')
-    r = calc(c_matc, 'vot', ['5 4 4', 'ABC BAC CBA', 3])
-    tem(r[0], 'empate no 2.º lugar da 1.ª volta (B e C)')
-
-
-def t_vot_invalido():
-    assert 'colunas' in erro(calc, c_matc, 'vot', ['10 8', 'ABC BCA CAB', 0])
-    assert 'todos os candidatos' in erro(calc, c_matc, 'vot', ['1 1', 'ABC AB', 0])
-    assert 'todos os candidatos' in erro(calc, c_matc, 'vot', ['1 1', 'ABC AAB', 0])
-    assert 'inteiros' in erro(calc, c_matc, 'vot', ['2,5 1', 'AB BA', 0])
-    assert 'Não há votantes' in erro(calc, c_matc, 'vot', ['0 0', 'AB BA', 0])
-    assert 'pelo menos 2' in erro(calc, c_matc, 'vot', ['3', 'A', 0])
-    assert 'letra' in erro(calc, c_matc, 'vot', ['3 2', 'A1 1A', 0])
-
-
-def t_mand_hondt_empate_lei():
-    r = calc(c_matc, 'mand', ['12000 9000 5000 3000', '7', '', 0])
-    tem(r[0], 'A: 12 000; 6 000; 4 000; (3 000)', 'Ordem: A, B, A, C, B, A, D',
-        'fica a lista com menos votos (Lei n.º 14/79, art. 16.º)',
-        'Hondt: A 3 · B 2 · C 1 · D 1', 'A: 41,4% dos votos, 42,9% dos mandatos')
-    r = calc(c_matc, 'mand', ['3000 1500', '2', '', 0])
-    tem(r[0], 'Ordem: A, B', 'Hondt: A 1 · B 1', 'menos votos')
-
-
-def t_mand_comparacao():
-    r = calc(c_matc, 'mand', ['12000 8000 5000 2500', '7', '', 2])
-    tem(r[0], 'Ordem: A, B, A, C, A, B, A', 'Hondt: A 4 · B 2 · C 1 · D 0',
-        'Último mandato: A (3 000); quociente seguinte: 2 666,67',
-        'A: 12 000; 4 000; 2 400; (1 714,29)', 'Ordem: A, B, C, A, B, D, A',
-        'Sainte-Laguë: A 3 · B 2 · C 1 · D 1', 'resultados diferentes')
-    assert 'Empate' not in r[0]
-
-
-def t_mand_nomes_e_sem_solucao():
-    r = calc(c_matc, 'mand', ['5100 3900 1000', '5', 'X Y Z', 1])
-    tem(r[0], 'Sainte-Laguë (divisores 1, 3, 5, 7...)', 'Sainte-Laguë: X 3 · Y 2 · Z 0')
-    r = calc(c_matc, 'mand', ['1000 1000', '1', '', 0])
-    tem(r[0], 'a regra da lei não decide', 'Hondt: A 0 · B 0')
-
-
-def t_mand_invalido():
-    assert 'inteiros' in erro(calc, c_matc, 'mand', ['100 -5', '3', '', 0])
-    assert 'inteiros' in erro(calc, c_matc, 'mand', ['10,5 3', '3', '', 0])
-    assert 'mandatos' in erro(calc, c_matc, 'mand', ['100 50', '0', '', 0])
-    assert 'mandatos' in erro(calc, c_matc, 'mand', ['100 50', '2,5', '', 0])
-    assert 'nome para cada lista' in erro(calc, c_matc, 'mand', ['100 50', '3', 'P Q R', 0])
-    assert 'Nenhuma lista' in erro(calc, c_matc, 'mand', ['0 0', '3', '', 0])
-
-
-def t_sal_basico():
-    r = calc(c_matd, 'sal', ['1000', '14', '40', '10', '', ''])
-    tem(r[0], 'Segurança Social (11%): 1 000,00 € × 0,11 = 110,00 €',
-        'Retenção na fonte de IRS (10%): 100,00 €',
-        'Salário líquido mensal: 1 000,00 € - 210,00 € = 790,00 €',
-        'Bruto anual: 14 × 1 000,00 € = 14 000,00 €', 'custo mensal 1 237,50 €',
-        '(52 × 40) = 5,77 €')
-    perto(r[2], 790)
-
-
-def t_sal_horas_extra_e_limites():
-    r = calc(c_matd, 'sal', ['1000', '14', '40', '', '', '2,5'])
-    tem(r[0], '7,21 € + 11,90 € = 19,11 €')
-    r = calc(c_matd, 'sal', ['1000', '14', '40', '', '', '0,5'])
-    tem(r[0], 'seguintes + 37,5%: 3,61 €')
-    r = calc(c_matd, 'sal', ['1500', '12', '35', '', '3,5', ''])
-    tem(r[0], 'Outros descontos (3,5%): 52,50 €', '1 500,00 € - 217,50 € = 1 282,50 €',
-        'Bruto anual: 12 × 1 500,00 € = 18 000,00 €', '(52 × 35) = 9,89 €')
-
-
-def t_sal_invalido():
-    assert 'positivo' in erro(calc, c_matd, 'sal', ['0', '14', '40', '', '', '']) or \
-        'maior' in erro(calc, c_matd, 'sal', ['0', '14', '40', '', '', ''])
-    assert 'meses' in erro(calc, c_matd, 'sal', ['1000', '13,5', '40', '', '', ''])
-    assert 'horas por semana' in erro(calc, c_matd, 'sal', ['1000', '14', '70', '', '', ''])
-    assert 'entre 0 e 100' in erro(calc, c_matd, 'sal', ['1000', '14', '40', '120', '', ''])
-    assert 'maiores do que o salário' in erro(calc, c_matd, 'sal',
-                                              ['1000', '14', '40', '95', '', ''])
-
-
-def t_irs_escaloes():
-    r = calc(c_matd, 'irs', ['20000', 0, '', '3000'])
-    tem(r[0], '1.º escalão: 8 342,00 € × 12,5% = 1 042,75 €',
-        '4.º escalão: 2 162,00 € × 24,1% = 521,04 €', 'Coleta: 3 343,47 €',
-        'Escalão: 4.º (17 838 a 23 089 €); taxa marginal 24,1%', 'Taxa média',
-        '20 000,00 × 24,1% - 1 476,53 = 3 343,47 €', 'IRS 2026', 'Lei n.º 73-A/2025',
-        '343,47 €: a pagar')
-    perto(r[2], 3343.469)
-    assert len(r) == 5
-
-
-def t_irs_limites():
-    r = calc(c_matd, 'irs', ['8342', 0, '', ''])
-    tem(r[0], 'Escalão: 1.º (até 8 342 €)', 'Coleta: 1 042,75 €', '= 12,5%')
-    r = calc(c_matd, 'irs', ['86634', 0, '', ''])
-    tem(r[0], 'Escalão: 8.º', '= 34,856%')
-    r = calc(c_matd, 'irs', ['0', 0, '', ''])
-    tem(r[0], 'Coleta: 0,00 €')
-
-
-def t_irs_alto_e_manual():
-    r = calc(c_matd, 'irs', ['100000', 0, '', ''])
-    tem(r[0], '9.º escalão: 13 366,00 € × 48% = 6 415,68 €', 'Coleta: 36 612,73 €',
-        'mais de 86 634 €', 'taxa adicional de solidariedade')
-    r = calc(c_matd, 'irs', ['15000', 1, '12', '2000'])
-    tem(r[0], 'Coleta: 15 000,00 € × 12% = 1 800,00 €', '-200,00 €: reembolso')
-    assert len(r) == 4
-
-
-def t_irs_invalido():
-    assert 'rendimento' in erro(calc, c_matd, 'irs', ['-5', 0, '', ''])
-    assert 'taxa manual' in erro(calc, c_matd, 'irs', ['1000', 1, '', ''])
-    assert 'entre 0 e 100' in erro(calc, c_matd, 'irs', ['1000', 1, '150', ''])
-
-
-def t_jur_simples():
-    r = calc(c_matd, 'jur', ['1000', '3', '5', 1, '1', '28'])
-    tem(r[0], '1 000,00 € × 3% × 5 = 150,00 €', 'Capital final: 1 150,00 €',
-        'Juro líquido (imposto de 28%): 108,00 €')
-    perto(r[2], 1150)
-
-
-def t_jur_composto():
-    r = calc(c_matd, 'jur', ['1000', '3', '5', 0, '12', '28'])
-    tem(r[0], 'i = 3% / 12 = 0,25%; n = 60 períodos', 'Capital final: 1 161,62 €',
-        'após 1 período: 1 002,50 €', 'Taxa anual efetiva: (1 + i)^12 - 1 = 3,042%',
-        'capital 1 113,94 €', 'Em juro simples seria: 1 150,00 €')
-    r = calc(c_matd, 'jur', ['1000', '3', '5', 0, '1', ''])
-    tem(r[0], 'Capital final: 1 159,27 €')
-    assert 'efetiva' not in r[0]
-    r = calc(c_matd, 'jur', ['500', '0', '2', 0, '4', ''])
-    tem(r[0], 'Capital final: 500,00 €; juro 0,00 €')
-
-
-def t_jur_invalido():
-    assert 'inteiro de períodos' in erro(calc, c_matd, 'jur', ['1000', '3', '1,3', 0, '1', ''])
-    assert 'capital' in erro(calc, c_matd, 'jur', ['0', '3', '5', 0, '1', ''])
-    assert 'entre 0 e 100' in erro(calc, c_matd, 'jur', ['1000', '-1', '5', 0, '1', ''])
-    assert 'capitalizações' in erro(calc, c_matd, 'jur', ['1000', '3', '5', 0, '0', ''])
-
-
-def t_prest():
-    r = calc(c_matd, 'prest', [0, '10000', '', '6', '5', '12'])
-    tem(r[0], 'i = 6% / 12 = 0,5%; n = 60 prestações', 'Prestação: 193,33 €',
-        'Juros pagos: 1 599,68 €', '1.ª: juro 50,00 € · amortiza 143,33 € · fica 9 856,67 €')
-    r = calc(c_matd, 'prest', [1, '', '200', '6', '5', '12'])
-    tem(r[0], 'Valor atual: 10 345,11 €', 'Juros pagos: 1 654,89 €')
-    r = calc(c_matd, 'prest', [0, '1200', '', '0', '1', '12'])
-    tem(r[0], 'Prestação: 100,00 €', 'Juros pagos: 0,00 €')
-
-
-def t_prest_invalido():
-    assert 'empréstimo' in erro(calc, c_matd, 'prest', [0, '', '', '6', '5', '12'])
-    assert 'prestação' in erro(calc, c_matd, 'prest', [1, '1000', '', '6', '5', '12'])
-    assert 'prazo' in erro(calc, c_matd, 'prest', [0, '1000', '', '6', '0', '12'])
-    assert 'por ano' in erro(calc, c_matd, 'prest', [0, '1000', '', '6', '5', '0'])
 
 
 def t_uni_resumo():

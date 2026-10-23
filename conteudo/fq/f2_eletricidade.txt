@@ -11,7 +11,7 @@ calc: c_fqci.ohm
 ano: 10
 nivel: núcleo
 pre: r9c
-liga: mrc m4c
+liga: a7d m4c
 fonte: AE FQ A 10.º, Energia e fenómenos elétricos
 #A
 - Definir corrente elétrica e calculá-la a partir da carga.

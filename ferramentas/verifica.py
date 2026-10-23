@@ -4,7 +4,9 @@
 Para cada modulo: so ASCII; sem f-strings, operador :=, anotacoes de
 tipos, eval nem exec, nem metodos de str que o MicroPython 1.12 nao tem; so importa os modulos permitidos (math, time,
 ti_system, ti_draw; gc e sys so dentro de try/except; e os da propria
-app); compila com o mpy-cross do MicroPython 1.12 de 32 bits.
+app); cada simbolo nao ASCII das strings tem substituto em m1_plat._AM
+(para o modo sem simbolos); compila com o mpy-cross do MicroPython 1.12
+de 32 bits.
 """
 import ast
 import io
@@ -109,16 +111,56 @@ def mpy_cross(caminho, mpyc):
     return []
 
 
+def substitutos(pasta):
+    # Simbolos com substituto no modo sem simbolos: tabela _AM e
+    # expoentes _SUP do m1_plat.py (None se nao houver m1_plat).
+    p = os.path.join(pasta, 'm1_plat.py')
+    if not os.path.exists(p):
+        return None
+    with open(p, encoding='utf-8') as fh:
+        arv = ast.parse(fh.read())
+    ok = set()
+    for no in ast.walk(arv):
+        if isinstance(no, ast.Assign) and len(no.targets) == 1 and \
+                isinstance(no.targets[0], ast.Name) and \
+                no.targets[0].id in ('_AM', '_SUP') and \
+                isinstance(no.value, ast.Constant):
+            v = no.value.value
+            if no.targets[0].id == '_SUP':
+                ok.update(v)
+            else:
+                ok.update(x[0] for x in v.split('#') if x)
+    return ok
+
+
+def sem_substituto(caminho, texto, ok):
+    # Caracteres nao ASCII das strings que a fonte pode nao ter e que nao
+    # tem substituto: no aparelho apareceriam como "?".
+    nome = os.path.basename(caminho)
+    falta = {}
+    for no in ast.walk(ast.parse(texto)):
+        if isinstance(no, ast.Constant) and isinstance(no.value, str):
+            for ch in no.value:
+                if ord(ch) > 127 and ch not in ok:
+                    falta.setdefault(ch, no.lineno)
+    return ['%s:%d: simbolo sem substituto em m1_plat._AM: %r (U+%04X)' %
+            (nome, falta[ch], ch, ord(ch)) for ch in sorted(falta)]
+
+
 def verificar(pasta, mpyc=None, extra_ok=()):
     erros = []
     n = 0
+    ok = substitutos(pasta)
     for f in sorted(os.listdir(pasta)):
         if not f.endswith('.py'):
             continue
         p = os.path.join(pasta, f)
         with open(p, encoding='utf-8', errors='replace') as fh:
             t = fh.read()
-        erros += verificar_fonte(p, t, extra_ok)
+        e = verificar_fonte(p, t, extra_ok)
+        if not e and ok is not None and f != 'm1_plat.py':
+            e = sem_substituto(p, t, ok)
+        erros += e
         erros += mpy_cross(p, mpyc)
         n += 1
     return n, erros

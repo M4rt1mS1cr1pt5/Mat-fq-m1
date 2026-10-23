@@ -1,9 +1,9 @@
 # c_matr.py - M1TR4M: calculadoras de trigonometria: triangulo retangulo
 # (revisao do 9.o ano), graus, radianos e valores exatos, e resolucao de
 # triangulos quaisquer pelas leis dos senos e dos cossenos (extensao).
-#@ c_matr.tri|Tri\u00e2ngulo ret\u00e2ngulo: seno, cosseno e tangente|trigonometria seno cosseno tangente cateto oposto adjacente hipotenusa \u00e2ngulo agudo resolver tri\u00e2ngulo ret\u00e2ngulo eleva\u00e7\u00e3o|M|m9
-#@ c_matr.rad|Graus, radianos e valores exatos|graus radianos convers\u00e3o pi valores exatos \u00e2ngulos not\u00e1veis 30 45 60 seno cosseno tangente|M|m9
-#@ c_matr.res|Resolver tri\u00e2ngulos: leis dos senos e dos cossenos|lei dos senos lei dos cossenos tri\u00e2ngulo qualquer resolver \u00e1rea caso amb\u00edguo|M|m9
+#@ c_matr.tri|Tri\u00e2ngulo ret\u00e2ngulo: seno, cosseno e tangente|trigonometria seno cosseno tangente cateto oposto adjacente hipotenusa \u00e2ngulo agudo resolver tri\u00e2ngulo ret\u00e2ngulo eleva\u00e7\u00e3o|M|g9
+#@ c_matr.rad|Graus, radianos e valores exatos|graus radianos convers\u00e3o pi valores exatos \u00e2ngulos not\u00e1veis 30 45 60 seno cosseno tangente|M|g9
+#@ c_matr.res|Leis dos senos e dos cossenos (extens\u00e3o)|lei dos senos lei dos cossenos tri\u00e2ngulo qualquer resolver tri\u00e2ngulos \u00e1rea caso amb\u00edguo extens\u00e3o 11.\u00ba ano|M|g9
 # Casos-limite: dados a mais ou a menos, angulo fora de ]0, 90[, cateto
 # maior do que a hipotenusa, lados que nao formam triangulo, angulos que
 # somam 180 ou mais, caso ambiguo (lado, lado, angulo) com 0, 1 ou 2

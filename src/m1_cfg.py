@@ -181,10 +181,12 @@ def help_():
 def about():
     U.text('Sobre a M1TR4M',
            '# M1TR4M ' + A.APPV + ' \u00b7 by M1TR4M\n'
-           'F\u00edsica e Qu\u00edmica A e Matem\u00e1tica A, 10.\u00ba ano.\n'
+           'F\u00edsica e Qu\u00edmica A (10.\u00ba ano) e Matem\u00e1tica (7.\u00ba ao '
+           '10.\u00ba ano).\n'
            'Build: ' + A.K.BUILD + '\n\n'
            '# Fontes\n'
-           '- Aprendizagens Essenciais (DGE): FQ A, FQ 7.\u00ba-9.\u00ba, Mat A\n'
+           '- Aprendizagens Essenciais (DGE): FQ A, FQ 7.\u00ba-9.\u00ba, Matem\u00e1tica '
+           '7.\u00ba-9.\u00ba (2021) e Mat A\n'
            '- Programa de F\u00edsica e Qu\u00edmica A (DGE)\n'
            '- Tabelas de constantes e formul\u00e1rio do exame de FQ A (IAVE)\n'
            '- Dados da tabela peri\u00f3dica: ver a ficha de cada elemento\n\n'

@@ -30,9 +30,21 @@ def pick_disc():
 
 
 def pick_theme(d):
-    ts = [i for i in range(len(K.TEMAS)) if th(i)[1] == d]
-    r = U.menu(DN[d], [th(i)[3] for i in ts])
-    return ts[r] if r >= 0 else -1
+    # Com mais de um grupo (Quimica, Fisica...; 7.o, 8.o... ano), escolhe
+    # primeiro o grupo.
+    gs = A.grupos(d)
+    while True:
+        g = 0
+        if len(gs) > 1:
+            g = U.menu(DN[d], [x[1] for x in gs])
+            if g < 0:
+                return -1
+        ts = gs[g][2]
+        r = U.menu(gs[g][1], [th(i)[3] for i in ts])
+        if r >= 0:
+            return ts[r]
+        if len(gs) == 1:
+            return -1
 
 
 def ex_menu(i):
@@ -141,7 +153,22 @@ def calc_menu(d):
             hist()
             continue
         cs = [c for c in calcs() if c[2] == ds[r][0]]
-        calc_list([c[0] for c in cs], ds[r][1])
+        gs = []
+        for g in A.grupos(ds[r][0]):
+            # pela ordem dos temas do grupo (Numeros, Algebra...)
+            ids = [c[0] for i in g[2] for c in cs if c[3] == th(i)[0]]
+            if ids:
+                gs.append((g[1], ids))
+        if not gs:
+            calc_list([c[0] for c in cs], ds[r][1])
+            continue
+        s = 0
+        while True:
+            q = U.menu(ds[r][1], [g[0] for g in gs], s)
+            if q < 0:
+                break
+            s = q
+            calc_list(gs[q][1], gs[q][0])
 
 
 def calc_list(ids, t):

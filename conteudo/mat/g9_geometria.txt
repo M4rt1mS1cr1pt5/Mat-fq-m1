@@ -1,0 +1,435 @@
+@tema g9
+disc: M
+grupo: 9
+titulo: Geometria e Medida (9.º ano)
+calcs: c_mgtr.circ c_matr.tri c_matr.rad c_msol.sol c_matr.res
+formato: ficha
+
+@licao g9a
+titulo: Circunferência: ângulos e arcos
+chave: circunferência ângulo ao centro ângulo inscrito arco ângulo de segmento vértice no interior exterior semicircunferência quadrilátero inscrito polígono inscrito
+calc: c_mgtr.circ
+ano: 9
+nivel: núcleo
+fonte: AE Matemática 9.º ano, Circunferência (ângulos)
+#A
+- Relacionar ângulos ao centro e inscritos com os arcos.
+- Calcular ângulos com vértice dentro e fora da circunferência.
+- Usar as propriedades dos quadriláteros inscritos.
+#C
+- Ângulo ao centro = arco correspondente.
+- Ângulo inscrito = metade do arco (o ângulo de segmento também).
+- Inscrito numa semicircunferência: é reto (90°).
+- Vértice no interior: semissoma dos arcos; no exterior: semidiferença.
+- Quadrilátero inscrito: ângulos opostos suplementares.
+#E
+@F Ângulo inscrito|α = arco / 2|arco: amplitude do arco compreendido entre os lados|vértice na circunferência|arco de 80°: α = 40°|c_mgtr.circ
+@F Ângulos de vértice interior e exterior|interior: (a + b)/2; exterior: (a - b)/2|a, b: arcos compreendidos (a o maior)|vértice dentro ou fora do círculo|arcos 100° e 40°: 70° e 30°|c_mgtr.circ
+#F
+Dados: numa circunferência, o arco AB mede 80°.
+Objetivo: ângulo ao centro AOB, ângulo inscrito AVB e o outro ângulo inscrito.
+1. Ao centro: AOB = [[80]]°.
+2. Inscrito com o vértice no outro arco: 80° / 2 = [[40]]°.
+3. Com o vértice no arco AB: (360° - 80°) / 2 = [[140]]°.
+> 80°, 40° e 140°.
+Verificação: 40° + 140° = [[180]]° (quadrilátero inscrito) ✓.
+#J
+Um ângulo inscrito mede 35°. Quanto mede o arco correspondente?
+#R
+2 × 35° = [[70]]°.
+#V
+V = [80, 80 / 2, (360 - 80) / 2, 40 + 140, 2 * 35]
+
+@licao g9b
+titulo: Razões trigonométricas de um ângulo agudo
+chave: trigonometria seno cosseno tangente razões trigonométricas ângulo agudo cateto oposto adjacente hipotenusa triângulo retângulo calculadora
+calc: c_matr.tri
+ano: 9
+nivel: núcleo
+pre: g8a g7e
+liga: f1b
+fonte: AE Matemática 9.º ano, Trigonometria
+#A
+- Definir seno, cosseno e tangente de um ângulo agudo.
+- Calcular razões trigonométricas num triângulo retângulo.
+- Usar a calculadora para obter razões e ângulos.
+#C
+- sen α = cateto oposto / hipotenusa.
+- cos α = cateto adjacente / hipotenusa.
+- tg α = cateto oposto / cateto adjacente.
+- Para α agudo: 0 < sen α < 1 e 0 < cos α < 1.
+- Ângulo a partir da razão: sen⁻¹, cos⁻¹, tg⁻¹ (em graus).
+- As razões só dependem do ângulo (triângulos semelhantes).
+#E
+@F Seno, cosseno e tangente|sen α = op / hip; cos α = adj / hip; tg α = op / adj|α: ângulo agudo|triângulo retângulo|lados 3, 4, 5: sen α = 0,6|c_matr.tri
+#F
+Dados: uma escada de 5 m está encostada a uma parede, com o pé a 1,5 m da parede.
+Objetivo: ângulo da escada com o chão e altura a que chega.
+1. cos α = 1,5 / 5 = [[0,3]].
+2. α = cos⁻¹ 0,3 ≈ [[72,5]]°.
+3. Altura: √(5² - 1,5²) = √22,75 ≈ [[4,77]] m.
+> α ≈ 72,5° e a escada chega a cerca de 4,77 m.
+Verificação: 5 × sen 72,5° ≈ [[4,77]] m ✓.
+#J
+O cateto oposto a α mede 6 e a hipotenusa 10. Quanto vale sen α?
+#R
+sen α = 6 / 10 = [[0,6]].
+#V
+V = [0.3, degrees(acos(0.3)), sqrt(22.75), 5 * sin(acos(0.3)), 0.6]
+
+@licao g9c
+titulo: Resolver triângulos retângulos
+chave: resolver triângulo retângulo ângulo de elevação ângulo de depressão altura sombra distâncias inacessíveis rampa problemas
+calc: c_matr.tri
+ano: 9
+nivel: núcleo
+pre: g9b
+liga: f1d
+fonte: AE Matemática 9.º ano, Trigonometria (problemas)
+#A
+- Calcular lados e ângulos de um triângulo retângulo.
+- Resolver problemas com ângulos de elevação e de depressão.
+- Escolher a razão trigonométrica adequada.
+#C
+- Escolhe a razão que liga o que sabes ao que procuras.
+- Oposto = hipotenusa × sen α; adjacente = hipotenusa × cos α.
+- Oposto = adjacente × tg α.
+- Elevação: acima da horizontal; depressão: abaixo.
+- Os dois ângulos agudos somam 90°.
+#E
+@F Lados a partir de um ângulo|oposto = hip × sen α; adjacente = hip × cos α; oposto = adj × tg α|α: ângulo agudo|triângulo retângulo|adjacente 12 e α = 35°: oposto ≈ 8,40|c_matr.tri
+#F
+Dados: a sombra de uma árvore mede 12 m quando o Sol está a 35° de elevação.
+Objetivo: altura da árvore.
+1. tg 35° = altura / 12.
+2. Altura = 12 × tg 35° ≈ [[8,40]] m.
+3. Do topo à ponta da sombra: 12 / cos 35° ≈ [[14,65]] m.
+> A árvore tem cerca de 8,4 m.
+Verificação: 8,40² + 12² ≈ [[214,6]] ≈ 14,65² ✓.
+#J
+Uma escada de 4 m faz 60° com o chão. A que altura chega?
+#R
+4 × sen 60° = 2√3 ≈ [[3,46]] m.
+#V
+V = [12 * tan(radians(35)), 12 / cos(radians(35)), 8.4 ** 2 + 144, 4 * sin(radians(60))]
+
+@licao g9d
+titulo: Relações entre as razões e valores exatos
+chave: fórmula fundamental sen² + cos² = 1 tg = sen / cos valores exatos 30 45 60 ângulos complementares
+calc: c_matr.rad
+ano: 9
+nivel: núcleo
+pre: g9b
+fonte: AE Matemática 9.º ano, Trigonometria (relações)
+#A
+- Usar sen² α + cos² α = 1 e tg α = sen α / cos α.
+- Conhecer os valores exatos de 30°, 45° e 60°.
+- Relacionar as razões de ângulos complementares.
+#C
+- sen² α + cos² α = 1; tg α = sen α / cos α.
+- sen α = cos (90° - α).
+- sen 30° = cos 60° = 1/2.
+- sen 60° = cos 30° = √3/2.
+- sen 45° = cos 45° = √2/2; tg 45° = 1.
+#E
+@F Fórmula fundamental|sen² α + cos² α = 1|α: ângulo agudo|qualquer ângulo agudo|sen α = 0,6: cos α = 0,8|c_matr.rad
+@F Tangente|tg α = sen α / cos α|α: ângulo agudo|cos α ≠ 0|0,6 / 0,8 = 0,75|c_matr.rad
+#F
+Dados: α é agudo e sen α = 0,6.
+Objetivo: cos α e tg α.
+1. cos² α = 1 - 0,36 = [[0,64]].
+2. cos α = [[0,8]] (positivo, porque α é agudo).
+3. tg α = 0,6 / 0,8 = [[0,75]].
+> cos α = 0,8 e tg α = 0,75.
+Verificação: 0,6² + 0,8² = [[1]] ✓.
+#J
+Quanto vale sen 30° + cos 60°?
+#R
+1/2 + 1/2 = [[1]].
+#V
+V = [1 - 0.36, 0.64 ** 0.5, 0.6 / 0.8, 0.36 + 0.64, 0.5 + 0.5]
+
+@licao g9e
+titulo: Sólidos: áreas e volumes
+chave: volume área lateral área total prisma cilindro pirâmide cone esfera geratriz apótema capacidade litros
+calc: c_msol.sol
+ano: 9
+nivel: núcleo
+fonte: AE Matemática 9.º ano, Medida (sólidos)
+#A
+- Calcular volumes de prismas, cilindros, pirâmides, cones e esferas.
+- Calcular áreas laterais e totais.
+- Calcular uma medida a partir do volume.
+#C
+- Prisma e cilindro: V = área da base × altura.
+- Pirâmide e cone: V = área da base × altura / 3.
+- Esfera: V = 4/3 πr³; área = 4πr².
+- Cone: geratriz g = √(r² + h²); área lateral = πrg.
+- 1 dm³ = 1 L; 1 cm³ = 1 mL.
+#E
+@F Volume da pirâmide e do cone|V = Ab × h / 3|Ab: área da base;h: altura|a altura é perpendicular à base|cone r = 3, h = 4: V = 12π|c_msol.sol
+@F Volume e área da esfera|V = 4/3 π r³; A = 4 π r²|r: raio|esfera|r = 3: V = 36π|c_msol.sol
+#F
+Dados: um cone tem 3 cm de raio e 4 cm de altura.
+Objetivo: volume, geratriz e área total.
+1. V = π × 3² × 4 / 3 = [[=12π]] ≈ [[37,70]] cm³.
+2. g = √(3² + 4²) = [[5]] cm.
+3. At = π × 3² + π × 3 × 5 = [[=24π]] ≈ [[75,40]] cm².
+> V = 12π cm³ e At = 24π cm².
+Verificação: o cilindro com a mesma base e altura tem 36π, o triplo de 12π ✓ ([[3]] vezes).
+#J
+Qual é o volume de uma esfera com 3 cm de raio (valor exato)?
+#R
+4/3 × π × 27 = [[=36π]] cm³.
+#V
+V = [12 * pi, 12 * pi, 5, 24 * pi, 24 * pi, 36 / 12, 36 * pi]
+
+@licao g9f
+titulo: Lugares geométricos
+chave: lugar geométrico mediatriz bissetriz circunferência equidistante pontos à mesma distância construções régua e compasso
+calc: c_matg.medz
+ano: 9
+nivel: núcleo
+fonte: AE Matemática 9.º ano, Lugares geométricos
+#A
+- Reconhecer a mediatriz, a bissetriz e a circunferência como lugares geométricos.
+- Construir lugares geométricos com régua e compasso.
+- Resolver problemas com pontos equidistantes.
+#C
+- Circunferência: pontos a uma distância r de um centro.
+- Mediatriz de [AB]: pontos à mesma distância de A e de B.
+- Bissetriz de um ângulo: pontos à mesma distância dos dois lados.
+- Círculo: pontos a distância ≤ r do centro.
+- O circuncentro de um triângulo está nas três mediatrizes.
+#E
+@F Mediatriz|PA = PB|A, B: extremos do segmento|reta perpendicular a [AB] no ponto médio|A(0, 0) e B(4, 0): x = 2|c_matg.medz
+#F
+Dados: há duas casas em A(0, 0) e B(6, 0). Quer-se um poste à mesma distância das duas.
+Objetivo: onde pode ficar o poste? Pode ficar no eixo Oy?
+1. Os pontos equidistantes de A e B estão na mediatriz de [AB].
+2. Ponto médio: ([[3]], 0); a mediatriz é a reta x = 3.
+3. No eixo Oy (x = 0) não há pontos da mediatriz.
+> O poste tem de estar na reta x = 3; por exemplo, P(3, 4).
+Verificação: PA = √(9 + 16) = [[5]] = PB ✓.
+#J
+Que lugar geométrico formam os pontos a 2 cm de um ponto O?
+#R
+Uma circunferência de centro O e raio 2 cm (perímetro 4π ≈ [[12,57]] cm).
+#V
+V = [3, sqrt(9 + 16), 4 * pi]
+
+@exemplo g9e1
+nivel: 1
+titulo: Ângulo numa semicircunferência
+licao: g9a
+calc: c_mgtr.circ
+#T
+Enunciado: [AB] é um diâmetro e C um ponto da circunferência. O ângulo CAB mede 35°. Quanto mede o ângulo ABC?
+Resolução:
+1. O ângulo ACB está inscrito numa semicircunferência: mede [[90]]°.
+2. ABC = 180° - 90° - 35° = [[55]]°.
+Resultado: 55°.
+Interpretação: o triângulo ABC é retângulo em C.
+Erros a evitar: pensar que o ângulo reto está em A ou em B.
+#V
+V = [90, 180 - 90 - 35]
+
+@exemplo g9e2
+nivel: 2
+titulo: Altura de um prédio
+licao: g9c
+calc: c_matr.tri
+#T
+Enunciado: a 30 m de um prédio, o topo vê-se com um ângulo de elevação de 50°. Os olhos estão a 1,6 m do chão. Qual é a altura do prédio?
+Resolução:
+1. tg 50° = h / 30, sendo h a altura acima dos olhos.
+2. h = 30 × tg 50° ≈ [[35,75]] m.
+3. Altura do prédio: 35,75 + 1,6 ≈ [[37,35]] m.
+Resultado: cerca de 37,4 m.
+Interpretação: sem a altura dos olhos, o resultado ficava 1,6 m curto.
+Erros a evitar: usar sen 50° (o dado é o cateto adjacente).
+#V
+h = 30 * tan(radians(50))
+V = [h, h + 1.6]
+
+@exemplo g9e3
+nivel: 3
+titulo: Gelado num cone
+licao: g9e
+calc: c_msol.sol
+#T
+Enunciado: um cone de bolacha tem 3 cm de raio e 10 cm de altura. Por cima leva meia esfera de gelado com o mesmo raio. Qual é o volume total?
+Resolução:
+1. Cone: π × 3² × 10 / 3 = [[=30π]] ≈ [[94,25]] cm³.
+2. Meia esfera: 4/3 × π × 27 / 2 = [[=18π]] ≈ [[56,55]] cm³.
+3. Total: 48π ≈ [[150,8]] cm³.
+Resultado: cerca de 151 cm³ (0,15 L).
+Interpretação: 48π = [[150,8]] cm³ é cerca de 0,15 L.
+Erros a evitar: esquecer o 1/3 no volume do cone.
+#V
+V = [30 * pi, 30 * pi, 18 * pi, 18 * pi, 48 * pi, 48 * pi]
+
+@exercicio g9x1
+tipo: n
+licao: g9a
+#T
+Numa circunferência, um ângulo ao centro mede 110°. Quanto mede um ângulo inscrito que compreende o mesmo arco?
+#S
+55
+#P
+O inscrito é metade do arco.
+#D
+110° / 2 = [[55]]°.
+#V
+S = 110 / 2
+V = [S]
+
+@exercicio g9x2
+tipo: n
+licao: g9a
+#T
+Duas cordas cruzam-se dentro de uma circunferência; os arcos compreendidos medem 70° e 50°. Quanto mede o ângulo?
+#S
+60
+#P
+Vértice no interior: semissoma dos arcos.
+#D
+(70° + 50°) / 2 = [[60]]°.
+#V
+S = (70 + 50) / 2
+V = [S]
+
+@exercicio g9x3
+tipo: n
+licao: g9b
+modo: d3
+#T
+O cateto oposto a α mede 5 e a hipotenusa 13. Quanto vale sen α, com 3 casas decimais?
+#S
+0,385
+#P
+sen α = oposto / hipotenusa.
+#D
+sen α = 5 / 13 ≈ [[0,385]].
+#V
+S = 5 / 13
+V = [S]
+
+@exercicio g9x4
+tipo: m
+licao: g9b
+#T
+Num triângulo retângulo, o cateto adjacente a α a dividir pela hipotenusa é...
+#O
+o cosseno de α
+o seno de α
+a tangente de α
+o inverso do seno de α
+#S
+1
+#P
+cos α = adjacente / hipotenusa.
+#D
+É o cosseno de α.
+#V
+S = 1
+
+@exercicio g9x5
+tipo: n
+licao: g9c
+modo: d2
+#T
+Uma escada de 6 m faz 60° com o chão. A que altura chega, em metros, com 2 casas decimais?
+#S
+5,20
+#P
+Altura = comprimento × sen 60°.
+#D
+6 × sen 60° = 3√3 ≈ [[5,20]] m.
+#V
+S = 6 * sin(radians(60))
+V = [S]
+
+@exercicio g9x6
+tipo: n
+licao: g9d
+#T
+α é agudo e sen α = 0,8. Quanto vale cos α?
+#S
+0,6
+#P
+cos² α = 1 - sen² α.
+#D
+cos² α = 1 - 0,64 = [[0,36]], logo cos α = [[0,6]].
+#V
+S = (1 - 0.64) ** 0.5
+V = [1 - 0.64, S]
+
+@exercicio g9x7
+tipo: m
+licao: g9d
+#T
+Qual é o valor exato de cos 30°?
+#O
+√3/2
+1/2
+√2/2
+√3
+#S
+1
+#P
+Num triângulo equilátero de lado 2, a altura é √3.
+#D
+cos 30° = sen 60° = √3/2.
+#V
+S = 1
+
+@exercicio g9x8
+tipo: n
+licao: g9e
+modo: d2
+#T
+Qual é o volume de um cilindro com 2 cm de raio e 5 cm de altura, em cm³, com duas casas decimais?
+#S
+62,83
+#P
+V = πr²h.
+#D
+π × 4 × 5 = [[=20π]] ≈ [[62,83]] cm³.
+#V
+S = pi * 4 * 5
+V = [S, S]
+
+@exercicio g9x9
+tipo: n
+licao: g9e
+#T
+Uma pirâmide quadrangular tem base de 6 cm de lado e 10 cm de altura. Qual é o volume (em cm³)?
+#S
+120
+#P
+V = Ab × h / 3.
+#D
+36 × 10 / 3 = [[120]] cm³.
+#V
+S = 36 * 10 / 3
+V = [S]
+
+@exercicio g9x10
+tipo: m
+licao: g9f
+#T
+Os pontos que estão à mesma distância de A e de B formam...
+#O
+a mediatriz de [AB]
+a circunferência de diâmetro [AB]
+a bissetriz do ângulo AOB
+o segmento [AB]
+#S
+1
+#P
+Equidistantes de dois pontos.
+#D
+É a mediatriz de [AB]: a perpendicular a [AB] no ponto médio.
+#V
+S = 1

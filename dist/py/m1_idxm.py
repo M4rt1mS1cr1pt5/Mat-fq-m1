@@ -1,55 +1,268 @@
-# m1_idxm.py - M1TR4M: indice da pesquisa (Mat, parte 1 de 1) gerado pelo build.
+# m1_idxm.py - M1TR4M: indice da pesquisa (Mat, parte 1 de 2) gerado pelo build.
 # Cada linha: etiqueta|titulo|palavras|alvo
 D = "@V 1\n\
-@N 365\n\
-L|Elei\xe7\xf5es: maioria simples e maioria absoluta|eleicao votacao tabela preferencias relativa votantes empate|m1a\n\
-L|M\xe9todo de Borda|pontos ordenacao preferencias pontuacao ranking eleicao concurso|m1b\n\
-L|Segunda volta e elimina\xe7\xe3o sucessiva|dois mais votados transferencia votos analise sistemas|m1c\n\
-L|M\xe9todo de Condorcet (aprofundamento)|duelos dois vencedor paradoxo ciclo preferencias teorema|m1d\n\
-L|M\xe9todo de Hondt|mandatos deputados divisores quocientes circulo eleitoral assembleia|m1e\n\
-L|M\xe9todo de Sainte-Lagu\xeb e compara\xe7\xe3o com Hondt|divisores impares proporcionalidade partidos\
- pequenos percentagem mandatos|m1f\n\
-L|Sal\xe1rio: bruto, l\xedquido e valor por hora|salario bruto seguranca social 11% entidade empregadora|m1g\n\
-L|IRS: escal\xf5es e progressividade|irs imposto taxa marginal media rendimento coletavel eficiencia|m1h\n\
-L|Juro simples e juro composto|capital taxa capitalizacao mensal trimestral deposito prazo juros|m1i\n\
-L|Presta\xe7\xf5es constantes e valor atual (aprofundamento)|prestacao constante emprestimo credito\
- amortizacao plano pagamentos|m1j\n\
-F|Maioria absoluta||m1:0\n\
-F|Percentagem de votos||m1:1\n\
-F|Pontos de Borda||m1:2\n\
-F|Total de pontos||m1:3\n\
-F|Segunda volta||m1:4\n\
-F|Elimina\xe7\xe3o sucessiva||m1:5\n\
-F|Duelo de Condorcet||m1:6\n\
-F|N\xfamero de duelos||m1:7\n\
-F|Quociente de Hondt|mandatos|m1:8\n\
-F|Empate (Lei n.\xba 14/79, art. 16.\xba)||m1:9\n\
-F|Quociente de Sainte-Lagu\xeb||m1:10\n\
-F|Percentagem de mandatos|hondt|m1:11\n\
-F|Sal\xe1rio l\xedquido||m1:12\n\
-F|Valor da hora||m1:13\n\
-F|Coleta por escal\xf5es||m1:14\n\
-F|Taxa m\xe9dia||m1:15\n\
-F|Juro simples|juros|m1:16\n\
-F|Juro composto|juros|m1:17\n\
-F|Presta\xe7\xe3o constante||m1:18\n\
-F|Valor atual||m1:19\n\
-E|Hondt com empate no \xfaltimo mandato|mandatos|m1:0\n\
-E|IRS de 25 000 \u20ac por escal\xf5es||m1:1\n\
-E|Quatro m\xe9todos, tr\xeas vencedores||m1:2\n\
-X|Numa vota\xe7\xe3o com 37 votos||m1:0\n\
-X|Um candidato tem mais votos||m1:1\n\
-X|Com 4 candidatos, quantos||m1:2\n\
-X|Com os mesmos votos, a||m1:3\n\
-X|Quantos duelos de Condorcet||m1:4\n\
-X|Pelo m\xe9todo de Hondt, com 3||m1:5\n\
-X|Num empate no \xfaltimo mandato||m1:6\n\
-X|Quais s\xe3o os divisores do||m1:7\n\
-X|Qual \xe9 o desconto para a||m1:8\n\
-X|Com a tabela de IRS de 2026||m1:9\n\
-X|O que \xe9 a taxa marginal de||m1:10\n\
-X|Qual \xe9 o juro, em euros, de 2|energia mecanica|m1:11\n\
-X|Quanto vale, em euros, um|energia mecanica|m1:12\n\
+@N 504\n\
+L|N\xfameros racionais: comparar e ordenar|racionais inteiros negativos simetrico valor absoluto reta|n7a\n\
+L|Opera\xe7\xf5es com n\xfameros racionais|fracoes adicao subtracao multiplicacao divisao inverso prioridade|n7b\n\
+L|Pot\xeancias de expoente natural|potencia base quadrado cubo 10 produto quociente|n7c\n\
+L|Raiz quadrada e raiz c\xfabica|quadrado perfeito cubo fracao enquadrar entre inteiros|n7d\n\
+L|Fatores primos, m.d.c. e m.m.c.|numeros primos decomposicao maximo divisor comum minimo|n7e\n\
+F|Valor absoluto||n7:0\n\
+F|Comparar fra\xe7\xf5es||n7:1\n\
+F|Soma de fra\xe7\xf5es||n7:2\n\
+F|Divis\xe3o de fra\xe7\xf5es||n7:3\n\
+F|Produto com a mesma base||n7:4\n\
+F|Pot\xeancia de pot\xeancia||n7:5\n\
+F|Raiz quadrada||n7:6\n\
+F|Raiz c\xfabica||n7:7\n\
+F|m.d.c. e m.m.c. pelos fatores||n7:8\n\
+E|Temperaturas negativas||n7:0\n\
+E|Express\xe3o com fra\xe7\xf5es e pot\xeancias||n7:1\n\
+E|Repartir um terreno||n7:2\n\
+X|Qual destas afirma\xe7\xf5es \xe9||n7:0\n\
+X|Calcula 3/4 - 5/6 (podes||n7:1\n\
+X|Calcula -2/5 \xd7 15/4 (podes||n7:2\n\
+X|(-2)\u2074 e -2\u2074 t\xeam o mesmo valor.||n7:3\n\
+X|Calcula 3\u2075 : 3\xb3 \xd7 3.||n7:4\n\
+X|Calcula \u221b(-64) + \u221a81.||n7:5\n\
+X|Entre que inteiros||n7:6\n\
+X|Qual \xe9 o m.d.c. de 84 e 126?||n7:7\n\
+X|Qual \xe9 o m.m.c. de 8, 12 e 18?||n7:8\n\
+L|Sequ\xeancias e regularidades|sequencia regularidade termo geral ordem n lei|a7a\n\
+L|Express\xf5es alg\xe9bricas|expressao algebrica variavel monomio termos semelhantes simplificar|a7b\n\
+L|Equa\xe7\xf5es do 1.\xba grau|equacao incognita solucao membros equivalentes resolver parenteses|a7c\n\
+L|Proporcionalidade direta|constante y = kx regra tres tabela|a7d\n\
+L|Percentagens|percentagem cento aumento desconto iva valor inicial|a7e\n\
+F|Termo geral (diferen\xe7a constante)||a7:0\n\
+F|Propriedade distributiva||a7:1\n\
+F|Equa\xe7\xe3o do 1.\xba grau||a7:2\n\
+F|Proporcionalidade direta||a7:3\n\
+F|Aumento e desconto||a7:4\n\
+F|Varia\xe7\xe3o percentual||a7:5\n\
+E|Padr\xe3o com f\xf3sforos||a7:0\n\
+E|Equa\xe7\xe3o com o dobro e o triplo||a7:1\n\
+E|Dois descontos seguidos||a7:2\n\
+X|Na sequ\xeancia 5, 9, 13, 17|avogadro|a7:0\n\
+X|Qual \xe9 o termo geral da||a7:1\n\
+X|Qual \xe9 o valor de 3x\xb2 - 2x||a7:2\n\
+X|Qual \xe9 a forma simplificada||a7:3\n\
+X|Resolve 5x - 3 = 2x + 9.||a7:4\n\
+X|A equa\xe7\xe3o 2(x + 1) = 2x + 3 \xe9||a7:5\n\
+X|x e y s\xe3o diretamente||a7:6\n\
+X|Um telem\xf3vel custa 250 \u20ac sem||a7:7\n\
+X|Um bilhete passou de 12 \u20ac||a7:8\n\
+L|\xc2ngulos e retas paralelas|complementares suplementares verticalmente opostos secante correspondentes alternos|g7a\n\
+L|\xc2ngulos de tri\xe2ngulos e pol\xedgonos|soma internos triangulo angulo externo poligono convexo|g7b\n\
+L|\xc1reas e per\xedmetros de pol\xedgonos|area perimetro quadrado retangulo paralelogramo triangulo losango|g7c\n\
+L|C\xedrculo: per\xedmetro e \xe1rea|circulo circunferencia raio diametro pi setor circular|g7d\n\
+L|Semelhan\xe7a de figuras|razao ampliacao reducao lados correspondentes angulos iguais|g7e\n\
+F|\xc2ngulos complementares e suplementares||g7:0\n\
+F|Soma dos \xe2ngulos internos||g7:1\n\
+F|\xc2ngulo externo do pol\xedgono regular||g7:2\n\
+F|\xc1rea do trap\xe9zio||g7:3\n\
+F|\xc1rea do pol\xedgono regular||g7:4\n\
+F|Per\xedmetro do c\xedrculo||g7:5\n\
+F|\xc1rea do c\xedrculo||g7:6\n\
+F|Raz\xe3o de semelhan\xe7a||g7:7\n\
+F|\xc1reas de figuras semelhantes||g7:8\n\
+E|\xc2ngulo de um pol\xedgono regular||g7:0\n\
+E|\xc1rea de um canteiro||g7:1\n\
+E|Altura de uma \xe1rvore pela sombra||g7:2\n\
+X|Qual \xe9 o suplementar de um||g7:0\n\
+X|Duas retas paralelas s\xe3o||g7:1\n\
+X|Qual \xe9 a soma dos \xe2ngulos||g7:2\n\
+X|Um tri\xe2ngulo pode ter dois||g7:3\n\
+X|Um losango tem diagonais de||g7:4\n\
+X|Qual \xe9 a \xe1rea de um c\xedrculo||g7:5\n\
+X|Uma piza com 30 cm de||g7:6\n\
+X|Uma fotografia de 10 cm por||g7:7\n\
+X|Qual destes crit\xe9rios N\xc3O||g7:8\n\
+L|Tabelas de frequ\xeancias e gr\xe1ficos|dados qualitativos quantitativos frequencia absoluta relativa\
+ percentagem|d7a\n\
+L|M\xe9dia, moda, mediana e amplitude|media aritmetica moda medidas localizacao dados ordenados|d7b\n\
+L|Diagrama de caule-e-folhas|caule folhas ordenar dados comparar dois conjuntos|d7c\n\
+F|Frequ\xeancia relativa||d7:0\n\
+F|\xc2ngulo do setor||d7:1\n\
+F|M\xe9dia||d7:2\n\
+F|Amplitude||d7:3\n\
+F|Caule-e-folhas||d7:4\n\
+E|Cor preferida||d7:0\n\
+E|M\xe9dia com uma tabela de frequ\xeancias||d7:1\n\
+E|Um valor estranho||d7:2\n\
+X|Num inqu\xe9rito a 40 pessoas||d7:0\n\
+X|Num gr\xe1fico circular, uma||d7:1\n\
+X|Qual destes dados \xe9||d7:2\n\
+X|Qual \xe9 a m\xe9dia de 12, 15, 9||d7:3\n\
+X|Qual \xe9 a mediana de 8, 3, 6||d7:4\n\
+X|A m\xe9dia de um conjunto de||d7:5\n\
+X|A m\xe9dia de 4 testes \xe9 14. Que||d7:6\n\
+X|No diagrama de caule-e-folhas||d7:7\n\
+L|Pot\xeancias de expoente inteiro|potencia negativo zero inverso regras fracoes 10|n8a\n\
+L|Nota\xe7\xe3o cient\xedfica|mantissa ordem grandeza potencia 10 multiplicar dividir|n8b\n\
+L|D\xedzimas finitas e infinitas peri\xf3dicas|dizima finita infinita periodica periodo fracao geratriz|n8c\n\
+F|Expoente negativo||n8:0\n\
+F|Base fracion\xe1ria com expoente negativo||n8:1\n\
+F|Nota\xe7\xe3o cient\xedfica||n8:2\n\
+F|Produto em nota\xe7\xe3o cient\xedfica|energia mecanica|n8:3\n\
+F|Fra\xe7\xe3o geratriz (per\xedodo de k algarismos)||n8:4\n\
+E|Massa de um \xe1tomo||n8:0\n\
+E|Soma em nota\xe7\xe3o cient\xedfica|energia mecanica|n8:1\n\
+E|Fra\xe7\xe3o de uma d\xedzima com anteper\xedodo||n8:2\n\
+X|Calcula 5\u207b\xb2 (podes responder||n8:0\n\
+X|Calcula (1/2)\u207b\xb3.||n8:1\n\
+X|Qual \xe9 o valor de 3\u2074 \xd7 3\u207b\u2076?||n8:2\n\
+X|O n\xfamero 12 \xd7 10\u2075 est\xe1||n8:3\n\
+X|O expoente n de 6 \xd7 10\u2078||n8:4\n\
+X|Qual \xe9 o maior destes n\xfameros?||n8:5\n\
+X|Qual destas fra\xe7\xf5es d\xe1 uma||n8:6\n\
+X|Escreve 0,(7) como fra\xe7\xe3o.||n8:7\n\
+L|Polin\xf3mios e casos not\xe1veis|monomio polinomio grau termos semelhantes multiplicar quadrado|a8a\n\
+L|Fatorizar e resolver equa\xe7\xf5es por fatoriza\xe7\xe3o|fator comum evidencia casos notaveis diferenca\
+ quadrados|a8b\n\
+L|Equa\xe7\xf5es com denominadores e equa\xe7\xf5es literais|equacao mmc literal resolver ordem letra formulas|a8c\n\
+L|Sistemas de duas equa\xe7\xf5es|sistema 1.o grau incognitas metodo substituicao solucao|a8d\n\
+L|Fun\xe7\xe3o afim|y = mx + b declive ordenada|a8e\n\
+F|Quadrado do bin\xf3mio||a8:0\n\
+F|Diferen\xe7a de quadrados||a8:1\n\
+F|Lei do anulamento do produto||a8:2\n\
+F|Resolver em ordem a uma letra|energia mecanica|a8:3\n\
+F|M\xe9todo de substitui\xe7\xe3o||a8:4\n\
+F|Declive||a8:5\n\
+F|Fun\xe7\xe3o afim||a8:6\n\
+E|\xc1rea de um quadrado aumentado||a8:0\n\
+E|Bilhetes de cinema||a8:1\n\
+E|Duas tarifas de telem\xf3vel||a8:2\n\
+X|Qual \xe9 o desenvolvimento de||a8:0\n\
+X|Qual \xe9 o valor de (3x + 1)(3x||a8:1\n\
+X|Qual \xe9 a fatoriza\xe7\xe3o de 3x\xb2 -||a8:2\n\
+X|A equa\xe7\xe3o x\xb2 = 7x tem duas||a8:3\n\
+X|Resolve x/2 - (x - 3)/4 = 2.||a8:4\n\
+X|Qual \xe9 a f\xf3rmula v = d / t||a8:5\n\
+X|No sistema x - y = 3 e x + y||a8:6\n\
+X|O sistema x + y = 2 e x + y =||a8:7\n\
+X|Qual \xe9 o declive da reta que||a8:8\n\
+L|Teorema de Pit\xe1goras|hipotenusa catetos triangulo retangulo calcular lado diagonal|g8a\n\
+L|Rec\xedproco do teorema de Pit\xe1goras e aplica\xe7\xf5es|verificar triangulo retangulo distancia entre\
+ dois pontos|g8b\n\
+L|Vetores e transla\xe7\xf5es|vetor direcao sentido comprimento norma translacao associada|g8c\n\
+L|Isometrias: reflex\xf5es e rota\xe7\xf5es|isometria reflexao eixo rotacao centro amplitude meia-volta|g8d\n\
+F|Teorema de Pit\xe1goras||g8:0\n\
+F|Dist\xe2ncia entre dois pontos||g8:1\n\
+F|Transla\xe7\xe3o de vetor (a, b)|vetores|g8:2\n\
+F|Vetor definido por dois pontos|vetores|g8:3\n\
+F|Rota\xe7\xe3o de 90\xb0 de centro O||g8:4\n\
+F|Reflex\xf5es nos eixos||g8:5\n\
+E|Diagonal de um campo||g8:0\n\
+E|Altura de um tri\xe2ngulo equil\xe1tero||g8:1\n\
+E|Uma rota\xe7\xe3o de centro qualquer||g8:2\n\
+X|Os catetos de um tri\xe2ngulo||g8:0\n\
+X|A diagonal de um quadrado||g8:1\n\
+X|Qual destes ternos s\xe3o os||g8:2\n\
+X|Qual \xe9 a dist\xe2ncia entre||g8:3\n\
+X|Uma caixa tem 30 cm \xd7 40 cm \xd7||g8:4\n\
+X|A transla\xe7\xe3o de vetor (-2, 5)|vetores|g8:5\n\
+X|Qual \xe9 a imagem de (2, -3)||g8:6\n\
+X|A reflex\xe3o num eixo mant\xe9m a||g8:7\n\
+L|Quartis e diagrama de extremos e quartis|primeiro quartil terceiro mediana amplitude interquartil caixa aiq|d8a\n\
+L|Dados em classes e histograma|amplitude classe ponto medio modal frequencia acumulada energia mecanica|d8b\n\
+F|Amplitude interquartil|aiq|d8:0\n\
+F|M\xe9dia de dados agrupados||d8:1\n\
+E|Quartis com n \xedmpar||d8:0\n\
+E|Comparar duas turmas||d8:1\n\
+E|Tempo de estudo agrupado||d8:2\n\
+X|Calcula Q1 dos dados 2, 4, 5||d8:0\n\
+X|Calcula Q3 dos dados 1, 3, 3||d8:1\n\
+X|Num diagrama de extremos e||d8:2\n\
+X|Que percentagem dos dados||d8:3\n\
+X|A amplitude interquartil \xe9|aiq|d8:4\n\
+X|Qual \xe9 o ponto m\xe9dio da||d8:5\n\
+X|Classes [0, 10[ com 2 dados||d8:6\n\
+X|Num histograma, as barras...||d8:7\n\
+L|N\xfameros reais: racionais e irracionais|reais dizima infinita periodica raiz quadrada pi|n9a\n\
+L|Radicais: simplificar e operar|radicais raiz quadrada operacoes somar semelhantes produto|n9b\n\
+L|Intervalos de n\xfameros reais|reta real intervalo aberto fechado semiaberto infinito|n9c\n\
+F|Comparar ra\xedzes||n9:0\n\
+F|Produto de ra\xedzes||n9:1\n\
+F|Interse\xe7\xe3o e reuni\xe3o||n9:2\n\
+E|Um irracional na reta|avogadro|n9:0\n\
+E|Enquadrar uma raiz||n9:1\n\
+E|Intervalos e condi\xe7\xf5es||n9:2\n\
+X|Qual destes n\xfameros \xe9||n9:0\n\
+X|Entre que inteiros||n9:1\n\
+X|A soma de dois n\xfameros||n9:2\n\
+X|Qual \xe9 a forma simplificada||n9:3\n\
+X|Calcula (\u221a5)\xb2 + \u221a9.||n9:4\n\
+X|Qual \xe9 A \u2229 B, com A = [1, 6]||n9:5\n\
+X|Quantos n\xfameros inteiros h\xe1||n9:6\n\
+X|Qual \xe9 a condi\xe7\xe3o que define||n9:7\n\
+L|Inequa\xe7\xf5es do 1.\xba grau|inequacao conjunto-solucao intervalo inverter sinal multiplicar negativo|a9a\n\
+L|Equa\xe7\xf5es do 2.\xba grau|equacao formula resolvente binomio discriminante incompleta fatorizacao|a9b\n\
+L|Proporcionalidade inversa|constante k = xy y k/x hiperbole|a9c\n\
+L|Fun\xe7\xf5es do tipo y = ax\xb2|funcao quadratica parabola vertice eixo simetria concavidade|a9d\n\
+F|Inverter o sinal||a9:0\n\
+F|F\xf3rmula resolvente||a9:1\n\
+F|Proporcionalidade inversa||a9:2\n\
+F|Fun\xe7\xe3o y = ax\xb2||a9:3\n\
+E|Inequa\xe7\xe3o com fra\xe7\xf5es||a9:0\n\
+E|\xc1rea de um ret\xe2ngulo||a9:1\n\
+E|Velocidade e tempo de uma viagem||a9:2\n\
+X|Qual \xe9 o conjunto-solu\xe7\xe3o de||a9:0\n\
+X|Qual \xe9 o menor n\xfamero inteiro||a9:1\n\
+X|Qual \xe9 o discriminante de x\xb2||a9:2\n\
+X|Quantas solu\xe7\xf5es tem x\xb2 + 2x||a9:3\n\
+X|x\xb2 - 5x + 6 = 0 tem duas||a9:4\n\
+X|x e y s\xe3o inversamente||a9:5\n\
+X|O gr\xe1fico de uma fun\xe7\xe3o de||a9:6\n\
+X|Se f(x) = -x\xb2, qual \xe9 f(-4)?||a9:7\n\
+L|Circunfer\xeancia: \xe2ngulos e arcos|circunferencia angulo centro inscrito arco segmento vertice|g9a\n\
+L|Raz\xf5es trigonom\xe9tricas de um \xe2ngulo agudo|trigonometria seno cosseno tangente cateto oposto\
+ adjacente sen cos tg|g9b\n\
+L|Resolver tri\xe2ngulos ret\xe2ngulos|triangulo retangulo angulo elevacao depressao altura sombra|g9c\n\
+L|Rela\xe7\xf5es entre as raz\xf5es e valores exatos|formula fundamental sen^2 + cos^2 = 1|g9d\n\
+L|S\xf3lidos: \xe1reas e volumes|volume area lateral total prisma cilindro piramide|g9e\n\
+L|Lugares geom\xe9tricos|lugar geometrico mediatriz bissetriz circunferencia equidistante pontos|g9f\n\
+F|\xc2ngulo inscrito||g9:0\n\
+F|\xc2ngulos de v\xe9rtice interior e exterior||g9:1\n\
+F|Seno, cosseno e tangente|cos tg|g9:2\n\
+F|Lados a partir de um \xe2ngulo||g9:3\n\
+F|F\xf3rmula fundamental||g9:4\n\
+F|Tangente|tg|g9:5\n\
+F|Volume da pir\xe2mide e do cone||g9:6\n\
+F|Volume e \xe1rea da esfera||g9:7\n\
+F|Mediatriz||g9:8\n\
+E|\xc2ngulo numa semicircunfer\xeancia||g9:0\n\
+E|Altura de um pr\xe9dio||g9:1\n\
+E|Gelado num cone||g9:2\n\
+X|Numa circunfer\xeancia, um||g9:0\n\
+X|Duas cordas cruzam-se dentro||g9:1\n\
+X|O cateto oposto a \u03b1 mede 5 e||g9:2\n\
+X|Num tri\xe2ngulo ret\xe2ngulo, o||g9:3\n\
+X|Uma escada de 6 m faz 60\xb0 com||g9:4\n\
+X|\u03b1 \xe9 agudo e sen \u03b1 = 0,8.|seno|g9:5\n\
+X|Qual \xe9 o valor exato de cos|cosseno|g9:6\n\
+X|Qual \xe9 o volume de um||g9:7\n\
+X|Uma pir\xe2mide quadrangular tem||g9:8\n\
+X|Os pontos que est\xe3o \xe0 mesma||g9:9\n\
+L|Experi\xeancias aleat\xf3rias e lei de Laplace|experiencia aleatoria espaco resultados acontecimento certo\
+ impossivel|d9a\n\
+L|Experi\xeancias compostas: tabelas de dupla entrada|experiencia composta dois dados duas moedas tabela|d9b\n\
+L|Diagramas em \xe1rvore: com e sem reposi\xe7\xe3o|diagrama arvore extracao duas extracoes multiplicar\
+ probabilidades energia mecanica|d9c\n\
+F|Lei de Laplace||d9:0\n\
+F|Acontecimento contr\xe1rio||d9:1\n\
+F|Probabilidade com a tabela||d9:2\n\
+F|Probabilidade de um caminho||d9:3\n\
+E|Escolher um aluno||d9:0\n\
+E|Produto de dois dados||d9:1\n\
+E|Pelo menos uma verde||d9:2\n\
+X|Numa caixa h\xe1 4 bolas brancas||d9:0\n\
+X|Tira-se uma carta de um||d9:1\n\
+X|Se P(A) = 0,35, ent\xe3o P(n\xe3o||d9:2\n\
+X|Lan\xe7am-se dois dados. Qual \xe9||d9:3\n\
+X|Lan\xe7am-se tr\xeas moedas. Qual \xe9||d9:4\n\
+X|Lan\xe7am-se dois dados. Qual \xe9||d9:5\n\
+X|Uma caixa tem 2 bolas brancas||d9:6\n\
+X|A mesma caixa (2 brancas, 3||d9:7\n\
 L|O problema estat\xedstico: popula\xe7\xe3o, amostra e vari\xe1veis|estatistico variabilidade populacao\
  censo unidade estatistica variavel|m2a\n\
 L|Tabelas de frequ\xeancias, gr\xe1ficos e caule-e-folhas|frequencia absoluta relativa acumulada tabela\
@@ -277,72 +490,6 @@ X|\u2016u\u2016 = 2,5. Qual \xe9 a norma de||m8:7\n\
 X|Tri\xe2ngulo de v\xe9rtices A(1||m8:8\n\
 X|A(1, 0, 2) e B(3, -2, 3).||m8:9\n\
 X|Qual \xe9 o produto escalar de u||m8:10\n\
-L|Raz\xf5es trigonom\xe9tricas de um \xe2ngulo agudo|trigonometria seno cosseno tangente cateto oposto\
- adjacente sen cos tg|m9a\n\
-L|Resolver tri\xe2ngulos ret\xe2ngulos|triangulo retangulo angulo elevacao depressao altura sombra|m9b\n\
-L|Rela\xe7\xf5es entre as raz\xf5es e valores exatos|formula fundamental sen^2 + cos^2 = 1|m9c\n\
-L|Radianos (extens\xe3o, 11.\xba)|radiano graus conversao pi comprimento arco angulo|m9d\n\
-L|Leis dos senos e dos cossenos (extens\xe3o, 11.\xba)|lei triangulo qualquer resolver area caso ambiguo|m9e\n\
-F|Seno|sen|m9:0\n\
-F|Cosseno e tangente|cos tg|m9:1\n\
-F|Lados a partir da hipotenusa||m9:2\n\
-F|Oposto a partir do adjacente||m9:3\n\
-F|F\xf3rmula fundamental||m9:4\n\
-F|Tangente a partir do seno e do cosseno|sen cos tg|m9:5\n\
-F|Graus em radianos|energia mecanica|m9:6\n\
-F|Comprimento de arco||m9:7\n\
-F|Lei dos senos||m9:8\n\
-F|Lei dos cossenos||m9:9\n\
-E|Altura de um pr\xe9dio||m9:0\n\
-E|Das outras raz\xf5es a partir do cosseno|cos|m9:1\n\
-E|O caso amb\xedguo||m9:2\n\
-X|O cateto oposto a \u03b1 mede 5 e||m9:0\n\
-X|Num tri\xe2ngulo ret\xe2ngulo, o||m9:1\n\
-X|Uma escada de 6 m faz 60\xb0 com||m9:2\n\
-X|Com a calculadora em graus|energia mecanica|m9:3\n\
-X|Para qualquer \xe2ngulo agudo \u03b1||m9:4\n\
-X|\u03b1 \xe9 agudo e sen \u03b1 = 0,8.|seno|m9:5\n\
-X|Qual \xe9 o valor exato de cos|cosseno|m9:6\n\
-X|Quantos graus tem \u03c0/6 rad?||m9:7\n\
-X|Num tri\xe2ngulo, b = 5, c = 8 e||m9:8\n\
-X|Com A = 90\xb0, a lei dos||m9:9\n\
-L|N\xfameros: fra\xe7\xf5es, pot\xeancias e nota\xe7\xe3o cient\xedfica|fracoes operacoes regras expoente\
- negativo raiz quadrada|mra\n\
-L|Percentagens, aumentos e descontos|percentagem aumento desconto iva variacao percentual fator|mrb\n\
-L|Proporcionalidade direta e inversa|constante y = kx k/x hiperbole regra|mrc\n\
-L|Equa\xe7\xf5es do 1.\xba grau e sistemas|equacao resolver solucao denominadores sistema duas metodo|mrd\n\
-L|Intervalos e inequa\xe7\xf5es do 1.\xba grau|numeros reais inequacao conjunto-solucao inverter sinal reta|mre\n\
-L|Teorema de Pit\xe1goras|hipotenusa catetos triangulo retangulo reciproco diagonal ternos|mrf\n\
-L|Semelhan\xe7a de figuras|razao ampliacao reducao criterios aa lal lll|mrg\n\
-L|\xc1reas e volumes|circulo perimetro prisma cilindro cone piramide esfera|mrh\n\
-F|Produto de pot\xeancias com a mesma base||mr:0\n\
-F|Nota\xe7\xe3o cient\xedfica||mr:1\n\
-F|Aumento percentual||mr:2\n\
-F|Varia\xe7\xe3o percentual||mr:3\n\
-F|Proporcionalidade direta||mr:4\n\
-F|Proporcionalidade inversa||mr:5\n\
-F|Equa\xe7\xe3o do 1.\xba grau||mr:6\n\
-F|M\xe9todo de substitui\xe7\xe3o||mr:7\n\
-F|Inverter o sinal||mr:8\n\
-F|Intervalo fechado||mr:9\n\
-F|Teorema de Pit\xe1goras||mr:10\n\
-F|Diagonal de um paralelep\xedpedo||mr:11\n\
-F|Raz\xe3o de semelhan\xe7a||mr:12\n\
-F|\xc1reas e volumes||mr:13\n\
-F|Volume do cilindro||mr:14\n\
-F|Volume da esfera||mr:15\n\
-E|Desconto em percentagem|energia mecanica|mr:0\n\
-E|Uma vara dentro de uma caixa||mr:1\n\
-E|Um sistema num problema||mr:2\n\
-X|Quanto vale 2\u207b\xb3, em forma|energia mecanica|mr:0\n\
-X|Quanto \xe9 15% de 80?||mr:1\n\
-X|Um pre\xe7o de 50 \u20ac sobe 20% e||mr:2\n\
-X|Se x \xd7 y = 36 em todos os|energia mecanica|mr:3\n\
-X|Resolve 5x + 3 = 2x - 9.||mr:4\n\
-X|Qual \xe9 o conjunto-solu\xe7\xe3o de||mr:5\n\
-X|Os catetos de um tri\xe2ngulo||mr:6\n\
-X|Duas figuras semelhantes t\xeam||mr:7\n\
-X|Qual \xe9 o volume, em m\xb3, de um|energia mecanica|mr:8\n\
 C|Constantes e dados|avogadro planck velocidade luz volume molar na vm|c_comd.cte\n\
 C|Dados experimentais|media incerteza absoluta relativa erro percentual|c_comd.exp\n\
 C|Regress\xe3o linear e gr\xe1fico|reta declive ordenada coeficiente correlacao interpolar|c_comd.reg\n\
@@ -350,12 +497,6 @@ C|Calculadora cient\xedfica|expressao potencia raiz seno cosseno tangente sen co
 C|Algarismos significativos|arredondar soma produto regra|c_comu.sf\n\
 C|Conversor de unidades|conversao comprimento massa volume temperatura energia|c_comu.uni\n\
 C|Prefixos do SI|quilo mili micro nano mega giga|c_comu.pre\n\
-C|Sistemas de vota\xe7\xe3o|maioria simples relativa absoluta borda segunda|c_matc.vot\n\
-C|Mandatos: Hondt e Sainte-Lagu\xeb|metodo mandatos deputados divisores quocientes partilha|c_matc.mand\n\
-C|Sal\xe1rio: bruto e l\xedquido|salario mensal anual valor hora horas|c_matd.sal\n\
-C|IRS por escal\xf5es|imposto taxa marginal media progressividade rendimento eficiencia|c_matd.irs\n\
-C|Juros simples e compostos|juro composto capital taxa anual capitalizacao|c_matd.jur\n\
-C|Presta\xe7\xf5es e valor atual|prestacao constante emprestimo credito amortizacao juros juro|c_matd.prest\n\
 C|Estat\xedstica de uma vari\xe1vel|media moda mediana quartis percentil amplitude|c_mate.uni\n\
 C|Dados em classes e histograma|tabela frequencias absoluta relativa acumulada ponto energia mecanica|c_mate.cls\n\
 C|Caule-e-folhas|caule folhas diagrama ordenar dados comparar|c_mate.caule\n\
@@ -375,11 +516,11 @@ C|Transforma\xe7\xf5es de fun\xe7\xf5es|translacao dilatacao contracao reflexao 
 C|Tri\xe2ngulo ret\xe2ngulo: seno, cosseno e tangente|trigonometria seno cateto oposto adjacente hipotenusa\
  sen cos tg|c_matr.tri\n\
 C|Graus, radianos e valores exatos|graus conversao pi angulos notaveis 30|c_matr.rad\n\
-C|Resolver tri\xe2ngulos: leis dos senos e dos cossenos|lei triangulo qualquer area caso ambiguo|c_matr.res\n\
+C|Leis dos senos e dos cossenos (extens\xe3o)|lei triangulo qualquer resolver triangulos area|c_matr.res\n\
 C|Pontos not\xe1veis do tri\xe2ngulo (com desenho)|incentro circuncentro ortocentro baricentro reta euler|c_matt.pn\n\
 C|Circunfer\xeancias inscrita e circunscrita|raio circunferencia r = 2a/p triangulo|c_matt.insc\n\
 C|Reta de Euler e nove pontos|ob = 2bc circunferencia raio r/2|c_matt.euler\n\
-C|Teorema de Pit\xe1goras|hipotenusa catetos triangulo retangulo|c_matt.pit\n\
+C|Teorema de Pit\xe1goras e rec\xedproco|hipotenusa catetos triangulo retangulo verificar tres|c_matt.pit\n\
 C|Semelhan\xe7a de figuras|razao ampliacao reducao areas lados correspondentes|c_matt.sem\n\
 C|Opera\xe7\xf5es com vetores|vetor norma soma diferenca produto numero|c_matv.vet\n\
 C|Equa\xe7\xe3o vetorial da reta|vetor diretor ponto pertence declive m vetores|c_matv.retav\n\

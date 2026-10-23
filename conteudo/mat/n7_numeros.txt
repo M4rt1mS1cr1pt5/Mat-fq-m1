@@ -1,0 +1,377 @@
+@tema n7
+disc: M
+grupo: 7
+titulo: Números (7.º ano)
+calcs: c_mnum.frac c_mnum.pot c_mnum.mdc c_mrea.rad
+formato: ficha
+
+@licao n7a
+titulo: Números racionais: comparar e ordenar
+chave: números racionais inteiros negativos simétrico valor absoluto reta numérica comparar ordenar frações dízimas
+calc: c_mnum.frac
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Números racionais
+#A
+- Representar números racionais na reta numérica.
+- Usar o simétrico e o valor absoluto.
+- Comparar e ordenar números racionais.
+#C
+- Racional: escreve-se como a/b, com a e b inteiros e b ≠ 0.
+- Simétrico de 3: -3. Valor absoluto: ∣-3∣ = 3 (distância a 0).
+- Na reta numérica, o maior está mais à direita.
+- Entre negativos, é maior o de menor valor absoluto: -2 > -5.
+- Frações: reduz ao mesmo denominador ou passa a dízima.
+#E
+@F Valor absoluto|∣a∣ = a se a ≥ 0; ∣a∣ = -a se a < 0|a: número racional|distância de a a 0 na reta|∣-3,5∣ = 3,5|
+@F Comparar frações|a/b < c/d ⇔ a × d < c × b|b e d positivos|com o mesmo denominador, compara os numeradores|2/3 < 3/4 porque 8 < 9|c_mnum.frac
+#F
+Dados: -3/4, 0,7, -0,8 e 2/3.
+Objetivo: ordenar do menor para o maior.
+1. Em dízima: -3/4 = [[-0,75]] e 2/3 ≈ [[0,667]].
+2. Negativos: -0,8 < -0,75, porque 0,8 > 0,75.
+3. Positivos: 2/3 ≈ 0,667 < 0,7.
+> -0,8 < -3/4 < 2/3 < 0,7.
+Verificação: dos negativos, -0,8 tem o maior valor absoluto.
+#J
+Qual é maior: -5/2 ou -2,4?
+#R
+-2,4: está mais perto de 0, porque ∣-5/2∣ = [[2,5]] é maior do que 2,4.
+#V
+V = [-3 / 4, 2 / 3, 5 / 2]
+
+@licao n7b
+titulo: Operações com números racionais
+chave: frações adição subtração multiplicação divisão inverso prioridade das operações parênteses sinais números negativos m.m.c.
+calc: c_mnum.frac
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Números racionais (operações)
+#A
+- Somar e subtrair frações com o m.m.c. dos denominadores.
+- Multiplicar e dividir frações.
+- Respeitar a prioridade das operações e as regras dos sinais.
+#C
+- Somar: reduz ao mesmo denominador e soma os numeradores.
+- Multiplicar: numerador × numerador e denominador × denominador.
+- Dividir: multiplica pelo inverso do divisor.
+- Sinais: (+)(+) e (-)(-) dão +; (+)(-) dá -.
+- Ordem: parênteses, potências, × e :, por fim + e -.
+- Simplifica o resultado (fração irredutível).
+#E
+@F Soma de frações|a/b + c/d = (ad + cb) / (bd)|b e d diferentes de 0|melhor com o m.m.c. dos denominadores|1/4 + 1/6 = 3/12 + 2/12 = 5/12|c_mnum.frac
+@F Divisão de frações|a/b : c/d = a/b × d/c|c/d diferente de 0|multiplica-se pelo inverso|2/3 : 4/5 = 2/3 × 5/4 = 5/6|c_mnum.frac
+#F
+Dados: 1/2 + 3/4 × (2/3 - 1).
+Objetivo: calcular o valor exato.
+1. Parênteses: 2/3 - 1 = 2/3 - 3/3 = [[=-1/3]]
+2. Multiplicação: 3/4 × (-1/3) = -3/12 = [[=-1/4]]
+3. Adição: 1/2 + (-1/4) = 2/4 - 1/4 = [[=1/4]]
+> O valor é 1/4 = 0,25.
+Verificação: na calculadora, 0,5 + 0,75 × (-0,333...) ≈ [[0,25]].
+#J
+Calcula 2/3 : 4/9.
+#R
+2/3 × 9/4 = 18/12 = [[=3/2]].
+#V
+V = [2 / 3 - 1, 3 / 4 * (-1 / 3), 1 / 2 - 1 / 4, 0.5 + 0.75 * (-1 / 3), 3 / 2]
+
+@licao n7c
+titulo: Potências de expoente natural
+chave: potência base expoente quadrado cubo potências de 10 produto quociente de potências mesma base mesmo expoente potência de potência base negativa
+calc: c_mnum.pot
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Potências
+#A
+- Calcular potências de base racional e expoente natural.
+- Aplicar as regras das potências.
+- Saber o sinal de uma potência de base negativa.
+#C
+- a^n = a × a × ... × a (n fatores); a¹ = a; a⁰ = 1 (a ≠ 0).
+- Mesma base: a^n × a^m soma os expoentes; a^n : a^m subtrai-os.
+- Mesmo expoente: a^n × b^n = (a × b)^n.
+- Potência de potência: (a^n)^m multiplica os expoentes.
+- Base negativa: expoente par dá positivo; ímpar dá negativo.
+- (-2)⁴ = 16, mas -2⁴ = -16.
+#E
+@F Produto com a mesma base|a^n × a^m = a^(n + m)|a: base;n e m: expoentes naturais|a mesma base|2³ × 2⁴ = 2⁷ = 128|c_mnum.pot
+@F Potência de potência|(a^n)^m = a^(n × m)|n e m: expoentes|multiplicam-se os expoentes|(3²)³ = 3⁶ = 729|c_mnum.pot
+#F
+Dados: 2³ × 2⁴ : 2⁵ e (-3)³ + (-1)¹⁰.
+Objetivo: calcular as duas expressões.
+1. 2³ × 2⁴ = 2⁷; 2⁷ : 2⁵ = 2² = [[4]]
+2. (-3)³ = [[-27]] (expoente ímpar: negativo).
+3. (-1)¹⁰ = [[1]] (expoente par: positivo).
+4. -27 + 1 = [[-26]]
+> 4 e -26.
+Verificação: 8 × 16 : 32 = [[4]].
+#J
+Escreve como uma só potência: 5³ × 2³.
+#R
+(5 × 2)³ = [[1000]], ou seja, 10³.
+#V
+V = [2 ** 3 * 2 ** 4 / 2 ** 5, (-3) ** 3, (-1) ** 10, (-3) ** 3 + 1, 8 * 16 / 32, 10 ** 3]
+
+@licao n7d
+titulo: Raiz quadrada e raiz cúbica
+chave: raiz quadrada raiz cúbica quadrado perfeito cubo perfeito raiz de uma fração enquadrar entre inteiros
+calc: c_mrea.rad
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Raízes quadradas e cúbicas
+#A
+- Reconhecer quadrados e cubos perfeitos.
+- Calcular raízes quadradas e cúbicas.
+- Enquadrar uma raiz entre dois inteiros.
+#C
+- √a é o número positivo cujo quadrado é a: √49 = 7.
+- ∛a é o número cujo cubo é a: ∛64 = 4 e ∛(-8) = -2.
+- Quadrados perfeitos: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100...
+- Raiz de uma fração: √(a/b) = √a / √b.
+- Se não é quadrado perfeito, enquadra: 6² < 40 < 7², logo 6 < √40 < 7.
+#E
+@F Raiz quadrada|√a = b ⇔ b² = a e b ≥ 0|a ≥ 0|só para números não negativos|√144 = 12|c_mrea.rad
+@F Raiz cúbica|∛a = b ⇔ b³ = a|a: qualquer número racional|existe para negativos|∛(-27) = -3|c_mrea.rad
+#F
+Dados: √(9/25), ∛(-125) e √40.
+Objetivo: calcular as duas primeiras e enquadrar √40.
+1. √(9/25) = √9 / √25 = [[=3/5]]
+2. ∛(-125) = [[-5]], porque (-5)³ = -125.
+3. 6² = 36 < 40 < 49 = 7², logo 6 < √40 < 7.
+> 3/5, -5 e 6 < √40 < 7.
+Verificação: √40 ≈ [[6,32]] na calculadora.
+#J
+Entre que inteiros consecutivos está √70?
+#R
+Entre 8 e 9, porque 8² = 64 < 70 < 81 = 9² (√70 ≈ [[8,37]]).
+#V
+V = [3 / 5, -5, sqrt(40), sqrt(70)]
+
+@licao n7e
+titulo: Fatores primos, m.d.c. e m.m.c.
+chave: números primos decomposição em fatores primos máximo divisor comum mínimo múltiplo comum mdc mmc simplificar frações divisores múltiplos
+calc: c_mnum.mdc
+ano: 6
+nivel: revisão
+fonte: AE Matemática 6.º ano, Números naturais (revisão para o 7.º ano)
+#A
+- Decompor um número em fatores primos.
+- Calcular o m.d.c. e o m.m.c. a partir dos fatores.
+- Usar o m.d.c. para simplificar frações.
+#C
+- Primo: só tem dois divisores, 1 e ele próprio (2, 3, 5, 7, 11...).
+- Decompor: divide pelos primos, do menor para o maior.
+- m.d.c.: fatores comuns, cada um com o menor expoente.
+- m.m.c.: todos os fatores, cada um com o maior expoente.
+- m.d.c.(a, b) × m.m.c.(a, b) = a × b.
+#E
+@F m.d.c. e m.m.c. pelos fatores|m.d.c.: comuns, menor expoente; m.m.c.: todos, maior expoente|a e b: números naturais|decompor primeiro em fatores primos|60 e 72: m.d.c. 12, m.m.c. 360|c_mnum.mdc
+#F
+Dados: 60 e 72.
+Objetivo: m.d.c., m.m.c. e simplificar 60/72.
+1. 60 = 2² × 3 × 5 e 72 = 2³ × 3².
+2. m.d.c. = 2² × 3 = [[12]]
+3. m.m.c. = 2³ × 3² × 5 = [[360]]
+4. 60/72 = (60 : 12) / (72 : 12) = [[=5/6]]
+> m.d.c. = 12, m.m.c. = 360 e 60/72 = 5/6.
+Verificação: 12 × 360 = [[4320]] = 60 × 72.
+#J
+Dois autocarros saem juntos às 8 h; um passa de 12 em 12 min e o outro de 18 em 18 min. Quando voltam a sair juntos?
+#R
+Ao fim de m.m.c.(12, 18) = [[36]] min, às 8 h 36 min.
+#V
+V = [12, 360, 5 / 6, 12 * 360, 36]
+
+@exemplo n7e1
+nivel: 1
+titulo: Temperaturas negativas
+licao: n7a
+#T
+Enunciado: num dia de inverno, as temperaturas mínimas foram -3,5 °C em Bragança, -1 °C na Guarda e 2,5 °C em Lisboa. Ordena-as e calcula a diferença entre a maior e a menor.
+Resolução:
+1. Na reta numérica: -3,5 < -1 < 2,5.
+2. Diferença: 2,5 - (-3,5) = 2,5 + 3,5 = [[6]] °C.
+Resultado: -3,5 < -1 < 2,5; a diferença é de 6 °C.
+Interpretação: subtrair um negativo é somar o seu simétrico.
+Erros a evitar: pensar que -3,5 é maior do que -1 por ter 3,5 > 1.
+#V
+V = [2.5 - (-3.5)]
+
+@exemplo n7e2
+nivel: 2
+titulo: Expressão com frações e potências
+licao: n7b
+calc: c_mnum.frac
+#T
+Enunciado: calcula o valor exato de (1/2)² - 2/3 : (-4).
+Resolução:
+1. Potência: (1/2)² = [[=1/4]]
+2. Divisão: 2/3 : (-4) = 2/3 × (-1/4) = [[=-1/6]]
+3. 1/4 - (-1/6) = 3/12 + 2/12 = [[=5/12]]
+Resultado: 5/12.
+Interpretação: primeiro potências, depois × e :, por fim + e -.
+Erros a evitar: esquecer que dividir por -4 é multiplicar por -1/4.
+#V
+V = [(1 / 2) ** 2, 2 / 3 * (-1 / 4), 1 / 4 + 1 / 6]
+
+@exemplo n7e3
+nivel: 3
+titulo: Repartir um terreno
+licao: n7b
+calc: c_mnum.frac
+#T
+Enunciado: num terreno, 2/5 são relvado e 1/3 do resto é horta. O restante, 120 m², é pomar. Qual é a área do terreno?
+Resolução:
+1. Resto depois do relvado: 1 - 2/5 = [[=3/5]]
+2. Horta: 1/3 de 3/5 = [[=1/5]] do terreno.
+3. Pomar: 1 - 2/5 - 1/5 = [[=2/5]] do terreno.
+4. 2/5 do terreno são 120 m², logo o terreno tem 120 : 2/5 = [[300]] m².
+Resultado: 300 m².
+Interpretação: "1/3 do resto" é uma fração de uma fração: multiplica-se.
+Erros a evitar: somar 2/5 + 1/3 como se ambas fossem do terreno todo.
+#V
+V = [1 - 2 / 5, 1 / 3 * 3 / 5, 1 - 2 / 5 - 1 / 5, 120 / (2 / 5)]
+
+@exercicio n7x1
+tipo: m
+licao: n7a
+#T
+Qual destas afirmações é verdadeira?
+#O
+-7 < -9
+∣-4∣ < ∣3∣
+-1/2 > -3/4
+0 < -0,1
+#S
+3
+#P
+Entre negativos, o maior está mais perto de 0.
+#D
+-0,5 > -0,75: -1/2 está mais à direita na reta numérica.
+#V
+S = 3
+
+@exercicio n7x2
+tipo: n
+licao: n7b
+#T
+Calcula 3/4 - 5/6 (podes responder com uma fração).
+#S
+-1/12
+#P
+O m.m.c. de 4 e 6 é 12.
+#D
+9/12 - 10/12 = [[=-1/12]].
+#V
+S = 3 / 4 - 5 / 6
+V = [S]
+
+@exercicio n7x3
+tipo: n
+licao: n7b
+#T
+Calcula -2/5 × 15/4 (podes responder com uma fração).
+#S
+-3/2
+#P
+Multiplica numeradores e denominadores e simplifica.
+#D
+-30/20 = [[=-3/2]].
+#V
+S = -2 / 5 * 15 / 4
+V = [S]
+
+@exercicio n7x4
+tipo: v
+licao: n7c
+#T
+(-2)⁴ e -2⁴ têm o mesmo valor.
+#S
+F
+#P
+Em -2⁴, o expoente só se aplica ao 2.
+#D
+(-2)⁴ = [[16]] e -2⁴ = [[-16]].
+#V
+S = 'F'
+V = [(-2) ** 4, -2 ** 4]
+
+@exercicio n7x5
+tipo: n
+licao: n7c
+#T
+Calcula 3⁵ : 3³ × 3.
+#S
+27
+#P
+Mesma base: subtrai e soma os expoentes.
+#D
+3⁵⁻³⁺¹ = 3³ = [[27]].
+#V
+S = 3 ** 5 / 3 ** 3 * 3
+V = [S]
+
+@exercicio n7x6
+tipo: n
+licao: n7d
+#T
+Calcula ∛(-64) + √81.
+#S
+5
+#P
+(-4)³ = -64 e 9² = 81.
+#D
+-4 + 9 = [[5]].
+#V
+S = -4 + 9
+V = [S]
+
+@exercicio n7x7
+tipo: m
+licao: n7d
+#T
+Entre que inteiros consecutivos está √50?
+#O
+6 e 7
+7 e 8
+24 e 25
+49 e 51
+#S
+2
+#P
+Procura os quadrados perfeitos à volta de 50.
+#D
+7² = 49 < 50 < 64 = 8², logo 7 < √50 < 8.
+#V
+S = 2 if 7 < sqrt(50) < 8 else 0
+
+@exercicio n7x8
+tipo: n
+licao: n7e
+#T
+Qual é o m.d.c. de 84 e 126?
+#S
+42
+#P
+84 = 2² × 3 × 7 e 126 = 2 × 3² × 7.
+#D
+m.d.c. = 2 × 3 × 7 = [[42]].
+#V
+S = gcd(84, 126)
+V = [S]
+
+@exercicio n7x9
+tipo: n
+licao: n7e
+#T
+Qual é o m.m.c. de 8, 12 e 18?
+#S
+72
+#P
+8 = 2³, 12 = 2² × 3 e 18 = 2 × 3².
+#D
+m.m.c. = 2³ × 3² = [[72]].
+#V
+S = 8 * 9
+V = [S]

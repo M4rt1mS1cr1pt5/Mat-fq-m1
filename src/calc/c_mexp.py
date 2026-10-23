@@ -91,10 +91,15 @@ def mx(A, x):
     return '(' + Q.pstr(A) + ')' + x
 
 
+INV = {'<': '>', '>': '<', '\u2264': '\u2265', '\u2265': '\u2264'}
+
+
 def resolve1(L, R, x, o, rel, txt):
     # Parenteses, denominadores, separar os termos e reduzir: A x (rel) B.
+    # Devolve (A, B, rel); rel muda se os membros trocarem de lugar.
     if '(' in txt or '/' in txt:
-        o.append('Sem par\u00eanteses: ' + Q.pstr(L) + ' ' + rel + ' ' + Q.pstr(R))
+        o.append(('Sem par\u00eanteses: ' if '(' in txt else 'Simplificando: ') +
+                 Q.pstr(L) + ' ' + rel + ' ' + Q.pstr(R))
     k = Q.mmc(Q.denl(L), Q.denl(R))
     if k > 1:
         L = Q.pesc(L, (k, 1))
@@ -103,14 +108,22 @@ def resolve1(L, R, x, o, rel, txt):
                  Q.pstr(L) + ' ' + rel + ' ' + Q.pstr(R))
     Lx, L0 = separa(L, x)
     Rx, R0 = separa(R, x)
+    if Rx and not Lx:
+        # A incognita so esta no 2.o membro: trocam-se os membros.
+        L, R, Lx, L0, Rx, R0 = R, L, Rx, R0, Lx, L0
+        rel = INV.get(rel, rel)
+        o.append('Trocando os membros: ' + Q.pstr(L) + ' ' + rel + ' ' +
+                 Q.pstr(R))
     if Rx or L0:
         o.append('Termos com ' + x + ' no 1.\u00ba membro: ' + soma(
             termos(Lx) + [Q.pesc(t, MENOS) for t in termos(Rx)]) + ' ' + rel +
             ' ' + soma(termos(R0) + [Q.pesc(t, MENOS) for t in termos(L0)]))
     A = coef(Q.padd(Lx, Rx, -1), x)
     B = Q.padd(R0, L0, -1)
-    o.append('Reduzindo: ' + mx(A, x) + ' ' + rel + ' ' + Q.pstr(B))
-    return A, B
+    t = mx(A, x) + ' ' + rel + ' ' + Q.pstr(B)
+    if not o or not o[-1].endswith(': ' + t):
+        o.append('Reduzindo: ' + t)
+    return A, B, rel
 
 
 def incognita(vs, tx, nm):
@@ -161,7 +174,7 @@ def _eq1(v):
     x = incognita(vs, tx, 'equa\u00e7\u00e3o')
     grau_aviso(Q.padd(L, R, -1), x)
     o = []
-    A, B = resolve1(L, R, x, o, '=', s)
+    A, B, r = resolve1(L, R, x, o, '=', s)
     c = Q.cte(A)
     r = None
     if c is None:
@@ -235,8 +248,7 @@ def uma(s, o, x=None):
     x = x or incognita(vs, '', 'inequa\u00e7\u00e3o')
     N.need(vs == [x] or not vs, 'Usa s\u00f3 a inc\u00f3gnita ' + x)
     grau_aviso(Q.padd(L, R, -1), x)
-    rel = rs[0]
-    A, B = resolve1(L, R, x, o, rel, s)
+    A, B, rel = resolve1(L, R, x, o, rs[0], s)
     a = Q.cte(A)
     b = Q.cte(B) or Q.Z
     if a[0] == 0:
@@ -278,6 +290,8 @@ def _ineq(v):
         else:
             res = Q.uniao(I1, I2) if I1 and I2 else [I for I in (I1, I2) if I]
             o.append('Reuni\u00e3o (ou):')
+    if not s2 and o and o[-1].startswith('C.S. = '):
+        o.pop()
     o.append('> C.S. = ' + (' \u222a '.join([Q.istr(I) for I in res]) if res
                             else '\u2205'))
     st = 'Resolve-se como uma equa\u00e7\u00e3o, mas ao multiplicar ou dividir por um ' \
@@ -321,6 +335,18 @@ def sis():
     return ('Sistema de duas equa\u00e7\u00f5es',
             [N.fld('1.\u00aa equa\u00e7\u00e3o', '', 'x + y = 5', 't'),
              N.fld('2.\u00aa equa\u00e7\u00e3o', '', '2x - y = 1', 't')], _sis)
+
+
+def subs(c1, c0, y):
+    # c1 y + c0 com o valor de y no lugar da letra: "-6 + 10", "2 x (-3) - 1".
+    if not c1[0]:
+        return Q.qs(c0)
+    v = Q.qp(y)
+    t = v if c1 == Q.UM else ('-' + v if c1 == MENOS else (
+        '(' + Q.qs(c1) + ')' if c1[1] > 1 else Q.qs(c1)) + ' \u00d7 ' + v)
+    if c0[0]:
+        t += (' + ' if c0[0] > 0 else ' - ') + Q.qs((abs(c0[0]), c0[1]))
+    return t
 
 
 def _sis(v):
@@ -383,8 +409,7 @@ def _sis(v):
         xu = Q.add(c0, Q.mul(c1, yw))
         if K != Q.UM:
             o.append(w + ' = ' + Q.qs(M) + ' : ' + Q.qp(K) + ' = ' + Q.qs(yw))
-        o.append(u + ' = ' + ex.replace(w, '(' + Q.qs(yw) + ')') + ' = ' +
-                 Q.qs(xu))
+        o.append(u + ' = ' + subs(c1, c0, yw) + ' = ' + Q.qs(xu))
         sol = {u: xu, w: yw}
         r = sol
         par = '(' + Q.vstr(sol[vs[0]]) + Q.sepr(sol[vs[0]], sol[vs[1]]) + \

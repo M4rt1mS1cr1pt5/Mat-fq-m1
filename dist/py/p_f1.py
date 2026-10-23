@@ -68,7 +68,7 @@ Por 4: a velocidade duplica e Ec \xe9 proporcional a v\xb2 (passa de 6,0 \xd7 10
 @L f1b|Trabalho de uma for\xe7a constante|trabalho forca constante deslocamento angulo componente eficaz\
  trabalho potente resistente nulo joule|c_fqen.tr|10|n\xfacleo|f1a:Energia cin\xe9tica, potencial\
  grav\xedtica e mec\xe2nica|m8a:Vetores: dire\xe7\xe3o, sentido e norma;m8g:Produto escalar (extens\xe3o,\
- 11.\xba);m9a:Raz\xf5es trigonom\xe9tricas de um \xe2ngulo agudo|AE FQ A 10.\xba, Energia e movimentos\n\
+ 11.\xba);g9b:Raz\xf5es trigonom\xe9tricas de um \xe2ngulo agudo|AE FQ A 10.\xba, Energia e movimentos\n\
 @A\n\
 - Definir trabalho como transfer\xeancia de energia por a\xe7\xe3o de uma for\xe7a.\n\
 - Calcular o trabalho de uma for\xe7a constante.\n\
@@ -179,7 +179,7 @@ Um corpo de 4,0 kg tem Ec = 50 J. Que trabalho total \xe9 preciso para o parar?\
 W(R) = 0 - 50 = -50 J (trabalho resistente).\n\
 @L f1d|For\xe7as conservativas e conserva\xe7\xe3o da energia mec\xe2nica|forca conservativa nao conservativa\
  trabalho do peso trajetoria conservacao da energia mecanica queda livre escorrega altura\
- maxima|c_fqen.cons|10|n\xfacleo|f1c:Teorema da energia cin\xe9tica|m9b:Resolver tri\xe2ngulos\
+ maxima|c_fqen.cons|10|n\xfacleo|f1c:Teorema da energia cin\xe9tica|g9c:Resolver tri\xe2ngulos\
  ret\xe2ngulos|AE FQ A 10.\xba, Energia e movimentos\n\
 @A\n\
 - Distinguir for\xe7as conservativas de n\xe3o conservativas.\n\

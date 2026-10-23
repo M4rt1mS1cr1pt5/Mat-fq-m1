@@ -1,0 +1,320 @@
+@tema a9
+disc: M
+grupo: 9
+titulo: Álgebra (9.º ano)
+calcs: c_mexp.ineq c_matq.q2 c_mpol.fat c_mprp.inv c_matf.fx
+formato: ficha
+
+@licao a9a
+titulo: Inequações do 1.º grau
+chave: inequação do 1.º grau conjunto-solução intervalo inverter o sinal multiplicar por negativo inequação dupla conjunção disjunção
+calc: c_mexp.ineq
+ano: 9
+nivel: núcleo
+fonte: AE Matemática 9.º ano, Inequações
+#A
+- Resolver inequações do 1.º grau.
+- Escrever o conjunto-solução como intervalo.
+- Resolver conjunções e disjunções de inequações.
+#C
+- Resolve-se como uma equação: parênteses, denominadores, separar termos.
+- Ao multiplicar ou dividir por um número negativo, o sinal inverte-se.
+- -2x ≥ 4 ⇔ x ≤ -2.
+- O conjunto-solução escreve-se com um intervalo.
+- "e": interseção dos intervalos; "ou": reunião.
+#E
+@F Inverter o sinal|a < b ⇔ -a > -b|multiplicar por um número negativo|o mesmo para ≤, > e ≥|-2x ≥ 4 ⇔ x ≤ -2|c_mexp.ineq
+#F
+Dados: 3 - 2x ≥ 7.
+Objetivo: resolver e escrever o conjunto-solução.
+1. -2x ≥ 7 - 3, logo -2x ≥ [[4]].
+2. Divide por -2 e inverte o sinal: x ≤ [[-2]].
+> C.S. = ]-∞, -2].
+Verificação: para x = -3: 3 - 2 × (-3) = [[9]] ≥ 7 ✓.
+#J
+Resolve 2x + 1 < x + 5.
+#R
+x < [[4]]: C.S. = ]-∞, 4[.
+#V
+V = [7 - 3, 4 / -2, 3 - 2 * (-3), 5 - 1]
+
+@licao a9b
+titulo: Equações do 2.º grau
+chave: equação do 2.º grau fórmula resolvente binómio discriminante incompleta fatorização lei do anulamento do produto zeros soluções
+calc: c_matq.q2
+ano: 9
+nivel: núcleo
+fonte: AE Matemática 9.º ano, Equações do 2.º grau
+#A
+- Resolver equações incompletas por fatorização.
+- Usar a fórmula resolvente.
+- Saber quantas soluções há pelo discriminante.
+#C
+- Forma: ax² + bx + c = 0, com a ≠ 0.
+- Incompletas: ax² + bx = 0 (fator comum x) ou ax² + c = 0 (isolar x²).
+- Fórmula resolvente: x = (-b ± √Δ) / (2a), com Δ = b² - 4ac.
+- Δ > 0: duas soluções; Δ = 0: uma; Δ < 0: nenhuma (em ℝ).
+- Passa sempre tudo para o 1.º membro antes de aplicar a fórmula.
+#E
+@F Fórmula resolvente|x = (-b ± √(b² - 4ac)) / (2a)|a, b, c: coeficientes de ax² + bx + c = 0|a ≠ 0|2x² - 5x - 3 = 0: x = -1/2 ou x = 3|c_matq.q2
+#F
+Dados: 2x² - 5x - 3 = 0.
+Objetivo: resolver com a fórmula resolvente.
+1. a = 2, b = -5, c = -3; Δ = 25 + 24 = [[49]].
+2. x = (5 ± 7) / 4.
+3. x = 12 / 4 = [[3]] ou x = -2 / 4 = [[-0,5]].
+> C.S. = {-1/2; 3}.
+Verificação: 2 × 3² - 5 × 3 - 3 = [[0]] ✓.
+#J
+Resolve x² - 16 = 0.
+#R
+x² = 16, logo x = 4 ou x = [[-4]].
+#V
+V = [25 + 24, 12 / 4, -2 / 4, 2 * 9 - 15 - 3, -4]
+
+@licao a9c
+titulo: Proporcionalidade inversa
+chave: proporcionalidade inversa constante k = xy y = k/x hipérbole tabela valores em falta grandezas inversamente proporcionais
+calc: c_mprp.inv
+ano: 9
+nivel: núcleo
+liga: q5e
+fonte: AE Matemática 9.º ano, Proporcionalidade inversa
+#A
+- Reconhecer grandezas inversamente proporcionais.
+- Calcular a constante e valores em falta.
+- Reconhecer o gráfico: ramo de hipérbole.
+#C
+- Inversamente proporcionais: x × y é sempre o mesmo número k.
+- y = k / x (x ≠ 0).
+- Se x duplica, y passa a metade.
+- O gráfico (x > 0) é um ramo de hipérbole: não passa na origem.
+- A regra de três simples não serve aqui.
+#E
+@F Proporcionalidade inversa|y = k / x|k = x × y: constante|x ≠ 0|4 torneiras em 6 h: k = 24|c_mprp.inv
+#F
+Dados: 4 pintores pintam uma casa em 6 dias.
+Objetivo: dias que demoram 3 pintores e pintores para a fazer em 2 dias.
+1. k = 4 × 6 = [[24]] (pintores × dias).
+2. 3 pintores: 24 / 3 = [[8]] dias.
+3. Em 2 dias: 24 / 2 = [[12]] pintores.
+> 8 dias e 12 pintores.
+Verificação: 3 × 8 = 12 × 2 = [[24]] ✓.
+#J
+Se y = 18 / x, quanto vale y quando x = 6?
+#R
+y = 18 / 6 = [[3]].
+#V
+V = [4 * 6, 24 / 3, 24 / 2, 3 * 8, 18 / 6]
+
+@licao a9d
+titulo: Funções do tipo y = ax²
+chave: função quadrática y = ax² parábola vértice eixo de simetria concavidade gráfico imagem objeto
+calc: c_matf.fx
+ano: 9
+nivel: núcleo
+fonte: AE Matemática 9.º ano, Funções (y = ax²)
+#A
+- Representar funções do tipo y = ax².
+- Relacionar o sinal de a com a concavidade.
+- Calcular imagens e objetos.
+#C
+- O gráfico de y = ax² (a ≠ 0) é uma parábola com vértice na origem.
+- a > 0: concavidade para cima; a < 0: para baixo.
+- O eixo Oy é eixo de simetria: f(-x) = f(x).
+- Quanto maior ∣a∣, mais "fechada" é a parábola.
+- Objeto de uma imagem: resolve ax² = y.
+#E
+@F Função y = ax²|f(x) = a x²|a ≠ 0|vértice (0, 0); eixo x = 0|a = 2: f(3) = 18|c_matf.fx
+#F
+Dados: f(x) = 2x².
+Objetivo: f(3), f(-3) e os objetos com imagem 50.
+1. f(3) = 2 × 9 = [[18]] e f(-3) = [[18]].
+2. 2x² = 50 ⇔ x² = 25 ⇔ x = 5 ∨ x = [[-5]].
+> f(3) = f(-3) = 18; objetos de 50: -5 e 5.
+Verificação: 2 × 5² = [[50]] ✓.
+#J
+O ponto (2, -12) pertence ao gráfico de y = ax². Qual é a?
+#R
+-12 = a × 4, logo a = [[-3]].
+#V
+V = [2 * 9, 2 * (-3) ** 2, -5, 2 * 25, -12 / 4]
+
+@exemplo a9e1
+nivel: 1
+titulo: Inequação com frações
+licao: a9a
+calc: c_mexp.ineq
+#T
+Enunciado: resolve (x - 1)/2 < x + 1.
+Resolução:
+1. × 2: x - 1 < 2x + 2.
+2. x - 2x < 2 + 1, logo -x < [[3]].
+3. × (-1), inverte-se o sinal: x > [[-3]].
+Resultado: C.S. = ]-3, +∞[.
+Interpretação: para x = 0: -0,5 < 1 ✓.
+Erros a evitar: esquecer de inverter o sinal ao multiplicar por -1.
+#V
+V = [2 + 1, -3]
+
+@exemplo a9e2
+nivel: 2
+titulo: Área de um retângulo
+licao: a9b
+calc: c_matq.q2
+#T
+Enunciado: um retângulo tem comprimento 3 cm maior do que a largura e 40 cm² de área. Quais são as dimensões?
+Resolução:
+1. x(x + 3) = 40 ⇔ x² + 3x - 40 = 0.
+2. Δ = 9 + 160 = [[169]]; x = (-3 ± 13) / 2.
+3. x = [[5]] ou x = [[-8]] (não serve: é um comprimento).
+Resultado: 5 cm por 8 cm.
+Interpretação: 5 × 8 = [[40]] ✓.
+Erros a evitar: aceitar a solução negativa num problema de medidas.
+#V
+V = [9 + 160, (-3 + 13) / 2, (-3 - 13) / 2, 5 * 8]
+
+@exemplo a9e3
+nivel: 3
+titulo: Velocidade e tempo de uma viagem
+licao: a9c
+calc: c_mprp.inv
+#T
+Enunciado: a 90 km/h, uma viagem demora 2 h 20 min. Quanto tempo demora a 105 km/h?
+Resolução:
+1. Tempo em horas: 2 h 20 min = 7/3 h.
+2. Velocidade e tempo são inversamente proporcionais: k = 90 × 7/3 = [[210]] km.
+3. A 105 km/h: 210 / 105 = [[2]] h.
+Resultado: 2 horas.
+Interpretação: k é a distância percorrida, 210 km.
+Erros a evitar: escrever 2 h 20 min como 2,2 h.
+#V
+V = [90 * 7 / 3, 210 / 105]
+
+@exercicio a9x1
+tipo: m
+licao: a9a
+#T
+Qual é o conjunto-solução de -3x > 12?
+#O
+]-4, +∞[
+]-∞, -4[
+]4, +∞[
+]-∞, 4[
+#S
+2
+#P
+Divide por -3 e inverte o sinal.
+#D
+x < -4: ]-∞, -4[.
+#V
+S = 2
+
+@exercicio a9x2
+tipo: n
+licao: a9a
+#T
+Qual é o menor número inteiro que verifica 2x - 5 > 4?
+#S
+5
+#P
+x > 4,5.
+#D
+2x > 9, x > 4,5; o menor inteiro é [[5]].
+#V
+S = 5
+V = [S]
+
+@exercicio a9x3
+tipo: n
+licao: a9b
+#T
+Qual é o discriminante de x² - 6x + 5 = 0?
+#S
+16
+#P
+Δ = b² - 4ac.
+#D
+36 - 20 = [[16]].
+#V
+S = 36 - 20
+V = [S]
+
+@exercicio a9x4
+tipo: m
+licao: a9b
+#T
+Quantas soluções tem x² + 2x + 5 = 0?
+#O
+Nenhuma
+Uma
+Duas
+Infinitas
+#S
+1
+#P
+Calcula Δ.
+#D
+Δ = 4 - 20 = [[-16]] < 0: não tem soluções reais.
+#V
+S = 1 if 2 ** 2 - 4 * 5 < 0 else 0
+V = [2 ** 2 - 4 * 5]
+
+@exercicio a9x5
+tipo: n
+licao: a9b
+#T
+x² - 5x + 6 = 0 tem duas soluções. Qual é a maior?
+#S
+3
+#P
+x = (5 ± 1) / 2.
+#D
+x = 2 ou x = [[3]].
+#V
+S = (5 + 1) / 2
+V = [S]
+
+@exercicio a9x6
+tipo: n
+licao: a9c
+#T
+x e y são inversamente proporcionais; para x = 3, y = 8. Quanto vale y para x = 4?
+#S
+6
+#P
+k = x × y.
+#D
+k = 24; y = 24 / 4 = [[6]].
+#V
+S = 3 * 8 / 4
+V = [S]
+
+@exercicio a9x7
+tipo: v
+licao: a9c
+#T
+O gráfico de uma função de proporcionalidade inversa passa na origem do referencial.
+#S
+F
+#P
+Pode x ser 0 em y = k / x?
+#D
+Falso: x = 0 não pertence ao domínio; o gráfico é um ramo de hipérbole.
+#V
+S = 'F'
+
+@exercicio a9x8
+tipo: n
+licao: a9d
+#T
+Se f(x) = -x², qual é f(-4)?
+#S
+-16
+#P
+(-4)² = 16.
+#D
+-16: f(-4) = -(16) = [[-16]].
+#V
+S = -(-4) ** 2
+V = [S]

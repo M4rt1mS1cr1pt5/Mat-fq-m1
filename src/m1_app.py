@@ -32,9 +32,9 @@ NIV = ('', 'B\u00e1sico', 'Interm\u00e9dio', 'Avan\u00e7ado')
 GR = (('F', 'q', 'Qu\u00edmica'), ('F', 'f', 'F\u00edsica'),
       ('F', 'a', 'Atividades laboratoriais'),
       ('F', 'r', 'Revis\u00f5es do 7.\u00ba ao 9.\u00ba ano'),
-      ('M', 't', 'Temas do 10.\u00ba ano'),
-      ('M', 'r', 'Revis\u00f5es do 3.\u00ba ciclo'))
-DN = {'F': 'F\u00edsica e Qu\u00edmica A', 'M': 'Matem\u00e1tica A',
+      ('M', '7', '7.\u00ba ano'), ('M', '8', '8.\u00ba ano'),
+      ('M', '9', '9.\u00ba ano'), ('M', 't', '10.\u00ba ano'))
+DN = {'F': 'F\u00edsica e Qu\u00edmica A', 'M': 'Matem\u00e1tica',
       'C': 'Comuns'}
 
 # ------------------------------------------------------------ estado
@@ -100,8 +100,21 @@ def tfind(tid):
 
 
 def calcs():
-    # Catalogo das calculadoras: [id, nome, disciplina, tema].
-    return [ln.split('|') for ln in K.CALC.split('\n') if ln]
+    # Catalogo das calculadoras: [id, nome, disciplina, tema] (modulo
+    # m1_calc, carregado a pedido).
+    return [ln.split('|') for ln in C.get('k', 'm1_calc').CALC.split('\n')
+            if ln]
+
+
+def grupos(d):
+    # Grupos da disciplina que tem temas (GR) e os temas de cada um.
+    out = []
+    for x in GR:
+        ts = [i for i in range(len(K.TEMAS)) if th(i)[1] == d and
+              th(i)[2] == x[1]]
+        if x[0] == d and ts:
+            out.append((x[1], x[2], ts))
+    return out
 
 
 def cname(cid):
@@ -114,7 +127,7 @@ def cname(cid):
 
 
 def main_menu():
-    it = ('F\u00edsica e Qu\u00edmica A', 'Matem\u00e1tica A', 'Pesquisa global',
+    it = ('F\u00edsica e Qu\u00edmica A', 'Matem\u00e1tica', 'Pesquisa global',
           'Calculadoras', 'Tabela peri\u00f3dica', 'Formul\u00e1rio',
           'Constantes e unidades', 'Exemplos resolvidos',
           'Exerc\u00edcios e testes', 'O meu progresso', 'Revis\u00e3o r\u00e1pida',
@@ -122,7 +135,7 @@ def main_menu():
     sel = 0
     while True:
         S['where'] = 'menu principal'
-        r = U.menu('M1TR4M \u00b7 FQ e Mat 10.\u00ba', it, sel)
+        r = U.menu('M1TR4M \u00b7 FQ 10.\u00ba \u00b7 Mat 7.\u00ba-10.\u00ba', it, sel)
         if r < 0 or r == 12:
             if U.ask('Sair', 'Sair da M1TR4M?', 1):
                 return
@@ -207,21 +220,18 @@ def go(t):
 
 
 def disc(d):
-    gs = [x for x in GR if x[0] == d and
-          [i for i in range(len(K.TEMAS)) if th(i)[1] == d and
-           th(i)[2] == x[1]]]
+    gs = grupos(d)
     sel = 0
     while True:
         S['where'] = DN[d]
-        r = U.menu(DN[d], [x[2] for x in gs], sel)
+        r = U.menu(DN[d], [x[1] for x in gs], sel)
         if r < 0:
             return
         sel = r
-        ts = [i for i in range(len(K.TEMAS))
-              if th(i)[1] == d and th(i)[2] == gs[r][1]]
+        ts = gs[r][2]
         s2 = 0
         while True:
-            q = U.menu(gs[r][2], [th(i)[3] for i in ts], s2)
+            q = U.menu(gs[r][1], [th(i)[3] for i in ts], s2)
             if q < 0:
                 break
             s2 = q

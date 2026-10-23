@@ -192,7 +192,7 @@ calc: c_fqte.cal
 ano: 10
 nivel: núcleo
 pre: f3a
-liga: mrc
+liga: a7d
 fonte: AE FQ A 10.º, Energia, fenómenos térmicos e radiação
 #A
 - Definir capacidade térmica mássica.

@@ -1,0 +1,371 @@
+@tema a7
+disc: M
+grupo: 7
+titulo: Álgebra (7.º ano)
+calcs: c_mprp.seq c_mpol.pol c_mexp.eq1 c_mprp.prop c_mprp.perc
+formato: ficha
+
+@licao a7a
+titulo: Sequências e regularidades
+chave: sequência regularidade termo geral termo de ordem n lei de formação diferença constante sequência aritmética é termo
+calc: c_mprp.seq
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Sequências e regularidades
+#A
+- Descobrir a regularidade de uma sequência.
+- Escrever o termo geral de uma sequência com diferença constante.
+- Calcular termos e ver se um número é termo.
+#C
+- Termo de ordem n: u(n); u(1) é o 1.º termo.
+- Se a diferença entre termos seguidos é sempre d, então u(n) = d n + (u(1) - d).
+- Para calcular u(20), substitui n por 20.
+- Um número é termo se u(n) = número tem solução n inteira e positiva.
+#E
+@F Termo geral (diferença constante)|u(n) = d × n + (u(1) - d)|d: diferença entre termos seguidos;n: ordem|sequências com diferença constante (aritméticas)|3, 7, 11...: u(n) = 4n - 1|c_mprp.seq
+#F
+Dados: a sequência 3, 7, 11, 15, ...
+Objetivo: termo geral, u(20) e ver se 95 é termo.
+1. Diferença constante: d = 7 - 3 = [[4]].
+2. u(n) = 4n + (3 - 4), ou seja, u(n) = 4n - 1.
+3. u(20) = 4 × 20 - 1 = [[79]]
+4. 4n - 1 = 95 dá 4n = 96 e n = [[24]]: 95 é o 24.º termo.
+> u(n) = 4n - 1; u(20) = 79; 95 é termo.
+Verificação: u(1) = 4 - 1 = [[3]] ✓.
+#J
+Qual é o termo geral da sequência 10, 8, 6, 4, ...?
+#R
+d = -2, logo u(n) = -2n + 12 (u(1) = [[10]]).
+#V
+V = [7 - 3, 4 * 20 - 1, 96 / 4, 4 - 1, -2 * 1 + 12]
+
+@licao a7b
+titulo: Expressões algébricas
+chave: expressão algébrica variável monómio termos semelhantes simplificar reduzir propriedade distributiva valor numérico
+calc: c_mpol.pol
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Expressões algébricas
+#A
+- Traduzir situações por expressões com letras.
+- Simplificar, juntando termos semelhantes.
+- Calcular o valor de uma expressão para um valor da variável.
+#C
+- 3x e -5x são termos semelhantes (mesma parte literal): 3x - 5x = -2x.
+- Distributiva: a(b + c) = ab + ac; -(x - 2) = -x + 2.
+- Os termos com x² não se juntam com os termos com x.
+- Valor numérico: substitui a letra (usa parênteses nos negativos).
+#E
+@F Propriedade distributiva|a(b + c) = ab + ac|a, b, c: números ou expressões|o fator multiplica cada parcela|3(x - 4) = 3x - 12|c_mpol.pol
+#F
+Dados: 2(3x - 1) - (x + 4).
+Objetivo: simplificar e calcular o valor para x = -2.
+1. Distributiva: 6x - 2 - x - 4.
+2. Termos semelhantes: 6x - x = 5x e -2 - 4 = [[-6]].
+3. Expressão simplificada: 5x - 6.
+4. Para x = -2: 5 × (-2) - 6 = [[-16]]
+> 5x - 6; para x = -2 vale -16.
+Verificação: 2(3 × (-2) - 1) - (-2 + 4) = [[-16]] ✓.
+#J
+Simplifica 4a + 3 - (a - 5).
+#R
+4a + 3 - a + 5 = 3a + 8 (para a = 1 vale [[11]]).
+#V
+V = [-2 - 4, 5 * (-2) - 6, 2 * (3 * (-2) - 1) - (-2 + 4), 3 * 1 + 8]
+
+@licao a7c
+titulo: Equações do 1.º grau
+chave: equação incógnita solução membros equações equivalentes resolver parênteses possível impossível indeterminada problemas
+calc: c_mexp.eq1
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Equações
+#A
+- Resolver equações do 1.º grau, mesmo com parênteses.
+- Classificar uma equação (possível, impossível, indeterminada).
+- Resolver problemas com equações.
+#C
+- Tira os parênteses; os termos com x num membro e os números no outro.
+- Ao mudar de membro, o termo muda de sinal.
+- Reduz e divide pelo coeficiente de x.
+- 0x = 5: impossível; 0x = 0: indeterminada (qualquer x).
+- Verifica: substitui a solução nos dois membros.
+#E
+@F Equação do 1.º grau|a x = b ⇔ x = b / a|a, b: números|a ≠ 0 (se a = 0, é impossível ou indeterminada)|3x = 15 ⇔ x = 5|c_mexp.eq1
+#F
+Dados: 3(x - 2) = x + 4.
+Objetivo: resolver e verificar.
+1. Parênteses: 3x - 6 = x + 4.
+2. Mudar de membro: 3x - x = 4 + 6.
+3. Reduzir: 2x = 10, logo x = [[5]].
+> C.S. = {5}.
+Verificação: 3 × (5 - 2) = [[9]] e 5 + 4 = [[9]] ✓.
+#J
+O dobro de um número, mais 7, é 31. Qual é o número?
+#R
+2x + 7 = 31 ⇔ 2x = 24 ⇔ x = [[12]].
+#V
+V = [10 / 2, 3 * (5 - 2), 5 + 4, 24 / 2]
+
+@licao a7d
+titulo: Proporcionalidade direta
+chave: proporcionalidade direta constante de proporcionalidade y = kx regra de três tabela gráfico reta pela origem escala
+calc: c_mprp.prop
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Proporcionalidade direta como função
+#A
+- Reconhecer grandezas diretamente proporcionais.
+- Calcular a constante de proporcionalidade e completar tabelas.
+- Interpretar o gráfico: reta que passa na origem.
+#C
+- Diretamente proporcionais: y / x é sempre o mesmo número k.
+- Função de proporcionalidade direta: y = kx.
+- O gráfico é uma reta que passa na origem (0, 0).
+- Valor em falta: y = k × x ou x = y : k (regra de três simples).
+- Escala: medida no desenho : medida real.
+#E
+@F Proporcionalidade direta|y = k × x|k = y / x: constante de proporcionalidade|grandezas diretamente proporcionais|3 kg custam 6 €: k = 2 €/kg|c_mprp.prop
+#F
+Dados: 2 kg de laranjas custam 3,60 €.
+Objetivo: constante, preço de 5 kg e peso que se compra com 9 €.
+1. k = 3,60 / 2 = [[1,80]] €/kg.
+2. 5 kg: 1,80 × 5 = [[9]] €.
+3. Com 9 €: 9 / 1,80 = [[5]] kg.
+> k = 1,80 €/kg (o preço do quilo); 5 kg custam 9 €.
+Verificação: 9 / 5 = [[1,8]], o mesmo k ✓.
+#J
+Num mapa à escala 1 : 50 000, 3 cm correspondem a quantos quilómetros?
+#R
+3 × 50 000 = [[150 000]] cm = [[1,5]] km.
+#V
+V = [3.6 / 2, 1.8 * 5, 9 / 1.8, 9 / 5, 3 * 50000, 3 * 50000 / 100000]
+
+@licao a7e
+titulo: Percentagens
+chave: percentagem por cento aumento desconto iva valor inicial variação percentual fator multiplicativo
+calc: c_mprp.perc
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Percentagens
+#A
+- Calcular uma percentagem de uma quantidade.
+- Aplicar aumentos e descontos.
+- Calcular o valor inicial e a variação percentual.
+#C
+- p% de a = (p / 100) × a.
+- Aumento de p%: a × (1 + p/100); desconto: a × (1 - p/100).
+- Valor inicial: divide pelo fator (por exemplo, por 1,23 para tirar o IVA).
+- Variação percentual = (novo - inicial) / inicial × 100.
+- +10% e depois -10% não volta ao valor inicial.
+#E
+@F Aumento e desconto|novo = a × (1 ± p / 100)|a: valor inicial;p: percentagem|+ para aumento, - para desconto|50 € com 20% de desconto: 40 €|c_mprp.perc
+@F Variação percentual|(b - a) / a × 100|a: valor inicial;b: valor final|a ≠ 0|de 80 para 92: +15%|c_mprp.perc
+#F
+Dados: uns ténis custam 80 € e têm 15% de desconto.
+Objetivo: preço com desconto e percentagem que se poupa em euros.
+1. Fator: 1 - 0,15 = [[0,85]].
+2. Preço: 80 × 0,85 = [[68]] €.
+3. Poupança: 80 - 68 = [[12]] €, que é 15% de 80.
+> Pagam-se 68 €.
+Verificação: 0,15 × 80 = [[12]] ✓.
+#J
+Um preço passou de 40 € para 50 €. Qual foi o aumento percentual?
+#R
+(50 - 40) / 40 × 100 = [[25]]%.
+#V
+V = [1 - 0.15, 80 * 0.85, 80 - 68, 0.15 * 80, (50 - 40) / 40 * 100]
+
+@exemplo a7e1
+nivel: 1
+titulo: Padrão com fósforos
+licao: a7a
+calc: c_mprp.seq
+#T
+Enunciado: com fósforos fazem-se quadrados lado a lado: 1 quadrado usa 4 fósforos, 2 usam 7 e 3 usam 10. Quantos fósforos são precisos para 25 quadrados?
+Resolução:
+1. A diferença é constante: 7 - 4 = 10 - 7 = [[3]].
+2. u(n) = 3n + (4 - 3), ou seja, u(n) = 3n + 1.
+3. u(25) = 3 × 25 + 1 = [[76]]
+Resultado: 76 fósforos.
+Interpretação: cada quadrado novo acrescenta 3 fósforos ao primeiro.
+Erros a evitar: multiplicar 25 por 4 (os lados comuns contam uma só vez).
+#V
+V = [7 - 4, 3 * 25 + 1]
+
+@exemplo a7e2
+nivel: 2
+titulo: Equação com o dobro e o triplo
+licao: a7c
+calc: c_mexp.eq1
+#T
+Enunciado: a Ana tem o triplo da idade do irmão. Daqui a 6 anos terá o dobro. Que idades têm?
+Resolução:
+1. Irmão: x anos; Ana: 3x anos.
+2. Daqui a 6 anos: 3x + 6 = 2(x + 6).
+3. 3x + 6 = 2x + 12, logo x = [[6]].
+4. A Ana tem 3 × 6 = [[18]] anos.
+Resultado: o irmão tem 6 anos e a Ana 18.
+Interpretação: daqui a 6 anos, 24 = 2 × 12 ✓.
+Erros a evitar: somar 6 só a uma das idades.
+#V
+V = [12 - 6, 3 * 6]
+
+@exemplo a7e3
+nivel: 3
+titulo: Dois descontos seguidos
+licao: a7e
+calc: c_mprp.perc
+#T
+Enunciado: um casaco de 120 € tem 20% de desconto e, na caixa, mais 10% sobre o novo preço. Qual é o desconto total, em percentagem?
+Resolução:
+1. Fator total: 0,80 × 0,90 = [[0,72]].
+2. Preço final: 120 × 0,72 = [[86,40]] €.
+3. Desconto total: 1 - 0,72 = [[0,28]], ou seja, 28%.
+Resultado: 28% de desconto (e não 30%).
+Interpretação: o 2.º desconto aplica-se a um preço já mais baixo.
+Erros a evitar: somar as percentagens (20% + 10%).
+#V
+V = [0.8 * 0.9, 120 * 0.72, 1 - 0.72]
+
+@exercicio a7x1
+tipo: n
+licao: a7a
+#T
+Na sequência 5, 9, 13, 17, ..., qual é o termo de ordem 30?
+#S
+121
+#P
+d = 4 e u(n) = 4n + 1.
+#D
+u(30) = 4 × 30 + 1 = [[121]].
+#V
+S = 4 * 30 + 1
+V = [S]
+
+@exercicio a7x2
+tipo: m
+licao: a7a
+#T
+Qual é o termo geral da sequência 2, 5, 8, 11, ...?
+#O
+u(n) = 3n - 1
+u(n) = 3n + 2
+u(n) = 2n + 3
+u(n) = n + 3
+#S
+1
+#P
+d = 3; u(1) = 2.
+#D
+u(n) = 3n + (2 - 3) = 3n - 1.
+#V
+S = 1 if [3 * n - 1 for n in (1, 2, 3, 4)] == [2, 5, 8, 11] else 0
+
+@exercicio a7x3
+tipo: n
+licao: a7b
+#T
+Qual é o valor de 3x² - 2x para x = -2?
+#S
+16
+#P
+(-2)² = 4.
+#D
+3 × 4 - 2 × (-2) = 12 + 4 = [[16]].
+#V
+S = 3 * (-2) ** 2 - 2 * (-2)
+V = [S]
+
+@exercicio a7x4
+tipo: m
+licao: a7b
+#T
+Qual é a forma simplificada de 5(x - 2) - 3x?
+#O
+2x - 10
+2x - 2
+8x - 10
+2x + 10
+#S
+1
+#P
+5(x - 2) = 5x - 10.
+#D
+5x - 10 - 3x = 2x - 10.
+#V
+S = 1 if all(5 * (x - 2) - 3 * x == 2 * x - 10 for x in range(5)) else 0
+
+@exercicio a7x5
+tipo: n
+licao: a7c
+#T
+Resolve 5x - 3 = 2x + 9.
+#S
+4
+#P
+Passa 2x para o 1.º membro e -3 para o 2.º.
+#D
+3x = 12, logo x = [[4]].
+#V
+S = 12 / 3
+V = [S]
+
+@exercicio a7x6
+tipo: v
+licao: a7c
+#T
+A equação 2(x + 1) = 2x + 3 é impossível.
+#S
+V
+#P
+Tira os parênteses e reduz.
+#D
+2x + 2 = 2x + 3 dá 0x = 1: não há solução, é impossível.
+#V
+S = 'V'
+
+@exercicio a7x7
+tipo: n
+licao: a7d
+#T
+x e y são diretamente proporcionais; para x = 4, y = 10. Quanto vale y para x = 7?
+#S
+17,5
+#P
+k = y / x.
+#D
+k = 10 / 4 = [[2,5]] e y = 2,5 × 7 = [[17,5]].
+#V
+S = 10 / 4 * 7
+V = [10 / 4, S]
+
+@exercicio a7x8
+tipo: n
+licao: a7e
+#T
+Um telemóvel custa 250 € sem IVA. Quanto custa com IVA de 23%?
+#S
+307,5
+#P
+Multiplica por 1,23.
+#D
+250 × 1,23 = [[307,50]] €.
+#V
+S = 250 * 1.23
+V = [S]
+
+@exercicio a7x9
+tipo: n
+licao: a7e
+#T
+Um bilhete passou de 12 € para 9 €. Qual foi a variação percentual (em %)?
+#S
+-25
+#P
+(novo - inicial) / inicial × 100.
+#D
+(9 - 12) / 12 × 100 = [[-25]]%: diminuiu 25%.
+#V
+S = (9 - 12) / 12 * 100
+V = [S]

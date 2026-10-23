@@ -178,8 +178,8 @@ O nevoeiro dispersa a luz dos far\xf3is. Que tipo de dispers\xe3o \xe9?\n\
 \xc9 um coloide (got\xedculas de 1 a 1000 nm no ar): o efeito de Tyndall mostra-o.\n\
 @L q5d|Composi\xe7\xe3o quantitativa de solu\xe7\xf5es|concentracao concentracao massica percentagem em massa\
  percentagem em volume ppm fracao molar soluto solvente solucao mol\
- dm3|c_fqso.con|10|n\xfacleo|q5c:Solu\xe7\xf5es, coloides e suspens\xf5es|mrb:Percentagens, aumentos e\
- descontos|AE FQ A 10.\xba, Gases e dispers\xf5es\n\
+ dm3|c_fqso.con|10|n\xfacleo|q5c:Solu\xe7\xf5es, coloides e suspens\xf5es|a7e:Percentagens|AE FQ A 10.\xba,\
+ Gases e dispers\xf5es\n\
 @A\n\
 - Calcular a concentra\xe7\xe3o (mol dm\u207b\xb3) de uma solu\xe7\xe3o.\n\
 - Calcular a concentra\xe7\xe3o m\xe1ssica (g dm\u207b\xb3).\n\
@@ -242,7 +242,7 @@ Que massa de glicose (M = 180,2 g mol\u207b\xb9) \xe9 preciso para 100 mL de sol
 n = 0,200 \xd7 0,100 = 0,0200 mol; m = 0,0200 \xd7 180,2 = 3,60 g.\n\
 @L q5e|Dilui\xe7\xe3o de solu\xe7\xf5es|diluicao fator de diluicao solucao mae solucao diluida pipeta balao\
  volumetrico ci vi cf vf|c_fqso.dil|10|n\xfacleo|q5d:Composi\xe7\xe3o quantitativa de\
- solu\xe7\xf5es|mrc:Proporcionalidade direta e inversa|AE FQ A 10.\xba, Gases e dispers\xf5es\n\
+ solu\xe7\xf5es|a9c:Proporcionalidade inversa|AE FQ A 10.\xba, Gases e dispers\xf5es\n\
 @A\n\
 - Explicar o que \xe9 diluir uma solu\xe7\xe3o.\n\
 - Usar ci \xd7 Vi = cf \xd7 Vf.\n\

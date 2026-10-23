@@ -1,0 +1,284 @@
+@tema d9
+disc: M
+grupo: 9
+titulo: Probabilidades (9.º ano)
+calcs: c_mprb.prob c_mprb.dados c_mprb.urna
+formato: ficha
+
+@licao d9a
+titulo: Experiências aleatórias e lei de Laplace
+chave: experiência aleatória espaço de resultados acontecimento certo impossível provável probabilidade lei de laplace casos favoráveis casos possíveis acontecimento contrário frequência relativa
+calc: c_mprb.prob
+ano: 9
+nivel: núcleo
+fonte: AE Matemática 9.º ano, Probabilidades
+#A
+- Identificar experiências aleatórias e o espaço de resultados.
+- Calcular probabilidades com a lei de Laplace.
+- Usar o acontecimento contrário.
+#C
+- Experiência aleatória: não se sabe o resultado antes de a fazer.
+- Lei de Laplace (resultados igualmente prováveis): P(A) = casos favoráveis / casos possíveis.
+- 0 ≤ P(A) ≤ 1; impossível: 0; certo: 1.
+- Contrário: P(não A) = 1 - P(A).
+- Com muitas repetições, a frequência relativa aproxima-se da probabilidade.
+#E
+@F Lei de Laplace|P(A) = casos favoráveis / casos possíveis|resultados igualmente prováveis|0 ≤ P(A) ≤ 1|3 bolas azuis em 10: P = 0,3|c_mprb.prob
+@F Acontecimento contrário|P(não A) = 1 - P(A)|A: acontecimento|A e o contrário não acontecem juntos|P(A) = 0,3: P(não A) = 0,7|c_mprb.prob
+#F
+Dados: um saco tem 3 bolas azuis, 5 vermelhas e 2 verdes; tira-se uma ao acaso.
+Objetivo: P(azul), P(azul ou verde) e P(não vermelha).
+1. Casos possíveis: 3 + 5 + 2 = [[10]].
+2. P(azul) = 3/10 = [[0,3]].
+3. P(azul ou verde) = 5/10 = [[0,5]].
+4. P(não vermelha) = 1 - 5/10 = [[0,5]].
+> 0,3; 0,5 e 0,5.
+Verificação: 0,3 + 0,5 + 0,2 = [[1]] (todas as cores) ✓.
+#J
+Lança-se um dado. Qual é a probabilidade de sair um número maior do que 4?
+#R
+Casos favoráveis: 5 e 6; P = 2/6 = [[=1/3]].
+#V
+V = [3 + 5 + 2, 3 / 10, 5 / 10, 1 - 5 / 10, 0.3 + 0.5 + 0.2, 2 / 6]
+
+@licao d9b
+titulo: Experiências compostas: tabelas de dupla entrada
+chave: experiência composta dois dados duas moedas tabela de dupla entrada soma produto casos possíveis igualmente prováveis
+calc: c_mprb.dados
+ano: 9
+nivel: núcleo
+fonte: AE Matemática 9.º ano, Probabilidades (experiências compostas)
+#A
+- Organizar os resultados de duas experiências numa tabela.
+- Contar os casos possíveis e os favoráveis.
+- Calcular probabilidades em experiências compostas.
+#C
+- Dois dados: tabela 6 × 6 com 36 casos igualmente prováveis.
+- Em cada célula escreve-se o resultado (soma, produto...).
+- Contam-se as células favoráveis.
+- Duas moedas: EE, EN, NE, NN (4 casos); EN e NE são diferentes.
+- Não confundir "soma 7" (6 casos) com "par (3, 4)" (2 casos).
+#E
+@F Probabilidade com a tabela|P(A) = células favoráveis / total de células|tabela de dupla entrada|células igualmente prováveis|soma 7 com dois dados: 6/36 = 1/6|c_mprb.dados
+#F
+Dados: lançam-se dois dados e somam-se os pontos.
+Objetivo: P(soma 7) e P(soma > 9).
+1. Soma 7: (1,6) (2,5) (3,4) (4,3) (5,2) (6,1), ou seja, [[6]] casos.
+2. P(soma 7) = 6/36 = [[=1/6]]
+3. Soma > 9: 10 (3 casos), 11 (2) e 12 (1): [[6]] casos; P = 6/36 = [[=1/6]].
+> As duas probabilidades valem 1/6.
+Verificação: a soma 7 é a mais provável (6 casos em [[36]]).
+#J
+Lançam-se duas moedas. Qual é a probabilidade de saírem faces diferentes?
+#R
+EN e NE: P = 2/4 = [[0,5]].
+#V
+V = [6, 6 / 36, 3 + 2 + 1, 6 / 36, 36, 2 / 4]
+
+@licao d9c
+titulo: Diagramas em árvore: com e sem reposição
+chave: diagrama em árvore extração com reposição sem reposição duas extrações multiplicar probabilidades ramos caminhos
+calc: c_mprb.urna
+ano: 9
+nivel: núcleo
+fonte: AE Matemática 9.º ano, Probabilidades (diagramas em árvore)
+#A
+- Construir um diagrama em árvore.
+- Distinguir extrações com e sem reposição.
+- Calcular probabilidades de caminhos e de acontecimentos.
+#C
+- Cada ramo leva a probabilidade desse passo.
+- Ao longo de um caminho, multiplicam-se as probabilidades.
+- Vários caminhos favoráveis: somam-se as probabilidades.
+- Sem reposição: na 2.ª extração há menos uma bola (e menos uma da cor que saiu).
+- A soma das probabilidades de todos os caminhos é 1.
+#E
+@F Probabilidade de um caminho|P(1.ª A e 2.ª B) = P(A) × P(B depois de A)|ramos do diagrama|multiplica-se ao longo do caminho|3 azuis e 2 brancas, sem reposição: P(AA) = 3/5 × 2/4|c_mprb.urna
+#F
+Dados: uma caixa tem 3 bolas azuis e 2 brancas; tiram-se duas, sem reposição.
+Objetivo: P(duas azuis) e P(cores diferentes).
+1. P(AA) = 3/5 × 2/4 = [[=3/10]]
+2. P(AB) = 3/5 × 2/4 = [[=3/10]] e P(BA) = 2/5 × 3/4 = [[=3/10]].
+3. Cores diferentes: 3/10 + 3/10 = [[=3/5]]
+> P(duas azuis) = 0,3 e P(cores diferentes) = 0,6.
+Verificação: P(BB) = 2/5 × 1/4 = [[=1/10]] e 3/10 + 3/5 + 1/10 = [[1]] ✓.
+#J
+E se a extração fosse com reposição, qual seria P(duas azuis)?
+#R
+3/5 × 3/5 = [[=9/25]] = 0,36.
+#V
+V = [3 / 5 * 2 / 4, 3 / 5 * 2 / 4, 2 / 5 * 3 / 4, 3 / 10 + 3 / 10, 2 / 5 * 1 / 4, 3 / 10 + 3 / 5 + 1 / 10, 9 / 25]
+
+@exemplo d9e1
+nivel: 1
+titulo: Escolher um aluno
+licao: d9a
+calc: c_mprb.prob
+#T
+Enunciado: uma turma tem 12 rapazes e 16 raparigas. Escolhe-se um aluno ao acaso. Qual é a probabilidade de ser rapariga?
+Resolução:
+1. Casos possíveis: 12 + 16 = [[28]].
+2. P(rapariga) = 16/28 = [[=4/7]] ≈ [[0,57]].
+Resultado: 4/7, cerca de 57%.
+Interpretação: é mais provável sair uma rapariga do que um rapaz.
+Erros a evitar: dividir 16 por 12 (rapazes) em vez de 28 (todos).
+#V
+V = [12 + 16, 16 / 28, 16 / 28]
+
+@exemplo d9e2
+nivel: 2
+titulo: Produto de dois dados
+licao: d9b
+calc: c_mprb.dados
+#T
+Enunciado: lançam-se dois dados e multiplicam-se os pontos. Qual é a probabilidade de o produto ser par?
+Resolução:
+1. O produto é ímpar só se os dois forem ímpares: 3 × 3 = [[9]] casos.
+2. Produto par: 36 - 9 = [[27]] casos.
+3. P(par) = 27/36 = [[=3/4]]
+Resultado: 3/4, ou seja, 75%.
+Interpretação: basta um dos dados ser par para o produto ser par.
+Erros a evitar: pensar que par e ímpar têm a mesma probabilidade.
+#V
+V = [3 * 3, 36 - 9, 27 / 36]
+
+@exemplo d9e3
+nivel: 3
+titulo: Pelo menos uma verde
+licao: d9c
+calc: c_mprb.urna
+#T
+Enunciado: um saco tem 2 bolas verdes e 4 amarelas. Tiram-se duas, sem reposição. Qual é a probabilidade de sair pelo menos uma verde?
+Resolução:
+1. Contrário: nenhuma verde, ou seja, duas amarelas.
+2. P(duas amarelas) = 4/6 × 3/5 = [[=2/5]]
+3. P(pelo menos uma verde) = 1 - 2/5 = [[=3/5]]
+Resultado: 3/5, ou seja, 0,6.
+Interpretação: com o contrário evita-se somar três caminhos.
+Erros a evitar: esquecer que, sem reposição, ficam 5 bolas.
+#V
+V = [4 / 6 * 3 / 5, 1 - 2 / 5]
+
+@exercicio d9x1
+tipo: n
+licao: d9a
+#T
+Numa caixa há 4 bolas brancas e 6 pretas. Qual é a probabilidade de tirar uma branca?
+#S
+0,4
+#P
+P = favoráveis / possíveis.
+#D
+4/10 = [[0,4]].
+#V
+S = 4 / 10
+V = [S]
+
+@exercicio d9x2
+tipo: m
+licao: d9a
+#T
+Tira-se uma carta de um baralho de 52. Qual é a probabilidade de ser um ás?
+#O
+1/52
+1/13
+1/4
+4/13
+#S
+2
+#P
+Há 4 ases.
+#D
+4/52 = 1/13.
+#V
+S = 2 if 4 / 52 == 1 / 13 else 0
+
+@exercicio d9x3
+tipo: v
+licao: d9a
+#T
+Se P(A) = 0,35, então P(não A) = 0,65.
+#S
+V
+#P
+P(não A) = 1 - P(A).
+#D
+Verdadeiro: 1 - 0,35 = [[0,65]].
+#V
+S = 'V'
+V = [1 - 0.35]
+
+@exercicio d9x4
+tipo: n
+licao: d9b
+#T
+Lançam-se dois dados. Qual é a probabilidade de saírem dois números iguais?
+#S
+1/6
+#P
+Os pares (1,1), (2,2)...
+#D
+6 casos em 36: [[=1/6]].
+#V
+S = 6 / 36
+V = [S]
+
+@exercicio d9x5
+tipo: n
+licao: d9b
+#T
+Lançam-se três moedas. Qual é a probabilidade de saírem exatamente duas faces europeias?
+#S
+0,375
+#P
+São 8 casos: EEN, ENE, NEE...
+#D
+3 casos em 8: 3/8 = [[0,375]].
+#V
+S = 3 / 8
+V = [S]
+
+@exercicio d9x6
+tipo: n
+licao: d9b
+#T
+Lançam-se dois dados. Qual é a probabilidade de a soma ser 4?
+#S
+1/12
+#P
+(1,3), (2,2) e (3,1).
+#D
+3 casos em 36: [[=1/12]].
+#V
+S = 3 / 36
+V = [S]
+
+@exercicio d9x7
+tipo: n
+licao: d9c
+#T
+Uma caixa tem 2 bolas brancas e 3 pretas. Tiram-se duas, com reposição. Qual é a probabilidade de saírem duas brancas?
+#S
+0,16
+#P
+2/5 × 2/5.
+#D
+4/25 = [[0,16]].
+#V
+S = 2 / 5 * 2 / 5
+V = [S]
+
+@exercicio d9x8
+tipo: n
+licao: d9c
+#T
+A mesma caixa (2 brancas, 3 pretas), agora sem reposição. Qual é a probabilidade de saírem duas brancas?
+#S
+0,1
+#P
+2/5 × 1/4.
+#D
+2/20 = [[0,1]].
+#V
+S = 2 / 5 * 1 / 4
+V = [S]

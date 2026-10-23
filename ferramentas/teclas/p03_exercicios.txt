@@ -2,9 +2,9 @@
 # teste do capitulo (todas as perguntas sem resposta).
 9
 1
-# lista de temas de FQ com 10 ou mais: 1 e enter
+# FQ: grupo 1 (Quimica) e tema 1 (q1)
 1
-enter
+1
 # treino de FQ: exercicio 1 (certo) e resolucao
 1
 1
@@ -27,10 +27,11 @@ esc
 enter
 esc
 # teste do capitulo de Matematica: Funcao quadratica (10 perguntas), que e
-# o 5.o tema
+# o 4.o tema do 10.o ano (4.o grupo)
 9
 2
-5
+4
+4
 2
 enter
 esc

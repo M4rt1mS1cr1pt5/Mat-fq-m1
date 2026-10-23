@@ -1,10 +1,10 @@
 # Percurso 2: Matematica > Funcao quadratica: licao m5b, calculadora do
 # 2.o grau (com grafico) e inequacao do 2.o grau; sair.
 2
-1
-# temas de Matematica por ordem (m1, m2, m3..., mr): a Funcao quadratica
-# e a 5.a (com 10 temas, so o 1 espera por enter)
-5
+# Matematica: grupos 7.o, 8.o, 9.o e 10.o ano; o 10.o ano e o 4.o
+4
+# temas do 10.o ano (m2, m3, m4, m5...): a Funcao quadratica e a 4.a
+4
 # licoes: a 2.a
 1
 2

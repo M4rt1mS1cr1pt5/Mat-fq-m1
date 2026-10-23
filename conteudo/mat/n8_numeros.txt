@@ -1,0 +1,293 @@
+@tema n8
+disc: M
+grupo: 8
+titulo: Números (8.º ano)
+calcs: c_mnum.pot c_mrea.ncie c_mnum.dec c_comu.sci
+formato: ficha
+
+@licao n8a
+titulo: Potências de expoente inteiro
+chave: potência expoente negativo expoente zero inverso regras das potências frações potências de 10
+calc: c_mnum.pot
+ano: 8
+nivel: núcleo
+fonte: AE Matemática 8.º ano, Potências de expoente inteiro
+#A
+- Calcular potências com expoente negativo ou nulo.
+- Aplicar as regras das potências com expoentes inteiros.
+- Escrever um número como potência de base 10.
+#C
+- a⁰ = 1 (a ≠ 0).
+- Expoente negativo: a⁻ⁿ = 1 / a^n; por exemplo, 2⁻³ = 1/8.
+- (a/b)⁻ⁿ = (b/a)^n: inverte-se a base e o sinal do expoente.
+- As regras das potências valem para expoentes inteiros.
+- 10⁻³ = 0,001; 10⁻¹ = 0,1.
+#E
+@F Expoente negativo|a⁻ⁿ = 1 / a^n|a ≠ 0;n: inteiro positivo|a base não pode ser 0|5⁻² = 1/25|c_mnum.pot
+@F Base fracionária com expoente negativo|(a/b)⁻ⁿ = (b/a)^n|a e b diferentes de 0|inverte-se a base|(2/3)⁻² = 9/4|c_mnum.pot
+#F
+Dados: 2⁻³ × 2⁵ e (2/3)⁻² × (3/2)³.
+Objetivo: calcular as duas expressões.
+1. Mesma base: 2⁻³ × 2⁵ = 2⁻³⁺⁵ = 2² = [[4]]
+2. (2/3)⁻² = (3/2)² = [[=9/4]]
+3. Mesma base 3/2: (3/2)² × (3/2)³ = (3/2)⁵ = [[=243/32]]
+> 4 e 243/32 (≈ 7,59).
+Verificação: 0,125 × 32 = [[4]] ✓.
+#J
+Escreve 0,0001 como potência de base 10.
+#R
+1 / 10 000 = [[=1/10000]], ou seja, 10⁻⁴.
+#V
+V = [2 ** -3 * 2 ** 5, (2 / 3) ** -2, (3 / 2) ** 5, 0.125 * 32, 10 ** -4]
+
+@licao n8b
+titulo: Notação científica
+chave: notação científica mantissa ordem de grandeza potência de 10 multiplicar dividir somar números muito grandes muito pequenos
+calc: c_mrea.ncie
+ano: 8
+nivel: núcleo
+liga: q1b
+fonte: AE Matemática 8.º ano, Notação científica
+#A
+- Escrever números em notação científica.
+- Multiplicar e dividir números em notação científica.
+- Somar e subtrair, igualando as potências de 10.
+#C
+- Notação científica: a × 10^n, com 1 ≤ a < 10 e n inteiro.
+- Vírgula para a esquerda: o expoente aumenta; para a direita, diminui.
+- Multiplicar: multiplicam-se os números e somam-se os expoentes.
+- Dividir: dividem-se os números e subtraem-se os expoentes.
+- Somar: primeiro a mesma potência de 10.
+- No fim, acerta a para ficar entre 1 e 10.
+#E
+@F Notação científica|a × 10^n|1 ≤ a < 10;n: inteiro|números positivos (com sinal, -a × 10^n)|0,00052 = 5,2 × 10⁻⁴|c_mrea.ncie
+@F Produto em notação científica|(a × 10^n)(b × 10^m) = (a b) × 10^(n + m)|a, b: mantissas|acertar a mantissa no fim|(3 × 10⁵)(4 × 10⁻²) = 1,2 × 10⁴|c_mrea.ncie
+#F
+Dados: A = 3 × 10⁵ e B = 4 × 10⁻².
+Objetivo: A × B e A : B em notação científica.
+1. A × B = (3 × 4) × 10⁵⁻² = 12 × 10³ = [[1,2 × 10⁴]]
+2. A : B = (3 : 4) × 10⁵⁺² = 0,75 × 10⁷ = [[7,5 × 10⁶]]
+> A × B = 1,2 × 10⁴ e A : B = 7,5 × 10⁶.
+Verificação: 300 000 × 0,04 = [[12 000]] ✓.
+#J
+Escreve 0,000 038 em notação científica.
+#R
+3,8 × 10⁻⁵ (vale [[0,000038]]).
+#V
+V = [3e5 * 4e-2, 3e5 / 4e-2, 300000 * 0.04, 3.8e-5]
+
+@licao n8c
+titulo: Dízimas finitas e infinitas periódicas
+chave: dízima finita dízima infinita periódica período fração geratriz converter fração em dízima denominador 2 e 5
+calc: c_mnum.dec
+ano: 8
+nivel: núcleo
+fonte: AE Matemática 8.º ano, Números racionais (dízimas)
+#A
+- Saber se uma fração dá dízima finita ou periódica.
+- Escrever uma dízima periódica com período.
+- Encontrar a fração geratriz de uma dízima periódica.
+#C
+- Fração irredutível com denominador só com fatores 2 e 5: dízima finita.
+- Outros fatores no denominador: dízima infinita periódica.
+- 1/3 dá 0,333..., que se escreve 0,(3); o período é 3.
+- Fração geratriz: multiplica d por potências de 10 e subtrai para o período desaparecer.
+- Todas as dízimas finitas e periódicas são números racionais.
+#E
+@F Fração geratriz (período de k algarismos)|10^k d - d = parte inteira (sem dízima infinita)|d: dízima periódica pura|com anteperíodo, multiplica primeiro por 10|0,(36): 99d = 36, d = 4/11|c_mnum.dec
+#F
+Dados: d = 0,(36) e a fração 7/12.
+Objetivo: fração de d e dízima de 7/12.
+1. 100d = 36,(36); 100d - d = 36, logo 99d = 36.
+2. d = 36/99 = [[=4/11]]
+3. 7/12: 12 = 2² × 3 tem o fator 3, logo é periódica.
+4. 7 : 12 = 0,58333... = 0,58(3) ≈ [[0,583]].
+> 0,(36) = 4/11 e 7/12 = 0,58(3).
+Verificação: 4 : 11 = 0,3636... ≈ [[0,364]] ✓.
+#J
+A fração 9/40 dá uma dízima finita ou periódica?
+#R
+Finita: 40 = 2³ × 5 (9/40 = [[0,225]]).
+#V
+V = [36 / 99, 7 / 12, 4 / 11, 9 / 40]
+
+@exemplo n8e1
+nivel: 1
+titulo: Massa de um átomo
+licao: n8b
+calc: c_mrea.ncie
+#T
+Enunciado: um átomo de hidrogénio tem massa 1,67 × 10⁻²⁷ kg. Qual é a massa de 3 × 10²⁰ átomos?
+Resolução:
+1. Multiplica as mantissas: 1,67 × 3 = [[5,01]].
+2. Soma os expoentes: -27 + 20 = [[-7]].
+3. Massa: 5,01 × 10⁻⁷ kg.
+Resultado: cerca de 5,01 × 10⁻⁷ kg (0,5 mg).
+Interpretação: mesmo muitíssimos átomos têm uma massa minúscula.
+Erros a evitar: multiplicar os expoentes em vez de os somar.
+#V
+V = [1.67 * 3, -27 + 20]
+
+@exemplo n8e2
+nivel: 2
+titulo: Soma em notação científica
+licao: n8b
+calc: c_mrea.ncie
+#T
+Enunciado: calcula 2,5 × 10⁴ + 3 × 10³ e escreve o resultado em notação científica.
+Resolução:
+1. A mesma potência de 10: 3 × 10³ escreve-se 0,3 × 10⁴.
+2. Soma: (2,5 + 0,3) × 10⁴ = [[2,8]] × 10⁴.
+Resultado: 2,8 × 10⁴.
+Interpretação: 25 000 + 3000 = [[28 000]] ✓.
+Erros a evitar: somar os expoentes, como na multiplicação.
+#V
+V = [2.5 + 0.3, 25000 + 3000]
+
+@exemplo n8e3
+nivel: 3
+titulo: Fração de uma dízima com anteperíodo
+licao: n8c
+calc: c_mnum.dec
+#T
+Enunciado: escreve d = 1,2(5) como fração irredutível.
+Resolução:
+1. 10d = 12,(5) e 100d = 125,(5).
+2. Subtraindo: 100d - 10d = 125 - 12, ou seja, 90d = [[113]].
+3. d = [[=113/90]]
+Resultado: 1,2(5) = 113/90.
+Interpretação: 113 : 90 = 1,2555... ✓.
+Erros a evitar: tratar o 2 como parte do período.
+#V
+V = [125 - 12, 113 / 90]
+
+@exercicio n8x1
+tipo: n
+licao: n8a
+#T
+Calcula 5⁻² (podes responder com uma fração).
+#S
+1/25
+#P
+a⁻ⁿ = 1 / a^n.
+#D
+5⁻² = 1 / 5² = [[=1/25]] = 0,04.
+#V
+S = 5 ** -2
+V = [S]
+
+@exercicio n8x2
+tipo: n
+licao: n8a
+#T
+Calcula (1/2)⁻³.
+#S
+8
+#P
+Inverte a base: (1/2)⁻³ = 2³.
+#D
+2³ = [[8]].
+#V
+S = (1 / 2) ** -3
+V = [S]
+
+@exercicio n8x3
+tipo: m
+licao: n8a
+#T
+Qual é o valor de 3⁴ × 3⁻⁶?
+#O
+9
+1/9
+-9
+3⁻²⁴
+#S
+2
+#P
+Mesma base: somam-se os expoentes.
+#D
+3⁴⁻⁶ = 3⁻² = 1/9.
+#V
+S = 2 if abs(3 ** 4 * 3 ** -6 - 1 / 9) < 1e-12 else 0
+
+@exercicio n8x4
+tipo: v
+licao: n8b
+#T
+O número 12 × 10⁵ está escrito em notação científica.
+#S
+F
+#P
+A mantissa tem de estar entre 1 e 10.
+#D
+Falso: 12 > 10; em notação científica é 1,2 × 10⁶.
+#V
+S = 'F'
+
+@exercicio n8x5
+tipo: n
+licao: n8b
+#T
+O expoente n de 6 × 10⁸ : (1,5 × 10³) = 4 × 10^n é...
+#S
+5
+#P
+Na divisão, subtraem-se os expoentes.
+#D
+8 - 3 = [[5]]: 4 × 10⁵.
+#V
+S = 8 - 3
+V = [S]
+
+@exercicio n8x6
+tipo: m
+licao: n8b
+#T
+Qual é o maior destes números?
+#O
+9,9 × 10⁻³
+1,1 × 10⁻²
+5 × 10⁻⁴
+0,0099
+#S
+2
+#P
+Compara primeiro os expoentes.
+#D
+1,1 × 10⁻² = 0,011 é o maior; 9,9 × 10⁻³ = 0,0099.
+#V
+S = 2 if 1.1e-2 > max(9.9e-3, 5e-4, 0.0099) else 0
+
+@exercicio n8x7
+tipo: m
+licao: n8c
+#T
+Qual destas frações dá uma dízima infinita periódica?
+#O
+3/8
+7/20
+5/6
+9/25
+#S
+3
+#P
+Decompõe os denominadores.
+#D
+O denominador 6 = 2 × 3 tem o fator 3: 5/6 dá a dízima 0,8(3).
+#V
+S = 3
+
+@exercicio n8x8
+tipo: n
+licao: n8c
+#T
+Escreve 0,(7) como fração.
+#S
+7/9
+#P
+10d - d = 7.
+#D
+9d = 7, logo d = [[=7/9]].
+#V
+S = 7 / 9
+V = [S]

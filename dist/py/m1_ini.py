@@ -57,8 +57,8 @@ def splash():
     W = P.E['W']
     H = P.E['H']
     if not P.E['g']:
-        print('M1TR4M \u00b7 F\u00edsica e Qu\u00edmica A \u00b7 Matem\u00e1tica A '
-              '\u2014 10.\u00ba ano \u00b7 by M1TR4M')
+        print('M1TR4M \u00b7 F\u00edsica e Qu\u00edmica A 10.\u00ba \u00b7 '
+              'Matem\u00e1tica 7.\u00ba-10.\u00ba \u00b7 by M1TR4M')
         return
     import math
     cx = W // 2
@@ -87,7 +87,7 @@ def splash():
             P.poly([18 + k * 8, 40 + k * 8, 29 + k * 8],
                    [190 - k * 30, 190 - k * 30, 170 - k * 30], 6 if k % 2 else 3)
         big('M1TR4M', cx - 84, 104, 4)
-        s = 'F\u00edsica e Qu\u00edmica A \u00b7 Matem\u00e1tica A \u2014 10.\u00ba ano'
+        s = 'F\u00edsica e Qu\u00edmica A 10.\u00ba \u00b7 Matem\u00e1tica 7.\u00ba-10.\u00ba'
         P.txt(cx - len(s) * P.E['cw'] // 2, 146, s, 0)
         P.txt(cx - 6 * P.E['cw'] // 2, 166, 'by M1TR4M', 7)
         P.show()

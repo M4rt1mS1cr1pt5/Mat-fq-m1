@@ -2,8 +2,9 @@
 # Importa um pacote quando o aluno abre um tema e liberta-o quando sai.
 # Ranhuras: 'p' (conteudos: licoes, exercicios, tabela periodica), 'c'
 # (calculadoras), 'f' (ferramentas grandes que so se usam as vezes:
-# treino, definicoes, pesquisa) e 'i0', 'i1'... (partes do indice, so
-# durante a pesquisa). Nunca ha mais de um modulo em cada ranhura.
+# treino, definicoes, pesquisa), 'k' (catalogo das calculadoras) e 'i0',
+# 'i1'... (partes do indice, so durante a pesquisa). Nunca ha mais de um
+# modulo em cada ranhura.
 # Formato dos pacotes (seccao 4.3 do prompt): uma unica constante D com
 # marcadores de linha "@V versao", "@N numero", "@L licao", "@A".."@J",
 # "@R resposta", "@F formula", "@E exemplo", "@X exercicio".
@@ -12,7 +13,7 @@ import m1_plat as P
 
 VER = 1
 PVER = 1            # versao do formato dos pacotes que este leitor aceita
-SL = {'p': [None, ''], 'c': [None, ''], 'f': [None, '']}
+SL = {'p': [None, ''], 'c': [None, ''], 'f': [None, ''], 'k': [None, '']}
 SEEN = []           # pacotes carregados quando nao ha sys.modules
 WARN = []
 

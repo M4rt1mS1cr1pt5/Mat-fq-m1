@@ -12,11 +12,11 @@ COLS = 45
 
 def t_rotulos_cabem():
     try:
-        import m1_cat
+        import m1_calc
     except ImportError:
         return
     mods = {}
-    for ln in m1_cat.CALC.split('\n'):
+    for ln in m1_calc.CALC.split('\n'):
         if ln:
             cid = ln.split('|')[0]
             m, f = cid.split('.')

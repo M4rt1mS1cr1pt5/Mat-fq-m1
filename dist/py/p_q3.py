@@ -3,7 +3,7 @@ D = "@V 1\n\
 @N 3\n\
 @T Tabela Peri\xf3dica\n\
 @L q3a|Hist\xf3ria e organiza\xe7\xe3o da Tabela Peri\xf3dica|tabela periodica historia mendeleiev moseley\
- d?bereiner newlands grupo periodo bloco organizacao|c_fqel.conf|10|n\xfacleo|q2e:Configura\xe7\xe3o\
+ dobereiner newlands grupo periodo bloco organizacao|c_fqel.conf|10|n\xfacleo|q2e:Configura\xe7\xe3o\
  eletr\xf3nica||AE FQ A 10.\xba, Tabela Peri\xf3dica\n\
 @A\n\
 - Referir contributos hist\xf3ricos para a Tabela Peri\xf3dica.\n\

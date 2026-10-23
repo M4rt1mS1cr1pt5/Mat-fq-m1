@@ -62,7 +62,7 @@ X|Uma orbital pode ter, no||q2:6\n\
 X|Qual \xe9 a configura\xe7\xe3o||q2:7\n\
 X|Quantos eletr\xf5es||q2:8\n\
 X|Quantos eletr\xf5es de val\xeancia||q2:9\n\
-L|Hist\xf3ria e organiza\xe7\xe3o da Tabela Peri\xf3dica|mendeleiev moseley d?bereiner newlands grupo periodo\
+L|Hist\xf3ria e organiza\xe7\xe3o da Tabela Peri\xf3dica|mendeleiev moseley dobereiner newlands grupo periodo\
  bloco tp|q3a\n\
 L|Raio at\xf3mico e energia de ioniza\xe7\xe3o|tendencias periodicidade carga nuclear blindagem grupo periodo\
  ei ra|q3b\n\

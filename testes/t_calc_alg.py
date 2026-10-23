@@ -29,8 +29,16 @@ def t_eq1_casos():
 
 def t_eq1_literal():
     r = calc(c_mexp, 'eq1', ['A = b*h/2', 'h'])
-    tem(r[0], '× 2 (m.m.c. dos denominadores): 2A = bh',
-        'Multiplicando por -1: bh = 2A', '> h = 2A / b (se b ≠ 0)')
+    tem(r[0], 'Simplificando: A = (1/2)bh',
+        '× 2 (m.m.c. dos denominadores): 2A = bh',
+        'Trocando os membros: bh = 2A', '> h = 2A / b (se b ≠ 0)')
+    assert 'Reduzindo' not in r[0] and 'Multiplicando' not in r[0]
+    r = calc(c_mexp, 'eq1', ['12 = 3x', ''])
+    tem(r[0], 'Trocando os membros: 3x = 12', '> x = 4')
+    r = calc(c_mexp, 'ineq', ['5 < 2x + 1', '', 0])
+    tem(r[0], 'Trocando os membros: 2x + 1 > 5', 'C.S. = ]2, +∞[')
+    r = calc(c_mexp, 'sis', ['x = 2y - 1', '3x + y = 11'])
+    tem(r[0], 'x = 2 × 2 - 1 = 3')
     r = calc(c_mexp, 'eq1', ['a x + b = c', 'x'])
     tem(r[0], 'x = (-b + c) / a (se a ≠ 0)')
 

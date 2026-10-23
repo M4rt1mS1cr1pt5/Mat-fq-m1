@@ -2,9 +2,9 @@
 # dados por defeito (diagrama de extremos e quartis, com um outlier),
 # dados em classes (histograma) e caule-e-folhas; licao m2e; sair.
 2
+# 4 = 10.o ano; temas: 1 = Estatistica
+4
 1
-# temas: 2 = Estatistica
-2
 # 6 Calculadoras do tema: 1 = uma variavel; 5 campos
 6
 1

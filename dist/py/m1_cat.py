@@ -1,9 +1,9 @@
 # m1_cat.py - M1TR4M: catalogo gerado pelo build (nao editar).
 # TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes
-# CALC: id|nome|disciplina|tema (as palavras-chave estao no indice da pesquisa)
-NLIC = 130
-NEX = 243
-NCART = 377
+# As calculadoras estao em m1_calc (carregado a pedido).
+NLIC = 155
+NEX = 313
+NCART = 425
 TEMAS = (
     "q1|F|q|Massa e tamanho dos \xe1tomos|p_q1|x_q1|5|0|10|0|18|0|c_fqat.qm c_fqat.mm c_fqat.ar c_fqat.fr c_comu.sci c_comu.sf c_comu.uni|q1a q1b q1c q1d q1e",
     "q2|F|q|Energia dos eletr\xf5es nos \xe1tomos|p_q2|x_q2|5|5|10|10|14|18|c_fqel.fot c_fqel.hid c_fqel.conf c_comu.sci c_comu.uni|q2a q2b q2c q2d q2e",
@@ -19,101 +19,27 @@ TEMAS = (
     "r7|F|r|Revis\xf5es do 7.\xba ano|p_r7|x_r7|3|56|8|114|8|154|c_comu.uni c_comu.sci|r7a r7b r7c",
     "r8|F|r|Revis\xf5es do 8.\xba ano|p_r8|x_r8|5|59|8|122|12|162|c_fqlg.ace c_fqat.mm c_fqel.fot|r8a r8b r8c r8d r8e",
     "r9|F|r|Revis\xf5es do 9.\xba ano|p_r9|x_r9|4|64|8|130|12|174|c_fqci.ohm c_fqci.pot c_fqel.conf c_comu.uni|r9a r9b r9c r9d",
-    "m1|M|t|Modelos matem\xe1ticos para a cidadania|p_m1|x_m1|10|68|13|138|30|186|c_matc.vot c_matc.mand c_matd.sal c_matd.irs c_matd.jur c_matd.prest|m1a m1b m1c m1d m1e m1f m1g m1h m1i m1j",
-    "m2|M|t|Estat\xedstica|p_m2|x_m2|9|78|13|151|27|216|c_mate.uni c_mate.cls c_mate.caule c_comd.reg|m2a m2b m2c m2d m2e m2f m2g m2h m2i",
-    "m3|M|t|Geometria sint\xe9tica no plano|p_m3|x_m3|6|87|11|164|19|243|c_matt.pn c_matt.insc c_matt.euler c_matt.pit c_matt.sem|m3a m3b m3c m3d m3e m3f",
-    "m4|M|t|Fun\xe7\xf5es: generalidades, fun\xe7\xe3o afim e condi\xe7\xf5es|p_m4|x_m4|4|93|10|175|13|262|c_matf.fx c_matf.afim c_comd.reg|m4a m4b m4c m4d",
-    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|97|10|185|15|275|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
-    "m6|M|t|Fun\xe7\xf5es definidas por ramos e fun\xe7\xe3o m\xf3dulo|p_m6|x_m6|3|101|8|195|9|290|c_matf.ramos c_matf.mod c_matf.fx|m6a m6b m6c",
-    "m7|M|t|Geometria anal\xedtica no plano e no espa\xe7o|p_m7|x_m7|6|104|10|203|18|299|c_matg.dist c_matg.reta c_matg.medz c_matg.circ c_matg.cond|m7a m7b m7c m7d m7e m7f",
-    "m8|M|t|Vetores no plano e no espa\xe7o|p_m8|x_m8|7|110|11|213|21|317|c_matv.vet c_matv.retav c_matv.bar|m8a m8b m8c m8d m8e m8f m8g",
-    "m9|M|t|Trigonometria (revis\xe3o do 9.\xba ano e extens\xe3o)|p_m9|x_m9|5|117|10|224|15|338|c_matr.tri c_matr.rad c_matr.res c_comu.sci|m9a m9b m9c m9d m9e",
-    "mr|M|r|Revis\xf5es do 3.\xba ciclo|p_mr|x_mr|8|122|9|234|24|353|c_matt.pit c_matt.sem c_comu.sci c_matq.q2|mra mrb mrc mrd mre mrf mrg mrh",
+    "n7|M|7|N\xfameros (7.\xba ano)|p_n7|x_n7|5|68|9|138|14|186|c_mnum.frac c_mnum.pot c_mnum.mdc c_mrea.rad|n7a n7b n7c n7d n7e",
+    "a7|M|7|\xc1lgebra (7.\xba ano)|p_a7|x_a7|5|73|9|147|11|200|c_mprp.seq c_mpol.pol c_mexp.eq1 c_mprp.prop c_mprp.perc|a7a a7b a7c a7d a7e",
+    "g7|M|7|Geometria e Medida (7.\xba ano)|p_g7|x_g7|5|78|9|156|14|211|c_mgeo.ang c_mgeo.area c_matt.sem|g7a g7b g7c g7d g7e",
+    "d7|M|7|Dados (7.\xba ano)|p_d7|x_d7|3|83|8|165|8|225|c_mprb.freq c_mate.uni c_mate.caule|d7a d7b d7c",
+    "n8|M|8|N\xfameros (8.\xba ano)|p_n8|x_n8|3|86|8|173|8|233|c_mnum.pot c_mrea.ncie c_mnum.dec c_comu.sci|n8a n8b n8c",
+    "a8|M|8|\xc1lgebra (8.\xba ano)|p_a8|x_a8|5|89|9|181|12|241|c_mpol.pol c_mpol.fat c_mexp.eq1 c_mexp.sis c_matf.afim c_mpol.ruf|a8a a8b a8c a8d a8e",
+    "g8|M|8|Geometria e Medida (8.\xba ano)|p_g8|x_g8|4|94|8|190|10|253|c_matt.pit c_mgtr.iso c_matg.dist c_matv.vet|g8a g8b g8c g8d",
+    "d8|M|8|Dados (8.\xba ano)|p_d8|x_d8|2|98|8|198|4|263|c_mate.uni c_mate.cls c_mprb.freq|d8a d8b",
+    "n9|M|9|N\xfameros (9.\xba ano)|p_n9|x_n9|3|100|8|206|6|267|c_mrea.rad c_mrea.intv c_mrea.ncie|n9a n9b n9c",
+    "a9|M|9|\xc1lgebra (9.\xba ano)|p_a9|x_a9|4|103|8|214|8|273|c_mexp.ineq c_matq.q2 c_mpol.fat c_mprp.inv c_matf.fx|a9a a9b a9c a9d",
+    "g9|M|9|Geometria e Medida (9.\xba ano)|p_g9|x_g9|6|107|10|222|15|281|c_mgtr.circ c_matr.tri c_matr.rad c_msol.sol c_matr.res|g9a g9b g9c g9d g9e g9f",
+    "d9|M|9|Probabilidades (9.\xba ano)|p_d9|x_d9|3|113|8|232|7|296|c_mprb.prob c_mprb.dados c_mprb.urna|d9a d9b d9c",
+    "m2|M|t|Estat\xedstica|p_m2|x_m2|9|116|13|240|27|303|c_mate.uni c_mate.cls c_mate.caule c_comd.reg|m2a m2b m2c m2d m2e m2f m2g m2h m2i",
+    "m3|M|t|Geometria sint\xe9tica no plano|p_m3|x_m3|6|125|11|253|19|330|c_matt.pn c_matt.insc c_matt.euler c_matt.pit c_matt.sem|m3a m3b m3c m3d m3e m3f",
+    "m4|M|t|Fun\xe7\xf5es: generalidades, fun\xe7\xe3o afim e condi\xe7\xf5es|p_m4|x_m4|4|131|10|264|13|349|c_matf.fx c_matf.afim c_comd.reg|m4a m4b m4c m4d",
+    "m5|M|t|Fun\xe7\xe3o quadr\xe1tica|p_m5|x_m5|4|135|10|274|15|362|c_matq.q2 c_matq.iq c_matq.tf c_comu.sci|m5a m5b m5c m5d",
+    "m6|M|t|Fun\xe7\xf5es definidas por ramos e fun\xe7\xe3o m\xf3dulo|p_m6|x_m6|3|139|8|284|9|377|c_matf.ramos c_matf.mod c_matf.fx|m6a m6b m6c",
+    "m7|M|t|Geometria anal\xedtica no plano e no espa\xe7o|p_m7|x_m7|6|142|10|292|18|386|c_matg.dist c_matg.reta c_matg.medz c_matg.circ c_matg.cond|m7a m7b m7c m7d m7e m7f",
+    "m8|M|t|Vetores no plano e no espa\xe7o|p_m8|x_m8|7|148|11|302|21|404|c_matv.vet c_matv.retav c_matv.bar|m8a m8b m8c m8d m8e m8f m8g",
 )
-CALC = "c_alf1.plano|AL 1.1 Plano inclinado: Ec e dist\xe2ncia|F|af\n\
-c_alf1.ress|AL 1.2 Queda e ressalto de uma bola|F|af\n\
-c_alf1.pilha|AL 2.1 Caracter\xedsticas de uma pilha|F|af\n\
-c_alf2.painel|AL 3.1 Painel fotovoltaico|F|af\n\
-c_alf2.cap|AL 3.2 Capacidade t\xe9rmica m\xe1ssica|F|af\n\
-c_alf2.fusao|AL 3.3 Balan\xe7o energ\xe9tico (fus\xe3o do gelo)|F|af\n\
-c_alq1.gota|AL 1.1 Volume e mol\xe9culas de uma gota de \xe1gua|F|aq\n\
-c_alq1.chama|AL 1.2 Teste de chama|F|aq\n\
-c_alq1.dens|AL 1.3 Densidade relativa (picn\xf3metro)|F|aq\n\
-c_alq2.misc|AL 2.1 Miscibilidade de l\xedquidos|F|aq\n\
-c_alq2.sol|AL 2.2 Solu\xe7\xe3o a partir de soluto s\xf3lido|F|aq\n\
-c_comd.cte|Constantes e dados|C|\n\
-c_comd.exp|Dados experimentais|C|\n\
-c_comd.reg|Regress\xe3o linear e gr\xe1fico|C|\n\
-c_comu.sci|Calculadora cient\xedfica|C|\n\
-c_comu.sf|Algarismos significativos|C|\n\
-c_comu.uni|Conversor de unidades|C|\n\
-c_comu.pre|Prefixos do SI|C|\n\
-c_fqat.mm|Massa molar|F|q1\n\
-c_fqat.qm|Quantidade de mat\xe9ria|F|q1\n\
-c_fqat.ar|Massa at\xf3mica relativa m\xe9dia|F|q1\n\
-c_fqat.fr|Fra\xe7\xe3o molar e fra\xe7\xe3o m\xe1ssica|F|q1\n\
-c_fqci.ohm|Resist\xeancia el\xe9trica (U = R I)|F|f2\n\
-c_fqci.rho|Resistividade (R = \u03c1 \u2113 / A)|F|f2\n\
-c_fqci.assoc|Resist\xeancias em s\xe9rie e em paralelo|F|f2\n\
-c_fqci.ger|Gerador: for\xe7a eletromotriz e resist\xeancia interna|F|f2\n\
-c_fqci.pot|Pot\xeancia, energia e custo el\xe9tricos|F|f2\n\
-c_fqel.fot|Espetros e fot\xf5es|F|q2\n\
-c_fqel.hid|\xc1tomo de hidrog\xe9nio|F|q2\n\
-c_fqel.conf|Configura\xe7\xe3o eletr\xf3nica|F|q2\n\
-c_fqen.em|Energia cin\xe9tica, potencial e mec\xe2nica|F|f1\n\
-c_fqen.cons|Conserva\xe7\xe3o da energia mec\xe2nica|F|f1\n\
-c_fqen.tr|Trabalho de uma for\xe7a constante|F|f1\n\
-c_fqen.wp|Trabalho do peso|F|f1\n\
-c_fqen.tec|Teorema da energia cin\xe9tica|F|f1\n\
-c_fqen.pot|Pot\xeancia|F|f1\n\
-c_fqen.ren|Rendimento|F|f1\n\
-c_fqlg.lew|Lewis, geometria e polaridade|F|q4\n\
-c_fqlg.dh|Entalpia de rea\xe7\xe3o (energias de liga\xe7\xe3o)|F|q6\n\
-c_fqlg.ace|Acerto de equa\xe7\xf5es qu\xedmicas|F|r8\n\
-c_fqso.con|Concentra\xe7\xe3o de uma solu\xe7\xe3o|F|q5\n\
-c_fqso.pes|Massa de soluto a pesar|F|q5\n\
-c_fqso.per|Percentagem e partes por milh\xe3o|F|q5\n\
-c_fqso.dil|Dilui\xe7\xe3o de solu\xe7\xf5es|F|q5\n\
-c_fqso.gas|Gases (PTN)|F|q5\n\
-c_fqte.cal|Capacidade t\xe9rmica m\xe1ssica (Q = m c \u0394T)|F|f3\n\
-c_fqte.est|Mudan\xe7a de estado (Q = m \u0394H)|F|f3\n\
-c_fqte.eq|Temperatura de equil\xedbrio de uma mistura|F|f3\n\
-c_fqte.cond|Condu\xe7\xe3o t\xe9rmica (P = k A \u0394T / \u2113)|F|f3\n\
-c_fqte.pl|Primeira Lei da Termodin\xe2mica|F|f3\n\
-c_fqte.pv|Painel fotovoltaico e irradi\xe2ncia|F|f3\n\
-c_matc.vot|Sistemas de vota\xe7\xe3o|M|m1\n\
-c_matc.mand|Mandatos: Hondt e Sainte-Lagu\xeb|M|m1\n\
-c_matd.sal|Sal\xe1rio: bruto e l\xedquido|M|m1\n\
-c_matd.irs|IRS por escal\xf5es|M|m1\n\
-c_matd.jur|Juros simples e compostos|M|m1\n\
-c_matd.prest|Presta\xe7\xf5es e valor atual|M|m1\n\
-c_mate.uni|Estat\xedstica de uma vari\xe1vel|M|m2\n\
-c_mate.cls|Dados em classes e histograma|M|m2\n\
-c_mate.caule|Caule-e-folhas|M|m2\n\
-c_matf.fx|Fun\xe7\xe3o escrita por ti (tabela, zeros, gr\xe1fico)|M|m4\n\
-c_matf.afim|Fun\xe7\xe3o afim|M|m4\n\
-c_matf.ramos|Fun\xe7\xe3o definida por ramos|M|m6\n\
-c_matf.mod|Fun\xe7\xe3o m\xf3dulo a\u2223x - h\u2223 + k|M|m6\n\
-c_matg.dist|Dist\xe2ncia e ponto m\xe9dio|M|m7\n\
-c_matg.reta|Equa\xe7\xe3o reduzida da reta|M|m7\n\
-c_matg.medz|Mediatriz e plano mediador|M|m7\n\
-c_matg.circ|Circunfer\xeancia e superf\xedcie esf\xe9rica|M|m7\n\
-c_matg.cond|Condi\xe7\xf5es no plano (regi\xe3o)|M|m7\n\
-c_matq.q2|Equa\xe7\xe3o do 2.\xba grau e fun\xe7\xe3o quadr\xe1tica|M|m5\n\
-c_matq.iq|Inequa\xe7\xf5es do 2.\xba grau|M|m5\n\
-c_matq.tf|Transforma\xe7\xf5es de fun\xe7\xf5es|M|m5\n\
-c_matr.tri|Tri\xe2ngulo ret\xe2ngulo: seno, cosseno e tangente|M|m9\n\
-c_matr.rad|Graus, radianos e valores exatos|M|m9\n\
-c_matr.res|Resolver tri\xe2ngulos: leis dos senos e dos cossenos|M|m9\n\
-c_matt.pn|Pontos not\xe1veis do tri\xe2ngulo (com desenho)|M|m3\n\
-c_matt.insc|Circunfer\xeancias inscrita e circunscrita|M|m3\n\
-c_matt.euler|Reta de Euler e nove pontos|M|m3\n\
-c_matt.pit|Teorema de Pit\xe1goras|M|mr\n\
-c_matt.sem|Semelhan\xe7a de figuras|M|mr\n\
-c_matv.vet|Opera\xe7\xf5es com vetores|M|m8\n\
-c_matv.retav|Equa\xe7\xe3o vetorial da reta|M|m8\n\
-c_matv.bar|Baricentro com vetores|M|m8"
-BUILD = "2026-10-22"
+BUILD = "2026-10-23"
 # Partes do indice da pesquisa: modulo:disciplina
-IDX = "m1_idx:F m1_idx2:F m1_idxm:M"
+IDX = "m1_idx:F m1_idx2:F m1_idxm:M m1_idxm2:M"
 LIMITES = "ver RELATORIO.md"

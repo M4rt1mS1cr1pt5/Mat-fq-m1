@@ -41,7 +41,7 @@ ORC = {'m1': 4 * KB, 'm1_plat': 12 * KB, 'm1_nucleo': 35 * KB,
        'm1_ui': 30 * KB, 'p_': 40 * KB, 'c_': 25 * KB, 'x_': 30 * KB,
        'm1_idx': 30 * KB, 'm1_tp': 25 * KB, 'm1_ex': 25 * KB,
        'm1_cfg': 25 * KB, 'm1_pesq': 25 * KB, 'm1_ini': 25 * KB,
-       'm1_nav': 25 * KB, 'm1_q': 25 * KB}
+       'm1_nav': 25 * KB, 'm1_q': 25 * KB, 'm1_calc': 12 * KB}
 ORC_APP = 30 * KB          # m1_app + m1_cont + m1_cat
 ORC_RES = 115 * KB         # todos os residentes
 HEAP = 512 * KB
@@ -122,9 +122,10 @@ def main(args):
     avisos = []
     ids = CT.validar(temas, set(c[0] for c in calcs), avisos)
     for c in calcs:
+        # o menu das calculadoras agrupa-as pelo grupo do tema: uma
+        # calculadora com um tema que nao existe ficaria inacessivel
         if c[4] and c[4] not in [t.id for t in temas]:
-            avisos.append('calculadora %s: tema %s ainda nao existe' %
-                          (c[0], c[4]))
+            raise Falha('calculadora %s: o tema %s nao existe' % (c[0], c[4]))
     # minimos da seccao 11: 3 exemplos e 8 exercicios por tema; nas AL,
     # 2 exercicios por atividade
     for t in temas:
@@ -170,7 +171,8 @@ def main(args):
     idx = CT.gerar_indice(temas, calcs, els, ctes)
     for nome, d, txt in idx:
         escrever(nome + '.py', txt)
-    cat = CT.gerar_catalogo(temas, calcs)
+    escrever('m1_calc.py', CT.gerar_calc(calcs))
+    cat = CT.gerar_catalogo(temas)
     cat += 'BUILD = "%s"\n' % rel['data']
     cat += '# Partes do indice da pesquisa: modulo:disciplina\n'
     cat += 'IDX = "%s"\n' % ' '.join(n + ':' + d for n, d, x in idx)

@@ -1,0 +1,285 @@
+@tema d7
+disc: M
+grupo: 7
+titulo: Dados (7.º ano)
+calcs: c_mprb.freq c_mate.uni c_mate.caule
+formato: ficha
+
+@licao d7a
+titulo: Tabelas de frequências e gráficos
+chave: dados qualitativos quantitativos frequência absoluta frequência relativa percentagem tabela de frequências gráfico de barras gráfico circular setor ângulo
+calc: c_mprb.freq
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Dados (representações)
+#A
+- Distinguir dados qualitativos de quantitativos.
+- Construir uma tabela de frequências absolutas e relativas.
+- Calcular os ângulos de um gráfico circular.
+#C
+- Qualitativos: categorias (cor, desporto); quantitativos: números.
+- Frequência absoluta: quantas vezes aparece o valor.
+- Frequência relativa = frequência absoluta / n (n: total de dados).
+- As frequências relativas somam 1 (100%).
+- Gráfico circular: ângulo do setor = frequência relativa × 360°.
+#E
+@F Frequência relativa|fr = fa / n|fa: frequência absoluta;n: número de dados|soma de todas = 1|6 em 20: fr = 0,3 = 30%|c_mprb.freq
+@F Ângulo do setor|α = fr × 360°|fr: frequência relativa|gráfico circular|fr = 0,25: α = 90°|c_mprb.freq
+#F
+Dados: desporto preferido de 20 alunos: futebol 8, natação 5, ténis 4, outros 3.
+Objetivo: frequências relativas e ângulos do gráfico circular.
+1. Futebol: 8 / 20 = [[0,4]] (40%); ângulo 0,4 × 360° = [[144]]°.
+2. Natação: 5 / 20 = [[0,25]]; ângulo [[90]]°.
+3. Ténis: 4 / 20 = [[0,2]]; ângulo [[72]]°.
+4. Outros: 3 / 20 = [[0,15]]; ângulo [[54]]°.
+> Ângulos: 144°, 90°, 72° e 54°.
+Verificação: 144 + 90 + 72 + 54 = [[360]] ✓.
+#J
+Numa turma de 25 alunos, 10 vêm a pé. Que percentagem vem a pé?
+#R
+10 / 25 = [[0,4]] = [[40]]%.
+#V
+V = [8 / 20, 0.4 * 360, 5 / 20, 0.25 * 360, 4 / 20, 0.2 * 360, 3 / 20, 0.15 * 360, 144 + 90 + 72 + 54, 10 / 25, 10 / 25 * 100]
+
+@licao d7b
+titulo: Média, moda, mediana e amplitude
+chave: média aritmética moda mediana amplitude medidas de localização dados ordenados posição central número par ímpar de dados
+calc: c_mprb.freq
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Dados (medidas)
+#A
+- Calcular a média, a moda e a mediana.
+- Calcular a amplitude de um conjunto de dados.
+- Escolher a medida mais adequada.
+#C
+- Média: soma dos dados / número de dados.
+- Moda: o valor mais frequente (pode haver mais de uma ou nenhuma).
+- Mediana: ordena os dados; é o do meio (n ímpar) ou a média dos dois do meio (n par).
+- Amplitude = maior valor - menor valor.
+- Um valor muito diferente dos outros afeta a média, mas pouco a mediana.
+#E
+@F Média|x̄ = (x₁ + x₂ + ... + xₙ) / n|n: número de dados|dados quantitativos|2, 4, 9: média 5|c_mprb.freq
+@F Amplitude|A = máximo - mínimo|dados quantitativos|mede a dispersão|de 2 a 9: A = 7|c_mprb.freq
+#F
+Dados: idades dos 8 jogadores de uma equipa: 15, 16, 16, 14, 17, 16, 15, 19.
+Objetivo: média, moda, mediana e amplitude.
+1. Média: 128 / 8 = [[16]] anos.
+2. Moda: [[16]] (aparece 3 vezes).
+3. Ordenados: 14, 15, 15, 16, 16, 16, 17, 19; mediana = (16 + 16) / 2 = [[16]].
+4. Amplitude: 19 - 14 = [[5]] anos.
+> Média, moda e mediana: 16 anos; amplitude: 5 anos.
+Verificação: 15 + 16 + 16 + 14 + 17 + 16 + 15 + 19 = [[128]] ✓.
+#J
+Qual é a mediana de 3, 9, 4, 7, 5?
+#R
+Ordenados: 3, 4, 5, 7, 9; a mediana é [[5]].
+#V
+V = [128 / 8, 16, (16 + 16) / 2, 19 - 14, 15 + 16 + 16 + 14 + 17 + 16 + 15 + 19, 5]
+
+@licao d7c
+titulo: Diagrama de caule-e-folhas
+chave: diagrama de caule e folhas caule folhas ordenar dados comparar dois conjuntos de dados distribuição
+calc: c_mate.caule
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Dados (representações)
+#A
+- Construir um diagrama de caule-e-folhas.
+- Ler os dados ordenados a partir do diagrama.
+- Comparar dois conjuntos de dados.
+#C
+- Caule: os algarismos das dezenas; folhas: os das unidades.
+- As folhas escrevem-se por ordem crescente.
+- O diagrama mostra os dados já ordenados: a mediana lê-se logo.
+- Diagrama duplo: dois conjuntos, um de cada lado do caule.
+#E
+@F Caule-e-folhas|47 → caule 4, folha 7|caule: dezenas;folha: unidades|dados com 2 algarismos|42, 47, 51: 4 ∣ 2 7 e 5 ∣ 1|c_mate.caule
+#F
+Dados: notas (0 a 100) de 9 alunos: 47, 62, 55, 71, 68, 53, 62, 80, 59.
+Objetivo: diagrama de caule-e-folhas, mediana e amplitude.
+1. 4 ∣ 7; 5 ∣ 3 5 9; 6 ∣ 2 2 8; 7 ∣ 1; 8 ∣ 0
+2. Mediana: o 5.º valor ordenado, [[62]].
+3. Amplitude: 80 - 47 = [[33]].
+> Mediana 62; amplitude 33.
+Verificação: há 1 + 3 + 3 + 1 + 1 = [[9]] folhas ✓.
+#J
+No diagrama 2 ∣ 1 4 e 3 ∣ 0 5 5, qual é a moda?
+#R
+A moda é [[35]] (aparece duas vezes).
+#V
+V = [62, 80 - 47, 1 + 3 + 3 + 1 + 1, 35]
+
+@exemplo d7e1
+nivel: 1
+titulo: Cor preferida
+licao: d7a
+calc: c_mprb.freq
+#T
+Enunciado: perguntou-se a cor preferida a 30 pessoas: azul 12, verde 9, vermelho 6, amarelo 3. Qual é o ângulo do setor do azul num gráfico circular?
+Resolução:
+1. Frequência relativa do azul: 12 / 30 = [[0,4]].
+2. Ângulo: 0,4 × 360° = [[144]]°.
+Resultado: 144°.
+Interpretação: 40% das pessoas preferem azul.
+Erros a evitar: usar 100 em vez de 360 nos ângulos.
+#V
+V = [12 / 30, 0.4 * 360]
+
+@exemplo d7e2
+nivel: 2
+titulo: Média com uma tabela de frequências
+licao: d7b
+calc: c_mprb.freq
+#T
+Enunciado: número de irmãos dos alunos de uma turma: 0 irmãos (5 alunos), 1 (10), 2 (6), 3 (4). Calcula a média e a mediana.
+Resolução:
+1. n = 5 + 10 + 6 + 4 = [[25]] alunos.
+2. Soma: 0 × 5 + 1 × 10 + 2 × 6 + 3 × 4 = [[34]].
+3. Média: 34 / 25 = [[1,36]] irmãos.
+4. Mediana: o 13.º valor ordenado; os 15 primeiros têm 0 ou 1 irmão, logo a mediana é [[1]].
+Resultado: média 1,36; mediana 1.
+Interpretação: a média não tem de ser um dos valores dos dados.
+Erros a evitar: dividir por 4 (o número de valores diferentes).
+#V
+V = [5 + 10 + 6 + 4, 0 * 5 + 1 * 10 + 2 * 6 + 3 * 4, 34 / 25, 1]
+
+@exemplo d7e3
+nivel: 3
+titulo: Um valor estranho
+licao: d7b
+#T
+Enunciado: salários diários numa loja (€): 50, 52, 55, 55, 58, 300. Qual é a medida que melhor representa os salários?
+Resolução:
+1. Média: 570 / 6 = [[95]] €.
+2. Mediana: (55 + 55) / 2 = [[55]] €.
+3. A média é puxada pelo salário de 300 €.
+Resultado: a mediana (55 €) representa melhor a maioria dos salários.
+Interpretação: valores muito diferentes afetam a média, mas pouco a mediana.
+Erros a evitar: escolher sempre a média, sem olhar para os dados.
+#V
+V = [(50 + 52 + 55 + 55 + 58 + 300) / 6, (55 + 55) / 2]
+
+@exercicio d7x1
+tipo: n
+licao: d7a
+#T
+Num inquérito a 40 pessoas, 14 responderam "sim". Qual é a frequência relativa do "sim", em percentagem?
+#S
+35
+#P
+fr = 14 / 40.
+#D
+14 / 40 = [[0,35]] = [[35]]%.
+#V
+S = 14 / 40 * 100
+V = [14 / 40, S]
+
+@exercicio d7x2
+tipo: n
+licao: d7a
+#T
+Num gráfico circular, uma categoria tem frequência relativa 0,15. Qual é o ângulo do setor (em graus)?
+#S
+54
+#P
+Multiplica por 360°.
+#D
+0,15 × 360° = [[54]]°.
+#V
+S = 0.15 * 360
+V = [S]
+
+@exercicio d7x3
+tipo: m
+licao: d7a
+#T
+Qual destes dados é qualitativo?
+#O
+Altura (cm)
+Número de irmãos
+Cor dos olhos
+Tempo de reação (s)
+#S
+3
+#P
+Qualitativos não são números.
+#D
+A cor dos olhos é uma categoria, não um número.
+#V
+S = 3
+
+@exercicio d7x4
+tipo: n
+licao: d7b
+#T
+Qual é a média de 12, 15, 9, 14 e 10?
+#S
+12
+#P
+Soma e divide por 5.
+#D
+60 / 5 = [[12]].
+#V
+S = (12 + 15 + 9 + 14 + 10) / 5
+V = [S]
+
+@exercicio d7x5
+tipo: n
+licao: d7b
+#T
+Qual é a mediana de 8, 3, 6, 10, 4, 7?
+#S
+6,5
+#P
+Ordena; há um número par de dados.
+#D
+3, 4, 6, 7, 8, 10: (6 + 7) / 2 = [[6,5]].
+#V
+S = (6 + 7) / 2
+V = [S]
+
+@exercicio d7x6
+tipo: v
+licao: d7b
+#T
+A média de um conjunto de dados é sempre um dos dados.
+#S
+F
+#P
+Experimenta com 1 e 2.
+#D
+Falso: a média de 1 e 2 é [[1,5]], que não é nenhum dos dados.
+#V
+S = 'F'
+V = [(1 + 2) / 2]
+
+@exercicio d7x7
+tipo: n
+licao: d7b
+#T
+A média de 4 testes é 14. Que nota precisa o 5.º teste para a média passar a 15?
+#S
+19
+#P
+A soma dos 4 testes é 4 × 14.
+#D
+Soma precisa: 5 × 15 = [[75]]; já tem 4 × 14 = [[56]]; falta 75 - 56 = [[19]].
+#V
+S = 5 * 15 - 4 * 14
+V = [5 * 15, 4 * 14, S]
+
+@exercicio d7x8
+tipo: n
+licao: d7c
+#T
+No diagrama de caule-e-folhas 1 ∣ 2 5 8, 2 ∣ 0 3 3 7, 3 ∣ 1, qual é a amplitude dos dados?
+#S
+19
+#P
+Máximo 31 e mínimo 12.
+#D
+31 - 12 = [[19]].
+#V
+S = 31 - 12
+V = [S]

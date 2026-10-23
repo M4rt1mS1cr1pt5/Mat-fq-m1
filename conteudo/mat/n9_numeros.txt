@@ -1,0 +1,297 @@
+@tema n9
+disc: M
+grupo: 9
+titulo: Números (9.º ano)
+calcs: c_mrea.rad c_mrea.intv c_mrea.ncie
+formato: ficha
+
+@licao n9a
+titulo: Números reais: racionais e irracionais
+chave: números reais racionais irracionais dízima infinita não periódica raiz quadrada pi reta real valor aproximado enquadramento comparar
+calc: c_mrea.rad
+ano: 9
+nivel: núcleo
+fonte: AE Matemática 9.º ano, Números reais
+#A
+- Distinguir números racionais de irracionais.
+- Representar irracionais na reta real.
+- Comparar números reais e enquadrá-los.
+#C
+- Racionais: dízimas finitas ou infinitas periódicas.
+- Irracionais: dízimas infinitas não periódicas (√2, √3, π).
+- Raiz quadrada de um número natural que não é quadrado perfeito: irracional.
+- Reais = racionais + irracionais; cada ponto da reta é um real.
+- Para comparar, usa valores aproximados ou os quadrados (positivos).
+#E
+@F Comparar raízes|0 ≤ a < b ⇔ √a < √b|a, b: números não negativos|a raiz quadrada é crescente|√10 < √11|c_mrea.rad
+#F
+Dados: os números 3,1(4), π, √10 e 22/7.
+Objetivo: ordená-los e dizer quais são irracionais.
+1. 3,1(4) = 3,1444... e 22/7 ≈ [[3,1429]] são racionais.
+2. π ≈ [[3,1416]] e √10 ≈ [[3,1623]] são irracionais.
+3. Ordem: π < 22/7 < 3,1(4) < √10.
+> π < 22/7 < 3,1(4) < √10; irracionais: π e √10.
+Verificação: 3,16² ≈ [[9,99]], quase 10 ✓.
+#J
+√49 é racional ou irracional?
+#R
+Racional: √49 = [[7]].
+#V
+V = [22 / 7, pi, sqrt(10), 3.16 ** 2, 7]
+
+@licao n9b
+titulo: Radicais: simplificar e operar
+chave: radicais simplificar raiz quadrada operações com radicais somar radicais semelhantes produto de raízes racionalizar denominadores
+calc: c_mrea.rad
+ano: 9
+nivel: aprofundamento
+fonte: AE Matemática 9.º ano, Números reais (aprofundamento; radicais no 10.º ano)
+#A
+- Simplificar raízes quadradas.
+- Somar radicais semelhantes e multiplicar raízes.
+- Racionalizar um denominador simples.
+#C
+- √(a × b) = √a × √b (a, b ≥ 0): √50 = √(25 × 2) = [[=5√2]].
+- Só se somam radicais semelhantes: 5√2 + 2√2 = [[=7√2]].
+- √a × √a = a.
+- Racionalizar: 6/√3 = (6 × √3)/(√3 × √3) = [[=2√3]].
+- Procura o maior quadrado perfeito que divide o radicando.
+#E
+@F Produto de raízes|√a × √b = √(a b)|a, b ≥ 0|serve para simplificar|√50 = √25 × √2 = 5√2|c_mrea.rad
+#F
+Dados: √50 + 2√8 - √18.
+Objetivo: simplificar.
+1. √50 = 5√2; √8 = 2√2; √18 = 3√2.
+2. 5√2 + 2 × 2√2 - 3√2 = (5 + 4 - 3)√2.
+3. Resultado: [[=6√2]] ≈ [[8,49]].
+> √50 + 2√8 - √18 = [[=6√2]].
+Verificação: 7,071 + 5,657 - 4,243 ≈ [[8,485]] ✓.
+#J
+Simplifica √12 × √3.
+#R
+√36 = [[6]].
+#V
+V = [5 * sqrt(2), 7 * sqrt(2), 2 * sqrt(3), 6 * sqrt(2), 6 * sqrt(2), 6 * sqrt(2), 7.071 + 5.657 - 4.243, sqrt(36)]
+
+@licao n9c
+titulo: Intervalos de números reais
+chave: intervalos reta real intervalo aberto fechado semiaberto infinito interseção reunião condições conjunção disjunção
+calc: c_mrea.intv
+ano: 9
+nivel: núcleo
+fonte: AE Matemática 9.º ano, Números reais (intervalos)
+#A
+- Escrever conjuntos de números reais como intervalos.
+- Representar intervalos na reta real.
+- Calcular a interseção e a reunião de intervalos.
+#C
+- [a, b]: a ≤ x ≤ b (fechado); ]a, b[: a < x < b (aberto).
+- [a, +∞[: x ≥ a; ]-∞, b[: x < b. Do lado do ∞ o intervalo é sempre aberto.
+- Interseção A ∩ B: os números que estão nos dois ("e").
+- Reunião A ∪ B: os que estão pelo menos num ("ou").
+- Desenha os dois na reta para não te enganares.
+#E
+@F Interseção e reunião|x ∈ A ∩ B ⇔ x ∈ A e x ∈ B; x ∈ A ∪ B ⇔ x ∈ A ou x ∈ B|A, B: intervalos|∩: conjunção; ∪: disjunção|[-2, 5[ ∩ ]1, +∞[ = ]1, 5[|c_mrea.intv
+#F
+Dados: A = [-2, 5[ e B = ]1, +∞[.
+Objetivo: A ∩ B, A ∪ B e os inteiros de A ∩ B.
+1. A ∩ B = ]1, 5[ (1 < x < 5).
+2. A ∪ B = [-2, +∞[.
+3. Inteiros em A ∩ B: 2, 3 e 4 ([[3]] números).
+> A ∩ B = ]1, 5[ e A ∪ B = [-2, +∞[.
+Verificação: a amplitude de ]1, 5[ é 5 - 1 = [[4]].
+#J
+Escreve como intervalo: x ≥ -3 e x < 2.
+#R
+[-3, 2[ (amplitude [[5]]).
+#V
+V = [3, 5 - 1, 2 - (-3)]
+
+@exemplo n9e1
+nivel: 1
+titulo: Um irracional na reta
+licao: n9a
+#T
+Enunciado: como se marca √2 na reta real com régua e compasso?
+Resolução:
+1. Desenha-se um quadrado de lado 1 sobre o segmento [0, 1].
+2. A diagonal mede √(1² + 1²) = √2 ≈ [[1,414]] (Pitágoras).
+3. Com o compasso no 0, roda-se a diagonal até à reta.
+Resultado: o ponto marcado tem abcissa √2.
+Interpretação: há pontos da reta que não são racionais.
+Erros a evitar: pensar que √2 = 1,41 exatamente.
+#V
+V = [sqrt(2)]
+
+@exemplo n9e2
+nivel: 2
+titulo: Enquadrar uma raiz
+licao: n9a
+calc: c_mrea.rad
+#T
+Enunciado: enquadra √30 entre dois inteiros e entre duas décimas.
+Resolução:
+1. 5² = 25 < 30 < 36 = 6², logo 5 < √30 < 6.
+2. 5,4² = [[29,16]] e 5,5² = [[30,25]]: 5,4 < √30 < 5,5.
+Resultado: 5 < √30 < 6 e 5,4 < √30 < 5,5.
+Interpretação: √30 ≈ [[5,477]].
+Erros a evitar: comparar 30 com 5 e 6 em vez de 25 e 36.
+#V
+V = [5.4 ** 2, 5.5 ** 2, sqrt(30)]
+
+@exemplo n9e3
+nivel: 3
+titulo: Intervalos e condições
+licao: n9c
+calc: c_mrea.intv
+#T
+Enunciado: A = ]-∞, 3] e B = [0, 7[. Escreve A ∩ B, A ∪ B e os inteiros de A ∩ B.
+Resolução:
+1. A ∩ B = [0, 3]: 0 ≤ x ≤ 3.
+2. A ∪ B = ]-∞, 7[.
+3. Inteiros em A ∩ B: 0, 1, 2 e 3, ou seja, [[4]] números.
+Resultado: [0, 3] e ]-∞, 7[.
+Interpretação: na reunião basta estar num dos intervalos.
+Erros a evitar: fechar o intervalo no lado do -∞.
+#V
+V = [4]
+
+@exercicio n9x1
+tipo: m
+licao: n9a
+#T
+Qual destes números é irracional?
+#O
+√16
+0,(25)
+√7
+-3/8
+#S
+3
+#P
+7 não é um quadrado perfeito.
+#D
+√7 ≈ 2,6457... é uma dízima infinita não periódica.
+#V
+S = 3
+
+@exercicio n9x2
+tipo: m
+licao: n9a
+#T
+Entre que inteiros consecutivos está -√20?
+#O
+-4 e -3
+-5 e -4
+-20 e -19
+4 e 5
+#S
+2
+#P
+4 < √20 < 5.
+#D
+-5 < -√20 < -4, porque √20 ≈ 4,47.
+#V
+S = 2 if -5 < -sqrt(20) < -4 else 0
+
+@exercicio n9x3
+tipo: v
+licao: n9a
+#T
+A soma de dois números irracionais é sempre irracional.
+#S
+F
+#P
+Experimenta √2 + (-√2).
+#D
+Falso: √2 + (-√2) = 0, que é racional.
+#V
+S = 'F'
+
+@exercicio n9x4
+tipo: m
+licao: n9b
+#T
+Qual é a forma simplificada de √75?
+#O
+5√3
+3√5
+25√3
+15
+#S
+1
+#P
+75 = 25 × 3.
+#D
+√75 = √25 × √3 = [[=5√3]].
+#V
+S = 1 if abs(sqrt(75) - 5 * sqrt(3)) < 1e-12 else 0
+V = [5 * sqrt(3)]
+
+@exercicio n9x5
+tipo: n
+licao: n9b
+#T
+Calcula (√5)² + √9.
+#S
+8
+#P
+(√a)² = a.
+#D
+5 + 3 = [[8]].
+#V
+S = 5 + 3
+V = [S]
+
+@exercicio n9x6
+tipo: m
+licao: n9c
+#T
+Qual é A ∩ B, com A = [1, 6] e B = ]4, 9]?
+#O
+]4, 6]
+[1, 9]
+[4, 6[
+]1, 4]
+#S
+1
+#P
+Os números que estão nos dois.
+#D
+4 < x ≤ 6: ]4, 6].
+#V
+S = 1
+
+@exercicio n9x7
+tipo: n
+licao: n9c
+#T
+Quantos números inteiros há no intervalo ]-3, 2]?
+#S
+5
+#P
+-2, -1, 0, ...
+#D
+-2, -1, 0, 1 e 2: [[5]] números.
+#V
+S = len([k for k in range(-5, 5) if -3 < k <= 2])
+V = [S]
+
+@exercicio n9x8
+tipo: m
+licao: n9c
+#T
+Qual é a condição que define o intervalo ]-∞, 4[?
+#O
+x ≤ 4
+x > 4
+x < 4
+x ≥ 4
+#S
+3
+#P
+O 4 não pertence ao intervalo.
+#D
+]-∞, 4[ é x < 4.
+#V
+S = 3

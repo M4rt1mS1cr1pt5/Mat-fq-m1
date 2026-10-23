@@ -6,8 +6,8 @@
 #@ c_matt.pn|Pontos not\u00e1veis do tri\u00e2ngulo (com desenho)|pontos not\u00e1veis incentro circuncentro ortocentro baricentro reta de euler nove pontos tri\u00e2ngulo coordenadas|M|m3
 #@ c_matt.insc|Circunfer\u00eancias inscrita e circunscrita|raio da circunfer\u00eancia inscrita r = 2a/p circunscrita tri\u00e2ngulo ret\u00e2ngulo hipotenusa incentro|M|m3
 #@ c_matt.euler|Reta de Euler e nove pontos|reta de euler ob = 2bc circunfer\u00eancia dos nove pontos raio r/2 centro|M|m3
-#@ c_matt.pit|Teorema de Pit\u00e1goras|pit\u00e1goras hipotenusa catetos tri\u00e2ngulo ret\u00e2ngulo|M|mr
-#@ c_matt.sem|Semelhan\u00e7a de figuras|semelhan\u00e7a raz\u00e3o de semelhan\u00e7a amplia\u00e7\u00e3o redu\u00e7\u00e3o \u00e1reas lados correspondentes|M|mr
+#@ c_matt.pit|Teorema de Pit\u00e1goras e rec\u00edproco|pit\u00e1goras hipotenusa catetos tri\u00e2ngulo ret\u00e2ngulo rec\u00edproco verificar se \u00e9 ret\u00e2ngulo tr\u00eas lados|M|g8
+#@ c_matt.sem|Semelhan\u00e7a de figuras|semelhan\u00e7a raz\u00e3o de semelhan\u00e7a amplia\u00e7\u00e3o redu\u00e7\u00e3o \u00e1reas lados correspondentes|M|g7
 # Casos-limite: pontos repetidos ou colineares (nao ha triangulo),
 # coordenadas a mais ou a menos, triangulo equilatero (sem reta de
 # Euler), hipotenusa menor do que um cateto, medidas nulas ou negativas.
@@ -253,27 +253,72 @@ def pit():
     return ('Teorema de Pit\u00e1goras',
             [N.fld('Cateto a', '', '', 'o'),
              N.fld('Cateto b', '', '', 'o'),
-             N.fld('Hipotenusa c', '', '', 'o')], _pit)
+             N.fld('Hipotenusa c (3 lados: rec\u00edproco)', '', '', 'o')], _pit)
+
+
+def q2(x):
+    return N.fmt(x) + '\u00b2'
+
+
+def raiz(s):
+    # "\u221a25 = 5", "\u221a8 = 2\u221a2 \u2248 2,83" ou "\u221a65 \u2248 8,06".
+    r = math.sqrt(s)
+    t, ex = N.fmt2(r, 0, 2)
+    if ex:
+        return '\u221a' + N.fmt(s) + ' = ' + t
+    e = N.exact(r)
+    return '\u221a' + N.fmt(s) + (' = ' + e if e and e != '\u221a' + N.fmt(s)
+                                 else '') + ' ' + N.AP + ' ' + t
 
 
 def _pit(v):
     a, b, c = v
-    k = um(v, 'a, b ou c')
     ok3(v)
+    st = 'S\u00f3 vale em tri\u00e2ngulos ret\u00e2ngulos; a hipotenusa \u00e9 o lado ' \
+        'oposto ao \u00e2ngulo reto (o maior).\nRec\u00edproco: se o quadrado do ' \
+        'maior lado \u00e9 igual \u00e0 soma dos quadrados dos outros dois, o ' \
+        'tri\u00e2ngulo \u00e9 ret\u00e2ngulo.'
+    if a is not None and b is not None and c is not None:
+        return reciproco(a[0], b[0], c[0], st)
+    k = um(v, 'a, b ou c')
     o = ['= c\u00b2 = a\u00b2 + b\u00b2']
     if k == 2:
-        r = math.sqrt(a[0] ** 2 + b[0] ** 2)
-        o.append('> c = \u221a(a\u00b2 + b\u00b2) ' + N.rhs(r))
+        s2 = a[0] ** 2 + b[0] ** 2
+        o += ['c\u00b2 = ' + q2(a[0]) + ' + ' + q2(b[0]) + ' = ' +
+              N.fmt(a[0] ** 2) + ' + ' + N.fmt(b[0] ** 2) + ' = ' + N.fmt(s2),
+              '> c = ' + raiz(s2)]
     else:
         o2 = b if k == 0 else a
         N.need(c[0] > o2[0], 'A hipotenusa tem de ser maior do que cada '
                'cateto')
-        r = math.sqrt(c[0] ** 2 - o2[0] ** 2)
-        o.append('> ' + ('a' if k == 0 else 'b') + ' = \u221a(c\u00b2 - ' +
-                 ('b' if k == 0 else 'a') + '\u00b2) ' + N.rhs(r))
-    st = 'S\u00f3 vale em tri\u00e2ngulos ret\u00e2ngulos; a hipotenusa \u00e9 o lado ' \
-        'oposto ao \u00e2ngulo reto (o maior).'
-    return ('\n'.join(o), st, r, '')
+        s2 = c[0] ** 2 - o2[0] ** 2
+        x = 'a' if k == 0 else 'b'
+        o += [x + '\u00b2 = c\u00b2 - ' + ('b' if k == 0 else 'a') +
+              '\u00b2 = ' + q2(c[0]) + ' - ' + q2(o2[0]) + ' = ' +
+              N.fmt(c[0] ** 2) + ' - ' + N.fmt(o2[0] ** 2) + ' = ' +
+              N.fmt(s2), '> ' + x + ' = ' + raiz(s2)]
+    return ('\n'.join(o), st, math.sqrt(s2), '')
+
+
+def reciproco(a, b, c, st):
+    p, q, h = sorted([a, b, c])
+    N.need(h < p + q, 'Com estas medidas n\u00e3o h\u00e1 tri\u00e2ngulo: o maior '
+           'lado tem de ser menor do que a soma dos outros dois')
+    s1 = p * p + q * q
+    s2 = h * h
+    o = ['Rec\u00edproco do teorema de Pit\u00e1goras: compara-se o quadrado '
+         'do maior lado com a soma dos quadrados dos outros dois.',
+         q2(h) + ' = ' + N.fmt(s2),
+         q2(p) + ' + ' + q2(q) + ' = ' + N.fmt(p * p) + ' + ' + N.fmt(q * q) +
+         ' = ' + N.fmt(s1)]
+    if abs(s1 - s2) <= 1e-9 * s2:
+        o.append('> S\u00e3o iguais: o tri\u00e2ngulo \u00e9 ret\u00e2ngulo (o '
+                 '\u00e2ngulo reto op\u00f5e-se ao lado ' + N.fmt(h) + ').')
+    else:
+        o.append('> ' + N.fmt(s2) + (' > ' if s2 > s1 else ' < ') +
+                 N.fmt(s1) + ': n\u00e3o \u00e9 ret\u00e2ngulo; \u00e9 ' +
+                 ('obtus\u00e2ngulo' if s2 > s1 else 'acut\u00e2ngulo') + '.')
+    return ('\n'.join(o), st, None, '')
 
 # ------------------------------------------------------------ semelhanca
 

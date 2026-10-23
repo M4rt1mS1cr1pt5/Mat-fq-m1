@@ -71,7 +71,7 @@ chave: distância entre dois pontos ponto médio plano espaço pitágoras diâme
 calc: c_matg.dist
 ano: 10
 nivel: núcleo
-pre: m7a mrf
+pre: m7a g8b
 fonte: AE Mat A 10.º, Geometria analítica
 #A
 - Calcular a distância entre dois pontos no plano e no espaço.

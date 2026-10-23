@@ -239,10 +239,10 @@ def _pot(v):
         for g in grupos:
             if len(g[2]) > 1:
                 soma = sum(g[2])
-                o.append('Mesma base ' + g[0] + ': soma-se ou subtrai-se os '
-                         'expoentes: ' + g[0] + '^(' + ' '.join(
-                             [('+ ' + str(x) if x >= 0 else '- ' + str(-x))
-                              for x in g[2]]).lstrip('+ ') + ') = ' + g[0] +
+                o.append('Mesma base ' + g[0] + ': somam-se ou subtraem-se os '
+                         'expoentes: ' + g[0] + '^(' + str(g[2][0]) + ''.join(
+                             [(' + ' + str(x) if x >= 0 else ' - ' + str(-x))
+                              for x in g[2][1:]]) + ') = ' + g[0] +
                          N.sup(soma))
         res = [(g[0], g[1], sum(g[2])) for g in grupos]
         es = set([e for nm, b, e in res])

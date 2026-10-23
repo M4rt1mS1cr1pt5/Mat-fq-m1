@@ -1,0 +1,377 @@
+@tema g7
+disc: M
+grupo: 7
+titulo: Geometria e Medida (7.º ano)
+calcs: c_mgeo.ang c_mgeo.area c_matt.sem
+formato: ficha
+
+@licao g7a
+titulo: Ângulos e retas paralelas
+chave: ângulos complementares suplementares verticalmente opostos retas paralelas secante ângulos correspondentes alternos internos alternos externos
+calc: c_mgeo.ang
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Figuras planas (ângulos)
+#A
+- Usar ângulos complementares, suplementares e verticalmente opostos.
+- Reconhecer pares de ângulos em retas paralelas cortadas por uma secante.
+- Calcular amplitudes desconhecidas.
+#C
+- Complementares: somam 90°. Suplementares: somam 180°.
+- Verticalmente opostos: são iguais.
+- Paralelas e secante: correspondentes, alternos internos e alternos externos são iguais.
+- Internos do mesmo lado da secante: são suplementares.
+- Escreve sempre a razão: "alternos internos" ou "suplementares".
+#E
+@F Ângulos complementares e suplementares|α + β = 90° (complementares); α + β = 180° (suplementares)|α, β: amplitudes|ângulos agudos têm complementar|35° e 55°; 35° e 145°|c_mgeo.ang
+#F
+Dados: duas retas paralelas cortadas por uma secante; um dos ângulos mede 35°.
+Objetivo: amplitudes dos outros sete ângulos.
+1. O verticalmente oposto também mede [[35]]°.
+2. O suplementar mede 180° - 35° = [[145]]°.
+3. Correspondentes e alternos são iguais: quatro ângulos de 35° e quatro de 145°.
+> Há quatro ângulos de 35° e quatro de 145°.
+Verificação: 35° + 145° = [[180]]° ✓.
+#J
+Qual é o complementar de um ângulo de 62°?
+#R
+90° - 62° = [[28]]°.
+#V
+V = [35, 180 - 35, 35 + 145, 90 - 62]
+
+@licao g7b
+titulo: Ângulos de triângulos e polígonos
+chave: soma dos ângulos internos triângulo ângulo externo polígono convexo polígono regular diagonais n lados
+calc: c_mgeo.ang
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Figuras planas (polígonos)
+#A
+- Usar a soma dos ângulos internos de um triângulo.
+- Calcular a soma dos ângulos internos de um polígono.
+- Calcular o ângulo interno e externo de um polígono regular.
+#C
+- Triângulo: α + β + γ = 180°.
+- Ângulo externo de um triângulo = soma dos dois internos não adjacentes.
+- Polígono de n lados: S = (n - 2) × 180° (divide-se em n - 2 triângulos).
+- Ângulos externos de um polígono convexo: somam sempre 360°.
+- Polígono regular: interno = S : n; externo = 360° : n.
+- Diagonais: n(n - 3) / 2.
+#E
+@F Soma dos ângulos internos|S = (n - 2) × 180°|n: número de lados|polígonos convexos|hexágono: 720°|c_mgeo.ang
+@F Ângulo externo do polígono regular|e = 360° / n|n: número de lados|interno = 180° - e|pentágono: 72°|c_mgeo.ang
+#F
+Dados: um octógono regular.
+Objetivo: soma dos ângulos internos, ângulo interno e número de diagonais.
+1. S = (8 - 2) × 180° = [[1080]]°
+2. Ângulo interno: 1080° : 8 = [[135]]°
+3. Diagonais: 8 × 5 / 2 = [[20]]
+> 1080°, 135° e 20 diagonais.
+Verificação: externo = 360° : 8 = [[45]]° e 135° + 45° = 180° ✓.
+#J
+Num triângulo, dois ângulos medem 48° e 75°. Quanto mede o terceiro?
+#R
+180° - 48° - 75° = [[57]]°.
+#V
+V = [(8 - 2) * 180, 1080 / 8, 8 * 5 / 2, 360 / 8, 180 - 48 - 75]
+
+@licao g7c
+titulo: Áreas e perímetros de polígonos
+chave: área perímetro quadrado retângulo paralelogramo triângulo losango trapézio polígono regular apótema unidades de área
+calc: c_mgeo.area
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Medida (áreas)
+#A
+- Calcular áreas e perímetros de quadriláteros e triângulos.
+- Calcular a área de um polígono regular.
+- Calcular uma medida a partir da área.
+#C
+- Retângulo: A = c × l. Paralelogramo: A = b × h.
+- Triângulo: A = b × h / 2. Losango: A = D × d / 2.
+- Trapézio: A = (B + b) / 2 × h.
+- Polígono regular: A = perímetro / 2 × apótema.
+- A altura é perpendicular à base.
+- 1 m² = 100 dm² = 10 000 cm².
+#E
+@F Área do trapézio|A = (B + b) / 2 × h|B, b: bases;h: altura|bases paralelas|B = 8, b = 5, h = 4: A = 26|c_mgeo.area
+@F Área do polígono regular|A = P / 2 × ap|P: perímetro;ap: apótema|polígonos regulares|hexágono de lado 4 e apótema 3,46: A ≈ 41,5|c_mgeo.area
+#F
+Dados: um trapézio tem bases de 8 cm e 5 cm e altura de 4 cm. Um triângulo tem a mesma área e base 13 cm.
+Objetivo: área do trapézio e altura do triângulo.
+1. A = (8 + 5) / 2 × 4 = [[26]] cm²
+2. Triângulo: 26 = 13 × h / 2.
+3. h = 2 × 26 / 13 = [[4]] cm
+> 26 cm²; o triângulo tem 4 cm de altura.
+Verificação: 13 × 4 / 2 = [[26]] ✓.
+#J
+Um retângulo tem 48 cm² de área e 6 cm de largura. Qual é o perímetro?
+#R
+Comprimento 48 / 6 = 8 cm; P = 2 × 8 + 2 × 6 = [[28]] cm.
+#V
+V = [(8 + 5) / 2 * 4, 2 * 26 / 13, 13 * 4 / 2, 2 * 8 + 2 * 6]
+
+@licao g7d
+titulo: Círculo: perímetro e área
+chave: círculo circunferência raio diâmetro pi perímetro área setor circular comprimento do arco coroa circular
+calc: c_mgeo.area
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Medida (círculo)
+#A
+- Calcular o perímetro e a área de um círculo.
+- Calcular o raio a partir do perímetro ou da área.
+- Calcular a área de um setor circular.
+#C
+- Diâmetro: d = 2r. π ≈ 3,14 (é a razão perímetro / diâmetro).
+- Perímetro: P = 2πr = πd.
+- Área: A = πr².
+- Setor de α graus: A = α/360 × πr².
+- Dá o valor exato (com π) e um valor aproximado.
+#E
+@F Perímetro do círculo|P = 2 π r|r: raio|π ≈ 3,14|r = 5: P = 10π ≈ 31,4|c_mgeo.area
+@F Área do círculo|A = π r²|r: raio|π ≈ 3,14|r = 5: A = 25π ≈ 78,5|c_mgeo.area
+#F
+Dados: uma roda tem 60 cm de diâmetro.
+Objetivo: perímetro, área e voltas para percorrer 1 km.
+1. r = 60 / 2 = [[30]] cm; P = 2π × 30 = 60π ≈ [[188,5]] cm
+2. A = π × 30² = 900π ≈ [[2827]] cm²
+3. 1 km = 100 000 cm; voltas: 100 000 / 188,5 ≈ [[531]]
+> P ≈ 188,5 cm, A ≈ 2827 cm² e cerca de 531 voltas.
+Verificação: 531 × 188,5 ≈ [[100 094]] cm, perto de 1 km ✓.
+#J
+Um círculo tem 12π cm de perímetro. Qual é o raio?
+#R
+2πr = 12π, logo r = [[6]] cm.
+#V
+V = [60 / 2, 60 * pi, 900 * pi, 100000 / (60 * pi), 531 * 188.5, 12 / 2]
+
+@licao g7e
+titulo: Semelhança de figuras
+chave: semelhança razão de semelhança ampliação redução lados correspondentes ângulos iguais critérios de semelhança de triângulos AA LAL LLL áreas k²
+calc: c_matt.sem
+ano: 7
+nivel: núcleo
+fonte: AE Matemática 7.º ano, Semelhança
+#A
+- Reconhecer figuras semelhantes e a razão de semelhança.
+- Usar os critérios de semelhança de triângulos.
+- Relacionar perímetros e áreas de figuras semelhantes.
+#C
+- Semelhantes: ângulos iguais e lados proporcionais.
+- Razão k = lado da nova / lado correspondente da original.
+- k > 1: ampliação; k < 1: redução; k = 1: figuras iguais.
+- Triângulos: basta AA (dois ângulos iguais), LAL ou LLL.
+- Perímetros multiplicam por k; áreas por k².
+#E
+@F Razão de semelhança|k = lado da nova figura / lado correspondente|lados correspondentes|k > 0|4 cm → 6 cm: k = 1,5|c_matt.sem
+@F Áreas de figuras semelhantes|A' = k² × A|k: razão de semelhança|figuras semelhantes|k = 2: a área quadruplica|c_matt.sem
+#F
+Dados: um triângulo de lados 4, 5 e 6 cm é ampliado; o lado de 4 cm passa a 6 cm. A área inicial é 9,92 cm².
+Objetivo: razão, outros lados e área da ampliação.
+1. k = 6 / 4 = [[1,5]]
+2. Lados: 5 × 1,5 = [[7,5]] cm e 6 × 1,5 = [[9]] cm.
+3. Área: 1,5² × 9,92 = [[22,32]] cm².
+> k = 1,5; lados 6; 7,5 e 9 cm; área 22,32 cm².
+Verificação: 7,5 / 5 = [[1,5]] ✓.
+#J
+Duas figuras semelhantes têm razão 3. Se a menor tem 5 cm² de área, qual é a área da maior?
+#R
+3² × 5 = [[45]] cm².
+#V
+V = [6 / 4, 5 * 1.5, 6 * 1.5, 1.5 ** 2 * 9.92, 7.5 / 5, 9 * 5]
+
+@exemplo g7e1
+nivel: 1
+titulo: Ângulo de um polígono regular
+licao: g7b
+calc: c_mgeo.ang
+#T
+Enunciado: cada ângulo interno de um polígono regular mede 140°. Quantos lados tem?
+Resolução:
+1. Ângulo externo: 180° - 140° = [[40]]°.
+2. n = 360° : 40° = [[9]]
+Resultado: é um eneágono (9 lados).
+Interpretação: os 9 ângulos externos somam 9 × 40° = 360° ✓.
+Erros a evitar: dividir 360° pelo ângulo interno.
+#V
+V = [180 - 140, 360 / 40]
+
+@exemplo g7e2
+nivel: 2
+titulo: Área de um canteiro
+licao: g7d
+calc: c_mgeo.area
+#T
+Enunciado: um canteiro é um quadrado de 6 m de lado com um semicírculo apoiado num dos lados. Qual é a área e o perímetro do canteiro?
+Resolução:
+1. Quadrado: 6 × 6 = [[36]] m².
+2. Semicírculo de raio 3 m: π × 3² / 2 ≈ [[14,14]] m².
+3. Área total ≈ 36 + 14,14 = [[50,14]] m².
+4. Perímetro: 3 lados do quadrado e meia circunferência: 18 + 3π ≈ [[27,42]] m.
+Resultado: A ≈ 50,14 m² e P ≈ 27,42 m.
+Interpretação: o lado onde está o semicírculo não conta no perímetro.
+Erros a evitar: usar o diâmetro (6) como raio.
+#V
+V = [36, pi * 9 / 2, 36 + pi * 9 / 2, 18 + 3 * pi]
+
+@exemplo g7e3
+nivel: 3
+titulo: Altura de uma árvore pela sombra
+licao: g7e
+calc: c_matt.sem
+#T
+Enunciado: um poste de 2 m faz uma sombra de 1,6 m. À mesma hora, uma árvore faz uma sombra de 7,2 m. Qual é a altura da árvore?
+Resolução:
+1. Os raios de sol são paralelos: os triângulos são semelhantes (critério AA).
+2. Razão: k = 7,2 / 1,6 = [[4,5]]
+3. Altura: 2 × 4,5 = [[9]] m.
+Resultado: a árvore tem 9 m.
+Interpretação: alturas e sombras são diretamente proporcionais.
+Erros a evitar: dividir a sombra do poste pela da árvore.
+#V
+V = [7.2 / 1.6, 2 * 4.5]
+
+@exercicio g7x1
+tipo: n
+licao: g7a
+#T
+Qual é o suplementar de um ângulo de 47°?
+#S
+133
+#P
+Suplementares somam 180°.
+#D
+180° - 47° = [[133]]°.
+#V
+S = 180 - 47
+V = [S]
+
+@exercicio g7x2
+tipo: m
+licao: g7a
+#T
+Duas retas paralelas são cortadas por uma secante. Dois ângulos alternos internos medem 3x e 60°. Quanto vale x?
+#O
+10
+20
+40
+60
+#S
+2
+#P
+Alternos internos são iguais.
+#D
+3x = 60, logo x = 20.
+#V
+S = 2 if 60 / 3 == 20 else 0
+
+@exercicio g7x3
+tipo: n
+licao: g7b
+#T
+Qual é a soma dos ângulos internos de um hexágono (em graus)?
+#S
+720
+#P
+S = (n - 2) × 180°.
+#D
+(6 - 2) × 180° = [[720]]°.
+#V
+S = (6 - 2) * 180
+V = [S]
+
+@exercicio g7x4
+tipo: v
+licao: g7b
+#T
+Um triângulo pode ter dois ângulos obtusos.
+#S
+F
+#P
+Dois ângulos obtusos somam mais de 180°.
+#D
+Falso: a soma dos três ângulos é 180°, e dois obtusos já passam dos 180°.
+#V
+S = 'F'
+
+@exercicio g7x5
+tipo: n
+licao: g7c
+#T
+Um losango tem diagonais de 10 cm e 7 cm. Qual é a área (em cm²)?
+#S
+35
+#P
+A = D × d / 2.
+#D
+10 × 7 / 2 = [[35]] cm².
+#V
+S = 10 * 7 / 2
+V = [S]
+
+@exercicio g7x6
+tipo: n
+licao: g7d
+modo: d2
+#T
+Qual é a área de um círculo com 4 cm de raio, em cm², com duas casas decimais?
+#S
+50,27
+#P
+A = πr².
+#D
+π × 4² = 16π ≈ [[50,27]] cm².
+#V
+S = pi * 16
+V = [S]
+
+@exercicio g7x7
+tipo: n
+licao: g7d
+modo: d2
+#T
+Uma piza com 30 cm de diâmetro é cortada em 8 fatias iguais. Qual é a área de cada fatia, em cm², com duas casas decimais?
+#S
+88,36
+#P
+Raio 15 cm; cada fatia é 1/8 do círculo.
+#D
+π × 15² / 8 ≈ [[88,36]] cm².
+#V
+S = pi * 15 ** 2 / 8
+V = [S]
+
+@exercicio g7x8
+tipo: n
+licao: g7e
+#T
+Uma fotografia de 10 cm por 15 cm é ampliada com razão 3. Qual é a área da ampliação (em cm²)?
+#S
+1350
+#P
+A área multiplica por k².
+#D
+Área inicial 150 cm²; 3² × 150 = [[1350]] cm².
+#V
+S = 9 * 150
+V = [S]
+
+@exercicio g7x9
+tipo: m
+licao: g7e
+#T
+Qual destes critérios NÃO garante que dois triângulos são semelhantes?
+#O
+Dois ângulos iguais (AA)
+Os três lados proporcionais (LLL)
+Dois lados proporcionais e o ângulo entre eles igual (LAL)
+Um ângulo igual e um lado igual
+#S
+4
+#P
+Os critérios são AA, LLL e LAL.
+#D
+Um ângulo e um lado iguais não chegam: os outros lados podem não ser proporcionais.
+#V
+S = 4

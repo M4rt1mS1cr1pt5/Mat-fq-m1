@@ -10,7 +10,7 @@ chave: função domínio conjunto de chegada contradomínio objeto imagem variá
 calc: c_matf.fx
 ano: 10
 nivel: núcleo
-pre: mrc
+pre: a7d a8e
 fonte: AE Mat A 10.º, Funções; aulas de 20/10 (conceito de função)
 #A
 - Definir função, domínio, conjunto de chegada e contradomínio.
@@ -202,7 +202,7 @@ titulo: Condições, conjunção, disjunção e intervalos
 chave: lógica conjuntos condição conjunção disjunção e ou intervalo conjunto-solução união interseção reta real aberto fechado
 ano: 10
 nivel: núcleo
-pre: mre
+pre: n9c a9a
 fonte: AE Mat A 10.º (lógica e conjuntos integrados nos temas)
 #A
 - Escrever conjuntos de números reais como intervalos.

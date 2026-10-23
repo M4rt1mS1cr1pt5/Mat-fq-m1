@@ -81,7 +81,7 @@ calc: c_fqen.tr
 ano: 10
 nivel: núcleo
 pre: f1a
-liga: m8a m8g m9a
+liga: m8a m8g g9b
 fonte: AE FQ A 10.º, Energia e movimentos
 #A
 - Definir trabalho como transferência de energia por ação de uma força.
@@ -212,7 +212,7 @@ calc: c_fqen.cons
 ano: 10
 nivel: núcleo
 pre: f1c
-liga: m9b
+liga: g9c
 fonte: AE FQ A 10.º, Energia e movimentos
 #A
 - Distinguir forças conservativas de não conservativas.

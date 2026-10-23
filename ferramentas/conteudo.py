@@ -5,9 +5,12 @@ Formato das fontes (conteudo/**/*.txt), um ficheiro por tema:
 
     @tema q1
     disc: F            (F = FQ, M = Matematica)
-    grupo: q           (q quimica, f fisica, a AL, r revisoes; t temas Mat)
+    grupo: q           (q quimica, f fisica, a AL, r revisoes; Mat: 7, 8
+                       e 9 anos do 3.o ciclo, t temas do 10.o ano)
     titulo: Massa e tamanho dos atomos
     calcs: c_fqat.mm c_fqat.qm
+    formato: ficha     (opcional: licoes curtas, so paginas A C E F J e R,
+                       como nas revisoes)
 
     @licao q1a
     titulo: ...
@@ -317,7 +320,10 @@ class Tema:
         self.grupo = b.meta['grupo']
         self.titulo = b.meta['titulo']
         self.calcs = b.meta.get('calcs', '').split()
-        self.revisao = self.grupo == 'r'
+        f = b.meta.get('formato', '')
+        if f not in ('', 'ficha'):
+            raise Erro('%s: formato desconhecido "%s"' % (b.onde(), f))
+        self.revisao = self.grupo == 'r' or f == 'ficha'
 
     @property
     def pacote(self):
@@ -360,8 +366,8 @@ def ler_temas(pasta=None):
 
 # Ordem dos temas nos menus.
 ORDEM = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'f1', 'f2', 'f3', 'aq', 'af',
-         'r7', 'r8', 'r9', 'm1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm7', 'm8',
-         'm9', 'mr']
+         'r7', 'r8', 'r9', 'n7', 'a7', 'g7', 'd7', 'n8', 'a8', 'g8', 'd8',
+         'n9', 'a9', 'g9', 'd9', 'm2', 'm3', 'm4', 'm5', 'm6', 'm7', 'm8']
 
 # ------------------------------------------------------------ validar
 
@@ -701,7 +707,7 @@ def cartoes(t):
     return n
 
 
-def gerar_catalogo(temas, calcs):
+def gerar_catalogo(temas):
     o = []
     ol = oe = oc = 0
     for t in temas:
@@ -718,16 +724,23 @@ def gerar_catalogo(temas, calcs):
     cab = ('# m1_cat.py - M1TR4M: catalogo gerado pelo build (nao editar).\n'
            '# TEMAS: id|disc|grupo|titulo|pacote|exercicios|n licoes|1.a licao|'
            'n exerc.|1.o exerc.|n cartoes|1.o cartao|calculadoras|licoes\n'
-           '# CALC: id|nome|disciplina|tema (as palavras-chave estao no '
-           'indice da pesquisa)\n')
+           '# As calculadoras estao em m1_calc (carregado a pedido).\n')
     s = cab + 'NLIC = %d\nNEX = %d\nNCART = %d\n' % (ol, oe, oc)
     s += 'TEMAS = (\n'
     for x in o:
         s += '    "' + esc(x) + '",\n'
     s += ')\n'
-    s += literal('CALC', '\n'.join('|'.join([c[0], c[1], c[3], c[4]])
-                                    for c in calcs))
     return s
+
+
+def gerar_calc(calcs):
+    """Modulo m1_calc: catalogo das calculadoras (id|nome|disciplina|tema),
+    carregado so quando e preciso (menus de calculadoras, nomes)."""
+    return literal('CALC', '\n'.join('|'.join([c[0], c[1], c[3], c[4]])
+                                     for c in calcs),
+                   '# m1_calc.py - M1TR4M: catalogo das calculadoras gerado '
+                   'pelo build\n# (id|nome|disciplina|tema; as palavras-chave '
+                   'estao no indice da pesquisa).')
 
 
 def norm(s):

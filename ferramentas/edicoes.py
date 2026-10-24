@@ -26,8 +26,9 @@ import tokenize
 
 import conteudo as CT
 
-KB = 1024
-LIMITE = 300 * KB
+# Seccao 4.8: no maximo 300 KB. Conta-se 300 000 bytes (o menor dos dois
+# sentidos de KB), para o limite valer nos dois.
+LIMITE = 300000
 # Tokens de compressao, com caracteres que nao aparecem nos textos (PRE):
 # primeiro len(PRE) x len(SEG) tokens de 2 caracteres (prefixo + um de
 # SEG), depois tokens de 3 (prefixo + prefixo + um de SEG). Os prefixos
@@ -52,7 +53,10 @@ FQ10 = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'f1', 'f2', 'f3']
 MAT79 = ['n7', 'a7', 'g7', 'd7', 'n8', 'a8', 'g8', 'd8', 'n9', 'a9', 'g9',
          'd9']
 # O que cada edicao leva. As calculadoras de cada tema vem com ele (campo
-# calcs do tema); 'calcs' acrescenta outras; 'extra' sao modulos a mais.
+# calcs do tema); 'calcs' acrescenta outras; 'extra' sao modulos a mais;
+# 'sem' tira calculadoras; 'vazios' poe a '' constantes que a edicao nunca
+# le (UT, a tabela de unidades: a Matematica nao tem campos com unidades
+# nem exercicios com unidade).
 EDICOES = (
     {'id': 'FQ', 'ficheiro': 'M1TR4M_FQ', 'disc': 'F', 'temas': FQ10,
      'calcs': ['c_comu.sci', 'c_comu.sf', 'c_comu.uni', 'c_comu.pre',
@@ -62,7 +66,8 @@ EDICOES = (
      'calcs': [], 'extra': [], 'pesquisa': False, 'exercicios': True,
      'teclas': 'e02_mat',
      'sem': ['c_matg.dist', 'c_matg.medz', 'c_matv.vet', 'c_comu.sci',
-             'c_matr.res', 'c_mpol.ruf']},
+             'c_matr.res', 'c_mpol.ruf'],
+     'vazios': {'m1_nucleo': ['UT']}},
 )
 
 
@@ -359,9 +364,10 @@ def podar(corpo, exp):
     return out
 
 
-def fabrica(nome, texto, modo=None, exp=None):
+def fabrica(nome, texto, modo=None, exp=None, vaz=()):
     # Codigo da funcao _m_<nome>() e lista dos modulos que importa. exp:
-    # nomes que podem ser lidos de fora (None: todos).
+    # nomes que podem ser lidos de fora (None: todos); vaz: constantes de
+    # topo que passam a ''.
     arv = ast.parse(texto)
     tr = Troca()
     arv = tr.visit(arv)
@@ -370,6 +376,9 @@ def fabrica(nome, texto, modo=None, exp=None):
     for s in arv.body:
         if isinstance(s, ast.FunctionDef) and s.name in rem:
             s.body = corpo_funcao(s.name, rem[s.name])
+        if isinstance(s, ast.Assign) and isinstance(s.targets[0], ast.Name) \
+                and s.targets[0].id in vaz:
+            s.value = ast.Constant('')
         if nome == 'm1' and modo and isinstance(s, ast.Assign) and \
                 isinstance(s.targets[0], ast.Name) and \
                 s.targets[0].id == 'MODO':
@@ -563,7 +572,8 @@ def juntar(ed, mods, rel):
         exp.update(re.findall(r'c_[a-z0-9]+\.([A-Za-z_][A-Za-z_0-9]*)', d))
     for n in sorted(cod):
         modo = 'edi\u00e7\u00e3o de reserva ' + ed['id'] if n == 'm1' else None
-        src, ds = fabrica(n, cod[n], modo, exp)
+        src, ds = fabrica(n, cod[n], modo, exp,
+                          ed.get('vazios', {}).get(n, ()))
         deps[n] = ds
         partes.append(src)
         partes.append("_F['%s'] = _m_%s" % (n, n))

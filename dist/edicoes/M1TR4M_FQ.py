@@ -2215,7 +2215,7 @@ def _m_m1_cat():
 'q5|F|q|Gases e dispers\xf5es|p_q5|x_q5|5|19|10|39|14|53|c_fqso.gas c_fqso.con c_fqso.pes c_fqso.per c_fqso.dil c_fqat.mm c_fqat.fr|q5a q5b q5c q5d q5e','q6|F|q|Transforma\xe7\xf5es qu\xedmicas|p_q6|x_q6|3|24|9|49|9|67|c_fqlg.dh c_fqel.fot c_fqlg.ace|q6a q6b q6c',
 'f1|F|f|Energia e movimentos|p_f1|x_f1|5|27|10|58|15|76|c_fqen.em c_fqen.cons c_fqen.tr c_fqen.wp c_fqen.tec c_fqen.pot c_fqen.ren|f1a f1b f1c f1d f1e','f2|F|f|Energia e fen\xf3menos el\xe9tricos|p_f2|x_f2|5|32|10|68|16|91|c_fqci.ohm c_fqci.rho c_fqci.assoc c_fqci.ger c_fqci.pot c_fqen.ren|f2a f2b f2c f2d f2e',
 'f3|F|f|Energia, fen\xf3menos t\xe9rmicos e radia\xe7\xe3o|p_f3|x_f3|6|37|10|78|17|107|c_fqte.cal c_fqte.est c_fqte.eq c_fqte.cond c_fqte.pl c_fqte.pv c_fqen.ren c_comu.uni|f3a f3b f3c f3d f3e f3f')
- BUILD='2026-10-23'
+ BUILD='2026-10-24'
  LIMITES=('- Tempos e mem\xf3ria medidos s\xf3 no computador (MicroPython 1.12 de 32 bits). No aparelho, v\xea o Diagn\xf3stico.\n- S\xf3 n\xfameros reais: n\xe3o h\xe1 n\xfameros complexos.\n- Configura\xe7\xe3'
 'o eletr\xf3nica: Z de 1 a 36. Raio at\xf3mico e energia de ioniza\xe7\xe3o: Z de 1 a 54.\n- Lewis, geometria e polaridade: s\xf3 as mol\xe9culas da tabela do programa.\n- Acerto de equa\xe7\xf5es qu'
 '\xedmicas: at\xe9 8 esp\xe9cies.\n- Constantes do exame (IAVE): confirma o ano da tabela que vais usar.\n- Edi\xe7\xf5es de reserva: s\xf3 FQ do 10.\xba ano ou Matem\xe1tica do 7.\xba ao 9.\xba ano, s'

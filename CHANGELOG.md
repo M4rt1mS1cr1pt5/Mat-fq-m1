@@ -35,7 +35,7 @@ Ainda não foi corrida numa calculadora: ver
 - Duas formas de instalação (um só documento ou PyLib), sonda da calculadora
   e Diagnóstico.
 - Edições de reserva num só programa: "M1TR4M FQ" (288 546 bytes) e
-  "M1TR4M Mat" (300 293 bytes), comprimidas com um dicionário.
+  "M1TR4M Mat" (299 110 bytes), comprimidas com um dicionário.
 
 ### Durante o desenvolvimento
 

@@ -629,7 +629,7 @@
    "titulo": "Revisões do 9.º ano"
   }
  },
- "data": "2026-10-23",
+ "data": "2026-10-24",
  "edicoes": {
   "FQ": {
    "bytes": 288546,
@@ -638,10 +638,10 @@
    "percurso": "ecras=45 textos=674 fora=0 teclas=32/32 pico=422736 ok"
   },
   "Mat": {
-   "bytes": 300293,
+   "bytes": 299110,
    "conteudo": "12 temas (n7 a7 g7 d7 n8 a8 g8 d8 n9 a9 g9 d9), 35 calculadoras; 51 modulos; dicionario de 379 palavras",
    "heap_min_kb": 1176,
-   "percurso": "ecras=64 textos=650 fora=0 teclas=49/49 pico=424304 ok"
+   "percurso": "ecras=64 textos=650 fora=0 teclas=49/49 pico=423152 ok"
   }
  },
  "percursos": {
@@ -1391,13 +1391,13 @@
   "x_r8": 2132,
   "x_r9": 1943
  },
- "tempo": 151.5,
+ "tempo": 172.6,
  "testes": {
   "CPython": 338,
   "MicroPython": 338
  },
  "tns": {
-  "documento": 394591,
+  "documento": 394590,
   "pylib": 113
  }
 }

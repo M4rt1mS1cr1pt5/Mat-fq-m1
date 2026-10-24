@@ -39,7 +39,7 @@ TEMAS = (
     "m7|M|t|Geometria anal\xedtica no plano e no espa\xe7o|p_m7|x_m7|6|142|10|292|18|386|c_matg.dist c_matg.reta c_matg.medz c_matg.circ c_matg.cond|m7a m7b m7c m7d m7e m7f",
     "m8|M|t|Vetores no plano e no espa\xe7o|p_m8|x_m8|7|148|11|302|21|404|c_matv.vet c_matv.retav c_matv.bar|m8a m8b m8c m8d m8e m8f m8g",
 )
-BUILD = "2026-10-23"
+BUILD = "2026-10-24"
 # Partes do indice da pesquisa: modulo:disciplina
 IDX = "m1_idx:F m1_idx2:F m1_idxm:M m1_idxm2:M"
 LIMITES = "- Tempos e mem\xf3ria medidos s\xf3 no computador (MicroPython 1.12 de 32 bits). No aparelho, v\xea o Diagn\xf3stico.\n\

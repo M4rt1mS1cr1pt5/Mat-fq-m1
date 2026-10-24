@@ -49,9 +49,8 @@ Os números deste relatório vêm de `dist/build.json` (build completo, sem
    `dados/constantes.csv`.
 6. **Edições de reserva com menos conteúdo.** "M1TR4M FQ" tem os 9 temas do
    10.º ano, sem AL nem revisões; "M1TR4M Mat" tem o 7.º, o 8.º e o 9.º ano,
-   sem o 10.º. Nenhuma tem pesquisa. O limite de 300 KB foi lido como 300 ×
-   1024 = 307 200 bytes, como todos os orçamentos do build; a edição Mat tem
-   300 293 bytes (293 bytes acima de 300 000).
+   sem o 10.º. Nenhuma tem pesquisa. Ambas cabem nos 300 KB mesmo contados
+   como 300 000 bytes (288 546 e 299 110 bytes).
 
 ### A.2 Aparelho e Python assumidos
 
@@ -76,7 +75,7 @@ Os números deste relatório vêm de `dist/build.json` (build completo, sem
 | Heap mínimo para importar um módulo a pedido, com o núcleo carregado (bisseção de 1 KB) | 106 KB a 156 KB; 106 KB a 185 KB se o texto inteiro do módulo ficar na memória |
 | Módulos mais exigentes | índice da pesquisa m1_idx e m1_idxm (156 / 185 KB); pacote p_m2 (151 / 176 KB); c_mprb (151 / 172 KB) |
 | 12 percursos de teclas com heap de 512 KB | todos chegam ao fim; pico de memória viva (medido a cada ecrã) de 96 768 bytes (definições) a 198 064 bytes (pesquisa) |
-| Edições de reserva (percurso de teclas de cada uma) | heap mínimo de 876 KB (FQ) e 1 176 KB (Mat); depois de compiladas, o pico de memória viva foi de 422 736 e 424 304 bytes |
+| Edições de reserva (percurso de teclas de cada uma) | heap mínimo de 876 KB (FQ) e 1 176 KB (Mat); depois de compiladas, o pico de memória viva foi de 422 736 e 423 152 bytes |
 
 O heap real da calculadora não é conhecido. O Diagnóstico mostra a memória
 livre no arranque e no momento.
@@ -177,8 +176,8 @@ Gerados pelo build em `dist/py` (114 módulos, todos ASCII):
 | `m1_calc` | 1 | 5 729 | catálogo das 103 calculadoras |
 
 Edições de reserva (`dist/edicoes`): `M1TR4M_FQ.py` (288 546 bytes) e
-`M1TR4M_Mat.py` (300 293 bytes). Para a calculadora (`dist/tns`):
-`M1TR4M.tns` (114 módulos, 394 591 bytes), 113 ficheiros para a PyLib,
+`M1TR4M_Mat.py` (299 110 bytes). Para a calculadora (`dist/tns`):
+`M1TR4M.tns` (114 módulos, 394 590 bytes), 113 ficheiros para a PyLib,
 `M1TR4M_arranque.tns`, `M1TR4M_sonda.tns` e as duas edições.
 
 Ferramentas do computador (16 ficheiros, 110 846 bytes):
@@ -408,7 +407,7 @@ Exemplos por nível (básico / intermédio / avançado); exercícios por tipo
 | Edições de reserva | percursos e01_fq e e02_mat nos dois Pythons com heap de 1,5 MB; compressão reversível; cada pacote descomprimido pela própria edição confere |
 | Empacotamento | `M1TR4M.tns` (114 módulos), 113 `.tns` da PyLib, arranque, sonda e 2 edições: cada `.py` lá dentro é igual ao original, byte a byte |
 | Prévia | `dist/previa.png` com 12 ecrãs tirados das capturas |
-| Tempo | build completo em 152 s |
+| Tempo | build completo em 173 s |
 
 Além do build: os 33 caminhos de teclas até às lições e os 29 até às
 calculadoras da lista de testes no aparelho foram corridos no simulador; os
@@ -452,6 +451,9 @@ Nesta fase (acabamentos):
   pasta.
 - A edição Mat tinha as limitações de FQ no ecrã "Sobre"; agora cada edição
   mostra só as suas.
+- A edição Mat tinha 300 293 bytes, acima de 300 000: deixou de levar a
+  tabela de unidades, que nunca usa, e ficou com 299 110. O build conta agora
+  o limite como 300 000 bytes.
 
 Nas fases anteriores (registados nos commits):
 

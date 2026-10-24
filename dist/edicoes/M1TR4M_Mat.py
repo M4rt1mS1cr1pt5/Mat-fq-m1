@@ -3811,7 +3811,7 @@ def _m_m1_cat():
 'g8|M|8|Geometria e Medida (8.\xba ano)|p_g8|x_g8|4|26|8|52|10|67|c_matt.pit c_mgtr.iso|g8a g8b g8c g8d','d8|M|8|Dados (8.\xba ano)|p_d8|x_d8|2|30|8|60|4|77|c_mate.uni c_mate.cls c_mprb.freq|d8a d8b','n9|M|9|N\xfameros (9.\xba ano)|p_n9|x_n9|3|32|8|68|6|81|c_mrea.rad c_mrea.intv c_mrea.ncie|n9a n9b n9c',
 'a9|M|9|\xc1lgebra (9.\xba ano)|p_a9|x_a9|4|35|8|76|8|87|c_mexp.ineq c_matq.q2 c_mpol.fat c_mprp.inv c_matf.fx|a9a a9b a9c a9d','g9|M|9|Geometria e Medida (9.\xba ano)|p_g9|x_g9|6|39|10|84|15|95|c_mgtr.circ c_matr.tri c_matr.rad c_msol.sol|g9a g9b g9c g9d g9e g9f',
 'd9|M|9|Probabilidades (9.\xba ano)|p_d9|x_d9|3|45|8|94|7|110|c_mprb.prob c_mprb.dados c_mprb.urna|d9a d9b d9c')
- BUILD='2026-10-23'
+ BUILD='2026-10-24'
  LIMITES=('- Tempos e mem\xf3ria medidos s\xf3 no computador (MicroPython 1.12 de 32 bits). No aparelho, v\xea o Diagn\xf3stico.\n- S\xf3 n\xfameros reais: n\xe3o h\xe1 n\xfameros complexos.\n- Edi\xe7\xf5es de '
 'reserva: s\xf3 FQ do 10.\xba ano ou Matem\xe1tica do 7.\xba ao 9.\xba ano, sem pesquisa.')
  return _ns('NLIC NEX NCART TEMAS BUILD LIMITES',NLIC,NEX,NCART,TEMAS,BUILD,LIMITES)
@@ -5245,12 +5245,7 @@ def _m_m1_nucleo():
   if e is not None and e!=s:
    return '= '+e+' '+AP+' '+s
   return AP+' '+s
- UT=('m:L:1 km:L:1e3 hm:L:100 dam:L:10 dm:L:0.1 cm:L:0.01 mm:L:1e-3 \xb5m:L:1e-6 nm:L:1e-9 pm:L:1e-12 UA:L:1.496e11 a.l.:L:9.461e15 kg:M:1 t:M:1e3 g:M:1e-3 mg:M:1e-6 \xb5g:M:1e-9 u:M:1.66054e-27 s:t:1 ms:t:'
-'1e-3 \xb5s:t:1e-6 ns:t:1e-9 min:t:60 h:t:3600 d:t:86400 ano:t:3.15576e7 m\xb3:V:1 dm\xb3:V:1e-3 L:V:1e-3 cm\xb3:V:1e-6 mL:V:1e-6 dL:V:1e-4 cL:V:1e-5 mm\xb3:V:1e-9 hL:V:0.1 m\xb2:A:1 cm\xb2:A:1e-4 mm'
-'\xb2:A:1e-6 dm\xb2:A:0.01 km\xb2:A:1e6 ha:A:1e4 K:T:1:0 \xb0C:T:1:273.15 J:E:1 kJ:E:1e3 MJ:E:1e6 Wh:E:3600 kWh:E:3.6e6 eV:E:1.602176634e-19 cal:E:4.184 kcal:E:4184 W:W:1 mW:W:1e-3 kW:W:1e3 MW:W:1e6 GW'
-':W:1e9 Pa:p:1 hPa:p:100 kPa:p:1e3 MPa:p:1e6 bar:p:1e5 atm:p:101325 mmHg:p:133.322 mol:n:1 mmol:n:1e-3 \xb5mol:n:1e-6 kmol:n:1e3 mol/dm\xb3:c:1e3 mol/L:c:1e3 mmol/L:c:1 mol/m\xb3:c:1 g/dm\xb3:m:1 g/L:m'
-':1 mg/L:m:1e-3 kg/m\xb3:m:1 g/cm\xb3:d:1e3 g/mL:d:1e3 kg/m\xb3:d:1 kg/L:d:1e3 g/L:d:1 m/s:v:1 km/h:v:1/3.6 cm/s:v:0.01 N:F:1 kN:F:1e3 mN:F:1e-3 A:I:1 mA:I:1e-3 \xb5A:I:1e-6 kA:I:1e3 V:U:1 mV:U:1e-3 kV'
-':U:1e3 \u03a9:R:1 k\u03a9:R:1e3 M\u03a9:R:1e6 m\u03a9:R:1e-3 Hz:f:1 kHz:f:1e3 MHz:f:1e6 GHz:f:1e9 THz:f:1e12 PHz:f:1e15 C:Q:1 mC:Q:1e-3 \xb5C:Q:1e-6 mAh:Q:3.6 Ah:Q:3600')
+ UT=''
  _UD=None
  def _units():
   nonlocal _UD

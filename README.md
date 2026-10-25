@@ -36,6 +36,9 @@ As edições de reserva também estão em `dist/edicoes` como `.py`.
 
 ## Instalar
 
+Há um guia passo a passo em PDF:
+[docs/INSTALAR_NA_CALCULADORA.pdf](docs/INSTALAR_NA_CALCULADORA.pdf).
+
 Precisas do **TI-Nspire CX II Connect** (ou do TI-Nspire Computer Link) e de
 um cabo USB. O Python precisa do sistema operativo 5.2 ou posterior.
 
